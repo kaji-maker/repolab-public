@@ -1,0 +1,190 @@
+{
+  "format": "repolab-focused-study-public-results/v7",
+  "digest": "351992246bc03f1571c94e7d52ef135c250d23abc5203ab44298e6d4be0f5ccd",
+  "status": "COMPLETED",
+  "slotStatus": "ABSTAINED",
+  "scope": "focused-mri-feedback-bound-replay-exposed-no-comparison-claim",
+  "inference": {
+    "provider": "nebius",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "calls": 3,
+    "estimatedUsd": 0.0053112,
+    "rates": {
+      "input": 0.3,
+      "output": 0.9
+    },
+    "usageComplete": true
+  },
+  "execution": {
+    "provider": "nebius-sandbox",
+    "runtime": "v24.18.0",
+    "studyOperations": 14,
+    "reviewedMriQualificationOperations": 4,
+    "readinessOperations": 7,
+    "totalDistinctOperations": 25,
+    "readOnlyExpiryRefreshes": 2
+  },
+  "candidates": [
+    {
+      "attempt": 1,
+      "sourceHash": "49b8455db38b747f8020d1d65d3b9a5174e5d647e5857c8c168d1eed0b574855",
+      "after": "!isBool(any) ? (isNaN(Number(any)) ? any : Number(any)) : any",
+      "accepted": false,
+      "baselineChecks": [
+        {
+          "passed": true,
+          "assertionCount": 49
+        },
+        {
+          "passed": true,
+          "assertionCount": 49
+        }
+      ],
+      "publicChecks": [
+        {
+          "passed": false,
+          "passedCases": 13,
+          "totalCases": 19
+        }
+      ],
+      "admissionCode": null,
+      "failedPublicCases": [
+        "empty-value",
+        "whitespace-value",
+        "public-tab-value",
+        "public-linebreak-value",
+        "public-mixed-whitespace",
+        "public-repeated-empty-zero"
+      ]
+    },
+    {
+      "attempt": 2,
+      "sourceHash": "9a349e188c3e76af2ae9b385e818a8a9682b6e63195e96fb2946c39ff3fa8e3d",
+      "after": "any.trim() === '' ? any : !isBool(any) && !isNaN(Number(any)) ? Number(any) : any",
+      "accepted": false,
+      "baselineChecks": [
+        {
+          "passed": false,
+          "assertionCount": null
+        },
+        {
+          "passed": false,
+          "assertionCount": null
+        }
+      ],
+      "publicChecks": [
+        {
+          "passed": false,
+          "passedCases": 17,
+          "totalCases": 19
+        }
+      ],
+      "admissionCode": null,
+      "failedPublicCases": [
+        "public-bare-flag",
+        "public-empty-separated"
+      ]
+    }
+  ],
+  "arms": [
+    {
+      "arm": "C",
+      "plannedTasks": 1,
+      "attemptedTasks": 1,
+      "notRun": 0,
+      "qualifiedBugs": 1,
+      "acceptedRepairs": 0,
+      "correctRepairs": 0,
+      "incorrectAcceptances": 0,
+      "acceptedUnknown": 0,
+      "controlCorrect": 0,
+      "unknownOutcomes": 0,
+      "correctTaskOutcomes": 0,
+      "acceptancePrecision": null
+    }
+  ],
+  "resources": [
+    {
+      "task": "mri-zero-number",
+      "calls": 3,
+      "inputTokens": 13408,
+      "outputTokens": 1432,
+      "estimatedInferenceUsd": 0.0053112,
+      "operations": 14
+    }
+  ],
+  "rows": [
+    {
+      "task": "mri-zero-number",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": false,
+      "status": "ABSTAINED",
+      "unknown": false,
+      "origin": "exposed-public-historical-v5-model-attempted-authored-oracle",
+      "runId": "24577613-d213-4750-a6df-6008fc249daf"
+    }
+  ],
+  "reviewedQualification": [
+    {
+      "label": "original-public",
+      "sourceHash": "6b9475eb856c247a1f486449abe03ccecd4cab224bd5acf9d2ca1c48ffd40d1c",
+      "suite": "challenge",
+      "passed": false,
+      "cases": 19,
+      "failedCases": [
+        "decimal-zero",
+        "public-padded-zero",
+        "public-repeated-empty-zero"
+      ]
+    },
+    {
+      "label": "previous-incorrect-public",
+      "sourceHash": "68f902e809c538dd9ee4d92b6490ab7a88740ea610f579b7cb356026c6d974a1",
+      "suite": "challenge",
+      "passed": false,
+      "cases": 19,
+      "failedCases": [
+        "empty-value",
+        "whitespace-value",
+        "public-tab-value",
+        "public-linebreak-value",
+        "public-mixed-whitespace",
+        "public-repeated-empty-zero"
+      ]
+    },
+    {
+      "label": "reviewed-reference-public",
+      "sourceHash": "3d58b87c1abac0097a8eb04479bcfc3ffdf863661ca37f5f5b2d6f883a21c1b9",
+      "suite": "challenge",
+      "passed": true,
+      "cases": 19,
+      "failedCases": []
+    },
+    {
+      "label": "reviewed-reference-independent",
+      "sourceHash": "3d58b87c1abac0097a8eb04479bcfc3ffdf863661ca37f5f5b2d6f883a21c1b9",
+      "suite": "independent",
+      "passed": true,
+      "cases": 16,
+      "failedCases": []
+    }
+  ],
+  "limitations": [
+    "Focused exposed-development revision; no A/B comparison or causal superiority claim",
+    "Authored/public/exposed tasks; no external hidden benchmark",
+    "Previously attempted tasks; no untouched-task or new independent benchmark claim"
+  ],
+  "validation": {
+    "sharedEvaluator": true,
+    "rawReceiptReplayMatched": true,
+    "publicFeedbackRecomputed": true,
+    "decisionBeforeIndependentEvaluation": true,
+    "originalUpstreamAssertions": 49,
+    "originalUpstreamFiles": 2
+  },
+  "conclusion": "No independently correct MRI model repair selected; every failed attempt remains retained."
+}

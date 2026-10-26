@@ -1,0 +1,72 @@
+{
+  "format": "repolab-native-replay-transport/v3",
+  "parentPackFreeze": "e97f9adf986fb5007dcee085d91e5075c1da56289da480692ab58a7bdd8f3788",
+  "sourceHash": "30b97465193b9706a1ed4046bdbcc54b686a9d686a03848f2533515597d3b4e5",
+  "operationGetTimeoutMs": 60000,
+  "operationGetAttempts": 3,
+  "postTimeoutMs": 15000,
+  "postAttempts": 1,
+  "cancelTimeoutMs": 60000,
+  "qualificationReplays": 2,
+  "maxOperationsPerReplay": 14,
+  "inferenceCalls": 0,
+  "assets": [
+    {
+      "path": "packages/repositories/preact-replay-protocol-v3.ts",
+      "sha256": "fc25db42d256f2b8d5a7e11f3967d00131425c561b15465e2c7dc8a6aeb74966"
+    },
+    {
+      "path": "packages/execution/preact-replay-v3.ts",
+      "sha256": "0e209238898c99f9da8df784e5a86f068606ad88925c25b2a3be718e1005a485"
+    },
+    {
+      "path": "packages/repositories/preact-replay-v3.ts",
+      "sha256": "46846b99734bf75272f85770ac34dea6392b07c31ebeafaf3526ecbc01cafc3c"
+    },
+    {
+      "path": "apps/api/preact-product-v3.ts",
+      "sha256": "83c6b87399caada91423e5bc8ade3c2808741a2d8ae7694efdb80eb65ba17ef5"
+    },
+    {
+      "path": "apps/api/native-server-v5.ts",
+      "sha256": "8e7902db05d1b68f4748c06ca50ea22ab0b7081d2e67e59b7d2d66e284aac0bc"
+    },
+    {
+      "path": "apps/repositories/preact-product-v3.ts",
+      "sha256": "6c949b90835ca9b71948c844802364b260ff604bf7533909d2b7a267a728cb6c"
+    },
+    {
+      "path": "apps/web/src/SelectedPreactPackV3.tsx",
+      "sha256": "787bfe0a8ae79e78a221793743dbb0dc0c0636cb6629436fb0b3c3062eea4eb8"
+    },
+    {
+      "path": "apps/web/selected-pack-v3.html",
+      "sha256": "51efe9978c0796c0e970b5516888dfcfb4358fbc641e54794664f1ec750882e0"
+    },
+    {
+      "path": "apps/web/src/FreshPreactV4.tsx",
+      "sha256": "433c886ac43de0f5fdc5b8569e8b173e08d398d6940c6dccae5e2d195b6de220"
+    },
+    {
+      "path": "apps/web/native-repair-v4.html",
+      "sha256": "e0851028e1dc546836afb4fd285f1bb4cb4ca19faf41b73169a8df56aae54658"
+    },
+    {
+      "path": "vite.native-v5.config.ts",
+      "sha256": "9b1a1514a11985a7cc6c48aa6b4df4ed88ec9ee7dbc260f07ea711a96568e8a7"
+    },
+    {
+      "path": "scripts/preact-pack-browser-v3.mjs",
+      "sha256": "286677444cc7a9aa899cea4a4f746913b54bc5ca567362f9df39e36ab3920a31"
+    },
+    {
+      "path": "tests/preact-replay-v3.test.ts",
+      "sha256": "69dc24c54f235291e5e36437cab92af362a3410a753fd964234bca46dded3868"
+    },
+    {
+      "path": "evaluation/PREACT_REPLAY_V3.md",
+      "sha256": "126542c5d44e6d2e468382a49ca528c5b291b7edbc0f6dbea38a1a6462496ec8"
+    }
+  ],
+  "digest": "8bd58da6db6ee6f128d523de7f60d143ce8da8f8e7c9a7b13b7caa213e328aef"
+}

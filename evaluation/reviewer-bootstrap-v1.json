@@ -1,0 +1,65 @@
+{
+  "format": "repolab-reviewer-bootstrap/v1",
+  "parentFeatureDigest": "bd5ef5501d173ec06e44f91675fd4ae127be33040e58823b4cab04570053732c",
+  "parentLayoutDigest": "975c039fbc2876f2ba938ca0cafe0db2eb95f045880bd7f574b5630cf2c041be",
+  "scope": "two fresh installs on same host; CLI only; no hidden-task or human-reviewer claim",
+  "environmentOrder": [
+    "A",
+    "B"
+  ],
+  "profileOrder": [
+    "dlv-null-path",
+    "dset-decimal-path",
+    "mri-zero-number"
+  ],
+  "inferenceCalls": 0,
+  "expectedSandboxOperations": 68,
+  "packs": [
+    {
+      "profile": "dlv-null-path",
+      "digest": "a78d633288cfd0aa3ba22a02a5cda2c58e4e9c2c52b9a855ab071c547ca15467",
+      "sourceHash": "10d3e9404b1e93692469d14d08fb382c9799894425b367bfff46e35525bbeba7"
+    },
+    {
+      "profile": "dset-decimal-path",
+      "digest": "cb9f94af504ebbda6e221c81e5122ac60bbac0f1ca6c0300faf8be832340496d",
+      "sourceHash": "60f28be1439b8543ae034e3a73a3d861ff0a927b92dbdf0433c256762050722d"
+    },
+    {
+      "profile": "mri-zero-number",
+      "digest": "336361896213df4fa5cdfc9295957cfb13e02ecf046446257008cddd8b707f61",
+      "sourceHash": "5e359a746fc8948c791e617d3653b3c93fe0399b03f70af486149641d56dfeb7"
+    }
+  ],
+  "assets": [
+    {
+      "path": "scripts/reviewer-bootstrap.mjs",
+      "sha256": "7619fffe42c7cc15fad71bfe0d5ea774418f4598a2a4b7a381e6e25089bff00a"
+    },
+    {
+      "path": "scripts/reviewer-bootstrap.d.mts",
+      "sha256": "160ade90368dd0ff17dc14a56ab68997db23b6e0e77f44e517bd4bd74e8aada8"
+    },
+    {
+      "path": "tests/reviewer-bootstrap.test.ts",
+      "sha256": "8e719a20a14fe3beae7804871b73a819584a5ecc179b2dfe966d6f297f844e4d"
+    },
+    {
+      "path": "evaluation/REVIEWER_BOOTSTRAP_V1.md",
+      "sha256": "a480528aa37d2b98c9dbee26ea5671d433efe6459ac9e6e6d46bce257da24c3a"
+    },
+    {
+      "path": "evaluation/portable-packs-v1.json",
+      "sha256": "7957526c996fa0178c1507d1d564404f22b6c18ae20b97e5c3ecd0c90c78c726"
+    },
+    {
+      "path": "evaluation/portable-layout-v1.json",
+      "sha256": "41631d2211cb80fe09f1c5ed70007b06704e89746741b61140d4fd1b3ba697cc"
+    },
+    {
+      "path": "evaluation/portable-packs-v1-results-summary.json",
+      "sha256": "0b88e5cc59df856e3127913a785fdf2f5f2bbf1b4adf454bddd5bb59edba0df7"
+    }
+  ],
+  "digest": "e3679867dfe348ed6baf823b347b8b23deb11d64f0d352ff8a51438b61eb35ab"
+}

@@ -1,0 +1,60 @@
+{
+  "format": "repolab-prospective-vue-native-stopped/v1",
+  "freeze": "e89d60e359ab987362c2cda0cb3f4e52738498fabcf6e930d0f4321eb980477e",
+  "taskId": "vuejs__core-11739",
+  "commit": "cb843e0be31f9e563ccfc30eca0c06f2a224b505",
+  "status": "STOPPED_UNQUALIFIED",
+  "records": [
+    {
+      "slot": "prepare",
+      "state": "TERMINAL",
+      "id": "01a148c2-ca0e-7647-b981-1d578e2a2aaf",
+      "providerStatus": "SUCCESS",
+      "receiptAdmissionPassed": true,
+      "rawSha256": "e212eb2f1239de6333bcf3506971916da0bd7597a34fffe35d2ef35a3b8f49fc"
+    },
+    {
+      "slot": "build",
+      "state": "TERMINAL",
+      "id": "01a148c3-3e5e-767c-a328-9116faf02785",
+      "providerStatus": "SUCCESS",
+      "receiptAdmissionPassed": true,
+      "rawSha256": "1f286160d77fc8823a4111435774fb415b10a8ac6d36c1bd488c34a5bbd66dd9"
+    },
+    {
+      "slot": "protect",
+      "state": "TERMINAL",
+      "id": "01a148c3-7137-71aa-ba38-d31719ef23cb",
+      "providerStatus": "SUCCESS",
+      "receiptAdmissionPassed": true,
+      "rawSha256": "6873546b7d6b4e4f7384812597db3d7ad4d84f0532d106bf176cbaebc06af041"
+    },
+    {
+      "slot": "integrity",
+      "state": "TERMINAL",
+      "id": "01a148c3-8d1d-7711-8af0-4a53ecf1252b",
+      "providerStatus": "SUCCESS",
+      "receiptAdmissionPassed": false,
+      "rawSha256": "baddc13d92f909737cb1e86b97b4a2297a2df29d2f98f3c92a699d085f431b43"
+    }
+  ],
+  "operationsWithKnownIds": 4,
+  "modelCalls": 0,
+  "modelAdmission": false,
+  "candidateAdmission": false,
+  "prospectiveDenominator": 8,
+  "prospectiveNativeQualified": 1,
+  "accuracy": null,
+  "validation": {
+    "focusedControllerTests": 10,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3161,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesReleased": true
+  },
+  "inference": "none",
+  "execution": "Nebius Sandbox original-only dispatch stopped; offline saved-data audits grant no qualification",
+  "cumulativeInferenceEstimateUsd": 0.34907219999999994
+}

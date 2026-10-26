@@ -1,0 +1,87 @@
+{
+  "format": "repolab-preact-trial/v1",
+  "parentDigest": "18690376c3e161b80426d83cede92b36f83653c3d26d073c06b8fc0219141ab8",
+  "taskId": "preactjs__preact-4436",
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "baseUrl": "https://api.tokenfactory.nebius.com/v1/",
+  "requestPolicy": "nemotron-low-effort-v1",
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "maxCandidates": 3,
+  "maxCalls": 3,
+  "maxOperations": 34,
+  "monetaryCap": null,
+  "selectedTasks": 3,
+  "qualifiedTasks": 1,
+  "contextHash": "2859fba3eab1a3dd0039beb19ef317e52d2c07ffdabf01de86bf83e1da06f63a",
+  "systemHash": "24185c8fb0b9e742e2ed17392711366c741cd4a481056e91e58bd5dd5f8a1c32",
+  "assets": [
+    {
+      "path": "packages/evaluation/preact-trial-v1.ts",
+      "sha256": "9aad4dbe5cfe40c5deda46a39c2280a24368a3ab311813a725415ee788d8d423"
+    },
+    {
+      "path": "packages/execution/preact-trial-v1.ts",
+      "sha256": "6c8fa05bd9b2761c09e882cc25b122113ac7b6dc5a0614efb17e86028e2fa6dd"
+    },
+    {
+      "path": "apps/evaluator/preact-trial-v1.ts",
+      "sha256": "806ef0d7e205a6ae881ffc8bc23ddfe110476893879d45e68714475de2733ebe"
+    },
+    {
+      "path": "tests/preact-trial-v1.test.ts",
+      "sha256": "f0e3a1d3c7339fa963a0818f73d6ae7af2c68b426318caedae9ad74364d337f8"
+    },
+    {
+      "path": "evaluation/PREACT_TRIAL_V1.md",
+      "sha256": "d0c0f73c130335ff9354c8580e3a6c78ced01f8da0c7fd08cd4315d96b27c1a8"
+    },
+    {
+      "path": "packages/providers/nebius.ts",
+      "sha256": "2d93b0e03c9b35d7dbd0e828e4444880df412de980e67ce3d4df3ef557047a14"
+    },
+    {
+      "path": "packages/providers/diagnostics.ts",
+      "sha256": "5b941b2491eb5a4f0add1ad0645c843a8f39e4d4d85ebf6db6830d3cd8291562"
+    },
+    {
+      "path": "packages/providers/request-policy.ts",
+      "sha256": "51671db78c2712e308eb489d160bbdc2b75fe0146bc580838e6ee7bb703e0aba"
+    },
+    {
+      "path": "packages/storage/store.ts",
+      "sha256": "78fcbaf3c51ab90ae86b3df7cb43bf3709c863e5c5693d0c125c2e2b94c8c6f4"
+    },
+    {
+      "path": "packages/storage/reconciliation.ts",
+      "sha256": "4cf595bffa1b2c20a63019ed623cca5772b7abbb8a9b414da7089d2cefbc8952"
+    },
+    {
+      "path": "packages/repositories/repair-lease.ts",
+      "sha256": "a33afa53fe214e2023d674a6cff2270e847577902a91e4ea10011b31ecc40070"
+    },
+    {
+      "path": "packages/execution/nebius.ts",
+      "sha256": "3feb92191ce8bd69ce69475054ce1aec96042c0925200859b06663e635a60692"
+    },
+    {
+      "path": "apps/evaluator/preact-admission-v5.ts",
+      "sha256": "53d23070adac639e21cf5bbe0e8249ca59e0d4d1f3fe27fe7861777951a7d510"
+    },
+    {
+      "path": "evaluation/preact-admission-v5.json",
+      "sha256": "f79b68227d209824eadfd0cf6938f472fd32296045698964d8cd3ff438130086"
+    },
+    {
+      "path": "evaluation/preact-admission-v5-results-summary.json",
+      "sha256": "854300ec63774e88decab7150447687acebc235a3e247fd0e1e8e0edd46ce370"
+    },
+    {
+      "path": "evaluation/external-selected-v1.json",
+      "sha256": "9e2cc1663ef632ba3817691dc24e130e1d5842952c72ead559fb553e53cf00ae"
+    }
+  ],
+  "digest": "f01fe51ba1c153309df2fb14dd8e05e29deaee429f694068f8319e0a790465d4"
+}

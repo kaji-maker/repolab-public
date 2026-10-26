@@ -1,0 +1,686 @@
+{
+  "format": "repolab-module-load-qualification/v1",
+  "freeze": "c91ab1f49096ce6fa753fde0b3b60a932616e952ab7a0d7e323294313fbc645c",
+  "id": "dbf53865-5eff-4525-b8d9-8327237b7fd1",
+  "status": "QUALIFIED",
+  "startedAt": "2026-10-15T17:09:34.295Z",
+  "inferenceCalls": 0,
+  "executionCount": 4,
+  "operations": [
+    {
+      "label": "qual-syntax",
+      "id": "01a1408a-6e33-7554-a98c-fe8e69eb4fb4",
+      "image": "127db35f-afb9-498a-a36e-bf1ed939470e",
+      "receiptSha256": "92af875d96d59d486413b8f673d247f11ba128a1292ef2d64572980ec96c5f9d",
+      "configSha256": "cf543070df408430ba9f8c0d5ab68a2962ae2a545f3d4a1bcff2ec19521c5c44",
+      "executionRuntimeVersion": null
+    },
+    {
+      "label": "qual-load-original",
+      "id": "01a1408a-76a1-7698-b2a4-63459df2b995",
+      "image": "127db35f-afb9-498a-a36e-bf1ed939470e",
+      "receiptSha256": "135e4612dd038e88892b3cf84f2530079a4a4b9311e373a755601a843d8a738b",
+      "configSha256": "6d5653746860f8ebdd5adc57a299ce38a6654fbed598141045adb618d3eb42f7",
+      "executionRuntimeVersion": "v24.18.0"
+    },
+    {
+      "label": "qual-load-c1",
+      "id": "01a1408a-7eff-732e-9157-75c922f34668",
+      "image": "af025f03-f2a6-4987-968c-127143111994",
+      "receiptSha256": "64c2719bd3462162411167576157058764b1c7b7e59ee8826df45506c8d5629f",
+      "configSha256": "3749604b5fd4772662761d6409fe5daaa44dfbd2047c52fcdfda00fe3a77637b",
+      "executionRuntimeVersion": "v24.18.0"
+    },
+    {
+      "label": "qual-load-c2",
+      "id": "01a1408a-876c-772a-86a5-c959cc6c66e3",
+      "image": "3a559e9b-0aab-49dc-b2b7-43a79be2cee4",
+      "receiptSha256": "5d768d74b644bbb422f8a593a0c90b9c825adcd77260d69eaf93d6c5425669e7",
+      "configSha256": "15e94e0e4aed770778c0b046071af68162dbdd3c2e570bf0b546ace1b683fa0d",
+      "executionRuntimeVersion": "v24.18.0"
+    }
+  ],
+  "observed": {
+    "qual-syntax": {
+      "files": {
+        "dist/index.js": "bf0aa0d07dd752e9b7c0e504ac2110f01c7db26d36fc5e90702c04585f512767",
+        "dist/index.min.js": "ed3bc6c0685b3e6b1eb51f816432869cb9e5614ca23e6d6fefb79e9c297e17e0",
+        "dist/index.mjs": "108310cff0fac78b96fc0a114b976662e19f321d57a18541cf57f523a46538d2",
+        "package.json": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+        "src/index.js": "108310cff0fac78b96fc0a114b976662e19f321d57a18541cf57f523a46538d2"
+      },
+      "checkerVersion": {
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "v24.18.0\n",
+        "stderr": ""
+      },
+      "controls": [
+        {
+          "id": "js-original",
+          "file": "src/index.js",
+          "sha256": "108310cff0fac78b96fc0a114b976662e19f321d57a18541cf57f523a46538d2",
+          "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+          "command": "/usr/local/bin/node",
+          "args": [
+            "--check",
+            "/tmp/repolab-qualify/js-original/src/index.js"
+          ],
+          "uid": 1000,
+          "check": {
+            "exitCode": 0,
+            "signal": null,
+            "error": null,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "id": "js-v1-control",
+          "file": "src/index.js",
+          "sha256": "0338f44e9b2cfbeada45cdcfc1a4b1d04fe8b4349f4d2588c70c982a505a887a",
+          "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+          "command": "/usr/local/bin/node",
+          "args": [
+            "--check",
+            "/tmp/repolab-qualify/js-v1-control/src/index.js"
+          ],
+          "uid": 1000,
+          "check": {
+            "exitCode": 0,
+            "signal": null,
+            "error": null,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "id": "js-export-invalid",
+          "file": "src/index.js",
+          "sha256": "9e87720fb3837661e83ec985127a7e48e95e8a631dc2c7c083a4a62c3d9c6796",
+          "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+          "command": "/usr/local/bin/node",
+          "args": [
+            "--check",
+            "/tmp/repolab-qualify/js-export-invalid/src/index.js"
+          ],
+          "uid": 1000,
+          "check": {
+            "exitCode": 0,
+            "signal": null,
+            "error": null,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "id": "js-candidate-1",
+          "file": "src/index.js",
+          "sha256": "6c8939dcff08227c363e43a091c19796c5148e26f96d753cd333824e2439900d",
+          "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+          "command": "/usr/local/bin/node",
+          "args": [
+            "--check",
+            "/tmp/repolab-qualify/js-candidate-1/src/index.js"
+          ],
+          "uid": 1000,
+          "check": {
+            "exitCode": 0,
+            "signal": null,
+            "error": null,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "id": "js-candidate-2",
+          "file": "src/index.js",
+          "sha256": "df8503c295e9ca8921231803ee49015f45b7ec84be62b215644d3e567b44101d",
+          "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+          "command": "/usr/local/bin/node",
+          "args": [
+            "--check",
+            "/tmp/repolab-qualify/js-candidate-2/src/index.js"
+          ],
+          "uid": 1000,
+          "check": {
+            "exitCode": 0,
+            "signal": null,
+            "error": null,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "id": "cjs-valid",
+          "file": "src/index.js",
+          "sha256": "2a100c9df0840f8b4ba178f12585f8e27be015bb9ef619df08800773ca7e59d2",
+          "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+          "command": "/usr/local/bin/node",
+          "args": [
+            "--check",
+            "/tmp/repolab-qualify/cjs-valid/src/index.js"
+          ],
+          "uid": 1000,
+          "check": {
+            "exitCode": 0,
+            "signal": null,
+            "error": null,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "id": "cjs-v1-control",
+          "file": "src/index.js",
+          "sha256": "52135dafeb601ce9f58ca98a222d45f3a63a461cf2314f898bf2c7cac0c45b7d",
+          "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+          "command": "/usr/local/bin/node",
+          "args": [
+            "--check",
+            "/tmp/repolab-qualify/cjs-v1-control/src/index.js"
+          ],
+          "uid": 1000,
+          "check": {
+            "exitCode": 1,
+            "signal": null,
+            "error": null,
+            "stdout": "",
+            "stderr": "/tmp/repolab-qualify/cjs-v1-control/src/index.js:2\nconst broken = true ? \"incomplete\";\n                                  ^\n\nSyntaxError: Unexpected token ';'\n    at wrapSafe (node:internal/modules/cjs/loader:1804:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v24.18.0\n"
+          }
+        },
+        {
+          "id": "mjs-original",
+          "file": "src/index.mjs",
+          "sha256": "108310cff0fac78b96fc0a114b976662e19f321d57a18541cf57f523a46538d2",
+          "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+          "command": "/usr/local/bin/node",
+          "args": [
+            "--check",
+            "/tmp/repolab-qualify/mjs-original/src/index.mjs"
+          ],
+          "uid": 1000,
+          "check": {
+            "exitCode": 0,
+            "signal": null,
+            "error": null,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "id": "mjs-v1-control",
+          "file": "src/index.mjs",
+          "sha256": "0338f44e9b2cfbeada45cdcfc1a4b1d04fe8b4349f4d2588c70c982a505a887a",
+          "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+          "command": "/usr/local/bin/node",
+          "args": [
+            "--check",
+            "/tmp/repolab-qualify/mjs-v1-control/src/index.mjs"
+          ],
+          "uid": 1000,
+          "check": {
+            "exitCode": 1,
+            "signal": null,
+            "error": null,
+            "stdout": "",
+            "stderr": "/tmp/repolab-qualify/mjs-v1-control/src/index.mjs:42\nconst broken = true ? \"incomplete\";\n                                  ^\n\nSyntaxError: Unexpected token ';'\n    at checkSyntax (node:internal/main/check_syntax:72:5)\n\nNode.js v24.18.0\n"
+          }
+        },
+        {
+          "id": "mjs-candidate-1",
+          "file": "src/index.mjs",
+          "sha256": "6c8939dcff08227c363e43a091c19796c5148e26f96d753cd333824e2439900d",
+          "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+          "command": "/usr/local/bin/node",
+          "args": [
+            "--check",
+            "/tmp/repolab-qualify/mjs-candidate-1/src/index.mjs"
+          ],
+          "uid": 1000,
+          "check": {
+            "exitCode": 1,
+            "signal": null,
+            "error": null,
+            "stdout": "",
+            "stderr": "/tmp/repolab-qualify/mjs-candidate-1/src/index.mjs:22\n\t\t\tpattern += '/' + tmp.replace(/[.*+?^${}()|[|[|?])}/g, '');;\n\t\t\t                             ^^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Invalid regular expression: /[.*+?^${}()|[|[|?])}/g: Unmatched ')'\n    at checkSyntax (node:internal/main/check_syntax:72:5)\n\nNode.js v24.18.0\n"
+          }
+        },
+        {
+          "id": "mjs-candidate-2",
+          "file": "src/index.mjs",
+          "sha256": "df8503c295e9ca8921231803ee49015f45b7ec84be62b215644d3e567b44101d",
+          "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+          "command": "/usr/local/bin/node",
+          "args": [
+            "--check",
+            "/tmp/repolab-qualify/mjs-candidate-2/src/index.mjs"
+          ],
+          "uid": 1000,
+          "check": {
+            "exitCode": 1,
+            "signal": null,
+            "error": null,
+            "stdout": "",
+            "stderr": "/tmp/repolab-qualify/mjs-candidate-2/src/index.mjs:22\n\t\t\tpattern += '/' + tmp.replace(/[.*+?^${}()|[|[|?])]/g, '$&');;\n\t\t\t                             ^^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Invalid regular expression: /[.*+?^${}()|[|[|?])]/g: Unmatched ')'\n    at checkSyntax (node:internal/main/check_syntax:72:5)\n\nNode.js v24.18.0\n"
+          }
+        }
+      ]
+    },
+    "qual-load-original": {
+      "isolation": {
+        "denied": 4,
+        "temporaryOutputWritable": true
+      },
+      "rows": [
+        {
+          "id": "load:dist/index.js",
+          "passed": false,
+          "valid": true,
+          "actual": {
+            "type": "object",
+            "keys": [
+              "inject",
+              "parse"
+            ]
+          },
+          "error": null
+        },
+        {
+          "id": "load:dist/index.mjs",
+          "passed": false,
+          "valid": true,
+          "actual": {
+            "type": "object",
+            "keys": [
+              "inject",
+              "parse"
+            ]
+          },
+          "error": null
+        },
+        {
+          "id": "diagnostic:dist/index.js",
+          "passed": true,
+          "valid": true,
+          "actual": {
+            "loaded": true
+          },
+          "error": null
+        },
+        {
+          "id": "diagnostic:dist/index.mjs",
+          "passed": true,
+          "valid": true,
+          "actual": {
+            "loaded": true
+          },
+          "error": null
+        },
+        {
+          "id": "observe:dist/index.min.js",
+          "passed": false,
+          "valid": true,
+          "actual": {
+            "loaded": true
+          },
+          "error": null
+        },
+        {
+          "id": "control:package-read",
+          "passed": true,
+          "valid": true,
+          "actual": "regexparam",
+          "error": null
+        },
+        {
+          "id": "no-credentials",
+          "passed": true,
+          "valid": true,
+          "actual": [],
+          "error": null
+        }
+      ],
+      "passed": 4,
+      "total": 7
+    },
+    "qual-load-c1": {
+      "isolation": {
+        "denied": 4,
+        "temporaryOutputWritable": true
+      },
+      "rows": [
+        {
+          "id": "load:dist/index.js",
+          "passed": false,
+          "valid": false,
+          "actual": null,
+          "error": "{\"error\":\"Invalid regular expression: /[.*+?^${}()|[|[|?])}/g: Unmatched ')'\"}"
+        },
+        {
+          "id": "load:dist/index.mjs",
+          "passed": false,
+          "valid": false,
+          "actual": null,
+          "error": "{\"error\":\"Invalid regular expression: /[.*+?^${}()|[|[|?])}/g: Unmatched ')'\"}"
+        },
+        {
+          "id": "diagnostic:dist/index.js",
+          "passed": false,
+          "valid": true,
+          "actual": {
+            "loaded": false,
+            "name": "SyntaxError",
+            "code": null,
+            "message": "Invalid regular expression: /[.*+?^${}()|[|[|?])}/g: Unmatched ')'"
+          },
+          "error": null
+        },
+        {
+          "id": "diagnostic:dist/index.mjs",
+          "passed": false,
+          "valid": true,
+          "actual": {
+            "loaded": false,
+            "name": "SyntaxError",
+            "code": null,
+            "message": "Invalid regular expression: /[.*+?^${}()|[|[|?])}/g: Unmatched ')'"
+          },
+          "error": null
+        },
+        {
+          "id": "observe:dist/index.min.js",
+          "passed": false,
+          "valid": true,
+          "actual": {
+            "loaded": false,
+            "name": "SyntaxError",
+            "code": null,
+            "message": "Invalid regular expression: /[.*+?^${}()|[|[|?])}/g: Unmatched ')'"
+          },
+          "error": null
+        },
+        {
+          "id": "control:package-read",
+          "passed": true,
+          "valid": true,
+          "actual": "regexparam",
+          "error": null
+        },
+        {
+          "id": "no-credentials",
+          "passed": true,
+          "valid": true,
+          "actual": [],
+          "error": null
+        }
+      ],
+      "passed": 2,
+      "total": 7
+    },
+    "qual-load-c2": {
+      "isolation": {
+        "denied": 4,
+        "temporaryOutputWritable": true
+      },
+      "rows": [
+        {
+          "id": "load:dist/index.js",
+          "passed": false,
+          "valid": false,
+          "actual": null,
+          "error": "{\"error\":\"Invalid regular expression: /[.*+?^${}()|[|[|?])]/g: Unmatched ')'\"}"
+        },
+        {
+          "id": "load:dist/index.mjs",
+          "passed": false,
+          "valid": false,
+          "actual": null,
+          "error": "{\"error\":\"Invalid regular expression: /[.*+?^${}()|[|[|?])]/g: Unmatched ')'\"}"
+        },
+        {
+          "id": "diagnostic:dist/index.js",
+          "passed": false,
+          "valid": true,
+          "actual": {
+            "loaded": false,
+            "name": "SyntaxError",
+            "code": null,
+            "message": "Invalid regular expression: /[.*+?^${}()|[|[|?])]/g: Unmatched ')'"
+          },
+          "error": null
+        },
+        {
+          "id": "diagnostic:dist/index.mjs",
+          "passed": false,
+          "valid": true,
+          "actual": {
+            "loaded": false,
+            "name": "SyntaxError",
+            "code": null,
+            "message": "Invalid regular expression: /[.*+?^${}()|[|[|?])]/g: Unmatched ')'"
+          },
+          "error": null
+        },
+        {
+          "id": "observe:dist/index.min.js",
+          "passed": false,
+          "valid": true,
+          "actual": {
+            "loaded": false,
+            "name": "SyntaxError",
+            "code": null,
+            "message": "Invalid regular expression: /[.*+?^${}()|[|[|?])]/g: Unmatched ')'"
+          },
+          "error": null
+        },
+        {
+          "id": "control:package-read",
+          "passed": true,
+          "valid": true,
+          "actual": "regexparam",
+          "error": null
+        },
+        {
+          "id": "no-credentials",
+          "passed": true,
+          "valid": true,
+          "actual": [],
+          "error": null
+        }
+      ],
+      "passed": 2,
+      "total": 7
+    }
+  },
+  "provenance": {
+    "inference": "none",
+    "execution": "nebius-sandbox; qualified original regexparam image and two rejected V3 candidate images; no model call"
+  },
+  "syntax": [
+    {
+      "id": "js-original",
+      "file": "src/index.js",
+      "sha256": "108310cff0fac78b96fc0a114b976662e19f321d57a18541cf57f523a46538d2",
+      "observed": "accepted",
+      "exitCode": 0,
+      "stderrLine": null
+    },
+    {
+      "id": "js-v1-control",
+      "file": "src/index.js",
+      "sha256": "0338f44e9b2cfbeada45cdcfc1a4b1d04fe8b4349f4d2588c70c982a505a887a",
+      "observed": "accepted",
+      "exitCode": 0,
+      "stderrLine": null
+    },
+    {
+      "id": "js-export-invalid",
+      "file": "src/index.js",
+      "sha256": "9e87720fb3837661e83ec985127a7e48e95e8a631dc2c7c083a4a62c3d9c6796",
+      "observed": "accepted",
+      "exitCode": 0,
+      "stderrLine": null
+    },
+    {
+      "id": "js-candidate-1",
+      "file": "src/index.js",
+      "sha256": "6c8939dcff08227c363e43a091c19796c5148e26f96d753cd333824e2439900d",
+      "observed": "accepted",
+      "exitCode": 0,
+      "stderrLine": null
+    },
+    {
+      "id": "js-candidate-2",
+      "file": "src/index.js",
+      "sha256": "df8503c295e9ca8921231803ee49015f45b7ec84be62b215644d3e567b44101d",
+      "observed": "accepted",
+      "exitCode": 0,
+      "stderrLine": null
+    },
+    {
+      "id": "cjs-valid",
+      "file": "src/index.js",
+      "sha256": "2a100c9df0840f8b4ba178f12585f8e27be015bb9ef619df08800773ca7e59d2",
+      "observed": "accepted",
+      "exitCode": 0,
+      "stderrLine": null
+    },
+    {
+      "id": "cjs-v1-control",
+      "file": "src/index.js",
+      "sha256": "52135dafeb601ce9f58ca98a222d45f3a63a461cf2314f898bf2c7cac0c45b7d",
+      "observed": "rejected",
+      "exitCode": 1,
+      "stderrLine": "SyntaxError: Unexpected token ';'"
+    },
+    {
+      "id": "mjs-original",
+      "file": "src/index.mjs",
+      "sha256": "108310cff0fac78b96fc0a114b976662e19f321d57a18541cf57f523a46538d2",
+      "observed": "accepted",
+      "exitCode": 0,
+      "stderrLine": null
+    },
+    {
+      "id": "mjs-v1-control",
+      "file": "src/index.mjs",
+      "sha256": "0338f44e9b2cfbeada45cdcfc1a4b1d04fe8b4349f4d2588c70c982a505a887a",
+      "observed": "rejected",
+      "exitCode": 1,
+      "stderrLine": "SyntaxError: Unexpected token ';'"
+    },
+    {
+      "id": "mjs-candidate-1",
+      "file": "src/index.mjs",
+      "sha256": "6c8939dcff08227c363e43a091c19796c5148e26f96d753cd333824e2439900d",
+      "observed": "rejected",
+      "exitCode": 1,
+      "stderrLine": "SyntaxError: Invalid regular expression: /[.*+?^${}()|[|[|?])}/g: Unmatched ')'"
+    },
+    {
+      "id": "mjs-candidate-2",
+      "file": "src/index.mjs",
+      "sha256": "df8503c295e9ca8921231803ee49015f45b7ec84be62b215644d3e567b44101d",
+      "observed": "rejected",
+      "exitCode": 1,
+      "stderrLine": "SyntaxError: Invalid regular expression: /[.*+?^${}()|[|[|?])]/g: Unmatched ')'"
+    }
+  ],
+  "original": {
+    "baseline": {
+      "dist/index.js": {
+        "type": "object",
+        "keys": [
+          "inject",
+          "parse"
+        ]
+      },
+      "dist/index.mjs": {
+        "type": "object",
+        "keys": [
+          "inject",
+          "parse"
+        ]
+      }
+    },
+    "observed": [
+      {
+        "path": "dist/index.min.js",
+        "sha256": "ed3bc6c0685b3e6b1eb51f816432869cb9e5614ca23e6d6fefb79e9c297e17e0",
+        "actual": {
+          "loaded": true
+        }
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "attempt": 1,
+      "image": "af025f03-f2a6-4987-968c-127143111994",
+      "gate": {
+        "kind": "module_load",
+        "message": "Candidate module load failed dist/index.js: Invalid regular expression: /[.*+?^${}()|[|[|?])}/g: Unmatched ')'"
+      },
+      "entries": [
+        {
+          "path": "dist/index.js",
+          "sha256": "79a17b3f22c1a1e5a68b73cbac4a7dd6d0055291fc4ccab6e5d43d8b062c3524",
+          "error": "Invalid regular expression: /[.*+?^${}()|[|[|?])}/g: Unmatched ')'"
+        },
+        {
+          "path": "dist/index.mjs",
+          "sha256": "6c8939dcff08227c363e43a091c19796c5148e26f96d753cd333824e2439900d",
+          "error": "Invalid regular expression: /[.*+?^${}()|[|[|?])}/g: Unmatched ')'"
+        }
+      ],
+      "observed": [
+        {
+          "path": "dist/index.min.js",
+          "sha256": "082686714d55b4ea0ca6828da750bafc470b026b81f0a0a9d04dd6797efce6d1",
+          "actual": {
+            "loaded": false,
+            "name": "SyntaxError",
+            "code": null,
+            "message": "Invalid regular expression: /[.*+?^${}()|[|[|?])}/g: Unmatched ')'"
+          }
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "image": "3a559e9b-0aab-49dc-b2b7-43a79be2cee4",
+      "gate": {
+        "kind": "module_load",
+        "message": "Candidate module load failed dist/index.js: Invalid regular expression: /[.*+?^${}()|[|[|?])]/g: Unmatched ')'"
+      },
+      "entries": [
+        {
+          "path": "dist/index.js",
+          "sha256": "5049e45c01d3afc78676c627d24c4b1a68ea8409827b5c20fc1780184e92d49a",
+          "error": "Invalid regular expression: /[.*+?^${}()|[|[|?])]/g: Unmatched ')'"
+        },
+        {
+          "path": "dist/index.mjs",
+          "sha256": "df8503c295e9ca8921231803ee49015f45b7ec84be62b215644d3e567b44101d",
+          "error": "Invalid regular expression: /[.*+?^${}()|[|[|?])]/g: Unmatched ')'"
+        }
+      ],
+      "observed": [
+        {
+          "path": "dist/index.min.js",
+          "sha256": "94a5306b7faa35ceb91dd8de620b20b7625c6524ea25f1eaa22461cbbce51870",
+          "actual": {
+            "loaded": false,
+            "name": "SyntaxError",
+            "code": null,
+            "message": "Invalid regular expression: /[.*+?^${}()|[|[|?])]/g: Unmatched ')'"
+          }
+        }
+      ]
+    }
+  ],
+  "executionUncertain": false,
+  "completedAt": "2026-10-15T17:09:44.530Z"
+}

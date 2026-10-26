@@ -1,0 +1,29 @@
+{
+  "format": "repolab-preact-native-result/v3",
+  "freeze": "d4354da0b3ca91dffbdd38ef4f818246495f235f739045f53fc3c53ea278b826",
+  "status": "RUNTIME_INCOMPATIBLE",
+  "operations": 6,
+  "operationIds": [
+    "01a12ea4-d21f-7512-b433-e6a39acdac38",
+    "01a12ea5-d7c7-70b9-87fb-710445cae07a",
+    "01a12ea6-00f4-7376-b06b-6467257394d4",
+    "01a12ea6-11e8-71da-a247-3de7e1361976",
+    "01a12ea6-18e7-71f1-9db4-05dda9181801",
+    "01a12ea6-24c5-729c-ad38-865721d308cb"
+  ],
+  "passedStages": [
+    "prepare",
+    "build",
+    "protect",
+    "integrity",
+    "lint"
+  ],
+  "failedStage": "mocha-A",
+  "remainingSlotsUnrun": 6,
+  "inference": "none",
+  "execution": "nebius-sandbox",
+  "inferenceCalls": 0,
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "reason": "Node 24 automatic ESM detection bypassed original Babel require hook; JSX rejected before assertions"
+}

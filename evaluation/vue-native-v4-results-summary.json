@@ -1,0 +1,114 @@
+{
+  "format": "repolab-vue-native-result/v4",
+  "freeze": "54c4f6933bdbd7460ca00934e91dde29748cc4325b5a4c0fffad36e635fb6570",
+  "status": "QUALIFIED_NATIVE_BASELINE",
+  "taskId": "vuejs__core-11899",
+  "baseCommit": "706d4ac1d0210b2d9134b3228280187fe02fc971",
+  "gitTreeSha1": "89a8df40e9410ffd7d68b5c25df4bf55fd95a2fc",
+  "classification": "bug-regression",
+  "operations": 8,
+  "operationIds": [
+    "01a142ba-4dd5-76af-bef9-c28ddfa4ab7b",
+    "01a142ba-acd5-761b-b016-03548c3720df",
+    "01a142ba-d131-7138-8220-7087f1b34ba8",
+    "01a142ba-d83d-7095-99e4-61b67c541988",
+    "01a142ba-dfbb-77f9-8a17-549c00f61357",
+    "01a142bb-09a2-741b-86ea-469841b07344",
+    "01a142bb-1120-748a-8d93-81172f1c60c0",
+    "01a142bb-3b24-7218-b7fe-8a6d8532b62b"
+  ],
+  "protectedImage": "76c9fd8c-ee94-4c79-87c9-ba0170316a2a",
+  "inference": "none",
+  "execution": "nebius-sandbox",
+  "inferenceCalls": 0,
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "archiveVerification": {
+    "fileCount": 697,
+    "archiveBytes": 1485332,
+    "archiveSha256": "1b6614f714c58464a223a853b2fa80afa20aa135286a441789bf8a8268893a6d",
+    "gitTreeSha1": "89a8df40e9410ffd7d68b5c25df4bf55fd95a2fc",
+    "packageManager": "pnpm@9.10.0",
+    "workspacePackageJsonCount": 22,
+    "subpackageLifecycleScripts": 0,
+    "rootLifecycleScripts": {
+      "preinstall": "npx only-allow pnpm",
+      "postinstall": "simple-git-hooks"
+    }
+  },
+  "pnpmVersion": "9.10.0",
+  "runtime": "v20.9.0",
+  "upstreamRuntime": "20",
+  "compilerSfcCjs": {
+    "sha256": "2ab1a616e9fd5aa7ca5b7ce6078ab748194c4e30315783efe9edd4e22065d8f3",
+    "bytes": 674491
+  },
+  "nativeBuildChangedOriginalPaths": [],
+  "integrityDenials": 11,
+  "networkProbe": "ENETUNREACH",
+  "unit": {
+    "suites": 19,
+    "passed": 412,
+    "skipped": 0,
+    "caseDigest": "fbbdfb9fe65dc7ae258539222fb15f21bb81a737f31bbf009595bb38816c9ace"
+  },
+  "observations": {
+    "mediaNested": {
+      "errors": 0,
+      "hostDeclScoped": true,
+      "childRuleScoped": true,
+      "atRuleDeclScoped": false
+    },
+    "containerNested": {
+      "errors": 0,
+      "hostDeclScoped": true,
+      "childRuleScoped": true,
+      "atRuleDeclScoped": false
+    },
+    "plainNestedControl": {
+      "errors": 0,
+      "hostDeclScoped": true,
+      "childRuleScoped": true
+    },
+    "topLevelMediaControl": {
+      "errors": 0,
+      "mediaPresent": true,
+      "innerRuleScoped": true
+    }
+  },
+  "denominator": {
+    "selectedExternalTasks": 3,
+    "selectedTaskIds": [
+      "facebook__docusaurus-8927",
+      "preactjs__preact-4436",
+      "vuejs__core-11899"
+    ],
+    "docusaurusStatus": "UNSUPPORTED_RETAINED_IN_DENOMINATOR",
+    "nativeBaselineQualifiedTaskIds": [
+      "preactjs__preact-4436",
+      "vuejs__core-11899"
+    ],
+    "nativeBaselineQualifiedTasks": 2,
+    "repairQualifiedTasks": 0,
+    "attemptedModelTasks": 0,
+    "exposedDevelopmentControls": [
+      "regexparam"
+    ]
+  },
+  "rawReceiptSha256": {
+    "STARTED.json": "0ef89b0885e43525e36e820107a08194769d4d94be3e274285b028d5f3f55b7b",
+    "build.json": "750db1452e58b320a359d871a2f601260c154af0f8570a29ee554e6efc4b2c95",
+    "integrity.json": "0ea32cbf0a97547c80c854b28aadb0c9a9079a2fc892c2d3c5bfe1bcfb7c18b6",
+    "prepare.json": "6927aa9e9f8e50463d6d3ee6a51459a835d1c34865dfce38f473722368a47727",
+    "protect.json": "28e6452ffdc6050a1d51a7790f02db29d9ce9538b22f96f350fc3ba87fe6fc07",
+    "reproduction-A.json": "d22d54c58cabe25f5549408b60094fcb7f095358cb1a35307c86a8f7b13f1d36",
+    "reproduction-B.json": "4d9817b4cc4766c1f69fcd8b07f21de6523a6153d69ea9b621dfa1f626189317",
+    "result.json": "9ee0ad7a6c44c12abff9110ef8a08b65cd127a4e5f17f75377ca3a77835e61ea",
+    "unit-A.json": "bc65c47faee40c025d039bf3fa2d596f3adedb67d4c4db79a93b5e84dcc6ea72",
+    "unit-B.json": "5453b285dcf39edac21c2c52fb516618127438a91ec7ac8535f86fd271bfad57",
+    "upload-guest.cjs.json": "ea170fac35fd5aedbbcf0d690c16b6d1b5d572fa6c9059f54bd2aa3b66c32030",
+    "upload-manifest.json.json": "455af970669bfe3298e6d994ceae5dcc81b82a5e8cc2c617de523423e752dddb",
+    "upload-reproduction.cjs.json": "4de7cd5645426cef951fe1636e4eb2f5cd3916e2524ec713d2588043397170d5",
+    "upload-upstream.tar.gz.json": "fc53a7c76c96112c6b7614f9c29e6fb810e1e4da057d34efd5c370b0856fc113"
+  }
+}

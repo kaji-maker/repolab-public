@@ -1,0 +1,122 @@
+{
+  "format": "repolab-reviewer-bootstrap-public-results/v1",
+  "digest": "e3679867dfe348ed6baf823b347b8b23deb11d64f0d352ff8a51438b61eb35ab",
+  "status": "PASS",
+  "scope": "two fresh directory installs on one Linux host; same Node 24.18.0 and Sandbox account/image",
+  "sourceManifestSha256": "c93397b165c909e6dbf853ce86fcb2eccd877a24101a88bf1caa408785ecc695",
+  "sourceFilesPerInstall": 395,
+  "rows": [
+    {
+      "environment": "A",
+      "id": "371b34e3-7e2a-4e00-8514-a4114d10fbd1",
+      "profile": "dlv-null-path",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "a78d633288cfd0aa3ba22a02a5cda2c58e4e9c2c52b9a855ab071c547ca15467",
+      "sourceHash": "10d3e9404b1e93692469d14d08fb382c9799894425b367bfff46e35525bbeba7",
+      "upstreamAssertions": 34,
+      "publicCases": 16,
+      "independentPassed": 13,
+      "independentTotal": 13,
+      "executionCount": 9
+    },
+    {
+      "environment": "A",
+      "id": "1791390b-f73e-44f5-9caa-bc3c4184e670",
+      "profile": "dset-decimal-path",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "cb9f94af504ebbda6e221c81e5122ac60bbac0f1ca6c0300faf8be832340496d",
+      "sourceHash": "60f28be1439b8543ae034e3a73a3d861ff0a927b92dbdf0433c256762050722d",
+      "upstreamAssertions": 13,
+      "publicCases": 2,
+      "independentPassed": 14,
+      "independentTotal": 14,
+      "executionCount": 9
+    },
+    {
+      "environment": "A",
+      "id": "4210c989-0f9a-48b1-956c-bd5787cf649e",
+      "profile": "mri-zero-number",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "336361896213df4fa5cdfc9295957cfb13e02ecf046446257008cddd8b707f61",
+      "sourceHash": "5e359a746fc8948c791e617d3653b3c93fe0399b03f70af486149641d56dfeb7",
+      "upstreamAssertions": 49,
+      "publicCases": 20,
+      "independentPassed": 16,
+      "independentTotal": 16,
+      "executionCount": 9
+    },
+    {
+      "environment": "B",
+      "id": "ad965f14-8b36-49b3-8b93-f9f4e22a79e5",
+      "profile": "dlv-null-path",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "a78d633288cfd0aa3ba22a02a5cda2c58e4e9c2c52b9a855ab071c547ca15467",
+      "sourceHash": "10d3e9404b1e93692469d14d08fb382c9799894425b367bfff46e35525bbeba7",
+      "upstreamAssertions": 34,
+      "publicCases": 16,
+      "independentPassed": 13,
+      "independentTotal": 13,
+      "executionCount": 9
+    },
+    {
+      "environment": "B",
+      "id": "a2090b33-85ca-465d-b1bc-7fcfe03650da",
+      "profile": "dset-decimal-path",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "cb9f94af504ebbda6e221c81e5122ac60bbac0f1ca6c0300faf8be832340496d",
+      "sourceHash": "60f28be1439b8543ae034e3a73a3d861ff0a927b92dbdf0433c256762050722d",
+      "upstreamAssertions": 13,
+      "publicCases": 2,
+      "independentPassed": 14,
+      "independentTotal": 14,
+      "executionCount": 9
+    },
+    {
+      "environment": "B",
+      "id": "b27ef452-ba27-4dbb-b3ee-77e17c69a990",
+      "profile": "mri-zero-number",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "336361896213df4fa5cdfc9295957cfb13e02ecf046446257008cddd8b707f61",
+      "sourceHash": "5e359a746fc8948c791e617d3653b3c93fe0399b03f70af486149641d56dfeb7",
+      "upstreamAssertions": 49,
+      "publicCases": 20,
+      "independentPassed": 16,
+      "independentTotal": 16,
+      "executionCount": 9
+    }
+  ],
+  "validation": {
+    "credentialFreeTestsPerInstall": 305,
+    "productionBuilds": "PASS in controller and both fresh installs",
+    "originalPrivateHistoryCopied": false,
+    "readinessCopied": false,
+    "newReadinessOperations": 14,
+    "replayOperations": 54,
+    "totalDistinctSandboxOperations": 68,
+    "rawReceiptsValidated": true,
+    "protectedOriginalTests": true,
+    "unchangedHistoricalFiles": 304,
+    "credentialFreeRestarts": "PASS in both installs; six saved results unchanged; no provider dispatch",
+    "sourceExecutedOnController": false
+  },
+  "inference": {
+    "calls": 0,
+    "estimatedUsd": 0,
+    "origin": "previously selected NVIDIA/Nebius historical repairs"
+  },
+  "ledger": {
+    "estimatedInferenceUsd": 0.1072158,
+    "blocked": false
+  },
+  "retainedFailures": [
+    "pre-freeze TypeScript declaration error",
+    "first npm config attempt in each install; corrected before live dispatch"
+  ],
+  "limitations": [
+    "Same machine, Node version, provider account and image; separate-machine and human reviewer validation remain open",
+    "Historical development selections; no new model repair or unseen-task accuracy",
+    "Matching reviewed controller required; hashes bind bytes, not provider-authenticated origin",
+    "General browser pack import and reviewer-owned Sandbox provisioning are not demonstrated",
+    "Public judging access, maintainer sessions and submission remain open"
+  ]
+}

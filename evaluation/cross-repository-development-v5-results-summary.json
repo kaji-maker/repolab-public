@@ -1,0 +1,138 @@
+{
+  "status": "AUDIT_PASS",
+  "scope": "three previously exposed development tasks; excluded from the preserved zero-score pilot and any unseen-task denominator",
+  "freeze": "d2df5dac195935c83b8978b7f792303c2fb0d58a0c2aaf2eed6f6b1a690541e8",
+  "developmentTasks": 3,
+  "nativeQualified": 3,
+  "modelAttemptedTasks": 3,
+  "verifiedDevelopmentRepairs": 2,
+  "originalPilotScore": {
+    "selected": 3,
+    "verified": 0,
+    "preserved": true
+  },
+  "inferenceCalls": 5,
+  "v5SandboxOperations": 32,
+  "retainedV4PreparationOperations": 15,
+  "retainedV3PreparationOperations": 13,
+  "totalNewSandboxOperations": 60,
+  "estimatedInferenceUsd": 0.0364911,
+  "ledgerBeforeUsd": 0.2017686,
+  "ledgerAfterUsd": 0.23825969999999996,
+  "unsettledCharges": 0,
+  "credentialsAndProjectExcluded": true,
+  "priorFilesUnchanged": 2295,
+  "filesScanned": 162,
+  "rows": [
+    {
+      "name": "fast-deep-equal",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "runtime": {
+        "version": "controller-image-node24"
+      },
+      "nativeInventory": {
+        "passing": [
+          626
+        ]
+      },
+      "originalPublic": {
+        "passed": 1,
+        "total": 3
+      },
+      "status": "VERIFIED_FOR_TESTED_SCENARIOS",
+      "inferenceCalls": 2,
+      "qualificationOperations": 6,
+      "repairOperations": 7,
+      "selectedSource": "ac5fe33093dfe82778a3e16b075eb867a8dd4b609def74b098fcc114619a8a26",
+      "independent": [
+        {
+          "passed": 17,
+          "total": 17
+        },
+        {
+          "passed": 17,
+          "total": 17
+        }
+      ]
+    },
+    {
+      "name": "rfdc",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "runtime": {
+        "version": "v20.9.0",
+        "url": "https://nodejs.org/download/release/v20.9.0/node-v20.9.0-linux-x64.tar.gz",
+        "sha256": "f0919f092fbf74544438907fa083c21e76b2d7a4bc287f0607ada1553ef16f60",
+        "evidence": ".github/workflows/ci.yml: Node 20"
+      },
+      "nativeInventory": {
+        "passing": [
+          299
+        ]
+      },
+      "originalPublic": {
+        "passed": 0,
+        "total": 1
+      },
+      "status": "ABSTAINED_NO_SELECTION",
+      "inferenceCalls": 2,
+      "qualificationOperations": 6,
+      "repairOperations": 0,
+      "selectedSource": null,
+      "independent": null
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "runtime": {
+        "version": "controller-image-node24"
+      },
+      "nativeInventory": {
+        "tests": [
+          16
+        ],
+        "pass": [
+          16
+        ]
+      },
+      "originalPublic": {
+        "passed": 1,
+        "total": 2
+      },
+      "status": "VERIFIED_FOR_TESTED_SCENARIOS",
+      "inferenceCalls": 1,
+      "qualificationOperations": 6,
+      "repairOperations": 7,
+      "selectedSource": "e1ef7df2310161834e361c0dce5cd06179e653f89f35d4896fb240f826cfe665",
+      "independent": [
+        {
+          "passed": 6,
+          "total": 6
+        },
+        {
+          "passed": 6,
+          "total": 6
+        }
+      ]
+    }
+  ],
+  "offlineReview": {
+    "status": "PASS",
+    "networkAttempts": 0,
+    "inferenceCalls": 0,
+    "sandboxOperations": 0
+  },
+  "patches": [
+    {
+      "task": "fast-deep-equal",
+      "path": ".repolab/cross-repo-development-v5/fast-deep-equal/tested-source.patch",
+      "bytes": 702,
+      "sha256": "b0ccdf04c8db1f9afff027fb1976ee9e116ddd910c4d787ca30c1cf8741ec122"
+    },
+    {
+      "task": "fast-json-stable-stringify",
+      "path": ".repolab/cross-repo-development-v5/fast-json-stable-stringify/tested-source.patch",
+      "bytes": 603,
+      "sha256": "a6f164eae7f768243a5c2bb0c403a494d882fe944eb857ccf5f6ebde961ef018"
+    }
+  ]
+}

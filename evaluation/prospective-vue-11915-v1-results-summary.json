@@ -1,0 +1,82 @@
+{
+  "format": "repolab-prospective-vue-preparation-result/v1",
+  "freeze": "ee63c08737890ec9aa8e09ca2dd2ff4a1d9c9e010f740e3312e40f9c3872db75",
+  "taskId": "vuejs__core-11915",
+  "status": "PREPARED_ONLY",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "source": {
+    "files": 697,
+    "version": "3.5.4",
+    "packageManager": "pnpm@9.10.0",
+    "archiveBytes": 1485303,
+    "archiveSha256": "4ef45546927b3d915668e2ecfb341c6fcce0a042e666a96dd3f403b9f402c65f",
+    "gitTreeSha1": "283c79e64584f42483238782a96f51877113acba",
+    "unitTestFiles": 180,
+    "unitFilesDigest": "37ee9a4c99bcfe7834ba5b5bbd19dc6fb5ce1eda7c38d194493c33106047eaef",
+    "lockSha256": "eb8a424634c7c226d9f4c4a760a870e8d5a4892077cfacc097ba2bd5a989550e",
+    "fixtureAuthorship": "Authored from frozen issue description; not original jsfiddle bytes",
+    "publicFixtureDigests": [
+      {
+        "path": "report-derived.html",
+        "sha256": "ec0f15ef76c5c6815bdccc805d2d3073b6d7f8cd2de5a38962778303d5f04468"
+      },
+      {
+        "path": "control-plain.html",
+        "sha256": "a899fe11a500d030ef8f01b284abea305e32ae8d872ed97caa439f1bf633f158"
+      },
+      {
+        "path": "control-closed.html",
+        "sha256": "73b0bfa725af572617aa3b9955215a7552304f21b60482b27d8417db5b573228"
+      },
+      {
+        "path": "control-outside.html",
+        "sha256": "061dae1f7155038b4bbbab1314dceb943d8e3f4dc241bb7d582be03da1adafe7"
+      }
+    ]
+  },
+  "blocker": {
+    "status": "UNCHANGED_UNKNOWN_SUBMISSION",
+    "executionAdmission": false,
+    "bothSharedLeasesPresent": true
+  },
+  "modelCalls": 0,
+  "sandboxOperations": 0,
+  "executionAdmission": false,
+  "candidateAdmission": false,
+  "nativeRuntimeQualified": false,
+  "originalReproduced": false,
+  "externalReproductionFetched": false,
+  "fixtureAuthorship": "Authored from frozen issue description; not original jsfiddle bytes",
+  "accuracy": null,
+  "proposedOriginalOperations": 8,
+  "taskOriginalCeiling": 12,
+  "inference": "none",
+  "execution": "offline original-source data verification and saved-state inspection; no upstream or probe execution",
+  "validation": {
+    "focusedControllerTests": 8,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3309,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesUnchanged": true,
+    "upstreamSourceExecution": false,
+    "probeExecution": false,
+    "retainedInitialTestFailure": false
+  },
+  "cohort": {
+    "selected": 8,
+    "originalBaselineQualified": 4,
+    "unresolvedTasks": 1,
+    "pendingPreparation": 3,
+    "offlinePreparedPending": 3,
+    "unpreparedPending": 0,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0,
+    "knownOriginalSandboxOperations": 47,
+    "unknownOriginalSubmissions": 1
+  },
+  "nextOfflineTask": null,
+  "nextOfflineAction": "Qualify diagnostic-preserving Sandbox transport with synthetic responses",
+  "nextLiveAction": "Resolve Preact 3763 V2 missing submission receipt and qualify diagnostic-preserving transport before a separate original-execution freeze"
+}

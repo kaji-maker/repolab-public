@@ -1,0 +1,143 @@
+{
+  "format": "repolab-prospective-preact-native-result/v1",
+  "freeze": "fdeb0d37656e9b1326a3dc1c24406a6cabc3a266a9dbe2f33d6357e308433fc2",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "taskId": "preactjs__preact-4152",
+  "commit": "9c5a82efcc3dcbd0035c694817a3022d81264687",
+  "status": "QUALIFIED_ORIGINAL_NATIVE_BASELINE",
+  "source": {
+    "files": 329,
+    "archiveBytes": 629559,
+    "archiveSha256": "5ee7313570f6d091f8370ad63fde13c5ae31eaa4fad51cda597c28e45c51ffe5",
+    "gitTreeSha1": "eb6ec1b13d27059c1ab3ae666481b13e50a7aeb4",
+    "version": "10.18.1",
+    "lockSha256": "bba0fc9303bd6cc6986d8c959df064447b435633134f6dbff77678b2a3e10f7c",
+    "nodeTestFiles": 6
+  },
+  "operations": 11,
+  "operationIds": [
+    "01a149da-ca52-75fd-a7d0-4f9435db8224",
+    "01a149db-555c-771b-8968-6e35d7977f1f",
+    "01a149db-86f7-75bc-b5e8-81f195bd58fb",
+    "01a149db-a386-7316-8cc6-ed2eb09378af",
+    "01a149db-bf6f-769a-a917-40579826b123",
+    "01a149db-db1c-7055-8202-243f79ecfb57",
+    "01a149dc-0cbf-77e2-9b27-4f438bb06061",
+    "01a149dc-5613-722a-9018-315e550a5116",
+    "01a149dc-7193-736c-b54e-9855e2cec0bf",
+    "01a149dc-a364-7639-a0c2-1b583f15821b",
+    "01a149dc-ed40-755b-a783-76ef67feb9cf"
+  ],
+  "protectedImage": "ab3b5952-e897-46a9-98f1-e4e39139af3b",
+  "originalUmd": {
+    "sha256": "b1b4dd11ad2880262c06c3f73270d962f92b4930edbdab744e7e0840b5dc2d0d",
+    "bytes": 11082
+  },
+  "buildChangedOriginalPaths": [],
+  "typeResults": [
+    {
+      "slot": "mocha-A",
+      "passed": [
+        16
+      ],
+      "pending": [
+        2
+      ]
+    },
+    {
+      "slot": "mocha-B",
+      "passed": [
+        16
+      ],
+      "pending": [
+        2
+      ]
+    }
+  ],
+  "observations": {
+    "observations": [
+      {
+        "name": "reportedBoxed",
+        "text": "",
+        "html": "",
+        "error": null
+      },
+      {
+        "name": "reportedBoxedMetadata",
+        "text": "",
+        "html": "",
+        "error": null
+      },
+      {
+        "name": "primitive",
+        "text": "this should work",
+        "html": "this should work",
+        "error": null
+      },
+      {
+        "name": "numberZero",
+        "text": "0",
+        "html": "0",
+        "error": null
+      },
+      {
+        "name": "primitiveArray",
+        "text": "this should work",
+        "html": "this should work",
+        "error": null
+      },
+      {
+        "name": "nullChild",
+        "text": "",
+        "html": "",
+        "error": null
+      },
+      {
+        "name": "falseChild",
+        "text": "",
+        "html": "",
+        "error": null
+      },
+      {
+        "name": "emptyString",
+        "text": "",
+        "html": "",
+        "error": null
+      }
+    ]
+  },
+  "modelCalls": 0,
+  "modelAdmission": false,
+  "candidateAdmission": false,
+  "inference": "none",
+  "execution": "nebius-sandbox; reviewed original",
+  "frameworkDenominator": 3,
+  "prospectiveDenominator": 8,
+  "prospectiveNativeQualified": 3,
+  "limits": [
+    "One exact original task/commit qualified; not a generated candidate or repair result",
+    "Native browser discovery recipe/source fixed prospectively; first original inventory becomes the later candidate baseline",
+    "Same Sandbox project/cache; not separate-machine qualification",
+    "Original TypeScript output directories use inherited sticky permissions; candidate containment remains a separate gate"
+  ],
+  "mocha": {
+    "passed": 29,
+    "skipped": 0,
+    "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93"
+  },
+  "browser": {
+    "passed": 1080,
+    "skipped": 11,
+    "caseDigest": "7c0d6e40b37bdcf511b26e21a59ae2cb2c06adb9ef2a77cd0f5c1fcf5e5ebb95"
+  },
+  "validation": {
+    "focusedControllerTests": 14,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3202,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesReleased": true
+  },
+  "cumulativeInferenceEstimateUsd": 0.34907219999999994
+}

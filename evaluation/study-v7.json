@@ -1,0 +1,58 @@
+{
+  "digest": "351992246bc03f1571c94e7d52ef135c250d23abc5203ab44298e6d4be0f5ccd",
+  "format": "repolab-common-study/v7",
+  "previousDigest": "2aba74d2572eed04db456e264d12fb2ef1d97221f002c011e036b81b0bede1b8",
+  "scope": "focused-mri-feedback-bound-replay-exposed-no-comparison-claim",
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "maxCandidates": 2,
+  "maxCalls": 3,
+  "maxOperations": 32,
+  "runInferenceCapUsd": null,
+  "allocationUsd": null,
+  "globalInferenceCapUsd": 4,
+  "schedule": [
+    {
+      "task": "mri-zero-number",
+      "arm": "C",
+      "repetition": 1
+    }
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/study-protocol-v7.ts",
+      "sha256": "85567832b029cb0e7764b787221bcacff6ab61f92869d2b6a392cc06c88618de"
+    },
+    {
+      "path": "packages/evaluation/study-binding-v7.ts",
+      "sha256": "efb33924a2705b1c67af7eaf5ca960531d4a02290832cd1402cb1978dc3417e9"
+    },
+    {
+      "path": "packages/evaluation/study-feedback-v7.ts",
+      "sha256": "8bd5dfcf70f6ec09b49d61806d5affb5f9367f17171501d155e88083018c997b"
+    },
+    {
+      "path": "packages/evaluation/study-runner-v7.ts",
+      "sha256": "b77fb3b8737bf6e6f70e720727a2018bacd00ef08ba1d68396f3fe9e757b7e95"
+    },
+    {
+      "path": "packages/evaluation/study-metrics-v7.ts",
+      "sha256": "921d11c4219b4ff03a8f96e4c26b1e7cb3141b4222a899107188e4297c5b2973"
+    },
+    {
+      "path": "apps/evaluator/study-v7.ts",
+      "sha256": "d1e0d5124a285761f1feee53755761767ccadff303f1fe64673a93a29ddf31b5"
+    },
+    {
+      "path": "tests/study-v7.test.ts",
+      "sha256": "031c3a9013a6518cbfceabe54755e1d2c0caecef36983cca50af9b036f1f4538"
+    },
+    {
+      "path": "evaluation/STUDY_V7.md",
+      "sha256": "c885880216b3745e42a9a32b9bccb86c76216f7aedf3e394a77c1927998c9404"
+    }
+  ]
+}

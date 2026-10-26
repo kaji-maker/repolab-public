@@ -1,0 +1,26 @@
+{
+  "format": "repolab-preact-admission-result/v1",
+  "freeze": "a7a1da93009ce4e93b6c9816afc8aa973dfeeaae7cd7caed1de89dd243daa898",
+  "status": "FIXTURE_REGRESSION_FAILED",
+  "operations": 10,
+  "operationIds": [
+    "01a1308e-cf49-703d-bc56-3601dfba1aca",
+    "01a1308e-e10f-7067-966c-c1c2aa725a68",
+    "01a1308e-ece5-776a-bd8a-c9182c6a76e1",
+    "01a1308e-f8ab-7673-ac8f-b8ad105b0c60",
+    "01a1308f-0e36-73b1-bf63-f3e5c931dd4c",
+    "01a1308f-3c44-7207-83c7-8a257413e004",
+    "01a1308f-4358-7781-803e-69d09f8d95f5",
+    "01a1308f-543e-7750-aa62-7db252dab924",
+    "01a1308f-6064-7056-b76c-15360474846c",
+    "01a1308f-7609-74b2-bd6f-6d84ca79c29d"
+  ],
+  "failedStage": "weak-browser-A",
+  "originalAssertionsFailed": 4,
+  "unrunSlots": 16,
+  "inference": "none",
+  "execution": "nebius-sandbox; reviewed fixtures",
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "reason": "Cleanup owner must be separate from legacy error-routing context; original error-boundary tests caught the change"
+}

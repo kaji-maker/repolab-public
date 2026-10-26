@@ -1,0 +1,33 @@
+{
+  "status": "PASS_OFFLINE_ONLY",
+  "freeze": "2096c16f472d93957f5e4efc78b55e880d7261ae537d072dcef28748b20bff7a",
+  "syntheticGroupsPassed": 8,
+  "metadataCounterexamples": 23,
+  "controls": "7 unchanged groups pass in attempt 3; corrected full-workflow group passes in targeted attempt 4; exact single-assertion delta and both freezes audited",
+  "priorPrivateFilesMatched": 3621,
+  "historicalFrozenAssetsMatched": 575,
+  "guardDiff": "client import only",
+  "engineDiff": "guard/protocol imports, private root and journal version only",
+  "fullSyntheticWorkflow": "native rejection followed by duplicate admission rejection, ABSTAINED, verified=false; raw audit and tamper rejection pass",
+  "historicalLiveResult": "ERROR, Invalid evidence timestamp; unchanged and consumed",
+  "unsuccessfulAttemptsRetained": [
+    "preparation-failure-1.json",
+    "typecheck-attempt-1.json",
+    "controls-attempt-1.json",
+    "controls-attempt-2-interrupted.json",
+    "controls-attempt-3.json"
+  ],
+  "typecheck": "PASS",
+  "newLiveQualificationSlots": 0,
+  "runtimeQualified": false,
+  "apiServerUiWired": false,
+  "nextLiveAdmission": false,
+  "cloudLiveDispatchAllowed": false,
+  "publicJudgeAccessQualified": false,
+  "providerCalls": 0,
+  "actualModelCalls": 0,
+  "actualSandboxOperations": 0,
+  "guestSourceExecutions": 0,
+  "inference": "synthetic metadata only; no actual inference",
+  "execution": "network-blocked empty-environment controller/HTTP fixtures and saved-data/source-hash audits only"
+}

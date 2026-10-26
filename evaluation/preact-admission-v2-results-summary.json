@@ -1,0 +1,29 @@
+{
+  "format": "repolab-preact-admission-result/v2",
+  "freeze": "214e8ea3c2b3e2aef71c76fd0877639241b417ce5be416a1b767c850c9d732c1",
+  "status": "EVALUATOR_OBSERVER_ERROR",
+  "operations": 13,
+  "operationIds": [
+    "01a13094-b0a8-7551-ae61-524b47996bab",
+    "01a13094-bd7a-7750-81d8-9420311871e9",
+    "01a13094-c942-71f4-9407-c259463c2d2d",
+    "01a13094-d5a5-7139-a583-7949558ff161",
+    "01a13094-eadc-7204-8a77-74e457e48ed3",
+    "01a13095-18cd-762a-82e1-f2c86a5ea9cb",
+    "01a13095-24b2-75a9-81f2-8afdaabaf3b1",
+    "01a13095-36e1-72e4-9520-9d653bb39de2",
+    "01a13095-4359-70c6-bc94-c071ef48bfc8",
+    "01a13095-58fc-716f-bb2f-a0732f7aaf19",
+    "01a13095-8d37-72ce-b43b-ea36d8ea85d0",
+    "01a13095-9902-72d8-9574-eb455dd30b2e",
+    "01a13095-a60c-7577-8eb0-4d78822b6b69"
+  ],
+  "failedStage": "weak-independent-A",
+  "passedWeakNativeAndPublicGates": true,
+  "unrunSlots": 13,
+  "inference": "none",
+  "execution": "nebius-sandbox; reviewed fixtures",
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "reason": "Observer addressed unmangled private options._catchError in minified build; v3 uses actual public error boundary and retains observed exceptions as behavioral data"
+}

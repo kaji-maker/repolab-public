@@ -1,0 +1,343 @@
+{
+  "result": {
+    "format": "repolab-preact-trial-result/v7",
+    "freeze": "aa9917c84e12544ed8b13898915d62128f284ff6ee1b0792f030220ea5da584a",
+    "status": "ABSTAINED",
+    "taskId": "preactjs__preact-4436",
+    "provenance": {
+      "inference": "nebius",
+      "execution": "nebius-sandbox",
+      "model": "nvidia/nemotron-3-super-120b-a12b"
+    },
+    "selected": 3,
+    "qualified": 1,
+    "modelAttempted": 1,
+    "unsupported": [
+      "facebook__docusaurus-8927",
+      "vuejs__core-11899"
+    ],
+    "candidates": [
+      {
+        "attempt": 1,
+        "status": "ADMISSION_REJECTED",
+        "sourceHash": null,
+        "feedback": {
+          "kind": "admission",
+          "reason": "Program instruction 0: only if may have a condition",
+          "stage": "compiler",
+          "correction": "Fix the indicated instruction: balanced if/else/end, condition only on if, result capture at most once and result use inside its declaring block. Cleanup is already bound once; do not declare it.",
+          "authority": "actual compiler rejection only; no automatic source correction or execution"
+        },
+        "bodyDiagnostics": {
+          "format": "repolab-preact-body-diagnostics/v2",
+          "issues": [],
+          "typeWarnings": [],
+          "parsed": false,
+          "authority": "advisory only; frozen admission and native lint remain authoritative"
+        },
+        "plan": {
+          "requirementQuote": "return a cleanup function to reset",
+          "editBoundary": "existing-applyRef-try-body-only",
+          "cleanupDisposal": "invoke-before-callback",
+          "nullCallbackWhenCleanup": "skip",
+          "legacyDisposal": "invoke-null",
+          "callbackReturn": "store-if-callable",
+          "cleanupStateAfterCall": "clear-to-undefined",
+          "objectRef": "assign-current",
+          "revisionGoal": "Add support for returning cleanup function from callback refs without altering tried error handling or external contracts"
+        },
+        "ownership": null,
+        "program": [
+          {
+            "op": "capture-result",
+            "condition": "ref-function"
+          },
+          {
+            "op": "if",
+            "condition": "result-function"
+          },
+          {
+            "op": "store-result",
+            "condition": "none"
+          },
+          {
+            "op": "clear-cleanup",
+            "condition": "none"
+          },
+          {
+            "op": "if",
+            "condition": "cleanup-function"
+          },
+          {
+            "op": "call-cleanup",
+            "condition": "none"
+          },
+          {
+            "op": "clear-cleanup",
+            "condition": "none"
+          },
+          {
+            "op": "else",
+            "condition": "none"
+          },
+          {
+            "op": "if",
+            "condition": "value-null"
+          },
+          {
+            "op": "set-object",
+            "condition": "none"
+          },
+          {
+            "op": "return",
+            "condition": "none"
+          },
+          {
+            "op": "else",
+            "condition": "none"
+          },
+          {
+            "op": "set-object",
+            "condition": "none"
+          },
+          {
+            "op": "return",
+            "condition": "none"
+          },
+          {
+            "op": "end",
+            "condition": "none"
+          },
+          {
+            "op": "end",
+            "condition": "none"
+          },
+          {
+            "op": "else",
+            "condition": "none"
+          },
+          {
+            "op": "set-object",
+            "condition": "none"
+          },
+          {
+            "op": "return",
+            "condition": "none"
+          }
+        ]
+      },
+      {
+        "attempt": 2,
+        "status": "ADMISSION_REJECTED",
+        "sourceHash": null,
+        "feedback": {
+          "kind": "admission",
+          "reason": "Program instruction 13: else has no unmatched if",
+          "stage": "compiler",
+          "correction": "Fix the indicated instruction: balanced if/else/end, condition only on if, result capture at most once and result use inside its declaring block. Cleanup is already bound once; do not declare it.",
+          "authority": "actual compiler rejection only; no automatic source correction or execution"
+        },
+        "bodyDiagnostics": {
+          "format": "repolab-preact-body-diagnostics/v2",
+          "issues": [],
+          "typeWarnings": [],
+          "parsed": false,
+          "authority": "advisory only; frozen admission and native lint remain authoritative"
+        },
+        "plan": {
+          "requirementQuote": "return a cleanup function to reset",
+          "editBoundary": "existing-applyRef-try-body-only",
+          "cleanupDisposal": "invoke-before-callback",
+          "nullCallbackWhenCleanup": "skip",
+          "legacyDisposal": "invoke-null",
+          "callbackReturn": "store-if-callable",
+          "cleanupStateAfterCall": "clear-to-undefined",
+          "objectRef": "assign-current",
+          "revisionGoal": "Add support for returning cleanup function from callback refs without altering tried error handling or external contracts"
+        },
+        "ownership": null,
+        "program": [
+          {
+            "op": "if",
+            "condition": "value-null"
+          },
+          {
+            "op": "if",
+            "condition": "cleanup-function"
+          },
+          {
+            "op": "call-cleanup",
+            "condition": "none"
+          },
+          {
+            "op": "clear-cleanup",
+            "condition": "none"
+          },
+          {
+            "op": "end",
+            "condition": "none"
+          },
+          {
+            "op": "else",
+            "condition": "none"
+          },
+          {
+            "op": "if",
+            "condition": "ref-function"
+          },
+          {
+            "op": "capture-result",
+            "condition": "none"
+          },
+          {
+            "op": "if",
+            "condition": "result-function"
+          },
+          {
+            "op": "store-result",
+            "condition": "none"
+          },
+          {
+            "op": "end",
+            "condition": "none"
+          },
+          {
+            "op": "else",
+            "condition": "none"
+          },
+          {
+            "op": "end",
+            "condition": "none"
+          },
+          {
+            "op": "else",
+            "condition": "none"
+          },
+          {
+            "op": "set-object",
+            "condition": "none"
+          },
+          {
+            "op": "end",
+            "condition": "none"
+          }
+        ]
+      },
+      {
+        "attempt": 3,
+        "status": "ADMISSION_REJECTED",
+        "sourceHash": null,
+        "feedback": {
+          "kind": "admission",
+          "reason": "Program instruction 7: else has no unmatched if",
+          "stage": "compiler",
+          "correction": "Fix the indicated instruction: balanced if/else/end, condition only on if, result capture at most once and result use inside its declaring block. Cleanup is already bound once; do not declare it.",
+          "authority": "actual compiler rejection only; no automatic source correction or execution"
+        },
+        "bodyDiagnostics": {
+          "format": "repolab-preact-body-diagnostics/v2",
+          "issues": [],
+          "typeWarnings": [],
+          "parsed": false,
+          "authority": "advisory only; frozen admission and native lint remain authoritative"
+        },
+        "plan": {
+          "requirementQuote": "return a cleanup function to reset",
+          "editBoundary": "existing-applyRef-try-body-only",
+          "cleanupDisposal": "invoke-before-callback",
+          "nullCallbackWhenCleanup": "skip",
+          "legacyDisposal": "invoke-null",
+          "callbackReturn": "store-if-callable",
+          "cleanupStateAfterCall": "clear-to-undefined",
+          "objectRef": "assign-current",
+          "revisionGoal": "Add support for returning cleanup function from callback refs without altering tried error handling or external contracts"
+        },
+        "ownership": null,
+        "program": [
+          {
+            "op": "if",
+            "condition": "ref-function"
+          },
+          {
+            "op": "capture-result",
+            "condition": "none"
+          },
+          {
+            "op": "if",
+            "condition": "result-function"
+          },
+          {
+            "op": "store-result",
+            "condition": "none"
+          },
+          {
+            "op": "else",
+            "condition": "none"
+          },
+          {
+            "op": "end",
+            "condition": "none"
+          },
+          {
+            "op": "end",
+            "condition": "none"
+          },
+          {
+            "op": "else",
+            "condition": "none"
+          },
+          {
+            "op": "if",
+            "condition": "cleanup-function"
+          },
+          {
+            "op": "call-cleanup",
+            "condition": "none"
+          },
+          {
+            "op": "clear-cleanup",
+            "condition": "none"
+          },
+          {
+            "op": "end",
+            "condition": "none"
+          },
+          {
+            "op": "set-object",
+            "condition": "none"
+          },
+          {
+            "op": "end",
+            "condition": "none"
+          }
+        ]
+      }
+    ],
+    "accepted": false,
+    "independentlyCorrect": false,
+    "public": null,
+    "independent": null,
+    "native": null,
+    "requests": 3,
+    "operations": 2,
+    "operationIds": [
+      "01a13660-ec43-7298-bdcd-e8e8e11593e5",
+      "01a13660-fdf3-701b-8028-d05d09c1690e"
+    ],
+    "estimatedInferenceUsd": 0.0048453,
+    "usageComplete": true,
+    "priorArtifacts": 507,
+    "limitations": [
+      "Required ownership/declaration/call scaffolding is developer-supplied; model instruction programs determine bounded control flow and actions.",
+      "One scoped public Preact feature request; not hidden benchmark accuracy.",
+      "Two selected repositories remain unsupported; no selected task is removed.",
+      "Independent lifecycle checks are developer-authored and withheld from repair context.",
+      "Same-project cached original image; separate-project portability is untested.",
+      "Framework model workflow is CLI-only; API/UI Preact repair remains unqualified.",
+      "Native browser 11 original skips and TypeScript 2 pending cases remain disclosed."
+    ]
+  },
+  "candidates": [],
+  "sourceExecution": "Only the reviewed original ran; all actual programs rejected before source assembly/execution",
+  "compiler": "Actual programs deterministically fail the recorded instruction checks; no source fixes or reference substitution"
+}

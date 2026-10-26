@@ -1,0 +1,66 @@
+{
+  "format": "repolab-cross-repository-model-admission/v2",
+  "freeze": "314bd7aa389f900a5bcc6571f7b14498d84e384a8fd4549c2c3272b14d4f2d12",
+  "at": "2026-10-15T01:36:10.325Z",
+  "selected": 3,
+  "qualificationAttemptsComplete": 3,
+  "eligible": 2,
+  "blocked": 1,
+  "modelAttemptsBeforeAdmission": 0,
+  "keepAllSelectedTasksInDenominator": true,
+  "taskReplacement": false,
+  "scope": "Only individually native-qualified tasks may receive model requests; every selected task remains in the denominator. All three qualification attempts are complete before model repair dispatch.",
+  "rows": [
+    {
+      "name": "fast-deep-equal",
+      "taskId": "epoberezkin__fast-deep-equal-141",
+      "repo": "epoberezkin/fast-deep-equal",
+      "issue": "https://github.com/epoberezkin/fast-deep-equal/issues/141",
+      "status": "QUALIFIED_REPORT_REPRODUCED",
+      "modelEligible": true,
+      "qualificationSha256": "67f8e79960bebbab423842a30f02d298688f84e262354c1e6bb5e624d42d54df",
+      "nativeSignature": {
+        "passing": [
+          626
+        ]
+      },
+      "operations": 6,
+      "originalImage": "204d3522-d33f-40e7-b76e-6ce4835a9b1d",
+      "dependencyLockSha256": "0f87ccb3e9391ec679e76d12272cc2871eb6950d4ffc8ab26619f0676565c0d6"
+    },
+    {
+      "name": "rfdc",
+      "taskId": "davidmarkclements__rfdc-55",
+      "repo": "davidmarkclements/rfdc",
+      "issue": "https://github.com/davidmarkclements/rfdc/issues/55",
+      "status": "SETUP_OR_REPRODUCTION_FAILED",
+      "modelEligible": false,
+      "qualificationSha256": "579d61158920b0437e13fff3391977d80b1e770be3d1ce660c215108d8d57b07",
+      "nativeSignature": null,
+      "operations": 3,
+      "originalImage": "6e9861df-0308-4248-af0b-398756003792",
+      "dependencyLockSha256": "64e35de3e30b814e56fb5723fb121954f8079aa1bd44037603bb632be34e0496"
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "taskId": "epoberezkin__fast-json-stable-stringify-74",
+      "repo": "epoberezkin/fast-json-stable-stringify",
+      "issue": "https://github.com/epoberezkin/fast-json-stable-stringify/issues/74",
+      "status": "QUALIFIED_REPORT_REPRODUCED",
+      "modelEligible": true,
+      "qualificationSha256": "ecd54df9914a308e8e09dd6be336fcb6a6affab52d0c9fe7b2e489f368e2b965",
+      "nativeSignature": {
+        "tests": [
+          16
+        ],
+        "pass": [
+          16
+        ]
+      },
+      "operations": 6,
+      "originalImage": "5216b1a2-3ba0-40e1-81fe-9f765b8c766d",
+      "dependencyLockSha256": "d4a4162d61a5110fc746f741bf3ea39b4dd6109ab04d4d465a01b5e0d4d2a913"
+    }
+  ],
+  "digest": "3d0aae74d8d9bb3c270cdfc5eb28f5e919a126e1ce0de1a166ae1c5bc70b2015"
+}

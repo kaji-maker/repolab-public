@@ -1,0 +1,136 @@
+{
+  "format": "repolab-onboarding-catalog/v1",
+  "profiles": [
+    {
+      "id": "preact",
+      "taskId": "preactjs__preact-4436",
+      "repository": "preactjs/preact",
+      "commit": "db0f4f2e7a2338ea40050f623f05505a798fc1a4",
+      "manifest": "fixtures/preact-native/original-manifest.json",
+      "manifestSha256": "a4fd773857a17db8181da1b240b1196ccf1e5700ef3dd16e2bb4a016b6303a64",
+      "archive": "repositories/preact-native-v1/original.tar.gz",
+      "archiveRoot": "preact-db0f4f2e7a2338ea40050f623f05505a798fc1a4",
+      "profile": {
+        "id": "preact-original-v1",
+        "repository": "preactjs/preact",
+        "commit": "db0f4f2e7a2338ea40050f623f05505a798fc1a4",
+        "packageSha256": "3601e7260999611e5aaf98d6a5441fc9341d5231422f9036c9ae3520cc1caeb1",
+        "editablePaths": [
+          "src/diff/index.js",
+          "src/diff/children.js",
+          "src/internal.d.ts"
+        ],
+        "generatedPaths": [
+          "compat/dist/compat.js",
+          "compat/dist/compat.mjs",
+          "compat/dist/compat.module.js",
+          "compat/dist/compat.umd.js",
+          "debug/dist/debug.js",
+          "debug/dist/debug.mjs",
+          "debug/dist/debug.module.js",
+          "debug/dist/debug.umd.js",
+          "devtools/dist/devtools.js",
+          "devtools/dist/devtools.mjs",
+          "devtools/dist/devtools.module.js",
+          "devtools/dist/devtools.umd.js",
+          "dist/preact.js",
+          "dist/preact.min.js",
+          "dist/preact.mjs",
+          "dist/preact.module.js",
+          "dist/preact.umd.js",
+          "hooks/dist/hooks.js",
+          "hooks/dist/hooks.mjs",
+          "hooks/dist/hooks.module.js",
+          "hooks/dist/hooks.umd.js",
+          "jsx-runtime/dist/jsxRuntime.js",
+          "jsx-runtime/dist/jsxRuntime.mjs",
+          "jsx-runtime/dist/jsxRuntime.module.js",
+          "jsx-runtime/dist/jsxRuntime.umd.js",
+          "test-utils/dist/testUtils.js",
+          "test-utils/dist/testUtils.mjs",
+          "test-utils/dist/testUtils.module.js",
+          "test-utils/dist/testUtils.umd.js"
+        ],
+        "scripts": {
+          "prepare": "husky && run-s build && check-export-map && npm-merge-driver-install",
+          "build": "npm-run-all --parallel build:*",
+          "build:core": "microbundle build --raw --no-generateTypes -f cjs,esm,umd",
+          "build:core-min": "microbundle build --raw --no-generateTypes -f cjs,esm,umd,iife src/cjs.js -o dist/preact.min.js",
+          "build:debug": "microbundle build --raw --no-generateTypes -f cjs,esm,umd --cwd debug",
+          "build:devtools": "microbundle build --raw --no-generateTypes -f cjs,esm,umd --cwd devtools",
+          "build:hooks": "microbundle build --raw --no-generateTypes -f cjs,esm,umd --cwd hooks",
+          "build:test-utils": "microbundle build --raw --no-generateTypes -f cjs,esm,umd --cwd test-utils",
+          "build:compat": "microbundle build src/index.js src/scheduler.js --raw --no-generateTypes -f cjs,esm,umd --cwd compat --globals 'preact/hooks=preactHooks'",
+          "build:jsx": "microbundle build --raw --no-generateTypes -f cjs,esm,umd --cwd jsx-runtime",
+          "postbuild": "node ./config/node-13-exports.js && node ./config/compat-entries.js",
+          "dev": "microbundle watch --raw --no-generateTypes --format cjs",
+          "dev:hooks": "microbundle watch --raw --no-generateTypes --format cjs --cwd hooks",
+          "dev:compat": "microbundle watch --raw --no-generateTypes --format cjs --cwd compat --globals 'preact/hooks=preactHooks'",
+          "test": "npm-run-all build lint test:unit",
+          "test:unit": "run-p test:mocha test:karma:minify test:ts",
+          "test:ts": "run-p test:ts:*",
+          "test:ts:core": "tsc -p test/ts/ && mocha --require \"@babel/register\" test/ts/**/*-test.js",
+          "test:ts:compat": "tsc -p compat/test/ts/",
+          "test:mocha": "mocha --recursive --require \"@babel/register\" test/shared test/node",
+          "test:mocha:watch": "npm run test:mocha -- --watch",
+          "test:karma": "cross-env COVERAGE=true BABEL_NO_MODULES=true karma start karma.conf.js --single-run",
+          "test:karma:minify": "cross-env COVERAGE=true MINIFY=true BABEL_NO_MODULES=true karma start karma.conf.js --single-run",
+          "test:karma:watch": "cross-env BABEL_NO_MODULES=true karma start karma.conf.js --no-single-run",
+          "test:karma:hooks": "cross-env COVERAGE=false BABEL_NO_MODULES=true karma start karma.conf.js --grep=hooks/test/browser/**.js --no-single-run",
+          "test:karma:test-utils": "cross-env PERFORMANCE=false COVERAGE=false BABEL_NO_MODULES=true karma start karma.conf.js --grep=test-utils/test/shared/**.js --no-single-run",
+          "test:karma:bench": "cross-env PERFORMANCE=true COVERAGE=false BABEL_NO_MODULES=true karma start karma.conf.js --grep=test/benchmarks/**.js --single-run",
+          "benchmark": "npm run test:karma:bench -- no-single-run",
+          "lint": "run-s oxlint tsc",
+          "tsc": "tsc -p jsconfig-lint.json",
+          "oxlint": "oxlint src test debug compat hooks test-utils -c oxlint.json",
+          "format": "biome format --write .",
+          "format:check": "biome format ."
+        },
+        "runtime": {
+          "native": "v20.9.0",
+          "observations": "v20.9.0",
+          "rationale": "Existing pinned Node 20.9.0 native/browser/TypeScript qualification; root engines is unspecified."
+        }
+      }
+    },
+    {
+      "id": "regexparam",
+      "taskId": "lukeed__regexparam-40",
+      "repository": "lukeed/regexparam",
+      "commit": "d05da2631beb7c5620774dae207cb09c7cbf24cc",
+      "manifest": "repositories/github-anchor-v1/regexparam/manifest.json",
+      "manifestSha256": "06ffcc388d288db9075a0d8653c996b244db3e0c96068ba158f3774f262b413a",
+      "archive": "repositories/github-anchor-v1/regexparam/original.tar.gz",
+      "archiveRoot": "regexparam-d05da2631beb7c5620774dae207cb09c7cbf24cc",
+      "profile": {
+        "id": "regexparam-original-v1",
+        "repository": "lukeed/regexparam",
+        "commit": "d05da2631beb7c5620774dae207cb09c7cbf24cc",
+        "packageSha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+        "editablePaths": [
+          "src/index.js"
+        ],
+        "generatedPaths": [
+          "dist/index.js",
+          "dist/index.min.js",
+          "dist/index.mjs"
+        ],
+        "scripts": {
+          "build": "bundt",
+          "test": "uvu -r esm test"
+        },
+        "runtime": {
+          "native": "v12.22.12",
+          "observations": "v24.18.0",
+          "rationale": "Existing pinned native qualification; engine declarations alone are not execution authority. Regexparam native Node 12 is included in original CI; public module loads use the qualified Node 24 supervisor."
+        }
+      }
+    }
+  ],
+  "externalSelection": "evaluation/external-selected-v1.json",
+  "unsupportedRemain": [
+    "facebook__docusaurus-8927",
+    "vuejs__core-11899"
+  ],
+  "scope": "Replay-qualified pinned adapters only; no general GitHub execution, model repair, new task selection or arbitrary script execution"
+}

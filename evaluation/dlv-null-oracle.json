@@ -1,0 +1,215 @@
+{
+  "format": "repolab-dlv-oracle/v1",
+  "referenceAfter": "obj===undefined || p<key.length ? def : obj",
+  "weakAfter": "obj==null ? def : obj",
+  "cases": [
+    {
+      "id": "nested-null-string",
+      "args": [
+        {
+          "x": {
+            "y": null
+          }
+        },
+        "x.y.z",
+        "fallback"
+      ],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "nested-null-array",
+      "args": [
+        {
+          "x": {
+            "y": null
+          }
+        },
+        [
+          "x",
+          "y",
+          "z"
+        ],
+        "fallback"
+      ],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "deep-null",
+      "args": [
+        {
+          "x": {
+            "y": {
+              "z": null
+            }
+          }
+        },
+        "x.y.z.w",
+        "fallback"
+      ],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "root-null",
+      "args": [
+        null,
+        "x",
+        "fallback"
+      ],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "zero-child",
+      "args": [
+        {
+          "x": 0
+        },
+        "x.y",
+        "fallback"
+      ],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "false-child",
+      "args": [
+        {
+          "x": false
+        },
+        [
+          "x",
+          "y"
+        ],
+        "fallback"
+      ],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "empty-child",
+      "args": [
+        {
+          "x": ""
+        },
+        "x.y",
+        "fallback"
+      ],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "leaf-null",
+      "args": [
+        {
+          "x": null
+        },
+        "x",
+        "fallback"
+      ],
+      "expected": "null"
+    },
+    {
+      "id": "leaf-zero",
+      "args": [
+        {
+          "x": 0
+        },
+        [
+          "x"
+        ],
+        "fallback"
+      ],
+      "expected": "0"
+    },
+    {
+      "id": "leaf-false",
+      "args": [
+        {
+          "x": false
+        },
+        "x",
+        "fallback"
+      ],
+      "expected": "false"
+    },
+    {
+      "id": "leaf-empty",
+      "args": [
+        {
+          "x": ""
+        },
+        "x",
+        "fallback"
+      ],
+      "expected": "\"\""
+    },
+    {
+      "id": "ordinary-nested",
+      "args": [
+        {
+          "x": {
+            "y": 7
+          }
+        },
+        [
+          "x",
+          "y"
+        ],
+        "fallback"
+      ],
+      "expected": "7"
+    },
+    {
+      "id": "array-value",
+      "args": [
+        {
+          "x": [
+            3,
+            8
+          ]
+        },
+        [
+          "x",
+          "1"
+        ],
+        "fallback"
+      ],
+      "expected": "8"
+    },
+    {
+      "id": "missing-default",
+      "args": [
+        {
+          "x": {}
+        },
+        "x.y",
+        17
+      ],
+      "expected": "17"
+    },
+    {
+      "id": "null-no-default",
+      "args": [
+        {
+          "x": null
+        },
+        "x.y"
+      ],
+      "expected": "undefined"
+    },
+    {
+      "id": "object-value",
+      "args": [
+        {
+          "x": {
+            "y": 7
+          }
+        },
+        "x",
+        "fallback"
+      ],
+      "expected": "{\"y\":7}"
+    }
+  ],
+  "basis": [
+    "https://github.com/developit/dlv/issues/9",
+    "https://github.com/developit/dlv/blob/250e18e95f873c967cc465e50bdab501cbcffdd6/README.md"
+  ],
+  "scope": "public historical development task; not contamination-free; cases not model feedback"
+}

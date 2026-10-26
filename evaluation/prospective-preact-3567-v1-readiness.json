@@ -1,0 +1,47 @@
+{
+  "format": "repolab-prospective-readiness-overlay/v1",
+  "freeze": "ee67f7900dda8920d4e2b72e46b68a0c1608d1b73a6aed0fe97737c16386304b",
+  "taskId": "preactjs__preact-3567",
+  "status": "PREPARED_ONLY",
+  "newModelCalls": 0,
+  "newSandboxOperations": 0,
+  "executionAdmission": false,
+  "candidateAdmission": false,
+  "nativeRuntimeQualified": false,
+  "originalReproduced": false,
+  "accuracy": null,
+  "cohortOriginalOperations": 47,
+  "cohortUnknownOriginalSubmissions": 1,
+  "counts": {
+    "selected": 8,
+    "originalBaselineQualified": 4,
+    "unresolvedTasks": 1,
+    "pendingPreparation": 3,
+    "offlinePreparedPending": 2,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0,
+    "unpreparedPending": 1
+  },
+  "validation": {
+    "focusedControllerTests": 8,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3299,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesUnchanged": true,
+    "upstreamSourceExecution": false,
+    "probeExecution": false,
+    "retainedInitialTestFailure": false,
+    "retainedCompletionPreflightFailure": true
+  },
+  "existingExecutionBlocker": {
+    "status": "UNCHANGED_UNKNOWN_SUBMISSION",
+    "executionAdmission": false,
+    "bothSharedLeasesPresent": true
+  },
+  "nextOfflineTask": "vuejs__core-11915",
+  "nextLiveAction": "Resolve Preact 3763 V2 missing submission receipt and qualify diagnostic-preserving transport before a separate original-execution freeze",
+  "inference": "none",
+  "execution": "offline original-source data verification and saved-state inspection; no upstream or probe execution"
+}

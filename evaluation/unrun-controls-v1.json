@@ -1,0 +1,50 @@
+{
+  "format": "repolab-unrun-controls/v1",
+  "digest": "c98680cfa17ea2d0c5ac5fa2bbd0b73a72c57291878136636cdce1127b06954f",
+  "previousDigest": "e82113c0c208fd7aa61a12ddba304cbfe1bf75fda1b39db574259ba37609f05c",
+  "scope": "authored-model-unrun-controls-no-external-heldout-claim",
+  "maxInferenceCalls": 0,
+  "maxOperations": 4,
+  "tasks": [
+    "refund-missing-facts",
+    "shipping-already-correct"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/unrun-controls.ts",
+      "sha256": "38ae51d1cc72fa9866a48ddd9914c5ad535f74211e11e066e2659cfebf2b83da"
+    },
+    {
+      "path": "apps/evaluator/unrun-controls.ts",
+      "sha256": "3f949547475ebac1b48dfeb31854f3e7eda4061b213ab438e5585467017f85b6"
+    },
+    {
+      "path": "fixtures/unrun-controls/shipping-fee.cjs",
+      "sha256": "f49cd9c506dd882375759043bf181827672b428aaeb50a407a04e45185358efe"
+    },
+    {
+      "path": "fixtures/unrun-controls/refund-amount.cjs",
+      "sha256": "7279a2140e19938c3463449e9a978f417a9c16d1d62f1d3c59463574e12978e5"
+    },
+    {
+      "path": "fixtures/unrun-controls/shipping-policy.json",
+      "sha256": "ce6cacb7ddf0461da85041ac1ef69f5c06346ae23aec84468c3230f9e34e0f0d"
+    },
+    {
+      "path": "evaluation/unrun-controls-cases.json",
+      "sha256": "1ff7751d702617b5ca2f724e3f2a4628ae2ded635bb83f9b18f94f29534710d5"
+    },
+    {
+      "path": "repositories/unrun-controls/observer.mjs",
+      "sha256": "4ccdf7c246e7d4b51d2ea3adf56b1e445aaf9dd59370ca5051a421a98484b7db"
+    },
+    {
+      "path": "tests/unrun-controls.test.ts",
+      "sha256": "24d5c82b1ade6ec2588e9ba0c50e8a8edf84a063a74497fafaf6d3b1d3860a7a"
+    },
+    {
+      "path": "evaluation/UNRUN_CONTROLS_V1.md",
+      "sha256": "b85edce25ee2c2edc4b71417da8f0b9df9495bad43f72e66621e0d81028fb41e"
+    }
+  ]
+}

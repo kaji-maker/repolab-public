@@ -1,0 +1,63 @@
+{
+  "format": "repolab-github-pilot/v1",
+  "previousStudyDigest": "ecf9a092ccd36965b32c8256608a61443ec18618c5906e9fd8810710674824bf",
+  "task": "dlv-nested-null",
+  "scope": "one-new-public-historical-development-task",
+  "maxCandidates": 2,
+  "maxCalls": 3,
+  "maxOperations": 16,
+  "inferenceBudgetUsd": 0.1,
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "requestPolicy": "nemotron-low-effort-v1",
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "assets": [
+    {
+      "path": "packages/evaluation/github-pilot.ts",
+      "sha256": "952ea6021c90565dac0b8c0302b7f5ea1bd31ec1980c2a101a09578335f0d118"
+    },
+    {
+      "path": "packages/evaluation/github-runner.ts",
+      "sha256": "6bec63d8184c2fe3d6f13b8dbc3d124d94c7682006129e2773f51bea8bb78e37"
+    },
+    {
+      "path": "apps/evaluator/github-pilot.ts",
+      "sha256": "c262fc333bcc5e75a2fe4a878580a645c93ed2c86fa63b5f855ae5dd09afae4e"
+    },
+    {
+      "path": "repositories/dlv-null.case.json",
+      "sha256": "aaf5d537dea5ef7c26119926ed34fb830e1f61a0d4f009fed739ecd07f8ba3a0"
+    },
+    {
+      "path": "fixtures/dlv-upstream/original-snapshot.json",
+      "sha256": "de5c9816d67ef1424995e61e4a9ec82a9140c178061e8a87e412ba5861c57b2e"
+    },
+    {
+      "path": "repositories/dlv-pilot/preload.cjs",
+      "sha256": "24df4ae55e229ab9a32290f7be3849c101d320f4ef326ddf1e1792d6b860b63a"
+    },
+    {
+      "path": "repositories/dlv-pilot/baseline-runner.mjs",
+      "sha256": "5fc8253f23fa65c8ab1e13b50d5d9918d7ea64da7d660d818efdaedb6e9578f7"
+    },
+    {
+      "path": "repositories/dlv-pilot/observer.mjs",
+      "sha256": "c33ac6c33b67bb896933cb9341b93539224cd2c32e8117e0d4d0b5e50471c083"
+    },
+    {
+      "path": "evaluation/dlv-null-oracle.json",
+      "sha256": "4d69b41a464c9f3f2b948c4050f61a66766af221969de63db24705f96b45262f"
+    },
+    {
+      "path": "evaluation/GITHUB_PILOT_V1.md",
+      "sha256": "47273297621ed467ce1ed0e0b8d8205517e57ecf58c4aefa5ceb7b45560d6309"
+    },
+    {
+      "path": "tests/github-pilot.test.ts",
+      "sha256": "74288ef156ee519860fc6d07cee9c78a7a38df4cddec782a3ee311bb56b2b844"
+    }
+  ],
+  "digest": "008ba9bfac8725821a8460acff559be94ca26d3333f1607c80cf8539211004e6"
+}

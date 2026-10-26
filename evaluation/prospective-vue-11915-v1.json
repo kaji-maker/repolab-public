@@ -1,0 +1,106 @@
+{
+  "format": "repolab-prospective-vue-offline-preparation/v1",
+  "taskId": "vuejs__core-11915",
+  "commit": "d0b513eb463f580e29378e43d112ff6859aa366e",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "status": "PREPARED_ONLY",
+  "maxModelCalls": 0,
+  "maxSandboxOperations": 0,
+  "proposedOriginalOperations": 8,
+  "taskOriginalCeiling": 12,
+  "executionAdmission": false,
+  "candidateAdmission": false,
+  "nativeRuntimeQualified": false,
+  "originalReproduced": false,
+  "assets": [
+    {
+      "path": "packages/evaluation/prospective-vue-11915-v1.ts",
+      "sha256": "5e7fd1224960fb10bf0075d2844c561d75bf8b16ef84dca144313c1281157aa9"
+    },
+    {
+      "path": "apps/evaluator/prospective-vue-11915-v1.ts",
+      "sha256": "eee8c00eaa0e14c10557a7822c4ace818d7047c3ff6fce807ec62e2e964b36c4"
+    },
+    {
+      "path": "tests/prospective-vue-11915-v1.test.ts",
+      "sha256": "3d472e06ebd8ba81bd274b1cc030f6acc04e061e50279c54fdfa743f051f6e40"
+    },
+    {
+      "path": "evaluation/PROSPECTIVE_VUE_11915_V1.md",
+      "sha256": "52535fb4411f66126d84d6009de65a97a84c58216d93b2e6d99709ae5597b8c5"
+    },
+    {
+      "path": "repositories/prospective-vue-11915-v1/original.tar.gz",
+      "sha256": "4ef45546927b3d915668e2ecfb341c6fcce0a042e666a96dd3f403b9f402c65f"
+    },
+    {
+      "path": "repositories/prospective-vue-11915-v1/LICENSE",
+      "sha256": "49190d1f742dd61e47fe816df4963e5186a2a62100d9122f9883a60ea32973ac"
+    },
+    {
+      "path": "repositories/prospective-vue-11915-v1/report-derived.html",
+      "sha256": "ec0f15ef76c5c6815bdccc805d2d3073b6d7f8cd2de5a38962778303d5f04468"
+    },
+    {
+      "path": "repositories/prospective-vue-11915-v1/control-plain.html",
+      "sha256": "a899fe11a500d030ef8f01b284abea305e32ae8d872ed97caa439f1bf633f158"
+    },
+    {
+      "path": "repositories/prospective-vue-11915-v1/control-closed.html",
+      "sha256": "73b0bfa725af572617aa3b9955215a7552304f21b60482b27d8417db5b573228"
+    },
+    {
+      "path": "repositories/prospective-vue-11915-v1/control-outside.html",
+      "sha256": "061dae1f7155038b4bbbab1314dceb943d8e3f4dc241bb7d582be03da1adafe7"
+    },
+    {
+      "path": "repositories/prospective-vue-11915-v1/reproduction.cjs",
+      "sha256": "63810e28165d92ff7371aa4881d0b9a5fcb05d983a5a443099b78dbcb832247a"
+    },
+    {
+      "path": "fixtures/prospective-vue-11915-v1/original-manifest.json",
+      "sha256": "5a06be41d860f820d4479800ce2369992653fb5c49a55e61d7cd106d0a9e1160"
+    },
+    {
+      "path": "fixtures/prospective-vue-11915-v1/commit.json",
+      "sha256": "b2073c1a19a9faa9d05cca25835ba90d6e692b78e5f1753ac9b51172f4d0ce59"
+    },
+    {
+      "path": "fixtures/prospective-vue-11915-v1/canonical-tree.json",
+      "sha256": "9d19f3b207ffa4be4bf196c2c88203c98b551ed47b5a79122851b3d32edabca7"
+    },
+    {
+      "path": "fixtures/prospective-vue-11915-v1/context.json",
+      "sha256": "f9792aa70bf1b0f30c326ba306b28fd2764d31e02b5ac493255a6e0308c1909f"
+    },
+    {
+      "path": "fixtures/prospective-vue-11915-v1/native-plan.json",
+      "sha256": "6014267dd225f3aae43a40dcbdaaf8631038b7eb1a3136da5a10e19f68948736"
+    },
+    {
+      "path": "fixtures/prospective-vue-11915-v1/public-fixtures.json",
+      "sha256": "b2ef8a3881f7aad7b6b9b99543ac20b4a677a8a2d6ac187bd177901ef1a17bfc"
+    },
+    {
+      "path": ".repolab/prospective-vue-11915-v1-preparation/execution-blocker.json",
+      "sha256": "cf7698ffe50af25a247e411009c86a66edb90e7f38e0b661eb1269f1e3f537a5"
+    },
+    {
+      "path": "packages/evaluation/prospective-v1.ts",
+      "sha256": "d3d4e43fbecf62dfaa0c6e4e6ec485bd4e641168e150617146e90cdf9f054c33"
+    },
+    {
+      "path": "evaluation/prospective-v1.json",
+      "sha256": "e3ed56f8be7ad7a4112634c76011d267fafda9847f1f0f10e1c7e2f2d1753d02"
+    },
+    {
+      "path": "packages/repositories/onboarding-v1.ts",
+      "sha256": "1362ef1b82c6325bdeb9ca5654506d4e760e471562fd3b9822d269834a35748c"
+    },
+    {
+      "path": "packages/evaluation/prospective-vue-11589-v1.ts",
+      "sha256": "68ad5452febf328ef27f7ca1dcea648c573a2b4345fcb4b6fcab623ab593bb4b"
+    }
+  ],
+  "digest": "ee63c08737890ec9aa8e09ca2dd2ff4a1d9c9e010f740e3312e40f9c3872db75"
+}

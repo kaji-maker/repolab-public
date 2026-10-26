@@ -1,0 +1,72 @@
+{
+  "format": "repolab-vue-11870-file-presence-results/v1",
+  "status": "TARGET_ABSENT_IN_VERIFIED_CURRENT_NAMESPACE",
+  "ticket": "CLOUDSUPPORT-1237160",
+  "supportReplyAt": "2026-10-21T14:14:06Z",
+  "supportEscalationAt": "2026-10-21T07:18:14Z",
+  "providerGuidance": {
+    "lookup": "HEAD /v1/files/{sha256} in original namespace; GET metadata when present",
+    "documentedPresenceStatuses": [
+      200,
+      404
+    ],
+    "providerStatesPresenceGuaranteed": true,
+    "providerStatesIdempotencyKeysUnsupported": true,
+    "providerStatesServiceEarlyAccessWithoutReliabilitySLA": true
+  },
+  "readOnlyRequests": 3,
+  "observations": [
+    {
+      "role": "positive_control",
+      "method": "HEAD",
+      "sha256": "a0cc98ea4ac0db588169a339c4ed4604d6879e0611d1c06851653067b15e9d5b",
+      "httpStatus": 200,
+      "category": "present",
+      "startedAt": "2026-10-21T17:21:06.053Z",
+      "finishedAt": "2026-10-21T17:21:06.942Z"
+    },
+    {
+      "role": "positive_control",
+      "method": "GET",
+      "sha256": "a0cc98ea4ac0db588169a339c4ed4604d6879e0611d1c06851653067b15e9d5b",
+      "httpStatus": 200,
+      "category": "present",
+      "startedAt": "2026-10-21T17:21:08.074Z",
+      "finishedAt": "2026-10-21T17:21:08.689Z",
+      "metadata": {
+        "uuid": "6c0dd7e5-d7e4-51dd-b0db-7a132ca6f464",
+        "sha256": "a0cc98ea4ac0db588169a339c4ed4604d6879e0611d1c06851653067b15e9d5b",
+        "size": 1483528,
+        "created_at": "2026-10-21T06:28:46.613818Z",
+        "updated_at": "2026-10-21T06:28:46.613818Z"
+      }
+    },
+    {
+      "role": "unknown_manifest",
+      "method": "HEAD",
+      "sha256": "a1abab3bf2fe1bd426cc56e375b609d587b6cfb768414c82e0e74ce6cca754bb",
+      "httpStatus": 404,
+      "category": "absent",
+      "startedAt": "2026-10-21T17:21:09.758Z",
+      "finishedAt": "2026-10-21T17:21:10.341Z"
+    }
+  ],
+  "positiveControlMatchedOriginalUuidHashSize": true,
+  "targetBytes": 190219,
+  "meaning": "Manifest absent in the positively verified current namespace. This does not retrospectively attest original POST rejection or billing.",
+  "originalUploadRecord": "UNKNOWN_UNCHANGED",
+  "reconciliationApplied": false,
+  "liveAdmission": false,
+  "sharedLeases": "BOTH_HELD_UNCHANGED",
+  "uploadRetries": 0,
+  "jobSubmissions": 0,
+  "inferenceCalls": 0,
+  "syntheticIntegrityGroups": 6,
+  "priorPrivateFilesUnchanged": 3484,
+  "configuredCredentialAndProjectMarkerExclusion": "PASS",
+  "provenance": {
+    "inference": "none",
+    "execution": "Gmail reads, six synthetic metadata groups, three actual provider file metadata HEAD/GET requests; no code execution or guard changes"
+  },
+  "next": "Reviewed exact-case local reconciliation using attributable provider guidance and namespace-bound metadata evidence; consumed workflow remains closed and any live attempt needs a new freeze."
+}

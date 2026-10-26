@@ -1,0 +1,38 @@
+{
+  "status": "STOPPED_UNQUALIFIED_READ_ONLY_RESOLVED",
+  "freeze": "cd96116fce0a9a6ee3071e7627b72a96028f00d5e06ee70e431d00ea096726bf",
+  "originalQualified": false,
+  "executionAdmission": false,
+  "modelAdmission": false,
+  "candidateAdmission": false,
+  "workflowResumable": false,
+  "unknownSubmissions": 0,
+  "sharedExecutionLocksPresent": false,
+  "rawState": "UNKNOWN",
+  "rawJournalPreserved": true,
+  "recoveryVerified": false,
+  "taskOriginalOperations": 10,
+  "taskOriginalCeiling": 12,
+  "remainingTaskOperationBudget": 2,
+  "fullFreshQualificationFitsBudget": false,
+  "unrunSlots": [
+    "browser-B",
+    "reproduction-B"
+  ],
+  "cohort": {
+    "selected": 8,
+    "qualifiedOriginals": 4,
+    "stoppedUnqualified": 1,
+    "otherPreparedPending": 3,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0,
+    "confirmedOriginalExecutionOperations": 52,
+    "providerRejectedPosts": 1,
+    "unknownSubmissions": 0,
+    "accuracy": null
+  },
+  "nextTask": "vuejs__core-11870",
+  "nextAction": "Qualify bounded retries for exact-ID read-only status GETs in a separate future transport profile; then freeze Vue 11870 original execution. Never resume Preact V1/V2/V3 or exceed its original operation ceiling.",
+  "inference": "none",
+  "execution": "Five actual Nebius Sandbox original-only operations; final operation resolved by one exact-ID GET. Keyless saved-data audit; no new execution."
+}

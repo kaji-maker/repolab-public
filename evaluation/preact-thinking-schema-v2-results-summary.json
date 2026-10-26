@@ -1,0 +1,50 @@
+{
+  "format": "repolab-preact-thinking-schema-public-results/v2",
+  "result": {
+    "freeze": "2bfd0055be82c8f4a1dd77f232d08f0c5fb227d72c41b972f5903fdec6a18384",
+    "status": "QUALIFIED_THINKING_REQUEST",
+    "calls": 1,
+    "operations": 0,
+    "costUsd": 0.0007367999999999999,
+    "qualification": {
+      "format": "repolab-preact-thinking-schema-qualification/v2",
+      "schemaHash": "110a45a55c4741153bf902c59843a568d122c54ec7f3f7b9ce4df35618276b84",
+      "compiledBodyHash": "820d9fce189b332d61dbb768cfbfd9e7143661ad557f421696ee4c29b185fa2a",
+      "support": "Exact recursive schema accepted with a matching complete reply; no general schema or repair quality claim",
+      "inference": "nebius",
+      "execution": "none (schema check and syntax compilation only)"
+    },
+    "reasoning": {
+      "present": true,
+      "bytes": 1368,
+      "sha256": "d698bb5a33116d076e9af2593f566272c0c5022cae88d8be79e2bb10a5cbe962"
+    },
+    "at": "2026-10-14T15:17:03.440Z"
+  },
+  "rawFiles": [
+    {
+      "path": "STARTED.json",
+      "sha256": "214eea9dd8741a293561c5c0f6202968d80412f4607778e8e442870fccf85fea"
+    },
+    {
+      "path": "request.json",
+      "sha256": "24251dc5e205351f223934742c6bb669bcb2087bff95a3fe74a37e221be77beb"
+    },
+    {
+      "path": "completion.json",
+      "sha256": "b3c2cf4345d5e2a9cdbda4baac07f4620c0872ff64237b95e5fa8f535723d9e0"
+    },
+    {
+      "path": "diagnostic.json",
+      "sha256": "eac5649ceebf08032af63996f144e3a8ea6eb20f9e451693fc897f4c37f3ea69"
+    },
+    {
+      "path": "reply.json",
+      "sha256": "dfe6eab4e872e8e400caca4af9b9dfb275475b74595f41e09910024fde28673b"
+    },
+    {
+      "path": "result.json",
+      "sha256": "8df4a7df2ec2c63335eedbe6815f39dd7a156fc94ccb3267509a6be45bc75925"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "format": "repolab-judge-review-clean-results/v1",
+  "status": "RECORDED_REVIEW_CLEAN_CHECKS_PASS",
+  "releaseManifestSha256": "6a3192ae4fd4b04a3647684a9760924c747a4b393415170f139b96018b9ba241",
+  "archiveSha256": "10987986678b69d7925d0c9eb1a0da9a4f7bade748bb9d2b2d6e52520a68c348",
+  "archiveBytes": 608078,
+  "qualificationPlans": {
+    "initialSha256": "a8664760c45d765ecf4da588f9b4778fd7cfc6327a0f42d44d69bf7c12f79c8e",
+    "revisedSha256": "aba60e30953f6b9414c8db806ffa63953f57e1b564682f19f24f50277f01bde6"
+  },
+  "bundleAssets": 13,
+  "sourceRebuild": "BYTE_IDENTICAL_MANIFEST",
+  "containerEnvironments": [
+    {
+      "name": "debian",
+      "node": "v24.21.0",
+      "image": "sha256:3d27e5c11e5786e309ec3e03f93ae536eb36e6e5eb3714d5eb3300a36157add0",
+      "osRelease": [
+        "VERSION_ID=\"12\"",
+        "ID=debian"
+      ],
+      "successfulStarts": 2,
+      "nonLoopbackInterfaces": 0,
+      "providerVariables": 0,
+      "user": 1000,
+      "finalBundleVerification": "PASS"
+    },
+    {
+      "name": "alpine",
+      "node": "v24.21.0",
+      "image": "sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1",
+      "osRelease": [
+        "ID=alpine",
+        "VERSION_ID=3.24.2"
+      ],
+      "successfulStarts": 2,
+      "nonLoopbackInterfaces": 0,
+      "providerVariables": 0,
+      "user": 1000,
+      "finalBundleVerification": "PASS"
+    }
+  ],
+  "controllerIntegrityGroups": 11,
+  "browser": {
+    "version": "155.0.8059.39",
+    "freshContextsAndServerStarts": 2,
+    "viewports": [
+      1440,
+      390,
+      320
+    ],
+    "threeFileComparisons": "PASS",
+    "exactImportAndTamperRefusal": "PASS",
+    "offlineImportAndThreeDownloads": "PASS",
+    "pageErrors": 0,
+    "nonlocalOrMutationRequests": 0,
+    "bundleUnchanged": true
+  },
+  "retainedUnsuccessfulAttempts": [
+    {
+      "phase": "initial browser qualification",
+      "cause": "Harness wrongly required both an addition and deletion for every changed file; the TypeScript file has an insertion-only change.",
+      "resolution": "New V2 harness accepts either change sign and still binds exact full-patch/export bytes. V1 failure, original plan and original harness preserved; release unchanged."
+    }
+  ],
+  "preservation": {
+    "priorPrivateFilesUnchanged": 3468,
+    "authoritativeLeases": "BOTH_HELD_UNCHANGED",
+    "historicalArchivesAndProtocols": "UNCHANGED"
+  },
+  "newInferenceCalls": 0,
+  "newProviderCalls": 0,
+  "candidateExecution": false,
+  "fullControllerSuiteRun": false,
+  "openGates": [
+    "separate-machine installation and browser walkthrough",
+    "unaided human reviewer session",
+    "working judge access including required Nebius/NVIDIA runtime integration",
+    "public source and release publication after owner authorization",
+    "free access and any provider credential/credit coverage through judging"
+  ],
+  "provenance": {
+    "inference": "none",
+    "execution": "reviewed local controller/browser checks and two fresh network-disabled container userspaces on the original Linux host; all pack/source/observer contents remain data"
+  },
+  "scope": "recorded-review build only; not a qualification of the full live repair application or new repair accuracy"
+}

@@ -1,0 +1,1261 @@
+{
+  "result": {
+    "format": "repolab-preact-trial-result/v9",
+    "freeze": "5e53d9f97290e001772074fb9b7da48eff34fb769529c09255b9b7747d33fd71",
+    "status": "ABSTAINED",
+    "taskId": "preactjs__preact-4436",
+    "provenance": {
+      "inference": "nebius",
+      "execution": "nebius-sandbox",
+      "model": "nvidia/nemotron-3-super-120b-a12b"
+    },
+    "selected": 3,
+    "qualified": 1,
+    "modelAttempted": 1,
+    "unsupported": [
+      "facebook__docusaurus-8927",
+      "vuejs__core-11899"
+    ],
+    "candidates": [
+      {
+        "attempt": 1,
+        "status": "ADMISSION_REJECTED",
+        "sourceHash": null,
+        "feedback": {
+          "kind": "admission",
+          "reason": "Ownership macro contract incomplete",
+          "ownershipIssues": [
+            {
+              "field": "refUpdates",
+              "actual": "original",
+              "required": "transfer-cleanup"
+            },
+            {
+              "field": "unmountContext",
+              "actual": "original",
+              "required": "vnode"
+            }
+          ],
+          "bodyDiagnostics": {
+            "format": "repolab-preact-body-diagnostics/v2",
+            "issues": [],
+            "typeWarnings": [],
+            "issueCount": 0,
+            "typeWarningCount": 0,
+            "diagnosticsTruncated": false,
+            "parsed": true,
+            "authority": "advisory only; frozen admission and native lint remain authoritative"
+          },
+          "correction": "This feature trial requires transfer-cleanup ref updates and the vnode unmount owner. These existing qualified macros supply state ownership and old-owner routing; the candidate body still requires original native/public verification.",
+          "authority": "source-scaffolding requirement only; not a callback-body verdict",
+          "generation": "deterministic compilation of actual model program"
+        },
+        "bodyDiagnostics": {
+          "format": "repolab-preact-body-diagnostics/v2",
+          "issues": [],
+          "typeWarnings": [],
+          "issueCount": 0,
+          "typeWarningCount": 0,
+          "diagnosticsTruncated": false,
+          "parsed": true,
+          "authority": "advisory only; frozen admission and native lint remain authoritative"
+        },
+        "plan": {
+          "requirementQuote": "return a cleanup function to reset",
+          "editBoundary": "existing-applyRef-try-body-only",
+          "cleanupDisposal": "invoke-before-callback",
+          "nullCallbackWhenCleanup": "skip",
+          "legacyDisposal": "invoke-null",
+          "callbackReturn": "store-if-callable",
+          "cleanupStateAfterCall": "clear-to-undefined",
+          "objectRef": "assign-current",
+          "revisionGoal": "Support ref cleanup functions by invoking stored cleanup before disposing of the ref and storing returned functions as cleanup state."
+        },
+        "ownership": null,
+        "program": [
+          {
+            "kind": "if",
+            "condition": "ref-function",
+            "then": [
+              {
+                "kind": "action",
+                "action": "capture-result"
+              },
+              {
+                "kind": "if",
+                "condition": "result-function",
+                "then": [
+                  {
+                    "kind": "action",
+                    "action": "store-result"
+                  }
+                ],
+                "else": [
+                  {
+                    "kind": "action",
+                    "action": "call-ref"
+                  }
+                ]
+              },
+              {
+                "kind": "if",
+                "condition": "cleanup-present",
+                "then": [
+                  {
+                    "kind": "action",
+                    "action": "call-cleanup"
+                  },
+                  {
+                    "kind": "action",
+                    "action": "clear-cleanup"
+                  }
+                ],
+                "else": []
+              }
+            ],
+            "else": [
+              {
+                "kind": "if",
+                "condition": "value-null",
+                "then": [],
+                "else": [
+                  {
+                    "kind": "action",
+                    "action": "set-object"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "attempt": 2,
+        "status": "NATIVE_REJECTED",
+        "sourceHash": "1246b7e68394f22b6c6baac9594e11e173daa3ec589e58a9dac872b026944609",
+        "feedback": {
+          "kind": "native",
+          "stage": "browser-A",
+          "exitCode": 1,
+          "stdout": "],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:569:3)\n\nAssertionError: outer initial: expected spy('outer') to have been called exactly once, but it was called twice\n\n    spy('outer')({ props: {},\n\n  context: {},\n\n  state: {},\n\n  __n: {},\n\n  __d: false,\n\n  __h: [],\n\n  _sb: [],\n\n  __s: {},\n\n  __v: \n\n   { type: [Function: Outer2],\n\n     props: {},\n\n     key: undefined,\n\n     ref: [Function],\n\n     __k: [ [Object] ],\n\n     __: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:565:18)\n\n\n\n    spy('outer')({ props: {},\n\n  context: {},\n\n  state: {},\n\n  __n: {},\n\n  __d: false,\n\n  __h: [],\n\n  _sb: [],\n\n  __s: {},\n\n  __v: \n\n   { type: [Function: Outer2],\n\n     props: {},\n\n     key: undefined,\n\n     ref: [Function],\n\n     __k: [ [Object] ],\n\n     __: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:569:3)\n    at Context.<anonymous> (test/browser/refs.test.js:219:42)\n\n\n\n    ✖ should null and re-invoke refs when swapping component root element type\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    expected handleMount to have been called exactly once, but it was called twice\n\n      + expected - actual\n\n      \n    at handleMount({}) at N (src/diff/index.js:565:18)\n    at handleMount({}) at N (src/diff/index.js:569:3)\n\nAssertionError: expected handleMount to have been called exactly once, but it was called twice\n    at handleMount({}) at N (src/diff/index.js:565:18)\n    at handleMount({}) at N (src/diff/index.js:569:3)\n    at Context.<anonymous> (test/browser/refs.test.js:369:36)\n\n\n\n    ✖ should add refs to components representing DOM nodes with no attributes if they have been pre-rendered\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    expected spy('ref') to have been called exactly once, but it was called twice\n\n      + expected - actual\n\n      \n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n\nAssertionError: expected spy('ref') to have been called exactly once, but it was called twice\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at Context.<anonymous> (test/browser/refs.test.js:413:23)\n\n\n\n    ✖ should properly call null for memoized components keyed\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected [ <div>hey</div>, <div>hey</div> ] to deeply equal [ <div>hey</div> ]\n\n      + expected - actual\n\n       [\n         \"[object HTMLDivElement]\"\n      -  \"[object HTMLDivElement]\"\n       ]\n      \n    at Context.<anonymous> (test/browser/refs.test.js:520:25)\n\n\n\n    ✖ should properly call null for memoized components unkeyed\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected 2 to equal 1\n\n      + expected - actual\n\n      -2\n      +1\n      \n    at Context.<anonymous> (test/browser/refs.test.js:541:27)\n\n\n\n    ✖ should first clean-up refs and after apply them\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected [ Array(4) ] to deeply equal [ Array(2) ]\n\n      + expected - actual\n\n       [\n         \"adding ref to two\"\n      -  \"adding ref to two\"\n         \"adding ref to three\"\n      -  \"adding ref to three\"\n       ]\n      \n    at Context.<anonymous> (test/browser/refs.test.js:622:25)\n\n\n\n\n=============================== Coverage summary ===============================\nStatements   : 99.62% ( 807/810 )\nBranches     : 97.17% ( 1203/1238 )\nFunctions    : 99.13% ( 228/230 )\nLines        : 99.61% ( 769/772 )\n================================================================================\n",
+          "stderr": "Browserslist: caniuse-lite is outdated. Please run:\n  npx update-browserslist-db@latest\n  Why you should do it regularly: https://github.com/browserslist/update-db#readme\n✘ [ERROR] Could not resolve \"node:stream\"\n\n    node_modules/preact-render-to-string/dist/stream-node.module.js:1:28:\n      1 │ import { PassThrough } from 'node:stream';\n        ╵                             ~~~~~~~~~~~~~\n\n  The package \"node:stream\" wasn't found on the file system but is built into node. Are you trying to bundle for node? You can use \"platform: 'node'\" to do that, which will remove this error.\n\n",
+          "bodyDiagnostics": {
+            "format": "repolab-preact-body-diagnostics/v2",
+            "issues": [],
+            "typeWarnings": [],
+            "issueCount": 0,
+            "typeWarningCount": 0,
+            "diagnosticsTruncated": false,
+            "parsed": true,
+            "authority": "advisory only; frozen admission and native lint remain authoritative"
+          }
+        },
+        "bodyDiagnostics": {
+          "format": "repolab-preact-body-diagnostics/v2",
+          "issues": [],
+          "typeWarnings": [],
+          "issueCount": 0,
+          "typeWarningCount": 0,
+          "diagnosticsTruncated": false,
+          "parsed": true,
+          "authority": "advisory only; frozen admission and native lint remain authoritative"
+        },
+        "plan": {
+          "requirementQuote": "return a cleanup function to reset",
+          "editBoundary": "existing-applyRef-try-body-only",
+          "cleanupDisposal": "invoke-before-callback",
+          "nullCallbackWhenCleanup": "skip",
+          "legacyDisposal": "invoke-null",
+          "callbackReturn": "store-if-callable",
+          "cleanupStateAfterCall": "clear-to-undefined",
+          "objectRef": "assign-current",
+          "revisionGoal": "Support ref cleanup functions by invoking stored cleanup before disposing of the ref and storing returned functions as cleanup state."
+        },
+        "ownership": {
+          "format": "repolab-preact-ownership-record/v1",
+          "sourceHash": "1246b7e68394f22b6c6baac9594e11e173daa3ec589e58a9dac872b026944609",
+          "requiredMacros": {
+            "refUpdates": "transfer-cleanup",
+            "unmountContext": "vnode"
+          },
+          "sourceFiles": [
+            {
+              "path": "src/diff/index.js",
+              "sha256": "76ff02076b3984cab296a52d51a820b47e84cd9ca3e70d7cc24d8854e82d2f33"
+            },
+            {
+              "path": "src/diff/children.js",
+              "sha256": "e3386f9a169f19e34f665881e0a4f659fd2d25122a5d245988bfe15eb09b2724"
+            },
+            {
+              "path": "src/internal.d.ts",
+              "sha256": "260d90e923a84b146752a0db3ee51d23c8e0473e999abb4d1e70fdc8219dc515"
+            }
+          ],
+          "checks": [
+            {
+              "id": "old-owner-routing",
+              "sourcePath": "src/diff/children.js",
+              "markerHash": "55b58dd607557610c6f89b196a15a6497d53edb06ceb41620fe2545fec4ad8e2",
+              "matches": 1
+            },
+            {
+              "id": "state-transfer",
+              "sourcePath": "src/diff/children.js",
+              "markerHash": "a87e5f9d63cf9afd3d4966a071388aa87548420fb4878d9b081b868ce089c1eb",
+              "matches": 1
+            },
+            {
+              "id": "prior-owner-clear",
+              "sourcePath": "src/diff/children.js",
+              "markerHash": "0801bf683e63c31ea9d909b4208534c12ad835c277aee2a55fb21823a18da31f",
+              "matches": 1
+            },
+            {
+              "id": "removed-ref-disposal",
+              "sourcePath": "src/diff/children.js",
+              "markerHash": "f3f4f7ecf68aa04526c2938a35d319c2043b3219709410f73246dab4cb8b1761",
+              "matches": 1
+            },
+            {
+              "id": "unmount-owner",
+              "sourcePath": "src/diff/index.js",
+              "markerHash": "536b4a13ea26fcc471d9bd03c4474444a856cf7dbb71a1e0ec3ae68088ada38e",
+              "matches": 1
+            },
+            {
+              "id": "separate-owner-parameter",
+              "sourcePath": "src/diff/index.js",
+              "markerHash": "0159405b69d9758a53ababf712d159ca6e9b40cf7e6087e0206d67fa524e05ed",
+              "matches": 1
+            },
+            {
+              "id": "optional-cleanup-type",
+              "sourcePath": "src/internal.d.ts",
+              "markerHash": "585845a53193e578c01762b038a78845a3c147dc7c5e3d174bfcf76943abc635",
+              "matches": 1
+            }
+          ],
+          "authority": "exact qualified ownership scaffolding only; callback body requires unchanged native/public gates",
+          "provenance": {
+            "inference": "none (controller source comparison)",
+            "execution": "none (static bytes and hashes)"
+          }
+        },
+        "program": [
+          {
+            "kind": "if",
+            "condition": "ref-function",
+            "then": [
+              {
+                "kind": "action",
+                "action": "capture-result"
+              },
+              {
+                "kind": "if",
+                "condition": "result-function",
+                "then": [
+                  {
+                    "kind": "action",
+                    "action": "store-result"
+                  }
+                ],
+                "else": [
+                  {
+                    "kind": "action",
+                    "action": "call-ref"
+                  }
+                ]
+              },
+              {
+                "kind": "if",
+                "condition": "cleanup-present",
+                "then": [
+                  {
+                    "kind": "action",
+                    "action": "call-cleanup"
+                  },
+                  {
+                    "kind": "action",
+                    "action": "clear-cleanup"
+                  }
+                ],
+                "else": []
+              }
+            ],
+            "else": [
+              {
+                "kind": "if",
+                "condition": "value-null",
+                "then": [],
+                "else": [
+                  {
+                    "kind": "action",
+                    "action": "set-object"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "attempt": 3,
+        "status": "NATIVE_REJECTED",
+        "sourceHash": "a3e01394679caf7715e49588827a9e3878519aa98faa981c8d672b5b467273cf",
+        "feedback": {
+          "kind": "native",
+          "stage": "browser-A",
+          "exitCode": 1,
+          "stdout": "],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:577:3)\n\nAssertionError: outer initial: expected spy('outer') to have been called exactly once, but it was called twice\n\n    spy('outer')({ props: {},\n\n  context: {},\n\n  state: {},\n\n  __n: {},\n\n  __d: false,\n\n  __h: [],\n\n  _sb: [],\n\n  __s: {},\n\n  __v: \n\n   { type: [Function: Outer2],\n\n     props: {},\n\n     key: undefined,\n\n     ref: [Function],\n\n     __k: [ [Object] ],\n\n     __: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:565:18)\n\n\n\n    spy('outer')({ props: {},\n\n  context: {},\n\n  state: {},\n\n  __n: {},\n\n  __d: false,\n\n  __h: [],\n\n  _sb: [],\n\n  __s: {},\n\n  __v: \n\n   { type: [Function: Outer2],\n\n     props: {},\n\n     key: undefined,\n\n     ref: [Function],\n\n     __k: [ [Object] ],\n\n     __: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:577:3)\n    at Context.<anonymous> (test/browser/refs.test.js:219:42)\n\n\n\n    ✖ should null and re-invoke refs when swapping component root element type\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    expected handleMount to have been called exactly once, but it was called twice\n\n      + expected - actual\n\n      \n    at handleMount({}) at N (src/diff/index.js:565:18)\n    at handleMount({}) at N (src/diff/index.js:577:3)\n\nAssertionError: expected handleMount to have been called exactly once, but it was called twice\n    at handleMount({}) at N (src/diff/index.js:565:18)\n    at handleMount({}) at N (src/diff/index.js:577:3)\n    at Context.<anonymous> (test/browser/refs.test.js:369:36)\n\n\n\n    ✖ should add refs to components representing DOM nodes with no attributes if they have been pre-rendered\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    expected spy('ref') to have been called exactly once, but it was called twice\n\n      + expected - actual\n\n      \n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n\nAssertionError: expected spy('ref') to have been called exactly once, but it was called twice\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at Context.<anonymous> (test/browser/refs.test.js:413:23)\n\n\n\n    ✖ should properly call null for memoized components keyed\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected [ <div>hey</div>, <div>hey</div> ] to deeply equal [ <div>hey</div> ]\n\n      + expected - actual\n\n       [\n         \"[object HTMLDivElement]\"\n      -  \"[object HTMLDivElement]\"\n       ]\n      \n    at Context.<anonymous> (test/browser/refs.test.js:520:25)\n\n\n\n    ✖ should properly call null for memoized components unkeyed\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected 2 to equal 1\n\n      + expected - actual\n\n      -2\n      +1\n      \n    at Context.<anonymous> (test/browser/refs.test.js:541:27)\n\n\n\n    ✖ should first clean-up refs and after apply them\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected [ Array(4) ] to deeply equal [ Array(2) ]\n\n      + expected - actual\n\n       [\n         \"adding ref to two\"\n      -  \"adding ref to two\"\n         \"adding ref to three\"\n      -  \"adding ref to three\"\n       ]\n      \n    at Context.<anonymous> (test/browser/refs.test.js:622:25)\n\n\n\n\n=============================== Coverage summary ===============================\nStatements   : 99.62% ( 807/810 )\nBranches     : 97.17% ( 1205/1240 )\nFunctions    : 99.13% ( 228/230 )\nLines        : 99.61% ( 769/772 )\n================================================================================\n",
+          "stderr": "Browserslist: caniuse-lite is outdated. Please run:\n  npx update-browserslist-db@latest\n  Why you should do it regularly: https://github.com/browserslist/update-db#readme\n✘ [ERROR] Could not resolve \"node:stream\"\n\n    node_modules/preact-render-to-string/dist/stream-node.module.js:1:28:\n      1 │ import { PassThrough } from 'node:stream';\n        ╵                             ~~~~~~~~~~~~~\n\n  The package \"node:stream\" wasn't found on the file system but is built into node. Are you trying to bundle for node? You can use \"platform: 'node'\" to do that, which will remove this error.\n\n",
+          "bodyDiagnostics": {
+            "format": "repolab-preact-body-diagnostics/v2",
+            "issues": [],
+            "typeWarnings": [],
+            "issueCount": 0,
+            "typeWarningCount": 0,
+            "diagnosticsTruncated": false,
+            "parsed": true,
+            "authority": "advisory only; frozen admission and native lint remain authoritative"
+          }
+        },
+        "bodyDiagnostics": {
+          "format": "repolab-preact-body-diagnostics/v2",
+          "issues": [],
+          "typeWarnings": [],
+          "issueCount": 0,
+          "typeWarningCount": 0,
+          "diagnosticsTruncated": false,
+          "parsed": true,
+          "authority": "advisory only; frozen admission and native lint remain authoritative"
+        },
+        "plan": {
+          "requirementQuote": "return a cleanup function to reset",
+          "editBoundary": "existing-applyRef-try-body-only",
+          "cleanupDisposal": "invoke-before-callback",
+          "nullCallbackWhenCleanup": "skip",
+          "legacyDisposal": "invoke-null",
+          "callbackReturn": "store-if-callable",
+          "cleanupStateAfterCall": "clear-to-undefined",
+          "objectRef": "assign-current",
+          "revisionGoal": "Support ref cleanup functions by invoking stored cleanup before disposing of the ref and storing returned functions as cleanup state."
+        },
+        "ownership": {
+          "format": "repolab-preact-ownership-record/v1",
+          "sourceHash": "a3e01394679caf7715e49588827a9e3878519aa98faa981c8d672b5b467273cf",
+          "requiredMacros": {
+            "refUpdates": "transfer-cleanup",
+            "unmountContext": "vnode"
+          },
+          "sourceFiles": [
+            {
+              "path": "src/diff/index.js",
+              "sha256": "5587f8f1efaa69ee1308868ecd1d9b043d777fa7109c79bcd6c6503a1bd53e14"
+            },
+            {
+              "path": "src/diff/children.js",
+              "sha256": "e3386f9a169f19e34f665881e0a4f659fd2d25122a5d245988bfe15eb09b2724"
+            },
+            {
+              "path": "src/internal.d.ts",
+              "sha256": "260d90e923a84b146752a0db3ee51d23c8e0473e999abb4d1e70fdc8219dc515"
+            }
+          ],
+          "checks": [
+            {
+              "id": "old-owner-routing",
+              "sourcePath": "src/diff/children.js",
+              "markerHash": "55b58dd607557610c6f89b196a15a6497d53edb06ceb41620fe2545fec4ad8e2",
+              "matches": 1
+            },
+            {
+              "id": "state-transfer",
+              "sourcePath": "src/diff/children.js",
+              "markerHash": "a87e5f9d63cf9afd3d4966a071388aa87548420fb4878d9b081b868ce089c1eb",
+              "matches": 1
+            },
+            {
+              "id": "prior-owner-clear",
+              "sourcePath": "src/diff/children.js",
+              "markerHash": "0801bf683e63c31ea9d909b4208534c12ad835c277aee2a55fb21823a18da31f",
+              "matches": 1
+            },
+            {
+              "id": "removed-ref-disposal",
+              "sourcePath": "src/diff/children.js",
+              "markerHash": "f3f4f7ecf68aa04526c2938a35d319c2043b3219709410f73246dab4cb8b1761",
+              "matches": 1
+            },
+            {
+              "id": "unmount-owner",
+              "sourcePath": "src/diff/index.js",
+              "markerHash": "536b4a13ea26fcc471d9bd03c4474444a856cf7dbb71a1e0ec3ae68088ada38e",
+              "matches": 1
+            },
+            {
+              "id": "separate-owner-parameter",
+              "sourcePath": "src/diff/index.js",
+              "markerHash": "0159405b69d9758a53ababf712d159ca6e9b40cf7e6087e0206d67fa524e05ed",
+              "matches": 1
+            },
+            {
+              "id": "optional-cleanup-type",
+              "sourcePath": "src/internal.d.ts",
+              "markerHash": "585845a53193e578c01762b038a78845a3c147dc7c5e3d174bfcf76943abc635",
+              "matches": 1
+            }
+          ],
+          "authority": "exact qualified ownership scaffolding only; callback body requires unchanged native/public gates",
+          "provenance": {
+            "inference": "none (controller source comparison)",
+            "execution": "none (static bytes and hashes)"
+          }
+        },
+        "program": [
+          {
+            "kind": "if",
+            "condition": "ref-function",
+            "then": [
+              {
+                "kind": "action",
+                "action": "capture-result"
+              },
+              {
+                "kind": "if",
+                "condition": "result-function",
+                "then": [
+                  {
+                    "kind": "action",
+                    "action": "store-result"
+                  }
+                ],
+                "else": []
+              },
+              {
+                "kind": "if",
+                "condition": "cleanup-present",
+                "then": [
+                  {
+                    "kind": "action",
+                    "action": "call-cleanup"
+                  },
+                  {
+                    "kind": "action",
+                    "action": "clear-cleanup"
+                  }
+                ],
+                "else": []
+              },
+              {
+                "kind": "if",
+                "condition": "result-function",
+                "then": [],
+                "else": [
+                  {
+                    "kind": "action",
+                    "action": "call-ref"
+                  }
+                ]
+              }
+            ],
+            "else": [
+              {
+                "kind": "if",
+                "condition": "value-null",
+                "then": [],
+                "else": [
+                  {
+                    "kind": "action",
+                    "action": "set-object"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "accepted": false,
+    "independentlyCorrect": false,
+    "public": null,
+    "independent": null,
+    "native": null,
+    "requests": 3,
+    "operations": 14,
+    "operationIds": [
+      "01a13870-df96-71a3-bbc4-ec8e9f830eaa",
+      "01a13870-ee3f-76c9-b020-5386c2ae37a1",
+      "01a13871-2461-7618-9297-75f994570daa",
+      "01a13871-514e-7693-8fed-ab5a0509bd74",
+      "01a13871-5b36-74ce-b9d6-96a1bbe1078e",
+      "01a13871-6ea1-76fe-acca-369ab9678ad8",
+      "01a13871-7db7-7515-985f-ce56fe160b44",
+      "01a13871-9700-71c8-be56-09a9b9c3ed09",
+      "01a13871-f373-76cc-a337-bdff35724aee",
+      "01a13872-1eb4-724e-a2bf-7af384a02c5b",
+      "01a13872-2868-7587-934b-839f57671e3b",
+      "01a13872-3bd6-7238-a5d0-b94f02c5ea33",
+      "01a13872-4a82-7361-8ee5-3e8b32b91858",
+      "01a13872-62da-70af-9dc4-be9e33167cb8"
+    ],
+    "estimatedInferenceUsd": 0.005289,
+    "usageComplete": true,
+    "priorArtifacts": 538,
+    "limitations": [
+      "Required ownership/declaration/call scaffolding is developer-supplied; model instruction programs determine bounded control flow and actions.",
+      "One scoped public Preact feature request; not hidden benchmark accuracy.",
+      "Two selected repositories remain unsupported; no selected task is removed.",
+      "Independent lifecycle checks are developer-authored and withheld from repair context.",
+      "Same-project cached original image; separate-project portability is untested.",
+      "Framework model workflow is CLI-only; API/UI Preact repair remains unqualified.",
+      "Native browser 11 original skips and TypeScript 2 pending cases remain disclosed."
+    ]
+  },
+  "candidates": [
+    {
+      "attempt": 2,
+      "sourceHash": "1246b7e68394f22b6c6baac9594e11e173daa3ec589e58a9dac872b026944609",
+      "program": [
+        {
+          "kind": "if",
+          "condition": "ref-function",
+          "then": [
+            {
+              "kind": "action",
+              "action": "capture-result"
+            },
+            {
+              "kind": "if",
+              "condition": "result-function",
+              "then": [
+                {
+                  "kind": "action",
+                  "action": "store-result"
+                }
+              ],
+              "else": [
+                {
+                  "kind": "action",
+                  "action": "call-ref"
+                }
+              ]
+            },
+            {
+              "kind": "if",
+              "condition": "cleanup-present",
+              "then": [
+                {
+                  "kind": "action",
+                  "action": "call-cleanup"
+                },
+                {
+                  "kind": "action",
+                  "action": "clear-cleanup"
+                }
+              ],
+              "else": []
+            }
+          ],
+          "else": [
+            {
+              "kind": "if",
+              "condition": "value-null",
+              "then": [],
+              "else": [
+                {
+                  "kind": "action",
+                  "action": "set-object"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compiledBody": "const cleanup = refVNode._refCleanup;\nif (typeof ref === 'function') {\nconst result = ref(value);\nif (typeof result === 'function') {\nrefVNode._refCleanup = result;\n} else {\nref(value);\n}\nif (cleanup) {\ncleanup();\nrefVNode._refCleanup = undefined;\n} else {\n}\n} else {\nif (value == null) {\n} else {\nref.current = value;\n}\n}",
+      "ownership": {
+        "format": "repolab-preact-ownership-record/v1",
+        "sourceHash": "1246b7e68394f22b6c6baac9594e11e173daa3ec589e58a9dac872b026944609",
+        "requiredMacros": {
+          "refUpdates": "transfer-cleanup",
+          "unmountContext": "vnode"
+        },
+        "sourceFiles": [
+          {
+            "path": "src/diff/index.js",
+            "sha256": "76ff02076b3984cab296a52d51a820b47e84cd9ca3e70d7cc24d8854e82d2f33"
+          },
+          {
+            "path": "src/diff/children.js",
+            "sha256": "e3386f9a169f19e34f665881e0a4f659fd2d25122a5d245988bfe15eb09b2724"
+          },
+          {
+            "path": "src/internal.d.ts",
+            "sha256": "260d90e923a84b146752a0db3ee51d23c8e0473e999abb4d1e70fdc8219dc515"
+          }
+        ],
+        "checks": [
+          {
+            "id": "old-owner-routing",
+            "sourcePath": "src/diff/children.js",
+            "markerHash": "55b58dd607557610c6f89b196a15a6497d53edb06ceb41620fe2545fec4ad8e2",
+            "matches": 1
+          },
+          {
+            "id": "state-transfer",
+            "sourcePath": "src/diff/children.js",
+            "markerHash": "a87e5f9d63cf9afd3d4966a071388aa87548420fb4878d9b081b868ce089c1eb",
+            "matches": 1
+          },
+          {
+            "id": "prior-owner-clear",
+            "sourcePath": "src/diff/children.js",
+            "markerHash": "0801bf683e63c31ea9d909b4208534c12ad835c277aee2a55fb21823a18da31f",
+            "matches": 1
+          },
+          {
+            "id": "removed-ref-disposal",
+            "sourcePath": "src/diff/children.js",
+            "markerHash": "f3f4f7ecf68aa04526c2938a35d319c2043b3219709410f73246dab4cb8b1761",
+            "matches": 1
+          },
+          {
+            "id": "unmount-owner",
+            "sourcePath": "src/diff/index.js",
+            "markerHash": "536b4a13ea26fcc471d9bd03c4474444a856cf7dbb71a1e0ec3ae68088ada38e",
+            "matches": 1
+          },
+          {
+            "id": "separate-owner-parameter",
+            "sourcePath": "src/diff/index.js",
+            "markerHash": "0159405b69d9758a53ababf712d159ca6e9b40cf7e6087e0206d67fa524e05ed",
+            "matches": 1
+          },
+          {
+            "id": "optional-cleanup-type",
+            "sourcePath": "src/internal.d.ts",
+            "markerHash": "585845a53193e578c01762b038a78845a3c147dc7c5e3d174bfcf76943abc635",
+            "matches": 1
+          }
+        ],
+        "authority": "exact qualified ownership scaffolding only; callback body requires unchanged native/public gates",
+        "provenance": {
+          "inference": "none (controller source comparison)",
+          "execution": "none (static bytes and hashes)"
+        }
+      },
+      "staticPatch": "exact Git application and source bytes verified; no source executed on host",
+      "gates": {
+        "build": {
+          "status": "PASSED",
+          "receiptHash": "42ca16093ce5aa4539aa262e30b0e061c0e6b2eac9e4902f7fee4e4480992e95",
+          "operationId": "01a13871-2461-7618-9297-75f994570daa",
+          "summary": null
+        },
+        "integrity": {
+          "status": "PASSED",
+          "receiptHash": "41eb70b8a93fde44e8d48bce2282e88a45a77c5951136fb962953c85c3420cd9",
+          "operationId": "01a13871-514e-7693-8fed-ab5a0509bd74",
+          "summary": {
+            "denials": [
+              {
+                "path": "package-lock.json",
+                "action": "write",
+                "error": "EACCES"
+              },
+              {
+                "path": "package-lock.json",
+                "action": "unlink",
+                "error": "EACCES"
+              },
+              {
+                "path": "package-lock.json",
+                "action": "replace",
+                "error": "EACCES"
+              },
+              {
+                "path": "src/diff/index.js",
+                "action": "write",
+                "error": "EACCES"
+              },
+              {
+                "path": "src/diff/index.js",
+                "action": "unlink",
+                "error": "EACCES"
+              },
+              {
+                "path": "src/diff/index.js",
+                "action": "replace",
+                "error": "EACCES"
+              },
+              {
+                "path": "test/browser/refs.test.js",
+                "action": "write",
+                "error": "EACCES"
+              },
+              {
+                "path": "test/browser/refs.test.js",
+                "action": "unlink",
+                "error": "EACCES"
+              },
+              {
+                "path": "test/browser/refs.test.js",
+                "action": "replace",
+                "error": "EACCES"
+              },
+              {
+                "action": "rename-tests",
+                "error": "EACCES"
+              },
+              {
+                "action": "symlink-test",
+                "error": "EEXIST"
+              }
+            ],
+            "network": "ENETUNREACH"
+          }
+        },
+        "lint": {
+          "status": "PASSED",
+          "receiptHash": "806bb50c2f04b2813736236548e6c55ea1ed42b1d1d5dc2805943fe347febb4e",
+          "operationId": "01a13871-5b36-74ce-b9d6-96a1bbe1078e",
+          "summary": null
+        },
+        "mocha-A": {
+          "status": "PASSED",
+          "receiptHash": "984726a4e9a809cbeb0f910a7ca40201a717272b6630c5941fa7f81dc9cc4ea9",
+          "operationId": "01a13871-6ea1-76fe-acca-369ab9678ad8",
+          "summary": {
+            "passed": 29,
+            "skipped": 0,
+            "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93",
+            "cases": [
+              {
+                "id": "build artifact should have exported properties",
+                "skipped": false
+              },
+              {
+                "id": "createContext should return a Provider and a Consumer",
+                "skipped": false
+              },
+              {
+                "id": "createContext should return a valid Provider Component",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should handle multiple element children, given as an array",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should have ordered VNode properties",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should ignore props.children if children are manually specified",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should NOT merge adjacent text children",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should not merge children of components",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should not merge children that are boolean values",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should not merge nested adjacent text children",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should NOT set children prop when unspecified",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should not set VNode#props.key property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should not set VNode#props.ref property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should override children if null is provided as an argument",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should override defaultProps",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should preserve raw props",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should respect defaultProps",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should return a VNode",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should set VNode.constructor property to prevent json injection",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should set VNode#key property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should set VNode#props property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should set VNode#ref property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should set VNode#type property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should support element children",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should support multiple element children, given as arg list",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should support nested children",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should support text children",
+                "skipped": false
+              },
+              {
+                "id": "isValidElement should check if the argument is a valid vnode",
+                "skipped": false
+              },
+              {
+                "id": "preact should be available as named exports",
+                "skipped": false
+              }
+            ]
+          }
+        },
+        "types": {
+          "status": "PASSED",
+          "receiptHash": "2bee9970f95a7224f2c397683b178765bec01c344604d8ce5a295284deecdd3b",
+          "operationId": "01a13871-7db7-7515-985f-ce56fe160b44",
+          "summary": {
+            "passed": 17,
+            "pending": 2,
+            "coreCompilation": "PASS",
+            "compatCompilation": "PASS"
+          }
+        },
+        "browser-A": {
+          "status": "NATIVE_REJECTED",
+          "receiptHash": "bd71731cd3ea3cceecbeb200cdb68e90f2ec212419eb4b46490eed530a0641ee",
+          "operationId": "01a13871-9700-71c8-be56-09a9b9c3ed09",
+          "exitCode": 1,
+          "feedback": {
+            "kind": "native",
+            "stage": "browser-A",
+            "exitCode": 1,
+            "stdout": "],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:569:3)\n\nAssertionError: outer initial: expected spy('outer') to have been called exactly once, but it was called twice\n\n    spy('outer')({ props: {},\n\n  context: {},\n\n  state: {},\n\n  __n: {},\n\n  __d: false,\n\n  __h: [],\n\n  _sb: [],\n\n  __s: {},\n\n  __v: \n\n   { type: [Function: Outer2],\n\n     props: {},\n\n     key: undefined,\n\n     ref: [Function],\n\n     __k: [ [Object] ],\n\n     __: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:565:18)\n\n\n\n    spy('outer')({ props: {},\n\n  context: {},\n\n  state: {},\n\n  __n: {},\n\n  __d: false,\n\n  __h: [],\n\n  _sb: [],\n\n  __s: {},\n\n  __v: \n\n   { type: [Function: Outer2],\n\n     props: {},\n\n     key: undefined,\n\n     ref: [Function],\n\n     __k: [ [Object] ],\n\n     __: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:569:3)\n    at Context.<anonymous> (test/browser/refs.test.js:219:42)\n\n\n\n    ✖ should null and re-invoke refs when swapping component root element type\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    expected handleMount to have been called exactly once, but it was called twice\n\n      + expected - actual\n\n      \n    at handleMount({}) at N (src/diff/index.js:565:18)\n    at handleMount({}) at N (src/diff/index.js:569:3)\n\nAssertionError: expected handleMount to have been called exactly once, but it was called twice\n    at handleMount({}) at N (src/diff/index.js:565:18)\n    at handleMount({}) at N (src/diff/index.js:569:3)\n    at Context.<anonymous> (test/browser/refs.test.js:369:36)\n\n\n\n    ✖ should add refs to components representing DOM nodes with no attributes if they have been pre-rendered\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    expected spy('ref') to have been called exactly once, but it was called twice\n\n      + expected - actual\n\n      \n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n\nAssertionError: expected spy('ref') to have been called exactly once, but it was called twice\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at Context.<anonymous> (test/browser/refs.test.js:413:23)\n\n\n\n    ✖ should properly call null for memoized components keyed\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected [ <div>hey</div>, <div>hey</div> ] to deeply equal [ <div>hey</div> ]\n\n      + expected - actual\n\n       [\n         \"[object HTMLDivElement]\"\n      -  \"[object HTMLDivElement]\"\n       ]\n      \n    at Context.<anonymous> (test/browser/refs.test.js:520:25)\n\n\n\n    ✖ should properly call null for memoized components unkeyed\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected 2 to equal 1\n\n      + expected - actual\n\n      -2\n      +1\n      \n    at Context.<anonymous> (test/browser/refs.test.js:541:27)\n\n\n\n    ✖ should first clean-up refs and after apply them\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected [ Array(4) ] to deeply equal [ Array(2) ]\n\n      + expected - actual\n\n       [\n         \"adding ref to two\"\n      -  \"adding ref to two\"\n         \"adding ref to three\"\n      -  \"adding ref to three\"\n       ]\n      \n    at Context.<anonymous> (test/browser/refs.test.js:622:25)\n\n\n\n\n=============================== Coverage summary ===============================\nStatements   : 99.62% ( 807/810 )\nBranches     : 97.17% ( 1203/1238 )\nFunctions    : 99.13% ( 228/230 )\nLines        : 99.61% ( 769/772 )\n================================================================================\n",
+            "stderr": "Browserslist: caniuse-lite is outdated. Please run:\n  npx update-browserslist-db@latest\n  Why you should do it regularly: https://github.com/browserslist/update-db#readme\n✘ [ERROR] Could not resolve \"node:stream\"\n\n    node_modules/preact-render-to-string/dist/stream-node.module.js:1:28:\n      1 │ import { PassThrough } from 'node:stream';\n        ╵                             ~~~~~~~~~~~~~\n\n  The package \"node:stream\" wasn't found on the file system but is built into node. Are you trying to bundle for node? You can use \"platform: 'node'\" to do that, which will remove this error.\n\n"
+          }
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "sourceHash": "a3e01394679caf7715e49588827a9e3878519aa98faa981c8d672b5b467273cf",
+      "program": [
+        {
+          "kind": "if",
+          "condition": "ref-function",
+          "then": [
+            {
+              "kind": "action",
+              "action": "capture-result"
+            },
+            {
+              "kind": "if",
+              "condition": "result-function",
+              "then": [
+                {
+                  "kind": "action",
+                  "action": "store-result"
+                }
+              ],
+              "else": []
+            },
+            {
+              "kind": "if",
+              "condition": "cleanup-present",
+              "then": [
+                {
+                  "kind": "action",
+                  "action": "call-cleanup"
+                },
+                {
+                  "kind": "action",
+                  "action": "clear-cleanup"
+                }
+              ],
+              "else": []
+            },
+            {
+              "kind": "if",
+              "condition": "result-function",
+              "then": [],
+              "else": [
+                {
+                  "kind": "action",
+                  "action": "call-ref"
+                }
+              ]
+            }
+          ],
+          "else": [
+            {
+              "kind": "if",
+              "condition": "value-null",
+              "then": [],
+              "else": [
+                {
+                  "kind": "action",
+                  "action": "set-object"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compiledBody": "const cleanup = refVNode._refCleanup;\nif (typeof ref === 'function') {\nconst result = ref(value);\nif (typeof result === 'function') {\nrefVNode._refCleanup = result;\n} else {\n}\nif (cleanup) {\ncleanup();\nrefVNode._refCleanup = undefined;\n} else {\n}\nif (typeof result === 'function') {\n} else {\nref(value);\n}\n} else {\nif (value == null) {\n} else {\nref.current = value;\n}\n}",
+      "ownership": {
+        "format": "repolab-preact-ownership-record/v1",
+        "sourceHash": "a3e01394679caf7715e49588827a9e3878519aa98faa981c8d672b5b467273cf",
+        "requiredMacros": {
+          "refUpdates": "transfer-cleanup",
+          "unmountContext": "vnode"
+        },
+        "sourceFiles": [
+          {
+            "path": "src/diff/index.js",
+            "sha256": "5587f8f1efaa69ee1308868ecd1d9b043d777fa7109c79bcd6c6503a1bd53e14"
+          },
+          {
+            "path": "src/diff/children.js",
+            "sha256": "e3386f9a169f19e34f665881e0a4f659fd2d25122a5d245988bfe15eb09b2724"
+          },
+          {
+            "path": "src/internal.d.ts",
+            "sha256": "260d90e923a84b146752a0db3ee51d23c8e0473e999abb4d1e70fdc8219dc515"
+          }
+        ],
+        "checks": [
+          {
+            "id": "old-owner-routing",
+            "sourcePath": "src/diff/children.js",
+            "markerHash": "55b58dd607557610c6f89b196a15a6497d53edb06ceb41620fe2545fec4ad8e2",
+            "matches": 1
+          },
+          {
+            "id": "state-transfer",
+            "sourcePath": "src/diff/children.js",
+            "markerHash": "a87e5f9d63cf9afd3d4966a071388aa87548420fb4878d9b081b868ce089c1eb",
+            "matches": 1
+          },
+          {
+            "id": "prior-owner-clear",
+            "sourcePath": "src/diff/children.js",
+            "markerHash": "0801bf683e63c31ea9d909b4208534c12ad835c277aee2a55fb21823a18da31f",
+            "matches": 1
+          },
+          {
+            "id": "removed-ref-disposal",
+            "sourcePath": "src/diff/children.js",
+            "markerHash": "f3f4f7ecf68aa04526c2938a35d319c2043b3219709410f73246dab4cb8b1761",
+            "matches": 1
+          },
+          {
+            "id": "unmount-owner",
+            "sourcePath": "src/diff/index.js",
+            "markerHash": "536b4a13ea26fcc471d9bd03c4474444a856cf7dbb71a1e0ec3ae68088ada38e",
+            "matches": 1
+          },
+          {
+            "id": "separate-owner-parameter",
+            "sourcePath": "src/diff/index.js",
+            "markerHash": "0159405b69d9758a53ababf712d159ca6e9b40cf7e6087e0206d67fa524e05ed",
+            "matches": 1
+          },
+          {
+            "id": "optional-cleanup-type",
+            "sourcePath": "src/internal.d.ts",
+            "markerHash": "585845a53193e578c01762b038a78845a3c147dc7c5e3d174bfcf76943abc635",
+            "matches": 1
+          }
+        ],
+        "authority": "exact qualified ownership scaffolding only; callback body requires unchanged native/public gates",
+        "provenance": {
+          "inference": "none (controller source comparison)",
+          "execution": "none (static bytes and hashes)"
+        }
+      },
+      "staticPatch": "exact Git application and source bytes verified; no source executed on host",
+      "gates": {
+        "build": {
+          "status": "PASSED",
+          "receiptHash": "03c50df3f5bda7da5b1eb1311fc4fa84b2575afd93b95235a8d3681dfb779451",
+          "operationId": "01a13871-f373-76cc-a337-bdff35724aee",
+          "summary": null
+        },
+        "integrity": {
+          "status": "PASSED",
+          "receiptHash": "e115831c36a1e1e1b93d31d626759c66f6a5f9cf85d40ca865341d4f88c23c23",
+          "operationId": "01a13872-1eb4-724e-a2bf-7af384a02c5b",
+          "summary": {
+            "denials": [
+              {
+                "path": "package-lock.json",
+                "action": "write",
+                "error": "EACCES"
+              },
+              {
+                "path": "package-lock.json",
+                "action": "unlink",
+                "error": "EACCES"
+              },
+              {
+                "path": "package-lock.json",
+                "action": "replace",
+                "error": "EACCES"
+              },
+              {
+                "path": "src/diff/index.js",
+                "action": "write",
+                "error": "EACCES"
+              },
+              {
+                "path": "src/diff/index.js",
+                "action": "unlink",
+                "error": "EACCES"
+              },
+              {
+                "path": "src/diff/index.js",
+                "action": "replace",
+                "error": "EACCES"
+              },
+              {
+                "path": "test/browser/refs.test.js",
+                "action": "write",
+                "error": "EACCES"
+              },
+              {
+                "path": "test/browser/refs.test.js",
+                "action": "unlink",
+                "error": "EACCES"
+              },
+              {
+                "path": "test/browser/refs.test.js",
+                "action": "replace",
+                "error": "EACCES"
+              },
+              {
+                "action": "rename-tests",
+                "error": "EACCES"
+              },
+              {
+                "action": "symlink-test",
+                "error": "EEXIST"
+              }
+            ],
+            "network": "ENETUNREACH"
+          }
+        },
+        "lint": {
+          "status": "PASSED",
+          "receiptHash": "d372293bf530cd99a224d9ed69f667bf28bcb8a19c54aab22dbbf9efefb965af",
+          "operationId": "01a13872-2868-7587-934b-839f57671e3b",
+          "summary": null
+        },
+        "mocha-A": {
+          "status": "PASSED",
+          "receiptHash": "5759a3afff099d3c6f12a39827fb9b750e455702ddc4fa78951aa775ea69c948",
+          "operationId": "01a13872-3bd6-7238-a5d0-b94f02c5ea33",
+          "summary": {
+            "passed": 29,
+            "skipped": 0,
+            "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93",
+            "cases": [
+              {
+                "id": "build artifact should have exported properties",
+                "skipped": false
+              },
+              {
+                "id": "createContext should return a Provider and a Consumer",
+                "skipped": false
+              },
+              {
+                "id": "createContext should return a valid Provider Component",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should handle multiple element children, given as an array",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should have ordered VNode properties",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should ignore props.children if children are manually specified",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should NOT merge adjacent text children",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should not merge children of components",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should not merge children that are boolean values",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should not merge nested adjacent text children",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should NOT set children prop when unspecified",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should not set VNode#props.key property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should not set VNode#props.ref property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should override children if null is provided as an argument",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should override defaultProps",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should preserve raw props",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should respect defaultProps",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should return a VNode",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should set VNode.constructor property to prevent json injection",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should set VNode#key property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should set VNode#props property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should set VNode#ref property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should set VNode#type property",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should support element children",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should support multiple element children, given as arg list",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should support nested children",
+                "skipped": false
+              },
+              {
+                "id": "createElement(jsx) should support text children",
+                "skipped": false
+              },
+              {
+                "id": "isValidElement should check if the argument is a valid vnode",
+                "skipped": false
+              },
+              {
+                "id": "preact should be available as named exports",
+                "skipped": false
+              }
+            ]
+          }
+        },
+        "types": {
+          "status": "PASSED",
+          "receiptHash": "3bda12dd614713fde71aff7bb45095c9b53f3f62c6a661fb1b2e2bd40cca5c86",
+          "operationId": "01a13872-4a82-7361-8ee5-3e8b32b91858",
+          "summary": {
+            "passed": 17,
+            "pending": 2,
+            "coreCompilation": "PASS",
+            "compatCompilation": "PASS"
+          }
+        },
+        "browser-A": {
+          "status": "NATIVE_REJECTED",
+          "receiptHash": "868bdce71984a14340279a24e3599272a208c1b32484c0e07a12496ce599d506",
+          "operationId": "01a13872-62da-70af-9dc4-be9e33167cb8",
+          "exitCode": 1,
+          "feedback": {
+            "kind": "native",
+            "stage": "browser-A",
+            "exitCode": 1,
+            "stdout": "],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:577:3)\n\nAssertionError: outer initial: expected spy('outer') to have been called exactly once, but it was called twice\n\n    spy('outer')({ props: {},\n\n  context: {},\n\n  state: {},\n\n  __n: {},\n\n  __d: false,\n\n  __h: [],\n\n  _sb: [],\n\n  __s: {},\n\n  __v: \n\n   { type: [Function: Outer2],\n\n     props: {},\n\n     key: undefined,\n\n     ref: [Function],\n\n     __k: [ [Object] ],\n\n     __: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:565:18)\n\n\n\n    spy('outer')({ props: {},\n\n  context: {},\n\n  state: {},\n\n  __n: {},\n\n  __d: false,\n\n  __h: [],\n\n  _sb: [],\n\n  __s: {},\n\n  __v: \n\n   { type: [Function: Outer2],\n\n     props: {},\n\n     key: undefined,\n\n     ref: [Function],\n\n     __k: [ [Object] ],\n\n     __: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 },\n\n     __b: 1,\n\n     __e: {},\n\n     __d: undefined,\n\n     __c: [Circular],\n\n     constructor: undefined,\n\n     __v: 33,\n\n     __i: 0,\n\n     __u: 0 },\n\n  __P: \n\n   { __k: \n\n      { type: [Function: k],\n\n        props: [Object],\n\n        key: undefined,\n\n        ref: undefined,\n\n        __k: [Object],\n\n        __: null,\n\n        __b: 0,\n\n        __e: {},\n\n        __d: undefined,\n\n        __c: [Object],\n\n        constructor: undefined,\n\n        __v: 34,\n\n        __i: -1,\n\n        __u: 0 } },\n\n  __e: false,\n  at base: {} }) at N (src/diff/index.js:577:3)\n    at Context.<anonymous> (test/browser/refs.test.js:219:42)\n\n\n\n    ✖ should null and re-invoke refs when swapping component root element type\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    expected handleMount to have been called exactly once, but it was called twice\n\n      + expected - actual\n\n      \n    at handleMount({}) at N (src/diff/index.js:565:18)\n    at handleMount({}) at N (src/diff/index.js:577:3)\n\nAssertionError: expected handleMount to have been called exactly once, but it was called twice\n    at handleMount({}) at N (src/diff/index.js:565:18)\n    at handleMount({}) at N (src/diff/index.js:577:3)\n    at Context.<anonymous> (test/browser/refs.test.js:369:36)\n\n\n\n    ✖ should add refs to components representing DOM nodes with no attributes if they have been pre-rendered\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    expected spy('ref') to have been called exactly once, but it was called twice\n\n      + expected - actual\n\n      \n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n\nAssertionError: expected spy('ref') to have been called exactly once, but it was called twice\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at spy('ref')({}) at ref (test/browser/refs.test.js:409:24)\n    at Context.<anonymous> (test/browser/refs.test.js:413:23)\n\n\n\n    ✖ should properly call null for memoized components keyed\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected [ <div>hey</div>, <div>hey</div> ] to deeply equal [ <div>hey</div> ]\n\n      + expected - actual\n\n       [\n         \"[object HTMLDivElement]\"\n      -  \"[object HTMLDivElement]\"\n       ]\n      \n    at Context.<anonymous> (test/browser/refs.test.js:520:25)\n\n\n\n    ✖ should properly call null for memoized components unkeyed\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected 2 to equal 1\n\n      + expected - actual\n\n      -2\n      +1\n      \n    at Context.<anonymous> (test/browser/refs.test.js:541:27)\n\n\n\n    ✖ should first clean-up refs and after apply them\n      Chrome Headless 154.0.0.0 (Linux x86_64)\n    AssertionError: expected [ Array(4) ] to deeply equal [ Array(2) ]\n\n      + expected - actual\n\n       [\n         \"adding ref to two\"\n      -  \"adding ref to two\"\n         \"adding ref to three\"\n      -  \"adding ref to three\"\n       ]\n      \n    at Context.<anonymous> (test/browser/refs.test.js:622:25)\n\n\n\n\n=============================== Coverage summary ===============================\nStatements   : 99.62% ( 807/810 )\nBranches     : 97.17% ( 1205/1240 )\nFunctions    : 99.13% ( 228/230 )\nLines        : 99.61% ( 769/772 )\n================================================================================\n",
+            "stderr": "Browserslist: caniuse-lite is outdated. Please run:\n  npx update-browserslist-db@latest\n  Why you should do it regularly: https://github.com/browserslist/update-db#readme\n✘ [ERROR] Could not resolve \"node:stream\"\n\n    node_modules/preact-render-to-string/dist/stream-node.module.js:1:28:\n      1 │ import { PassThrough } from 'node:stream';\n        ╵                             ~~~~~~~~~~~~~\n\n  The package \"node:stream\" wasn't found on the file system but is built into node. Are you trying to bundle for node? You can use \"platform: 'node'\" to do that, which will remove this error.\n\n"
+          }
+        }
+      }
+    }
+  ],
+  "schemaQualification": {
+    "calls": 1,
+    "operations": 0,
+    "costUsd": 0.0004569,
+    "freeze": "29eb73a7472868c462bf1d8afd8fc3c1c25ec496a690d312ab9f0b029baa8670"
+  },
+  "unrunPreparation": {
+    "version": 8,
+    "status": "NOT_RUN",
+    "repairCalls": 0,
+    "operations": 0,
+    "reason": "Build preflight extra SDK argument; exact source/test snapshots preserved"
+  },
+  "phaseEstimatedInferenceUsd": 0.0057459
+}

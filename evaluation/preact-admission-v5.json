@@ -1,0 +1,106 @@
+{
+  "format": "repolab-preact-admission/v5",
+  "parentDigest": "43427bbb61bc2e398c069cb8fcd40bc04cdf535f26a4a84c48660f8cd9dd55e9",
+  "previousFailedFreeze": "add889f0e2263096baba34a1688b6ae8cae91c775854effacba597e79a60ff0b",
+  "taskId": "preactjs__preact-4436",
+  "preparedOriginalImage": "d4c8d3fb-7f4c-48dc-9c81-0522eb247051",
+  "inferenceCalls": 0,
+  "modelAdmission": false,
+  "operations": 26,
+  "fixtureVariants": [
+    "original",
+    "weak",
+    "reference"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/preact-admission-v5.ts",
+      "sha256": "b505d4655203510df236aa45fb91b989bac578f54e03cc5ebfa23097bfca8e30"
+    },
+    {
+      "path": "packages/repositories/preact-admission-v5.ts",
+      "sha256": "82b80ef347e4a985ba8498336bea9814ccc11a26c37869eda7a2d0a366184dbd"
+    },
+    {
+      "path": "packages/execution/preact-admission-v5.ts",
+      "sha256": "32316f19d015e6e924ae6567a0f5956e9894fa45465aa0b7d4f7bf027bf8a851"
+    },
+    {
+      "path": "apps/evaluator/preact-admission-v5.ts",
+      "sha256": "53d23070adac639e21cf5bbe0e8249ca59e0d4d1f3fe27fe7861777951a7d510"
+    },
+    {
+      "path": "tests/preact-admission-v5.test.ts",
+      "sha256": "f430195bf20301eb21b6143d50c23fbeff4017daf90d31d3071e1fd24484df03"
+    },
+    {
+      "path": "evaluation/PREACT_ADMISSION_V5.md",
+      "sha256": "0fed6531274d33ade92f0d22a6c5a46d88fd8e2f2fbb1fdbacf3c0d55d976593"
+    },
+    {
+      "path": "evaluation/preact-admission-reference-v2.json",
+      "sha256": "a271e393043bc3e6293b239d90eb1112a9297fe5021a42366c16c19f2a04e5de"
+    },
+    {
+      "path": "evaluation/preact-admission-weak-v2.json",
+      "sha256": "4a55f7b9f25b9ae71f9bceedfde9033cc139e8dea2f04d99e6bd8343054ed340"
+    },
+    {
+      "path": "evaluation/preact-admission-independent-v4.html",
+      "sha256": "9bae2659567ed25860685d4ccbf81878d986b37aa14772435a7b801d978172ab"
+    },
+    {
+      "path": "evaluation/preact-admission-v1.json",
+      "sha256": "9464f84376abb0bb0f4067cf338682bfc7bbe5192cc22159030e636527b25c35"
+    },
+    {
+      "path": "evaluation/preact-admission-v2.json",
+      "sha256": "32e2081710cade1d69150a8fca619408104a8ea8a0be06f728e4d4674cb38b0a"
+    },
+    {
+      "path": "evaluation/preact-admission-v3.json",
+      "sha256": "8a187eaaddaf3c112b0363b90c1b86b9b0c10e10e74919730523649f2bd8ec5f"
+    },
+    {
+      "path": "evaluation/preact-admission-v4.json",
+      "sha256": "8a41977d8806a00adb940db7f8e300d5c701dc9646a0f20f3fd9d4c3f9d84138"
+    },
+    {
+      "path": "evaluation/preact-admission-v4-results-summary.json",
+      "sha256": "a33c52daae6852963e736505283f62921061cc38c50a152d2e1b2caad629f07c"
+    },
+    {
+      "path": "evaluation/preact-admission-v3-results-summary.json",
+      "sha256": "f31424d54605413a910619c7b096a9c99d45df90ea5ac6b147522feb2b41281d"
+    },
+    {
+      "path": "evaluation/preact-admission-v2-results-summary.json",
+      "sha256": "bb36e44530edbe04580aca53ee73ee23e66a24830e737b4fd107dde74ac3f0c9"
+    },
+    {
+      "path": "evaluation/preact-admission-v1-results-summary.json",
+      "sha256": "b2a55e75fd264296853e15c7a10bc39e8ad63cd3e09c5670e58dbd89b2ae9477"
+    },
+    {
+      "path": "repositories/preact-admission-v3/public.html",
+      "sha256": "8fd66ec23aaa0970a914ed0e46fcd27020633669d901bafc9ea96258469132e3"
+    },
+    {
+      "path": "repositories/preact-admission-v1/guest.cjs",
+      "sha256": "5c212beee36b43837ec0eb35b365d5463d6d0c220e0abf75cd0befa5087479b1"
+    },
+    {
+      "path": "repositories/preact-admission-v1/original/diff-index.js",
+      "sha256": "0df612edb141cad859acb4df802edc315085ceeb88c7000d231b0101880722c7"
+    },
+    {
+      "path": "repositories/preact-admission-v1/original/diff-children.js",
+      "sha256": "80713cad51ebcf2292de3009e66b1b18fa9b5eb0b52b69d43d80ea153fd4d811"
+    },
+    {
+      "path": "repositories/preact-admission-v1/original/internal.d.ts",
+      "sha256": "ed05e7a9f2d13c5d98c6597dcef224325fcc4ca2758af8503802403125c03bc7"
+    }
+  ],
+  "digest": "18690376c3e161b80426d83cede92b36f83653c3d26d073c06b8fc0219141ab8"
+}

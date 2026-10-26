@@ -1,0 +1,90 @@
+{
+  "format": "repolab-portable-packs-public-results/v1",
+  "digest": "bd5ef5501d173ec06e44f91675fd4ae127be33040e58823b4cab04570053732c",
+  "layoutDigest": "975c039fbc2876f2ba938ca0cafe0db2eb95f045880bd7f574b5630cf2c041be",
+  "status": "PASS",
+  "rows": [
+    {
+      "profile": "dset-decimal-path",
+      "id": "17384f6a-8bc8-41f0-b176-98e93778591c",
+      "entrypoint": "cli",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "cb9f94af504ebbda6e221c81e5122ac60bbac0f1ca6c0300faf8be832340496d",
+      "sourceHash": "60f28be1439b8543ae034e3a73a3d861ff0a927b92dbdf0433c256762050722d",
+      "upstreamAssertions": 13,
+      "publicPassed": 1,
+      "publicTotal": 1,
+      "independentPassed": 14,
+      "independentTotal": 14,
+      "executionCount": 9
+    },
+    {
+      "profile": "dlv-null-path",
+      "id": "7bf109cf-6a53-4276-a4f6-d0d15536e3b1",
+      "entrypoint": "api",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "a78d633288cfd0aa3ba22a02a5cda2c58e4e9c2c52b9a855ab071c547ca15467",
+      "sourceHash": "10d3e9404b1e93692469d14d08fb382c9799894425b367bfff46e35525bbeba7",
+      "upstreamAssertions": 34,
+      "publicPassed": 15,
+      "publicTotal": 15,
+      "independentPassed": 13,
+      "independentTotal": 13,
+      "executionCount": 9
+    },
+    {
+      "profile": "mri-zero-number",
+      "id": "80aa6154-0be0-4168-88b2-e13425893447",
+      "entrypoint": "cli",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "336361896213df4fa5cdfc9295957cfb13e02ecf046446257008cddd8b707f61",
+      "sourceHash": "5e359a746fc8948c791e617d3653b3c93fe0399b03f70af486149641d56dfeb7",
+      "upstreamAssertions": 49,
+      "publicPassed": 19,
+      "publicTotal": 19,
+      "independentPassed": 16,
+      "independentTotal": 16,
+      "executionCount": 9
+    }
+  ],
+  "inference": {
+    "calls": 0,
+    "estimatedUsd": 0,
+    "origin": "existing NVIDIA/Nebius model selections; no new inference"
+  },
+  "execution": {
+    "provider": "nebius-sandbox",
+    "runtime": "v24.18.0",
+    "replayOperations": 27,
+    "readinessOperations": 7,
+    "totalDistinctOperations": 34
+  },
+  "validation": {
+    "testsPassed": 301,
+    "build": "PASS",
+    "rawReplayMatched": true,
+    "protectedOriginalInputs": true,
+    "filesystemDenials": 9,
+    "distinctReplayProfiles": 3,
+    "unchangedHistoricalFiles": 178,
+    "privateStudyRecordsUnchanged": 132,
+    "packIndependentInputsExported": 0,
+    "sourceExecutedOnController": false
+  },
+  "browser": {
+    "initialDownloadsAndSimulation": "PASS",
+    "liveDlvReplay": "PASS",
+    "initialLiveMobileOverflow": "RETAINED; separately pinned stylesheet corrects select width",
+    "savedResultVerification": "PASS",
+    "newReplayStartsForUiFix": 0
+  },
+  "limitations": [
+    "Previously selected exposed historical development cases; replay adds no repair task or hidden-task accuracy",
+    "Hashes bind source/pack bytes, not provider-authenticated origin",
+    "Matching controller assets and reviewed historical adapters required; independent reviewer bootstrap and historical builds remain unproven"
+  ],
+  "ledger": {
+    "estimatedInferenceUsd": 0.1072158,
+    "unsettled": false
+  }
+}

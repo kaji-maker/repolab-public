@@ -1,0 +1,71 @@
+{
+  "format": "repolab-preact-native/v1",
+  "parentDigest": "2ada74c6196b7cd3515ac1a19ed79b81aded6389b1c85d1984610ffe39f636d1",
+  "taskId": "preactjs__preact-4436",
+  "baseCommit": "db0f4f2e7a2338ea40050f623f05505a798fc1a4",
+  "classification": "feature-request",
+  "image": "53fcf4f1-cd27-4c6a-ab09-35cd4dbc9119",
+  "inferenceCalls": 0,
+  "modelAdmission": false,
+  "slots": [
+    "prepare",
+    "build",
+    "protect",
+    "integrity",
+    "lint",
+    "mocha-A",
+    "types",
+    "browser-A",
+    "reproduction-A",
+    "mocha-B",
+    "browser-B",
+    "reproduction-B"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/preact-native.ts",
+      "sha256": "00cba8098f4205f40eddeb0cc888d84ddad0a30f6d0d97e2a4ace2236b5a9e3e"
+    },
+    {
+      "path": "packages/execution/preact-native.ts",
+      "sha256": "ff1dda47601d459cc9e9275bf39d35403154eee764c5d9f98ae6e28b87a0d7f5"
+    },
+    {
+      "path": "apps/evaluator/preact-native.ts",
+      "sha256": "710fc16e016922de3538db707c5c4d9fdab81dc3708df43aa4b1b8656a3a3b81"
+    },
+    {
+      "path": "tests/preact-native.test.ts",
+      "sha256": "7627f967bef3ffc306c57cc5bb3e55c052d789e7761389788b23455748b04f73"
+    },
+    {
+      "path": "evaluation/PREACT_NATIVE_V1.md",
+      "sha256": "c2cc560c5d472ea2b4e1dc045c660a313cfbecb12fe1137072b18e7435b5bf8f"
+    },
+    {
+      "path": "fixtures/preact-native/original-manifest.json",
+      "sha256": "a4fd773857a17db8181da1b240b1196ccf1e5700ef3dd16e2bb4a016b6303a64"
+    },
+    {
+      "path": "repositories/preact-native-v1/original.tar.gz",
+      "sha256": "88d58cccfa506ba27b82c201cdccfe731fdd0870175e76695d3fda9386a756bf"
+    },
+    {
+      "path": "repositories/preact-native-v1/LICENSE",
+      "sha256": "1fe6958409c8c257a70c587a18b6f7f412b179b456630790d30b2ec9a8e4b7d4"
+    },
+    {
+      "path": "repositories/preact-native-v1/guest.cjs",
+      "sha256": "7a3fdc618286227d0423e4170972bdc8407bfbcc0386d7a243bd9c22d1d41c8f"
+    },
+    {
+      "path": "repositories/preact-native-v1/karma.cjs",
+      "sha256": "c1ba28be8885394bbdfa6bdf7cb85d54b2d8c2d01f42d3554d6f441f294aa6ab"
+    },
+    {
+      "path": "repositories/preact-native-v1/reproduction.html",
+      "sha256": "918d392354680ec6826640be55fc99f798ad3c79cf79e90ac5e819c4e2cacb1c"
+    }
+  ],
+  "digest": "c95b9f9dc8a7720cf64f03c06b22df6f27bc5e4e792083d834ad55a6a8253f6b"
+}

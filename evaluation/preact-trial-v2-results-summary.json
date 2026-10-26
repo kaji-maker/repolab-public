@@ -1,0 +1,69 @@
+{
+  "format": "repolab-preact-trial-result/v2",
+  "freeze": "850bc977f4f3c5685f0e4c5bccb29e102b5e0c903d9ff27ed8511bb7c609095c",
+  "status": "ABSTAINED",
+  "taskId": "preactjs__preact-4436",
+  "provenance": {
+    "inference": "nebius",
+    "execution": "nebius-sandbox",
+    "model": "nvidia/nemotron-3-super-120b-a12b"
+  },
+  "selected": 3,
+  "qualified": 1,
+  "modelAttempted": 1,
+  "unsupported": [
+    "facebook__docusaurus-8927",
+    "vuejs__core-11899"
+  ],
+  "candidates": [
+    {
+      "attempt": 1,
+      "status": "ADMISSION_REJECTED",
+      "sourceHash": null,
+      "feedback": {
+        "kind": "admission",
+        "reason": "Ref binding origin changed"
+      }
+    },
+    {
+      "attempt": 2,
+      "status": "ADMISSION_REJECTED",
+      "sourceHash": null,
+      "feedback": {
+        "kind": "admission",
+        "reason": "Ref binding origin changed"
+      }
+    },
+    {
+      "attempt": 3,
+      "status": "ADMISSION_REJECTED",
+      "sourceHash": null,
+      "feedback": {
+        "kind": "admission",
+        "reason": "Ref binding origin changed"
+      }
+    }
+  ],
+  "accepted": false,
+  "independentlyCorrect": false,
+  "public": null,
+  "independent": null,
+  "native": null,
+  "requests": 3,
+  "operations": 2,
+  "operationIds": [
+    "01a13358-14f0-7243-ad86-ce9a4927a960",
+    "01a13358-2152-7086-8d46-0e17050b1347"
+  ],
+  "estimatedInferenceUsd": 0.0019689,
+  "usageComplete": true,
+  "priorArtifacts": 285,
+  "limitations": [
+    "One scoped public Preact feature request; not hidden benchmark accuracy.",
+    "Two selected repositories remain unsupported; no selected task is removed.",
+    "Independent lifecycle checks are developer-authored and withheld from repair context.",
+    "Same-project cached original image; separate-project portability is untested.",
+    "Framework model workflow is CLI-only; API/UI Preact repair remains unqualified.",
+    "Native browser 11 original skips and TypeScript 2 pending cases remain disclosed."
+  ]
+}

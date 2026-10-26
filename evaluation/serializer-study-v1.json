@@ -1,0 +1,154 @@
+{
+  "format": "repolab-serializer-study/v1",
+  "parentFreeze": "0dcf53e9f6064a2b7828a6767b3bbde1d00ecf85722142983c63b76b6231028e",
+  "fixtures": [
+    "escaped-crlf",
+    "duplicate-branches",
+    "large-context"
+  ],
+  "modes": [
+    "full-thinking",
+    "direct-json"
+  ],
+  "repetitions": [
+    "A",
+    "B"
+  ],
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "outputTokens": 16384,
+  "requestBytes": 64000,
+  "ratesUsdPerMillion": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "monetaryCap": null,
+  "maxModelCalls": 12,
+  "maxSandboxOperations": 75,
+  "originalOperationsPerFixture": 5,
+  "candidateOperationsPerSlot": 5,
+  "allGuestNetworking": false,
+  "automaticRetry": false,
+  "schemaInSystemAndResponseFormat": true,
+  "qualification": "6/6 exact serializations plus native and behavioral checks twice per mode; failed/blocked slots retained",
+  "productionPromotion": false,
+  "scope": "controller-authored serialization fixtures only; no GitHub repair or unseen-bug success claim; current full-thinking repair path unchanged",
+  "assets": [
+    {
+      "path": "packages/repositories/serializer-study-protocol-v1.ts",
+      "sha256": "11d1f0b7e328ea5f45c5e32f6638cf6a40c00dc82cc7ec17e755911c1ce865cd"
+    },
+    {
+      "path": "packages/repositories/serializer-study-v1.ts",
+      "sha256": "48a01cd644c9c26bffd1c7f765f409129c9d801b05f7bceba634471a0ff95ede"
+    },
+    {
+      "path": "packages/providers/nebius-format-v1.ts",
+      "sha256": "2d68596797ce870f42459c78e77d7a8e419c3b011005ccf7331a7bac9d71a876"
+    },
+    {
+      "path": "packages/repositories/source-edits-v3.ts",
+      "sha256": "bcae84805d048861b78b5f774a25e0371e963b85c7ebb6d835b5509e831807aa"
+    },
+    {
+      "path": "packages/repositories/source-edits-v2.ts",
+      "sha256": "4ad1b86cb415a714a7217b91cbabfb283e9c5476eaffe746c2ed08a8846e5d69"
+    },
+    {
+      "path": "packages/repositories/cross-runtime-v2.ts",
+      "sha256": "523b5769b4689c4e8a1c9b932aad06a9dd5e2525e6052690c642082b2a09d690"
+    },
+    {
+      "path": "packages/execution/cross-repo-sandbox-v1.ts",
+      "sha256": "d3fac4719169a3f55e71578faa26711ab963c8b94a3a0471e6688a156c1942ec"
+    },
+    {
+      "path": "packages/execution/fresh-native-signature-v1.ts",
+      "sha256": "f2c6fec989a08961d0dc5245fc2300ad581831423387206eb07d6bcf88b29349"
+    },
+    {
+      "path": "repositories/fresh-pilot-v3/driver.cjs",
+      "sha256": "1e9864d8bdca392e7d2a7c4e523e4d3b8f1077382119fa8a1c338b5224edb6b2"
+    },
+    {
+      "path": "repositories/cross-repo-v1/child.cjs",
+      "sha256": "d844ca28a33a6aa30443e0f9c5ab10312c5c7bb1ffb6d01463a55121e4de5706"
+    },
+    {
+      "path": "apps/repositories/serializer-study-v1.ts",
+      "sha256": "38768e56783b010c4a3b63fdd31ddbe0b4c86be45c18f4ae25eaaf5a8bc4e433"
+    },
+    {
+      "path": "tests/serializer-study-v1.test.ts",
+      "sha256": "105fe1837cffde8d5b9607ff126afcb4e7a0f5f4c3629fa893861b6398b8865a"
+    },
+    {
+      "path": "evaluation/SERIALIZER_STUDY_V1.md",
+      "sha256": "1d80ffd863d603fe4bdf6fa5b6cfa882e1da0d870b08e02b76d9102bedf87809"
+    },
+    {
+      "path": "repositories/serializer-study-v1/escaped-crlf/manifest.json",
+      "sha256": "9481181b4c01ae12e55cd6245bcd52bfbcaa38049f8e97c1c1144640257b551a"
+    },
+    {
+      "path": "repositories/serializer-study-v1/escaped-crlf/original.tar.gz",
+      "sha256": "58740a50e19bbf6039dce85899028812f0d6e1d1345549a1281bb795b3d81227"
+    },
+    {
+      "path": "repositories/serializer-study-v1/escaped-crlf/package.json",
+      "sha256": "73f1c93bcb15338892c3d8260860346631d578b1f3ed032ff88840997b183351"
+    },
+    {
+      "path": "repositories/serializer-study-v1/escaped-crlf/native.test.cjs",
+      "sha256": "b817c917b45c9d7540efb44a53e37ba222f196b087257ddad8bc8014b112d6a0"
+    },
+    {
+      "path": "repositories/serializer-study-v1/escaped-crlf/index.js",
+      "sha256": "5b2b3918d389d22d392c53565c9d8096d96fc3d1e769100ae401557f643676f9"
+    },
+    {
+      "path": "repositories/serializer-study-v1/duplicate-branches/manifest.json",
+      "sha256": "33f0b46c1e6fb9aaf5354c7c0c8fba214f97998faae33a892b4140f0e1bdda53"
+    },
+    {
+      "path": "repositories/serializer-study-v1/duplicate-branches/original.tar.gz",
+      "sha256": "42e5ef6f1c1ad206f53c582255a9f94484de4ab6b98b337b11d24307e2c46a19"
+    },
+    {
+      "path": "repositories/serializer-study-v1/duplicate-branches/package.json",
+      "sha256": "640ddc4f8dd4b7af68d1ad94295710e162071d45b24a9b822d27c5cb21dc0770"
+    },
+    {
+      "path": "repositories/serializer-study-v1/duplicate-branches/native.test.cjs",
+      "sha256": "b817c917b45c9d7540efb44a53e37ba222f196b087257ddad8bc8014b112d6a0"
+    },
+    {
+      "path": "repositories/serializer-study-v1/duplicate-branches/index.js",
+      "sha256": "12194881bba2ebf202bae1cd70f5ad5b51fb252402f718ddd0a5d182f81478bb"
+    },
+    {
+      "path": "repositories/serializer-study-v1/large-context/manifest.json",
+      "sha256": "9a8fafea84170a163330ebfa6f45f44b3074d49cebd46b5718531a77e90475c6"
+    },
+    {
+      "path": "repositories/serializer-study-v1/large-context/original.tar.gz",
+      "sha256": "d9e230f20109eed82dc8d89023b99680869e97dc2e73c1855f61464cf168dd7e"
+    },
+    {
+      "path": "repositories/serializer-study-v1/large-context/package.json",
+      "sha256": "1ed0972364a915993f6ea564456d558f323e399b5e5eec87fcd9e16c205bf133"
+    },
+    {
+      "path": "repositories/serializer-study-v1/large-context/native.test.cjs",
+      "sha256": "b817c917b45c9d7540efb44a53e37ba222f196b087257ddad8bc8014b112d6a0"
+    },
+    {
+      "path": "repositories/serializer-study-v1/large-context/index.js",
+      "sha256": "89e6475d51f7219c9aa18916fdac84be1dd7ea93e301bab660080c2460b0ad42"
+    },
+    {
+      "path": "repositories/serializer-study-v1/large-context/prefix.js",
+      "sha256": "87a1303816a2535d090eca158ce69f77406386c382df600404c8d9cc5d611a91"
+    }
+  ],
+  "digest": "eeb9beda88c0b95fb58dec3037d1210c87b66388c6e3ca173c6e0aa31d6b812b"
+}

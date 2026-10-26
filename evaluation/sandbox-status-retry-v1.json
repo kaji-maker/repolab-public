@@ -1,0 +1,76 @@
+{
+  "format": "repolab-sandbox-status-retry-offline-qualification/v1",
+  "status": "OFFLINE_PROTOCOL_FROZEN",
+  "transportFreeze": "34d1982a844531ca98401d542676ddb3ab554b33ecfb1b3d0030f157bd47869f",
+  "transportClient": "profiled-native-v3",
+  "executionAdmission": false,
+  "maxModelCalls": 0,
+  "maxSandboxOperations": 0,
+  "retryPolicy": {
+    "method": "GET",
+    "resource": "exact-operation-uuid",
+    "maxExtraReadsPerOperation": 2,
+    "maxAttemptsPerRead": 3,
+    "retryDelaysMs": [
+      1000,
+      2000
+    ],
+    "httpStatuses": [
+      500,
+      502,
+      503,
+      504
+    ]
+  },
+  "assets": [
+    {
+      "path": "packages/evaluation/sandbox-status-retry-v1.ts",
+      "sha256": "35546330dbd7f8908017753e085767c6def08cede045ac52a5e1e909ba3c7342"
+    },
+    {
+      "path": "packages/execution/sandbox-status-retry-v1.ts",
+      "sha256": "27ac7a706e45e52cb5af2b3114e7c954c90f25688ca361acd6d3da63ed3c3e7e"
+    },
+    {
+      "path": "packages/execution/profiled-native-v3.ts",
+      "sha256": "dc88a7b6922c529bdc8debd1307fac75906bba2bc9e8454527e18c8e4d646cd3"
+    },
+    {
+      "path": "apps/evaluator/sandbox-status-retry-v1.ts",
+      "sha256": "032c042301ddeebe0ec58c7e01f8e945423bc657c4fe602d705865521381218d"
+    },
+    {
+      "path": "tests/sandbox-status-retry-v1.test.ts",
+      "sha256": "fb81b4bb473c52da70b9eacc3f374238bc8921b795a91d6c3539f8e0386108ba"
+    },
+    {
+      "path": "evaluation/SANDBOX_STATUS_RETRY_V1.md",
+      "sha256": "d747b6b540392f8337ccbb5c84617a90198b498840dc1e39e4e9657407d2dee6"
+    },
+    {
+      "path": "evaluation/sandbox-transport-v1.json",
+      "sha256": "4042465e3073789ebba9f066c57c2e2cb712aacdc1d03f047685235e5528b0cc"
+    },
+    {
+      "path": "packages/execution/profiled-native-v2.ts",
+      "sha256": "620eeb291ade33517624605781ddbca75f20708c1dac2fa213380be61d87cbe3"
+    },
+    {
+      "path": "packages/execution/sandbox-transport-v1.ts",
+      "sha256": "ecd77c848b222e7d6511d5dc504c29fd1951e98fa2658d0ae6afd703e2fa855f"
+    },
+    {
+      "path": "packages/evaluation/sandbox-transport-v1.ts",
+      "sha256": "8ab0459ef3411986ee21f37c2bef13539d034b639bbf1c9208cd3fcb7d27329b"
+    },
+    {
+      "path": ".repolab/sandbox-status-retry-v1-qualification/historical-code.json",
+      "sha256": "5fd0120436f92f63f3d1142c336f62aa8ccecbd5d34b32e48d215c56d0e6ff1a"
+    },
+    {
+      "path": ".repolab/sandbox-status-retry-v1-qualification/execution-state.json",
+      "sha256": "870713e4a4e5400ea8e9bf6d6ac4d9c6e4b1f62915c1b12b7e76fdd21b735e31"
+    }
+  ],
+  "digest": "b2a0138834bc885434017b195f19cbb87e1cc9c1c5a9697dcb1f885e23be1b6d"
+}

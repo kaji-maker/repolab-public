@@ -1,0 +1,276 @@
+{
+  "version": 2,
+  "format": "repolab-evaluation-protocol/v2",
+  "frozenOn": "2026-10-05",
+  "scope": "development-protocol-and-inventory",
+  "revision": {
+    "previousDigest": "3e0fd3dcfd97fa17c4dd1f0b9e1b58d07cd0fef56073737ec564f86d2d518e78",
+    "reason": "LIVE_SANDBOX_SENTINELS_AND_REQUIRED_ISOLATION_CONTROLS",
+    "studyDesignUnchanged": true
+  },
+  "tasks": [
+    {
+      "id": "booking-timezone",
+      "group": "constructed",
+      "split": "development",
+      "evaluatorAssertions": 12,
+      "reported": 2,
+      "independent": 10,
+      "baseline": 0,
+      "repairEvidence": "LIVE_MODEL_REPAIR_UNMEASURED"
+    },
+    {
+      "id": "checkout-quantity",
+      "group": "constructed",
+      "split": "development",
+      "evaluatorAssertions": 8,
+      "reported": 2,
+      "independent": 5,
+      "baseline": 1,
+      "repairEvidence": "LIVE_MODEL_REPAIR_UNMEASURED"
+    },
+    {
+      "id": "clsx-object-push",
+      "group": "historical",
+      "split": "development",
+      "evaluatorAssertions": 16,
+      "reported": 1,
+      "independent": 15,
+      "baseline": 0,
+      "repairEvidence": "LIVE_MODEL_REPAIR_UNMEASURED"
+    }
+  ],
+  "heldOutTasks": 0,
+  "negativeControls": 0,
+  "target": {
+    "constructed": {
+      "development": 4,
+      "heldOut": 4
+    },
+    "historical": {
+      "development": 2,
+      "heldOut": 4
+    },
+    "controls": {
+      "development": 0,
+      "heldOut": 2
+    },
+    "totalTasks": 16,
+    "status": "UNFILLED_TARGET_REQUIRES_NEW_SELECTION_FREEZE"
+  },
+  "comparison": {
+    "arms": [
+      {
+        "id": "A",
+        "name": "direct-repair",
+        "acceptance": "upstream",
+        "implementation": "PENDING"
+      },
+      {
+        "id": "B",
+        "name": "reproduction-plus-repair",
+        "acceptance": "upstream-and-frozen-core",
+        "implementation": "PENDING"
+      },
+      {
+        "id": "C",
+        "name": "reprolab",
+        "acceptance": "upstream-core-challenges-integrity-fresh-verification",
+        "implementation": "FIXTURE_CONTROLLER_ONLY_LIVE_CERTIFICATION_PENDING"
+      }
+    ],
+    "repetitions": 1,
+    "maxCandidates": 2,
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "parameters": {
+      "max_tokens": 4096
+    },
+    "sampling": "PROVIDER_DEFAULTS_NO_MATCHED_RANDOMNESS_CLAIM",
+    "maxInferenceCalls": 6,
+    "maxRequestBytes": 32000,
+    "runInferenceCapMicroUsd": 100000,
+    "evaluationAllocationMicroUsd": 8000000,
+    "ratesUsdPerMillion": {
+      "input": 0.3,
+      "output": 0.9,
+      "provenance": "CONFIGURED_ESTIMATES_NOT_INVOICED_COST"
+    },
+    "execution": "CERTIFIED_ISOLATION_REQUIRED_FOR_GENERATED_OR_UPSTREAM_SOURCE",
+    "sandboxBudget": "UNMEASURED_REQUIRES_COVERAGE_AND_LIMITS_BEFORE_ADMISSION"
+  },
+  "scoring": {
+    "unit": "task-arm-repetition-workflow",
+    "selection": "FREEZE_SELECTED_SOURCE_AND_ARM_DECISION_BEFORE_INDEPENDENT_EVALUATION",
+    "success": "INDEPENDENT_ASSERTIONS_AND_UNCHANGED_REGRESSION_PASS_WITH_COMPLETE_EVIDENCE",
+    "denominator": "QUALIFIED_BUG_WORKFLOWS_ATTEMPTED_INCLUDING_ABSTENTIONS_AND_PROVIDER_ERRORS",
+    "allAttempted": "ALSO_REPORT_SETUP_FAILURES_AND_UNQUALIFIED_PREPARATION_ATTEMPTS",
+    "zeroDenominator": "NULL_WITH_EXPLICIT_COUNTS_NEVER_ZERO_PERCENT",
+    "fixtureResults": "SEPARATE_FROM_LIVE_NVIDIA_MODEL_REPAIRS",
+    "groups": "REPORT_CONSTRUCTED_HISTORICAL_AND_CONTROL_RESULTS_SEPARATELY",
+    "alreadyCorrect": "NO_ACCEPTED_PATCH_AND_JUSTIFIED_ABSTENTION",
+    "missingFact": "NO_ACCEPTED_PATCH_AND_TARGETED_CLARIFICATION",
+    "evidence": "PIN_SOURCE_REPORT_TEST_EXPECTATION_LOCK_RUNTIME_IMAGE_OPERATION_USAGE_AND_PRE_EVALUATION_DECISION",
+    "retries": "KEEP_ALL_CANDIDATES_FAILURES_CANCELLATIONS_AND_UNKNOWN_CHARGES_NO_SUCCESS_ONLY_RERUNS",
+    "holdOut": "ALL_CURRENT_TASKS_DEVELOPMENT_NEW_HELD_OUT_SET_FROZEN_BEFORE_TUNING_AND_OPENING_LOGGED",
+    "feedback": "WITHHELD_EXPECTATIONS_REFERENCE_AND_EVALUATOR_OUTPUT_NEVER_REPAIR_FEEDBACK"
+  },
+  "assets": [
+    {
+      "path": "evaluation/booking-timezone/cases.json",
+      "sha256": "ea7ad21304789b463de48b0116b09f0cecc8fe99e0faf29877d9be168f7b40dd"
+    },
+    {
+      "path": "evaluation/checkout-quantity/cases.json",
+      "sha256": "8174a13e532fce6d6702742b40ff05b5c86de83d89a5a71cc870526ace875bad"
+    },
+    {
+      "path": "evaluation/clsx-object-push/cases.json",
+      "sha256": "74f4768370b05c1f7f049f9e25548a31fd7792b5d9b00040d1f8acf04b45f9f7"
+    },
+    {
+      "path": "evaluation/clsx-object-push/check_expected.py",
+      "sha256": "dad66051993c3ac51ad8b5e4cc3473ba3c2f8a542794a0233af82b2b45f354dc"
+    },
+    {
+      "path": "fixtures/booking-timezone/profile.ts",
+      "sha256": "1e4e1ef2328858faa92e6c5b81d5279b8f1f3fa947ef59b0df045745df476fdb"
+    },
+    {
+      "path": "fixtures/checkout-quantity/profile.ts",
+      "sha256": "810748eecd1ae473304ca0577f70b96d41ee22460ad36c250f25e9a863c136a6"
+    },
+    {
+      "path": "fixtures/clsx-upstream/original-snapshot.json",
+      "sha256": "1f9ec8e292033fedb0580c081dd884d5e73a10a37ae00195fad5abc163b26c99"
+    },
+    {
+      "path": "packages/evaluation/booking.ts",
+      "sha256": "b5e77795bd695c9698ddc63b0c56b2a6ff74963ccfacb689f2956ee7290bdd73"
+    },
+    {
+      "path": "packages/evaluation/checkout.ts",
+      "sha256": "092c8c04f026a6731f0acaf0c0a227d35542cd121787c5e4c8227b91bab31e02"
+    },
+    {
+      "path": "packages/evaluation/cases.ts",
+      "sha256": "23fdf67971625872662673a6babebf08312d3d3db37b55b219fc6e9bd29a66a8"
+    },
+    {
+      "path": "packages/evaluation/clsx.ts",
+      "sha256": "734db72b636a02c6ccd21ff701389465e8015e2bc4bb832f7b38f000acdf44c2"
+    },
+    {
+      "path": "packages/controller/observations.ts",
+      "sha256": "bf8caf578b8f9dfa2201e6aeecb9d1663ebc9955f412c52d46968187030d5e89"
+    },
+    {
+      "path": "packages/controller/gates.ts",
+      "sha256": "b28543b5d7557e66184043e12376bb6d69efe1646acf9d31827ce7f017d89909"
+    },
+    {
+      "path": "packages/controller/tests.ts",
+      "sha256": "1641536a68a1a6d0a28c14f8741c87c738012adacfc39322a1894881c285f74d"
+    },
+    {
+      "path": "packages/controller/run.ts",
+      "sha256": "1c3cd94c208c657d931fbc7f7bbf41b2893bb336fa46c6a290ab5caa5fa6c035"
+    },
+    {
+      "path": "packages/providers/nebius.ts",
+      "sha256": "1c598eb385f0e4cce9b0740d0d63ee6ae1f9c4f768f99944dc07c0b387d68b6b"
+    },
+    {
+      "path": "packages/providers/fixture.ts",
+      "sha256": "9e22f7b016fbc96dc5174dee5f3e0e456dc65743474dca2ed72b5beee8b7aed2"
+    },
+    {
+      "path": "packages/repositories/qualification.ts",
+      "sha256": "b7b289e98a46dc71f9545a17572f07eef7707f383a081808f37c293ff36b10e5"
+    },
+    {
+      "path": "packages/repositories/baseline.ts",
+      "sha256": "8b45289eb0e55a4d3725b4523fef030f3ca4463fe81831b0457e0e70b312672c"
+    },
+    {
+      "path": "packages/repositories/clsx-contract.ts",
+      "sha256": "f6af9d349a1df946522e3c547eef67545e4378c91939943550010b3612fe74ed"
+    },
+    {
+      "path": "packages/repositories/clsx-repair.ts",
+      "sha256": "8d6d08e3013fde4598b6a9adc019bbaf3d5dc33c028d488f5130607fb55edb22"
+    },
+    {
+      "path": "repositories/clsx-baseline/package-lock.json",
+      "sha256": "05073bd678d69190ec1c7ec09dd1a66c7ea43e2b14d009d084b205c8455104af"
+    },
+    {
+      "path": "repositories/clsx-baseline/runner.mjs",
+      "sha256": "12f979d919c3736259f96889740318322a9c75b1e7d939c7ba1f1caa608f6247"
+    },
+    {
+      "path": "repositories/clsx-baseline/tree.json",
+      "sha256": "27b022e4dc56e475966f83e8d42ed07591a46e8426be16de10c008de3516da17"
+    },
+    {
+      "path": "packages/execution/local.ts",
+      "sha256": "32120e1ea61d7a7d9f835dd2220001b7dbbb19d06667076d483758968622f09b"
+    },
+    {
+      "path": "packages/execution/nebius.ts",
+      "sha256": "3feb92191ce8bd69ce69475054ce1aec96042c0925200859b06663e635a60692"
+    },
+    {
+      "path": "packages/execution/readiness.ts",
+      "sha256": "78d20d79261a7456378137a77d4351e45c81d90ac05b979ded6277e76a96df7f"
+    },
+    {
+      "path": "packages/contracts/index.ts",
+      "sha256": "c9962c3c939e4f238172ad73420ad5b912cf8533078fd8f016e880677d7e5096"
+    },
+    {
+      "path": "packages/profiles/index.ts",
+      "sha256": "f5c72541e1f3d2055c5db642bddca690a6b09e055cc1758450738c8b3908fdae"
+    },
+    {
+      "path": "packages/evidence/hash.ts",
+      "sha256": "16aee9414c7eb45f880a33d33357879491ca94f8472e859df2e636b15859c80f"
+    },
+    {
+      "path": "packages/evidence/pack.ts",
+      "sha256": "59401c528a09cb0b4af25c12e540dee7840f8325975bd492c9741403a9deeb49"
+    },
+    {
+      "path": "apps/evaluator/main.ts",
+      "sha256": "4fb1efd0bb22ee7f4328b60e2653e305afecc216ceb3331f3d44d965506d2feb"
+    },
+    {
+      "path": "evaluation/PROTOCOL_V1.md",
+      "sha256": "a0631b65d3a6ec70af8373f83c768887a2a40c4fdfdacdb9d6ff376f7293c6d1"
+    },
+    {
+      "path": "docs/EVALUATION.md",
+      "sha256": "aac8ecbe9436fbb27694e3d94d48113e8f98ea8ed29896e037f013d786dc1e43"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "665838080f16fb24a5002a2898feaaf064c326023e007ab83bbb5dff95db624d"
+    },
+    {
+      "path": "evaluation/PROTOCOL_V2.md",
+      "sha256": "3cf35663714f3071ebe560ee5ccb7a89e9d3e4860b7db482b14e0894c818f200"
+    },
+    {
+      "path": "evaluation/archive/v1/nebius.ts.txt",
+      "sha256": "0bda2e96afeac20cd7ba878e0a0ee6a62c5e64298ce3ae840dfe2c7ac13c78dc"
+    },
+    {
+      "path": "evaluation/archive/v1/readiness.ts.txt",
+      "sha256": "56262d6cd0a7126beceef9fff69ac169cd932067e741ed3703f8c29875a8cb41"
+    },
+    {
+      "path": "scripts/sandbox-controls.mjs",
+      "sha256": "12e8d9d7f7558ece1447914bbb6adbe23e379665bb0701baf93b42fcb0e98706"
+    }
+  ],
+  "digest": "037cb37b489473e5639da62baa9d7dd5126ad78f19cbefd32a7f022cbd209061"
+}

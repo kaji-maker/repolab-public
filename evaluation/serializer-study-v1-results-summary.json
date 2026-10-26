@@ -1,0 +1,73 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "eeb9beda88c0b95fb58dec3037d1210c87b66388c6e3ca173c6e0aa31d6b812b",
+  "scope": "controller-authored serialization fixtures only; no GitHub repair or unseen-bug success claim; current full-thinking repair path unchanged",
+  "productionPromotion": false,
+  "slots": 12,
+  "modes": [
+    {
+      "mode": "full-thinking",
+      "selectedSlots": 6,
+      "verified": 0,
+      "truncated": 0,
+      "otherFailed": 0,
+      "blocked": 6,
+      "qualified": false,
+      "inferenceCalls": 0,
+      "costUsd": 0,
+      "observedReasoningChannels": 0
+    },
+    {
+      "mode": "direct-json",
+      "selectedSlots": 6,
+      "verified": 0,
+      "truncated": 0,
+      "otherFailed": 0,
+      "blocked": 6,
+      "qualified": false,
+      "inferenceCalls": 0,
+      "costUsd": 0,
+      "observedReasoningChannels": 0
+    }
+  ],
+  "qualifications": [
+    {
+      "fixture": "escaped-crlf",
+      "status": "FIXTURE_QUALIFICATION_FAILED",
+      "native": null,
+      "operations": 2
+    },
+    {
+      "fixture": "duplicate-branches",
+      "status": "FIXTURE_QUALIFICATION_FAILED",
+      "native": null,
+      "operations": 2
+    },
+    {
+      "fixture": "large-context",
+      "status": "FIXTURE_QUALIFICATION_FAILED",
+      "native": null,
+      "operations": 2
+    }
+  ],
+  "inferenceCalls": 0,
+  "sandboxOperations": 6,
+  "estimatedInferenceUsd": 0,
+  "ledgerBeforeUsd": 0.2835986999999999,
+  "ledgerAfterUsd": 0.2835986999999999,
+  "unsettledCharges": 0,
+  "priorFilesUnchanged": 2720,
+  "credentialAndProjectExclusion": "PASS",
+  "filesScanned": 47,
+  "priorFreshVerified": 0,
+  "priorDevelopmentVerified": 1,
+  "offlineReview": {
+    "status": "PASS",
+    "networkAttempts": 0,
+    "inferenceCalls": 0,
+    "sandboxOperations": 0,
+    "inference": "none",
+    "execution": "offline receipt review; no upstream/generated execution",
+    "evidenceFilesUnchanged": 35
+  }
+}

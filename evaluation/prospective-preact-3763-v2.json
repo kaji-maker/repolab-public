@@ -1,0 +1,101 @@
+{
+  "format": "repolab-prospective-preact-native/v1",
+  "taskId": "preactjs__preact-3763",
+  "commit": "e968a5a4000dfa9bec7e8d7b26543b23def6d29d",
+  "image": "593480da-88a9-4b33-9b1f-2a47b2f22431",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "inferenceCalls": 0,
+  "modelAdmission": false,
+  "maxOperations": 7,
+  "priorOperations": 5,
+  "taskOriginalCeiling": 12,
+  "previousFreeze": "a33e4a28d8e484831418ff9bc5578f10a1ea72427bcda2fe1b4bc04e5f255b61",
+  "slots": [
+    "lint",
+    "mocha-A",
+    "browser-A",
+    "reproduction-A",
+    "mocha-B",
+    "browser-B",
+    "reproduction-B"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/prospective-preact-3763-v2.ts",
+      "sha256": "f64e99d641a146bbc782b460c3bfdcc5113d37ac00f039e5d6c28ddf3faee113"
+    },
+    {
+      "path": "apps/evaluator/prospective-preact-3763-v2.ts",
+      "sha256": "2fff5c139cf8b5ee861e0ad5ff8c8235b64992ab7c9dd3dc3b6a3d5ff38891b8"
+    },
+    {
+      "path": "tests/prospective-preact-3763-v2.test.ts",
+      "sha256": "ac1e3e0ae4fd2d70126d5f6427839d881016b2f8398cd9e20781c8ebfcc1319d"
+    },
+    {
+      "path": "evaluation/PROSPECTIVE_PREACT_3763_V2.md",
+      "sha256": "2db06e2a7478fb7199357bc366dce820166e27cfe1aee717a3b7497beb677f78"
+    },
+    {
+      "path": "evaluation/prospective-preact-3763-v1.json",
+      "sha256": "e0510f8868ab4cce078369dacff1b5e0c36bc58cc1944c0eec18e3fd5be47f36"
+    },
+    {
+      "path": "packages/evaluation/prospective-preact-3763-v1.ts",
+      "sha256": "43f68e899573963d914426ab4a3836927e65cec5a59844a889f2f1b81d311079"
+    },
+    {
+      "path": "packages/execution/profiled-native-v1.ts",
+      "sha256": "c67d664050b722285869e71313bdb6e31daf0b37f5ed79c6f74a992a97fdf268"
+    },
+    {
+      "path": ".repolab/prospective-preact-3763-v1/run/prepare.json",
+      "sha256": "c979424c97b8127f8738b003fff496d6caa128dfefd4fe504674e6b9cef847b3"
+    },
+    {
+      "path": ".repolab/prospective-preact-3763-v1/run/build.json",
+      "sha256": "c9090c8467113953145549621d42162d0733da3a8c3d422bd97027b68392043e"
+    },
+    {
+      "path": ".repolab/prospective-preact-3763-v1/run/protect.json",
+      "sha256": "7c1fe8345a7980ed74e87b681c1976a6dbb8b4df194de2c2e30ed5e04007a21a"
+    },
+    {
+      "path": ".repolab/prospective-preact-3763-v1/run/integrity.json",
+      "sha256": "887a4e8029704e4f67db5fe3539262ecdd8eb632be522a4cea05a0a0fdb874ba"
+    },
+    {
+      "path": ".repolab/prospective-preact-3763-v1/run/lint.json",
+      "sha256": "29136aa578541dafd0cdc6f8e53bd7a91b2dbc495990573cfd78dce99900a2db"
+    },
+    {
+      "path": ".repolab/prospective-preact-3763-v1/run/upload-upstream.tar.gz.json",
+      "sha256": "44d6d81183c80d3029be50c6762dfb71dc327a2ff6af8aec0d692b7bec9582ef"
+    },
+    {
+      "path": ".repolab/prospective-preact-3763-v1/run/upload-manifest.json.json",
+      "sha256": "9166b0c08c02c4ca2099f5fafa32982f71d45126e1805f8ce7fa1042f94a7141"
+    },
+    {
+      "path": ".repolab/prospective-preact-3763-v1/run/upload-guest.cjs.json",
+      "sha256": "ebc6ea009466d1edd8f71a3f94af55a773a24eeaa287332e88d72439996a25e6"
+    },
+    {
+      "path": ".repolab/prospective-preact-3763-v1/run/upload-karma.cjs.json",
+      "sha256": "0b539b2ff4a36a9cd9601556feab80f49a9355f21a0240be428b3bce62d492b3"
+    },
+    {
+      "path": ".repolab/prospective-preact-3763-v1/run/upload-reproduction.html.json",
+      "sha256": "365fde12b5b29709b8a527d7f709188b5586dc7621260dc4dcd80308dea06cc9"
+    },
+    {
+      "path": ".repolab/prospective-preact-3763-v1/run/recovery-fc0f8de9-fa4e-424b-b515-cf603e56ec6f-6af88c73-e4d6-43ac-9b89-42cec3c201b0.json",
+      "sha256": "88a872f6af898b2019347ebd34e052d2f56473d99256746833012516ec897a0b"
+    },
+    {
+      "path": "evaluation/prospective-preact-3763-v1-results-summary.json",
+      "sha256": "d230b7b81fd2a73b03fb9dcaef85d27f7a93bc6042c208ffc51e7188ea9b5848"
+    }
+  ],
+  "digest": "c57cd84a70c591520fbd220cdbba5119592eca45c1ef89cf9169d6ccf07694ce"
+}

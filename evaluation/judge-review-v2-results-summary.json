@@ -1,0 +1,61 @@
+{
+  "status": "PASS_PORTABLE_QUALIFIED_PRODUCT_REVIEW",
+  "archiveSha256": "96a66b20e03b685b7ead39c246838ecbd7e6f453e10e8bdb721e6758cc56a457",
+  "archiveBytes": 320158,
+  "archiveEntries": 18,
+  "manifestSha256": "4f027be8de254bc95d125ce59f0162479a9ab0e0c548aa907131c5b259678452",
+  "qualifiedFrontendUnchanged": true,
+  "sourceRebuildManifestIdentical": true,
+  "integrityGroupsPassed": 9,
+  "sameHostBrowserCyclesPassed": 2,
+  "browserWidths": [
+    1440,
+    390,
+    320
+  ],
+  "containerUserspacesPassed": [
+    "Debian 12 / Node 24.21.0",
+    "Alpine 3.24.2 / Node 24.21.0"
+  ],
+  "containerNetwork": "none",
+  "containerUser": 1000,
+  "containerRootAndBundle": "read-only",
+  "temporaryBrowserServersClosed": true,
+  "freshDispatchAvailable": false,
+  "priorPrivateJsonFilesMatched": 3949,
+  "historicalFrozenAssetsMatched": 657,
+  "originalBrowserV1RemainsUnqualified": true,
+  "browserV2RemainsQualified": true,
+  "newModelRequests": 0,
+  "newSandboxOperations": 0,
+  "candidateExecution": false,
+  "independentInputsExported": false,
+  "credentialsExported": false,
+  "rawProviderMessagesExported": false,
+  "publicAccessQualified": false,
+  "separateMachineQualified": false,
+  "unaidedHumanQualified": false,
+  "liveServicePackaged": false,
+  "cloudLiveDispatchAllowed": false,
+  "published": false,
+  "retainedFailures": [
+    "Missing Preact license source during initial build/control setup",
+    "Immediate End-key scroll assertion in first browser runner; separate V3 uses PageDown and waits for observed scrolling"
+  ],
+  "sources": {
+    "apps/judge-review-v2/PREACT_LICENSE.txt": "1fe6958409c8c257a70c587a18b6f7f412b179b456630790d30b2ec9a8e4b7d4",
+    "apps/judge-review-v2/README.md": "fd4de6e38cd2aea6f5f962f85c905d148e4608955305cfdf2fb196fb5e813832",
+    "apps/judge-review-v2/THIRD_PARTY_NOTICES.md": "f9d2a4911eac99dd6d58123a30068f96a5fde020bcd56b362e3ca6189765b60e",
+    "apps/judge-review-v2/contract.mjs": "d064f8623006e385fb184628141c265902d775e67c392cb955a4d1bd69659e08",
+    "apps/judge-review-v2/integrity.mjs": "f6eadb1189204c0dd5172a1e4e6eb1fa827f833defa81fb1399236e41b1d35b1",
+    "apps/judge-review-v2/server.mjs": "50cafd6938bac971fb5d9b54dc3f59cbc4d4943a1177b861b8b73421dce34448",
+    "scripts/judge-review-bundle-v2.mjs": "8834ff492c62aea0728d70a2f9f4765d22dec726e2ad09874dc1581ee43693c1",
+    "scripts/judge-review-container-check-v2.mjs": "bc700c5751d1cce5c7ad5d2e47a5e6ce6661d094026f14d31a65c5c11da928fd",
+    "scripts/judge-review-product-browser-v2.mjs": "39b2e1421a316907c2c4a2836f2f3ae084a7072e3eea7ef055a378319c2f4c42",
+    "scripts/judge-review-product-browser-v3.mjs": "29bda1ffe651056a6ac9d1e163b38060a498b855a56df80fb3ee026086b52760",
+    "tests/judge-review-v2.test.mjs": "598770bb2f562af85029414955801f532669e53d1cecb6b4407f31d2756ed4e9",
+    "evaluation/preact-browser-v2-portable-review.json": "8a662977262046c4d5e9884bfecca62afa528327ee4722bd0dbc5f252e036673"
+  },
+  "inference": "none in packaging, fixtures or audits; bundled historical actual result retains its one Nebius/NVIDIA request",
+  "execution": "Reviewed local controller/HTTP/browser checks and two fresh same-host network-disabled containers only; patch stays text. Bundled historical result retains 14 actual isolated Sandbox operations."
+}

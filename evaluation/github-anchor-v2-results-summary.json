@@ -1,0 +1,157 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "e199e3ea99b62b5e049ea76f333b0f2893cb09ba3da91b857c3d23a85f4481df",
+  "scope": "same three selected GitHub tasks; exposed environment recovery after V1 native-loader failures; same maintainer; reporter suggestions exposed in issue bodies; no random, controller-blind or training-unseen claim; zero model repairs in this preparation phase",
+  "productionPromotion": false,
+  "selectedTasks": 3,
+  "originalQualified": 3,
+  "contextAdmitted": 3,
+  "readyForRepair": 3,
+  "repairStatus": "NOT_ATTEMPTED",
+  "inferenceCalls": 0,
+  "sandboxOperations": 18,
+  "estimatedInferenceUsd": 0,
+  "independentOpened": false,
+  "rows": [
+    {
+      "task": "klona",
+      "status": "QUALIFIED_ORIGINAL",
+      "contextAdmission": {
+        "status": "ADMITTED",
+        "completeBodyBytes": 34848,
+        "expressionAnchors": 110,
+        "limit": 64000
+      },
+      "native": {
+        "runner": "uvu",
+        "total": 137,
+        "passed": 137,
+        "skipped": 0
+      },
+      "inferenceCalls": 0,
+      "operations": 6,
+      "error": null,
+      "failedPhase": null,
+      "publicInventory": {
+        "total": 6,
+        "passed": 4,
+        "failed": [
+          "full-readonly-0",
+          "full-readonly-1"
+        ]
+      },
+      "readyForRepair": true,
+      "sourceExecutionProvenance": {
+        "inference": "none",
+        "execution": "nebius-sandbox; unchanged pinned public GitHub source"
+      },
+      "executionRuntimes": {
+        "q-dependencies": "v12.22.12",
+        "q-stage": "v12.22.12",
+        "q-native": "v12.22.12",
+        "q-public-A": "v24.18.0",
+        "q-public-B": "v24.18.0",
+        "q-controls": "v24.18.0"
+      },
+      "repairStatus": "NOT_ATTEMPTED",
+      "independentOpened": false
+    },
+    {
+      "task": "dequal",
+      "status": "QUALIFIED_ORIGINAL",
+      "contextAdmission": {
+        "status": "ADMITTED",
+        "completeBodyBytes": 43946,
+        "expressionAnchors": 183,
+        "limit": 64000
+      },
+      "native": {
+        "runner": "uvu",
+        "total": 44,
+        "passed": 44,
+        "skipped": 0
+      },
+      "inferenceCalls": 0,
+      "operations": 6,
+      "error": null,
+      "failedPhase": null,
+      "publicInventory": {
+        "total": 6,
+        "passed": 4,
+        "failed": [
+          "dist-sparse-length",
+          "lite-sparse-length"
+        ]
+      },
+      "readyForRepair": true,
+      "sourceExecutionProvenance": {
+        "inference": "none",
+        "execution": "nebius-sandbox; unchanged pinned public GitHub source"
+      },
+      "executionRuntimes": {
+        "q-dependencies": "v12.22.12",
+        "q-stage": "v12.22.12",
+        "q-native": "v12.22.12",
+        "q-public-A": "v24.18.0",
+        "q-public-B": "v24.18.0",
+        "q-controls": "v24.18.0"
+      },
+      "repairStatus": "NOT_ATTEMPTED",
+      "independentOpened": false
+    },
+    {
+      "task": "regexparam",
+      "status": "QUALIFIED_ORIGINAL",
+      "contextAdmission": {
+        "status": "ADMITTED",
+        "completeBodyBytes": 26994,
+        "expressionAnchors": 70,
+        "limit": 64000
+      },
+      "native": {
+        "runner": "uvu",
+        "total": 62,
+        "passed": 62,
+        "skipped": 0
+      },
+      "inferenceCalls": 0,
+      "operations": 6,
+      "error": null,
+      "failedPhase": null,
+      "publicInventory": {
+        "total": 16,
+        "passed": 12,
+        "failed": [
+          "literal-0",
+          "literal-1",
+          "literal-2",
+          "literal-3"
+        ]
+      },
+      "readyForRepair": true,
+      "sourceExecutionProvenance": {
+        "inference": "none",
+        "execution": "nebius-sandbox; unchanged pinned public GitHub source"
+      },
+      "executionRuntimes": {
+        "q-dependencies": "v12.22.12",
+        "q-stage": "v12.22.12",
+        "q-native": "v12.22.12",
+        "q-public-A": "v24.18.0",
+        "q-public-B": "v24.18.0",
+        "q-controls": "v24.18.0"
+      },
+      "repairStatus": "NOT_ATTEMPTED",
+      "independentOpened": false
+    }
+  ],
+  "ledgerBeforeUsd": 0.3155685,
+  "ledgerAfterUsd": 0.3155685,
+  "unsettledCharges": 0,
+  "priorFilesUnchanged": 3307,
+  "credentialAndProjectExclusion": "PASS",
+  "filesScanned": 81,
+  "priorV1Operations": 9,
+  "combinedSandboxOperations": 27,
+  "priorV1OriginalQualified": 0
+}

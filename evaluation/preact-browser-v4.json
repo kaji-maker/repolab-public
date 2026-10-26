@@ -1,0 +1,68 @@
+{
+  "format": "repolab-preact-browser-qualification/v4",
+  "parentReviewerFreeze": "bb4d209f0de115bda1c721f0aee9864464df3c19c756d1267456ced96f3b9efa",
+  "originRunId": "f8bfb85d-6766-4a9e-a762-e362d011559c",
+  "sourceHash": "68c9000eec6e0ed71f140c8af231309064d1e7447414f00136cbb91b4e3eb0d3",
+  "packDigest": "986ae095cd7224c608b19cfd8d4e00a33dcc779a858fc79faf6a6c5468a5b841",
+  "api": "/api/native-selected-v4",
+  "browser": "/selected-pack-v4.html",
+  "qualificationSlots": 1,
+  "qualificationRetry": false,
+  "sandboxOperations": 14,
+  "inferenceCalls": 0,
+  "independentInputsExported": 0,
+  "keylessRestart": true,
+  "viewports": [
+    1440,
+    390,
+    320
+  ],
+  "scope": "browser file import and API native replay; same machine/project and qualified cached image",
+  "assets": [
+    {
+      "path": "packages/repositories/preact-browser-protocol-v4.ts",
+      "sha256": "d41fb4cc53730f3fc8da01fbc9568e9f5b091a2ad7421874e4892300122728ba"
+    },
+    {
+      "path": "apps/api/preact-product-v4.ts",
+      "sha256": "32c0d58ca533e7dda3bb89046174592548b16b0df2f8694946391a26098bc124"
+    },
+    {
+      "path": "apps/api/native-server-v7.ts",
+      "sha256": "586bd3d4fdb84408872f0e323c2862cbabc8a97497ed833023d94e0e3ef47b3e"
+    },
+    {
+      "path": "apps/web/src/SelectedPreactPackV4.tsx",
+      "sha256": "c3146bfab3eddf09864aebfe9d7d483a05b301c668da7190aef9df2cc725ff1c"
+    },
+    {
+      "path": "apps/web/src/FreshPreactV6.tsx",
+      "sha256": "02815c58e50f571d44640e921b2c8a1f28b328b34621b80291c1cd18a07bc350"
+    },
+    {
+      "path": "apps/web/selected-pack-v4.html",
+      "sha256": "89d38c7854fef8baee138b6d34151496980f23be7cd0beda126e4fe686f51b17"
+    },
+    {
+      "path": "apps/web/native-repair-v6.html",
+      "sha256": "504d52f9d9a107da5547c50fa7dbb38ff838148f87d2e80caa54f79afc086d0e"
+    },
+    {
+      "path": "vite.native-v7.config.ts",
+      "sha256": "9ec94156abfeeab26e5a36d001e34b63b0b067d1dff719e3e9fa5982a61a848b"
+    },
+    {
+      "path": "scripts/preact-pack-browser-v4.mjs",
+      "sha256": "4935c084932e7c15fe774393b7bc71edf3adfba809c314bbadb1acf9d103caef"
+    },
+    {
+      "path": "tests/preact-pack-api-v4.test.ts",
+      "sha256": "cdbb732e42879cd9e0e18f2d292f899310d64f284c3aed8ed6b94222e9d1c1bf"
+    },
+    {
+      "path": "evaluation/PREACT_PACK_BROWSER_V4.md",
+      "sha256": "5836102d92a8183c5b2635f17f10fbfc12f947f2536696ed35bd217709033f72"
+    }
+  ],
+  "digest": "4d211611dc902224615bf6f03c98e937630969565ee53f593464e86258e7eafc"
+}

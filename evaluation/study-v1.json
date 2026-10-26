@@ -1,0 +1,117 @@
+{
+  "format": "repolab-development-study/v1",
+  "baseProtocolDigest": "5a928ee3b46ee970cc533f1b1f2f7fa24a7e98cb8ff2713c8290120f4f6be3fe",
+  "frozenAt": "2026-10-07T10:45:14.384Z",
+  "scope": "three-exposed-development-tasks-no-held-out-claims",
+  "schedule": [
+    {
+      "task": "booking-timezone",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "B",
+      "repetition": 1
+    }
+  ],
+  "maxCandidates": 2,
+  "maxCalls": 6,
+  "maxOperations": 24,
+  "runInferenceCapUsd": 0.1,
+  "allocationUsd": 0.9,
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "parameters": {
+    "max_tokens": 4096,
+    "temperature": 1,
+    "top_p": 0.95,
+    "reasoning_effort": "low",
+    "chat_template_kwargs": {
+      "enable_thinking": true,
+      "low_effort": true,
+      "force_nonempty_content": true
+    }
+  },
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "assets": [
+    {
+      "path": "evaluation/STUDY_V1.md",
+      "sha256": "c8400aedcb0048d674fdd4cc18597dd5cb4d7befa4da67f2da12945ed1f68871"
+    },
+    {
+      "path": "packages/evaluation/study-tasks.ts",
+      "sha256": "1a74169b6ace0b74f325a9378b4803d91442609616191d2fe5f0c31f9036fa4c"
+    },
+    {
+      "path": "packages/evaluation/study-oracle.ts",
+      "sha256": "460844036aa29c64e81ad822304a3403a90271784d54c6e63e6d3d0b6d8bf3ec"
+    },
+    {
+      "path": "packages/evaluation/study-policy.ts",
+      "sha256": "0dca3f99d0e34d4bf8e08fde2967576046c93b42a1359da1ddfccbae41607b80"
+    },
+    {
+      "path": "packages/evaluation/study-protocol.ts",
+      "sha256": "c3dbe94c009c10278bc337f4f3fb593e0097934e6b284d6316edc150345e692d"
+    },
+    {
+      "path": "packages/evaluation/study-execution.ts",
+      "sha256": "794efb78897533185b14f98cc56034855efd2f7e638fba981c48ca7d369e3810"
+    },
+    {
+      "path": "packages/evaluation/study-runner.ts",
+      "sha256": "b5e611fad3a22a07930bc7743f6d35b58adb47b72871ade369e9e4ce60233967"
+    },
+    {
+      "path": "packages/evaluation/study-metrics.ts",
+      "sha256": "17778473cde0cc27bc8926ceb5cbedbe8baea0e6dc641f4c284a6f3dfd650d66"
+    },
+    {
+      "path": "apps/evaluator/study.ts",
+      "sha256": "1f4ab5b7d0a2ae69de522d6413ec8742035798483e2b40c0d57fc7846b5ef052"
+    },
+    {
+      "path": "tests/study.test.ts",
+      "sha256": "0fec1a3fd6dd5a09b99485504ef7e43757f9649ec04b9886c3941875aa2a3d11"
+    }
+  ],
+  "digest": "b44cd230ac2b57220a041e19a27f37cbbab3dbd62d45cf816b953c1a0ff57a21"
+}

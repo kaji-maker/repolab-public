@@ -1,0 +1,220 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "ea481953dc20eec5fcb01a9ff2e4ea565852d1e208b8b31aa4f616da2ee01580",
+  "scope": "Fixed three-task same-maintainer GitHub development trial after V1/V2 qualification. Reporter suggestions exposed in original issue bodies. Not random, controller-blind or training-unseen. Preserve all selected tasks and failures; no tuning after post-selection independent evaluation.",
+  "productionPromotion": false,
+  "selectedTasks": 3,
+  "verifiedTasks": 2,
+  "inferenceCalls": 4,
+  "sandboxOperations": 18,
+  "estimatedInferenceUsd": 0.0228474,
+  "rows": [
+    {
+      "task": "klona",
+      "status": "VERIFIED_GITHUB_REPAIR",
+      "inferenceCalls": 1,
+      "sandboxOperations": 7,
+      "estimatedInferenceUsd": 0.006077399999999999,
+      "selectedAttempt": 1,
+      "sourceHash": "34a1940de276dab4f74c8277cd4605a66a96de2b6e4c17b7df9945d82ad0b240",
+      "native": {
+        "runner": "uvu",
+        "total": 137,
+        "passed": 137,
+        "skipped": 0
+      },
+      "public": [
+        {
+          "total": 6,
+          "passed": 6
+        },
+        {
+          "total": 6,
+          "passed": 6
+        }
+      ],
+      "independent": [
+        {
+          "total": 4,
+          "passed": 4,
+          "failed": []
+        },
+        {
+          "total": 4,
+          "passed": 4,
+          "failed": []
+        }
+      ],
+      "candidates": [
+        {
+          "attempt": 1,
+          "status": "SELECTED",
+          "error": null
+        }
+      ],
+      "sourceExecutionProvenance": {
+        "inference": "nebius",
+        "execution": "nebius-sandbox; pinned public GitHub source and model-generated expression replacements"
+      },
+      "publicAttempts": [
+        {
+          "attempt": 1,
+          "total": 6,
+          "passed": 6,
+          "failed": []
+        }
+      ],
+      "testedSourceArtifactSha256": "5943359d5718cb9dadff6a3aa8ec916eb3cff90c3064324cf1f82b8d2a981d34",
+      "testedPatchSha256": "819c4e6bb3e3cfdaa4149e66a0a206b8a1d5529fb1c521bd33950152710ec6bc"
+    },
+    {
+      "task": "dequal",
+      "status": "VERIFIED_GITHUB_REPAIR",
+      "inferenceCalls": 1,
+      "sandboxOperations": 7,
+      "estimatedInferenceUsd": 0.0061503,
+      "selectedAttempt": 1,
+      "sourceHash": "5912b9f990a77103d84600910c7735b4aaefa7df7cf5a45538a66841f5d4156d",
+      "native": {
+        "runner": "uvu",
+        "total": 44,
+        "passed": 44,
+        "skipped": 0
+      },
+      "public": [
+        {
+          "total": 6,
+          "passed": 6
+        },
+        {
+          "total": 6,
+          "passed": 6
+        }
+      ],
+      "independent": [
+        {
+          "total": 12,
+          "passed": 12,
+          "failed": []
+        },
+        {
+          "total": 12,
+          "passed": 12,
+          "failed": []
+        }
+      ],
+      "candidates": [
+        {
+          "attempt": 1,
+          "status": "SELECTED",
+          "error": null
+        }
+      ],
+      "sourceExecutionProvenance": {
+        "inference": "nebius",
+        "execution": "nebius-sandbox; pinned public GitHub source and model-generated expression replacements"
+      },
+      "publicAttempts": [
+        {
+          "attempt": 1,
+          "total": 6,
+          "passed": 6,
+          "failed": []
+        }
+      ],
+      "testedSourceArtifactSha256": "6f75a0f558c9eb29a45e3e958c1abe52a8f9e66ba279db95400e4da9a5197e51",
+      "testedPatchSha256": "c5352b44cfb8f6b8255db4a940b0ebf7948f427a67ebf98c553754197017000f"
+    },
+    {
+      "task": "regexparam",
+      "status": "ABSTAINED_NO_SELECTION",
+      "inferenceCalls": 2,
+      "sandboxOperations": 4,
+      "estimatedInferenceUsd": 0.010619700000000001,
+      "selectedAttempt": null,
+      "sourceHash": null,
+      "native": {
+        "runner": "uvu",
+        "total": 62,
+        "passed": 62,
+        "skipped": 0
+      },
+      "public": [
+        null,
+        null
+      ],
+      "independent": null,
+      "candidates": [
+        {
+          "attempt": 1,
+          "status": "REJECTED",
+          "error": "Candidate behavior failed"
+        },
+        {
+          "attempt": 2,
+          "status": "REJECTED",
+          "error": "Candidate behavior failed"
+        }
+      ],
+      "sourceExecutionProvenance": {
+        "inference": "nebius",
+        "execution": "nebius-sandbox; pinned public GitHub source and model-generated expression replacements"
+      },
+      "publicAttempts": [
+        {
+          "attempt": 1,
+          "total": 16,
+          "passed": 0,
+          "failed": [
+            "literal-0",
+            "literal-1",
+            "literal-2",
+            "literal-3",
+            "control-False-0",
+            "control-False-1",
+            "control-False-2",
+            "control-False-3",
+            "control-False-4",
+            "control-False-5",
+            "control-True-0",
+            "control-True-1",
+            "control-True-2",
+            "control-True-3",
+            "control-True-4",
+            "control-True-5"
+          ]
+        },
+        {
+          "attempt": 2,
+          "total": 16,
+          "passed": 0,
+          "failed": [
+            "literal-0",
+            "literal-1",
+            "literal-2",
+            "literal-3",
+            "control-False-0",
+            "control-False-1",
+            "control-False-2",
+            "control-False-3",
+            "control-False-4",
+            "control-False-5",
+            "control-True-0",
+            "control-True-1",
+            "control-True-2",
+            "control-True-3",
+            "control-True-4",
+            "control-True-5"
+          ]
+        }
+      ]
+    }
+  ],
+  "ledgerBeforeUsd": 0.3155685,
+  "ledgerAfterUsd": 0.33841589999999994,
+  "unsettledCharges": 0,
+  "priorJsonEvidenceUnchanged": 2899,
+  "credentialAndProjectExclusion": "PASS",
+  "filesScanned": 80,
+  "leasesReleased": true
+}

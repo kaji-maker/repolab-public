@@ -1,0 +1,16 @@
+{
+  "format": "repolab-portable-layout/v1",
+  "featureDigest": "bd5ef5501d173ec06e44f91675fd4ae127be33040e58823b4cab04570053732c",
+  "scope": "saved-replay-select-width-only-no-execution-or-scoring-change",
+  "assets": [
+    {
+      "path": "apps/web/index.html",
+      "sha256": "d4988dbc89e86031babc7523e5fcc92843c32e1f3b73e1fc3525749662c518bc"
+    },
+    {
+      "path": "apps/web/src/portable-layout.css",
+      "sha256": "ffb1dfa598e23b249f771244f59087f719f6beea0686b0b26ec160695828aff0"
+    }
+  ],
+  "digest": "975c039fbc2876f2ba938ca0cafe0db2eb95f045880bd7f574b5630cf2c041be"
+}

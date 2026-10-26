@@ -1,0 +1,56 @@
+{
+  "format": "repolab-framework-feasibility-protocol/v1",
+  "maxModelCalls": 0,
+  "maxNewSandboxOperations": 0,
+  "primaryRemainingCandidate": "vuejs__core-11899",
+  "secondaryRemainingCandidate": "facebook__docusaurus-8927",
+  "frameworkDenominator": [
+    "facebook__docusaurus-8927",
+    "preactjs__preact-4436",
+    "vuejs__core-11899"
+  ],
+  "developmentControls": [
+    "regexparam"
+  ],
+  "repairAdmission": false,
+  "inferenceReadyForRemainingCandidates": false,
+  "assets": [
+    {
+      "path": "packages/repositories/framework-feasibility-protocol-v1.ts",
+      "sha256": "2667dff77b512c72c3b28bd6aa2a422ba14519092d6cf173c9065dd9d7433812"
+    },
+    {
+      "path": "packages/repositories/framework-feasibility-v1.ts",
+      "sha256": "abe2a8de0a756822b256d6878b80e20499911eef1f2f248a4ede88af875727b3"
+    },
+    {
+      "path": "apps/repositories/framework-feasibility-v1.ts",
+      "sha256": "bd79631b8979e140670d01f3dfe2c2aa11e974276df84e2f8d6c3513f9804a96"
+    },
+    {
+      "path": "tests/framework-feasibility-v1.test.ts",
+      "sha256": "50491c95f0a01fbf3ddbf76b3f454bc98353b68662cc6a9283a11c555a44154c"
+    },
+    {
+      "path": "evaluation/FRAMEWORK_FEASIBILITY_V1.md",
+      "sha256": "bb9e81fdf4a27023ce3986f87e48f7baaf0b323a419f37d564247b3421e0bacd"
+    },
+    {
+      "path": "evaluation/framework-feasibility-evidence-v1.json",
+      "sha256": "102c544064f5e66221ceeec41d9ba54acc79b45a4fb2d7490a83306ea5a4397c"
+    },
+    {
+      "path": "evaluation/onboarding-v1.json",
+      "sha256": "cf2077e4807be34ce289549d520c323e2f9c77846fbe750f79cd221b4333c598"
+    },
+    {
+      "path": "evaluation/external-selected-v1.json",
+      "sha256": "9e2cc1663ef632ba3817691dc24e130e1d5842952c72ead559fb553e53cf00ae"
+    },
+    {
+      "path": "evaluation/external-source-inventory-v1.json",
+      "sha256": "70f8663c30f02e364f2cfa2a33f11501a364a9f7d1b37fddfad6c22ae4622563"
+    }
+  ],
+  "digest": "1abc6795d08f0e3e404a4bcdb811b3ea5bd31d0004d53743be77ab58d7b02a1f"
+}

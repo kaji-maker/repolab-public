@@ -1,0 +1,17 @@
+{
+  "format": "repolab-preact-native-result/v1",
+  "freeze": "c95b9f9dc8a7720cf64f03c06b22df6f27bc5e4e792083d834ad55a6a8253f6b",
+  "status": "RECEIPT_REJECTED",
+  "operations": 1,
+  "operationIds": [
+    "01a12e9e-b5a5-74ee-8483-c76181db8594"
+  ],
+  "completedPreparationOriginalInputs": true,
+  "remainingSlotsUnrun": 11,
+  "inference": "none",
+  "execution": "nebius-sandbox",
+  "inferenceCalls": 0,
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "reason": "ASCII stderr encoding and service-injected SHELL/TERM not admitted by strict v1 receipt schema"
+}

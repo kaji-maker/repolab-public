@@ -1,0 +1,58 @@
+{
+  "name": "repolab",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=24.18.0"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env apps/api/server.ts",
+    "web": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --test-isolation=none tests/*.test.ts",
+    "smoke:local": "node apps/cli/main.ts smoke-local",
+    "smoke:checkout": "node apps/cli/main.ts smoke-local checkout-quantity",
+    "eval:local": "node apps/evaluator/main.ts",
+    "eval:protocol": "node apps/evaluator/protocol.ts",
+    "repo:prepare": "node apps/repositories/main.ts prepare",
+    "repo:inspect": "node apps/repositories/main.ts inspect",
+    "repo:plan": "node apps/repositories/main.ts plan",
+    "repo:baseline-plan": "node apps/repositories/main.ts baseline-plan",
+    "repo:dependencies": "node --env-file-if-exists=.env apps/repositories/baseline.ts dependencies",
+    "repo:baseline": "node --env-file-if-exists=.env apps/repositories/baseline.ts baseline",
+    "repo:certify": "node --env-file-if-exists=.env scripts/clsx-certify.mjs",
+    "repo:repair-plan": "node apps/repositories/main.ts repair-plan",
+    "repo:qualify": "node --env-file-if-exists=.env apps/repositories/main.ts qualify",
+    "repo:eval-plan": "node apps/repositories/main.ts eval-plan",
+    "repo:evaluate": "node --env-file-if-exists=.env apps/repositories/main.ts evaluate",
+    "smoke:provider": "node --env-file-if-exists=.env apps/cli/main.ts smoke-provider",
+    "smoke:sandbox": "node --env-file-if-exists=.env apps/cli/main.ts smoke-sandbox",
+    "sandbox:discover": "node --env-file-if-exists=.env apps/cli/main.ts sandbox-discover",
+    "sandbox:controls": "node scripts/sandbox-controls.mjs",
+    "replay": "node apps/cli/main.ts replay",
+    "test:browser": "node scripts/browser-smoke.mjs",
+    "test:accessibility": "node scripts/browser-accessibility.mjs",
+    "smoke:demo": "node scripts/demo-smoke.mjs",
+    "repo:pack": "node --env-file-if-exists=.env apps/repositories/replay.ts",
+    "repo:repair": "node --env-file-if-exists=.env apps/repositories/repair.ts",
+    "ledger": "node apps/ledger/main.ts"
+  },
+  "dependencies": {
+    "hono": "4.13.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.4",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.3",
+    "playwright": "1.63.0",
+    "prettier": "3.9.7",
+    "typescript": "6.0.3",
+    "vite": "7.3.6"
+  }
+}

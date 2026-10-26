@@ -1,0 +1,47 @@
+{
+  "format": "repolab-prospective-readiness-overlay/v2",
+  "freeze": "e4fb725c43e10398d8bf132688f01ab61575d327a0e53797e6adc77f15f6a9ff",
+  "taskId": "vuejs__core-11739",
+  "status": "QUALIFIED_ORIGINAL_NATIVE_BASELINE",
+  "attempts": [
+    {
+      "version": "v1",
+      "operations": 4,
+      "status": "SETUP_FAILURE",
+      "retained": true
+    },
+    {
+      "version": "v2",
+      "operations": 8,
+      "status": "QUALIFIED_ORIGINAL_NATIVE_BASELINE"
+    }
+  ],
+  "taskOriginalOperations": 12,
+  "taskOriginalCeiling": 12,
+  "taskOriginalOperationsRemaining": 0,
+  "cohortOriginalOperations": 23,
+  "counts": {
+    "selected": 8,
+    "originalBaselineQualified": 2,
+    "currentSetupFailedTasks": 0,
+    "historicalFailedSetupAttempts": 1,
+    "pendingPreparation": 6,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0
+  },
+  "modelCalls": 0,
+  "candidateAdmission": false,
+  "accuracy": null,
+  "validation": {
+    "focusedControllerTests": 12,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3181,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesReleased": true
+  },
+  "nextTask": "preactjs__preact-4152",
+  "inference": "none",
+  "execution": "eight actual Nebius Sandbox V2 original-only operations; four retained V1 operations; offline controller saved-data audits"
+}

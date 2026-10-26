@@ -1,0 +1,764 @@
+{
+  "format": "repolab-native-reviewer-public-results/v2",
+  "dateNepal": "2026-10-15",
+  "status": "VERIFIED_CLEAN_INSTALL_REPLAYS_FOR_TESTED_SCENARIOS",
+  "freeze": "bb4d209f0de115bda1c721f0aee9864464df3c19c756d1267456ced96f3b9efa",
+  "originRunId": "f8bfb85d-6766-4a9e-a762-e362d011559c",
+  "sourceManifestSha256": "c0a223d2a6c6f5213ba34eefc7aa444c0b84a2959e78edb30a3c3039a453dabf",
+  "qualifiedSourceManifestSha256": "8b0ef12e0c2aef7bf04090be1a0ee988140bcea0a83db4a4e7178994724024c9",
+  "documentationOnlyExportReview": {
+    "status": "PASS",
+    "reason": "Public project identifier in two historical recovery/access notes; no authentication token matched.",
+    "dataOnly": true,
+    "changes": [
+      {
+        "path": "docs/REQUEST_RECOVERY.md",
+        "before": "84e718cfb65096a755d4f59a5395d42ed00a5bd8d56fb0948cf34ecea50e63f7",
+        "after": "6ae369cc9c8b0a1b0d5e165014dd110f3c400f7b7bb3026404d31ad1d2b8bec4"
+      },
+      {
+        "path": "docs/SANDBOX_ACCESS_REQUEST.md",
+        "before": "f7d4daf8156892d816e1c6c0057cd7032aec8d211ba438a2dab4dab56030708b",
+        "after": "ecf5db618b8af035defe99999290e32428b0fcda8aaa2a4e22b2c814e7e79df0"
+      }
+    ],
+    "qualifiedSourceManifestSha256": "8b0ef12e0c2aef7bf04090be1a0ee988140bcea0a83db4a4e7178994724024c9",
+    "handoffSourceManifestSha256": "c0a223d2a6c6f5213ba34eefc7aa444c0b84a2959e78edb30a3c3039a453dabf",
+    "executableTestPackInputsUnchanged": true,
+    "inferenceCalls": 0,
+    "sandboxOperations": 0
+  },
+  "sourceFilesPerInstall": 785,
+  "pristineArchive": {
+    "path": ".repolab/native-reviewer-v2/native-reviewer-v2.tar.gz",
+    "bytes": 2685821,
+    "sha256": "78893fe3712c387e2f5309ee49a897cf519693eeea483f47f2e7028a5d4d0dd2",
+    "sourceFiles": 785,
+    "sourceManifestSha256": "c0a223d2a6c6f5213ba34eefc7aa444c0b84a2959e78edb30a3c3039a453dabf",
+    "pristine": true,
+    "documentationOnlyRedaction": true,
+    "inference": "none",
+    "execution": "none (trusted source and selected pack copied as data)"
+  },
+  "scope": "two clean controller/dependency/state directories on one machine; same Sandbox project and cached native image; CLI delivery",
+  "rows": [
+    {
+      "name": "A",
+      "replayId": "c6b9b6eb-4247-42b1-8da8-ffb501956f1c",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "986ae095cd7224c608b19cfd8d4e00a33dcc779a858fc79faf6a6c5468a5b841",
+      "sourceHash": "68c9000eec6e0ed71f140c8af231309064d1e7447414f00136cbb91b4e3eb0d3",
+      "sourceFiles": 785,
+      "sourceManifestSha256": "8b0ef12e0c2aef7bf04090be1a0ee988140bcea0a83db4a4e7178994724024c9",
+      "readinessOperations": 7,
+      "replayOperations": 14,
+      "operationIds": [
+        "01a13ce4-5c5f-7530-9876-55f22800def7",
+        "01a13ce4-61ce-7253-90ce-6b9c331e8667",
+        "01a13ce4-66e5-75d2-a9a2-eb9add363606",
+        "01a13ce4-6c18-724b-8675-282b736708b1",
+        "01a13ce4-74de-7033-8f2d-31bef49c58b2",
+        "01a13ce4-8290-7538-a27d-2b16e2cde448",
+        "01a13ce4-8b0b-74ef-bf55-e9fb1216b2b1",
+        "01a13ce4-d384-768a-b823-d5dedffa3425",
+        "01a13ce4-e442-7378-ba09-a4941c1b43f6",
+        "01a13ce5-1b6f-738a-965f-954857bf9733",
+        "01a13ce5-4b13-7479-80a0-00126b6cd2ce",
+        "01a13ce5-5674-77d1-bced-ebcd6e649616",
+        "01a13ce5-6b4f-72ba-a110-4c825e6df584",
+        "01a13ce5-7bdd-76b6-a0c5-57edbb165d2a",
+        "01a13ce5-962f-7440-9fed-2b7da13f7b45",
+        "01a13ce5-d3bb-73db-921c-c7d8db557e2d",
+        "01a13ce5-e3d1-7375-95a4-72a8b818e057",
+        "01a13ce5-f4f6-7472-b285-d0ae73136e7b",
+        "01a13ce6-3685-7143-807b-e308f9674a36",
+        "01a13ce6-4bd4-76f6-ae21-5240c59935f5",
+        "01a13ce6-5bac-76c3-9b12-97aeba339845"
+      ],
+      "independentPassed": 10,
+      "independentTotal": 10,
+      "native": {
+        "mocha": {
+          "passed": 29,
+          "skipped": 0,
+          "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93"
+        },
+        "browser": {
+          "passed": 1173,
+          "skipped": 11,
+          "caseDigest": "e37fc9ab6b6f6a371b2c88088e955ce7542d59bd2b38157db866af49ae617474"
+        },
+        "types": {
+          "passed": 17,
+          "pending": 2,
+          "coreCompilation": "PASS",
+          "compatCompilation": "PASS"
+        }
+      },
+      "publicChecks": {
+        "passed": 3,
+        "total": 3,
+        "repeats": 2
+      },
+      "nativeMochaRepeats": 2,
+      "nativeBrowserRepeats": 2,
+      "independentRepeats": 2,
+      "runtimeFiles": [
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/journal.json",
+          "sha256": "ec41fb492670c5f09c77203db82eacdb25033ab16e18a01d2061bbcc5fb16f72"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/original-public-A.json",
+          "sha256": "e0b340ea1358480d33c38bbff6969932e24206ae7cb4c5334f13a25d1b170410"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/original-public-B.json",
+          "sha256": "b27135df193867b41fc567b48d1f91e447322abebc83fe350c165ac7fdeefc17"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-browser-A.json",
+          "sha256": "46e839d7d582b51e323a600cee676a542a2817261a70b2ce0f6334388213d42b"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-browser-B.json",
+          "sha256": "d0b9136ee4776137c0de2c59986983e0971a2f7aab1e129c3ec664f44f21ef07"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-build.json",
+          "sha256": "60ffc3022f09e7fcc2b05ce1bcc9576561fe59c21842aa221a1424eb9a842ae9"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-independent-A.json",
+          "sha256": "6d9dfb9dd7f4f8d54fb174643bf6f2687bbc1eab3dfa5a51cc51af999a43bfb4"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-independent-B.json",
+          "sha256": "88b8a027e1c86e593411d7eb88cb080052da63dbdc3ef340a2ab061c19a460d6"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-integrity.json",
+          "sha256": "26e9e7ed05bbba6508ba1bb56f007e75fe47fa58835368a01b1f4ba7b677f81e"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-lint.json",
+          "sha256": "ceeb0d0542dc39c5e82b2a17cb09db3be63e1354dd14b2ebcc308f642c53de39"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-mocha-A.json",
+          "sha256": "0d82879f53989ff32ddc8ed9eb149a57ea222c034b60f6f32c1d5208f2d0336e"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-mocha-B.json",
+          "sha256": "7f8edeb154b9ed166e928e8233dae2ad6cfcfe9d0541bb971f62eea845448382"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-public-A.json",
+          "sha256": "909168f8faf66544fbc901ea0d3bf0efc42af6da15931950b86762cc7a89089d"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-public-B.json",
+          "sha256": "599b72e7a32687799bb7b6be937dbac28408f25325ecace09ba5629ff87f04ef"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-types.json",
+          "sha256": "28a8a46eff557e279391b9f18c4edb721672ddec48b1ad922ef910d6fb1ba504"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selection.json",
+          "sha256": "ed5144c474e569dbdbfc05785a9ae66ebf0e31a8a4d51dec704427df8d009352"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-original-0.json",
+          "sha256": "213f895e3d5fa2d086f026742956036afdc7ce57610e7491e1473fc1159bc87b"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-original-1.json",
+          "sha256": "57898211f72e6ed894950905b0c78545b58141dcb0a26b7e10936888b220d8b4"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-original-2.json",
+          "sha256": "204f0bd7097743bb091c2d92aeb6225db0920b3b63a31bc0c33f29d3fe42f896"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-0.json",
+          "sha256": "87e1b41e857fe58f531bc9a24831a8fc9b2fba194fbf39817b5b3704547f1c37"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-1.json",
+          "sha256": "3ad54e5a5ce6c3cc74ca3327231957dbe4b7695b36040fc81aea64a0cf91d1ee"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-2.json",
+          "sha256": "6047addcb552c833a64066ed1632e08affacb64558d70ceca83cb1312aeed69e"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-3.json",
+          "sha256": "a8504b05705892079f4523a52f2973bb58b1536c422bc9d80ec85ecd2ba09e0c"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-4.json",
+          "sha256": "f79c5305d82d1c80c656f974e3d7b50934b028b1c0d33b2f9c924e8e8bd7d20b"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-5.json",
+          "sha256": "8c64ae54a3c23194e90a3d8c7a6bf34bafd6aad123d9b27fc857bf066559ea2a"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-independent.json",
+          "sha256": "dc21c728e96e431010713f02fae9b83f96a0aa2af1d182d950b86b87ba5a28ee"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/uploads-original.json",
+          "sha256": "7bd03363c171ce70ee915ed4aac6fb0a974b1f09aab9a8c62bc2f427949d7bf2"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/uploads-selected.json",
+          "sha256": "217d656cec7f78b90672c58540bcfe6a8c3b3d1080f523cd1b6642a52024b636"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/sandbox-capabilities.json",
+          "sha256": "09540df89788fcf06289dc15263aa617a77a506597afac49159bbc3a3d3b86a9"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/sandbox-controls-1792022959977.json",
+          "sha256": "c2217d2f0ac1955db0c9ef357fbd036921155a576e06cbd39cddfa4894b37b2d"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/sandbox-controls.json",
+          "sha256": "6442525d5fbc12412e3bb6c4fb0f1b648efddbe6611185682de0648d899b292a"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/sandbox-smoke-evidence-1792022969117.json",
+          "sha256": "5627804a954b92963ca684536e658f73bb2b2f326f6e62a572685af64ae0bcf4"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/sandbox-smoke-evidence.json",
+          "sha256": "6d9df200b8470dd91b86af3c23dcbd95892df22d15595c9b7e11e36a3f335389"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/sandbox-smoke-operations-1792022969117.json",
+          "sha256": "b449a80e15d6efc23cd0f04dfaf74db6514e576c26d61ed07a151d83589efafa"
+        }
+      ],
+      "replayFiles": [
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/journal.json",
+          "sha256": "ec41fb492670c5f09c77203db82eacdb25033ab16e18a01d2061bbcc5fb16f72"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/original-public-A.json",
+          "sha256": "e0b340ea1358480d33c38bbff6969932e24206ae7cb4c5334f13a25d1b170410"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/original-public-B.json",
+          "sha256": "b27135df193867b41fc567b48d1f91e447322abebc83fe350c165ac7fdeefc17"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-browser-A.json",
+          "sha256": "46e839d7d582b51e323a600cee676a542a2817261a70b2ce0f6334388213d42b"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-browser-B.json",
+          "sha256": "d0b9136ee4776137c0de2c59986983e0971a2f7aab1e129c3ec664f44f21ef07"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-build.json",
+          "sha256": "60ffc3022f09e7fcc2b05ce1bcc9576561fe59c21842aa221a1424eb9a842ae9"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-independent-A.json",
+          "sha256": "6d9dfb9dd7f4f8d54fb174643bf6f2687bbc1eab3dfa5a51cc51af999a43bfb4"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-independent-B.json",
+          "sha256": "88b8a027e1c86e593411d7eb88cb080052da63dbdc3ef340a2ab061c19a460d6"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-integrity.json",
+          "sha256": "26e9e7ed05bbba6508ba1bb56f007e75fe47fa58835368a01b1f4ba7b677f81e"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-lint.json",
+          "sha256": "ceeb0d0542dc39c5e82b2a17cb09db3be63e1354dd14b2ebcc308f642c53de39"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-mocha-A.json",
+          "sha256": "0d82879f53989ff32ddc8ed9eb149a57ea222c034b60f6f32c1d5208f2d0336e"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-mocha-B.json",
+          "sha256": "7f8edeb154b9ed166e928e8233dae2ad6cfcfe9d0541bb971f62eea845448382"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-public-A.json",
+          "sha256": "909168f8faf66544fbc901ea0d3bf0efc42af6da15931950b86762cc7a89089d"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-public-B.json",
+          "sha256": "599b72e7a32687799bb7b6be937dbac28408f25325ecace09ba5629ff87f04ef"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selected-types.json",
+          "sha256": "28a8a46eff557e279391b9f18c4edb721672ddec48b1ad922ef910d6fb1ba504"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/selection.json",
+          "sha256": "ed5144c474e569dbdbfc05785a9ae66ebf0e31a8a4d51dec704427df8d009352"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-original-0.json",
+          "sha256": "213f895e3d5fa2d086f026742956036afdc7ce57610e7491e1473fc1159bc87b"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-original-1.json",
+          "sha256": "57898211f72e6ed894950905b0c78545b58141dcb0a26b7e10936888b220d8b4"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-original-2.json",
+          "sha256": "204f0bd7097743bb091c2d92aeb6225db0920b3b63a31bc0c33f29d3fe42f896"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-0.json",
+          "sha256": "87e1b41e857fe58f531bc9a24831a8fc9b2fba194fbf39817b5b3704547f1c37"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-1.json",
+          "sha256": "3ad54e5a5ce6c3cc74ca3327231957dbe4b7695b36040fc81aea64a0cf91d1ee"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-2.json",
+          "sha256": "6047addcb552c833a64066ed1632e08affacb64558d70ceca83cb1312aeed69e"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-3.json",
+          "sha256": "a8504b05705892079f4523a52f2973bb58b1536c422bc9d80ec85ecd2ba09e0c"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-4.json",
+          "sha256": "f79c5305d82d1c80c656f974e3d7b50934b028b1c0d33b2f9c924e8e8bd7d20b"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-5.json",
+          "sha256": "8c64ae54a3c23194e90a3d8c7a6bf34bafd6aad123d9b27fc857bf066559ea2a"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/upload-selected-independent.json",
+          "sha256": "dc21c728e96e431010713f02fae9b83f96a0aa2af1d182d950b86b87ba5a28ee"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/uploads-original.json",
+          "sha256": "7bd03363c171ce70ee915ed4aac6fb0a974b1f09aab9a8c62bc2f427949d7bf2"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/A/.repolab/native-selected-v4/replay-c6b9b6eb-4247-42b1-8da8-ffb501956f1c/uploads-selected.json",
+          "sha256": "217d656cec7f78b90672c58540bcfe6a8c3b3d1080f523cd1b6642a52024b636"
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "replayId": "aeadb33b-5d23-4cf6-aeda-fcc184cac392",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "986ae095cd7224c608b19cfd8d4e00a33dcc779a858fc79faf6a6c5468a5b841",
+      "sourceHash": "68c9000eec6e0ed71f140c8af231309064d1e7447414f00136cbb91b4e3eb0d3",
+      "sourceFiles": 785,
+      "sourceManifestSha256": "8b0ef12e0c2aef7bf04090be1a0ee988140bcea0a83db4a4e7178994724024c9",
+      "readinessOperations": 7,
+      "replayOperations": 14,
+      "operationIds": [
+        "01a13ce6-a174-739c-92ee-4075c2cd8596",
+        "01a13ce6-a6cc-7427-a19b-e1f153efbb8c",
+        "01a13ce6-abeb-73e0-846f-fe5a23fe5cfc",
+        "01a13ce6-b118-74d8-ab2d-2d04debaa3a2",
+        "01a13ce6-b911-72ab-9bda-bfcbf2647d4a",
+        "01a13ce6-c6fc-7285-8384-2099ae172545",
+        "01a13ce6-cf3a-72fc-9823-cc57219f8213",
+        "01a13ce7-1a44-721f-8563-c8c975f30524",
+        "01a13ce7-2ae9-71ae-a17b-212876f0b3b8",
+        "01a13ce7-60c9-75f0-80c3-9a7a5cd6cdf1",
+        "01a13ce7-907e-7133-9d73-d68bc3b59eb4",
+        "01a13ce7-9c06-77f3-bcfe-51c97f50c0a1",
+        "01a13ce7-b1a6-7504-875b-c12001510cab",
+        "01a13ce7-c1d9-70e6-aa5d-8bb1cfc4c486",
+        "01a13ce7-dcaf-71ef-a745-f4c30677e5bf",
+        "01a13ce8-15f1-73ae-b920-8a87350f5e90",
+        "01a13ce8-25e6-75b2-8229-06418071eb08",
+        "01a13ce8-360c-72ef-8650-32c8f566081d",
+        "01a13ce8-7601-72d7-9aa5-015faf9a80c5",
+        "01a13ce8-8bd9-779e-8b5c-62365e1ee1f2",
+        "01a13ce8-9d37-765f-92fd-1fd173953754"
+      ],
+      "independentPassed": 10,
+      "independentTotal": 10,
+      "native": {
+        "mocha": {
+          "passed": 29,
+          "skipped": 0,
+          "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93"
+        },
+        "browser": {
+          "passed": 1173,
+          "skipped": 11,
+          "caseDigest": "e37fc9ab6b6f6a371b2c88088e955ce7542d59bd2b38157db866af49ae617474"
+        },
+        "types": {
+          "passed": 17,
+          "pending": 2,
+          "coreCompilation": "PASS",
+          "compatCompilation": "PASS"
+        }
+      },
+      "publicChecks": {
+        "passed": 3,
+        "total": 3,
+        "repeats": 2
+      },
+      "nativeMochaRepeats": 2,
+      "nativeBrowserRepeats": 2,
+      "independentRepeats": 2,
+      "runtimeFiles": [
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/journal.json",
+          "sha256": "4e325a36e4522c72f6e2301affe65abbf0ec7577a6907a8c8f062c32c2b895b4"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/original-public-A.json",
+          "sha256": "136040186a85fd03d6ea6d02d0ffda2afe299f2c61b78407cde1f6e650cfd08d"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/original-public-B.json",
+          "sha256": "94fdb2d9c94bd4eb1d187cacf4dfc579f8a4299ac43cdce02801c4dc9560511f"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-browser-A.json",
+          "sha256": "48c16a237aa79fdada3e671ba5e4f3609881e9b93cc93db8d992c57090771629"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-browser-B.json",
+          "sha256": "761bdb9fe1eb816cb8e0f29b08c2bdabe695b27f30dd0f4230e3d9aba9f384a4"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-build.json",
+          "sha256": "58859470766720d8f3f78b1d95d55f09b885008608fe93765f48b2071d6a128d"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-independent-A.json",
+          "sha256": "becefc56dba5de54cc253812c1f9b037bc26b1dcf754db9e3215e0fd4d8a61e3"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-independent-B.json",
+          "sha256": "b16332bea9c7cc09b9b2bd40f87139f9074f4c3fa3e9c5f8c3d8b0c0967f0722"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-integrity.json",
+          "sha256": "40c5282dfa84b2f81a984e69d0c384bf3dba23fd3dd86ab693d677b19cd8ad9b"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-lint.json",
+          "sha256": "a0229da556314b9cec4f2033eefb2b04d223de3762ed1ae83437f556234ce2c2"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-mocha-A.json",
+          "sha256": "fa665615c6778005410b941dfaee7412276038fb3557d502a98b9b214a18c6e2"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-mocha-B.json",
+          "sha256": "aac68bc588cc51a18882e76d3a3425f6696bab382a1afe1cdb2989300da4c73a"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-public-A.json",
+          "sha256": "400213f21c29f216832f33170be606e7c7326157c2dc9f70fa15774f8d7c1cb0"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-public-B.json",
+          "sha256": "3b95885d55e0bef957dc6400fc36fe65ab9aa32a3687b907165ccaff510ebcc6"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-types.json",
+          "sha256": "44db5f7be5a6b4bf0584419913a15057464b4a3d38277858d46d236d96bd8c06"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selection.json",
+          "sha256": "2b4b721d08bdfc80058d7404c384f7a299db078848d137ea29b9f7c6f70b6d6c"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-original-0.json",
+          "sha256": "228d06efaa79fbf634732e011c9d266a9ac605c6e6d470088751b7e0f6b7e71c"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-original-1.json",
+          "sha256": "ffe85b7270cba15a75568143bb414a7006088be78d5c26bf63923ca1cac1d1fd"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-original-2.json",
+          "sha256": "5cbd1f00c0b313a4b2a938859b50411810e64446a59a135812e9b5ef2e453aca"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-0.json",
+          "sha256": "80818307bdd8022e901060c832b9dbdfc50d323411fbb9b77dd21e189fb10e19"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-1.json",
+          "sha256": "37ff4a712242aae278a874affde616864cbd170f237e8c2286b5e08d8ef4e65d"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-2.json",
+          "sha256": "c9642e17c757c273e401bf92db28f793dd024cdc8e45db71e64d84bc0579e363"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-3.json",
+          "sha256": "deb6741c7c84838f9bcf9560ba2e7ae45f570d9783fd9acd9d1e5214a296a68f"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-4.json",
+          "sha256": "c5e8c98244dee1a0dda3e547a5d0ee912716d9cde7705b93689077a6b3c10247"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-5.json",
+          "sha256": "2442bf7ff68871ac06b40d2816d9322a52a6c9cfdb29f14a97c5970d02e31fa9"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-independent.json",
+          "sha256": "5f15640c62d8b12883a9e300313b91ef87bbb4d69df3eb9656346ce587659be6"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/uploads-original.json",
+          "sha256": "7bd03363c171ce70ee915ed4aac6fb0a974b1f09aab9a8c62bc2f427949d7bf2"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/uploads-selected.json",
+          "sha256": "217d656cec7f78b90672c58540bcfe6a8c3b3d1080f523cd1b6642a52024b636"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/sandbox-capabilities.json",
+          "sha256": "bb39b92cb1d6c99ccc6a6b900673f80900c81df191f9b3f04663913c7bc75bee"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/sandbox-controls-1792023108799.json",
+          "sha256": "cfc3564b3c8df74ad52533c1f6617f56faeaa86d1cc4969d0c0e8d9d7267040f"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/sandbox-controls.json",
+          "sha256": "8e99803940e1f844ff016541775defddaad911729d023ebf03498a091bfd0cbd"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/sandbox-smoke-evidence-1792023117726.json",
+          "sha256": "2dfae116e6c877df21fc7cffc800a46be679a24e9d1597e4cc6bfae82b7c9c28"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/sandbox-smoke-evidence.json",
+          "sha256": "2eb7ac63a3a971eef0ab0f32d04e05e8e0f1cbe4d8053934b57b5c1e3d183140"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/sandbox-smoke-operations-1792023117726.json",
+          "sha256": "99e732849789b3b08091e04624e7349a79efcca3b754e93a80f532ee9b2695e5"
+        }
+      ],
+      "replayFiles": [
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/journal.json",
+          "sha256": "4e325a36e4522c72f6e2301affe65abbf0ec7577a6907a8c8f062c32c2b895b4"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/original-public-A.json",
+          "sha256": "136040186a85fd03d6ea6d02d0ffda2afe299f2c61b78407cde1f6e650cfd08d"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/original-public-B.json",
+          "sha256": "94fdb2d9c94bd4eb1d187cacf4dfc579f8a4299ac43cdce02801c4dc9560511f"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-browser-A.json",
+          "sha256": "48c16a237aa79fdada3e671ba5e4f3609881e9b93cc93db8d992c57090771629"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-browser-B.json",
+          "sha256": "761bdb9fe1eb816cb8e0f29b08c2bdabe695b27f30dd0f4230e3d9aba9f384a4"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-build.json",
+          "sha256": "58859470766720d8f3f78b1d95d55f09b885008608fe93765f48b2071d6a128d"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-independent-A.json",
+          "sha256": "becefc56dba5de54cc253812c1f9b037bc26b1dcf754db9e3215e0fd4d8a61e3"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-independent-B.json",
+          "sha256": "b16332bea9c7cc09b9b2bd40f87139f9074f4c3fa3e9c5f8c3d8b0c0967f0722"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-integrity.json",
+          "sha256": "40c5282dfa84b2f81a984e69d0c384bf3dba23fd3dd86ab693d677b19cd8ad9b"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-lint.json",
+          "sha256": "a0229da556314b9cec4f2033eefb2b04d223de3762ed1ae83437f556234ce2c2"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-mocha-A.json",
+          "sha256": "fa665615c6778005410b941dfaee7412276038fb3557d502a98b9b214a18c6e2"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-mocha-B.json",
+          "sha256": "aac68bc588cc51a18882e76d3a3425f6696bab382a1afe1cdb2989300da4c73a"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-public-A.json",
+          "sha256": "400213f21c29f216832f33170be606e7c7326157c2dc9f70fa15774f8d7c1cb0"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-public-B.json",
+          "sha256": "3b95885d55e0bef957dc6400fc36fe65ab9aa32a3687b907165ccaff510ebcc6"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selected-types.json",
+          "sha256": "44db5f7be5a6b4bf0584419913a15057464b4a3d38277858d46d236d96bd8c06"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/selection.json",
+          "sha256": "2b4b721d08bdfc80058d7404c384f7a299db078848d137ea29b9f7c6f70b6d6c"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-original-0.json",
+          "sha256": "228d06efaa79fbf634732e011c9d266a9ac605c6e6d470088751b7e0f6b7e71c"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-original-1.json",
+          "sha256": "ffe85b7270cba15a75568143bb414a7006088be78d5c26bf63923ca1cac1d1fd"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-original-2.json",
+          "sha256": "5cbd1f00c0b313a4b2a938859b50411810e64446a59a135812e9b5ef2e453aca"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-0.json",
+          "sha256": "80818307bdd8022e901060c832b9dbdfc50d323411fbb9b77dd21e189fb10e19"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-1.json",
+          "sha256": "37ff4a712242aae278a874affde616864cbd170f237e8c2286b5e08d8ef4e65d"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-2.json",
+          "sha256": "c9642e17c757c273e401bf92db28f793dd024cdc8e45db71e64d84bc0579e363"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-3.json",
+          "sha256": "deb6741c7c84838f9bcf9560ba2e7ae45f570d9783fd9acd9d1e5214a296a68f"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-4.json",
+          "sha256": "c5e8c98244dee1a0dda3e547a5d0ee912716d9cde7705b93689077a6b3c10247"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-5.json",
+          "sha256": "2442bf7ff68871ac06b40d2816d9322a52a6c9cfdb29f14a97c5970d02e31fa9"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/upload-selected-independent.json",
+          "sha256": "5f15640c62d8b12883a9e300313b91ef87bbb4d69df3eb9656346ce587659be6"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/uploads-original.json",
+          "sha256": "7bd03363c171ce70ee915ed4aac6fb0a974b1f09aab9a8c62bc2f427949d7bf2"
+        },
+        {
+          "path": "/tmp/repolab-native-reviewer-v2-bl16Uw/B/.repolab/native-selected-v4/replay-aeadb33b-5d23-4cf6-aeda-fcc184cac392/uploads-selected.json",
+          "sha256": "217d656cec7f78b90672c58540bcfe6a8c3b3d1080f523cd1b6642a52024b636"
+        }
+      ]
+    }
+  ],
+  "totalSandboxOperations": 42,
+  "inferenceCalls": 0,
+  "provenance": {
+    "inference": "none (native selected-pack replay)",
+    "execution": "nebius-sandbox; reviewed isolation/fixture probes and selected model-generated scoped source"
+  },
+  "validation": {
+    "trustedControllerBootstrapTests": 5,
+    "credentialFreeFocusedTestsPerInstall": 16,
+    "typecheckPerInstall": "PASS",
+    "productionBuildPerInstall": "PASS",
+    "buildConfig": "vite.native-v6.config.ts",
+    "packInspectionPerInstall": "PASS",
+    "rawAudit": "PASS",
+    "credentialFreeSavedReview": {
+      "status": "PASS",
+      "rows": [
+        {
+          "name": "A",
+          "replayId": "c6b9b6eb-4247-42b1-8da8-ffb501956f1c",
+          "verified": true,
+          "credentialsRemoved": true,
+          "dispatchAvailable": false,
+          "runtimeFilesUnchanged": 34,
+          "replayFilesUnchanged": 28
+        },
+        {
+          "name": "B",
+          "replayId": "aeadb33b-5d23-4cf6-aeda-fcc184cac392",
+          "verified": true,
+          "credentialsRemoved": true,
+          "dispatchAvailable": false,
+          "runtimeFilesUnchanged": 34,
+          "replayFilesUnchanged": 28
+        }
+      ],
+      "sourceManifestSha256": "8b0ef12e0c2aef7bf04090be1a0ee988140bcea0a83db4a4e7178994724024c9",
+      "pristineSourceVerified": true,
+      "newInferenceCalls": 0,
+      "newSandboxOperations": 0,
+      "networkAttempts": 0,
+      "inference": "none",
+      "execution": "none (read-only saved-result audits; recorded Sandbox provenance retained)"
+    },
+    "archiveVerification": {
+      "status": "PASS",
+      "dataFiles": 786,
+      "sourceFiles": 785,
+      "trustedManifestSha256": "c0a223d2a6c6f5213ba34eefc7aa444c0b84a2959e78edb30a3c3039a453dabf",
+      "sourceExecution": false,
+      "documentationOnlyRedaction": true
+    },
+    "priorPrivateFilesUnchanged": 1685,
+    "priorPublicFilesUnchanged": 125,
+    "externalReviewerFilesUnchanged": 56,
+    "temporaryCredentialsRemoved": true,
+    "newReviewDispatches": 0,
+    "fullSuiteScope": "Focused qualification; no new full-controller-suite claim"
+  },
+  "estimatedInferenceLedgerUsd": 0.1896627,
+  "limitations": [
+    "Two clean source/dependency/state directories on one machine, same project and existing native image; not separate-machine/project provisioning.",
+    "CLI delivery for the new selected pack; browser/API import still binds the earlier f6 source.",
+    "One exposed Preact feature with developer-supplied scaffolding; no new repair source generation or unseen-task accuracy trial.",
+    "Eleven original browser skips and two pending TypeScript cases remain.",
+    "Unaided human review, broader adapters and public judging access remain open."
+  ],
+  "retainedPreparationFailures": [
+    {
+      "status": "FINAL_CREDENTIAL_EXCLUSION_GUARD_FAILED",
+      "reason": "Exact-value exclusion matched a controller configuration identifier in historical recovery documentation; classification recorded without values.",
+      "matches": [
+        "NEBIUS_PROJECT_ID"
+      ],
+      "inferenceCalls": 0,
+      "sandboxOperations": 0
+    },
+    {
+      "status": "RETAINED_READ_ONLY_CLASSIFICATION_ERROR",
+      "reason": "First exclusion guard stopped at the first matching note; full scan found the project identifier in two notes. No authentication token matched. No provider dispatch.",
+      "inferenceCalls": 0,
+      "sandboxOperations": 0
+    }
+  ],
+  "observerScripts": {
+    "prepare.mjs": "2ceebaaccf7ab2b0b1cf7f57f2b870c4e8ad5e1df59a58c29b1bb4d7221c3801",
+    "live.mjs": "7a2ccea654dc71f3204b34cbeffa44ea2772b918a22973a8c77dc4dac8bccffe",
+    "audit.mjs": "ecebb55461a8bb858c3c68be9ec3079c9332b77b2043fb0ece35db82cf4f6607",
+    "keyless.mjs": "feb1dbbfbfee0511a804b980b6d8f1e253c3e432b7f7b29abd614d7e151adcd8"
+  }
+}

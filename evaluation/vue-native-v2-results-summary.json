@@ -1,0 +1,55 @@
+{
+  "format": "repolab-vue-native-result/v2",
+  "freeze": "8b49eaa11b0ba5b1fb0bbe57a875d6bc9325972d5fdb5f366eff919eea9c4675",
+  "status": "UNIT_FAILED_EXECUTION_BLOCKER",
+  "operations": 5,
+  "operationIds": [
+    "01a142a8-9570-7352-8ba2-560b7baf5508",
+    "01a142a8-f3b1-72c5-8b3b-2fe80cba483b",
+    "01a142a9-17ee-77b3-8252-8464bf6f77a3",
+    "01a142a9-1f1f-7638-853c-b33a10d385af",
+    "01a142a9-2693-727d-8c2f-4c3acc6664b6"
+  ],
+  "providerStatus": "SUCCESS",
+  "guestExitCode": 1,
+  "passedSlots": [
+    "prepare",
+    "build",
+    "protect",
+    "integrity"
+  ],
+  "failedSlot": "unit-A",
+  "failedSlotCommand": "/usr/local/bin/node /opt/repolab/vue/node_modules/vitest/vitest.mjs run -c vitest.unit.config.ts --reporter=json --outputFile=/tmp/repolab-vue-out/vitest.json packages/compiler-sfc/__tests__",
+  "failedSlotExitCode": 1,
+  "remainingSlotsUnrun": 3,
+  "unrunSlots": [
+    "reproduction-A",
+    "unit-B",
+    "reproduction-B"
+  ],
+  "inference": "none",
+  "execution": "nebius-sandbox",
+  "inferenceCalls": 0,
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "compilerSfcCjs": {
+    "sha256": "2ab1a616e9fd5aa7ca5b7ce6078ab748194c4e30315783efe9edd4e22065d8f3",
+    "bytes": 674491
+  },
+  "buildChangedOriginalPaths": [],
+  "integrityDenials": 11,
+  "networkProbe": "ENETUNREACH",
+  "reason": "Vite 5.4.0 loadConfigFromBundledFile bundles vitest.unit.config.ts into a temporary file in the config file's directory (/opt/repolab/vue/vitest.unit.config.ts.timestamp-*.mjs) before dynamic import; protect marked /opt/repolab/vue with mode 0555, causing EACCES permission denied when running under unprivileged uid 1000.",
+  "rawReceiptSha256": {
+    "STARTED.json": "a3d17766ea850bbfeb153e8a474003ec059776bca6b998d820694e1d2936cb11",
+    "build.json": "ad27d59417087e4370b756a828f8a06f4a8ad6f7e14e389ecaddb6b86974d901",
+    "integrity.json": "d6dbda421aa510b884a14812eef24a173bdc8353a84307edd59e2c05213bbcca",
+    "prepare.json": "f1bb5343cd61c271dda0c96d156278c900d986c778bd4e777fd2bc55c094bf4f",
+    "protect.json": "03d28ff328a3b5968f1a61739b7e4162d17655e17e3c1a4c51764772c1a87c0d",
+    "unit-A.json": "0495ff43f776f931a59c38fb6151104ca2564f5e1e36f39d9a84a5f04a8074d4",
+    "upload-guest.cjs.json": "c3b3fe478879cb48f66127afb06111f07d9b25f487a1b41ae99fa2b91204bd65",
+    "upload-manifest.json.json": "455af970669bfe3298e6d994ceae5dcc81b82a5e8cc2c617de523423e752dddb",
+    "upload-reproduction.cjs.json": "4de7cd5645426cef951fe1636e4eb2f5cd3916e2524ec713d2588043397170d5",
+    "upload-upstream.tar.gz.json": "fc53a7c76c96112c6b7614f9c29e6fb810e1e4da057d34efd5c370b0856fc113"
+  }
+}

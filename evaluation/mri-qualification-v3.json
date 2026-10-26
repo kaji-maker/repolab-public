@@ -1,0 +1,59 @@
+{
+  "format": "repolab-mri-qualification/v3",
+  "digest": "e82113c0c208fd7aa61a12ddba304cbfe1bf75fda1b39db574259ba37609f05c",
+  "previousDigest": "ce6368a3aaa13b73ecf2152318e3d129ade6b1eeceb4c04fadcc276f88ce08b7",
+  "task": "mri-zero-number",
+  "scope": "public-historical-qualification-no-model-repair-or-heldout-claim",
+  "maxInferenceCalls": 0,
+  "maxOperations": 7,
+  "assets": [
+    {
+      "path": "packages/evaluation/mri-qualification-v3.ts",
+      "sha256": "f4600c684e54aaf81c118930ff7230ab452694e60d6ee06b5af2fb6c277ad1bb"
+    },
+    {
+      "path": "packages/evaluation/reviewed-qualification.ts",
+      "sha256": "fedf2b507681ef770d844bc81f4436e02085e23e21391f099909343b212539fa"
+    },
+    {
+      "path": "apps/evaluator/mri-qualification-v3.ts",
+      "sha256": "fc8c83e77d83bc7b24efe0df25284d2b292f3e7e9d5e6e34ecb19edfccf747e9"
+    },
+    {
+      "path": "repositories/mri-zero.case.json",
+      "sha256": "d0735a5258bdf945be977e7c82dc70dbe7701eb2a843cdffb1911288fba44f56"
+    },
+    {
+      "path": "fixtures/mri-upstream/original-snapshot.json",
+      "sha256": "5103b4a7054a86ca530cd2fe3608f7d0ba793890eda8efc904f23239458b970a"
+    },
+    {
+      "path": "fixtures/mri-upstream/dependency-lock.json",
+      "sha256": "05073bd678d69190ec1c7ec09dd1a66c7ea43e2b14d009d084b205c8455104af"
+    },
+    {
+      "path": "repositories/mri-qualification/baseline-runner.mjs",
+      "sha256": "6e12d41e9033ab96198f3bb33e4cabfef3f4378bef9110743e19fbdd5b829d78"
+    },
+    {
+      "path": "repositories/mri-qualification/observer.mjs",
+      "sha256": "957fac28875b827e17be562805892fc558df766f18d29d9b44b67a2191774802"
+    },
+    {
+      "path": "evaluation/mri-zero-cases-v3.json",
+      "sha256": "ae30bcf1e1fb2cd35349ecd0c3b14d18fcd1f5786e3844812325914dd74e40ce"
+    },
+    {
+      "path": "evaluation/mri-upstream-tap-v2.json",
+      "sha256": "a348e9179d94d35bfa87bcb7d46ea851a8ae4319d78a8dee3140ea5706787772"
+    },
+    {
+      "path": "tests/mri-qualification-v3.test.ts",
+      "sha256": "c9d88089680a2d13ddb4e810b11dc654acfca86bdfe389f61912a41c41f73ad1"
+    },
+    {
+      "path": "evaluation/MRI_QUALIFICATION_V3.md",
+      "sha256": "aa9fce2ed92d05088fb2a5270086217a475c88e7199d3ef178743b9551540106"
+    }
+  ]
+}

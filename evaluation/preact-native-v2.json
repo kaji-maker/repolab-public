@@ -1,0 +1,80 @@
+{
+  "format": "repolab-preact-native/v2",
+  "parentDigest": "2ada74c6196b7cd3515ac1a19ed79b81aded6389b1c85d1984610ffe39f636d1",
+  "previousFailedFreeze": "c95b9f9dc8a7720cf64f03c06b22df6f27bc5e4e792083d834ad55a6a8253f6b",
+  "taskId": "preactjs__preact-4436",
+  "baseCommit": "db0f4f2e7a2338ea40050f623f05505a798fc1a4",
+  "classification": "feature-request",
+  "image": "53fcf4f1-cd27-4c6a-ab09-35cd4dbc9119",
+  "inferenceCalls": 0,
+  "modelAdmission": false,
+  "slots": [
+    "prepare",
+    "build",
+    "protect",
+    "integrity",
+    "lint",
+    "mocha-A",
+    "types",
+    "browser-A",
+    "reproduction-A",
+    "mocha-B",
+    "browser-B",
+    "reproduction-B"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/preact-native-v2.ts",
+      "sha256": "8ab26d0e659372f8cbd3ab1993e079191c60bfb0bfc671529e23c3cf4ba3d8b0"
+    },
+    {
+      "path": "packages/execution/preact-native-v2.ts",
+      "sha256": "ccb233b4227015fe15a823452ca561c6333f9f48a9d11c251909c4beeaa40e09"
+    },
+    {
+      "path": "apps/evaluator/preact-native-v2.ts",
+      "sha256": "ca05e4957617ea83da80c517adfd6537665b7497baa6d8b0d7d8307fb9f3293d"
+    },
+    {
+      "path": "tests/preact-native-v2.test.ts",
+      "sha256": "3a801c94bbeeb983b702f5a4dd8824b3ff4542516b562b97231f213189273324"
+    },
+    {
+      "path": "evaluation/PREACT_NATIVE_V2.md",
+      "sha256": "6b03735092081321f439bbb46eb24a0c4add6627fae5ddd0e65b7ec353fdb8bc"
+    },
+    {
+      "path": "fixtures/preact-native/original-manifest.json",
+      "sha256": "a4fd773857a17db8181da1b240b1196ccf1e5700ef3dd16e2bb4a016b6303a64"
+    },
+    {
+      "path": "repositories/preact-native-v1/original.tar.gz",
+      "sha256": "88d58cccfa506ba27b82c201cdccfe731fdd0870175e76695d3fda9386a756bf"
+    },
+    {
+      "path": "repositories/preact-native-v1/LICENSE",
+      "sha256": "1fe6958409c8c257a70c587a18b6f7f412b179b456630790d30b2ec9a8e4b7d4"
+    },
+    {
+      "path": "repositories/preact-native-v1/guest.cjs",
+      "sha256": "7a3fdc618286227d0423e4170972bdc8407bfbcc0386d7a243bd9c22d1d41c8f"
+    },
+    {
+      "path": "repositories/preact-native-v1/karma.cjs",
+      "sha256": "c1ba28be8885394bbdfa6bdf7cb85d54b2d8c2d01f42d3554d6f441f294aa6ab"
+    },
+    {
+      "path": "repositories/preact-native-v1/reproduction.html",
+      "sha256": "918d392354680ec6826640be55fc99f798ad3c79cf79e90ac5e819c4e2cacb1c"
+    },
+    {
+      "path": "evaluation/preact-native-v1.json",
+      "sha256": "7b21f15774a98aac5ebb2fb46ae287bc8baf485c31ac15bc852279edf4f39a85"
+    },
+    {
+      "path": "evaluation/preact-native-v1-results-summary.json",
+      "sha256": "23c19a248ad1db45515c57de23caf2d042b92b93f57e4e7fd04d720430fdb824"
+    }
+  ],
+  "digest": "865e01356836a6b52b64803cd6c51cba7b6289dd2298d86de78d139464025d83"
+}

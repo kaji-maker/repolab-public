@@ -1,0 +1,85 @@
+{
+  "format": "repolab-preact-selected-pack-protocol/v2",
+  "originRunId": "f6ede26e-b21d-4160-9d24-5893bb8245c2",
+  "selectedSourceHash": "30b97465193b9706a1ed4046bdbcc54b686a9d686a03848f2533515597d3b4e5",
+  "parentRepairFreeze": "9d2adf0281bbea3763940b5f3d75e75fd2094fb92a479f369296adc495bd24c3",
+  "qualificationReplays": 2,
+  "maxOperationsPerReplay": 14,
+  "inferenceCalls": 0,
+  "independentInputsExported": 0,
+  "assets": [
+    {
+      "path": "packages/repositories/preact-pack-protocol-v2.ts",
+      "sha256": "37bbc79292d3685084c8b86ecb5e1a3b9eebbd376de66aff1d07317aaf7d6867"
+    },
+    {
+      "path": "packages/repositories/preact-pack-v2.ts",
+      "sha256": "b4afa0edf04446cf60ae99528bc24cd81132e88de106d2538fbf45eb07cde196"
+    },
+    {
+      "path": "packages/repositories/preact-replay-v2.ts",
+      "sha256": "59c55f8bf8d932fb2105e29acdf07fe594f0e462a19e5777880ca38ad3bcb35c"
+    },
+    {
+      "path": "packages/execution/preact-replay-v2.ts",
+      "sha256": "87d5f5f5910709fed5eb43177654b808739c8d79efc7095d0196fbdffdfa9e45"
+    },
+    {
+      "path": "apps/repositories/preact-product-v2.ts",
+      "sha256": "9edc3be524e1fadb3052830e61580466eef156a409e344090705e9c9d78ccc54"
+    },
+    {
+      "path": "apps/api/preact-product-v2.ts",
+      "sha256": "fcd22edbe45257c3fec260426f69ef3cc12b50152c09a8f399cc40119544b74e"
+    },
+    {
+      "path": "apps/api/native-server-v4.ts",
+      "sha256": "58bb3928bdc0fa662ee360921012f183b23697ffea02a9cd58e82cdcc4e962c5"
+    },
+    {
+      "path": "apps/web/src/SelectedPreactPack.tsx",
+      "sha256": "71c5f7c0de0383148d2c5a9c9c6f8e23487f6dfd6a3380df4b38de1d9ecae53d"
+    },
+    {
+      "path": "apps/web/selected-pack.html",
+      "sha256": "7944b556b9eebbb196b8aed76facf6a1fa338e6039221e8da79473ed6e282c51"
+    },
+    {
+      "path": "apps/web/src/FreshPreactV3.tsx",
+      "sha256": "24957d6985006487d42be9616de27fa396270667300bdf2c0eaeba829ac3a3f5"
+    },
+    {
+      "path": "apps/web/native-repair-v3.html",
+      "sha256": "b8f735686a76809571cc90399c130869b76eef861385b9861c27b3dbb65f8e05"
+    },
+    {
+      "path": "vite.native-v4.config.ts",
+      "sha256": "39ae298b20a4bba8f8f4f5c38b60cb3005f045995b2a3c8afb1ef117f4af6616"
+    },
+    {
+      "path": "tests/preact-pack-v2.test.ts",
+      "sha256": "f17f2ec57ceef62f4ecc676fc833b5a424ec75d6b92cbbd9dada34b898c0c5c1"
+    },
+    {
+      "path": "tests/preact-pack-api-v2.test.ts",
+      "sha256": "93e0a52b1901367fe651d1bf3435ff3b054fb9d454176f3601c0c815da024ee7"
+    },
+    {
+      "path": "scripts/preact-pack-browser-v2.mjs",
+      "sha256": "d3f2d661942e3cbf859e01b9e7c83aa61224f9024d78d94b380c1cff16133ad0"
+    },
+    {
+      "path": "evaluation/PREACT_SELECTED_PACK_V2.md",
+      "sha256": "7012ea1253878b9167219626f073b28294df8f0d3515d92fd5a320c3c3c16e58"
+    },
+    {
+      "path": "evaluation/preact-selected-f6ede26e.json",
+      "sha256": "1460e3899cc2ea8b342e4b43fb78ac0b39210a34cbf53fd39a17ec1d04ce232e"
+    },
+    {
+      "path": "evaluation/preact-user-success-f6ede26e.json",
+      "sha256": "b64a130301fbdc13d064ab6d00549731b8f7008a82fc75845440a95baacbf961"
+    }
+  ],
+  "digest": "e97f9adf986fb5007dcee085d91e5075c1da56289da480692ab58a7bdd8f3788"
+}

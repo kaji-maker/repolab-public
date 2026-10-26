@@ -1,0 +1,217 @@
+{
+  "format": "repolab-focused-study-public-results/v6",
+  "digest": "2aba74d2572eed04db456e264d12fb2ef1d97221f002c011e036b81b0bede1b8",
+  "status": "ERROR",
+  "slotStatus": "ABSTAINED",
+  "scope": "focused-mri-compatibility-exposed-revision-no-comparison-claim",
+  "reanalysis": {
+    "digest": "48dc96abb0d6069ff068ae0fdc9e5afd0c7971c96a6f42072c694dfa361453ff",
+    "scope": "retrospective-read-only-v6-receipt-reanalysis-no-new-model-outcomes",
+    "retrospective": true,
+    "originalBatchStatus": "ERROR"
+  },
+  "inference": {
+    "provider": "nebius",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "calls": 3,
+    "estimatedUsd": 0.0049058999999999995,
+    "rates": {
+      "input": 0.3,
+      "output": 0.9
+    },
+    "usageComplete": true
+  },
+  "execution": {
+    "provider": "nebius-sandbox",
+    "runtime": "v24.18.0",
+    "studyOperations": 14,
+    "reviewedMriQualificationOperations": 10,
+    "readinessOperations": 7,
+    "totalDistinctOperations": 31,
+    "readOnlyExpiryRefreshes": 2,
+    "preDispatchLauncherCapabilityRefreshes": 0
+  },
+  "proposalFailures": [
+    {
+      "attempt": 1,
+      "sourceHash": "c54d1c266bf963a2bcf0ca491ee29f089564939d5358ce2dc60d562df64d1243",
+      "after": "(!isBool(any) && !isNaN(Number(any))) ? Number(any) : any",
+      "failedCases": [
+        "empty-value",
+        "whitespace-value",
+        "public-tab-value",
+        "public-linebreak-value",
+        "public-mixed-whitespace",
+        "public-repeated-empty-zero"
+      ]
+    },
+    {
+      "attempt": 2,
+      "sourceHash": "140fdffb68d7502f0a1f63bcbbfdad02e77ddd19027420e616c622917dd089f6",
+      "after": "any === '' ? any : (!isBool(any) && !isNaN(Number(any))) ? Number(any) : any",
+      "failedCases": [
+        "whitespace-value",
+        "public-tab-value",
+        "public-linebreak-value",
+        "public-mixed-whitespace"
+      ]
+    }
+  ],
+  "arms": [
+    {
+      "arm": "C",
+      "plannedTasks": 1,
+      "attemptedTasks": 1,
+      "notRun": 0,
+      "qualifiedBugs": 1,
+      "acceptedRepairs": 0,
+      "correctRepairs": 0,
+      "incorrectAcceptances": 0,
+      "acceptedUnknown": 0,
+      "controlCorrect": 0,
+      "unknownOutcomes": 0,
+      "correctTaskOutcomes": 0,
+      "acceptancePrecision": null
+    }
+  ],
+  "resources": [
+    {
+      "task": "mri-zero-number",
+      "calls": 3,
+      "inputTokens": 13794,
+      "outputTokens": 853,
+      "estimatedInferenceUsd": 0.0049058999999999995,
+      "operations": 14
+    }
+  ],
+  "rows": [
+    {
+      "task": "mri-zero-number",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": false,
+      "status": "ABSTAINED",
+      "unknown": false,
+      "origin": "exposed-public-historical-v5-model-attempted-authored-oracle",
+      "runId": "52c1d1af-586d-47c1-b608-23d4fce3ed6d"
+    }
+  ],
+  "admissions": [],
+  "incorrectAcceptances": [],
+  "reviewedMriQualification": [
+    {
+      "variant": "original",
+      "suite": "baseline",
+      "sourceHash": "6b9475eb856c247a1f486449abe03ccecd4cab224bd5acf9d2ca1c48ffd40d1c",
+      "passed": true,
+      "cases": null,
+      "failedCases": [],
+      "upstreamAssertions": 49
+    },
+    {
+      "variant": "original",
+      "suite": "core",
+      "sourceHash": "6b9475eb856c247a1f486449abe03ccecd4cab224bd5acf9d2ca1c48ffd40d1c",
+      "passed": false,
+      "cases": 1,
+      "failedCases": [
+        "reported-zero"
+      ],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "original",
+      "suite": "core",
+      "sourceHash": "6b9475eb856c247a1f486449abe03ccecd4cab224bd5acf9d2ca1c48ffd40d1c",
+      "passed": false,
+      "cases": 1,
+      "failedCases": [
+        "reported-zero"
+      ],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "original",
+      "suite": "challenge",
+      "sourceHash": "6b9475eb856c247a1f486449abe03ccecd4cab224bd5acf9d2ca1c48ffd40d1c",
+      "passed": false,
+      "cases": 19,
+      "failedCases": [
+        "decimal-zero",
+        "public-padded-zero",
+        "public-repeated-empty-zero"
+      ],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "recordedIncomplete",
+      "suite": "baseline",
+      "sourceHash": "68f902e809c538dd9ee4d92b6490ab7a88740ea610f579b7cb356026c6d974a1",
+      "passed": true,
+      "cases": null,
+      "failedCases": [],
+      "upstreamAssertions": 49
+    },
+    {
+      "variant": "recordedIncomplete",
+      "suite": "challenge",
+      "sourceHash": "68f902e809c538dd9ee4d92b6490ab7a88740ea610f579b7cb356026c6d974a1",
+      "passed": false,
+      "cases": 19,
+      "failedCases": [
+        "empty-value",
+        "whitespace-value",
+        "public-tab-value",
+        "public-linebreak-value",
+        "public-mixed-whitespace",
+        "public-repeated-empty-zero"
+      ],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "reviewedReference",
+      "suite": "baseline",
+      "sourceHash": "3d58b87c1abac0097a8eb04479bcfc3ffdf863661ca37f5f5b2d6f883a21c1b9",
+      "passed": true,
+      "cases": null,
+      "failedCases": [],
+      "upstreamAssertions": 49
+    },
+    {
+      "variant": "reviewedReference",
+      "suite": "core",
+      "sourceHash": "3d58b87c1abac0097a8eb04479bcfc3ffdf863661ca37f5f5b2d6f883a21c1b9",
+      "passed": true,
+      "cases": 1,
+      "failedCases": [],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "reviewedReference",
+      "suite": "challenge",
+      "sourceHash": "3d58b87c1abac0097a8eb04479bcfc3ffdf863661ca37f5f5b2d6f883a21c1b9",
+      "passed": true,
+      "cases": 19,
+      "failedCases": [],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "reviewedReference",
+      "suite": "independent",
+      "sourceHash": "3d58b87c1abac0097a8eb04479bcfc3ffdf863661ca37f5f5b2d6f883a21c1b9",
+      "passed": true,
+      "cases": 16,
+      "failedCases": [],
+      "upstreamAssertions": null
+    }
+  ],
+  "limitations": [
+    "Focused exposed-development revision; no A/B comparison or causal superiority claim",
+    "Authored/public/exposed tasks; no external hidden benchmark",
+    "Previously attempted tasks; no untouched-task or new independent benchmark claim"
+  ],
+  "conclusion": "MRI model abstained after both proposals failed compatibility. Original batch reporting ERROR is preserved; separate retrospective replay verifies receipts. No verified MRI model repair or superiority claim."
+}

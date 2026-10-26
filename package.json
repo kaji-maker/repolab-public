@@ -1,0 +1,33 @@
+{
+  "name": "repolab",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=24.18.0"
+  },
+  "scripts": {
+    "start": "node apps/api/source-preview-v1.ts",
+    "build": "vite build --config vite.native-v10.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/judge-review-v2.test.mjs tests/source-preview-v1.test.ts",
+    "review:build": "node scripts/judge-review-bundle-v2.mjs",
+    "source:verify": "node scripts/source-release-v2.mjs verify"
+  },
+  "dependencies": {
+    "hono": "4.13.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.4",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.3",
+    "playwright": "1.63.0",
+    "prettier": "3.9.7",
+    "typescript": "6.0.3",
+    "vite": "7.3.6"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format": "repolab-prospective-readiness-overlay/v1",
+  "freeze": "e89d60e359ab987362c2cda0cb3f4e52738498fabcf6e930d0f4321eb980477e",
+  "taskId": "vuejs__core-11739",
+  "status": "SETUP_FAILURE",
+  "reason": "INTEGRITY_GUEST_TEMP_HOME_PERMISSION_DENIED",
+  "failedSlot": "integrity",
+  "actualSandboxOperations": 4,
+  "modelCalls": 0,
+  "counts": {
+    "selected": 8,
+    "originalBaselineQualified": 1,
+    "setupFailed": 1,
+    "pendingPreparation": 6,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0
+  },
+  "originalQualificationOperationsAcrossCohort": 15,
+  "candidateAdmission": false,
+  "accuracy": null,
+  "consumedSlot": true,
+  "automaticRetry": false,
+  "priorJsonUnchanged": 3161,
+  "keylessReplays": 2,
+  "sharedLeasesReleased": true,
+  "inference": "none",
+  "execution": "four actual Nebius Sandbox original-only operations; offline saved-data audits",
+  "resultSummary": "evaluation/prospective-vue-11739-v1-results-summary.json",
+  "resultsDocument": "docs/PROSPECTIVE_VUE_11739_RESULTS.md"
+}

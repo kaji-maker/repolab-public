@@ -1,0 +1,54 @@
+{
+  "format": "repolab-fresh-task-selection/v1",
+  "selectedAt": "2026-10-15T03:38:57.716975+00:00",
+  "tasks": [
+    {
+      "repo": "minimistjs/minimist",
+      "name": "minimist",
+      "tag": "v1.2.8",
+      "commit": "6901ee286bc4c16da6830b48b46ce1574703cea1",
+      "issue": {
+        "number": 47,
+        "title": "Minimist throws on options like '--toString' '--constructor', '--_proto_'",
+        "body": "With the following minimal script, similar to the example from the [README.md](https://github.com/minimistjs/minimist#example):\r\n\r\n```javascript\r\n#!/usr/bin/env node\r\nconsole.dir(require('minimist')(process.argv.slice(2)));\r\n```\r\n\r\nRunning the file with options like `--toString`, `--hasOwnProperty`, `--constructor`, `--__proto__` etc. causes minimist (version 1.2.8) to throw this error:\r\n\r\n```\r\n[...]/node_modules/minimist/index.js:127\r\n\t\t(aliases[key] || []).forEach(function (x) {\r\n\t\t                     ^\r\nTypeError: (aliases[key] || []).forEach is not a function\r\n    at setArg ([...]/node_modules/minimist/index.js:127:24)\r\n    at module.exports ([...]/node_modules/minimist/index.js:178:5)\r\n    at Object.<anonymous> ([...]/minimist-test.js:2:32)\r\n    [...]\r\nNode.js v18.17.1\r\n```\r\n\r\nFrom a quick glance at the source, changing the line [`var aliases = {};`](https://github.com/minimistjs/minimist/blob/fdbb909cf916b3bac9f76f6ee72c64e05b73c2d9/index.js#L44C2-L44C19) to `var aliases = Object.create(null);` makes it no longer throw, but still gives weird results:\r\n\r\n```\r\n$ ./minimist-test.js --expected test\r\n{ _: [], expected: 'test' }\r\n$ ./minimist-test.js --hasOwnProperty test\r\n{ _: [ 'test' ], hasOwnProperty: '' }\r\n```\r\n\r\nI assume there are other objects that should have a null prototype somewhere (which would probably also help with the \"prototype pollution\" problems you seem to be having).",
+        "html_url": "https://github.com/minimistjs/minimist/issues/47",
+        "created_at": "2023-09-10T15:20:27Z",
+        "updated_at": "2023-09-11T02:19:26Z"
+      },
+      "archiveSha256": "2c7f81307eb485e34dacd5f3561d10ac112db1967e605df7c81d31cc6791d74e"
+    },
+    {
+      "repo": "sindresorhus/camelcase",
+      "name": "camelcase",
+      "tag": "v9.0.0",
+      "commit": "8596a65fcbfedd474cdedf16f48b7d9381eb7953",
+      "issue": {
+        "number": 117,
+        "title": "pascalCase does not uppercase the first letter when it uses a surrogate pair",
+        "body": "With `pascalCase: true`, a lowercase Deseret letter at the beginning of the input stays lowercase. JavaScript's native case conversion correctly uppercases the same character.\n\nThe example uses U+10428, a lowercase letter represented by two UTF-16 code units. Its uppercase counterpart is U+10400.\n\n**Reproduction**\n\n```js\nconst { default: camelCase } = require('camelcase');\n\nconst input = '\\u{10428}';\nconst output = camelCase(input, {\n  pascalCase: true,\n  locale: false,\n});\n\nconsole.log(output === input); // true\nconsole.log(output === input.toUpperCase()); // false\nconsole.log(input.toUpperCase() === '\\u{10400}'); // true\n```\n\n**Expected:** PascalCase should uppercase the complete first Unicode character, including characters outside the Basic Multilingual Plane.\n\n**Suggested fix:** Read and replace the first full Unicode code point instead of uppercasing only `input[0]`.\n\n**Version:** 9.0.0. **Environment:** Node.js v24.19.0.",
+        "html_url": "https://github.com/sindresorhus/camelcase/issues/117",
+        "created_at": "2026-10-12T05:22:07Z",
+        "updated_at": "2026-10-12T09:57:33Z"
+      },
+      "archiveSha256": "af66ff36b54c3604ffb1156bab63e9eb2cdf56ba6b128414cc7b292ac57d5c0f"
+    },
+    {
+      "repo": "fastify/deepmerge",
+      "name": "fastify-deepmerge",
+      "tag": "v3.1.0",
+      "commit": "fc81eeb16a2dcb922b4f0b53d314253aeaf53c4e",
+      "issue": {
+        "number": 81,
+        "title": "The onlyDefinedProperties option seems to be missing under types",
+        "body": "Just installed the latest version 3.1.0 and the option `onlyDefinedProperties` seems to be missing for TypeScript ... known issue?",
+        "html_url": "https://github.com/fastify/deepmerge/issues/81",
+        "created_at": "2026-01-20T05:03:35Z",
+        "updated_at": "2026-09-01T03:29:17Z"
+      },
+      "archiveSha256": "359c176b0243abfdfd48e30e24fa2c65935a03a6de8693a6803f9238abd525e4"
+    }
+  ],
+  "replacementAfterOutcomes": false,
+  "executionBeforeSelection": false,
+  "scope": "three purposively selected public issue snapshots new to ReproLab execution; reporter hints retained in original bodies; training exposure unknown"
+}

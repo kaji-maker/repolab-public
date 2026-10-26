@@ -1,0 +1,303 @@
+{
+  "format": "repolab-mri-upstream-tap/v1",
+  "derivation": "Static AST inspection of every active test callback and literal assertion message; commented tests remain untouched and inactive; no source executed",
+  "testHashes": [
+    {
+      "path": "test/index.js",
+      "sha256": "da2fcfdb893b387451a856384a21e4f7d22d7878259552b63512de4cac1bf651"
+    },
+    {
+      "path": "test/unknown.js",
+      "sha256": "09aaf9a85b9fd1a32715347f17c45c5801a6b169e6bc518478316b5d2e7fa24a"
+    }
+  ],
+  "assertionCount": 49,
+  "groups": [
+    {
+      "file": "test/index.js",
+      "name": "parse args",
+      "assertions": [
+        {
+          "method": "deepEqual",
+          "message": "no"
+        },
+        {
+          "method": "deepEqual",
+          "message": "multi"
+        }
+      ]
+    },
+    {
+      "file": "test/index.js",
+      "name": "comprehensive",
+      "assertions": [
+        {
+          "method": "deepEqual",
+          "message": "should be equivalent"
+        }
+      ]
+    },
+    {
+      "file": "test/index.js",
+      "name": "flag boolean",
+      "assertions": [
+        {
+          "method": "deepEqual",
+          "message": "should be equivalent"
+        },
+        {
+          "method": "deepEqual",
+          "message": "should be equivalent"
+        }
+      ]
+    },
+    {
+      "file": "test/index.js",
+      "name": "flag boolean value",
+      "assertions": [
+        {
+          "method": "deepEqual",
+          "message": "should be equivalent"
+        },
+        {
+          "method": "deepEqual",
+          "message": "should be equivalent"
+        },
+        {
+          "method": "deepEqual",
+          "message": "should be equivalent"
+        }
+      ]
+    },
+    {
+      "file": "test/index.js",
+      "name": "flag default value",
+      "assertions": [
+        {
+          "method": "deepEqual",
+          "message": "should be equivalent"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        }
+      ]
+    },
+    {
+      "file": "test/index.js",
+      "name": "flag default and alias",
+      "assertions": [
+        {
+          "method": "deepEqual",
+          "message": "should be equivalent"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        }
+      ]
+    },
+    {
+      "file": "test/index.js",
+      "name": "strings",
+      "assertions": [
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        }
+      ]
+    },
+    {
+      "file": "test/index.js",
+      "name": "stringArgs",
+      "assertions": [
+        {
+          "method": "same",
+          "message": "should be equivalent"
+        },
+        {
+          "method": "same",
+          "message": "should be equivalent"
+        },
+        {
+          "method": "same",
+          "message": "should be equivalent"
+        },
+        {
+          "method": "same",
+          "message": "should be equivalent"
+        },
+        {
+          "method": "same",
+          "message": "should be equivalent"
+        }
+      ]
+    },
+    {
+      "file": "test/index.js",
+      "name": "empty strings",
+      "assertions": [
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        }
+      ]
+    },
+    {
+      "file": "test/index.js",
+      "name": "string and alias",
+      "assertions": [
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        }
+      ]
+    },
+    {
+      "file": "test/index.js",
+      "name": "alias",
+      "assertions": [
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        }
+      ]
+    },
+    {
+      "file": "test/index.js",
+      "name": "multiAlias",
+      "assertions": [
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        },
+        {
+          "method": "equal",
+          "message": "should be equal"
+        }
+      ]
+    },
+    {
+      "file": "test/unknown.js",
+      "name": "boolean and alias is not unknown",
+      "assertions": [
+        {
+          "method": "same",
+          "message": "should be equivalent"
+        }
+      ]
+    },
+    {
+      "file": "test/unknown.js",
+      "name": "string and alias is not unknown",
+      "assertions": [
+        {
+          "method": "same",
+          "message": "should be equivalent"
+        }
+      ]
+    },
+    {
+      "file": "test/unknown.js",
+      "name": "default and alias is not unknown",
+      "assertions": [
+        {
+          "method": "same",
+          "message": "should be equivalent"
+        }
+      ]
+    }
+  ]
+}

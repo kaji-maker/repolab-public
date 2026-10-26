@@ -1,0 +1,55 @@
+{
+  "format": "repolab-vue-native-result/v3",
+  "freeze": "45668087c0c5138955087956c88f969c531d918e47162561126df25b1c98c5a9",
+  "status": "UNIT_ASSERTION_BLOCKER",
+  "operations": 5,
+  "operationIds": [
+    "01a142b2-0932-73c1-bf7c-c96450d239aa",
+    "01a142b2-6cf8-77ec-97e2-bd8861d2da83",
+    "01a142b2-8c7f-7189-ad80-2c3a8890f81a",
+    "01a142b2-93c5-71ab-b5f6-2ad318528744",
+    "01a142b2-9acc-71f0-85fe-749b045ee60c"
+  ],
+  "providerStatus": "SUCCESS",
+  "guestExitCode": 0,
+  "passedSlots": [
+    "prepare",
+    "build",
+    "protect",
+    "integrity"
+  ],
+  "failedSlot": "unit-A",
+  "failedSlotCommand": "/usr/local/bin/node /opt/repolab/vue/node_modules/vitest/vitest.mjs run -c vitest.unit.config.ts --reporter=json --outputFile=/tmp/repolab-vue-out/vitest.json packages/compiler-sfc/__tests__",
+  "failedSlotExitCode": 0,
+  "remainingSlotsUnrun": 3,
+  "unrunSlots": [
+    "reproduction-A",
+    "unit-B",
+    "reproduction-B"
+  ],
+  "inference": "none",
+  "execution": "nebius-sandbox",
+  "inferenceCalls": 0,
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "compilerSfcCjs": {
+    "sha256": "2ab1a616e9fd5aa7ca5b7ce6078ab748194c4e30315783efe9edd4e22065d8f3",
+    "bytes": 674491
+  },
+  "buildChangedOriginalPaths": [],
+  "integrityDenials": 11,
+  "networkProbe": "ENETUNREACH",
+  "reason": "Vitest executed successfully in Nebius Sandbox with exit code 0 under unprivileged UID 1000 using sticky repository directory. However, the test suite contains 1 test conditionally skipped on Linux (test.runIf(win32) for 'relative ts on Windows'), making the suite 412 passed and 1 skipped (413 total). Vitest JSON reporter emitted numPassedTests=413 and numPendingTests=0, which triggered a controller-side assertion mismatch against the 412-test baseline inventory.",
+  "rawReceiptSha256": {
+    "STARTED.json": "b723f6e760d6bab67ebbaf27972af12eec5330608b9b8f4742ba8cd1a5b18329",
+    "build.json": "79bb463f00613773ed792409f3eadba0f6e633c14830c090b794033a3c2fa604",
+    "integrity.json": "3f41be8a5a9385da312065c07f1c72364b8fae9e67988de71f84ec57d71a8b5d",
+    "prepare.json": "281bd8b6aa58a87728d4294591ffdce22ff1d753e98b4576620a71476cdb48c2",
+    "protect.json": "5b098ebdd8ac7553dfdb580133123c8fffcc541f5ca7c66e4b31f79074e29d14",
+    "unit-A.json": "634ea8c0102c60966b42b88cb3d413b563c872aeb82772cba331ec16eb7c6f3a",
+    "upload-guest.cjs.json": "6deb34dbbec0502cfc629354fb6d651ecb6a7e3e8a9c13dc44289e1b5846b603",
+    "upload-manifest.json.json": "455af970669bfe3298e6d994ceae5dcc81b82a5e8cc2c617de523423e752dddb",
+    "upload-reproduction.cjs.json": "4de7cd5645426cef951fe1636e4eb2f5cd3916e2524ec713d2588043397170d5",
+    "upload-upstream.tar.gz.json": "fc53a7c76c96112c6b7614f9c29e6fb810e1e4da057d34efd5c370b0856fc113"
+  }
+}

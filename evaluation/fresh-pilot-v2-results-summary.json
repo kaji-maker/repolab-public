@@ -1,0 +1,57 @@
+{
+  "format": "repolab-fresh-pilot-results/v2",
+  "freeze": "4b3351455f1d55d7b272a0d4ee5ea666a1d3812e1c8e71107bde44ffdefc8631",
+  "selected": 3,
+  "nativeQualified": 0,
+  "modelAttemptedTasks": 0,
+  "verifiedRepairs": 0,
+  "nativeBlocks": 2,
+  "staticContractBlocks": 1,
+  "inferenceCalls": 0,
+  "sandboxOperations": 6,
+  "independentEvaluations": 0,
+  "rows": [
+    {
+      "name": "minimist",
+      "status": "SETUP_OR_REPRODUCTION_FAILED",
+      "inferenceCalls": 0,
+      "operations": 3,
+      "error": "Unchanged native command failed",
+      "block": null
+    },
+    {
+      "name": "camelcase",
+      "status": "SETUP_OR_REPRODUCTION_FAILED",
+      "inferenceCalls": 0,
+      "operations": 3,
+      "error": "Unchanged native command failed",
+      "block": null
+    },
+    {
+      "name": "fastify-deepmerge",
+      "status": "BLOCKED_PUBLIC_CONTRACT",
+      "inferenceCalls": 0,
+      "operations": 0,
+      "error": null,
+      "block": {
+        "status": "BLOCKED_PUBLIC_CONTRACT",
+        "reason": "The reported v3.1.0 snapshot declares neither runtime behavior nor README support for onlyDefinedProperties. A missing type for this option is not established as a supported-API defect. No implementation change is attempted.",
+        "evidence": [
+          {
+            "path": "README.md",
+            "sha256": "82e75fab5a8e0715cc3e03877a74638bea4b8767651a2587df197b8c0a259ec6"
+          },
+          {
+            "path": "index.js",
+            "sha256": "3c8c7210b3883386191bb4b07634a73ed786ee26320837e2c2eda4a770d73039"
+          },
+          {
+            "path": "types/index.d.ts",
+            "sha256": "541b4daafc0299fc8415c02e8cb96063447549914c12bb361e01bbdb616da17e"
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "first qualification outcomes of three new repair tasks; no replacement or inference"
+}

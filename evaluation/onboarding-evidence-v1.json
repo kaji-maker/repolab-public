@@ -1,0 +1,144 @@
+{
+  "format": "repolab-onboarding-original-evidence/v1",
+  "scope": "Trusted project preparation pins for existing original-only receipts; no independent or model-candidate evidence",
+  "rows": [
+    {
+      "id": "preact",
+      "files": [
+        {
+          "path": ".repolab/preact-native-v5/run/STARTED.json",
+          "sha256": "cba119b916795e92b4634d4a54f7b582773ba31c8e68cc687960a169d85814e0"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/browser-A.json",
+          "sha256": "8022dbe795a3ac2125b3a9a4520c1f1355b183a90a315d9ee5805f8e0ef2f55a"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/browser-B.json",
+          "sha256": "226d9b293062fc1569eb9f9af28adf2fc1928e1270b098a40ad9c44c12df8242"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/build.json",
+          "sha256": "92a3ab2fdc9d4f4e807a59dab2a7d55b22427a71738f92281a102b7d41b3146a"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/integrity.json",
+          "sha256": "807c5f26fc574afc22e4d913541d7b3bef9597dd250c584d4301ebbd086a1f56"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/lint.json",
+          "sha256": "da5de7504a50a569c10584bd4fcbfe40ad8a8b25407e3c87475ec42f645b85f7"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/mocha-A.json",
+          "sha256": "06993c8b86b272f01ac699e53e7b0cd7e67396ac6c59333f29effd0b2d138487"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/mocha-B.json",
+          "sha256": "3066a91b986ae2f55c6431a5512a39eb77ad698c8cecde887a952d477c422e60"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/prepare.json",
+          "sha256": "1e5dc27d85164f876e2bc1c37babe7b70c9d8e126f6dd9ebce5e2c3dd9015457"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/protect.json",
+          "sha256": "ca32ffc6d29b5366ebf435b89a6abb0e3e853236bd25c0fc703d018ca2637546"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/reproduction-A.json",
+          "sha256": "d111c248ebe27d07ddfbabacef7ed0c928a92e68e40778015e0037e140020344"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/reproduction-B.json",
+          "sha256": "081c68aa1190bdb29968d21972a09eeb44fb4402a43d2661e0a9f2da5bc5476b"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/result.json",
+          "sha256": "4dc46791c5b5106df27ab5f63cddf070c5677e7780f02aefeebf2435fcdc6ff1"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/types.json",
+          "sha256": "4518bc4771516e03dda0f331c4e521c269a50ddd5ae5bad507b5ef88ba263244"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/upload-guest.cjs.json",
+          "sha256": "b96c5a8e9bb7584fc60c0bbea7ed1487539050c76f04a999d0ddfc11be8debec"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/upload-karma.cjs.json",
+          "sha256": "e172605a3ba29f260943b780a0187c75cbca524f6a2c485055a9c4450fb8ef9a"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/upload-manifest.json.json",
+          "sha256": "625ba7eafc7d90ca718b95857e984aba2116f6516af1bb31c2b58b44d6e02be9"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/upload-reproduction.html.json",
+          "sha256": "8e13e234b97b7c88ec1538c27802be1bd4c9bc1f1fe883755fdb5f7a0db067d0"
+        },
+        {
+          "path": ".repolab/preact-native-v5/run/upload-upstream.tar.gz.json",
+          "sha256": "012f5778eaf6108ae86fdafe337454d175e3f4c24154e1a1194c4f11573b035c"
+        }
+      ]
+    },
+    {
+      "id": "regexparam",
+      "files": [
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/result.json",
+          "sha256": "e0b0d376d30cb2c5e742e03a4524cae1de24443a11120e231e3ccd10977805ca"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-dependencies.json",
+          "sha256": "eda2c6c8e372c4d7d80988264007a89145ce37397b61b2f8ae69478cc8ecaa46"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-dependencies-config.json",
+          "sha256": "e78328a586cc4ade529a87922b5d865a98f3435d25a714377b47799ad763f196"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-stage.json",
+          "sha256": "1ca29b3e2cb39e0e975b0e2aa063669e5ed30a71d667b7659d9458efc2ed8df5"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-stage-config.json",
+          "sha256": "2e7f5732d6df8a0b438e8c8d20dfa8dee009352d8038fae8b38cc4db4f94b800"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-native.json",
+          "sha256": "b1fbbc728a5b0f00ac8af63303df2ed634836b0ec234ce80c25fe2acc44c8e3a"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-native-config.json",
+          "sha256": "3b96eac1f006bb83927099f1dac03d9ef0db124d596c983596b20c54ced3a488"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-public-A.json",
+          "sha256": "2e0ca993d9ef8eac0c6899bb7a8b3a2fb7dd9568947830e9f0e5592fdff38fa8"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-public-A-config.json",
+          "sha256": "0a4dbad95d1ff731ed3bf1072cdacfef94fc522363c25bfb863bae6c31a3633b"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-public-B.json",
+          "sha256": "dbf642a18995a18707edf6339afbbc985baa2ee39750ffaaa90d2dc6f8b92117"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-public-B-config.json",
+          "sha256": "d407865d3e2d8836a60d3c92681f6cc9a5afda7492e96554d42bfc755072628c"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-controls.json",
+          "sha256": "2f6c574d6416f8d86c75b256dc3c789332b2a3c325e67771f9308637537a014b"
+        },
+        {
+          "path": ".repolab/github-anchor-v2/regexparam/q-controls-config.json",
+          "sha256": "ddf653adaaa6b0a5176ce5c9de581ed04e1827c4dcb13a62a521d44663f078f0"
+        }
+      ]
+    }
+  ]
+}

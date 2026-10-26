@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "profile": "clsx-object-push",
+  "split": "development",
+  "cases": [
+    { "id": "reported", "origin": "reported", "args": ["stack", {"pop": true, "push": true}], "expected": "stack pop push" },
+    { "id": "push-alone", "origin": "independent", "args": [{"push": true}], "expected": "push" },
+    { "id": "push-string", "origin": "independent", "args": [{"push": "enabled", "pop": true}], "expected": "push pop" },
+    { "id": "push-number-and-length", "origin": "independent", "args": [{"pop": true, "push": 1, "length": 2}], "expected": "pop push length" },
+    { "id": "falsy-push", "origin": "independent", "args": [{"pop": true, "push": false}], "expected": "pop" },
+    { "id": "length-key", "origin": "independent", "args": [{"length": 2, "label": true}], "expected": "length label" },
+    { "id": "nested-push-object", "origin": "independent", "args": [["stack", [{"pop": true, "push": true}], "tail"]], "expected": "stack pop push tail" },
+    { "id": "object-and-array", "origin": "independent", "args": [{"push": true}, ["array", ["nested"]]], "expected": "push array nested" },
+    { "id": "falsy-and-booleans", "origin": "independent", "args": [false, true, null, 0, "", []], "expected": "" },
+    { "id": "numeric-classes", "origin": "independent", "args": [1, -2, ["name", 0]], "expected": "1 -2 name" },
+    { "id": "variadic-strings", "origin": "independent", "args": ["one", "two"], "expected": "one two" },
+    { "id": "deep-arrays", "origin": "independent", "args": [["a", ["b", ["c"]]]], "expected": "a b c" },
+    { "id": "object-truthiness", "origin": "independent", "args": [{"a": true, "b": false, "c": 0, "d": null, "e": "", "f": [], "g": {}, "h": "yes"}], "expected": "a f g h" },
+    { "id": "empty-inputs", "origin": "independent", "args": [[], {}, null], "expected": "" },
+    { "id": "repeated-classes", "origin": "independent", "args": ["a", ["a"], {"a": true}], "expected": "a a a" },
+    { "id": "nested-truthiness", "origin": "independent", "args": [[{"push": false, "pop": true}, {"push": "yes"}]], "expected": "pop push" }
+  ]
+}

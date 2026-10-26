@@ -1,0 +1,68 @@
+{
+  "format": "repolab-preact-guard-live-results/v1",
+  "status": "QUALIFIED_ORIGINAL_ONLY_PRODUCT_RECOVERY",
+  "date": "2026-10-16",
+  "freeze": "9b2bb81ff1d39b900a11d2c60ef88e8b42c9fe752d75ed1d55a5052c7bb60998",
+  "productFreeze": "e50e387594890fcbcff387c1e1e95d90ea857b320105c8c765ecbd226a384449",
+  "actualSandboxOperations": 2,
+  "actualInferenceCalls": 0,
+  "operations": [
+    {
+      "stage": "public-A",
+      "id": "01a14237-6a5a-7280-a869-5144d5538149",
+      "receiptSha256": "4577094a87864d16d0dba594a4f85289c5e44b83208a50868afd4a17c01ba529"
+    },
+    {
+      "stage": "public-B",
+      "id": "01a14237-83bc-77cf-ac73-c3b97948577f",
+      "receiptSha256": "fc636eef252cbcbf7534029649cec251f5f6b2f66d8a2fd70bdf36b3a5cf9494"
+    }
+  ],
+  "network": {
+    "uploads": 3,
+    "compute": 2,
+    "reads": 5,
+    "deletes": 1,
+    "denied": 0,
+    "modelCalls": 0
+  },
+  "cancellation": {
+    "controllerAborted": true,
+    "rawReceiptPreserved": true,
+    "terminalStatus": "CANCELLED",
+    "recoveredBy": "production API; GET only",
+    "behaviorVerified": false
+  },
+  "recoveryRequests": {
+    "uploads": 0,
+    "compute": 0,
+    "deletes": 0,
+    "reads": 1
+  },
+  "verified": false,
+  "repairSuccessesClaimed": 0,
+  "priorJsonEvidenceUnchanged": 3038,
+  "credentialAndProjectExclusion": "PASS",
+  "leasesReleased": true,
+  "recoveryMutexesReleased": true,
+  "unsettledCharges": false,
+  "ledgerBeforeUsd": 0.3490722,
+  "ledgerAfterUsd": 0.3490722,
+  "validation": {
+    "focusedTests": 4,
+    "passed": 4,
+    "failed": 0,
+    "typecheck": "PASS",
+    "fullSuiteThisIncrement": "NOT_RUN",
+    "testLogSha256": "8a8aebbe2f9ce26856d5be50ae2ad74014c22b13b85c1da097061187f76e6892",
+    "typecheckLogSha256": "d358f6920e54098863f1274fb9ed2769cc61ddb62a3494cffd1ee5256f7d4ae3"
+  },
+  "privateResultSha256": "124ab2506d74113c83b511448d3a81e0a37d035581a8a3a6cb38a23f9bf1c13b",
+  "completionAuditSha256": "a729460c3594613dfe3e2b2837cfb19c453ca341c7e74eafdeda8f6e9ccfd011",
+  "provenance": {
+    "inference": "none",
+    "execution": "nebius-sandbox; reviewed original fixture qualification"
+  },
+  "scope": "Live original-only guard/history/default-recovery API; qualification-only envelope, not fresh model-repair orchestration, accuracy or separate-environment qualification",
+  "qualificationSlot": "CONSUMED; do not rerun"
+}

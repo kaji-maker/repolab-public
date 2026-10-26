@@ -1,0 +1,26 @@
+{
+  "format": "repolab-cross-repository-v1-preparation-results",
+  "status": "SUPERSEDED_BEFORE_INFERENCE",
+  "selected": 3,
+  "modelAttempts": 0,
+  "inferenceCalls": 0,
+  "sandboxOperations": 3,
+  "failedSetup": 1,
+  "reason": "Native nyc needs to remove/recreate its own temporary directory; immutable layout denied rmdir",
+  "tasks": [
+    {
+      "name": "fast-deep-equal",
+      "status": "SETUP_OR_REPRODUCTION_FAILED"
+    },
+    {
+      "name": "rfdc",
+      "status": "NOT_RUN_PROTOCOL_SUPERSEDED"
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "status": "NOT_RUN_PROTOCOL_SUPERSEDED"
+    }
+  ],
+  "failedEvidencePreserved": true,
+  "replacementFreezeRequired": true
+}

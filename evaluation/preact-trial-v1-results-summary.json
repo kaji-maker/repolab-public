@@ -1,0 +1,22 @@
+{
+  "format": "repolab-preact-trial-failed-summary/v1",
+  "freeze": "f01fe51ba1c153309df2fb14dd8e05e29deaee429f694068f8319e0a790465d4",
+  "status": "ERROR",
+  "failedStage": "VERIFYING_PUBLIC",
+  "selected": 3,
+  "qualified": 1,
+  "modelAttempted": 1,
+  "modelCalls": 1,
+  "operations": 5,
+  "execution": "nebius-sandbox; actual scoped model candidate",
+  "inference": "nebius; NVIDIA Nemotron",
+  "reason": "Actual candidate failed upstream lint. Native failure parser required provider status FAILED, but provider returned SUCCESS with child exit code 1. No selection/independent evaluation or retry.",
+  "native": {
+    "providerStatus": "SUCCESS",
+    "exitCode": 1,
+    "childExit": 1
+  },
+  "estimatedInferenceUsd": 0.0014355,
+  "unrunProposalSlots": 2,
+  "unrunExecutionSlots": 29
+}

@@ -1,0 +1,74 @@
+{
+  "format": "repolab-native-user-initiated-repair-result/v1",
+  "runId": "f6ede26e-b21d-4160-9d24-5893bb8245c2",
+  "freeze": "9d2adf0281bbea3763940b5f3d75e75fd2094fb92a479f369296adc495bd24c3",
+  "entrypoint": "api",
+  "origin": "User initiated another fresh run through the workbench; distinct from the original abstained qualification",
+  "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+  "verified": true,
+  "selectedCandidate": 3,
+  "sourceHash": "30b97465193b9706a1ed4046bdbcc54b686a9d686a03848f2533515597d3b4e5",
+  "candidates": [
+    {
+      "attempt": 1,
+      "status": "ADMISSION_REJECTED",
+      "rejection": "Nested node program[0].then[0].else[0]: result capture must appear at most once"
+    },
+    {
+      "attempt": 2,
+      "status": "ADMISSION_REJECTED",
+      "rejection": "Nested node program[0].then[0].else[0]: result capture must appear at most once"
+    },
+    {
+      "attempt": 3,
+      "status": "SELECTED",
+      "rejection": null
+    }
+  ],
+  "native": {
+    "mocha": {
+      "passed": 29,
+      "total": 29
+    },
+    "browser": {
+      "passed": 1173,
+      "total": 1184,
+      "skipped": 11
+    },
+    "types": {
+      "passed": 17,
+      "pending": 2,
+      "coreCompilation": "PASS",
+      "compatCompilation": "PASS"
+    }
+  },
+  "public": {
+    "passed": 3,
+    "total": 3
+  },
+  "independent": {
+    "passed": 10,
+    "total": 10,
+    "repetitions": 2
+  },
+  "inferenceCalls": 3,
+  "sandboxOperations": 14,
+  "distinctOperationIds": 14,
+  "estimatedInferenceUsd": 0.0178593,
+  "usageComplete": true,
+  "provenance": {
+    "inference": "nebius",
+    "execution": "nebius-sandbox",
+    "model": "nvidia/nemotron-3-super-120b-a12b"
+  },
+  "patch": {
+    "sha256": "9d2750eabafd0de61f9ea8fec957545c68c292c9b6a8eca3907f4ac968b43562",
+    "bytes": 80583,
+    "staticReconstruction": "PASS; exact three tested source files, no source execution on controller"
+  },
+  "earlierAbstentionPreserved": true,
+  "verificationNewInferenceCalls": 0,
+  "verificationNewSandboxOperations": 0,
+  "scope": "One exposed Preact feature with developer-supplied scaffolding; no hidden-task or generalized repair accuracy claim",
+  "nativePackForThisSelection": "not yet qualified; previous native pack binds a different selected source"
+}

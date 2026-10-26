@@ -1,0 +1,29 @@
+{
+  "format": "repolab-offline-replay-correction/v1",
+  "digest": "48dc96abb0d6069ff068ae0fdc9e5afd0c7971c96a6f42072c694dfa361453ff",
+  "previousDigest": "2aba74d2572eed04db456e264d12fb2ef1d97221f002c011e036b81b0bede1b8",
+  "scope": "retrospective-read-only-v6-receipt-reanalysis-no-new-model-outcomes",
+  "allowedChange": "metrics-gate-replay-import-v5-to-v6-only",
+  "assets": [
+    {
+      "path": "packages/evaluation/study-replay-v6.ts",
+      "sha256": "7293baeb039d7fa955fa63030996e0d6c8e4218b041deb93ed00ef2dd29a8e52"
+    },
+    {
+      "path": "packages/evaluation/study-metrics-v6-corrected.ts",
+      "sha256": "35b44545a55ace98b8e7ffd85f2349b7f619bf92888f17590e093263141a0a77"
+    },
+    {
+      "path": "apps/evaluator/study-v6-replay.ts",
+      "sha256": "4a6b35fc3a5a77b0f1eabe2af9fa8b271027d93605442d39e2f794336a6e6230"
+    },
+    {
+      "path": "tests/study-v6-replay.test.ts",
+      "sha256": "ab31dc9f892a7441ba47ef63210933dc884417402b70cba872be32354c5363f1"
+    },
+    {
+      "path": "evaluation/STUDY_V6_REPLAY.md",
+      "sha256": "83233f663606a343ea8ea7ac0aad1c5702668c57274e1df47790f5b1f16e3928"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+name: Source and recorded review qualification
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qualify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout public source without persisted credentials
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, verified October 26
+        with:
+          persist-credentials: false
+      - name: Set up pinned Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4, verified October 26
+        with:
+          node-version: 24.18.0
+      - name: Materialize only trusted immutable source files
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, shutil
+          root = pathlib.Path.cwd()
+          target = pathlib.Path(os.environ['RUNNER_TEMP']) / 'repolab-qualified-source'
+          raw = (root / 'SOURCE_MANIFEST.json').read_bytes()
+          assert hashlib.sha256(raw).hexdigest() == '5c24f9d630a195f21ca4c7c38c4e0ddb98091146c85873895974c0350953b323'
+          manifest = json.loads(raw)
+          assert manifest['format'] == 'repolab-source-release/v2' and manifest['dispatchAdmission'] is False
+          target.mkdir()
+          for entry in manifest['files']:
+              relative = pathlib.PurePosixPath(entry['path'])
+              assert not relative.is_absolute() and '..' not in relative.parts
+              source = root / ('reference/SOURCE_README.md' if relative.as_posix() == 'README.md' else relative)
+              assert source.resolve() == source and source.is_file()
+              data = source.read_bytes()
+              assert hashlib.sha256(data).hexdigest() == entry['sha256']
+              destination = target / relative
+              destination.parent.mkdir(parents=True, exist_ok=True)
+              destination.write_bytes(data)
+          (target / 'SOURCE_MANIFEST.json').write_bytes(raw)
+          print('Verified 669 immutable source files; Git/workflow metadata excluded from the test directory')
+          PY
+      - name: Verify source and run credential-free setup checks
+        shell: bash
+        run: |
+          cd "$RUNNER_TEMP/repolab-qualified-source"
+          env -i PATH="$PATH" node scripts/source-release-v2.mjs verify . 5c24f9d630a195f21ca4c7c38c4e0ddb98091146c85873895974c0350953b323
+          env -i PATH="$PATH" npm ci --ignore-scripts --no-audit --no-fund
+          env -i PATH="$PATH" npm run typecheck
+          env -i PATH="$PATH" npm run build
+          env -i PATH="$PATH" npm test
+          env -i PATH="$PATH" node scripts/judge-review-bundle-v2.mjs create "$RUNNER_TEMP/repolab-recorded-review"
+          env -i PATH="$PATH" node scripts/judge-review-bundle-v2.mjs verify "$RUNNER_TEMP/repolab-recorded-review" 4f027be8de254bc95d125ce59f0162479a9ab0e0c548aa907131c5b259678452
+      - name: Record qualification scope
+        run: |
+          echo "Source installation/build/controller checks only; zero provider inference or Sandbox operations."
+          echo "Hosted-runner checks are automated remote-environment evidence, not unaided human review."

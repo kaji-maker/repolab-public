@@ -1,0 +1,114 @@
+{
+  "format": "repolab-prospective-preact-native/v1",
+  "taskId": "preactjs__preact-4316",
+  "commit": "b820d8b73eade8bc5b3fbf7e5fe0dd5150de80e2",
+  "image": "e7975706-7ec1-4eba-81a3-0ff69d04e94a",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "inferenceCalls": 0,
+  "modelAdmission": false,
+  "maxOperations": 11,
+  "slots": [
+    "prepare",
+    "build",
+    "protect",
+    "integrity",
+    "lint",
+    "mocha-A",
+    "browser-A",
+    "reproduction-A",
+    "mocha-B",
+    "browser-B",
+    "reproduction-B"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/prospective-preact-4316-v1.ts",
+      "sha256": "06b20dce7a0fc185ac6d7bbd2fa5af5a74fc46b5a2197637f0f1fcdb78b6193e"
+    },
+    {
+      "path": "packages/execution/profiled-native-v1.ts",
+      "sha256": "c67d664050b722285869e71313bdb6e31daf0b37f5ed79c6f74a992a97fdf268"
+    },
+    {
+      "path": "apps/evaluator/prospective-preact-4316-v1.ts",
+      "sha256": "ae1cce27b45c62ecb71ea2ab9890b0bacab47a260a9655b4466aad192ce38ec7"
+    },
+    {
+      "path": "tests/prospective-preact-4316-v1.test.ts",
+      "sha256": "83beab1075a625422a08446aa0c1998d1ff9198a967c7dd975433fe9e95dcc3d"
+    },
+    {
+      "path": "evaluation/PROSPECTIVE_PREACT_4316_V1.md",
+      "sha256": "373de9e60a4e55bd49440c5cc6dd110aae9510d91e56c1e645d6a0d37fa80cdb"
+    },
+    {
+      "path": "repositories/prospective-preact-4316-v1/original.tar.gz",
+      "sha256": "79df72773cf63b53375565ae2c9f2b4df53e74d87c47765104d90b85b5409732"
+    },
+    {
+      "path": "fixtures/prospective-preact-4316-v1/original-manifest.json",
+      "sha256": "fc550e099377049643b222d3e6a9e50d06f48e362d0c07167936b2c1e38600e8"
+    },
+    {
+      "path": "repositories/prospective-preact-4316-v1/guest.cjs",
+      "sha256": "7bfcfd3b764b2fc14df9aa0e4395a871a60053d0e5bf17fea5a2efa409fdcb27"
+    },
+    {
+      "path": "repositories/prospective-preact-4316-v1/karma.cjs",
+      "sha256": "3752e0ce76619e050e6111662da3f29b53b5c178303ec49c16b247b0be4bdef7"
+    },
+    {
+      "path": "repositories/prospective-preact-4316-v1/reproduction.html",
+      "sha256": "22c462e18d86d9d8715a39edaf7a1a850c320f59cfcfd51595c3a4eb4ff90471"
+    },
+    {
+      "path": "repositories/prospective-preact-4316-v1/LICENSE",
+      "sha256": "1fe6958409c8c257a70c587a18b6f7f412b179b456630790d30b2ec9a8e4b7d4"
+    },
+    {
+      "path": "fixtures/prospective-preact-4316-v1/commit.json",
+      "sha256": "ca04ce128e21aa2c9d9e485d55555bee0a808df262fe0dca506e2aebd0d9d250"
+    },
+    {
+      "path": "fixtures/prospective-preact-4316-v1/canonical-tree.json",
+      "sha256": "210aab871b62923e1f5cbbaacebb59e4c95deb400fac4a7b4b64aee381104e29"
+    },
+    {
+      "path": "evaluation/prospective-v1.json",
+      "sha256": "e3ed56f8be7ad7a4112634c76011d267fafda9847f1f0f10e1c7e2f2d1753d02"
+    },
+    {
+      "path": "packages/repositories/repair-lease.ts",
+      "sha256": "a33afa53fe214e2023d674a6cff2270e847577902a91e4ea10011b31ecc40070"
+    },
+    {
+      "path": "packages/execution/recovery-lease-v1.ts",
+      "sha256": "2a00a08e108dabb96d48797143e53a31a01cd45069dbf29074d6b9fabe50507f"
+    },
+    {
+      "path": "packages/storage/reconciliation.ts",
+      "sha256": "4cf595bffa1b2c20a63019ed623cca5772b7abbb8a9b414da7089d2cefbc8952"
+    },
+    {
+      "path": "packages/execution/nebius.ts",
+      "sha256": "3feb92191ce8bd69ce69475054ce1aec96042c0925200859b06663e635a60692"
+    },
+    {
+      "path": "evaluation/preact-native-v5.json",
+      "sha256": "fd62d6ab47fc7857a82335731fc80aee2f114aa85c0a03e4ee6a342b49fa84ae"
+    },
+    {
+      "path": "fixtures/preact-native/baseline-identities-v1.json",
+      "sha256": "58c49892da9c9a379dea9a9fc3dd8eef21c3b0af957ad6f56f9738b10fdbfd46"
+    },
+    {
+      "path": "fixtures/preact-native/original-manifest.json",
+      "sha256": "a4fd773857a17db8181da1b240b1196ccf1e5700ef3dd16e2bb4a016b6303a64"
+    },
+    {
+      "path": ".repolab/preact-native-v5/run/prepare.json",
+      "sha256": "1e5dc27d85164f876e2bc1c37babe7b70c9d8e126f6dd9ebce5e2c3dd9015457"
+    }
+  ],
+  "digest": "5931b339513d463debaefe544af1efc04838a80ae9e0ab63343151af84f40ec9"
+}

@@ -1,0 +1,92 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "a366368d80c9f2a6ea6c8fe5d8f21cb3479ae6479c984187a43992f776523008",
+  "scope": "purposive three-task public GitHub preparation and original environment qualification; new to ReproLab execution, same maintainer; reporter suggestions exposed in issue bodies; no random, controller-blind or training-unseen claim; no model repair in this phase",
+  "productionPromotion": false,
+  "selectedTasks": 3,
+  "originalQualified": 0,
+  "contextAdmitted": 3,
+  "readyForRepair": 0,
+  "repairStatus": "NOT_ATTEMPTED",
+  "inferenceCalls": 0,
+  "sandboxOperations": 9,
+  "estimatedInferenceUsd": 0,
+  "independentOpened": false,
+  "rows": [
+    {
+      "task": "klona",
+      "status": "ORIGINAL_QUALIFICATION_FAILED",
+      "contextAdmission": {
+        "status": "ADMITTED",
+        "completeBodyBytes": 34848,
+        "expressionAnchors": 110,
+        "limit": 64000
+      },
+      "native": null,
+      "inferenceCalls": 0,
+      "operations": 3,
+      "error": "Unchanged native command failed",
+      "failedPhase": "q-native",
+      "publicInventory": null,
+      "readyForRepair": false,
+      "sourceExecutionProvenance": {
+        "inference": "none",
+        "execution": "nebius-sandbox; unchanged pinned public GitHub source"
+      },
+      "repairStatus": "NOT_ATTEMPTED",
+      "independentOpened": false
+    },
+    {
+      "task": "dequal",
+      "status": "ORIGINAL_QUALIFICATION_FAILED",
+      "contextAdmission": {
+        "status": "ADMITTED",
+        "completeBodyBytes": 43946,
+        "expressionAnchors": 183,
+        "limit": 64000
+      },
+      "native": null,
+      "inferenceCalls": 0,
+      "operations": 3,
+      "error": "Unchanged native command failed",
+      "failedPhase": "q-native",
+      "publicInventory": null,
+      "readyForRepair": false,
+      "sourceExecutionProvenance": {
+        "inference": "none",
+        "execution": "nebius-sandbox; unchanged pinned public GitHub source"
+      },
+      "repairStatus": "NOT_ATTEMPTED",
+      "independentOpened": false
+    },
+    {
+      "task": "regexparam",
+      "status": "ORIGINAL_QUALIFICATION_FAILED",
+      "contextAdmission": {
+        "status": "ADMITTED",
+        "completeBodyBytes": 26994,
+        "expressionAnchors": 70,
+        "limit": 64000
+      },
+      "native": null,
+      "inferenceCalls": 0,
+      "operations": 3,
+      "error": "Unchanged native command failed",
+      "failedPhase": "q-native",
+      "publicInventory": null,
+      "readyForRepair": false,
+      "sourceExecutionProvenance": {
+        "inference": "none",
+        "execution": "nebius-sandbox; unchanged pinned public GitHub source"
+      },
+      "repairStatus": "NOT_ATTEMPTED",
+      "independentOpened": false
+    }
+  ],
+  "ledgerBeforeUsd": 0.3155685,
+  "ledgerAfterUsd": 0.3155685,
+  "unsettledCharges": 0,
+  "priorFilesUnchanged": 3240,
+  "credentialAndProjectExclusion": "PASS",
+  "filesScanned": 64
+}

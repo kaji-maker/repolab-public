@@ -1,0 +1,36 @@
+{
+  "format": "repolab-github-intake-controls/v1",
+  "digest": "5753daaa466cee17f0c2c9576e75da1f5e1aafb8871c7fb75160c050d582c4ff",
+  "previousPilotDigest": "548b6a12599f09b280458c0f7d0e73874dd3c657b9ac5f02ab4ec382158ba632",
+  "scope": "exposed-development-preconditions-no-new-bug-or-heldout-claim",
+  "maxInferenceCalls": 0,
+  "maxOperationsPerCase": 4,
+  "maxOperations": 8,
+  "schedule": [
+    "missing-facts",
+    "already-satisfied",
+    "bug-positive"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/github-intake-controls.ts",
+      "sha256": "661824e6367fdfbd9361012f32e1c860260e85702bb44ce69d272bdc9caca160"
+    },
+    {
+      "path": "apps/evaluator/github-intake-controls.ts",
+      "sha256": "aa4573cf80840fb65cef108db5c5cb7d2e75e2480353e9fb8cdddbe77194daaf"
+    },
+    {
+      "path": "fixtures/dlv-upstream/verified-repair-control.json",
+      "sha256": "8810a43b79c7cdebf8031d9ea4910a981414dbdc9b0a1dd99cbe936d1ba16aa2"
+    },
+    {
+      "path": "tests/github-intake-controls.test.ts",
+      "sha256": "628e6578a7bc45ce430c5c9e1f39456db38b77698a902050ed7a0f9da2c2d79f"
+    },
+    {
+      "path": "evaluation/GITHUB_INTAKE_CONTROLS_V1.md",
+      "sha256": "c5140e1025218005cda2d14eb94a39bb47939e3df13d62d27067bfa530206e5d"
+    }
+  ]
+}

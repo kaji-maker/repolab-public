@@ -1,0 +1,60 @@
+{
+  "format": "repolab-prospective-vue-preparation-result/v1",
+  "freeze": "bd1068cf07c303df38865af292fd06cc6e5ac1e39fefddc80977c882b32655ca",
+  "taskId": "vuejs__core-11870",
+  "status": "PREPARED_ONLY",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "source": {
+    "files": 697,
+    "version": "3.5.3",
+    "packageManager": "pnpm@9.10.0",
+    "archiveBytes": 1483528,
+    "archiveSha256": "a0cc98ea4ac0db588169a339c4ed4604d6879e0611d1c06851653067b15e9d5b",
+    "gitTreeSha1": "1fdc2d89d23426bcd00db4b3ed24225b98a122cd",
+    "unitTestFiles": 180,
+    "unitFilesDigest": "37ee9a4c99bcfe7834ba5b5bbd19dc6fb5ce1eda7c38d194493c33106047eaef",
+    "lockSha256": "a88392902bcf2d12213aac7dcb1a4dabc464fa4806241c5f058d1e89ecb7e209",
+    "reportedSfcSha256": "2c648151f05a4bb135937e6378195266e37e2484651316ef2d9324478ee34e51"
+  },
+  "blocker": {
+    "status": "UNCHANGED_UNKNOWN_SUBMISSION",
+    "executionAdmission": false,
+    "bothSharedLeasesPresent": true
+  },
+  "modelCalls": 0,
+  "sandboxOperations": 0,
+  "executionAdmission": false,
+  "candidateAdmission": false,
+  "nativeRuntimeQualified": false,
+  "originalReproduced": false,
+  "accuracy": null,
+  "proposedOriginalOperations": 8,
+  "taskOriginalCeiling": 12,
+  "inference": "none",
+  "execution": "offline original-source data verification and saved-state inspection; no upstream or probe execution",
+  "validation": {
+    "focusedControllerTests": 8,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3289,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesUnchanged": true,
+    "upstreamSourceExecution": false,
+    "probeExecution": false,
+    "retainedInitialTestFailure": true
+  },
+  "cohort": {
+    "selected": 8,
+    "originalBaselineQualified": 4,
+    "unresolvedTasks": 1,
+    "pendingPreparation": 3,
+    "offlinePreparedPending": 1,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0,
+    "knownOriginalSandboxOperations": 47,
+    "unknownOriginalSubmissions": 1
+  },
+  "nextOfflineTask": "preactjs__preact-3567",
+  "nextLiveAction": "Resolve Preact 3763 V2 missing submission receipt and qualify diagnostic-preserving transport before a separate original-execution freeze"
+}

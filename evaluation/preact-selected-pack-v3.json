@@ -1,0 +1,60 @@
+{
+  "format": "repolab-preact-selected-pack-protocol/v3",
+  "originRunId": "f8bfb85d-6766-4a9e-a762-e362d011559c",
+  "selectedSourceHash": "68c9000eec6e0ed71f140c8af231309064d1e7447414f00136cbb91b4e3eb0d3",
+  "parentRepairFreeze": "822e3305ca5379405834096ca7807a849f567bdd9f2aea5e382ad25d285ae402",
+  "transportFreeze": "8bd58da6db6ee6f128d523de7f60d143ce8da8f8e7c9a7b13b7caa213e328aef",
+  "previousUnrunPreparationFreeze": "475f3e978e23b01fc8c05a4bbf753fab0be2cfda6a52ff083da6a73ada5e686a",
+  "qualificationReplays": 2,
+  "qualificationRetry": false,
+  "maxOperationsPerReplay": 14,
+  "inferenceCalls": 0,
+  "independentInputsExported": 0,
+  "assets": [
+    {
+      "path": "packages/repositories/preact-pack-protocol-v3.ts",
+      "sha256": "ec949f4199bc1a9cb9ebf3a24e56b799375d67bc6f3e4df675649861c11adb02"
+    },
+    {
+      "path": "packages/repositories/preact-pack-v3.ts",
+      "sha256": "d5f5c5894f116cae680f207c67831413847c742244da2b3ae15d582b0a1a582c"
+    },
+    {
+      "path": "packages/repositories/preact-replay-v4.ts",
+      "sha256": "9b59d72a5233131eba1054ca25181ba22f20dc147ddf9d7eb55807e159d607f5"
+    },
+    {
+      "path": "packages/execution/preact-replay-v3.ts",
+      "sha256": "0e209238898c99f9da8df784e5a86f068606ad88925c25b2a3be718e1005a485"
+    },
+    {
+      "path": "apps/repositories/preact-product-v4.ts",
+      "sha256": "b5435739bc75522b38d92f7c62a7e6ee1ab0e2eda55ce35c2336380c5538eb20"
+    },
+    {
+      "path": "tests/preact-pack-v3.test.ts",
+      "sha256": "871510acbe96c50a6c1314c43b8b52afe61bdbc91bad70d34eb0680c13de7134"
+    },
+    {
+      "path": "tests/preact-repair-fixture-v1.ts",
+      "sha256": "5ac272310eaaaa737d7fc9f146783ff235d1918f9432415bdf0b85442128da22"
+    },
+    {
+      "path": "evaluation/PREACT_SELECTED_PACK_V3.md",
+      "sha256": "6865c8e2726df7ed594d8dd7f64b6705e7030801ddfc153be71f58ba0ad7dbaa"
+    },
+    {
+      "path": "evaluation/archive/preact-selected-pack-v3-preparation/manifest.json",
+      "sha256": "eadafed4fb40e2b70f3f9044a61f76d633a7ce047c64dd4343cbb2a2523569e9"
+    },
+    {
+      "path": "evaluation/preact-selected-f8bfb85d.json",
+      "sha256": "e19f8d30d912789fc49fd483444f9cab80721efa8b890c5296f90a310cc3b511"
+    },
+    {
+      "path": "evaluation/preact-reliability-v2-results-summary.json",
+      "sha256": "a6fe9d4816808956276925192b9550337619eb5b78d61efcd09ba8e842e95d58"
+    }
+  ],
+  "digest": "e57f7d519c90c86747d826c5926c52be9b7850a35e043ed6e77a88d867fa7422"
+}

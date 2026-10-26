@@ -1,0 +1,49 @@
+{
+  "format": "repolab-preact-workbench/v2",
+  "parentWorkbenchFreeze": "6c6e8f0a1561dfe519ce495ba819e3254b24e9f45c0e6c1bda24963dda25280d",
+  "parentEngineFreeze": "2096c16f472d93957f5e4efc78b55e880d7261ae537d072dcef28748b20bff7a",
+  "api": "/api/native-preact-repairs-v4",
+  "page": "native-repair-v9.html",
+  "newLiveQualificationSlots": 0,
+  "defaultServerAdmission": false,
+  "polling": "retain submitted run identity until its terminal row is observed",
+  "assets": [
+    {
+      "path": "packages/repositories/preact-workbench-protocol-v2.ts",
+      "sha256": "43f45136290953f44650e8f14012853c163dcdf348102b4612e20f60c8be5b0c"
+    },
+    {
+      "path": "packages/repositories/preact-browser-poll-v1.ts",
+      "sha256": "7b66c1ed75373b83b392e4d36b8f3989896bce8f4ca21418a317a3319f297f8c"
+    },
+    {
+      "path": "apps/web/src/FreshPreactV9.tsx",
+      "sha256": "699919fa42b5def138cae6bb3f00e88c59ada90b06bf6a4e20ea2187d0b1dedc"
+    },
+    {
+      "path": "apps/web/native-repair-v9.html",
+      "sha256": "1335c16b6d969506daa6f0308a96ee5838ddf5f427bf5841fcc00c5add11afa2"
+    },
+    {
+      "path": "apps/api/qualified-server-v2.ts",
+      "sha256": "5f81c85555522571bc753ecdb4a2774286ced1dcbec36aaab8bf5cfa79ae7ced"
+    },
+    {
+      "path": "apps/api/native-server-v10.ts",
+      "sha256": "4c9eba1aea9ec9f39d7562e2bf83e3bdc42ca343b5f0b2ed66aa72a1d481f997"
+    },
+    {
+      "path": "vite.native-v10.config.ts",
+      "sha256": "9d90d4ccd2a506975b9316d211bd231b050d52e16c481af379ce09ce9e1796e6"
+    },
+    {
+      "path": "tests/preact-browser-poll-v1.test.ts",
+      "sha256": "777f8b3fb54f54ffb1c31a4e301e9e81b698791c2a50597fa73dc3ebde68a34b"
+    },
+    {
+      "path": "evaluation/PREACT_BROWSER_POLL_V1.md",
+      "sha256": "13fbc0594811f3e2fcb997137906754964898afc875ceef995aa5f557aa6fe35"
+    }
+  ],
+  "freeze": "520dfb352f7e42db88d0f25e6e343cb8655dcf0c690af4926a22712ab7640a7e"
+}

@@ -1,0 +1,82 @@
+{
+  "format": "repolab-preact-admission/v2",
+  "parentDigest": "43427bbb61bc2e398c069cb8fcd40bc04cdf535f26a4a84c48660f8cd9dd55e9",
+  "previousFailedFreeze": "a7a1da93009ce4e93b6c9816afc8aa973dfeeaae7cd7caed1de89dd243daa898",
+  "taskId": "preactjs__preact-4436",
+  "preparedOriginalImage": "d4c8d3fb-7f4c-48dc-9c81-0522eb247051",
+  "inferenceCalls": 0,
+  "modelAdmission": false,
+  "operations": 26,
+  "fixtureVariants": [
+    "original",
+    "weak",
+    "reference"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/preact-admission-v2.ts",
+      "sha256": "aac3a5e07344edcc9b469b84b5767ea85501fe95589d04b0d770e3654caa1695"
+    },
+    {
+      "path": "packages/repositories/preact-admission-v2.ts",
+      "sha256": "a9dfe28d0de0b5ccc5a5760a57fd980e0aa7eb4e8dba43fd4a600a54b6cee78f"
+    },
+    {
+      "path": "packages/execution/preact-admission-v2.ts",
+      "sha256": "eb4fd49de479f86af0fae5840d8003540f04abfe8583b1b04bd7dbae2c3dbb17"
+    },
+    {
+      "path": "apps/evaluator/preact-admission-v2.ts",
+      "sha256": "ba415303169c57ba6098733a455dfc197ae4463f8d563b713de5a6f0cab1d7fd"
+    },
+    {
+      "path": "tests/preact-admission-v2.test.ts",
+      "sha256": "31840cb594aca7b5b889f3c86be60e6f820f2c34c38cb3d77b9f2743c2b3c113"
+    },
+    {
+      "path": "evaluation/PREACT_ADMISSION_V2.md",
+      "sha256": "6f8d094428d986f33b42aff105d3686e9f54b191873769598cadc7de0f102da9"
+    },
+    {
+      "path": "evaluation/preact-admission-reference-v2.json",
+      "sha256": "a271e393043bc3e6293b239d90eb1112a9297fe5021a42366c16c19f2a04e5de"
+    },
+    {
+      "path": "evaluation/preact-admission-weak-v2.json",
+      "sha256": "4a55f7b9f25b9ae71f9bceedfde9033cc139e8dea2f04d99e6bd8343054ed340"
+    },
+    {
+      "path": "evaluation/preact-admission-independent.html",
+      "sha256": "92a5ee568a056e91908a3ce2bf239d4d3b0d666a8ee7d2b40cb654d830de1f3c"
+    },
+    {
+      "path": "evaluation/preact-admission-v1.json",
+      "sha256": "9464f84376abb0bb0f4067cf338682bfc7bbe5192cc22159030e636527b25c35"
+    },
+    {
+      "path": "evaluation/preact-admission-v1-results-summary.json",
+      "sha256": "b2a55e75fd264296853e15c7a10bc39e8ad63cd3e09c5670e58dbd89b2ae9477"
+    },
+    {
+      "path": "repositories/preact-admission-v1/public.html",
+      "sha256": "1a00f6ebf4da24e5c4f714d398d17e4c500f905ecc56190dd8b64d7a557480e3"
+    },
+    {
+      "path": "repositories/preact-admission-v1/guest.cjs",
+      "sha256": "5c212beee36b43837ec0eb35b365d5463d6d0c220e0abf75cd0befa5087479b1"
+    },
+    {
+      "path": "repositories/preact-admission-v1/original/diff-index.js",
+      "sha256": "0df612edb141cad859acb4df802edc315085ceeb88c7000d231b0101880722c7"
+    },
+    {
+      "path": "repositories/preact-admission-v1/original/diff-children.js",
+      "sha256": "80713cad51ebcf2292de3009e66b1b18fa9b5eb0b52b69d43d80ea153fd4d811"
+    },
+    {
+      "path": "repositories/preact-admission-v1/original/internal.d.ts",
+      "sha256": "ed05e7a9f2d13c5d98c6597dcef224325fcc4ca2758af8503802403125c03bc7"
+    }
+  ],
+  "digest": "214e8ea3c2b3e2aef71c76fd0877639241b417ce5be416a1b767c850c9d732c1"
+}

@@ -1,0 +1,238 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "9d1838058080bad645aa65856ec86952721d9df5c62a66a6ffc2ad29378215e6",
+  "scope": "three controller-authored semantic repair integration fixtures; independent cases withheld from model until after source selection; no fresh GitHub or unseen-bug score claim",
+  "productionPromotion": false,
+  "selectedFixtures": 3,
+  "nativeQualified": 3,
+  "modelAttempted": 3,
+  "verifiedSemanticFixtures": 1,
+  "inferenceCalls": 5,
+  "sandboxOperations": 24,
+  "estimatedInferenceUsd": 0.005673599999999999,
+  "rows": [
+    {
+      "fixture": "count-window",
+      "status": "VERIFIED_SEMANTIC_FIXTURE",
+      "error": null,
+      "qualification": "QUALIFIED_FIXTURE",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          3
+        ],
+        "passed": [
+          3
+        ],
+        "failed": [
+          0
+        ]
+      },
+      "publicCases": 2,
+      "inferenceCalls": 1,
+      "estimatedInferenceUsd": 0.0007488,
+      "qualificationOperations": 5,
+      "repairOperations": 7,
+      "sourceHash": "252435259bba52738221584dc0865ae509347809821b7e51ad8cc7f1d0348e66",
+      "independent": [
+        {
+          "passed": 8,
+          "total": 8
+        },
+        {
+          "passed": 8,
+          "total": 8
+        }
+      ],
+      "candidates": [
+        {
+          "attempt": 1,
+          "status": "SELECTED",
+          "error": null,
+          "sourceHash": "252435259bba52738221584dc0865ae509347809821b7e51ad8cc7f1d0348e66"
+        }
+      ],
+      "testedPatch": {
+        "path": ".repolab/semantic-plan-v1/count-window/repair/tested.patch",
+        "sha256": "44fe39ffd5c5bcadb68c33561250c0bc4c3ea6b42375281393d91f3559dc3fb1"
+      }
+    },
+    {
+      "fixture": "nullish-default",
+      "status": "ABSTAINED_NO_SELECTION",
+      "error": null,
+      "qualification": "QUALIFIED_FIXTURE",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          3
+        ],
+        "passed": [
+          3
+        ],
+        "failed": [
+          0
+        ]
+      },
+      "publicCases": 3,
+      "inferenceCalls": 2,
+      "estimatedInferenceUsd": 0.0019167,
+      "qualificationOperations": 5,
+      "repairOperations": 2,
+      "sourceHash": null,
+      "independent": null,
+      "candidates": [
+        {
+          "attempt": 1,
+          "status": "REJECTED",
+          "error": "Literal match count differs from the validated intent",
+          "sourceHash": null
+        },
+        {
+          "attempt": 2,
+          "status": "REJECTED",
+          "error": "Candidate behavior failed",
+          "sourceHash": "a2e493178afba50522d7612844620dee607998f35b9959b7989bb3ca30c6ac99"
+        }
+      ],
+      "testedPatch": null
+    },
+    {
+      "fixture": "option-default",
+      "status": "ABSTAINED_NO_SELECTION",
+      "error": null,
+      "qualification": "QUALIFIED_FIXTURE",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          3
+        ],
+        "passed": [
+          3
+        ],
+        "failed": [
+          0
+        ]
+      },
+      "publicCases": 5,
+      "inferenceCalls": 2,
+      "estimatedInferenceUsd": 0.0030080999999999997,
+      "qualificationOperations": 5,
+      "repairOperations": 0,
+      "sourceHash": null,
+      "independent": null,
+      "candidates": [
+        {
+          "attempt": 1,
+          "status": "REJECTED",
+          "error": "Literal match count differs from the validated intent",
+          "sourceHash": null
+        },
+        {
+          "attempt": 2,
+          "status": "REJECTED",
+          "error": "Literal match count differs from the validated intent",
+          "sourceHash": null
+        }
+      ],
+      "testedPatch": null
+    }
+  ],
+  "responses": [
+    {
+      "fixture": "count-window",
+      "attempt": 1,
+      "finishReason": "stop",
+      "contentBytes": 370,
+      "reasoning": {
+        "present": true,
+        "bytes": 1237,
+        "sha256": "a9a126b2399f65ed926ebd73ed516cb0fd2b468e280089c4b14143ca0893da6e"
+      },
+      "usage": {
+        "inputTokens": 1032,
+        "outputTokens": 488,
+        "costUsd": 0.0007488
+      }
+    },
+    {
+      "fixture": "nullish-default",
+      "attempt": 1,
+      "finishReason": "stop",
+      "contentBytes": 595,
+      "reasoning": {
+        "present": true,
+        "bytes": 1778,
+        "sha256": "180b2e4f99ddcde44a212252e170a7b2cffa1278509fdcc250a1818e0f4fc8ac"
+      },
+      "usage": {
+        "inputTokens": 938,
+        "outputTokens": 591,
+        "costUsd": 0.0008133
+      }
+    },
+    {
+      "fixture": "nullish-default",
+      "attempt": 2,
+      "finishReason": "stop",
+      "contentBytes": 368,
+      "reasoning": {
+        "present": true,
+        "bytes": 3322,
+        "sha256": "db708dbd8f765aefd6cb7dc8aaa6c66b569644b67d8ca5b8894e1bf422866ff1"
+      },
+      "usage": {
+        "inputTokens": 888,
+        "outputTokens": 930,
+        "costUsd": 0.0011034
+      }
+    },
+    {
+      "fixture": "option-default",
+      "attempt": 1,
+      "finishReason": "stop",
+      "contentBytes": 441,
+      "reasoning": {
+        "present": true,
+        "bytes": 4498,
+        "sha256": "9720db5499db2735ce4304242272d8e05ccea3f2ccaf864f373e8f21fc28fac9"
+      },
+      "usage": {
+        "inputTokens": 1142,
+        "outputTokens": 1162,
+        "costUsd": 0.0013884
+      }
+    },
+    {
+      "fixture": "option-default",
+      "attempt": 2,
+      "finishReason": "stop",
+      "contentBytes": 795,
+      "reasoning": {
+        "present": true,
+        "bytes": 5401,
+        "sha256": "178b229c94d5b2b0c1ca60b2b1f847c56bddc8eec9e0d8d9b8fc1949236702f1"
+      },
+      "usage": {
+        "inputTokens": 1040,
+        "outputTokens": 1453,
+        "costUsd": 0.0016197
+      }
+    }
+  ],
+  "ledgerBeforeUsd": 0.30207899999999993,
+  "ledgerAfterUsd": 0.30775259999999993,
+  "unsettledCharges": 0,
+  "credentialAndProjectExclusion": "PASS",
+  "priorFilesUnchanged": 2972,
+  "filesScanned": 123,
+  "offlineReview": {
+    "status": "PASS",
+    "networkAttempts": 0,
+    "inferenceCalls": 0,
+    "sandboxOperations": 0,
+    "inference": "none",
+    "execution": "offline receipt review; no source execution",
+    "evidenceFilesUnchanged": 110
+  }
+}

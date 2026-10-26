@@ -1,0 +1,130 @@
+{
+  "format": "repolab-preact-selected-catalog/v3",
+  "runId": "f8bfb85d-6766-4a9e-a762-e362d011559c",
+  "freeze": "822e3305ca5379405834096ca7807a849f567bdd9f2aea5e382ad25d285ae402",
+  "taskId": "preactjs__preact-4436",
+  "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+  "provenance": {
+    "inference": "nebius",
+    "execution": "nebius-sandbox",
+    "model": "nvidia/nemotron-3-super-120b-a12b"
+  },
+  "proposal": {
+    "plan": {
+      "requirementQuote": "return a cleanup function to reset",
+      "editBoundary": "existing-applyRef-try-body-only",
+      "cleanupDisposal": "invoke-before-callback",
+      "nullCallbackWhenCleanup": "skip",
+      "legacyDisposal": "invoke-null",
+      "callbackReturn": "store-if-callable",
+      "cleanupStateAfterCall": "clear-to-undefined",
+      "objectRef": "assign-current",
+      "revisionGoal": "Support cleanup functions for callback refs per React 19"
+    },
+    "taskId": "preactjs__preact-4436",
+    "refUpdates": "transfer-cleanup",
+    "unmountContext": "vnode",
+    "cleanupType": true,
+    "program": [
+      {
+        "kind": "if",
+        "condition": "ref-function",
+        "then": [
+          {
+            "kind": "if",
+            "condition": "value-null",
+            "then": [
+              {
+                "kind": "if",
+                "condition": "cleanup-function",
+                "then": [
+                  {
+                    "kind": "action",
+                    "action": "call-cleanup"
+                  },
+                  {
+                    "kind": "action",
+                    "action": "clear-cleanup"
+                  },
+                  {
+                    "kind": "action",
+                    "action": "return"
+                  }
+                ],
+                "else": [
+                  {
+                    "kind": "action",
+                    "action": "call-ref"
+                  },
+                  {
+                    "kind": "action",
+                    "action": "return"
+                  }
+                ]
+              }
+            ],
+            "else": [
+              {
+                "kind": "action",
+                "action": "capture-result"
+              },
+              {
+                "kind": "if",
+                "condition": "result-function",
+                "then": [
+                  {
+                    "kind": "if",
+                    "condition": "cleanup-present",
+                    "then": [],
+                    "else": [
+                      {
+                        "kind": "action",
+                        "action": "store-result"
+                      }
+                    ]
+                  }
+                ],
+                "else": []
+              }
+            ]
+          }
+        ],
+        "else": [
+          {
+            "kind": "action",
+            "action": "set-object"
+          }
+        ]
+      }
+    ]
+  },
+  "sourceHash": "68c9000eec6e0ed71f140c8af231309064d1e7447414f00136cbb91b4e3eb0d3",
+  "patchSha256": "d5ae1485e9dace29b42309031dacdaa29b66ebda26d5b87fe3182c2d4548717e",
+  "operationIds": [
+    "01a13c8f-d7fa-703d-915c-cce2a06f77e8",
+    "01a13c90-13dd-76f8-a8e4-b4376ed6c288",
+    "01a13c91-cfe4-70b4-88a8-877ac9395d2b",
+    "01a13c92-39a3-751e-bcd2-235678100f3b",
+    "01a13c92-6efc-7190-b919-c2d9fdbdb6b0",
+    "01a13c92-be03-73e6-ba2d-61847f9dd5c8",
+    "01a13c93-01f6-70a0-a6b4-c07c8d69354e",
+    "01a13c93-46ad-7010-9d4a-75aa03425f9d",
+    "01a13c93-b330-7748-ac0c-ade4605050ac",
+    "01a13c93-fd0b-7725-adb7-4cc9792e4281",
+    "01a13c94-477c-71cb-9d0d-e9cdaae536f1",
+    "01a13c94-ca4d-7241-841a-c31a380d04fa",
+    "01a13c95-26e9-7429-9182-bd7c9a09be09",
+    "01a13c95-6c4c-7550-afb1-2d1ae78ae97b"
+  ],
+  "counts": {
+    "mocha": 29,
+    "browser": 1173,
+    "browserSkips": 11,
+    "types": 17,
+    "typePending": 2,
+    "public": 3,
+    "independent": 10
+  },
+  "originInferenceCalls": 1,
+  "originInferenceUsd": 0.0073821
+}

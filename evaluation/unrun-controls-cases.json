@@ -1,0 +1,78 @@
+{
+  "format": "repolab-unrun-controls-cases/v1",
+  "origin": "New evaluator-authored controls; no previous inference/workflow or external held-out claim",
+  "tasks": [
+    {
+      "id": "shipping-already-correct",
+      "kind": "already-correct",
+      "source": "fixtures/unrun-controls/shipping-fee.cjs",
+      "report": {
+        "text": "Please confirm that USD local shipping is free at a subtotal of 12500 cents under shipping-fee-policy/v1. The current returned fee is zero cents and the required fee is zero cents.",
+        "facts": {
+          "args": [12500, "local"],
+          "actual": 0,
+          "expected": 0,
+          "currency": "USD",
+          "policy": "shipping-fee-policy/v1"
+        }
+      },
+      "requiredFacts": ["args", "actual", "expected", "currency", "policy"]
+    },
+    {
+      "id": "refund-missing-facts",
+      "kind": "missing-facts",
+      "source": "fixtures/unrun-controls/refund-amount.cjs",
+      "report": {
+        "text": "The USD refund amount is too low. Please fix it.",
+        "facts": { "currency": "USD" }
+      },
+      "requiredFacts": ["args", "actual", "expected", "currency", "policy"]
+    }
+  ],
+  "shippingBaseline": [
+    { "id": "local-zero", "args": [0, "local"], "expected": "500" },
+    {
+      "id": "local-below-threshold",
+      "args": [9999, "local"],
+      "expected": "500"
+    },
+    { "id": "local-at-threshold", "args": [10000, "local"], "expected": "0" },
+    { "id": "remote-zero", "args": [0, "remote"], "expected": "1000" },
+    {
+      "id": "remote-below-threshold",
+      "args": [19999, "remote"],
+      "expected": "1000"
+    },
+    {
+      "id": "remote-at-threshold",
+      "args": [20000, "remote"],
+      "expected": "250"
+    }
+  ],
+  "shippingControls": [
+    { "id": "local-one", "args": [1, "local"], "expected": "500" },
+    { "id": "local-above", "args": [10001, "local"], "expected": "0" },
+    { "id": "local-near-below", "args": [9998, "local"], "expected": "500" },
+    {
+      "id": "local-twice-threshold",
+      "args": [20000, "local"],
+      "expected": "0"
+    },
+    { "id": "local-middle", "args": [5000, "local"], "expected": "500" },
+    { "id": "local-maximum", "args": [1000000, "local"], "expected": "0" },
+    { "id": "remote-one", "args": [1, "remote"], "expected": "1000" },
+    {
+      "id": "remote-near-below",
+      "args": [19998, "remote"],
+      "expected": "1000"
+    },
+    { "id": "remote-above", "args": [20001, "remote"], "expected": "250" },
+    {
+      "id": "remote-local-threshold",
+      "args": [10000, "remote"],
+      "expected": "1000"
+    },
+    { "id": "remote-middle", "args": [5000, "remote"], "expected": "1000" },
+    { "id": "remote-maximum", "args": [1000000, "remote"], "expected": "250" }
+  ]
+}

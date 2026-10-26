@@ -1,0 +1,125 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "ceffa37d67203091c4387f481a9a70459f640327e77ff7256ebad1cfd8d79644",
+  "scope": "two exposed development tasks after fresh-pilot cache failures; original fresh zero-score result retained",
+  "firstPilot": {
+    "selected": 3,
+    "nativeQualified": 0,
+    "modelAttempted": 0,
+    "verified": 0,
+    "inferenceCalls": 0,
+    "sandboxOperations": 6,
+    "independentEvaluations": 0
+  },
+  "developmentTasks": 2,
+  "nativeQualified": 2,
+  "modelAttempted": 1,
+  "verifiedDevelopmentRepairs": 0,
+  "inferenceCalls": 2,
+  "totalPhaseSandboxOperations": 16,
+  "developmentSandboxOperations": 10,
+  "estimatedInferenceUsd": 0.0198885,
+  "ledgerBeforeUsd": 0.2417682,
+  "ledgerAfterUsd": 0.26165669999999996,
+  "unsettledCharges": 0,
+  "credentialAndProjectExclusion": "PASS",
+  "priorFilesUnchanged": 2590,
+  "filesScanned": 63,
+  "firstRows": [
+    {
+      "name": "minimist",
+      "status": "SETUP_OR_REPRODUCTION_FAILED",
+      "operations": 3,
+      "error": "Unchanged native command failed"
+    },
+    {
+      "name": "camelcase",
+      "status": "SETUP_OR_REPRODUCTION_FAILED",
+      "operations": 3,
+      "error": "Unchanged native command failed"
+    },
+    {
+      "name": "fastify-deepmerge",
+      "status": "BLOCKED_PUBLIC_CONTRACT",
+      "operations": 0,
+      "error": null
+    }
+  ],
+  "rows": [
+    {
+      "name": "minimist",
+      "taskId": "minimistjs__minimist-47",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          153
+        ],
+        "passed": [
+          153
+        ],
+        "failed": []
+      },
+      "apiVariants": 10,
+      "publicCases": 20,
+      "originalPublic": {
+        "passed": 10,
+        "total": 20
+      },
+      "status": "ABSTAINED_NO_SELECTION",
+      "inferenceCalls": 2,
+      "qualificationOperations": 5,
+      "repairOperations": 0,
+      "sourceHash": null,
+      "independent": null,
+      "candidateHistory": [
+        {
+          "attempt": 1,
+          "status": "REJECTED",
+          "error": "Exact source block matched 0 times; expected 1. Use more unchanged context or the exact intended match count.",
+          "sourceHash": null
+        },
+        {
+          "attempt": 2,
+          "status": "REJECTED",
+          "error": "Exact source block matched 0 times; expected 1. Use more unchanged context or the exact intended match count.",
+          "sourceHash": null
+        }
+      ]
+    },
+    {
+      "name": "camelcase",
+      "taskId": "sindresorhus__camelcase-117",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "native": {
+        "runner": "ava",
+        "passed": [
+          20
+        ],
+        "skipped": []
+      },
+      "apiVariants": 24,
+      "publicCases": 48,
+      "originalPublic": {
+        "passed": 36,
+        "total": 48
+      },
+      "status": "REPAIR_FAILED",
+      "inferenceCalls": 0,
+      "qualificationOperations": 5,
+      "repairOperations": 0,
+      "sourceHash": null,
+      "independent": null,
+      "candidateHistory": []
+    }
+  ],
+  "offlineReview": {
+    "status": "PASS",
+    "inference": "none",
+    "execution": "offline receipt review; candidate source not executed",
+    "networkAttempts": 0,
+    "inferenceCalls": 0,
+    "sandboxOperations": 0,
+    "evidenceFilesUnchanged": 45
+  }
+}

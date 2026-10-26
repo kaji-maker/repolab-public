@@ -1,0 +1,109 @@
+{
+  "format": "repolab-prospective-vue-native/v1",
+  "taskId": "vuejs__core-11589",
+  "commit": "3653bc0f45d6fedf84e29b64ca52584359c383c0",
+  "image": "e9a27985-c3f3-33f0-a138-4d14f9744788",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "inferenceCalls": 0,
+  "modelAdmission": false,
+  "maxOperations": 8,
+  "priorOperations": 0,
+  "taskOriginalCeiling": 12,
+  "slots": [
+    "prepare",
+    "build",
+    "protect",
+    "integrity",
+    "unit-A",
+    "reproduction-A",
+    "unit-B",
+    "reproduction-B"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/prospective-vue-11589-v1.ts",
+      "sha256": "7a939c5fef3fd7ad358ffc32aed4faffd03f58905973de3d9db8f60e47faea36"
+    },
+    {
+      "path": "packages/execution/profiled-native-v1.ts",
+      "sha256": "c67d664050b722285869e71313bdb6e31daf0b37f5ed79c6f74a992a97fdf268"
+    },
+    {
+      "path": "apps/evaluator/prospective-vue-11589-v1.ts",
+      "sha256": "094473d92f7d3993c5658a4d619dc09be44a4cba1729fd854da15d55160beeaf"
+    },
+    {
+      "path": "tests/prospective-vue-11589-v1.test.ts",
+      "sha256": "ae41d1f4475d74e5979975a596c199418279a9483960f4a687416b208031d46a"
+    },
+    {
+      "path": "evaluation/PROSPECTIVE_VUE_11739_V2.md",
+      "sha256": "977e238e4319a50683969ee26e5aff3a108dcb38f54c2ce1ebcd52dd5a7d600f"
+    },
+    {
+      "path": "repositories/prospective-vue-11589-v1/original.tar.gz",
+      "sha256": "eafd5fc8b7a29a955f363e0095c780d46acb7db458628622741dd149e6e4558b"
+    },
+    {
+      "path": "fixtures/prospective-vue-11589-v1/original-manifest.json",
+      "sha256": "190206e919d0096b0535a412ec89969506a3c4f825406fdcfd827ff4d7193b57"
+    },
+    {
+      "path": "repositories/prospective-vue-11589-v1/guest.cjs",
+      "sha256": "0bfe42cb52f1b80b5c1823c2fa63ce0ee6c69374489d59665665564ed1297020"
+    },
+    {
+      "path": "repositories/prospective-vue-11589-v1/run-unit.mjs",
+      "sha256": "98f5be77982540a3c1b73f1564e3fa284309b786165d0dc25a07cb552c856693"
+    },
+    {
+      "path": "repositories/prospective-vue-11589-v1/reproduction.cjs",
+      "sha256": "5d229c81a39c1967d1eb4d8f5dc611d002ad3ad80bcfdec0f7b53ea1df31a7fe"
+    },
+    {
+      "path": "repositories/prospective-vue-11589-v1/LICENSE",
+      "sha256": "49190d1f742dd61e47fe816df4963e5186a2a62100d9122f9883a60ea32973ac"
+    },
+    {
+      "path": "fixtures/prospective-vue-11589-v1/commit.json",
+      "sha256": "3594e82858d42dc7aa8c81f7dff4d922a913b85dbae45dce2444e307aad10fc6"
+    },
+    {
+      "path": "fixtures/prospective-vue-11589-v1/canonical-tree.json",
+      "sha256": "a66fbaf5898e83ee46de28e54d1536a81435afde1a8974d767f149c7f296add9"
+    },
+    {
+      "path": "fixtures/vue-native/node20-image.json",
+      "sha256": "17e17fa93dd7b5135a47082bbb23ccd44af678989ef10140900508ed589ab14d"
+    },
+    {
+      "path": "evaluation/prospective-v1.json",
+      "sha256": "e3ed56f8be7ad7a4112634c76011d267fafda9847f1f0f10e1c7e2f2d1753d02"
+    },
+    {
+      "path": "packages/evaluation/prospective-v1.ts",
+      "sha256": "d3d4e43fbecf62dfaa0c6e4e6ec485bd4e641168e150617146e90cdf9f054c33"
+    },
+    {
+      "path": "packages/repositories/onboarding-v1.ts",
+      "sha256": "1362ef1b82c6325bdeb9ca5654506d4e760e471562fd3b9822d269834a35748c"
+    },
+    {
+      "path": "packages/repositories/repair-lease.ts",
+      "sha256": "a33afa53fe214e2023d674a6cff2270e847577902a91e4ea10011b31ecc40070"
+    },
+    {
+      "path": "packages/execution/recovery-lease-v1.ts",
+      "sha256": "2a00a08e108dabb96d48797143e53a31a01cd45069dbf29074d6b9fabe50507f"
+    },
+    {
+      "path": "packages/storage/reconciliation.ts",
+      "sha256": "4cf595bffa1b2c20a63019ed623cca5772b7abbb8a9b414da7089d2cefbc8952"
+    },
+    {
+      "path": "packages/execution/nebius.ts",
+      "sha256": "3feb92191ce8bd69ce69475054ce1aec96042c0925200859b06663e635a60692"
+    }
+  ],
+  "digest": "14a0e1e6189fca1e81eb8f1513f2bee8c6aac1734194c9fe87f04dd49a5bced1"
+}

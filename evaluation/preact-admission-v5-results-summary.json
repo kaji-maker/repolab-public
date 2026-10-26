@@ -1,0 +1,479 @@
+{
+  "format": "repolab-preact-admission-result/v5",
+  "freeze": "18690376c3e161b80426d83cede92b36f83653c3d26d073c06b8fc0219141ab8",
+  "status": "QUALIFIED_SCOPED_ADMISSION",
+  "taskId": "preactjs__preact-4436",
+  "execution": "nebius-sandbox; reviewed original/incomplete/reference fixtures",
+  "inference": "none",
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "operationIds": [
+    "01a130a6-d23c-70c7-b588-4b07d4aeee58",
+    "01a130a6-def3-7208-abc9-bb94949b6d63",
+    "01a130a6-eab1-7371-9a66-31bba8064d88",
+    "01a130a6-f669-760f-9a37-836c15908f18",
+    "01a130a7-0b22-77bb-86ef-2861a655c952",
+    "01a130a7-3384-72f7-b01f-a5fad3c6a9d6",
+    "01a130a7-3a54-73b4-8f30-7f4aa690fd81",
+    "01a130a7-4aea-77c8-a4a0-7787ec696d3b",
+    "01a130a7-56ce-750e-ab7d-0ea7f47b328a",
+    "01a130a7-7107-7111-b5d9-0debe0946c6d",
+    "01a130a7-a585-7572-8ecf-9af8f77d60fe",
+    "01a130a7-b154-706f-a9df-620725a86371",
+    "01a130a7-be6a-771f-a47a-4d9259abbd61",
+    "01a130a7-ca4b-714c-8d4b-8519f3f27171",
+    "01a130a7-dfea-779f-9cae-a0f3774167b9",
+    "01a130a8-174f-76dc-902e-3ec15402067f",
+    "01a130a8-1e49-738f-89ba-ea6bcdfe9998",
+    "01a130a8-2f39-7455-95f1-92de060833fa",
+    "01a130a8-3b45-7070-8ede-af3e0b5f9e0a",
+    "01a130a8-559d-72e3-913b-25f72df57a27",
+    "01a130a8-8e35-707b-8ade-3df822fda427",
+    "01a130a8-a428-7094-969a-0af7ffe95e2d",
+    "01a130a8-b024-71af-8967-91bcc42df2ab",
+    "01a130a8-eda0-74fe-87ca-5ba1569bdcfc",
+    "01a130a8-ff73-762b-9b1a-8d8afb30fe11",
+    "01a130a9-14d2-724b-a8cc-6913cedd43d9"
+  ],
+  "nativeRuntime": "v20.9.0",
+  "original": {
+    "public": {
+      "total": 3,
+      "passed": 2,
+      "failed": [
+        "returned-cleanup"
+      ],
+      "rows": [
+        {
+          "id": "returned-cleanup",
+          "events": [
+            "mount",
+            "null"
+          ]
+        },
+        {
+          "id": "legacy-callback",
+          "events": [
+            "mount",
+            "null"
+          ]
+        },
+        {
+          "id": "object-ref",
+          "events": [
+            "INPUT",
+            "cleared"
+          ]
+        }
+      ]
+    },
+    "independent": {
+      "total": 10,
+      "passed": 2,
+      "failed": [
+        "stable-rerender",
+        "replace-ref",
+        "remove-ref",
+        "shared-callback",
+        "remount",
+        "component-ref",
+        "cleanup-error-boundary",
+        "keyed-replacement"
+      ],
+      "rows": [
+        {
+          "id": "stable-rerender",
+          "events": [
+            "mount",
+            "null"
+          ]
+        },
+        {
+          "id": "replace-ref",
+          "events": [
+            "a:mount",
+            "a:null",
+            "b:mount",
+            "b:null"
+          ]
+        },
+        {
+          "id": "remove-ref",
+          "events": [
+            "mount",
+            "retained:INPUT"
+          ]
+        },
+        {
+          "id": "shared-callback",
+          "events": [
+            "mount:left",
+            "mount:right",
+            "null",
+            "null"
+          ]
+        },
+        {
+          "id": "remount",
+          "events": [
+            "mount:first",
+            "null",
+            "mount:second",
+            "null"
+          ]
+        },
+        {
+          "id": "component-ref",
+          "events": [
+            "instance:true",
+            "null"
+          ]
+        },
+        {
+          "id": "nonfunction-return",
+          "events": [
+            "mount",
+            "null"
+          ]
+        },
+        {
+          "id": "legacy-ref-removal",
+          "events": [
+            "mount",
+            "retained:INPUT"
+          ]
+        },
+        {
+          "id": "cleanup-error-boundary",
+          "events": [
+            "mount",
+            "null"
+          ]
+        },
+        {
+          "id": "keyed-replacement",
+          "events": [
+            "mount:old",
+            "null",
+            "mount:new",
+            "null"
+          ]
+        }
+      ]
+    }
+  },
+  "weak": {
+    "sourceHash": "c94d82b74e41082936200cb7a6d446c2753ea7dfdd33b40f3f0b789af9f2b5d2",
+    "public": {
+      "total": 3,
+      "passed": 3,
+      "failed": [],
+      "rows": [
+        {
+          "id": "returned-cleanup",
+          "events": [
+            "mount",
+            "cleanup"
+          ]
+        },
+        {
+          "id": "legacy-callback",
+          "events": [
+            "mount",
+            "null"
+          ]
+        },
+        {
+          "id": "object-ref",
+          "events": [
+            "INPUT",
+            "cleared"
+          ]
+        }
+      ]
+    },
+    "independent": {
+      "total": 10,
+      "passed": 7,
+      "failed": [
+        "stable-rerender",
+        "replace-ref",
+        "remove-ref"
+      ],
+      "rows": [
+        {
+          "id": "stable-rerender",
+          "events": [
+            "mount",
+            "null"
+          ]
+        },
+        {
+          "id": "replace-ref",
+          "events": [
+            "a:mount",
+            "a:null",
+            "b:mount",
+            "b:cleanup"
+          ]
+        },
+        {
+          "id": "remove-ref",
+          "events": [
+            "mount",
+            "retained:INPUT"
+          ]
+        },
+        {
+          "id": "shared-callback",
+          "events": [
+            "mount:left",
+            "mount:right",
+            "cleanup:left",
+            "cleanup:right"
+          ]
+        },
+        {
+          "id": "remount",
+          "events": [
+            "mount:first",
+            "cleanup:first",
+            "mount:second",
+            "cleanup:second"
+          ]
+        },
+        {
+          "id": "component-ref",
+          "events": [
+            "instance:true",
+            "cleanup"
+          ]
+        },
+        {
+          "id": "nonfunction-return",
+          "events": [
+            "mount",
+            "null"
+          ]
+        },
+        {
+          "id": "legacy-ref-removal",
+          "events": [
+            "mount",
+            "retained:INPUT"
+          ]
+        },
+        {
+          "id": "cleanup-error-boundary",
+          "events": [
+            "mount",
+            "error:cleanup marker"
+          ]
+        },
+        {
+          "id": "keyed-replacement",
+          "events": [
+            "mount:old",
+            "cleanup:old",
+            "mount:new",
+            "cleanup:new"
+          ]
+        }
+      ]
+    }
+  },
+  "reference": {
+    "sourceHash": "b7ee432bb0a32a1547cc92554f023ef7e1e3708f49dc39b4959ad0e9dd7e78fc",
+    "public": {
+      "total": 3,
+      "passed": 3,
+      "failed": [],
+      "rows": [
+        {
+          "id": "returned-cleanup",
+          "events": [
+            "mount",
+            "cleanup"
+          ]
+        },
+        {
+          "id": "legacy-callback",
+          "events": [
+            "mount",
+            "null"
+          ]
+        },
+        {
+          "id": "object-ref",
+          "events": [
+            "INPUT",
+            "cleared"
+          ]
+        }
+      ]
+    },
+    "independent": {
+      "total": 10,
+      "passed": 10,
+      "failed": [],
+      "rows": [
+        {
+          "id": "stable-rerender",
+          "events": [
+            "mount",
+            "cleanup"
+          ]
+        },
+        {
+          "id": "replace-ref",
+          "events": [
+            "a:mount",
+            "a:cleanup",
+            "b:mount",
+            "b:cleanup"
+          ]
+        },
+        {
+          "id": "remove-ref",
+          "events": [
+            "mount",
+            "cleanup",
+            "retained:INPUT"
+          ]
+        },
+        {
+          "id": "shared-callback",
+          "events": [
+            "mount:left",
+            "mount:right",
+            "cleanup:left",
+            "cleanup:right"
+          ]
+        },
+        {
+          "id": "remount",
+          "events": [
+            "mount:first",
+            "cleanup:first",
+            "mount:second",
+            "cleanup:second"
+          ]
+        },
+        {
+          "id": "component-ref",
+          "events": [
+            "instance:true",
+            "cleanup"
+          ]
+        },
+        {
+          "id": "nonfunction-return",
+          "events": [
+            "mount",
+            "null"
+          ]
+        },
+        {
+          "id": "legacy-ref-removal",
+          "events": [
+            "mount",
+            "retained:INPUT"
+          ]
+        },
+        {
+          "id": "cleanup-error-boundary",
+          "events": [
+            "mount",
+            "error:cleanup marker"
+          ]
+        },
+        {
+          "id": "keyed-replacement",
+          "events": [
+            "mount:old",
+            "cleanup:old",
+            "mount:new",
+            "cleanup:new"
+          ]
+        }
+      ]
+    },
+    "types": {
+      "passed": 17,
+      "pending": 2,
+      "coreCompilation": "PASS",
+      "compatCompilation": "PASS"
+    },
+    "mocha": {
+      "passed": 29,
+      "skipped": 0,
+      "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93"
+    },
+    "browser": {
+      "passed": 1173,
+      "skipped": 11,
+      "caseDigest": "e37fc9ab6b6f6a371b2c88088e955ce7542d59bd2b38157db866af49ae617474"
+    }
+  },
+  "newQualifiedOperations": 26,
+  "priorUnsuccessfulVersionOperations": 45,
+  "sandboxOperationsThisPhase": 71,
+  "selectedExternalTasks": 3,
+  "nativeQualifiedTasks": 1,
+  "scopedFixtureWorkflowQualifiedTasks": 1,
+  "attemptedModelTasks": 0,
+  "accuracy": null,
+  "limits": "Reviewed fixture qualification only; model generation requires a separate prospective trial. General framework source edits, browser/API integration and hidden benchmark accuracy are not established.",
+  "rawReceiptSha256": {
+    "STARTED.json": "ea372584df28302c8ed58008d9e9cb355917749c56cc5e9cdaa0116adf70f5a2",
+    "upload-original-0.json": "50a16cbdd980c53d09bc9f47b8998670e29d2bcbdb0d37cd84ef7d4fd5d165ac",
+    "upload-original-1.json": "01a41f89f7a127a51bd10dc82f2f92e1ec66cfb05bbb815e0cc10a18dc8bb66c",
+    "upload-original-2.json": "8c3ec5bd9e991c58dead0719f5f57ba5c2e5f74c22e7893fd82c5d54a2fb1b0a",
+    "uploads-original.json": "9e767d18156b61decf5f2f064f34d2434f8b4f33dee10c2dd165d5f0ff97e5e5",
+    "original-public-A.json": "9f9092445d9be84d4a1ceb63bf051da32695f45a68f0d37ea1c3d175d2bcfe93",
+    "upload-original-independent.json": "769fe0b185c6a0cff880b2653aca4270521d162621ce7b596a8d3b4b1002efea",
+    "original-independent-A.json": "e5a1029b4fce8a2c79282cf1f4c78735f2a1a5d1327cbf5a406062277509b573",
+    "original-public-B.json": "495d78fa47c4624c99dc81040d3ba56d8e99009632e8aae2a90dab8d6be9c053",
+    "original-independent-B.json": "14d881c89573a9e0ebc3daf1f770b543f59641b8e0001d91067163cefed18939",
+    "upload-weak-0.json": "2d18103aa2e55b84e69b3fd53fa466fa44d04a332cc4ff569488305269ae1313",
+    "upload-weak-1.json": "01a41f89f7a127a51bd10dc82f2f92e1ec66cfb05bbb815e0cc10a18dc8bb66c",
+    "upload-weak-2.json": "8c3ec5bd9e991c58dead0719f5f57ba5c2e5f74c22e7893fd82c5d54a2fb1b0a",
+    "upload-weak-3.json": "f0573872cf11750db38faee0d7637ecb0d432b0d6d659ab329256df20022c241",
+    "upload-weak-4.json": "ae8951f588ce305deafb1e9b708c2261516a5c7ce1ca6d3d4add48900df2fc37",
+    "upload-weak-5.json": "538ccf4d9134b22e88a13c9fe0af50c0ed8b7a1a81df343a697ac1662f70fea9",
+    "uploads-weak.json": "33152ed4caf0a1bd0894b7871175814784e1273c5b3e8a262a698773ec8f17be",
+    "weak-build.json": "c15d12bf1767423217ea8d4945f426495b85058ab8b076e248a6bc291ebdcf33",
+    "weak-integrity.json": "14cdfdb881d30158bc8046ae2b334039ae16929820afbb2d69b1b82f6362ac65",
+    "weak-lint.json": "064d106806f2b3117c808fb386c16238f488869518b50e391a4577376b688653",
+    "weak-mocha-A.json": "4b3712d3d0ba035da7a8bb10e619f8112152ead69ac03a9563fd7783f3ddfa28",
+    "weak-types.json": "fb54efdae44fa89a514b82cc26fc71fafec183b379503a368d020e0420135f98",
+    "weak-browser-A.json": "3e751199159df5828335956d9fa9978ae565581c66f587159427ebd4ce55c957",
+    "weak-public-A.json": "457a03fc9770cac97ed7c4f243dbbf5cc909b18da870a9c1c6905fb92059d60d",
+    "weak-public-B.json": "4c9bb6b278cd70812c7a7c302d538959fbc38587f9da1295a73a98d12557f70f",
+    "selection-weak.json": "e79212d5435df308016f0f07b617690f64776fbd903a2e0e06382c1a02bd3fc6",
+    "upload-weak-independent.json": "769fe0b185c6a0cff880b2653aca4270521d162621ce7b596a8d3b4b1002efea",
+    "weak-independent-A.json": "ee9b08bd5bf2d66bc29f68f22058cc29250f4e989bb04701906dd09318ea7823",
+    "weak-independent-B.json": "891e6cbe78f0eeb80b137be65ddc2573a32864ff8cc35da7e9c2cffb1277f254",
+    "upload-reference-0.json": "52abc7613a36b198718e5bc610f5f5969fa3281d3c036e974cab913eca96ebc9",
+    "upload-reference-1.json": "01a41f89f7a127a51bd10dc82f2f92e1ec66cfb05bbb815e0cc10a18dc8bb66c",
+    "upload-reference-2.json": "8c3ec5bd9e991c58dead0719f5f57ba5c2e5f74c22e7893fd82c5d54a2fb1b0a",
+    "upload-reference-3.json": "f0573872cf11750db38faee0d7637ecb0d432b0d6d659ab329256df20022c241",
+    "upload-reference-4.json": "497b43f4bce5e1fc3e2685517d20fec61b70e2e83e5e63a160e0f2054ee2bc81",
+    "upload-reference-5.json": "538ccf4d9134b22e88a13c9fe0af50c0ed8b7a1a81df343a697ac1662f70fea9",
+    "uploads-reference.json": "24af53371b0c9c094ec18d04cece88e60671a326e32a8a498dee528922f0637c",
+    "reference-build.json": "892883abca2f19edbd92eb8d9aa42125fda949d27b3a6322b557e92baa786bc4",
+    "reference-integrity.json": "b5ad4dbb3be90466b2dafd18e9fce99001075bc223c78e0fda64b0aa533d783e",
+    "reference-lint.json": "12b65c45cda4f4e090c57229d8a771b738dc0ed70582fbbf55f41fd4c935a1f4",
+    "reference-mocha-A.json": "650208e08c48d4acc9e8f10bae1826cd5655d7b7766819396d5625bbc84fc196",
+    "reference-types.json": "fe776503b7453766ecc6073f930e76ca3ee4f3bfd12c36ec7c6793fa54b5b139",
+    "reference-browser-A.json": "51a4d3a7e2f73f18f9fb1672e00af872863c21b2afbef5825fd1f126af07e1f9",
+    "reference-public-A.json": "ab343ce6f388fe53e98a75bf5ee2d34079c1f9c41ee28a5dfdf24a2f0acd021e",
+    "reference-mocha-B.json": "0c947a74af34380449070b584ee64fa3038c3f86771bd80fe0537a82aea062d5",
+    "reference-browser-B.json": "49bb7683809e7465eb7278224b66d67532902b34d1c46e83f3236930c02b7544",
+    "reference-public-B.json": "e0738ec7b0d4197c519b6fdd9aa537aba8a12bff371fb74e815fc95ca7a254db",
+    "selection-reference.json": "6f20310af058b6d40a29f2fcdc8dfdf34fcf7510e03a022b22fc780796ee3361",
+    "upload-reference-independent.json": "769fe0b185c6a0cff880b2653aca4270521d162621ce7b596a8d3b4b1002efea",
+    "reference-independent-A.json": "2dbf59179f6c87ca5d000dc0b0ff15b693ade94b6e90ab670aa0daf729246a86",
+    "reference-independent-B.json": "0945fb1f15ec6b5944af4997a3b53dd10c59ca8d52e8bdc2ff1bce514cde27f1"
+  }
+}

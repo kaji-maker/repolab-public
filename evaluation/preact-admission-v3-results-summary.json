@@ -1,0 +1,42 @@
+{
+  "format": "repolab-preact-admission-result/v3",
+  "freeze": "ac021a27b27ccb21ca1764a6aad86b560e38621e8994ecc2f9746c187c2fb9d9",
+  "status": "REFERENCE_REGRESSION_FAILED",
+  "operations": 20,
+  "operationIds": [
+    "01a1309c-3d15-7317-b2a2-d45e86a190d5",
+    "01a1309c-4ed3-7766-8412-a7a30a4cf9d8",
+    "01a1309c-644f-7129-8b5d-502884263579",
+    "01a1309c-74e7-75e1-ab37-7504424fa7cf",
+    "01a1309c-8f43-75b0-b3ae-51a5c57189e4",
+    "01a1309c-bd5e-7254-87c1-0a5e56477c28",
+    "01a1309c-cdfb-779e-bef6-93328e1f7d1f",
+    "01a1309c-de93-738f-b305-80a3b4ba1c0f",
+    "01a1309c-eaa4-76d6-9006-d3a91eab3107",
+    "01a1309d-050f-76db-ab98-62058d211663",
+    "01a1309d-3e41-7001-b02c-c21eb19f86db",
+    "01a1309d-4f17-72de-a796-b28f7b1e7b4e",
+    "01a1309d-65e1-70ac-b308-146ea6e8eb9e",
+    "01a1309d-7687-7635-8389-0be8d9de82c5",
+    "01a1309d-9100-7030-b614-4242c6013f6f",
+    "01a1309d-c388-7098-83f9-894b11730bf6",
+    "01a1309d-cf4c-726b-9c00-7c6a00256f47",
+    "01a1309d-ea6d-7411-98b1-252167401150",
+    "01a1309d-f644-73c9-a716-f33221bf16ae",
+    "01a1309e-1060-760b-867f-9d6356027c10"
+  ],
+  "failedStage": "reference-browser-A",
+  "originalAssertionsFailed": 1,
+  "unrunSlots": 6,
+  "weakNativePublicPassed": true,
+  "weakIndependentFailedTwice": [
+    "stable-rerender",
+    "replace-ref",
+    "remove-ref"
+  ],
+  "inference": "none",
+  "execution": "nebius-sandbox; reviewed fixtures",
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "reason": "Reference changed legacy callback-removal ordering; fix must apply new ref-removal cleanup only when a cleanup was returned"
+}

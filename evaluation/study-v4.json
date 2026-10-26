@@ -1,0 +1,173 @@
+{
+  "digest": "037e7a67ffe60ced80b59993b5cc168d78082a51f0bc072263b65a4a7b36e578",
+  "format": "repolab-common-study/v4",
+  "previousDigest": "c98680cfa17ea2d0c5ac5fa2bbd0b73a72c57291878136636cdce1127b06954f",
+  "scope": "eight-authored-public-exposed-tasks-no-external-heldout-claim",
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "maxCandidates": 2,
+  "maxCalls": 3,
+  "maxOperations": 32,
+  "runInferenceCapUsd": 0.1,
+  "allocationUsd": 1.8,
+  "globalInferenceCapUsd": 4,
+  "schedule": [
+    {
+      "task": "refund-missing-facts",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "refund-missing-facts",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "refund-missing-facts",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "shipping-already-correct",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "shipping-already-correct",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "shipping-already-correct",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "dlv-null-path",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "dlv-null-path",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "dlv-null-path",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "A",
+      "repetition": 1
+    }
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/study-protocol-v4.ts",
+      "sha256": "6f80a46b8f46f99c2b0dc6cc6e918b090d0fb95634891454710426c9dcfe3d8f"
+    },
+    {
+      "path": "packages/evaluation/study-policy-v4.ts",
+      "sha256": "adc105419fa13e468e7bf6fcda09c5ba9a12ca46f1dc869e091929ef74bdaf8c"
+    },
+    {
+      "path": "packages/evaluation/study-adapters-v4.ts",
+      "sha256": "306d1a2f8c81c64d581504e22cff084520688ae67b859ab37e5216862c1121ce"
+    },
+    {
+      "path": "packages/evaluation/study-runner-v4.ts",
+      "sha256": "d01398baf9a18f3d9b4d6de8f96caa4556aa60231c27716b34a95f654317a82e"
+    },
+    {
+      "path": "packages/evaluation/study-metrics-v4.ts",
+      "sha256": "b2d406a95e4a4f5c23af43afa225ce6b5a4eac30a32819a7f2ccdccd0d052e04"
+    },
+    {
+      "path": "apps/evaluator/study-v4.ts",
+      "sha256": "c65dfe7f794d75ae6ba547d63dc8e57ff931c288f0915442e0e514f993b9ef2c"
+    },
+    {
+      "path": "tests/study-v4.test.ts",
+      "sha256": "d0119f55a4e9b19b0552ad354aebbc6307d75bf3a0b1c9950fcc39f67e2206a0"
+    },
+    {
+      "path": "evaluation/STUDY_V4.md",
+      "sha256": "a5d0798eb9835ceb8934f63ea57434ec7b1e852d0c0a07589fd07bf1239efb84"
+    }
+  ]
+}

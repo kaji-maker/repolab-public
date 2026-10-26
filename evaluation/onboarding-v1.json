@@ -1,0 +1,82 @@
+{
+  "format": "repolab-onboarding-qualification/v1",
+  "maxModelCalls": 0,
+  "maxNewSandboxOperations": 0,
+  "qualification": "data-only inspection and replay of original-only real Sandbox evidence",
+  "frameworkDenominator": [
+    "facebook__docusaurus-8927",
+    "preactjs__preact-4436",
+    "vuejs__core-11899"
+  ],
+  "developmentControls": [
+    "regexparam"
+  ],
+  "repairAdmission": false,
+  "assets": [
+    {
+      "path": "packages/repositories/onboarding-protocol-v1.ts",
+      "sha256": "70ed6efc7d005d0533d45d1c84aad04d1ffa3177012260eb510f2845e37de9c1"
+    },
+    {
+      "path": "packages/repositories/onboarding-v1.ts",
+      "sha256": "1362ef1b82c6325bdeb9ca5654506d4e760e471562fd3b9822d269834a35748c"
+    },
+    {
+      "path": "packages/repositories/onboarding-catalog-v1.ts",
+      "sha256": "b2e7340c9b4f63b79f6e96ed93ae5c843cc49c4f3c02340758e6a37ab3ee04c3"
+    },
+    {
+      "path": "apps/repositories/onboarding-v1.ts",
+      "sha256": "7d515678f7ba7257331f95ce8f1ea5efd5b6b8a6a933310d8475a7d7176d32f9"
+    },
+    {
+      "path": "tests/onboarding-v1.test.ts",
+      "sha256": "4515c7f59b4859cae822e57241b3f714ec3cb3db8c3a7140904449c5d75bc402"
+    },
+    {
+      "path": "evaluation/ONBOARDING_V1.md",
+      "sha256": "fa4c4eedae8a2b86c65f4adab8e99e7883e7d8d4932db5cfb320257739bec067"
+    },
+    {
+      "path": "evaluation/onboarding-catalog-v1.json",
+      "sha256": "19863174698453802543fccac097cb863993f76b937537459397b4cd7f4e4b28"
+    },
+    {
+      "path": "evaluation/onboarding-evidence-v1.json",
+      "sha256": "ec881e9550ad726e49a426799a4773c89b55e33c3a061201bc67a35aafde2672"
+    },
+    {
+      "path": "fixtures/preact-native/original-manifest.json",
+      "sha256": "a4fd773857a17db8181da1b240b1196ccf1e5700ef3dd16e2bb4a016b6303a64"
+    },
+    {
+      "path": "repositories/preact-native-v1/original.tar.gz",
+      "sha256": "88d58cccfa506ba27b82c201cdccfe731fdd0870175e76695d3fda9386a756bf"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/manifest.json",
+      "sha256": "06ffcc388d288db9075a0d8653c996b244db3e0c96068ba158f3774f262b413a"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original.tar.gz",
+      "sha256": "6f24095fd5147b5eb118e14aff69a16bafd86ed129cd6d969208ca8e0afd031c"
+    },
+    {
+      "path": "evaluation/external-selected-v1.json",
+      "sha256": "9e2cc1663ef632ba3817691dc24e130e1d5842952c72ead559fb553e53cf00ae"
+    },
+    {
+      "path": "evaluation/external-source-inventory-v1.json",
+      "sha256": "70f8663c30f02e364f2cfa2a33f11501a364a9f7d1b37fddfad6c22ae4622563"
+    },
+    {
+      "path": "evaluation/preact-native-v5.json",
+      "sha256": "fd62d6ab47fc7857a82335731fc80aee2f114aa85c0a03e4ee6a342b49fa84ae"
+    },
+    {
+      "path": "evaluation/github-anchor-v3.json",
+      "sha256": "65187d87eed5ea5c8ee32f2577dc3e4617a631159159583f05597e5ee7ee7267"
+    }
+  ],
+  "digest": "dec9caa0a75af2bc56147433edcae0545750ea455be7de3f8aefd01c1d10f074"
+}

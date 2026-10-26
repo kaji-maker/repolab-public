@@ -1,0 +1,145 @@
+{
+  "status": "AUDIT_PASS_REPAIR_SCORE_ZERO",
+  "freeze": "314bd7aa389f900a5bcc6571f7b14498d84e384a8fd4549c2c3272b14d4f2d12",
+  "selected": 3,
+  "nativeQualified": 2,
+  "modelAttemptedTasks": 2,
+  "verifiedRepairs": 0,
+  "abstentions": 2,
+  "nativeBlocked": 1,
+  "independentEvaluations": 0,
+  "inferenceCalls": 4,
+  "sandboxOperations": 26,
+  "retainedV1PreparationOperations": 3,
+  "estimatedInferenceUsd": 0.012105900000000001,
+  "ledgerBeforeUsd": 0.1896627,
+  "ledgerAfterUsd": 0.20176859999999996,
+  "unsettledCharges": 0,
+  "credentialExclusion": "PASS",
+  "filesScanned": 239,
+  "priorPrivateFilesUnchanged": 1796,
+  "priorPublicFilesUnchanged": 131,
+  "externalReviewerFilesUnchanged": 124,
+  "rows": [
+    {
+      "name": "fast-deep-equal",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "nativeInventory": {
+        "passing": [
+          626
+        ]
+      },
+      "result": "ABSTAINED_NO_SELECTION",
+      "inferenceCalls": 2,
+      "qualificationOperations": 6,
+      "repairOperations": 4
+    },
+    {
+      "name": "rfdc",
+      "qualification": "SETUP_OR_REPRODUCTION_FAILED",
+      "nativeInventory": null,
+      "result": "NATIVE_BASELINE_BLOCKED",
+      "inferenceCalls": 0,
+      "qualificationOperations": 3,
+      "repairOperations": 0
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "nativeInventory": {
+        "tests": [
+          16
+        ],
+        "pass": [
+          16
+        ]
+      },
+      "result": "ABSTAINED_NO_SELECTION",
+      "inferenceCalls": 2,
+      "qualificationOperations": 6,
+      "repairOperations": 4
+    }
+  ],
+  "operationIds": [
+    "01a13d2b-c43f-751d-91e3-27845f101f7b",
+    "01a13d2c-2fd1-77f9-9def-f0166214efad",
+    "01a13d2c-500f-721f-b141-3ddb0a3eda6c",
+    "01a13d2c-7d5a-7390-bc99-ae41e50b9cd3",
+    "01a13d2c-9d3e-7367-ad4a-2893f028ce38",
+    "01a13d2c-bdb2-7096-9dd5-b4a21cbfa5ac",
+    "01a13d35-0c52-700e-bdc9-eb0665b5c04e",
+    "01a13d35-2cb8-77c7-8e97-97096ca44f29",
+    "01a13d35-86db-74df-bef1-890838791ab4",
+    "01a13d35-a8c8-703c-8f8d-d000429fce0e",
+    "01a13d2d-000e-7404-a1cd-1d01762769cb",
+    "01a13d2d-7c40-7360-ae79-258220826130",
+    "01a13d2d-9cb2-7735-9770-3c45a68852cf",
+    "01a13d30-c054-767f-91b5-179b6dd26130",
+    "01a13d31-26ba-7127-ba19-b5a97afe6cb2",
+    "01a13d31-4728-70be-b95f-61a0e100da84",
+    "01a13d31-6c33-77ed-9a47-70cb5b676b24",
+    "01a13d31-8cb7-7581-ae79-a90fdf1f7053",
+    "01a13d31-ad74-7448-8573-53bd4c2572de",
+    "01a13d36-0f39-7770-a8f7-796bd60ac627",
+    "01a13d36-3122-71b1-887b-dc857b0a5e8d",
+    "01a13d36-95ce-7426-bd13-517f3fad83ee",
+    "01a13d36-b660-7017-a63e-5141d4288bde",
+    "01a13d25-9ccf-7361-8713-d5bb2f57e03e",
+    "01a13d26-06b6-70a9-860f-10185c4be099",
+    "01a13d26-2850-717b-b7de-66b21e308bac"
+  ],
+  "format": "repolab-cross-repository-results/v2",
+  "repairOutcome": "ZERO_VERIFIED_REPAIRS",
+  "validation": {
+    "focusedTests": 16,
+    "typecheck": "PASS",
+    "build": "v7 PASS",
+    "receiptAudit": "PASS",
+    "credentialFreeOfflineReview": "PASS",
+    "repairQuality": "0/3 selected; 0/2 model-attempted tasks verified"
+  },
+  "provenance": {
+    "inference": "nebius; NVIDIA Nemotron full-thinking request policy",
+    "execution": "nebius-sandbox"
+  },
+  "scope": "Three purposively selected small CommonJS libraries, new to project execution. Public issues; training exposure unknown; not a random or blinded controller assessment.",
+  "failureEvidence": [
+    {
+      "name": "fast-deep-equal",
+      "attempt": 1,
+      "path": "src/index.jst",
+      "originalNewlines": 79,
+      "generatedNewlines": 0,
+      "sourceHash": "ea8670b5434720b5e3edb431cf1f8144907b95cf05da767e69007fa8aef20e44"
+    },
+    {
+      "name": "fast-deep-equal",
+      "attempt": 2,
+      "path": "src/index.jst",
+      "originalNewlines": 79,
+      "generatedNewlines": 0,
+      "sourceHash": "220acb34e6faa6a275f8f921b9ae47ccfa01250c4b396d2ccd7d02498b750b64"
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "attempt": 1,
+      "path": "index.js",
+      "originalNewlines": 59,
+      "generatedNewlines": 0,
+      "sourceHash": "8b4410358768bdc17eaedbbb8af2122ae752f257528e9dea943075c1fb2ea69c"
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "attempt": 2,
+      "path": "index.js",
+      "originalNewlines": 59,
+      "generatedNewlines": 0,
+      "sourceHash": "66276d2643e911bfd7ce189dc9ea435d832f72e7bb76d8f2650be6280d3afce9"
+    }
+  ],
+  "nextPriorities": [
+    "Qualify line-preserving source edits and deterministic compilation; do not heuristically repair old candidate bytes",
+    "Choose and qualify repository-supported runtimes before inference",
+    "Keep these tasks exposed and freeze fresh tasks after correcting the generation/runtime issues"
+  ]
+}

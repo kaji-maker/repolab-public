@@ -1,0 +1,68 @@
+{
+  "format": "repolab-prospective-preact-native-stopped/v1",
+  "freeze": "a33e4a28d8e484831418ff9bc5578f10a1ea72427bcda2fe1b4bc04e5f255b61",
+  "taskId": "preactjs__preact-3763",
+  "commit": "e968a5a4000dfa9bec7e8d7b26543b23def6d29d",
+  "status": "STOPPED_UNQUALIFIED",
+  "records": [
+    {
+      "slot": "prepare",
+      "state": "TERMINAL",
+      "id": "01a15866-f2c0-7529-8fb7-7a1f3f40103d",
+      "providerStatus": "SUCCESS",
+      "receiptAdmissionPassed": true,
+      "rawSha256": "c979424c97b8127f8738b003fff496d6caa128dfefd4fe504674e6b9cef847b3"
+    },
+    {
+      "slot": "build",
+      "state": "TERMINAL",
+      "id": "01a15867-79a5-753a-8866-ca89ce2f3e4f",
+      "providerStatus": "SUCCESS",
+      "receiptAdmissionPassed": true,
+      "rawSha256": "c9090c8467113953145549621d42162d0733da3a8c3d422bd97027b68392043e"
+    },
+    {
+      "slot": "protect",
+      "state": "TERMINAL",
+      "id": "01a15867-a851-7515-b94b-30ac43abd395",
+      "providerStatus": "SUCCESS",
+      "receiptAdmissionPassed": true,
+      "rawSha256": "7c1fe8345a7980ed74e87b681c1976a6dbb8b4df194de2c2e30ed5e04007a21a"
+    },
+    {
+      "slot": "integrity",
+      "state": "TERMINAL",
+      "id": "01a15867-c121-7791-966b-d0a433fc3d02",
+      "providerStatus": "SUCCESS",
+      "receiptAdmissionPassed": true,
+      "rawSha256": "887a4e8029704e4f67db5fe3539262ecdd8eb632be522a4cea05a0a0fdb874ba"
+    },
+    {
+      "slot": "lint",
+      "state": "UNKNOWN",
+      "id": "01a15867-d9e3-729e-becc-f32cfd8805ee",
+      "providerStatus": "EXECUTING",
+      "receiptAdmissionPassed": false,
+      "rawSha256": "29136aa578541dafd0cdc6f8e53bd7a91b2dbc495990573cfd78dce99900a2db"
+    }
+  ],
+  "operationsWithKnownIds": 5,
+  "modelCalls": 0,
+  "modelAdmission": false,
+  "candidateAdmission": false,
+  "prospectiveDenominator": 8,
+  "prospectiveNativeQualified": 4,
+  "accuracy": null,
+  "validation": {
+    "focusedControllerTests": 14,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3254,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesReleased": true
+  },
+  "inference": "none",
+  "execution": "Nebius Sandbox original-only dispatch stopped; offline saved-data audits grant no qualification",
+  "cumulativeInferenceEstimateUsd": 0.34907219999999994
+}

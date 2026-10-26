@@ -1,0 +1,78 @@
+{
+  "format": "repolab-development-robustness-study/v3",
+  "baseProtocolDigest": "5a928ee3b46ee970cc533f1b1f2f7fa24a7e98cb8ff2713c8290120f4f6be3fe",
+  "previousStudyDigest": "562a9df42be9dd1c8d9627b2f627654e0a1857ca6780d8da8117bcab43a03109",
+  "policyVersion": "pure-source-diagnostics-v2-plus-validated-expression-edits-v3",
+  "contractVersion": "nonnullable-grounded-contract-v2",
+  "observationVersion": "complete-behavioral-failure-v3",
+  "repairPromptVersion": "existing-expression-edits-v3",
+  "frozenAt": "2026-10-07T16:31:41.005Z",
+  "scope": "one-historical-development-workflow-no-comparison-claim",
+  "schedule": [
+    {
+      "task": "clsx-object-push",
+      "arm": "C",
+      "repetition": 1
+    }
+  ],
+  "maxCandidates": 2,
+  "maxCalls": 6,
+  "maxOperations": 24,
+  "runInferenceCapUsd": 0.1,
+  "allocationUsd": 0.1,
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "parameters": {
+    "max_tokens": 4096,
+    "temperature": 1,
+    "top_p": 0.95,
+    "reasoning_effort": "low",
+    "chat_template_kwargs": {
+      "enable_thinking": true,
+      "low_effort": true,
+      "force_nonempty_content": true
+    }
+  },
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "assets": [
+    {
+      "path": "evaluation/STUDY_V3.md",
+      "sha256": "a1dc399d1c54e91cdc03b4f606a72d33592e9da26f24f5f531c313ccbb89bfbb"
+    },
+    {
+      "path": "fixtures/study-v3-exception.mjs",
+      "sha256": "b047510f1de4cf4370e80e9fc5854b0c28d3c50194aeb2ce85719dbbd66878be"
+    },
+    {
+      "path": "packages/evaluation/study-expression-edits-v3.ts",
+      "sha256": "37fded63fd1f22dce22750520bd0e30f18704e6a731929c06d639ea9e7497646"
+    },
+    {
+      "path": "packages/evaluation/study-observation-v3.ts",
+      "sha256": "fa5c0f1dea66f6de65c3b46dc967d438b344e42875889c889c548f64ab3053ea"
+    },
+    {
+      "path": "packages/evaluation/study-protocol-v3.ts",
+      "sha256": "8a97a8cf65cde8a89a229f9362649a82cc63e7f9240d8e276059578d0aaa94d7"
+    },
+    {
+      "path": "packages/evaluation/study-runner-v3.ts",
+      "sha256": "e525d69f9b2e2e120e53441fc77f939d1233765728fa6ea80b3090d5e8fe5c9c"
+    },
+    {
+      "path": "packages/evaluation/study-metrics-v3.ts",
+      "sha256": "71d1ecd6850c3a326b4dcad42bea348fdd4ea090fd8d6ea19cffb06b2629face"
+    },
+    {
+      "path": "apps/evaluator/study-v3.ts",
+      "sha256": "fb884042dc0540a9e50d55f137f6188781533c92a6a43706c96721bba0ffcfd4"
+    },
+    {
+      "path": "tests/study-v3.test.ts",
+      "sha256": "bd954523d41dfae87a436236649a4fa261d47e156c2eb3c84e66f22c90849f6a"
+    }
+  ],
+  "digest": "ecf9a092ccd36965b32c8256608a61443ec18618c5906e9fd8810710674824bf"
+}

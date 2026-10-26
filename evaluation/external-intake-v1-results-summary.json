@@ -1,0 +1,117 @@
+{
+  "format": "repolab-external-intake-public-results/v1",
+  "digest": "2ada74c6196b7cd3515ac1a19ed79b81aded6389b1c85d1984610ffe39f636d1",
+  "selectionDigest": "4b7fca4a16659ea7510dc3dd8931abdd16d967eb51b9650396e083c2c4d63f4d",
+  "status": "INTAKE_VERIFIED_REPAIR_UNSUPPORTED",
+  "counts": {
+    "selected": 3,
+    "supported": 0,
+    "qualified": 0,
+    "attempted": 0
+  },
+  "accuracy": null,
+  "resolved": null,
+  "rows": [
+    {
+      "taskId": "facebook__docusaurus-8927",
+      "repository": "facebook/docusaurus",
+      "baseCommit": "41f1c1e3c26ad1e24acd3306077e2534dd8fa0db",
+      "status": "UNSUPPORTED_REPOSITORY_ADAPTER",
+      "selected": true,
+      "supported": false,
+      "qualified": false,
+      "attempted": false,
+      "missing": [
+        "native repository/dependency staging",
+        "protected original build/test gate",
+        "frozen report reproduction",
+        "bounded source-edit policy",
+        "separate evaluator and raw-receipt replay"
+      ],
+      "inference": "none",
+      "execution": "none; data-only admission; no source execution"
+    },
+    {
+      "taskId": "preactjs__preact-4436",
+      "repository": "preactjs/preact",
+      "baseCommit": "db0f4f2e7a2338ea40050f623f05505a798fc1a4",
+      "status": "UNSUPPORTED_REPOSITORY_ADAPTER",
+      "selected": true,
+      "supported": false,
+      "qualified": false,
+      "attempted": false,
+      "missing": [
+        "native repository/dependency staging",
+        "protected original build/test gate",
+        "frozen report reproduction",
+        "bounded source-edit policy",
+        "separate evaluator and raw-receipt replay"
+      ],
+      "inference": "none",
+      "execution": "none; data-only admission; no source execution"
+    },
+    {
+      "taskId": "vuejs__core-11899",
+      "repository": "vuejs/core",
+      "baseCommit": "706d4ac1d0210b2d9134b3228280187fe02fc971",
+      "status": "UNSUPPORTED_REPOSITORY_ADAPTER",
+      "selected": true,
+      "supported": false,
+      "qualified": false,
+      "attempted": false,
+      "missing": [
+        "native repository/dependency staging",
+        "protected original build/test gate",
+        "frozen report reproduction",
+        "bounded source-edit policy",
+        "separate evaluator and raw-receipt replay"
+      ],
+      "inference": "none",
+      "execution": "none; data-only admission; no source execution"
+    }
+  ],
+  "dataset": {
+    "id": "SWE-bench/SWE-bench_Multilingual",
+    "revision": "846e647b9f33c0b51b739d005d13d85493c9af09",
+    "eligiblePoolSize": 43,
+    "deterministicSelection": true,
+    "externallyCurated": true,
+    "independentHumanSelection": false,
+    "hidden": false,
+    "pretrainingExposure": "unknown"
+  },
+  "validation": {
+    "testsPassed": 309,
+    "build": "PASS",
+    "unchangedHistoricalFiles": 328,
+    "preFixCommitTreeAndPackageBindings": 3,
+    "solutionFieldsDecoded": 0,
+    "goldTestHintCredentialProjectionCounterexample": "PASS",
+    "rehashAndReadinessForgeryCounterexamples": "PASS",
+    "cliContextFields": [
+      "taskId",
+      "repository",
+      "baseCommit",
+      "bugReport"
+    ],
+    "contextOverwriteAndRepairDispatch": "REFUSED"
+  },
+  "inference": {
+    "calls": 0,
+    "estimatedUsd": 0
+  },
+  "execution": {
+    "sandboxOperations": 0,
+    "upstreamOrCandidateSourceExecuted": false,
+    "provenance": "data-only public dataset/pinned Git metadata intake; reviewed fixture/synthetic tests separate"
+  },
+  "ledger": {
+    "estimatedInferenceUsd": 0.1072158,
+    "blocked": false
+  },
+  "retainedFailures": [
+    "restricted upstream test_spec documentation fetch",
+    "initial commit-keyed tree SHA assumption; corrected with explicit canonical-tree binding before freeze"
+  ],
+  "next": "Separate prospective native repository staging/build/test qualification; keep all three selected tasks; no repair accuracy claim"
+}

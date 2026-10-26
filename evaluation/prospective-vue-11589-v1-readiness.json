@@ -1,0 +1,35 @@
+{
+  "format": "repolab-prospective-readiness-overlay/v1",
+  "freeze": "14a0e1e6189fca1e81eb8f1513f2bee8c6aac1734194c9fe87f04dd49a5bced1",
+  "taskId": "vuejs__core-11589",
+  "status": "QUALIFIED_ORIGINAL_NATIVE_BASELINE",
+  "taskOriginalOperations": 8,
+  "taskOriginalCeiling": 12,
+  "runConsumed": true,
+  "cohortOriginalOperations": 42,
+  "counts": {
+    "selected": 8,
+    "originalBaselineQualified": 4,
+    "currentSetupFailedTasks": 0,
+    "historicalFailedSetupAttempts": 1,
+    "pendingPreparation": 4,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0
+  },
+  "modelCalls": 0,
+  "candidateAdmission": false,
+  "accuracy": null,
+  "orderingContract": "Reporter-requested FIFO; API guarantee unresolved; original qualification does not establish repair semantics",
+  "validation": {
+    "focusedControllerTests": 12,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3228,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesReleased": true
+  },
+  "nextTask": "preactjs__preact-3763",
+  "inference": "none",
+  "execution": "eight actual Nebius Sandbox original-only operations; offline controller saved-data audits"
+}

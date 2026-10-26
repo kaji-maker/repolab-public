@@ -1,0 +1,82 @@
+import { readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+export const SERIALIZER_STUDY_FREEZE = "f7f1313338343dce8f1d677324b69d37e0dfece6ff2e10c6c63eda6f65ad8ac5";
+export const serializerSettings = {
+  format: "repolab-serializer-study/v2",
+  parentFreeze:
+    "eeb9beda88c0b95fb58dec3037d1210c87b66388c6e3ca173c6e0aa31d6b812b",
+  fixtures: ["escaped-crlf", "duplicate-branches", "large-context"],
+  modes: ["full-thinking", "direct-json"],
+  repetitions: ["A", "B"],
+  model: "nvidia/nemotron-3-super-120b-a12b",
+  outputTokens: 16384,
+  requestBytes: 64000,
+  ratesUsdPerMillion: { input: 0.3, output: 0.9 },
+  monetaryCap: null,
+  maxModelCalls: 12,
+  maxSandboxOperations: 75,
+  originalOperationsPerFixture: 5,
+  candidateOperationsPerSlot: 5,
+  allGuestNetworking: false,
+  automaticRetry: false,
+  schemaInSystemAndResponseFormat: true,
+  qualification:
+    "6/6 exact serializations plus native and behavioral checks twice per mode; failed/blocked slots retained",
+  productionPromotion: false,
+  scope:
+    "controller-authored serialization fixtures only; no GitHub repair or unseen-bug success claim; current full-thinking repair path unchanged",
+};
+export const serializerAssets = [
+  "packages/repositories/serializer-study-protocol-v2.ts",
+  "packages/repositories/serializer-study-v2.ts",
+  "packages/providers/nebius-format-v1.ts",
+  "packages/repositories/source-edits-v3.ts",
+  "packages/repositories/source-edits-v2.ts",
+  "packages/repositories/cross-runtime-v2.ts",
+  "packages/execution/cross-repo-sandbox-v1.ts",
+  "packages/execution/fresh-native-signature-v1.ts",
+  "repositories/fresh-pilot-v3/driver.cjs",
+  "repositories/cross-repo-v1/child.cjs",
+  "apps/repositories/serializer-study-v2.ts",
+  "tests/serializer-study-v2.test.ts",
+  "evaluation/SERIALIZER_STUDY_V2.md",
+  ...serializerSettings.fixtures.flatMap((name) =>
+    [
+      "manifest.json",
+      "original.tar.gz",
+      "package.json",
+      "native.test.cjs",
+      "index.js",
+      ...(name === "large-context" ? ["prefix.js"] : []),
+    ].map((path) => "repositories/serializer-study-v2/" + name + "/" + path),
+  ),
+];
+export function serializerAssetBytes(path: string) {
+  const bytes = readFileSync(path);
+  return path === serializerAssets[0]
+    ? Buffer.from(
+        bytes
+          .toString()
+          .replace(SERIALIZER_STUDY_FREEZE, "__SERIALIZER_STUDY_FREEZE__"),
+      )
+    : bytes;
+}
+export function auditSerializerStudy(reader = serializerAssetBytes) {
+  const { digest, assets, ...settings } = JSON.parse(
+    readFileSync("evaluation/serializer-study-v2.json", "utf8"),
+  );
+  const sha = (b: string | Buffer) =>
+    createHash("sha256").update(b).digest("hex");
+  if (
+    digest !== SERIALIZER_STUDY_FREEZE ||
+    JSON.stringify(settings) !== JSON.stringify(serializerSettings) ||
+    sha(JSON.stringify({ ...settings, assets })) !== digest ||
+    assets.length !== serializerAssets.length ||
+    assets.some(
+      (a: any, i: number) =>
+        a.path !== serializerAssets[i] || a.sha256 !== sha(reader(a.path)),
+    )
+  )
+    throw Error("Serializer study prospective freeze changed");
+  return { digest, assets, ...settings };
+}

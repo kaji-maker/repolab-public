@@ -1,0 +1,164 @@
+{
+  "format": "repolab-native-reviewer-public-results/v1",
+  "status": "VERIFIED_CLEAN_INSTALL_REPLAYS_FOR_TESTED_SCENARIOS",
+  "freeze": "e08a4ca2dbbc6f8b6452c0e832c46e5ccbab2945a5295149d1e73954698fcc70",
+  "sourceManifestSha256": "206594a076100f1ce49cc41e7b1de8bed71c41cd3994414acb9c581fd208dc80",
+  "sourceFilesPerInstall": 704,
+  "scope": "two fresh directory installs on one machine; same Nebius project and cached qualified native image",
+  "rows": [
+    {
+      "name": "A",
+      "replayId": "6699c3e9-d1b1-4178-8ed9-8a775db6515b",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "7b9e9ced1bfaf8b6d8cd056d3e8c848a17b58c47c8b1d991c53e3df0d26d97d4",
+      "sourceHash": "30b97465193b9706a1ed4046bdbcc54b686a9d686a03848f2533515597d3b4e5",
+      "readinessOperations": 7,
+      "replayOperations": 14,
+      "operationIds": [
+        "01a13ae9-567f-74d6-8682-21a500e6a28b",
+        "01a13ae9-5bbd-766c-b166-93b45dc41f71",
+        "01a13ae9-613b-7663-a993-81e9d41f09b7",
+        "01a13ae9-665e-778e-806b-2c50d35499e5",
+        "01a13ae9-7021-7745-ae4e-a6a843eaa687",
+        "01a13ae9-8136-7354-b4a0-68b129473ac2",
+        "01a13ae9-8b4a-754a-ba29-443c5bcb0bf4",
+        "01a13ae9-dff1-7167-a05a-2715a6aadecb",
+        "01a13ae9-f443-70c3-8ce1-4b8edc39cea9",
+        "01a13aea-466d-7332-8fc5-2067411675db",
+        "01a13aea-79a6-71e1-869e-3d405c3933c5",
+        "01a13aea-8947-76af-86ab-df08be7f1fd0",
+        "01a13aea-a369-7297-8407-54bae8b84a0a",
+        "01a13aea-b868-72a4-93fc-beb3671f1c52",
+        "01a13aea-d7a8-72f6-a073-869bf3be19ce",
+        "01a13aeb-17af-72e9-a550-f22d43625eb2",
+        "01a13aeb-2bed-7593-afc3-460a28e7cbec",
+        "01a13aeb-407a-7769-bacc-cab4eda344f3",
+        "01a13aeb-7e75-7092-8606-f230ed53b529",
+        "01a13aeb-9bc8-75df-88de-617459a7a665",
+        "01a13aeb-af85-7009-8172-4aa783b47b1f"
+      ],
+      "independentPassed": 10,
+      "independentTotal": 10,
+      "native": {
+        "mocha": {
+          "passed": 29,
+          "skipped": 0,
+          "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93"
+        },
+        "browser": {
+          "passed": 1173,
+          "skipped": 11,
+          "caseDigest": "e37fc9ab6b6f6a371b2c88088e955ce7542d59bd2b38157db866af49ae617474"
+        },
+        "types": {
+          "passed": 17,
+          "pending": 2,
+          "coreCompilation": "PASS",
+          "compatCompilation": "PASS"
+        }
+      },
+      "publicChecks": {
+        "passed": 3,
+        "total": 3,
+        "repeats": 2
+      },
+      "independentRepeats": 2,
+      "nativeMochaRepeats": 2,
+      "nativeBrowserRepeats": 2
+    },
+    {
+      "name": "B",
+      "replayId": "99316768-ff61-4350-bed6-c30d623ef752",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "packDigest": "7b9e9ced1bfaf8b6d8cd056d3e8c848a17b58c47c8b1d991c53e3df0d26d97d4",
+      "sourceHash": "30b97465193b9706a1ed4046bdbcc54b686a9d686a03848f2533515597d3b4e5",
+      "readinessOperations": 7,
+      "replayOperations": 14,
+      "operationIds": [
+        "01a13aeb-e303-7406-b507-2fe55bd73bc0",
+        "01a13aeb-e886-75c5-ad26-5bc16038ea72",
+        "01a13aeb-ee5b-770f-9ee3-a302093e0b15",
+        "01a13aeb-f721-76b4-8924-0c453c4c1218",
+        "01a13aeb-ff68-7647-80ac-0ce99ad1e3e5",
+        "01a13aec-0f3e-70eb-acd4-049b9d2a7a8f",
+        "01a13aec-17b3-71cb-b4bb-b0b9261f7c84",
+        "01a13aec-65a7-77f7-88bc-28a0bc2d04a0",
+        "01a13aec-7a62-735f-b6ec-cc4614b0415a",
+        "01a13aec-c962-7545-8146-b2a68666151d",
+        "01a13aec-fc31-7421-9fec-4610865860ce",
+        "01a13aed-0ba2-7612-b5f2-c6ea97562105",
+        "01a13aed-24b7-710f-8b8e-c81d35f13eaf",
+        "01a13aed-3930-77f8-8088-8fabf2cbe6e6",
+        "01a13aed-5776-728c-9e00-882d58dd672a",
+        "01a13aed-9b0f-7199-b0db-1ee864de3940",
+        "01a13aed-b0ca-7572-9205-c7387639b08a",
+        "01a13aed-c521-72ad-89ec-29b2e7eecbcb",
+        "01a13aee-0495-766b-833e-e0bca95c9a44",
+        "01a13aee-234e-73a6-a9b6-6e7a396e3fab",
+        "01a13aee-37c1-75bf-9075-ba6a757e3ec8"
+      ],
+      "independentPassed": 10,
+      "independentTotal": 10,
+      "native": {
+        "mocha": {
+          "passed": 29,
+          "skipped": 0,
+          "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93"
+        },
+        "browser": {
+          "passed": 1173,
+          "skipped": 11,
+          "caseDigest": "e37fc9ab6b6f6a371b2c88088e955ce7542d59bd2b38157db866af49ae617474"
+        },
+        "types": {
+          "passed": 17,
+          "pending": 2,
+          "coreCompilation": "PASS",
+          "compatCompilation": "PASS"
+        }
+      },
+      "publicChecks": {
+        "passed": 3,
+        "total": 3,
+        "repeats": 2
+      },
+      "independentRepeats": 2,
+      "nativeMochaRepeats": 2,
+      "nativeBrowserRepeats": 2
+    }
+  ],
+  "totalSandboxOperations": 42,
+  "inferenceCalls": 0,
+  "provenance": {
+    "inference": "none (native selected-pack replay)",
+    "execution": "nebius-sandbox; reviewed isolation/fixture probes and selected model-generated scoped source"
+  },
+  "validation": {
+    "bootstrapCounterexamples": 5,
+    "credentialFreeNativeFocusedTestsPerInstall": 16,
+    "typecheckPerInstall": "PASS",
+    "productionBuildPerInstall": "PASS",
+    "packInspectionPerInstall": "PASS",
+    "rawAudit": "PASS",
+    "priorFilesUnchanged": 1516,
+    "credentialFreeSavedStateReview": "PASS",
+    "browserViewports": [
+      1440,
+      390,
+      320
+    ],
+    "replayFilesUnchanged": 56,
+    "temporaryCredentialFilesRemoved": true,
+    "newReviewDispatches": 0
+  },
+  "estimatedInferenceLedgerUsd": 0.1815438,
+  "limitations": [
+    "Same machine and Sandbox project; existing native image reused",
+    "Separate-machine/project provisioning unqualified",
+    "Unaided human reviewer and public access unqualified",
+    "One exposed Preact feature; no new model repair or hidden-task accuracy measurement"
+  ],
+  "retainedPreparationFailures": [
+    "Read-only audit initially used an evidence-path field stripped by the isolation validator; corrected raw receipt lookup. Zero provider dispatch from that error."
+  ]
+}

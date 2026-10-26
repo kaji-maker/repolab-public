@@ -1,0 +1,810 @@
+{
+  "digest": "aa800942aa4c3eeec3601eb9ce3c82ee8bb38adbaa144ba331c1a730939a76b7",
+  "format": "repolab-failure-integrity-qualification/v1",
+  "maxModelCalls": 0,
+  "maxSandboxOperations": 4,
+  "operations": [
+    "fixture-stage",
+    "fixture-load",
+    "fixture-controls",
+    "fixture-cancel"
+  ],
+  "fixtureTail": "\nthrow new Error(\"REPOLAB_REVIEWED_LOAD_FAILURE\");\n",
+  "cancellationProgram": "const until=Date.now()+5000;while(Date.now()<until){};return 17;",
+  "portableManifestSha256": "b067b367f415bd3bf7b5dc2be79ac98937d9f34ed6194301915ca81867e765c0",
+  "scope": "Reviewed controller-authored fixtures only; zero inference. Qualifies opt-in guarded transport and shared candidate-gate orchestration. Historical repair protocols/defaults remain unchanged.",
+  "assets": [
+    {
+      "path": "packages/evaluation/failure-integrity-protocol-v1.ts",
+      "sha256": "91191038beefdee99d3419735ec9f6505cc5102a56f239ed3074a02a8786da93"
+    },
+    {
+      "path": "packages/execution/guarded-cross-sandbox-v1.ts",
+      "sha256": "907a2c39643b3c99fa31f78b3eff392a33b68f7910fe888ff7c751ece8d88717"
+    },
+    {
+      "path": "packages/controller/candidate-gates-v1.ts",
+      "sha256": "733744e569d60a9972d14627f481ec06ec90bcce11d2bba7da4a748a5e1488b0"
+    },
+    {
+      "path": "packages/repositories/portable-module-qualification-v1.ts",
+      "sha256": "f62d27617eb6d505454104bd6b00828e7f93dd7908ac44246993e26ad9c27942"
+    },
+    {
+      "path": "apps/evaluator/failure-integrity-v1.ts",
+      "sha256": "90fe52d45ca0c54a8da9b4d14ee89e50a3fc0b53fa4568af5bf0bc34d4a27659"
+    },
+    {
+      "path": "tests/failure-integrity-v1.test.ts",
+      "sha256": "14a0645e1c8a0b54187eb34960e2d1893e030aaf6682bbc06a6908114faabff0"
+    },
+    {
+      "path": "tests/portable-module-qualification-v1.test.ts",
+      "sha256": "229fd5cd5929bbdbc51f82d68d341ebf4260d6eae527971e35541469ff7cf695"
+    },
+    {
+      "path": "evaluation/FAILURE_INTEGRITY_V1.md",
+      "sha256": "f94ebb02e1c4783b475832cc003903800f76df44e2225633c24092aa566b21ff"
+    },
+    {
+      "path": "evaluation/module-admission-portable-v1.json",
+      "sha256": "b067b367f415bd3bf7b5dc2be79ac98937d9f34ed6194301915ca81867e765c0"
+    },
+    {
+      "path": "evaluation/github-anchor-v4.json",
+      "sha256": "8fa92acff1c1bbedffacaa0f739ed18462dba52e6ac27401dc7c08d4ea19415d"
+    },
+    {
+      "path": "packages/repositories/github-anchor-protocol-v4.ts",
+      "sha256": "3863f221bdfc1e4682c28be306d7f4c16ad5b0c6a6cd838f58779de468b993c9"
+    },
+    {
+      "path": "packages/repositories/github-anchor-v4.ts",
+      "sha256": "dd14697905a7f98770bb51d7b09de66a9333f3d5dfa440eb7f34c856a62385c7"
+    },
+    {
+      "path": "packages/repositories/module-admission-v1.ts",
+      "sha256": "fac91c41d93df46483073c4b27bd6fa3af0e88775e776592b0b3df4fc866e4a6"
+    },
+    {
+      "path": "apps/repositories/github-anchor-v4.ts",
+      "sha256": "8bc787d91ec2494b9c472683db493fee9c35a0f738745878320614b37d5b8db8"
+    },
+    {
+      "path": "tests/github-anchor-v4.test.ts",
+      "sha256": "7b120c12e6583f5a23cef9cc5fca1ffd6314453867ecbef1dad51866c2189e21"
+    },
+    {
+      "path": "tests/module-admission-v1.test.ts",
+      "sha256": "397e0d78b6b626f9ecb200078b4280f99ff284432db7d165cac58deb97056c20"
+    },
+    {
+      "path": "evaluation/GITHUB_ANCHOR_V4.md",
+      "sha256": "c024d0c7d31c7996a0d321574830c1145349fc8453d18f1067670afe3859bc4e"
+    },
+    {
+      "path": "evaluation/module-qualification-v1.json",
+      "sha256": "6cf0763b1af59eadfc8e9b266ab9488d05dde47316dbceb13a3cad419174aaeb"
+    },
+    {
+      "path": "packages/repositories/module-qualification-v1.ts",
+      "sha256": "57d4fdbd008cd8a32984bb2e857542d02b25b4dfc674609f13778a54044d3a55"
+    },
+    {
+      "path": "evaluation/github-anchor-v3.json",
+      "sha256": "65187d87eed5ea5c8ee32f2577dc3e4617a631159159583f05597e5ee7ee7267"
+    },
+    {
+      "path": "packages/repositories/github-anchor-protocol-v3.ts",
+      "sha256": "4897aa682bda50aab3aacaece361adbb03f65bbeba1b3195f4ab1131b3e842a8"
+    },
+    {
+      "path": "packages/repositories/github-anchor-v3.ts",
+      "sha256": "be0dc91fa630da0501a280638e1ce1b5cd89ab043931a58493d9209fb7b03bf7"
+    },
+    {
+      "path": "apps/repositories/github-anchor-v3.ts",
+      "sha256": "0611bdd46b65247ff34bff12283382ce5291b8acae16b2aad501484768ecda70"
+    },
+    {
+      "path": "tests/github-anchor-v3.test.ts",
+      "sha256": "62e1397a6ee48220538dbf7923e5864699f68906705e4d6453b7f3321a7b5720"
+    },
+    {
+      "path": "evaluation/GITHUB_ANCHOR_V3.md",
+      "sha256": "77b9945aa769f02b3be1d42e36eeda82e43cb692357eb6a4a84bb1b9aecd1a2c"
+    },
+    {
+      "path": "evaluation/github-anchor-v2.json",
+      "sha256": "91b53ab103fc29c2202683641aa7c134be17abede4042ccc122d6128de785866"
+    },
+    {
+      "path": "packages/repositories/github-anchor-protocol-v2.ts",
+      "sha256": "7214875b2fcac0103f6d620078bcb9841daa9f50c74792a96e8a276112c678ca"
+    },
+    {
+      "path": "packages/repositories/github-anchor-v2.ts",
+      "sha256": "f4ceaa9b4b5b04abe19adda64793ba261e8484a226358aa401fe69adf10b2eed"
+    },
+    {
+      "path": "repositories/github-anchor-v2/driver.cjs",
+      "sha256": "e90f9567e5c31cfb2bd2a5d8cdfa2d7419c3327159073523b54463a7112c6d35"
+    },
+    {
+      "path": "apps/repositories/github-anchor-v2.ts",
+      "sha256": "d00eafe68d36c3bd66bdcf32cb430ee3604c94790a2775551e987f1afb25541d"
+    },
+    {
+      "path": "tests/github-anchor-v2.test.ts",
+      "sha256": "4675c09edddaa46d8e503189c66d164ecbbc71da32fa736ce4828d2d6d9e5bae"
+    },
+    {
+      "path": "evaluation/GITHUB_ANCHOR_V2.md",
+      "sha256": "36fc85ee089a9442ddcda3ff27793c542e90f73bbdee45ddf44893b721625ae0"
+    },
+    {
+      "path": "packages/repositories/github-anchor-protocol-v1.ts",
+      "sha256": "1cbba34ad2dd986a6d878f2b53e822c43e0930a8e750fffd293d4bf2ca6148cc"
+    },
+    {
+      "path": "packages/repositories/github-anchor-v1.ts",
+      "sha256": "a6868a005e6eb6c3278776e6d4276f14f6df59042c6d7ede67d04070e1feded6"
+    },
+    {
+      "path": "apps/repositories/github-anchor-v1.ts",
+      "sha256": "2a24cc7aa63c687a0181bd196dd5fdf236b7ac367847378994ec505ee37947c8"
+    },
+    {
+      "path": "tests/github-anchor-v1.test.ts",
+      "sha256": "8205d2512c56d3bde18f06770d8f563ea412fe188b5c47d539c377bcf293359c"
+    },
+    {
+      "path": "evaluation/GITHUB_ANCHOR_V1.md",
+      "sha256": "cf85b33fe165fb1710412ca84df5e9da96fb54538065028cf13d5c479b57145a"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/manifest.json",
+      "sha256": "5a68cae5cb6e6aa7793a3d3aface4a71cffe6144ed6406ebed30f2430ff9a2a3"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original.tar.gz",
+      "sha256": "591573cca659e574a7cffbee8c94a495b4e687cc36e62491a3aac0179c9ef1ed"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/public-cases.json",
+      "sha256": "e988fc0382a54b65db3ceda2b19a6e927c4fca45ea9f015bbed8cda637fc7fe0"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/independent-cases.json",
+      "sha256": "99daef45c9d2bef0f809b1f1d34817b09cbddde0237ce71ce87046cc4ed26478"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/.editorconfig",
+      "sha256": "7866d5ec4f83e87f592f987fbc0f4fff4ddb04d19d8924376513fd1f71c17833"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/.github/FUNDING.yml",
+      "sha256": "0a1dbb23eeb42f41af4ddf1e8a8c532108948c681eb1a16f7f517687aa5faa46"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/.github/workflows/ci.yml",
+      "sha256": "5bcf6b7fa95feadfbf91f7cbb0d64177a9d6bf56c3df755a469bb432562f2377"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/.gitignore",
+      "sha256": "1b822620dc94a8d4a232e776a12a7ad8fbf936e12478c1c8afc57a45bd373b60"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/bench/fixtures/default.js",
+      "sha256": "118ed58d36d3919831e90f34e2035612d0f7b40f052853aeaacd2f6e6dd0348d"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/bench/fixtures/full.js",
+      "sha256": "b602cb641785e84cee2add9de6627bc5a7d23903efd36dc997720cf6bb90a4c7"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/bench/fixtures/json.js",
+      "sha256": "3dbd9c22dedd13c2ea1ecd6b44b2f81bca0e31c6dfc74a3a53487ed8c2eb1ff1"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/bench/fixtures/lite.js",
+      "sha256": "f56c8329ca44a38bd90a29c603fb65c6fcb5b6ddc02a3a19378434d72e2df439"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/bench/index.js",
+      "sha256": "4ae99481be0c00453f572d2dcfeb2d2cffc0242142e7909c371ea96acfecf91b"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/bench/package.json",
+      "sha256": "01eb854927927ffc4d18d06dfee54eeb410e7e7d1dad5c97b28b403ab61d9953"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/bench/validate/default.js",
+      "sha256": "8e3f1a56681618db74f5b3222fe3b4ecd15e4694821371ec0423fd34110ffeaa"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/bench/validate/full.js",
+      "sha256": "fe1836acbd1ac88f6607e21137b000049ca2634ed8eb30b8d650fedf4f7d96f6"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/bench/validate/json.js",
+      "sha256": "0cc440584c0d0861e3ff774bf1b7423404084d76e6c1b172cbc7765028ac2da6"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/bench/validate/lite.js",
+      "sha256": "b4724d0a8f9b7442752748cb005603f5fbd3f52c5ebc209385631a5c82843b90"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/index.d.ts",
+      "sha256": "3b863352a90ff0678ba79ca93f90141a6e21bef99386f3f65e599ba83e26e5ae"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/license",
+      "sha256": "9a9edad7baae52622bddf3c15b2ef8a33d2c89f2d25408ad13e8a7481c6b0c97"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/logo.png",
+      "sha256": "da64875ddff60bd83b9628b37fe2eb49066bb9603020a6d73984eeb1fb1383ed"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/package.json",
+      "sha256": "429e5da2add104c0987db6699738717dcb37d072eea156de1e83fcedbe0fcb53"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/readme.md",
+      "sha256": "3919aaaba14ea9af7bbba00bbb0d24df9947cb80da196e175cbdfa9d630aaa8e"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/src/full.js",
+      "sha256": "9620449afca3d2bae563d44ef0ed501ed0d4e1e8295e478f527b3c9d60e126cb"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/src/index.js",
+      "sha256": "44d2d2a5ead81851de1982360c27bd2be4b90e1005871fd9f18005480937bae9"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/src/json.js",
+      "sha256": "656917dbd988688c8ce6054c6e99653f9b9088c1456412607c6f94ba11bce577"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/src/lite.js",
+      "sha256": "d4b56bff68b4085ffb10a4fc8f2f0a5578eef4c8e3970ece5c669de5aba7934f"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/full.js",
+      "sha256": "5cd086109d3274700eaadb7453703c3864c8162d0266259f25f6952f567b16f9"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/index.js",
+      "sha256": "6f49e432eb0115aa6ecb4da9aee2d13b12e5e110b06d10de0d40b8c2d76a4915"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/json.js",
+      "sha256": "245b1ffa79137bf7341a58d18d81890de5c6fffb92cf02eaee7fef1ddfacaea7"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/lite.js",
+      "sha256": "9ea28c144c6053616c32a3d1ca9c03139965c173de0b69fb926c99cd5fb9f44a"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/api.js",
+      "sha256": "b3cc1a21c667423843cad4532961050b9a1af4997408e0264f4239e939dd5480"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/array.js",
+      "sha256": "b1c64a417ab26a46bb23b452818c894e3ea0b2dd8861c8d3a566f30e14286c08"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/boolean.js",
+      "sha256": "8fc77eb22bc48a40197759eb5a4114a957549901511d48267884640a6420620c"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/class.js",
+      "sha256": "4ed652d68b5d8a51ad01e7c4b610514b34b980c7d3accc1b895ba3f8cbaef3f5"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/date.js",
+      "sha256": "1e2ac5882a4eb9cb87c640aca42fd4f56651c0e0d1b1d2202766e088911e7bbf"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/descriptor.js",
+      "sha256": "8e90e3b17945da9307b5a316d240ff8409ceb17f9fd10aa23eab4d295158fdcc"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/dictionary.js",
+      "sha256": "a68c83118812f32cdd053b5a404cbc74f87f19788f7ced004904820049ded090"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/function.js",
+      "sha256": "75b05617e7a793ca2a34b8ba4b4fa268f5ffe0fab63632e9d58edc882826c218"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/index.js",
+      "sha256": "1f4438c6b19eee089e50d10aa0a5e4361c1a5d0ac6d50a1535faa2cb530fb756"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/map.js",
+      "sha256": "a07b2f0a84e95b8b93305712c6be9f8b555de8475fbdee0273593b7ce3b88cdf"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/nullish.js",
+      "sha256": "1cf5965dbcfe9913bfb763b97fed771b1d0a7cd7f15c13abae1b58f2922362e7"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/number.js",
+      "sha256": "9b54a38143d8a51f8f48d583324a1dc8676273903091a989b982a0e2af0c6747"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/object.js",
+      "sha256": "cc5370b135e48f4652a79090a573b238563e3095661d373b87ff732d9cb15a35"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/pollution.js",
+      "sha256": "825c96acaf11dde13ada8947d925c9dddb393c65dadf62b450797fb46f02555e"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/regexp.js",
+      "sha256": "e4922158fe6b93c1d841aa3d1cd32bc9c3c726e28842d9707953fd8fd1f604bb"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/set.js",
+      "sha256": "eab971456ce7594f8226ce045be6a7a3ba00ab0457d6f753510e35957a8efa15"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/string.js",
+      "sha256": "538d603dcbb4eae53081ec8ae2eb180be03db83421fe3fdec8e06effd8e6c3d3"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/symbol.js",
+      "sha256": "ff599bae6846e102b2ba91866863b8c5720fac01cb9a3daa4aaed8edc9cc46cc"
+    },
+    {
+      "path": "repositories/github-anchor-v1/klona/original/test/suites/typedarray.js",
+      "sha256": "bfe1d47ad57bd8e1a4bf815a82360b154163b7cd20146456d27babdf77bce2ff"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/manifest.json",
+      "sha256": "29ef48d8d2b925f18d9462450de0a8434ffab6ba36e05cba053d93a07b7450ae"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original.tar.gz",
+      "sha256": "dd512462f8a41473076faaf2a734969232b6cc0209725ce46e1e383f96985964"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/public-cases.json",
+      "sha256": "5b8413bc245b2b2ce5aa08de6c37256e5ac37148cf468ff2010804c363ad2bea"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/independent-cases.json",
+      "sha256": "effa666b55f9792a248d445b65e773968b288ae738d93fb6dfefe070eb1a8af0"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/.editorconfig",
+      "sha256": "7866d5ec4f83e87f592f987fbc0f4fff4ddb04d19d8924376513fd1f71c17833"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/.github/FUNDING.yml",
+      "sha256": "0a1dbb23eeb42f41af4ddf1e8a8c532108948c681eb1a16f7f517687aa5faa46"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/.github/workflows/ci.yml",
+      "sha256": "031f9d87640c86d3d4810c5163e88581183e63cc29850dabcc53556758f5eb2c"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/.gitignore",
+      "sha256": "24ac4517b051a3aeafb85261232e6dff8f07667129610fba19de5ce63e29e5d6"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/bench/fixtures/basic.js",
+      "sha256": "dc6a369f1fcdeea61ba39d297543ca5a8d7909f0f55428d1c8d97e16ae074f61"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/bench/fixtures/complex.js",
+      "sha256": "b461a053c99a702b97e83d6ded8d3eda8cafd4c20d0d13174ec93812a6555108"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/bench/index.js",
+      "sha256": "b797f1a5ce887df63a318ea8705ce2fb3d80827ada30be528a7af05f0ec4a352"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/bench/package.json",
+      "sha256": "f1345441334b32cb69182dc4a2d653845cc3eefa6dd62be8c65c3bf6bb707ffe"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/index.d.ts",
+      "sha256": "41a5ae482e864a6128e6054e88f1c0e06884793f92aff5c67144fb02d2373079"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/license",
+      "sha256": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/package.json",
+      "sha256": "a41e430cd3d990700f1544c5ffece552449ab758d778fa34ad5458cf6ec35d6b"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/readme.md",
+      "sha256": "13d0baa49b78a3567af96171135e0784f2be2e5a19dc775d0b4f92647267b887"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/src/alts.js",
+      "sha256": "67ca727f698b40030f1b4b13010791c8cd2341abd2f1e82d1f3fef943fbdd857"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/src/index.js",
+      "sha256": "55841ec4ce25d76ccb43d18bfe3056f2ba0ce49afc58e3446055b1bd2c7376af"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/src/lite.js",
+      "sha256": "49ff561397669f6e0707d9eb8542a6fedad14e7930cad610538e596129dd41fe"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/test/index.js",
+      "sha256": "3651d13c1d815c1f3d3ae168e30556df04f7c1239aacac30b989dcf85705047d"
+    },
+    {
+      "path": "repositories/github-anchor-v1/dequal/original/test/lite.js",
+      "sha256": "cb9f468c36dca6289b057e5c0120e2821b11296155bde0e85d720f07a1f9c593"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/manifest.json",
+      "sha256": "06ffcc388d288db9075a0d8653c996b244db3e0c96068ba158f3774f262b413a"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original.tar.gz",
+      "sha256": "6f24095fd5147b5eb118e14aff69a16bafd86ed129cd6d969208ca8e0afd031c"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/public-cases.json",
+      "sha256": "9e77d1fd385aa55d0a3ef153d20fbc0af0d7124727fe6e049b9c558b074b5c31"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/independent-cases.json",
+      "sha256": "b516630cd4e8ea0c6b04f6fb8992044306046b46d7c175629ef805243ad5b96f"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original/.editorconfig",
+      "sha256": "7866d5ec4f83e87f592f987fbc0f4fff4ddb04d19d8924376513fd1f71c17833"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original/.github/FUNDING.yml",
+      "sha256": "0a1dbb23eeb42f41af4ddf1e8a8c532108948c681eb1a16f7f517687aa5faa46"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original/.github/workflows/ci.yml",
+      "sha256": "3ecce6a186c50fa6ec2ef62ba9d99df4191384211ddf07f1bf27284c7454fb9f"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original/.gitignore",
+      "sha256": "2638be791ee5834ba85114be6da6bc897a0a2fdb7b97c96bc411005d10daa7e1"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original/index.d.ts",
+      "sha256": "7bf07341d24034cb6c5b7bedb74b97f39ac74e9e1c95ffc8e879ec841caae18b"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original/license",
+      "sha256": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original/package.json",
+      "sha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original/readme.md",
+      "sha256": "77d8b41fd808c8fc3050a1f451e2ef6b3fb94bc9648497597d547c4aa686358d"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original/src/index.js",
+      "sha256": "108310cff0fac78b96fc0a114b976662e19f321d57a18541cf57f523a46538d2"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original/test/inject.js",
+      "sha256": "2aca80376ef427e69eb765fc872d7402663c5b7524d0c5ad871c258af3ff802d"
+    },
+    {
+      "path": "repositories/github-anchor-v1/regexparam/original/test/parse.js",
+      "sha256": "7b218bd2221588e3d4e8b2211c5c3b405a9706b9da832de4d5ca509f1fe321f4"
+    },
+    {
+      "path": "packages/repositories/semantic-plan-protocol-v2.ts",
+      "sha256": "7591951d1eaba46d9bfb816c904171b7d5d1d859c860cd639187ae41f7920527"
+    },
+    {
+      "path": "packages/repositories/semantic-plan-v2.ts",
+      "sha256": "527c46b3f119bf9cf76dd05b20d5068bf8480478811a5d5f66e2683016b3c618"
+    },
+    {
+      "path": "packages/repositories/source-anchors-v1.ts",
+      "sha256": "04394f0ea0fbeb639bfea27dd93e5ae0d8d24df52313276742f17f515a8e10f4"
+    },
+    {
+      "path": "packages/repositories/source-syntax-v1.ts",
+      "sha256": "bbd51f14738b82ac26b4eb5cb30194b4191eecb97d94234a81bcad30559e3aba"
+    },
+    {
+      "path": "repositories/semantic-plan-v2/driver.cjs",
+      "sha256": "4b57084b04e9225402ff053908557f06bb00aa201357e867b0348c0e990f0c2f"
+    },
+    {
+      "path": "apps/repositories/semantic-plan-v2.ts",
+      "sha256": "a7feab48a80d68faf84a54a0343b3d81f5936219bf43f200bbd93d843e42fabe"
+    },
+    {
+      "path": "tests/semantic-plan-v2.test.ts",
+      "sha256": "a87ed4d114375f1060dd865f2200b940f6be73551d7cbed6d2b0cf23708b4340"
+    },
+    {
+      "path": "evaluation/SEMANTIC_PLAN_V2.md",
+      "sha256": "3ff85af3987e26666a9d12d7bff199aef8f070ecfcb5f4a055e9bdb7afe26228"
+    },
+    {
+      "path": "package.json",
+      "sha256": "0d02f2b7d066d5d0a93ce5d50360d9169bb4e3ac9ba80b0de8d1236e51b37f1b"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "665838080f16fb24a5002a2898feaaf064c326023e007ab83bbb5dff95db624d"
+    },
+    {
+      "path": "packages/repositories/semantic-plan-protocol-v1.ts",
+      "sha256": "fb9c203c0296b3b2abd5c7e33ef47ab7a88dfc662fee6ce24a482e1460135c6c"
+    },
+    {
+      "path": "packages/repositories/semantic-plan-v1.ts",
+      "sha256": "10ee829ff3268af2c1964182513f4af4d05a723aaae93ca08c65fa8274955f7c"
+    },
+    {
+      "path": "apps/repositories/semantic-plan-v1.ts",
+      "sha256": "6133b71dd2b7204ac1195a7e42ae5e1f5275e26e9be4452299ea42103ccab450"
+    },
+    {
+      "path": "tests/semantic-plan-v1.test.ts",
+      "sha256": "eaaad1b0b2a8ed77ce19751e3c52ca0f79d844ae74e0aae3f7e06f144599dd2c"
+    },
+    {
+      "path": "evaluation/SEMANTIC_PLAN_V1.md",
+      "sha256": "afd324e919075e5e79c6b1e40914964ae4fac0991092da5e7dfeae1ddada3a28"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/count-window/manifest.json",
+      "sha256": "492e12352a9a5331e10bda9d6923f66c54e3d1c9949380f3d8c3293fc76a0cee"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/count-window/original.tar.gz",
+      "sha256": "7cc3d1e83dd3ccf4f4f7ab2fcef6e1b304894952cce809a0f13ffc1c77fcd090"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/count-window/index.js",
+      "sha256": "08f6273d31c7736233abdb74811520ccb20e2fa14576e9107d9bdb09d5d0d9c9"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/count-window/native.test.cjs",
+      "sha256": "ee5456ee1a167752672d8a77f87066f05bca4a11cc1cf0acf1aae9d7d68a920b"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/count-window/package.json",
+      "sha256": "ad6eb27cd20617a5dbc27a68de99bc1af1e63bd008c58b53fc0b54e5ac1a907f"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/count-window/public-cases.json",
+      "sha256": "1cf799f8709a63d065bf9cf877db108f468147532cfbdf0aedb55fd1c2154447"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/count-window/independent-cases.json",
+      "sha256": "8792020b266e777ef13f8628c9142cbf2e3adf1d79831fd948a7fed33b8a191b"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/nullish-default/manifest.json",
+      "sha256": "2244e668bba87df878f0ca1cf60c7080ab336825e85791dc61bc2d4b346c826c"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/nullish-default/original.tar.gz",
+      "sha256": "96a4850c45176eb4bae1353dbdb2e63a2bd7463fe4e371ba52c1389e9b1a73e4"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/nullish-default/index.js",
+      "sha256": "b59c15a7a616abc52a630983ef9a69b58b06ba91110b888144f72c2a12a54073"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/nullish-default/native.test.cjs",
+      "sha256": "f986b26bf7dd6d820e1cb4b91b10ec35c3db6fd032bc2814d995d1bc358e8e6f"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/nullish-default/package.json",
+      "sha256": "327e2be34122842198d9ca258962eaa49ad29b2b1ef1a4f49ddea5c2457dacbc"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/nullish-default/public-cases.json",
+      "sha256": "6c8dc3f2af3c739983fd96999e4e690ba8c4fc8f6f22240354620967318c4ca9"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/nullish-default/independent-cases.json",
+      "sha256": "f083281e6d752b75f669df95728d67ed81b6f4cbc511f9f421fdffa109389950"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/option-default/manifest.json",
+      "sha256": "a4563b8d0ee6eb4a8cc4fa670f443d00adfb21e68515fc5262675d6027a0dc00"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/option-default/original.tar.gz",
+      "sha256": "d565178e16fd86f668016985f4fa97dd1abeede70ed0ffd95d0e7bd3f5d18fd9"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/option-default/index.js",
+      "sha256": "93b0990bbb5ee0df93e435ec638808c1184a35ddd1c24a19d2fc586deb1a5e72"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/option-default/native.test.cjs",
+      "sha256": "0238a5352683822b897d4e7fb05ce8ae81fefa5e0076c6b039468afd172e6da2"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/option-default/package.json",
+      "sha256": "0b90666433dd43a708810a8f66762d587693934ef0c306b609fab2d785a3da64"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/option-default/public-cases.json",
+      "sha256": "86a2bd67060ae2b50b85c59b33417556ee58c7d820b3e37ad8ae50f3533505e1"
+    },
+    {
+      "path": "repositories/semantic-plan-v1/option-default/independent-cases.json",
+      "sha256": "33e21f0a4af8d950f43220128d9c23694ed4c60f7d48f59bc73dccf50ccedc20"
+    },
+    {
+      "path": "packages/repositories/serializer-literal-protocol-v1.ts",
+      "sha256": "1c155a1d11cc6f80b4b350e6ea3eea8b18509b937dcdceeed5a413b039a6e4ab"
+    },
+    {
+      "path": "packages/repositories/serializer-literal-v1.ts",
+      "sha256": "af2630426590bde2c14c571929e7484a6f654451f75a392b0035ab2d3a4af222"
+    },
+    {
+      "path": "packages/repositories/literal-intents-v1.ts",
+      "sha256": "bbd91ab3955e10d111c79870cc9d64586cbb1b7d4598232625f73ca01dd39d28"
+    },
+    {
+      "path": "apps/repositories/serializer-literal-v1.ts",
+      "sha256": "37dca4c7c5cc58bcae808fcfe8affeca0f5aa26e98bf5c852ad34920c8243ca2"
+    },
+    {
+      "path": "tests/literal-intents-v1.test.ts",
+      "sha256": "6b1e675fad6d0debc7fe24f7c9ffa77d6e91f7fa96e2d11c883f5dba1aa99510"
+    },
+    {
+      "path": "evaluation/SERIALIZER_LITERAL_V1.md",
+      "sha256": "22487c81401dfff30b14724b3d317a0c78a0164005ee0bfc9fccf3c6af3b2e1f"
+    },
+    {
+      "path": "evaluation/serializer-literal-v1-baselines.json",
+      "sha256": "b52c9b3d83a4a3cee4a10338b5a9b61180604e415cb1b3175c42b97e89e12c85"
+    },
+    {
+      "path": "repositories/serializer-literal-v1/escaped-crlf/intent.json",
+      "sha256": "b58a69f40e2ddd6c63765023a095dda69b08d824104e56a0bfa405c40ed030fc"
+    },
+    {
+      "path": "repositories/serializer-literal-v1/duplicate-branches/intent.json",
+      "sha256": "7862f2a393243e45bb62f573edf01942613c7df16c1068b4f2dd60d8a618e1b5"
+    },
+    {
+      "path": "repositories/serializer-literal-v1/large-context/intent.json",
+      "sha256": "7e1ce502b57216d24fe51244f7dc7a7aa72ea051bce89216c4c5f716704e83f4"
+    },
+    {
+      "path": "packages/repositories/serializer-study-protocol-v2.ts",
+      "sha256": "bcabd241fd2620f24012484c7a12963152cf39360856e2ad4f611b8593789069"
+    },
+    {
+      "path": "packages/repositories/serializer-study-v2.ts",
+      "sha256": "cf7b0971904264234fa362750628b2da99983c609fe5124a29c356facb4c3580"
+    },
+    {
+      "path": "packages/providers/nebius-format-v1.ts",
+      "sha256": "2d68596797ce870f42459c78e77d7a8e419c3b011005ccf7331a7bac9d71a876"
+    },
+    {
+      "path": "packages/repositories/source-edits-v3.ts",
+      "sha256": "bcae84805d048861b78b5f774a25e0371e963b85c7ebb6d835b5509e831807aa"
+    },
+    {
+      "path": "packages/repositories/source-edits-v2.ts",
+      "sha256": "4ad1b86cb415a714a7217b91cbabfb283e9c5476eaffe746c2ed08a8846e5d69"
+    },
+    {
+      "path": "packages/repositories/cross-runtime-v2.ts",
+      "sha256": "523b5769b4689c4e8a1c9b932aad06a9dd5e2525e6052690c642082b2a09d690"
+    },
+    {
+      "path": "packages/execution/cross-repo-sandbox-v1.ts",
+      "sha256": "d3fac4719169a3f55e71578faa26711ab963c8b94a3a0471e6688a156c1942ec"
+    },
+    {
+      "path": "packages/execution/fresh-native-signature-v1.ts",
+      "sha256": "f2c6fec989a08961d0dc5245fc2300ad581831423387206eb07d6bcf88b29349"
+    },
+    {
+      "path": "repositories/fresh-pilot-v3/driver.cjs",
+      "sha256": "1e9864d8bdca392e7d2a7c4e523e4d3b8f1077382119fa8a1c338b5224edb6b2"
+    },
+    {
+      "path": "repositories/cross-repo-v1/child.cjs",
+      "sha256": "d844ca28a33a6aa30443e0f9c5ab10312c5c7bb1ffb6d01463a55121e4de5706"
+    },
+    {
+      "path": "apps/repositories/serializer-study-v2.ts",
+      "sha256": "1c7df078e70a7eee1f6de9a43dad931d155dd77fadc22c7685379aa8adc1e874"
+    },
+    {
+      "path": "tests/serializer-study-v2.test.ts",
+      "sha256": "3a73ecc2b02076277e624908fececd60a87ca0e645c5721c8848761ef97d99af"
+    },
+    {
+      "path": "evaluation/SERIALIZER_STUDY_V2.md",
+      "sha256": "187240d577baae09ac0077cff5f5ade9ffec96d647959593785e514eaf8e3985"
+    },
+    {
+      "path": "repositories/serializer-study-v2/escaped-crlf/manifest.json",
+      "sha256": "151177b9142d5ee9bfc13cae5bf18a176cdf11f0edf043218f22dbf282db9650"
+    },
+    {
+      "path": "repositories/serializer-study-v2/escaped-crlf/original.tar.gz",
+      "sha256": "d4bc2db9734a513d993d0ee0aa3a36e50f46480f61163b1f872a47a52e934fa9"
+    },
+    {
+      "path": "repositories/serializer-study-v2/escaped-crlf/package.json",
+      "sha256": "1bdeb081334032d1b7b0f36629b7c6dbf7399a41cea9ca0ea43c207b7c815e1e"
+    },
+    {
+      "path": "repositories/serializer-study-v2/escaped-crlf/native.test.cjs",
+      "sha256": "b817c917b45c9d7540efb44a53e37ba222f196b087257ddad8bc8014b112d6a0"
+    },
+    {
+      "path": "repositories/serializer-study-v2/escaped-crlf/index.js",
+      "sha256": "5b2b3918d389d22d392c53565c9d8096d96fc3d1e769100ae401557f643676f9"
+    },
+    {
+      "path": "repositories/serializer-study-v2/duplicate-branches/manifest.json",
+      "sha256": "a8cb62cf378c3221613a7cf6704c8bbd46e559dbb0eb2c7f8430010562105423"
+    },
+    {
+      "path": "repositories/serializer-study-v2/duplicate-branches/original.tar.gz",
+      "sha256": "c91f0ae84078db129d36e679bfd951e1ff81b1be2d88a7c39031a6e47be69ea9"
+    },
+    {
+      "path": "repositories/serializer-study-v2/duplicate-branches/package.json",
+      "sha256": "1bf8ea869c92d5e6c6a6a3f9e299ae34dc5cef272cda62671fc53671c0a39126"
+    },
+    {
+      "path": "repositories/serializer-study-v2/duplicate-branches/native.test.cjs",
+      "sha256": "b817c917b45c9d7540efb44a53e37ba222f196b087257ddad8bc8014b112d6a0"
+    },
+    {
+      "path": "repositories/serializer-study-v2/duplicate-branches/index.js",
+      "sha256": "12194881bba2ebf202bae1cd70f5ad5b51fb252402f718ddd0a5d182f81478bb"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/manifest.json",
+      "sha256": "76d05e59bd8f7809acb9cf5b1c1ce4a6366088adf646842d8fb107f691dea9bf"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/original.tar.gz",
+      "sha256": "6b4df725e6fa3b82f988d13f3a425c22305614d3e21861f47215909a859d7ba3"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/package.json",
+      "sha256": "5ced28faba494a3813e1abb8ae519e0589b3711169674b6ec037a38cf48f32f6"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/native.test.cjs",
+      "sha256": "b817c917b45c9d7540efb44a53e37ba222f196b087257ddad8bc8014b112d6a0"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/index.js",
+      "sha256": "89e6475d51f7219c9aa18916fdac84be1dd7ea93e301bab660080c2460b0ad42"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/prefix.js",
+      "sha256": "87a1303816a2535d090eca158ce69f77406386c382df600404c8d9cc5d611a91"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "format": "repolab-preact-selected-patch/v1",
+  "freeze": "9a46c592b4538aec6ddf3ea7c9595a7d87ee23b5784a309817acaacf7f9a7bee",
+  "taskId": "preactjs__preact-4436",
+  "sourceHash": "b984dd0ab4e2c881495c546e9d4859178a6edc486dd2518823db08562b31dd49",
+  "patchPath": "evaluation/preact-trial-v10-selected.patch",
+  "patchHash": "e50e88f191af6c37bf2eb245dfbdc0de6ec5851aca374f2db35b785f158dcd9b",
+  "scope": [
+    "src/diff/index.js",
+    "src/diff/children.js",
+    "src/internal.d.ts"
+  ],
+  "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+  "inference": "actual NVIDIA Nemotron through Nebius; bounded nested callback program",
+  "execution": "actual isolated Nebius Sandboxes; public/native selection then separate repeated lifecycle evaluation",
+  "scaffolding": "Developer-supplied qualified ownership macros and compiler primitives; model chooses the bounded instruction program.",
+  "limitations": [
+    "Exposed feature request with developer-authored independent checks; not hidden benchmark accuracy.",
+    "Static patch reconstructs the tested pinned original snapshot; no general repository or pack compatibility claim."
+  ]
+}

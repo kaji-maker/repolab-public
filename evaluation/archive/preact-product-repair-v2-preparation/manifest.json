@@ -1,0 +1,119 @@
+{
+  "status": "NOT_RUN_PREPARATION_TEST_FAILURE",
+  "freeze": "77b51395e8b9a14f86c1405395a04df209bf932723970cc963ea26c8dc8c4306",
+  "protocol": {
+    "format": "repolab-native-preact-repair-protocol/v2",
+    "taskId": "preactjs__preact-4436",
+    "profileFreeze": "2bfd0055be82c8f4a1dd77f232d08f0c5fb227d72c41b972f5903fdec6a18384",
+    "productFreeze": "e08a4ca2dbbc6f8b6452c0e832c46e5ccbab2945a5295149d1e73954698fcc70",
+    "maxCandidates": 3,
+    "maxCalls": 3,
+    "maxOperations": 34,
+    "monetaryCap": null,
+    "qualificationSlots": 1,
+    "qualificationRetry": false,
+    "independentFeedback": false,
+    "contextHash": "ad78f62b38d3a53f7dd8348dc94d5e92d52a8ab6582246a5dfd57a0efc6662ca",
+    "systemHash": "5c2839f7a56fd28e0f8557878d6fc39729721a0eea8b7dd5c38c1597aa6c3b19",
+    "assets": [
+      {
+        "path": "packages/repositories/preact-repair-protocol-v2.ts",
+        "sha256": "97a7dd69944baf998ef42b27c5baf7d763db986b1df78457e4b50995d579c042"
+      },
+      {
+        "path": "packages/evaluation/preact-reliability-v2.ts",
+        "sha256": "723afec544a3d7d8790b5172d30a83273ab3829f989888ca78d246610d3ce8f5"
+      },
+      {
+        "path": "packages/repositories/preact-generation-v3.ts",
+        "sha256": "be734de24f825159c256376b5e7671d233cfffa14aa1258ade18c55b42c7b2b8"
+      },
+      {
+        "path": "tests/preact-generation-v3.test.ts",
+        "sha256": "7b37a0b61629cdb50da320cb93478813bf89862c4167cffb669900f49a2011f3"
+      },
+      {
+        "path": "tests/preact-repair-transport-v2.test.ts",
+        "sha256": "18ffd42ff0369fc898d2134138bce8332cc36a816c0fa8ab0880cbb466c523ce"
+      },
+      {
+        "path": "evaluation/preact-thinking-schema-v2.json",
+        "sha256": "72ba7dd5a7fbd43cee5fb3202e19925f6a92d76585c8b3033215d2bc4abd57f7"
+      },
+      {
+        "path": "evaluation/preact-thinking-schema-v2-results-summary.json",
+        "sha256": "0acb227782dfb429e7ac44b4de455c52031c728d40819a967e2e80e1a0dabf23"
+      },
+      {
+        "path": "packages/repositories/preact-repair-v2.ts",
+        "sha256": "56776a13fcf28025243093f4bd85e37acadd32a9d5b9d2a483a94051c986c3be"
+      },
+      {
+        "path": "packages/repositories/preact-repair-history-v2.ts",
+        "sha256": "0c52fc34c141f233f5ae9845ddfdc4ef1913142fb3a768a2a408ff09fbf12917"
+      },
+      {
+        "path": "packages/execution/preact-repair-v2.ts",
+        "sha256": "ed98f393a7c08ac67b7ecb6c6df560e426b3702554a03acdd02e409b306542b4"
+      },
+      {
+        "path": "apps/api/preact-repair-v2.ts",
+        "sha256": "9336e7da6516c4138380f9ea523574196d55091f20905e9e7a80f4e24756fd9e"
+      },
+      {
+        "path": "apps/api/native-server-v6.ts",
+        "sha256": "c5cb3e0392c7f75a839427260d2ec6cac8732d1a110dde95c536cfb0701ab86c"
+      },
+      {
+        "path": "apps/web/native-repair-v5.html",
+        "sha256": "949727707a4f616996ee7495bcf2ca8a6534feeaf875461e89de5f9ef5a62cdc"
+      },
+      {
+        "path": "apps/web/src/FreshPreactV5.tsx",
+        "sha256": "36a0d66b5b97212edd47ccd93eccae037badba6e98e12d80cbb70df3ba81a07f"
+      },
+      {
+        "path": "apps/web/src/fresh-preact.css",
+        "sha256": "d5469168d441f1c4d4be4817f5d0af83c4d7a043270039ab65feb2ae2c1851d0"
+      },
+      {
+        "path": "vite.native-v6.config.ts",
+        "sha256": "005994f2ef692c25978fda3338122abd96d0cd97610eeca3b3ca39c450b6bdb5"
+      },
+      {
+        "path": "tests/preact-repair-fixture-v1.ts",
+        "sha256": "5ac272310eaaaa737d7fc9f146783ff235d1918f9432415bdf0b85442128da22"
+      },
+      {
+        "path": "tests/preact-repair-v2.test.ts",
+        "sha256": "0ded3eca1a5852a179dbd62067e835278d8defdb7591aaf5604c62200c91af62"
+      },
+      {
+        "path": "tests/preact-repair-api-v1.test.ts",
+        "sha256": "5934b114632d84767a9dd2b5228b490acb076473e1c0e2946c703023e6d79d36"
+      },
+      {
+        "path": "scripts/preact-repair-browser-v2.mjs",
+        "sha256": "8767f973d0c6c6b5dc7bfafd002b749c2a6bdea59a775983086ac94126c33387"
+      },
+      {
+        "path": "evaluation/PREACT_PRODUCT_REPAIR_V2.md",
+        "sha256": "93196c775d18f35aa4ca5c9267d86941f37e047a76556c757e8ab524d345c88c"
+      },
+      {
+        "path": "evaluation/preact-admission-v5-results-summary.json",
+        "sha256": "854300ec63774e88decab7150447687acebc235a3e247fd0e1e8e0edd46ce370"
+      },
+      {
+        "path": "evaluation/preact-native-v5-results-summary.json",
+        "sha256": "b036e58085fda907a29c816448e29e9a5f95e58f0e8e0cc4f9c854bdf2919470"
+      },
+      {
+        "path": "evaluation/preact-trial-v10-results-summary.json",
+        "sha256": "0e2e33f7b4485b9ca981b3c3ea2b887b798185cea9e7cc307e4fe38b8b21ce16"
+      }
+    ],
+    "digest": "77b51395e8b9a14f86c1405395a04df209bf932723970cc963ea26c8dc8c4306"
+  },
+  "reason": "The copied freeze-guard test targeted the original UI path instead of FreshPreactV5.tsx. Production controller/request/SDK bytes passed other tests; live repair slot remained unused."
+}

@@ -1,0 +1,464 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "f7f1313338343dce8f1d677324b69d37e0dfece6ff2e10c6c63eda6f65ad8ac5",
+  "scope": "controller-authored serialization fixtures only; no GitHub repair or unseen-bug success claim; current full-thinking repair path unchanged",
+  "productionPromotion": false,
+  "slots": 12,
+  "modes": [
+    {
+      "mode": "full-thinking",
+      "selectedSlots": 6,
+      "verified": 0,
+      "truncated": 0,
+      "otherFailed": 6,
+      "blocked": 0,
+      "qualified": false,
+      "inferenceCalls": 6,
+      "costUsd": 0.0118452,
+      "observedReasoningChannels": 6
+    },
+    {
+      "mode": "direct-json",
+      "selectedSlots": 6,
+      "verified": 0,
+      "truncated": 0,
+      "otherFailed": 6,
+      "blocked": 0,
+      "qualified": false,
+      "inferenceCalls": 6,
+      "costUsd": 0.0066351000000000005,
+      "observedReasoningChannels": 0
+    }
+  ],
+  "qualifications": [
+    {
+      "fixture": "escaped-crlf",
+      "status": "QUALIFIED_FIXTURE",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          3
+        ],
+        "passed": [
+          3
+        ],
+        "failed": [
+          0
+        ]
+      },
+      "operations": 5
+    },
+    {
+      "fixture": "duplicate-branches",
+      "status": "QUALIFIED_FIXTURE",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          3
+        ],
+        "passed": [
+          3
+        ],
+        "failed": [
+          0
+        ]
+      },
+      "operations": 5
+    },
+    {
+      "fixture": "large-context",
+      "status": "QUALIFIED_FIXTURE",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          3
+        ],
+        "passed": [
+          3
+        ],
+        "failed": [
+          0
+        ]
+      },
+      "operations": 5
+    }
+  ],
+  "rows": [
+    {
+      "fixture": "escaped-crlf",
+      "mode": "full-thinking",
+      "repetition": "A",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "admission_or_execution",
+      "error": "Exact source block matched 0 times; expected 1. Use more unchanged context or the exact intended match count.",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 1000,
+        "outputTokens": 1401,
+        "costUsd": 0.0015609
+      },
+      "costUsd": 0.0015609,
+      "durationMs": 12992,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 390,
+        "reasoningChannel": {
+          "present": true,
+          "bytes": 4354,
+          "sha256": "c22d869747d797460feaad49168d9499ea215a017585ca737fcb5b7c939ac47d"
+        }
+      }
+    },
+    {
+      "fixture": "escaped-crlf",
+      "mode": "direct-json",
+      "repetition": "A",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "admission_or_execution",
+      "error": "Exact source block matched 0 times; expected 1. Use more unchanged context or the exact intended match count.",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 1000,
+        "outputTokens": 180,
+        "costUsd": 0.000462
+      },
+      "costUsd": 0.000462,
+      "durationMs": 1893,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 455,
+        "reasoningChannel": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        }
+      }
+    },
+    {
+      "fixture": "escaped-crlf",
+      "mode": "full-thinking",
+      "repetition": "B",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "admission_or_execution",
+      "error": "Exact source block matched 0 times; expected 1. Use more unchanged context or the exact intended match count.",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 1000,
+        "outputTokens": 1387,
+        "costUsd": 0.0015482999999999998
+      },
+      "costUsd": 0.0015482999999999998,
+      "durationMs": 14058,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 753,
+        "reasoningChannel": {
+          "present": true,
+          "bytes": 3979,
+          "sha256": "673a7b64cbd967a1eb6fc43ee3e649be5aa18490b2505d513b74fb0b12ec31cc"
+        }
+      }
+    },
+    {
+      "fixture": "escaped-crlf",
+      "mode": "direct-json",
+      "repetition": "B",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "admission_or_execution",
+      "error": "Exact source block matched 0 times; expected 1. Use more unchanged context or the exact intended match count.",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 1000,
+        "outputTokens": 163,
+        "costUsd": 0.00044670000000000007
+      },
+      "costUsd": 0.00044670000000000007,
+      "durationMs": 1885,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 353,
+        "reasoningChannel": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        }
+      }
+    },
+    {
+      "fixture": "duplicate-branches",
+      "mode": "full-thinking",
+      "repetition": "A",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "admission_or_execution",
+      "error": "Exact source block matched 0 times; expected 2. Use more unchanged context or the exact intended match count.",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 1175,
+        "outputTokens": 850,
+        "costUsd": 0.0011175
+      },
+      "costUsd": 0.0011175,
+      "durationMs": 7465,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 515,
+        "reasoningChannel": {
+          "present": true,
+          "bytes": 2809,
+          "sha256": "0bdf510115ff1db6450893907562d9286d7d06d2bd7110ad765b87f3f78c67d5"
+        }
+      }
+    },
+    {
+      "fixture": "duplicate-branches",
+      "mode": "direct-json",
+      "repetition": "A",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "admission_or_execution",
+      "error": "Exact source block matched 0 times; expected 2. Use more unchanged context or the exact intended match count.",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 1175,
+        "outputTokens": 224,
+        "costUsd": 0.0005541
+      },
+      "costUsd": 0.0005541,
+      "durationMs": 1915,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 527,
+        "reasoningChannel": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        }
+      }
+    },
+    {
+      "fixture": "duplicate-branches",
+      "mode": "full-thinking",
+      "repetition": "B",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "admission_or_execution",
+      "error": "Exact source block matched 0 times; expected 2. Use more unchanged context or the exact intended match count.",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 1175,
+        "outputTokens": 965,
+        "costUsd": 0.001221
+      },
+      "costUsd": 0.001221,
+      "durationMs": 8667,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 320,
+        "reasoningChannel": {
+          "present": true,
+          "bytes": 3297,
+          "sha256": "6c18d05f878b4fcb6e386bbccd5ba7092618b95ac11420dab72f259ab24bd1e6"
+        }
+      }
+    },
+    {
+      "fixture": "duplicate-branches",
+      "mode": "direct-json",
+      "repetition": "B",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "admission_or_execution",
+      "error": "Exact source block matched 0 times; expected 2. Use more unchanged context or the exact intended match count.",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 1175,
+        "outputTokens": 215,
+        "costUsd": 0.000546
+      },
+      "costUsd": 0.000546,
+      "durationMs": 2135,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 517,
+        "reasoningChannel": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        }
+      }
+    },
+    {
+      "fixture": "large-context",
+      "mode": "full-thinking",
+      "repetition": "A",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "admission_or_execution",
+      "error": "Exact source block matched 0 times; expected 1. Use more unchanged context or the exact intended match count.",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 7190,
+        "outputTokens": 1658,
+        "costUsd": 0.0036492
+      },
+      "costUsd": 0.0036492,
+      "durationMs": 14531,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 614,
+        "reasoningChannel": {
+          "present": true,
+          "bytes": 5717,
+          "sha256": "604181d919112c7ea80be4b5cedf51b65986afbd8010754b0a40825fda55bc92"
+        }
+      }
+    },
+    {
+      "fixture": "large-context",
+      "mode": "direct-json",
+      "repetition": "A",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "admission_or_execution",
+      "error": "Exact source block matched 0 times; expected 1. Use more unchanged context or the exact intended match count.",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 7190,
+        "outputTokens": 162,
+        "costUsd": 0.0023028000000000002
+      },
+      "costUsd": 0.0023028000000000002,
+      "durationMs": 1924,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 350,
+        "reasoningChannel": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        }
+      }
+    },
+    {
+      "fixture": "large-context",
+      "mode": "full-thinking",
+      "repetition": "B",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "invalid_json",
+      "error": "Structured response rejected: invalid_json",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 7190,
+        "outputTokens": 657,
+        "costUsd": 0.0027483000000000004
+      },
+      "costUsd": 0.0027483000000000004,
+      "durationMs": 6352,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 357,
+        "reasoningChannel": {
+          "present": true,
+          "bytes": 1871,
+          "sha256": "c9b734b9a6555147e10e6301faf2114f5f9a4f299c06daa06537b8f8635c1689"
+        }
+      }
+    },
+    {
+      "fixture": "large-context",
+      "mode": "direct-json",
+      "repetition": "B",
+      "status": "SERIALIZATION_FAILED",
+      "inferenceCalls": 1,
+      "operations": 0,
+      "failureKind": "invalid_json",
+      "error": "Structured response rejected: invalid_json",
+      "sourceHash": null,
+      "native": null,
+      "behaviorCases": null,
+      "usage": {
+        "inputTokens": 7190,
+        "outputTokens": 185,
+        "costUsd": 0.0023235
+      },
+      "costUsd": 0.0023235,
+      "durationMs": 2237,
+      "response": {
+        "finishReason": "stop",
+        "contentBytes": 415,
+        "reasoningChannel": {
+          "present": false,
+          "bytes": 0,
+          "sha256": null
+        }
+      }
+    }
+  ],
+  "inferenceCalls": 12,
+  "sandboxOperations": 15,
+  "estimatedInferenceUsd": 0.018480299999999998,
+  "ledgerBeforeUsd": 0.2835986999999999,
+  "ledgerAfterUsd": 0.30207899999999993,
+  "unsettledCharges": 0,
+  "priorFilesUnchanged": 2771,
+  "credentialAndProjectExclusion": "PASS",
+  "filesScanned": 126,
+  "priorFreshVerified": 0,
+  "priorDevelopmentVerified": 1,
+  "offlineReview": {
+    "status": "PASS",
+    "networkAttempts": 0,
+    "inferenceCalls": 0,
+    "sandboxOperations": 0,
+    "inference": "none",
+    "execution": "offline receipt review; no upstream/generated execution",
+    "evidenceFilesUnchanged": 110
+  },
+  "previousPreparation": {
+    "freeze": "eeb9beda88c0b95fb58dec3037d1210c87b66388c6e3ca173c6e0aa31d6b812b",
+    "sandboxOperations": 6,
+    "inferenceCalls": 0,
+    "blockedSlots": 12,
+    "cause": "Node spec reporter; strict TAP gate blocked all originals"
+  },
+  "totalPhaseSandboxOperations": 21
+}

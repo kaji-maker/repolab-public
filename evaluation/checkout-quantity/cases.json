@@ -1,0 +1,70 @@
+{
+  "id": "checkout-quantity-development-v1",
+  "split": "development",
+  "cases": [
+    {
+      "id": "zero-quantity",
+      "quantity": 0,
+      "unitPriceCents": 250,
+      "expected": 0,
+      "origin": "reported",
+      "rationale": "Zero items cost zero, rather than the default one-item charge."
+    },
+    {
+      "id": "zero-free-items",
+      "quantity": 0,
+      "unitPriceCents": 0,
+      "expected": 0,
+      "origin": "independent",
+      "rationale": "Zero quantity and zero price remain zero together."
+    },
+    {
+      "id": "missing-quantity",
+      "quantity": null,
+      "unitPriceCents": 250,
+      "expected": 250,
+      "origin": "baseline",
+      "rationale": "Missing quantity retains the documented one-item default."
+    },
+    {
+      "id": "single-item",
+      "quantity": 1,
+      "unitPriceCents": 250,
+      "expected": 250,
+      "origin": "independent",
+      "rationale": "One item preserves its exact integer-cent unit price."
+    },
+    {
+      "id": "multiple-items",
+      "quantity": 3,
+      "unitPriceCents": 250,
+      "expected": 750,
+      "origin": "reported",
+      "rationale": "Three items must cost three times the unit price."
+    },
+    {
+      "id": "multiple-free-items",
+      "quantity": 5,
+      "unitPriceCents": 0,
+      "expected": 0,
+      "origin": "independent",
+      "rationale": "A zero unit price is free for ordinary quantities."
+    },
+    {
+      "id": "maximum-supported-inputs",
+      "quantity": 1000,
+      "unitPriceCents": 1000000,
+      "expected": 1000000000,
+      "origin": "independent",
+      "rationale": "The supported input bounds multiply exactly within the safe-integer range."
+    },
+    {
+      "id": "missing-free-item",
+      "quantity": null,
+      "unitPriceCents": 0,
+      "expected": 0,
+      "origin": "independent",
+      "rationale": "Default quantity must preserve a zero unit price."
+    }
+  ]
+}
