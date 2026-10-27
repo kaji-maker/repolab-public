@@ -1,53 +1,99 @@
 # ReproLab
 
-A scoped repair workbench: generate bounded proposals with Nebius Token Factory NVIDIA Nemotron, test admitted source in isolated Nebius Sandbox, select immutable source, then open independent evaluation.
+**Make bugs repeatable. Make fixes reviewable.**
 
-This source-and-recorded-review preview contains a functional local review build and the qualified Preact engine/API/frontend source. **Fresh repair is unavailable in these previews.** A public live judge service has not been qualified. The historical actual result below is not new execution when you open a preview.
+ReproLab is a scoped repair workbench for a coding agent. NVIDIA Nemotron, served by Nebius Token Factory, proposes bounded repairs. Nebius Token Factory Sandboxes run the project's real test suites in isolated, disposable environments. A candidate is only selected after native, public and independent checks pass, and the result is shown with its patch, counts and provenance.
 
-## Try the recorded result
+> **Status of this repository: read this first.** This repository gives you (1) a read-only source preview, (2) a portable recorded review of a real run, and (3) the source of the hosted application. **It does not let you start a live repair on your own machine.** The live application is the separately hosted, authenticated demo described in the submission's testing instructions. The gap between the public source and the hosted service is open and documented below.
 
-Use this repository's **Releases** page to download `repolab-judge-review-v2.zip`, `SHA256SUMS` and `REVIEWER_START.md`. Requires Node 24.18+ and a browser; no npm install, keys, account or credits. Extract the review ZIP into a new directory, keep companion files outside it, and run:
+### Where the source is
+
+The files on the `main` branch are the earlier **V2 source package (669 files)** published on October 26, 2026. The **current source package is the V5 release asset** `repolab-source-v5.zip` (716 files) on the [`v0.2.0-review-v5` release](https://github.com/kaji-maker/repolab-public/releases/tag/v0.2.0-review-v5), published on October 27, 2026. The release also carries `SHA256SUMS`, `SOURCE_MANIFEST.json`, `REVIEWER_START.md` and `RELEASE_NOTES.md`. The setup steps below use the V5 ZIP, not the files on `main`.
+
+## Three things, kept separate
+
+| Artifact | What it is | Fresh model or Sandbox calls |
+| --- | --- | --- |
+| **Hosted demo** (authenticated; judge login is in the submission testing instructions) | The live application. A signed-in user can inspect saved runs and patches and can start a new repair, which uses the owner's Nebius project. | Yes, when a user starts a repair. Opening saved results makes none. |
+| **V5 source package** (release `v0.2.0-review-v5`, `repolab-source-v5.zip`) | 716 source files. Builds and runs a **read-only** preview. Includes the hosted application's server and runtime modules for inspection. | None. Fresh repair is disabled. |
+| **Portable recorded review** (`repolab-recorded-review-v3.zip`) | Replays one historical run from October 25, 2026 with its exact patch. | None. |
+
+The recorded review is a saved October 25 run. It is not a reproduction of the hosted service and not the hosted run `b2a8768c-acae-4ed4-8565-8725a5fa0120`.
+
+## What a fresh installation can and cannot do
+
+**Can** (each step verified on a clean extraction, with no credentials):
+
+- Check the release digests and verify all 716 source files against the manifest before installing.
+- `npm ci --ignore-scripts`, typecheck, build, and run the 79 focused tests.
+- Start the read-only preview on `http://127.0.0.1:4188`. It loads no private history, shows an empty history, and explains why starting a repair is disabled.
+- Rebuild the recorded review, serve it on `http://127.0.0.1:4187`, download the exact patch, check its hash, and apply it to the included base files.
+- Read the model-provider, Sandbox-guard, accounting and repair-engine source.
+
+**Cannot:**
+
+- **Start a live repair.** The preview refuses every start, cancel and recovery request.
+- **Run the hosted service.** `apps/api/cloud-live-server-v2.mjs` is included in the V5 ZIP (it is not on `main`), but it needs host-only inputs that are deliberately not in the package: the exact runtime source freeze, the original deployment snapshot, a dependency freeze, provider configuration, persistent run state and the owner's qualified Sandbox base image. Without them it refuses to start. That refusal is the safety design, and nothing in this repository should be changed to bypass it.
+- **Create its own qualified Sandbox image.** The hosted service's base image is a snapshot inside the owner's Nebius project. The repository contains no code that imports the Node base image or qualifies a new image, and moving the image to another project is untested.
+- **Reproduce the hosted run's evidence.** Private run history is excluded.
+
+### The open gap
+
+The competition requires the public repository to contain what the project needs to function. This repository does not yet contain a path that lets a new installer run the live application. The gap is open, not closed. What would close it:
+
+1. New versions of the native, admission, trial and protocol layers that take the Sandbox image from the installer's own qualification instead of the owner's pinned image, then a repair engine and a launcher on top. These do not exist yet.
+2. The installer imports the public `node:20.9.0-bookworm-slim` image into their own Nebius project and qualifies it: at least 39 Sandbox operations (1 import, 12 native, 26 admission), at the installer's cost. No import code exists in this repository, and cross-project image portability is untested.
+3. A repair engine that refuses to start, before any claim or provider call, unless it has verified fresh authority and real prior qualification evidence. A first piece (a locally generated fresh-install authority and a pre-dispatch evidence gate) has been written and tested with synthetic fixtures only; it is not part of the published packages.
+
+Judges can see the live application only through the hosted demo.
+
+## Setup (read-only preview)
+
+Requires Node 24.18+ and npm. Download `repolab-source-v5.zip`, `SHA256SUMS` and `REVIEWER_START.md` from the release. Extract into a new directory, then:
 
 ```sh
-node server.mjs 4f027be8de254bc95d125ce59f0162479a9ab0e0c548aa907131c5b259678452
-```
-
-Open **http://127.0.0.1:4187**. Inspect the saved result, scroll the tested patch, download its exact bytes, review candidate history and restart without credentials. Fresh start stays disabled. Patch SHA-256: `cfa54ecee8c1133134b60f50b92ab053b051e13e9a0c928d5181fff5563ba71d`.
-
-## Build from source
-
-Requires Node 24.18+ and npm:
-
-```sh
-npm ci
+sha256sum repolab-source-v5.zip     # expect 3955d22ea27f5a7385c861720448f948c8c951a322f9e92a5b245add4f42ae04
+node scripts/source-release-v2.mjs verify . 4835eb04f8b14eb380618135be6bb2d7dc1c885ce35c896410c1396dff938001
+npm ci --ignore-scripts
 npm run typecheck
 npm run build
-npm test
-npm start
+npm test            # 79 focused tests
+npm start           # read-only preview at http://127.0.0.1:4188
 ```
 
-Open **http://127.0.0.1:4188** for the empty-history source preview. It loads no private history or `.env` and admits no fresh repair/recovery. To rebuild the recorded reviewer, follow `reference/SOURCE_README.md`. That file is the preserved source ZIP README, including its packaging-time status. This root README and the manual CI workflow are publication metadata; they do not change the sealed source ZIP or engine/frontend code.
+Run the manifest verification **before** `npm ci`; it rejects the unlisted `node_modules` directory afterward.
 
-For immutable verification, download `repolab-source-v2.zip`, check SHA-256 `700a488d82fb4424e0f12b8a899a82dd5798ba00c739c2828877d2f53db57a57`, extract separately and verify before installation:
+Recorded review:
 
 ```sh
-node scripts/source-release-v2.mjs verify . 5c24f9d630a195f21ca4c7c38c4e0ddb98091146c85873895974c0350953b323
+npm run review:build -- create /absolute/new/review-directory
+node /absolute/new/review-directory/server.mjs de6511e26f23de407616ea341afd275a466a74244b694967c2309b6a0d6835b8
 ```
 
-The immutable verifier applies to that pristine ZIP extraction, not a Git checkout with `.git`, publication metadata or generated dependencies. The manual CI workflow reconstructs the sealed source files, verifies them and runs setup/build/controller checks with an empty environment. CI is automated remote-environment evidence when run; it is not a human-review attestation.
+Open `http://127.0.0.1:4187`. The compact patch (`834fd027…3e52`) and the original recorded patch (`cfa54ece…a71d`) have different bytes and produce the same three expected files; byte equivalence does not establish correctness. `REVIEWER_START.md` has the exact patch-application steps. Do not run patched code.
+
+No credential or account is needed for any step above.
+
+## How it uses Nebius and NVIDIA
+
+- **Nebius Token Factory**, OpenAI-compatible endpoint, model **`nvidia/nemotron-3-super-120b-a12b`** (NVIDIA Nemotron) proposes bounded repairs against a sourced bug report. Estimated list price used for accounting: $0.30 per million input tokens and $0.90 per million output tokens. Token usage is recorded per request.
+- **Nebius Token Factory Sandboxes** run every test and candidate in isolated, disposable instances. Candidate code never runs on the controller host.
+- Per repair: at most 3 model calls and candidates, and 34 isolated operations. There is no overall run quota or service-wide spending cap; these per-repair bounds, the usage accounting and the uncertainty holds stay in force.
+- The hosted demo itself runs on a Google Cloud VM. It is not hosted on Nebius.
 
 ## Recorded evidence and limits
 
-Actual browser V2, October 25, 2026: **one** production `nvidia/nemotron-3-super-120b-a12b` request and **14** isolated Sandbox operations; candidate 1 independently correct. Native Mocha 29 passed; browser 1,173 passed/11 original skips; core/compat types compile, 17 passed/two pending. Public 3/3 and independent 10/10 repeated after selection. Automatic browser completion and desktop/mobile exact patch review passed. The sanitized summary is `evaluation/browser-release-v2-results-summary.json`.
+- Hosted run `b2a8768c-acae-4ed4-8565-8725a5fa0120` (October 27, 2026): `ACCEPTED_INDEPENDENTLY_CORRECT`; 2 Nebius model calls (estimated $0.0224541, Sandbox charges separate); 14 isolated Sandbox operations; native Mocha 29/29, browser 1173/1184 with 11 original skips, types 17 pass / 2 pending, public 3/3, independent 10/10. Saved patch: 80,593 bytes, SHA-256 `cdd06dd2b3242de378dcdd5a4a14705a23ba0dc779f2dd1f55dd9ab470f9bad4`.
+- The task is **one** exposed Preact ref-cleanup feature (`preactjs__preact-4436`) with developer-supplied scaffolding and a cached same-project image. Five saved runs exist in the hosted catalog, all on this one task. This is not a general repair-accuracy result, a hidden-task result, or evidence of onboarding another project.
+- The eight-task study is incomplete and unchanged. The original tests, reference and independent checks are visible in this repository and must not be treated as hidden.
+- Full VM reboot of the hosted service has not been tested.
 
-The task is one exposed Preact ref-cleanup feature with developer-supplied ownership scaffolding and a cached same-project image. No general repair accuracy, hidden-task result or cross-project provisioning claim. The eight-task study is incomplete and unchanged. Browser V1 retains incomplete automatic observation. Original tests/reference/independent checks stay separate from candidate context; their source is visible here and must not be claimed newly hidden after publication.
+## Dependencies
 
-The source V2 ZIP passed fresh cache-backed offline installation, typecheck/build, ten release groups and five sanitizer groups on the development host. All qualified frontend/portable-review hashes match. The portable ZIP separately passed clean browser and Debian/Alpine checks. Source V1's omitted-SVG failure and earlier browser harness failures remain disclosed in release qualifications.
+Node.js 24.18 or newer and npm with the committed lockfile (`npm ci --ignore-scripts`). Four runtime packages, pinned exactly: `hono` 4.13.14, `zod` 4.6.7, `react` and `react-dom` 19.2.8. Dev tooling: `vite` 7.3.7, `typescript` 6.0.3, `playwright` 1.63.0, `prettier` 3.9.7 and the Node and React type packages. The lockfile (V5) pins 78 packages, all from `registry.npmjs.org` with integrity hashes. Licenses across the lock: MIT 73, Apache-2.0 3, ISC 1, BSD-3-Clause 1. Registry access is needed only to install.
 
-## Live execution and delivery status
+The live application additionally needs services that are not in any package: a Nebius Token Factory API key and project, Sandbox beta access with `spawn`, `spawn_disposable` and `cancel` permissions, and a qualified Sandbox base image in the same project.
 
-The model provider code, isolated execution guards and qualified repair engine are included as source. Private receipts, execution images, consumed admissions, credentials and run state are excluded; missing prerequisites must fail closed. Neither preview can create a fresh provider run. Do not bypass guards, manufacture evidence, put keys in tests/browser/guests or execute generated candidates locally.
+## License
 
-Free live-service judge access, unaided separate-machine setup, video and final submission rehearsal remain separate gates. A review prerelease is not an eligibility claim or completed submission. No usage credit or production secret is requested from a reviewer. Current access URLs and publication/CI status must be read from the actual repository/release and run records, not inferred from packaging-time notes.
-
-ReproLab is MIT licensed (`LICENSE`); upstream and UI dependency notices are in `THIRD_PARTY_NOTICES.md` and the reviewer bundle. Current preview inference: **none**. Execution: **local static review/controller/build only**, with historical actual model/Sandbox activity labeled above.
+MIT (`LICENSE`). Upstream and UI dependency notices are in `THIRD_PARTY_NOTICES.md`. Recorded patch and fixtures derive from `preactjs/preact` (MIT, copyright 2015-present Jason Miller).
