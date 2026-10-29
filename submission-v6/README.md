@@ -2,7 +2,7 @@
 
 Build and run the judge interface from source, connected to the existing authenticated ReproLab backend at https://repolab.34-71-102-74.sslip.io.
 
-Start with [JUDGE_SOURCE_SETUP.md](JUDGE_SOURCE_SETUP.md). Node 24.18.0 or newer and the private judge login supplied in the submission's testing instructions are required. Judges do not supply Nebius credentials or buy credits.
+Start with [JUDGE_SOURCE_SETUP.md](JUDGE_SOURCE_SETUP.md). Node 24.18.0 or newer and the private judge login supplied in the submission's testing instructions are required. For this submission, judges can find the login in the private `JUDGE_TESTING_INSTRUCTIONS.private.md` attachment under Devpost's **Additional info** section. Judges do not supply Nebius credentials or buy credits.
 
 The browser interface supports manual fresh Preact repairs, saved-result review, candidate/operation history, patch inspection and patch download. The backend's recorded configuration and receipts report Nebius Token Factory inference using `nvidia/nemotron-3-super-120b-a12b` and isolated Nebius Sandbox execution. Its configured per-repair bounds are three model calls and 34 operations with accounting/uncertainty checks. The local client delegates these properties to that owner-operated backend; local fixture tests do not independently qualify them. Viewing saved evidence uses GET requests only.
 
