@@ -1,0 +1,45 @@
+{
+  "format": "repolab-vue-native-result/v1",
+  "freeze": "79b717f98fb54230eb9cfe13c4ff1c65f91896a3f1f1563767da109d6cbdefff",
+  "status": "PREPARE_FAILED_EXECUTION_BLOCKER",
+  "operations": 1,
+  "operationIds": [
+    "01a1429b-a8e8-7175-9ad9-cc3acaf687b4"
+  ],
+  "providerStatus": "SUCCESS",
+  "guestExitCode": 1,
+  "unusedResultImage": "2c8357ef-518c-42c2-97b7-16fc9f84f538",
+  "passedPrepareCommands": [
+    "/bin/tar -xzf /opt/repolab/native/upstream.tar.gz --strip-components=1 -C /opt/repolab/vue",
+    "/usr/local/bin/npm install --prefix /opt/repolab/pnpm-cli pnpm@9.10.0 --ignore-scripts --no-audit --no-fund",
+    "/usr/local/bin/node /opt/repolab/pnpm-cli/node_modules/pnpm/bin/pnpm.cjs --version",
+    "/usr/local/bin/node /opt/repolab/pnpm-cli/node_modules/pnpm/bin/pnpm.cjs install --frozen-lockfile --ignore-scripts --store-dir /opt/repolab/pnpm-store"
+  ],
+  "failedCommand": "/usr/local/bin/node /opt/repolab/pnpm-cli/node_modules/pnpm/bin/pnpm.cjs rebuild esbuild",
+  "failedCommandExitCode": 1,
+  "pnpmVersion": "9.10.0",
+  "remainingSlotsUnrun": 7,
+  "unrunSlots": [
+    "build",
+    "protect",
+    "integrity",
+    "unit-A",
+    "reproduction-A",
+    "unit-B",
+    "reproduction-B"
+  ],
+  "inference": "none",
+  "execution": "nebius-sandbox",
+  "inferenceCalls": 0,
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "reason": "pnpm install used --store-dir /opt/repolab/pnpm-store, but the following pnpm rebuild esbuild omitted --store-dir and resolved the HOME default store; pnpm refused because node_modules was linked from a different store. No Vue build, test or reproduction ran.",
+  "rawReceiptSha256": {
+    "STARTED.json": "6c447dd1d498c9ec20a55e27898fb412661bba1af9cf13af2146b114111f2ebd",
+    "prepare.json": "02e634dc5a5cdc85c85b6ee6c50b93f12ef23d9dd21fe9d21881485b70d5b631",
+    "upload-guest.cjs.json": "853e9c767c83bb7c557f1909229855c9981adbd7d81610cb062be835fd3f85ad",
+    "upload-manifest.json.json": "455af970669bfe3298e6d994ceae5dcc81b82a5e8cc2c617de523423e752dddb",
+    "upload-reproduction.cjs.json": "4de7cd5645426cef951fe1636e4eb2f5cd3916e2524ec713d2588043397170d5",
+    "upload-upstream.tar.gz.json": "fc53a7c76c96112c6b7614f9c29e6fb810e1e4da057d34efd5c370b0856fc113"
+  }
+}

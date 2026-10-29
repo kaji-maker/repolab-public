@@ -1,0 +1,147 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "315812db5047a4e8af247fdcfd23c8feeff1288fa5abe9dc4382fcd3d40a46e4",
+  "scope": "two previously exposed controller-authored semantic development fixtures; count-window closed after independent evaluation; independent cases withheld from model until after source selection; no fresh GitHub or unseen-bug score claim",
+  "productionPromotion": false,
+  "selectedFixtures": 2,
+  "nativeQualified": 2,
+  "modelAttempted": 2,
+  "verifiedSemanticFixtures": 2,
+  "inferenceCalls": 2,
+  "sandboxOperations": 30,
+  "estimatedInferenceUsd": 0.0078159,
+  "rows": [
+    {
+      "fixture": "nullish-default",
+      "status": "VERIFIED_SEMANTIC_FIXTURE",
+      "error": null,
+      "qualification": "QUALIFIED_FIXTURE",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          3
+        ],
+        "passed": [
+          3
+        ],
+        "failed": [
+          0
+        ]
+      },
+      "publicCases": 3,
+      "inferenceCalls": 1,
+      "estimatedInferenceUsd": 0.0024603000000000003,
+      "qualificationOperations": 8,
+      "repairOperations": 7,
+      "sourceHash": "216a7f05b27767c4e0e94b27ed6f579dfc9b7198a6b8673f3096a7c33d3a7f45",
+      "independent": [
+        {
+          "passed": 8,
+          "total": 8
+        },
+        {
+          "passed": 8,
+          "total": 8
+        }
+      ],
+      "candidates": [
+        {
+          "attempt": 1,
+          "status": "SELECTED",
+          "error": null,
+          "sourceHash": "216a7f05b27767c4e0e94b27ed6f579dfc9b7198a6b8673f3096a7c33d3a7f45"
+        }
+      ],
+      "testedPatch": {
+        "path": ".repolab/semantic-plan-v2/nullish-default/repair/tested.patch",
+        "sha256": "70e5b6e9d900d9dd7918f4cc32113e5e90f712a91987fc4ef6d00e622a09c7db"
+      }
+    },
+    {
+      "fixture": "option-default",
+      "status": "VERIFIED_SEMANTIC_FIXTURE",
+      "error": null,
+      "qualification": "QUALIFIED_FIXTURE",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          3
+        ],
+        "passed": [
+          3
+        ],
+        "failed": [
+          0
+        ]
+      },
+      "publicCases": 5,
+      "inferenceCalls": 1,
+      "estimatedInferenceUsd": 0.005355599999999999,
+      "qualificationOperations": 8,
+      "repairOperations": 7,
+      "sourceHash": "5340386fbb8a76bd1a964f48318279b213ea7c62ee6bfac52feffc1273869d28",
+      "independent": [
+        {
+          "passed": 10,
+          "total": 10
+        },
+        {
+          "passed": 10,
+          "total": 10
+        }
+      ],
+      "candidates": [
+        {
+          "attempt": 1,
+          "status": "SELECTED",
+          "error": null,
+          "sourceHash": "5340386fbb8a76bd1a964f48318279b213ea7c62ee6bfac52feffc1273869d28"
+        }
+      ],
+      "testedPatch": {
+        "path": ".repolab/semantic-plan-v2/option-default/repair/tested.patch",
+        "sha256": "07e12b6f4f0ab50b544da29f403c2abd63adf8f50197d7abdf9daa2c8a1b27b4"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "fixture": "nullish-default",
+      "attempt": 1,
+      "finishReason": "stop",
+      "contentBytes": 288,
+      "reasoning": {
+        "present": true,
+        "bytes": 2311,
+        "sha256": "afc5d7dd91eccfda810c28e2989cbbd1d6410a382b77bdb006e14475cc4e5d2f"
+      },
+      "usage": {
+        "inputTokens": 6161,
+        "outputTokens": 680,
+        "costUsd": 0.0024603000000000003
+      }
+    },
+    {
+      "fixture": "option-default",
+      "attempt": 1,
+      "finishReason": "stop",
+      "contentBytes": 408,
+      "reasoning": {
+        "present": true,
+        "bytes": 2215,
+        "sha256": "50ffaa2f8bc641eb2abe5ce790c50b305d6a4934d82367a6a733d0c35b7a6766"
+      },
+      "usage": {
+        "inputTokens": 15713,
+        "outputTokens": 713,
+        "costUsd": 0.005355599999999999
+      }
+    }
+  ],
+  "ledgerBeforeUsd": 0.30775259999999993,
+  "ledgerAfterUsd": 0.3155685,
+  "unsettledCharges": 0,
+  "credentialAndProjectExclusion": "PASS",
+  "priorFilesUnchanged": 3103,
+  "filesScanned": 131
+}

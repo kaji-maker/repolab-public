@@ -1,0 +1,75 @@
+{
+  "format": "repolab-provider-rejection-results/v1",
+  "task": "preactjs__preact-3763",
+  "status": "RECONCILED_PROVIDER_REJECTED_UNQUALIFIED",
+  "authority": "Provider support access-log attestation, Gmail-reported DKIM/DMARC pass; no independent signature revalidation",
+  "providerReported": {
+    "ticket": "CLOUDSUPPORT-1237160",
+    "method": "POST",
+    "path": "/sandboxes/v1/instances",
+    "timeUtc": "2026-10-20T08:28:26.088Z",
+    "httpStatus": 500,
+    "elapsedMs": 23,
+    "requestId": "3d2b1aef285ea125a4cf1067223323a2",
+    "operationCreated": false,
+    "instanceWorkStarted": false,
+    "lintCommandRan": false
+  },
+  "attribution": {
+    "localRequestSha256": "16068a13e1844f9bb5c11509d32d20fec18b0db05fe3a4c0865688e821a13029",
+    "originalRawSha256": "dd321b7cf204c6c8e9957a9d5807707a7517764d587ef558fa446e153cbe1142",
+    "localBindingFileMtimeUtc": "2026-10-20T08:28:24.984Z",
+    "knownEarlierOperation": "01a15867-d9e3-729e-becc-f32cfd8805ee",
+    "sourceMessageSha256": "fd19b8d721466c38b3040350b598f3fc8aa0dc7373ef394a116791d96371e44e",
+    "providerAttestedExactBodyHash": false
+  },
+  "reconciliation": {
+    "receiptAcceptanceResolved": true,
+    "originalRawStatePreserved": "UNKNOWN",
+    "archivedOwnedGuards": 3,
+    "activeMarkerArchived": true,
+    "sharedLocksPresent": false,
+    "priorJsonFilesPreserved": 3370,
+    "freezeSha256": "1279a395ac0e8ef9c5269030947cec26f00a630ce2522690576aaf930a78c188",
+    "applyPlanSha256": "5b9f29065f1f67f83acdebf0a40c66cd46be2f6c630712adbb08e218d1e37527",
+    "matchingKeylessDataAudits": 2,
+    "negativeDataCounterexamples": 19,
+    "keylessFilesystemControls": 5
+  },
+  "taskQualification": {
+    "qualifiedOriginal": false,
+    "repairAdmission": false,
+    "priorWorkflowsResumable": false,
+    "newExecutionFreezeRequired": true,
+    "confirmedOriginalOperations": 5,
+    "providerRejectedPosts": 1,
+    "unknownSubmissions": 0
+  },
+  "cohort": {
+    "selected": 8,
+    "qualifiedOriginals": 4,
+    "stoppedUnqualified": 1,
+    "otherPreparedPending": 3,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0,
+    "confirmedOriginalExecutionOperations": 47,
+    "providerRejectedPosts": 1,
+    "unknownSubmissions": 0,
+    "accuracy": null
+  },
+  "billing": {
+    "confirmed": false,
+    "chargeUsd": null,
+    "inferenceLedgerUnaffected": true
+  },
+  "genericHttp500BehaviorChanged": false,
+  "publicExecutionModulesChanged": false,
+  "newProviderCalls": 0,
+  "newModelCalls": 0,
+  "newSandboxExecutions": 0,
+  "outgoingMessages": 0,
+  "evidenceDirectory": ".repolab/prospective-preact-3763-provider-rejection-v1",
+  "nextAction": "Freeze a fresh exact-task original qualification workflow using the diagnostic transport; do not resume V1/V2. Independent reviewer/submission preparation can proceed.",
+  "inference": "none",
+  "execution": "Gmail read plus provider-attested historical rejection; keyless local control audits and archival of three owned guard files. No model, Sandbox or guest-code execution."
+}

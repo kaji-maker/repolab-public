@@ -1,0 +1,87 @@
+{
+  "format": "repolab-preact-thinking-schema/v1",
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "baseUrl": "https://api.tokenfactory.nebius.com/v1/",
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "requestPolicy": "nemotron-full-thinking-v1",
+  "maxOutputTokens": 16384,
+  "transportTimeoutMs": 180000,
+  "maxCalls": 1,
+  "maxOperations": 0,
+  "monetaryCap": null,
+  "requestHash": "0cd91caa75f04545b57983a8629990f62d4104579438ad849090a78b4f25dafd",
+  "assets": [
+    {
+      "path": "packages/evaluation/preact-thinking-schema-v1.ts",
+      "sha256": "c528ec294dbb7f09a3051140b6ec23cad95db819759e6bb87b4237e27dc4b20d"
+    },
+    {
+      "path": "apps/evaluator/preact-thinking-schema-v1.ts",
+      "sha256": "60043e7ec035c9039c55515c110fb6864319341893c7b227cd8602bf85840781"
+    },
+    {
+      "path": "tests/preact-thinking-schema-v1.test.ts",
+      "sha256": "5e113d60543b1ac4da0f98529c3921242cf69b64c911b6949fd2be4045555a7c"
+    },
+    {
+      "path": "packages/providers/nebius-thinking-v1.ts",
+      "sha256": "bd776e690eb184201e1c0d204e706647622472becf2d715c997757ca24074de7"
+    },
+    {
+      "path": "tests/nebius-thinking-v1.test.ts",
+      "sha256": "30d2114146819abc85d1388c9d01f82121a8f206f2b01752008521fb8061fe88"
+    },
+    {
+      "path": "evaluation/PREACT_THINKING_SCHEMA_V1.md",
+      "sha256": "d4e2afd8d497afdcafc1a88cfde1bd24e2c0f303e9220168fa5aba99e23db6c5"
+    },
+    {
+      "path": "packages/repositories/preact-generation-v2.ts",
+      "sha256": "c799f5aa0ebd220fb2ae3d172f6d21f05df9fabbe29746f9dc007836d56a5589"
+    },
+    {
+      "path": "packages/providers/nebius.ts",
+      "sha256": "2d93b0e03c9b35d7dbd0e828e4444880df412de980e67ce3d4df3ef557047a14"
+    },
+    {
+      "path": "packages/providers/diagnostics.ts",
+      "sha256": "5b941b2491eb5a4f0add1ad0645c843a8f39e4d4d85ebf6db6830d3cd8291562"
+    },
+    {
+      "path": "packages/storage/store.ts",
+      "sha256": "78fcbaf3c51ab90ae86b3df7cb43bf3709c863e5c5693d0c125c2e2b94c8c6f4"
+    },
+    {
+      "path": "packages/storage/reconciliation.ts",
+      "sha256": "4cf595bffa1b2c20a63019ed623cca5772b7abbb8a9b414da7089d2cefbc8952"
+    },
+    {
+      "path": "packages/repositories/repair-lease.ts",
+      "sha256": "a33afa53fe214e2023d674a6cff2270e847577902a91e4ea10011b31ecc40070"
+    },
+    {
+      "path": "packages/evaluation/preact-trial-v9.ts",
+      "sha256": "87348984426fa4906bb80280ab0fe4a0b001adce474e5855fd031d390e33f0b8"
+    },
+    {
+      "path": "apps/evaluator/preact-trial-v9.ts",
+      "sha256": "610a7737b2f8c105cd63248a1ef9bd93ddd1f04f58879a22ccfb8e45a8a5004a"
+    },
+    {
+      "path": "evaluation/preact-trial-v9.json",
+      "sha256": "29099624a744667935d7f66d8a3d6e772396a9ed7d56252b5a0c46357dc2bf50"
+    },
+    {
+      "path": "evaluation/preact-trial-v9-results-summary.json",
+      "sha256": "105fc71b3bbfbe47fe5e5ab43ed5592869b85f3f6008029bb7659427ad1e2812"
+    },
+    {
+      "path": "evaluation/preact-nested-schema-v1-results-summary.json",
+      "sha256": "d04f27561178de8dbb9ab0d7bec9855363ecb12c9e1b661830a6ff18224ce022"
+    }
+  ],
+  "digest": "a30a6ca30b3465d19fa36904b2360c1711b5060d584341e6c6e6fa4d93b4e0c7"
+}

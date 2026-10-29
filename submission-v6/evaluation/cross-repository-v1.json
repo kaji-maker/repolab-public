@@ -1,0 +1,105 @@
+{
+  "format": "repolab-cross-repository-protocol/v1",
+  "parentBrowserFreeze": "4d211611dc902224615bf6f03c98e937630969565ee53f593464e86258e7eafc",
+  "tasks": [
+    "epoberezkin__fast-deep-equal-141",
+    "davidmarkclements__rfdc-55",
+    "epoberezkin__fast-json-stable-stringify-74"
+  ],
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "requestPolicy": "nemotron-full-thinking-v1",
+  "ratesUsdPerMillion": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "maxCandidatesPerTask": 2,
+  "maxOperationsPerTask": 20,
+  "modelRequestBytes": 32000,
+  "monetaryCap": null,
+  "originalPublicRepeats": 2,
+  "selectedPublicRepeats": 2,
+  "selectedNativeRepeats": 2,
+  "independentRepeats": 2,
+  "operationResubmission": false,
+  "taskReplacementAfterOutcomes": false,
+  "scope": "three purposively selected small CommonJS libraries; new to ReproLab execution, public and not training-unseen or a blinded controller assessment",
+  "assets": [
+    {
+      "path": "packages/repositories/cross-repo-protocol-v1.ts",
+      "sha256": "1e45859fce0b78208846194ac49e4e635eff7a8e7d78340a96202e896044e8c1"
+    },
+    {
+      "path": "packages/repositories/cross-repo-v1.ts",
+      "sha256": "f47db3c63b0850357e27ce6ea55603269fe3acc0af9fef59e30b724421b8c020"
+    },
+    {
+      "path": "packages/execution/cross-repo-sandbox-v1.ts",
+      "sha256": "d3fac4719169a3f55e71578faa26711ab963c8b94a3a0471e6688a156c1942ec"
+    },
+    {
+      "path": "packages/evaluation/cross-repo-cases-v1.ts",
+      "sha256": "4b563f9d76a6c6281a19fc76720a2be105d60ec9bf3dc384f23857b1bb854f21"
+    },
+    {
+      "path": "repositories/cross-repo-v1/driver.cjs",
+      "sha256": "31e3122556edbea699caae7092634334c4c694cbf212648d78592ab01426a923"
+    },
+    {
+      "path": "repositories/cross-repo-v1/child.cjs",
+      "sha256": "d844ca28a33a6aa30443e0f9c5ab10312c5c7bb1ffb6d01463a55121e4de5706"
+    },
+    {
+      "path": "apps/repositories/cross-repo-v1.ts",
+      "sha256": "455b83d9a44b6e9c50a7f22698540398467d3d46881312eff168967a3f040bf1"
+    },
+    {
+      "path": "tests/cross-repo-v1.test.ts",
+      "sha256": "93ba51e0bcc79ae387e27f49f95c8f1aa6272ba26e1ad4b65b6385923193cb3a"
+    },
+    {
+      "path": "evaluation/CROSS_REPOSITORY_V1.md",
+      "sha256": "782b4c4f30e3d3e3941309ced4b21123bce9309b8349fc9916180ea4656cdc89"
+    },
+    {
+      "path": "evaluation/cross-repository-selection-v1.json",
+      "sha256": "bdb10aa91bf3fae51d084a72543d87a62fe989692363cf40a71ea4171f53635a"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-deep-equal/manifest.json",
+      "sha256": "4f8c5e076369548ff75d2c3fb512ea1b9e9a14dd6c2cce9ecc626906827bf80f"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-deep-equal/original.tar.gz",
+      "sha256": "9df7827b518666561cc482ba3bfcc4fd5c68d2cb2fa213b5f87ecc31438c235f"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-deep-equal/LICENSE",
+      "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+    },
+    {
+      "path": "repositories/cross-repo-v1/rfdc/manifest.json",
+      "sha256": "da9386cf58942bb21ae6352ef5b021b41494563b892ba33319a41ee749ae3230"
+    },
+    {
+      "path": "repositories/cross-repo-v1/rfdc/original.tar.gz",
+      "sha256": "b629c00d7173bda3438c5389d7f199e9758050b542f24c97766cdb6bf75e2251"
+    },
+    {
+      "path": "repositories/cross-repo-v1/rfdc/LICENSE",
+      "sha256": "1ce941682a96c7b898ecd125d0f2e22319758ea6f3adbf498a65d649b0f3f7dd"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-json-stable-stringify/manifest.json",
+      "sha256": "060df037b0ad77f16e6a394f7c052f50bde6670456f271181e67874460ec7461"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-json-stable-stringify/original.tar.gz",
+      "sha256": "133c6e55d7e0b15768c26c2c7539c20699a818e1292b0b4a98eaa1af219b2014"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-json-stable-stringify/LICENSE",
+      "sha256": "a833d366242c298cf1b10263516572fb8dcbe68eb5072cdcac2b4546e2b4eb36"
+    }
+  ],
+  "digest": "84699931863b63e57c67578e8e0eb2d42e0a3019cfd6d3848681080b1d7496f1"
+}

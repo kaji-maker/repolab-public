@@ -1,0 +1,429 @@
+{
+  "format": "repolab-prospective-vue-native-result/v2",
+  "freeze": "e4fb725c43e10398d8bf132688f01ab61575d327a0e53797e6adc77f15f6a9ff",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "taskId": "vuejs__core-11739",
+  "commit": "cb843e0be31f9e563ccfc30eca0c06f2a224b505",
+  "status": "QUALIFIED_ORIGINAL_NATIVE_BASELINE",
+  "source": {
+    "files": 697,
+    "archiveBytes": 1476297,
+    "archiveSha256": "9bf326c2372070f53f3b9d3fde0cb18bf28649535915d04191123f8bf2eabfc9",
+    "gitTreeSha1": "d5445cfcb12b754f3d24171a3e14ab66ad7f7712",
+    "version": "3.5.0-rc.1",
+    "packageManager": "pnpm@9.9.0",
+    "lockSha256": "12889cf435f721ce9f33396e68b715528e51b25a512437cdda14aa67d5b95c64",
+    "vitestConfigSha256": "5305e9eaebcc892a782ca0942d85a5ebac659f14a15b71eefb221db967039c35",
+    "vitestUnitConfigSha256": "eb5f473c32cfe79f92a85d5d10cd14a81a765e8d7b21bc7eb4739499256694c2",
+    "unitTestFiles": 180
+  },
+  "operations": 8,
+  "previousAttempt": {
+    "operations": 4,
+    "failedSlot": "integrity",
+    "retainedSetupFailure": true
+  },
+  "taskOriginalOperations": 12,
+  "operationIds": [
+    "01a148cd-4f3b-769f-8247-e3036b4fb748",
+    "01a148cd-b19b-7007-bd49-7a4f05e906ca",
+    "01a148cd-e686-705d-9817-e9021434dbde",
+    "01a148ce-054a-72bd-94be-b008ff50f8a3",
+    "01a148ce-2491-7171-b491-c331239e6ec9",
+    "01a148ce-e181-77bf-8016-6160e3a9402d",
+    "01a148cf-0089-71a5-a246-f03dc755402d",
+    "01a148cf-d365-769e-9afd-369e468603d3"
+  ],
+  "protectedImage": "b7cc9add-12ff-4024-9434-255d2e2180e5",
+  "pnpmVersion": "9.9.0",
+  "gitPreexisting": false,
+  "dist": [
+    {
+      "path": "packages/shared/dist/shared.cjs.js",
+      "bytes": 22697,
+      "sha256": "19c96e4f594679f16e23d05cafcb07b4c71d33a134bb8aa9a2441d54511aa031"
+    },
+    {
+      "path": "packages/shared/dist/shared.cjs.prod.js",
+      "bytes": 22665,
+      "sha256": "f08de397e47a1f0b6916d66f8e8582eaf5ef4bc1d5a759657d1b212ec839a8af"
+    },
+    {
+      "path": "packages/reactivity/dist/reactivity.cjs.js",
+      "bytes": 51153,
+      "sha256": "c51b4fa53ea426b7ca0db07cd28b48ded0f3a033dedc796a31b4b0d4de1663d3"
+    },
+    {
+      "path": "packages/reactivity/dist/reactivity.cjs.prod.js",
+      "bytes": 47213,
+      "sha256": "d14036b8260152bc68e39a1e67f6a712ed54a541fb855ac0fd7d1daf28a38c4a"
+    },
+    {
+      "path": "packages/runtime-core/dist/runtime-core.cjs.js",
+      "bytes": 249827,
+      "sha256": "c4e0d08c193582835d48d7f3eb0a5356a2529ec40c72ed2459802bdf174bcdce"
+    },
+    {
+      "path": "packages/runtime-core/dist/runtime-core.cjs.prod.js",
+      "bytes": 192378,
+      "sha256": "34995e0b4e33fa0eb7de41d8301bdc0b3b49b4d9c4f403c8f8c82b689e6cb7b5"
+    },
+    {
+      "path": "packages/runtime-dom/dist/runtime-dom.cjs.js",
+      "bytes": 54434,
+      "sha256": "7866dde068aaa5d34ec89b4a24199e34c9c32a670d2d53b56757f0bab460da0b"
+    },
+    {
+      "path": "packages/runtime-dom/dist/runtime-dom.cjs.prod.js",
+      "bytes": 48999,
+      "sha256": "0602ad7e3bfc0b44953f47800c9851b813a8fc328a48bb5b1cc5704cf176fe58"
+    },
+    {
+      "path": "packages/compiler-core/dist/compiler-core.cjs.js",
+      "bytes": 200746,
+      "sha256": "0dcbee62208a0f57ad57777f8fbb35f7a32324c339e1b2a3d5da1f09f76899ae"
+    },
+    {
+      "path": "packages/compiler-core/dist/compiler-core.cjs.prod.js",
+      "bytes": 196009,
+      "sha256": "c45616988c66b6ed7d115b3af90b32aff2e378c787b79ae4a74502354c04a147"
+    },
+    {
+      "path": "packages/compiler-dom/dist/compiler-dom.cjs.js",
+      "bytes": 26916,
+      "sha256": "87b01b05665e7c708b2e759d076ea1ec36819d150c1eeecf63c2fd92e2dca9eb"
+    },
+    {
+      "path": "packages/compiler-dom/dist/compiler-dom.cjs.prod.js",
+      "bytes": 20798,
+      "sha256": "ab18a50bbccbc2c1184979e235e10a08a1d638da2e974f81d12c98c54952c20d"
+    },
+    {
+      "path": "packages/compiler-ssr/dist/compiler-ssr.cjs.js",
+      "bytes": 45361,
+      "sha256": "4b5480a6c3d62d8aab671cacab6524564e3661d0bd39229439afc8cf25b608c6"
+    },
+    {
+      "path": "packages/compiler-sfc/dist/compiler-sfc.cjs.js",
+      "bytes": 674042,
+      "sha256": "2aad3fc6efe102baca748f2d5e58982612ae7ef1418b1c1ef197b0b543c0d3ba"
+    },
+    {
+      "path": "packages/server-renderer/dist/server-renderer.cjs.js",
+      "bytes": 32373,
+      "sha256": "d658c2a73dbae5bb250693782ed887ac6d87e6cc131fc96968bf4a1e0f242db0"
+    },
+    {
+      "path": "packages/server-renderer/dist/server-renderer.cjs.prod.js",
+      "bytes": 24581,
+      "sha256": "02fa730589c799fec8ebbc07d347b7dda4b2ebd8bb7ea025ac711001cf9904e4"
+    },
+    {
+      "path": "packages/vue/dist/vue.cjs.js",
+      "bytes": 2535,
+      "sha256": "0f5ea7e2c341c2ad620691baf94a7947c89e2ee09e810574428069e13addf012"
+    },
+    {
+      "path": "packages/vue/dist/vue.cjs.prod.js",
+      "bytes": 2013,
+      "sha256": "84be9a38207ecfb4e88f03a905d3041a79a7dff5ca971fe584b85b6ca99f6c69"
+    },
+    {
+      "path": "packages/vue/dist/vue.runtime.global.js",
+      "bytes": 385194,
+      "sha256": "eabf6f15a26e00ed2c448b0d0535a7aa7f275dcdb364c8f6ba206f400342ee3a"
+    }
+  ],
+  "configSha256": "8dfb3b611d555ef2922bf77b4cff519fda5e28d0126859594f29cf3077679f17",
+  "permissionTransition": {
+    "before": {
+      "uid": 1000,
+      "gid": 1000,
+      "error": "EACCES",
+      "writes": []
+    },
+    "after": {
+      "uid": 1000,
+      "gid": 1000,
+      "error": null,
+      "writes": [
+        "/tmp/repolab-vue-home",
+        "/tmp/repolab-vue-home/config",
+        "/tmp/repolab-vue-home/cache",
+        "/tmp/repolab-vue-npm-cache",
+        "/tmp/repolab-vue-out"
+      ]
+    }
+  },
+  "unitRepeatDigest": "71cf4c6ede5638a8a3d96a0679fefc9f8f0d11075f13128f8c9e656d4503275c",
+  "observations": {
+    "nodeEnv": null,
+    "loaded": [
+      {
+        "path": "packages/compiler-core/dist/compiler-core.cjs.js",
+        "bytes": 200746,
+        "sha256": "0dcbee62208a0f57ad57777f8fbb35f7a32324c339e1b2a3d5da1f09f76899ae"
+      },
+      {
+        "path": "packages/compiler-core/index.js",
+        "bytes": 191,
+        "sha256": "ccc969ede88026f2168f8a6ca482913664ac12b2e0cfe1e34cd211767e521a60"
+      },
+      {
+        "path": "packages/compiler-dom/dist/compiler-dom.cjs.js",
+        "bytes": 26916,
+        "sha256": "87b01b05665e7c708b2e759d076ea1ec36819d150c1eeecf63c2fd92e2dca9eb"
+      },
+      {
+        "path": "packages/compiler-dom/index.js",
+        "bytes": 189,
+        "sha256": "21407fc5cebe255208627dd039f2284156be88abbd9123281a79581d349b48c1"
+      },
+      {
+        "path": "packages/compiler-sfc/dist/compiler-sfc.cjs.js",
+        "bytes": 674042,
+        "sha256": "2aad3fc6efe102baca748f2d5e58982612ae7ef1418b1c1ef197b0b543c0d3ba"
+      },
+      {
+        "path": "packages/compiler-ssr/dist/compiler-ssr.cjs.js",
+        "bytes": 45361,
+        "sha256": "4b5480a6c3d62d8aab671cacab6524564e3661d0bd39229439afc8cf25b608c6"
+      },
+      {
+        "path": "packages/reactivity/dist/reactivity.cjs.js",
+        "bytes": 51153,
+        "sha256": "c51b4fa53ea426b7ca0db07cd28b48ded0f3a033dedc796a31b4b0d4de1663d3"
+      },
+      {
+        "path": "packages/reactivity/index.js",
+        "bytes": 185,
+        "sha256": "ea58baa61892122ece77249d50c4b4bcdda46dd5233d6908d86d6bb4f874a109"
+      },
+      {
+        "path": "packages/runtime-core/dist/runtime-core.cjs.js",
+        "bytes": 249827,
+        "sha256": "c4e0d08c193582835d48d7f3eb0a5356a2529ec40c72ed2459802bdf174bcdce"
+      },
+      {
+        "path": "packages/runtime-core/index.js",
+        "bytes": 189,
+        "sha256": "62c7b9f4f1090dd5217eccacffb381d56a5d27f60c0256e7f04915a77489ef82"
+      },
+      {
+        "path": "packages/runtime-dom/dist/runtime-dom.cjs.js",
+        "bytes": 54434,
+        "sha256": "7866dde068aaa5d34ec89b4a24199e34c9c32a670d2d53b56757f0bab460da0b"
+      },
+      {
+        "path": "packages/runtime-dom/index.js",
+        "bytes": 187,
+        "sha256": "32a727cae7f8ef6ff93696552dd16b5fd355207439f74421dd9f19d7193f866f"
+      },
+      {
+        "path": "packages/server-renderer/dist/server-renderer.cjs.js",
+        "bytes": 32373,
+        "sha256": "d658c2a73dbae5bb250693782ed887ac6d87e6cc131fc96968bf4a1e0f242db0"
+      },
+      {
+        "path": "packages/server-renderer/index.js",
+        "bytes": 195,
+        "sha256": "649f9ecc1d681df415cfe6e0a94bcab03c8ac7a98c2f14dee08afeeec43e1880"
+      },
+      {
+        "path": "packages/shared/dist/shared.cjs.js",
+        "bytes": 22697,
+        "sha256": "19c96e4f594679f16e23d05cafcb07b4c71d33a134bb8aa9a2441d54511aa031"
+      },
+      {
+        "path": "packages/shared/index.js",
+        "bytes": 177,
+        "sha256": "22aeabedc1f2782f67b05c54df4382d4e52a0e0c384ff02349372e2acd9974ed"
+      },
+      {
+        "path": "packages/vue/dist/vue.cjs.js",
+        "bytes": 2535,
+        "sha256": "0f5ea7e2c341c2ad620691baf94a7947c89e2ee09e810574428069e13addf012"
+      },
+      {
+        "path": "packages/vue/dist/vue.runtime.global.js",
+        "bytes": 385194,
+        "sha256": "eabf6f15a26e00ed2c448b0d0535a7aa7f275dcdb364c8f6ba206f400342ee3a"
+      },
+      {
+        "path": "packages/vue/index.js",
+        "bytes": 171,
+        "sha256": "a5287f6056bc5c2c569d318063ee043f55a0d323fa7262f64456d58fd574f928"
+      }
+    ],
+    "observations": [
+      {
+        "name": "reported",
+        "mode": "dev",
+        "cssVars": [
+          "props.backgroundColor",
+          "props.padding"
+        ],
+        "serverHtml": "<div style=\"display:flex;--7a11e739-props\\.backgroundColor:blue;--7a11e739-props\\.padding:20px;\" class=\"parent-component\" data-v-7a11e739><!--[--><div class=\"child-content\" data-v-7a11e739> Hello 👋 </div><!--]--></div>",
+        "serverMessages": [],
+        "serverRootStyle": "display:flex;--7a11e739-props\\.backgroundColor:blue;--7a11e739-props\\.padding:20px;",
+        "clientRootStyle": "display: flex; --7a11e739-props\\.backgroundColor: blue; --7a11e739-props\\.padding: 20px; --7a11e739-props.backgroundColor: blue; --7a11e739-props.padding: 20px;",
+        "mismatches": [
+          "style"
+        ],
+        "hydrationWarnings": [
+          "[Vue warn]: Hydration style mismatch on [object HTMLDivElement] \n  - rendered on server: style=\"display:flex;--7a11e739-props\\.backgroundColor:blue;--7a11e739-props\\.padding:20px;\"\n  - expected on client: style=\"display:flex;\"\n  Note: this mismatch is check-only. The DOM will not be rectified in production due to performance overhead.\n  You should fix the source of the mismatch. \n  at <ComponentTest class=\"parent-component\" > \n  at <App>"
+        ],
+        "hydrationErrors": 1,
+        "otherBrowserMessages": []
+      },
+      {
+        "name": "parentVarsChildWithoutStyle",
+        "mode": "dev",
+        "cssVars": [
+          "props.backgroundColor",
+          "props.padding"
+        ],
+        "serverHtml": "<div class=\"parent-component\" style=\"--7a11e739-props\\.backgroundColor:blue;--7a11e739-props\\.padding:20px;\" data-v-7a11e739><!--[--><div class=\"child-content\" data-v-7a11e739> Hello 👋 </div><!--]--></div>",
+        "serverMessages": [],
+        "serverRootStyle": "--7a11e739-props\\.backgroundColor:blue;--7a11e739-props\\.padding:20px;",
+        "clientRootStyle": "--7a11e739-props\\.backgroundColor: blue; --7a11e739-props\\.padding: 20px; --7a11e739-props.backgroundColor: blue; --7a11e739-props.padding: 20px;",
+        "mismatches": [],
+        "hydrationWarnings": [],
+        "hydrationErrors": 0,
+        "otherBrowserMessages": []
+      },
+      {
+        "name": "childStyleParentWithoutVars",
+        "mode": "dev",
+        "cssVars": [],
+        "serverHtml": "<div style=\"display:flex;\" class=\"parent-component\" data-v-7a11e739><!--[--><div class=\"child-content\" data-v-7a11e739> Hello 👋 </div><!--]--></div>",
+        "serverMessages": [],
+        "serverRootStyle": "display:flex;",
+        "clientRootStyle": "display:flex;",
+        "mismatches": [],
+        "hydrationWarnings": [],
+        "hydrationErrors": 0,
+        "otherBrowserMessages": []
+      },
+      {
+        "name": "detectorLive",
+        "mode": "dev",
+        "cssVars": [],
+        "serverHtml": "<div style=\"color:red;\"><!--[--><!--]--></div>",
+        "serverMessages": [],
+        "serverRootStyle": "color:red;",
+        "clientRootStyle": "color:red;",
+        "mismatches": [
+          "style"
+        ],
+        "hydrationWarnings": [
+          "[Vue warn]: Hydration style mismatch on [object HTMLDivElement] \n  - rendered on server: style=\"color:red;\"\n  - expected on client: style=\"color:blue;\"\n  Note: this mismatch is check-only. The DOM will not be rectified in production due to performance overhead.\n  You should fix the source of the mismatch. \n  at <App tone=\"blue\" >"
+        ],
+        "hydrationErrors": 0,
+        "otherBrowserMessages": []
+      },
+      {
+        "name": "reported",
+        "mode": "inline",
+        "cssVars": [
+          "props.backgroundColor",
+          "props.padding"
+        ],
+        "serverHtml": "<div style=\"display:flex;--7a11e739-props\\.backgroundColor:blue;--7a11e739-props\\.padding:20px;\" class=\"parent-component\" data-v-7a11e739><!--[--><div class=\"child-content\" data-v-7a11e739> Hello 👋 </div><!--]--></div>",
+        "serverMessages": [],
+        "serverRootStyle": "display:flex;--7a11e739-props\\.backgroundColor:blue;--7a11e739-props\\.padding:20px;",
+        "clientRootStyle": "display: flex; --7a11e739-props\\.backgroundColor: blue; --7a11e739-props\\.padding: 20px; --7a11e739-props.backgroundColor: blue; --7a11e739-props.padding: 20px;",
+        "mismatches": [
+          "style"
+        ],
+        "hydrationWarnings": [
+          "[Vue warn]: Hydration style mismatch on [object HTMLDivElement] \n  - rendered on server: style=\"display:flex;--7a11e739-props\\.backgroundColor:blue;--7a11e739-props\\.padding:20px;\"\n  - expected on client: style=\"display:flex;\"\n  Note: this mismatch is check-only. The DOM will not be rectified in production due to performance overhead.\n  You should fix the source of the mismatch. \n  at <ComponentTest class=\"parent-component\" > \n  at <App>"
+        ],
+        "hydrationErrors": 0,
+        "otherBrowserMessages": []
+      },
+      {
+        "name": "parentVarsChildWithoutStyle",
+        "mode": "inline",
+        "cssVars": [
+          "props.backgroundColor",
+          "props.padding"
+        ],
+        "serverHtml": "<div class=\"parent-component\" style=\"--7a11e739-props\\.backgroundColor:blue;--7a11e739-props\\.padding:20px;\" data-v-7a11e739><!--[--><div class=\"child-content\" data-v-7a11e739> Hello 👋 </div><!--]--></div>",
+        "serverMessages": [],
+        "serverRootStyle": "--7a11e739-props\\.backgroundColor:blue;--7a11e739-props\\.padding:20px;",
+        "clientRootStyle": "--7a11e739-props\\.backgroundColor: blue; --7a11e739-props\\.padding: 20px; --7a11e739-props.backgroundColor: blue; --7a11e739-props.padding: 20px;",
+        "mismatches": [],
+        "hydrationWarnings": [],
+        "hydrationErrors": 0,
+        "otherBrowserMessages": []
+      },
+      {
+        "name": "childStyleParentWithoutVars",
+        "mode": "inline",
+        "cssVars": [],
+        "serverHtml": "<div style=\"display:flex;\" class=\"parent-component\" data-v-7a11e739><!--[--><div class=\"child-content\" data-v-7a11e739> Hello 👋 </div><!--]--></div>",
+        "serverMessages": [],
+        "serverRootStyle": "display:flex;",
+        "clientRootStyle": "display:flex;",
+        "mismatches": [],
+        "hydrationWarnings": [],
+        "hydrationErrors": 0,
+        "otherBrowserMessages": []
+      },
+      {
+        "name": "detectorLive",
+        "mode": "inline",
+        "cssVars": [],
+        "serverHtml": "<div style=\"color:red;\"><!--[--><!--]--></div>",
+        "serverMessages": [],
+        "serverRootStyle": "color:red;",
+        "clientRootStyle": "color:red;",
+        "mismatches": [
+          "style"
+        ],
+        "hydrationWarnings": [
+          "[Vue warn]: Hydration style mismatch on [object HTMLDivElement] \n  - rendered on server: style=\"color:red;\"\n  - expected on client: style=\"color:blue;\"\n  Note: this mismatch is check-only. The DOM will not be rectified in production due to performance overhead.\n  You should fix the source of the mismatch. \n  at <App tone=\"blue\" >"
+        ],
+        "hydrationErrors": 0,
+        "otherBrowserMessages": []
+      }
+    ]
+  },
+  "modelCalls": 0,
+  "modelAdmission": false,
+  "candidateAdmission": false,
+  "inference": "none",
+  "execution": "nebius-sandbox; reviewed original",
+  "prospectiveDenominator": 8,
+  "prospectiveNativeQualified": 2,
+  "limits": [
+    "One exact original task/commit qualified; not a generated candidate or repair result",
+    "Hydration observed in jsdom with the built browser runtime, not a real browser",
+    "First complete original unit inventory becomes the later candidate baseline",
+    "Same Sandbox project/cache; not separate-machine qualification"
+  ],
+  "unit": {
+    "files": 180,
+    "total": 3211,
+    "passed": 3206,
+    "skipped": 5,
+    "caseDigest": "71cf4c6ede5638a8a3d96a0679fefc9f8f0d11075f13128f8c9e656d4503275c",
+    "reporterCounters": {
+      "total": 3211,
+      "passed": 3211,
+      "pending": 0,
+      "todo": 0
+    }
+  },
+  "validation": {
+    "focusedControllerTests": 12,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3181,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesReleased": true
+  },
+  "cumulativeInferenceEstimateUsd": 0.34907219999999994
+}

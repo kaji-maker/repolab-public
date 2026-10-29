@@ -1,0 +1,151 @@
+{
+  "format": "repolab-prospective-preact-native-result/v1",
+  "freeze": "5931b339513d463debaefe544af1efc04838a80ae9e0ab63343151af84f40ec9",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "taskId": "preactjs__preact-4316",
+  "commit": "b820d8b73eade8bc5b3fbf7e5fe0dd5150de80e2",
+  "status": "QUALIFIED_ORIGINAL_NATIVE_BASELINE",
+  "source": {
+    "files": 335,
+    "archiveBytes": 653607,
+    "archiveSha256": "79df72773cf63b53375565ae2c9f2b4df53e74d87c47765104d90b85b5409732",
+    "gitTreeSha1": "a6ed2cc5c1a6e6cb6708b4739dd31a9adaabd33c",
+    "version": "10.20.0",
+    "lockSha256": "4b289a15e15098379bb704da08d644dbce9be6c71ab0d572f3bc5dead19508de",
+    "nodeTestFiles": 6
+  },
+  "operations": 11,
+  "operationIds": [
+    "01a1430f-e7e0-72e3-b7a9-d58282e9f3d1",
+    "01a14310-6dcd-75f5-92f5-2b2e1cfbc86f",
+    "01a14310-b264-749e-b528-6e084d98af5e",
+    "01a14310-cad6-76e1-aa9d-404b25ab6803",
+    "01a14310-e374-7742-a8db-3d18f12810a7",
+    "01a14311-11c0-77f4-9a52-564af1e23d81",
+    "01a14311-40cb-7496-8eb7-68b2e4d29f45",
+    "01a14311-86c4-7676-9248-c08edd1734e4",
+    "01a14311-9f64-70a8-8b80-a7ab1fdb5a7b",
+    "01a14311-ce62-7509-95e4-bd553df3b3b8",
+    "01a14312-140e-71b2-95ae-f9e180df7869"
+  ],
+  "protectedImage": "fb9faf73-9954-4628-a07e-582de79afc7a",
+  "originalUmd": {
+    "sha256": "04e2c62a7c95dd6a7b5ff0cfed0cffe5bde4355c5df008d4af1e994a38161bb9",
+    "bytes": 11306
+  },
+  "buildChangedOriginalPaths": [],
+  "typeResults": [
+    {
+      "slot": "mocha-A",
+      "passed": [
+        17
+      ],
+      "pending": [
+        2
+      ]
+    },
+    {
+      "slot": "mocha-B",
+      "passed": [
+        17
+      ],
+      "pending": [
+        2
+      ]
+    }
+  ],
+  "observations": {
+    "observations": [
+      {
+        "prop": "onFocusIn",
+        "type": "focusin",
+        "calls": 0,
+        "registrations": [
+          "FocusIn"
+        ]
+      },
+      {
+        "prop": "onFocusOut",
+        "type": "focusout",
+        "calls": 0,
+        "registrations": [
+          "FocusOut"
+        ]
+      },
+      {
+        "prop": "onfocusin",
+        "type": "focusin",
+        "calls": 1,
+        "registrations": [
+          "focusin"
+        ]
+      },
+      {
+        "prop": "onfocusout",
+        "type": "focusout",
+        "calls": 1,
+        "registrations": [
+          "focusout"
+        ]
+      },
+      {
+        "prop": "onFocus",
+        "type": "focus",
+        "calls": 1,
+        "registrations": [
+          "focus"
+        ]
+      },
+      {
+        "prop": "onClick",
+        "type": "click",
+        "calls": 1,
+        "registrations": [
+          "click"
+        ]
+      },
+      {
+        "prop": "onMyEvent",
+        "type": "MyEvent",
+        "calls": 1,
+        "registrations": [
+          "MyEvent"
+        ]
+      }
+    ]
+  },
+  "modelCalls": 0,
+  "modelAdmission": false,
+  "candidateAdmission": false,
+  "inference": "none",
+  "execution": "nebius-sandbox; reviewed original",
+  "frameworkDenominator": 3,
+  "prospectiveDenominator": 8,
+  "prospectiveNativeQualified": 1,
+  "limits": [
+    "One exact original task/commit qualified; not a generated candidate or repair result",
+    "Native browser discovery recipe/source fixed prospectively; first original inventory becomes the later candidate baseline",
+    "Same Sandbox project/cache; not separate-machine qualification",
+    "Original TypeScript output directories use inherited sticky permissions; candidate containment remains a separate gate"
+  ],
+  "mocha": {
+    "passed": 29,
+    "skipped": 0,
+    "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93"
+  },
+  "browser": {
+    "passed": 1144,
+    "skipped": 11,
+    "caseDigest": "a343b3f5be55b95ce75b502b2f77c869fd9972e48762f04437b5f2db8deb0df8"
+  },
+  "validation": {
+    "controllerTests": 13,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3133,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesReleased": true
+  },
+  "cumulativeInferenceEstimateUsd": 0.34907219999999994
+}

@@ -1,0 +1,72 @@
+{
+  "format": "repolab-common-study/v5",
+  "digest": "41487293885b9230c0583c26fcda0b30d809c1f50f7adb955c0dc882dae18785",
+  "previousDigest": "037e7a67ffe60ced80b59993b5cc168d78082a51f0bc072263b65a4a7b36e578",
+  "scope": "focused-three-exposed-bug-revision-no-comparison-claim",
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "maxCandidates": 2,
+  "maxCalls": 3,
+  "maxOperations": 32,
+  "runInferenceCapUsd": null,
+  "allocationUsd": null,
+  "globalInferenceCapUsd": 4,
+  "schedule": [
+    {
+      "task": "dlv-null-path",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "C",
+      "repetition": 1
+    }
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/study-protocol-v5.ts",
+      "sha256": "15e5093c965b23f6173d6fd2923207812afd31a7c7d5d16c61e5f71fbba80027"
+    },
+    {
+      "path": "packages/evaluation/study-policy-v5.ts",
+      "sha256": "e8da115dd505699fdcb6beebf34dbaf4104ac03f0f10af3be8d3d43805e976b5"
+    },
+    {
+      "path": "packages/evaluation/study-adapters-v5.ts",
+      "sha256": "c982906e625b408404921f48d6575e5c593db3e7929454ccdd32007bd5189676"
+    },
+    {
+      "path": "packages/evaluation/study-runner-v5.ts",
+      "sha256": "0fa903781a5ce1b30c272b974cbacdae1a7998cbd3096421dacbfee2b5cf64fe"
+    },
+    {
+      "path": "packages/evaluation/study-metrics-v5.ts",
+      "sha256": "6373db6e1a007c37d66560322c0de943fd077dfc3826049eae02a73e348fa50b"
+    },
+    {
+      "path": "apps/evaluator/study-v5.ts",
+      "sha256": "68a05faeab83e7fcc732c8453a86ab6a062aab5e3dda925ce625998a8661e3cb"
+    },
+    {
+      "path": "tests/study-v5.test.ts",
+      "sha256": "829b3bf3f75490eb07c31993324e166fdd762239a3b4a37a37af3fae1dcc68ba"
+    },
+    {
+      "path": "evaluation/STUDY_V5.md",
+      "sha256": "57cd86abc770e4f96d8dc48c7c0f866c678d5afd09d851cea9d6ccdfebbbcc7e"
+    },
+    {
+      "path": "evaluation/study-v5-falsy-challenges.json",
+      "sha256": "7da459ffe15640840551b43e1d534f5ddb6631897b4808a213fc44729a0253d5"
+    }
+  ]
+}

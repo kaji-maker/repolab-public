@@ -1,0 +1,39 @@
+{
+  "format": "repolab-github-pilot/v2",
+  "previousStudyDigest": "008ba9bfac8725821a8460acff559be94ca26d3333f1607c80cf8539211004e6",
+  "task": "dlv-nested-null",
+  "scope": "one-revised-public-historical-development-task",
+  "maxCandidates": 2,
+  "maxCalls": 3,
+  "maxOperations": 16,
+  "inferenceBudgetUsd": 0.1,
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "requestPolicy": "nemotron-low-effort-v1",
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "assets": [
+    {
+      "path": "packages/evaluation/github-pilot-v2.ts",
+      "sha256": "662ac1b687e74f6d45c07d44b1beba398355f994525eecc9a42a54f9f7ca3d97"
+    },
+    {
+      "path": "packages/evaluation/github-runner-v2.ts",
+      "sha256": "51fa96c93d3fc81af588424c6965331963377de437f8890869bd74f3f360ee76"
+    },
+    {
+      "path": "apps/evaluator/github-pilot-v2.ts",
+      "sha256": "ad47d840ac6635a3cf916fb482e1936ad803233512cee134559c4252724e377b"
+    },
+    {
+      "path": "evaluation/GITHUB_PILOT_V2.md",
+      "sha256": "a5f20f8e013c867b2f1738346a079b07082e57bb338b716af5e86d4bf00f2e6e"
+    },
+    {
+      "path": "tests/github-pilot-v2.test.ts",
+      "sha256": "f199e1e0f54b807967687730f5ef54a086625ee3c045f8494bfd1003aa2f9b9b"
+    }
+  ],
+  "digest": "548b6a12599f09b280458c0f7d0e73874dd3c657b9ac5f02ab4ec382158ba632"
+}

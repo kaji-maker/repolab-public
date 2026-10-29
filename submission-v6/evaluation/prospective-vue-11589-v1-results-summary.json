@@ -1,0 +1,518 @@
+{
+  "format": "repolab-prospective-vue-native-result/v1",
+  "freeze": "14a0e1e6189fca1e81eb8f1513f2bee8c6aac1734194c9fe87f04dd49a5bced1",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "taskId": "vuejs__core-11589",
+  "commit": "3653bc0f45d6fedf84e29b64ca52584359c383c0",
+  "status": "QUALIFIED_ORIGINAL_NATIVE_BASELINE",
+  "source": {
+    "files": 694,
+    "archiveBytes": 1469298,
+    "archiveSha256": "eafd5fc8b7a29a955f363e0095c780d46acb7db458628622741dd149e6e4558b",
+    "gitTreeSha1": "c192989d2aa55a643356b0cea11f8ea3ed44f48a",
+    "version": "3.5.0-beta.1",
+    "packageManager": "pnpm@9.7.0",
+    "lockSha256": "c774ea25773ca227dd045ce051cd839b49bb56191bf22a06badf67dc19cb2fd7",
+    "vitestConfigSha256": "e8d53be9ead09a68fb5aca1f3ab610ad67aa70142a8bfb2487ff347d3d7a6eff",
+    "vitestUnitConfigSha256": "eb5f473c32cfe79f92a85d5d10cd14a81a765e8d7b21bc7eb4739499256694c2",
+    "unitTestFiles": 179
+  },
+  "operations": 8,
+  "taskOriginalOperations": 8,
+  "operationIds": [
+    "01a1585b-ecd5-740f-bad6-0cc55f336102",
+    "01a1585c-5df4-720d-ac2e-a1e2fb408def",
+    "01a1585c-8cc3-760c-af78-50b42f0f0491",
+    "01a1585c-a636-74b6-9b60-f34a007ddcbb",
+    "01a1585c-befb-74ca-95b3-bac213261f92",
+    "01a1585d-8924-725a-a663-37aa087e3138",
+    "01a1585d-a1c4-717d-a16f-085d01206829",
+    "01a1585e-6bc0-7191-97fb-8b15861964c8"
+  ],
+  "protectedImage": "013bb519-6e8d-45eb-b725-1931e7e8fbfc",
+  "pnpmVersion": "9.7.0",
+  "gitPreexisting": false,
+  "dist": [
+    {
+      "path": "packages/shared/dist/shared.cjs.js",
+      "bytes": 22699,
+      "sha256": "b56ae59c33f6fe8f10ffd2be1afba17540fda14179bca781ec6c7c28530468e3"
+    },
+    {
+      "path": "packages/shared/dist/shared.cjs.prod.js",
+      "bytes": 22667,
+      "sha256": "2cda22732b87634eac8d3414924b67e1fae2eb62eec4adafbc13766393de37dd"
+    },
+    {
+      "path": "packages/reactivity/dist/reactivity.cjs.js",
+      "bytes": 44760,
+      "sha256": "c2014ddbb8f9bfab6d5b7b7f972a5ddfa8d2b92abce44cf2601464d0a1885881"
+    },
+    {
+      "path": "packages/reactivity/dist/reactivity.cjs.prod.js",
+      "bytes": 41349,
+      "sha256": "711d6778481b519d6b17f86ced20ab2c414c8255067c9ad020a92e747cfda1c6"
+    },
+    {
+      "path": "packages/runtime-core/dist/runtime-core.cjs.js",
+      "bytes": 254560,
+      "sha256": "33b229e29e5a83811ed477a8cf14969a7e47027d44a52595e79823c34764a59f"
+    },
+    {
+      "path": "packages/runtime-core/dist/runtime-core.cjs.prod.js",
+      "bytes": 196789,
+      "sha256": "97170e699d73ce2da15974714f49c60aaada3dd9c48d3088cf87f788ad2aeb91"
+    },
+    {
+      "path": "packages/runtime-dom/dist/runtime-dom.cjs.js",
+      "bytes": 54261,
+      "sha256": "04dc4182fc1e91e9156bc509e4917ae6d357ddd9f66af8f738b5f77c6bbb9031"
+    },
+    {
+      "path": "packages/runtime-dom/dist/runtime-dom.cjs.prod.js",
+      "bytes": 48826,
+      "sha256": "d58e20582d7d90f0220f82fb5d692e8991d80d1bdf8d0a2ada5587355bb55dcf"
+    },
+    {
+      "path": "packages/compiler-core/dist/compiler-core.cjs.js",
+      "bytes": 197804,
+      "sha256": "5914bb23df01ba78e7cfcc9a193d22da1c8f26e120551eba681adf16941d158b"
+    },
+    {
+      "path": "packages/compiler-core/dist/compiler-core.cjs.prod.js",
+      "bytes": 193093,
+      "sha256": "a9b388d3c137f97b40d38860ce5f5eec0be09a8e6b87ca6a1ea5c41bda8f30a5"
+    },
+    {
+      "path": "packages/compiler-dom/dist/compiler-dom.cjs.js",
+      "bytes": 26918,
+      "sha256": "85dfad3f74317e5e17fdb44f527454472e4238f9ca87ed769442824ffd7348ba"
+    },
+    {
+      "path": "packages/compiler-dom/dist/compiler-dom.cjs.prod.js",
+      "bytes": 20800,
+      "sha256": "5e62ee4b738070f37c44181434b9f5a24d059a0611956ea91cb8ced686a98959"
+    },
+    {
+      "path": "packages/compiler-ssr/dist/compiler-ssr.cjs.js",
+      "bytes": 45363,
+      "sha256": "4fb636c8e665c9ee8e7adb042ba1030d91f3c28364c3373d19ecc872d07599a6"
+    },
+    {
+      "path": "packages/compiler-sfc/dist/compiler-sfc.cjs.js",
+      "bytes": 673557,
+      "sha256": "f427f490519d8a8baa15f69a3607743bf60d8c9d5bdc77a115cc381a00f0ee0d"
+    },
+    {
+      "path": "packages/server-renderer/dist/server-renderer.cjs.js",
+      "bytes": 32362,
+      "sha256": "d7e3b24231369308231c2c328e100e410eeeb0a972c5cf56d82c511343a2b08b"
+    },
+    {
+      "path": "packages/server-renderer/dist/server-renderer.cjs.prod.js",
+      "bytes": 24570,
+      "sha256": "577430a357e9d02de60f2f109c191204d57959950a1aed77ad209e4620574298"
+    },
+    {
+      "path": "packages/vue/dist/vue.cjs.js",
+      "bytes": 2537,
+      "sha256": "54aa95af2ea41acbfa3ad63f98981fd4f6a29170db2cdcca55059653c9d55531"
+    },
+    {
+      "path": "packages/vue/dist/vue.cjs.prod.js",
+      "bytes": 2015,
+      "sha256": "5262229c7586dbe93bfda4c3af25542ae3fefa4b63d8dcbdf6d3d20974a90173"
+    }
+  ],
+  "configSha256": "0acb29ac6650a9a226e74bbe3dc5a52a9ee31f07d58b3c29b2494dc7a7f1e148",
+  "permissionTransition": {
+    "before": {
+      "uid": 1000,
+      "gid": 1000,
+      "error": "EACCES",
+      "writes": []
+    },
+    "after": {
+      "uid": 1000,
+      "gid": 1000,
+      "error": null,
+      "writes": [
+        "/tmp/repolab-vue-home",
+        "/tmp/repolab-vue-home/config",
+        "/tmp/repolab-vue-home/cache",
+        "/tmp/repolab-vue-npm-cache",
+        "/tmp/repolab-vue-out"
+      ]
+    }
+  },
+  "unitRepeatDigest": "c1bb1d0f63a0d1b93c979a3c64430f17709babf11d7b2008e1ccd2a4544938a5",
+  "orderingContract": "reporter-requested FIFO; API guarantee unresolved",
+  "observations": {
+    "version": "3.5.0-beta.1",
+    "nodeEnv": null,
+    "loaded": [
+      {
+        "path": "packages/compiler-core/dist/compiler-core.cjs.js",
+        "bytes": 197804,
+        "sha256": "5914bb23df01ba78e7cfcc9a193d22da1c8f26e120551eba681adf16941d158b"
+      },
+      {
+        "path": "packages/compiler-dom/dist/compiler-dom.cjs.js",
+        "bytes": 26918,
+        "sha256": "85dfad3f74317e5e17fdb44f527454472e4238f9ca87ed769442824ffd7348ba"
+      },
+      {
+        "path": "packages/reactivity/dist/reactivity.cjs.js",
+        "bytes": 44760,
+        "sha256": "c2014ddbb8f9bfab6d5b7b7f972a5ddfa8d2b92abce44cf2601464d0a1885881"
+      },
+      {
+        "path": "packages/runtime-core/dist/runtime-core.cjs.js",
+        "bytes": 254560,
+        "sha256": "33b229e29e5a83811ed477a8cf14969a7e47027d44a52595e79823c34764a59f"
+      },
+      {
+        "path": "packages/runtime-dom/dist/runtime-dom.cjs.js",
+        "bytes": 54261,
+        "sha256": "04dc4182fc1e91e9156bc509e4917ae6d357ddd9f66af8f738b5f77c6bbb9031"
+      },
+      {
+        "path": "packages/shared/dist/shared.cjs.js",
+        "bytes": 22699,
+        "sha256": "b56ae59c33f6fe8f10ffd2be1afba17540fda14179bca781ec6c7c28530468e3"
+      },
+      {
+        "path": "packages/vue/dist/vue.cjs.js",
+        "bytes": 2537,
+        "sha256": "54aa95af2ea41acbfa3ad63f98981fd4f6a29170db2cdcca55059653c9d55531"
+      }
+    ],
+    "messages": [],
+    "observations": [
+      {
+        "name": "ref-sync",
+        "before": [],
+        "immediate": [
+          {
+            "watcher": 4,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 3,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 2,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 1,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 0,
+            "value": 1,
+            "previous": 0
+          }
+        ],
+        "afterTick": [
+          {
+            "watcher": 4,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 3,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 2,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 1,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 0,
+            "value": 1,
+            "previous": 0
+          }
+        ],
+        "afterStop": [
+          {
+            "watcher": 4,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 3,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 2,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 1,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 0,
+            "value": 1,
+            "previous": 0
+          }
+        ]
+      },
+      {
+        "name": "computed-sync",
+        "before": [],
+        "immediate": [
+          {
+            "watcher": 4,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 3,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 2,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 1,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 0,
+            "value": 1,
+            "previous": 0
+          }
+        ],
+        "afterTick": [
+          {
+            "watcher": 4,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 3,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 2,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 1,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 0,
+            "value": 1,
+            "previous": 0
+          }
+        ],
+        "afterStop": [
+          {
+            "watcher": 4,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 3,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 2,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 1,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 0,
+            "value": 1,
+            "previous": 0
+          }
+        ]
+      },
+      {
+        "name": "ref-default",
+        "before": [],
+        "immediate": [],
+        "afterTick": [
+          {
+            "watcher": 0,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 1,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 2,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 3,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 4,
+            "value": 1,
+            "previous": 0
+          }
+        ],
+        "afterStop": [
+          {
+            "watcher": 0,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 1,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 2,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 3,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 4,
+            "value": 1,
+            "previous": 0
+          }
+        ]
+      },
+      {
+        "name": "computed-default",
+        "before": [],
+        "immediate": [],
+        "afterTick": [
+          {
+            "watcher": 0,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 1,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 2,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 3,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 4,
+            "value": 1,
+            "previous": 0
+          }
+        ],
+        "afterStop": [
+          {
+            "watcher": 0,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 1,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 2,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 3,
+            "value": 1,
+            "previous": 0
+          },
+          {
+            "watcher": 4,
+            "value": 1,
+            "previous": 0
+          }
+        ]
+      }
+    ]
+  },
+  "modelCalls": 0,
+  "modelAdmission": false,
+  "candidateAdmission": false,
+  "inference": "none",
+  "execution": "nebius-sandbox; reviewed original",
+  "prospectiveDenominator": 8,
+  "prospectiveNativeQualified": 4,
+  "limits": [
+    "One exact original task/commit qualified; not a generated candidate or repair result",
+    "Synchronous watcher ordering guarantee remains unresolved; report expectation is not an established API contract",
+    "First complete original unit inventory becomes the later candidate baseline",
+    "Same Sandbox project/cache; not separate-machine qualification"
+  ],
+  "unit": {
+    "files": 179,
+    "total": 3190,
+    "passed": 3185,
+    "skipped": 5,
+    "caseDigest": "c1bb1d0f63a0d1b93c979a3c64430f17709babf11d7b2008e1ccd2a4544938a5",
+    "reporterCounters": {
+      "total": 3190,
+      "passed": 3190,
+      "pending": 0,
+      "todo": 0
+    }
+  },
+  "validation": {
+    "focusedControllerTests": 12,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3228,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesReleased": true
+  },
+  "cumulativeInferenceEstimateUsd": 0.34907219999999994
+}

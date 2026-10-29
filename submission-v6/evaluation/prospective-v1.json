@@ -1,0 +1,153 @@
+{
+  "format": "repolab-prospective-preparation/v1",
+  "selectionFreeze": "dd03bd39963f8b86f02ed91be63c6e30f8c24549bc3a7924156c24565ec74786",
+  "phase": "SELECTION_AND_COMPARISON_PREPARED",
+  "selectedTasks": 8,
+  "repositoryOwners": 2,
+  "modelAdmission": false,
+  "executionAdmission": false,
+  "design": "shared-candidate-pool-paired-selector-comparison",
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "thinking": "full",
+  "requestBytes": 64000,
+  "outputTokens": 16384,
+  "candidatesPerTask": 2,
+  "actualModelCallsPerTask": 2,
+  "maxActualModelCalls": 16,
+  "originalOperationsPerTask": 12,
+  "candidateOperationsPerCandidate": 15,
+  "independentOperationsPerTask": 8,
+  "fixtureQualificationOperations": 8,
+  "maxSandboxOperations": 408,
+  "monetaryCap": null,
+  "automaticProviderRetry": false,
+  "replaceFailedTask": false,
+  "generationFeedback": "none; both candidates generated before either selector executes",
+  "baselineSelection": "first candidate passing unchanged native suite once",
+  "repolabSelection": "first candidate passing static, module-load, protected native/public gates with two repeats",
+  "independentOpening": "only after both arm selections or abstentions are durably frozen",
+  "scope": "public dataset; prior software projection; training exposure unknown; two repository owners, no human independence claim",
+  "assets": [
+    {
+      "path": "packages/evaluation/prospective-v1.ts",
+      "sha256": "070f0d94a91d4ce93b2c6110d88f8f6c61d9674fa17f2898cb04560ebd52ec82"
+    },
+    {
+      "path": "apps/evaluator/prospective-v1.ts",
+      "sha256": "b3975e7c419de3c69eb9bd63c7563d1eeda8b512a7156241eb081a37e0cd3052"
+    },
+    {
+      "path": "scripts/prospective-select-v1.py",
+      "sha256": "cf09da060ac659b0781ec27670e0abf2f3c88118e25cb9e8a7405a7d10438c43"
+    },
+    {
+      "path": "tests/prospective-v1.test.ts",
+      "sha256": "d1aefd1ffbfce7bddf29d790870701d68fd7d3ec97932949e0879b9b74a30865"
+    },
+    {
+      "path": "tests/prospective-selection-v1.py",
+      "sha256": "778c2ccf7cbea77750aeeb1cdf7dd568adebfea6d15d3363395cc1ec191aa1b9"
+    },
+    {
+      "path": "evaluation/PROSPECTIVE_SELECTION_V1.md",
+      "sha256": "6de91f0610b48719a51c2ce3589b0163a2f4f0d8af54e95567583c7365369576"
+    },
+    {
+      "path": "evaluation/prospective-selection-v1.json",
+      "sha256": "60840d89bffcdeeb35115ed2bb04a5834f25dd482f7574959a68961a7455e6d2"
+    },
+    {
+      "path": "evaluation/prospective-selection-freeze-v1.json",
+      "sha256": "8fcd429c3c779cd985beab995292fb2d2aab6a4bf56a237813dc74a6064624e2"
+    },
+    {
+      "path": "evaluation/prospective-identities-v1.json",
+      "sha256": "36b125c016c37708470ef2c6c3ae54b6345d1c4723c87cce91ce29b5af799088"
+    },
+    {
+      "path": "evaluation/prospective-selected-v1.json",
+      "sha256": "13be6b6df14f291941655992161c538df331420ffb7a210175d7945bcbdd13fa"
+    },
+    {
+      "path": "evaluation/vue-hardening-v1.json",
+      "sha256": "edf463122e0a808b0b7ecfeafed7136ead6339aba2ad2f22cbfa4b1c5e8c9f09"
+    },
+    {
+      "path": "evaluation/preact-product-repair-v3.json",
+      "sha256": "969064fa43982f118c02bb4c83d8025358c56f6b042b33b8ee660eba28156d55"
+    },
+    {
+      "path": "evaluation/external-selected-v1.json",
+      "sha256": "9e2cc1663ef632ba3817691dc24e130e1d5842952c72ead559fb553e53cf00ae"
+    },
+    {
+      "path": "packages/repositories/preact-repair-protocol-v3.ts",
+      "sha256": "47bf9e3655558537c3f4510c3c2ddb3c82f289f50b4673d2bae134ace42ff1a5"
+    },
+    {
+      "path": "packages/execution/guarded-preact-sandbox-v1.ts",
+      "sha256": "98dcf6968968b8c171b2964941834d26d33ceb86668bd664548ff5293315b554"
+    },
+    {
+      "path": "packages/execution/preact-repair-v3.ts",
+      "sha256": "7e421bc9640fa0f66f246f1146358ffd18140047cbb484e01a09f42fc92e9fb5"
+    },
+    {
+      "path": "packages/execution/recovery-lease-v1.ts",
+      "sha256": "2a00a08e108dabb96d48797143e53a31a01cd45069dbf29074d6b9fabe50507f"
+    },
+    {
+      "path": "packages/repositories/preact-repair-v3.ts",
+      "sha256": "0d0f8809e9cbe03f00dde29d14027a5520b553fabdab788842fbbcf8486c5367"
+    },
+    {
+      "path": "packages/repositories/preact-repair-history-v3.ts",
+      "sha256": "38ffc6a7d06807cd34f6b4c77c1f3b591f6b2119aa45eb321f8277f8a0ca3a3f"
+    },
+    {
+      "path": "packages/repositories/preact-repair-recovery-v1.ts",
+      "sha256": "c8eba3dbc1b19fcc95f5df8d75c285380112281eb4be1b2850e38ab2993f2a85"
+    },
+    {
+      "path": "apps/api/preact-repair-v3.ts",
+      "sha256": "e982886c826c6f0620a529b82e9b78e7217a83d774456daacd9ee4b2050419a5"
+    },
+    {
+      "path": "apps/api/native-server-v8.ts",
+      "sha256": "b203c67d1d1707dd34c7e9a26f67b33adb372f471c845afae95a91c8da27dff6"
+    },
+    {
+      "path": "apps/web/src/FreshPreactV7.tsx",
+      "sha256": "00a3e64d4825c6f9b0e569af9ed6cec61254549578383500d0eb0ee2fe19c2b5"
+    },
+    {
+      "path": "apps/web/native-repair-v7.html",
+      "sha256": "b710085285023fd0d9b24a432c2d6a49d1568048c29364dc1014ad9f2337df17"
+    },
+    {
+      "path": "vite.native-v8.config.ts",
+      "sha256": "de2637a1103cb9eef1c70c288174d0c756a7444173fd7285eba52373ecc171e2"
+    },
+    {
+      "path": "tests/preact-repair-v3.test.ts",
+      "sha256": "5e51bd032dc3d8605083473a25319052909eba8ae46bac7c2e3f5a663b8ef9b2"
+    },
+    {
+      "path": "tests/preact-repair-guard-v1.test.ts",
+      "sha256": "63ccca51b2c2e3a033deb7f08f2927053c591d3097bb75026ebfe2f67fa5398e"
+    },
+    {
+      "path": "tests/preact-repair-api-v3.test.ts",
+      "sha256": "907ed92abae9dbd5129dbea2587d17c3e2cd482c1ef2259737dd4fbe260348ea"
+    },
+    {
+      "path": "scripts/preact-guard-browser-v1.mjs",
+      "sha256": "82cf16f3b07b53c4a9474f0d944bd72bd2430f148378fba70a05a367dff18caa"
+    },
+    {
+      "path": "evaluation/PREACT_PRODUCT_REPAIR_V3.md",
+      "sha256": "60ecac6880f79b770a0cf6bb9796064aa0e67e5084eb8ce559c5ac704562abaf"
+    }
+  ],
+  "digest": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755"
+}

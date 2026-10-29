@@ -1,0 +1,107 @@
+{
+  "format": "repolab-preact-native-result/v5",
+  "freeze": "43427bbb61bc2e398c069cb8fcd40bc04cdf535f26a4a84c48660f8cd9dd55e9",
+  "status": "QUALIFIED_NATIVE_BASELINE",
+  "taskId": "preactjs__preact-4436",
+  "classification": "feature-request",
+  "operationIds": [
+    "01a12eb3-1b22-71f2-a9e0-e4f85767362b",
+    "01a12eb4-3f42-7422-a413-ca88545d2b05",
+    "01a12eb4-728e-705d-a9e7-f4e40d63df18",
+    "01a12eb4-79ac-774a-b18f-672f3546ffdc",
+    "01a12eb4-80e3-71bd-8571-234c9e70ee0c",
+    "01a12eb4-9183-70e6-b391-06085358be1e",
+    "01a12eb4-9d84-775e-8229-b7e465c04e64",
+    "01a12eb4-b316-75c0-8973-cab19ea3445d",
+    "01a12eb4-e7e3-76da-b85e-f1940481526c",
+    "01a12eb4-f3ca-735c-9b56-71a260cf2a22",
+    "01a12eb5-008d-759e-869c-c0998b13f607",
+    "01a12eb5-357a-7541-b27e-e766da6d4f1b"
+  ],
+  "protectedImage": "d4c8d3fb-7f4c-48dc-9c81-0522eb247051",
+  "inference": "none",
+  "execution": "nebius-sandbox",
+  "inferenceCalls": 0,
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "types": {
+    "passed": 17,
+    "pending": 2,
+    "coreCompilation": "PASS",
+    "compatCompilation": "PASS"
+  },
+  "observations": {
+    "cleanup": {
+      "mounts": 1,
+      "cleanups": 0,
+      "nullCalls": 1
+    },
+    "cleanupBeforeUnmount": 0,
+    "legacy": {
+      "mounts": 1,
+      "nullCalls": 1
+    },
+    "objectMounted": "INPUT",
+    "objectCleared": true
+  },
+  "chromium": "Chromium 154.0.8037.92 built on Debian GNU/Linux 12 (bookworm)",
+  "runtime": "v20.9.0",
+  "upstreamRuntime": "20.9.0",
+  "nativeBuildChangedOriginalPaths": [],
+  "mocha": {
+    "passed": 29,
+    "skipped": 0,
+    "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93"
+  },
+  "browser": {
+    "passed": 1173,
+    "skipped": 11,
+    "caseDigest": "e37fc9ab6b6f6a371b2c88088e955ce7542d59bd2b38157db866af49ae617474",
+    "originalSkippedCases": [
+      "196:suspense hydration > should hydrate and update attributes with latest props",
+      "197:suspense hydration > should properly hydrate suspense when resolves to a Fragment",
+      "250:suspense > should allow suspended children to update",
+      "251:suspense > should allow multiple suspended children to update",
+      "252:suspense > should allow suspended children children to update",
+      "398:combinations > should run effects child-first even for children separated by memoization",
+      "483:useLayoutEffect > should call effects correctly when unmounting",
+      "67:findDOMNode() > should return DOM Node if render is not false nor null",
+      "696:focus > should maintain focus when swapping elements",
+      "868:Lifecycle methods > #componentDidCatch > should successfully unmount constantly throwing ref",
+      "918:Lifecycle methods > #getDerivedStateFromError > should successfully unmount constantly throwing ref"
+    ]
+  },
+  "selectedExternalTasks": 3,
+  "nativeBaselineQualifiedTasks": 1,
+  "repairQualifiedTasks": 0,
+  "attemptedModelTasks": 0,
+  "accuracy": null,
+  "newNativeOperations": 12,
+  "priorUnsuccessfulNativeVersionOperations": 21,
+  "imageImportOperations": 2,
+  "totalSandboxOperationsThisPhase": 35,
+  "preservedHistoricalRecordsBeforeThisPhase": 362,
+  "priorNativeAndCodeRecordsAlsoPreserved": 431,
+  "limits": "Only the original Preact native execution baseline is qualified. No candidate/source-edit admission or independent repair evaluation is authorized by this result; official benchmark gold/test fields remain undecoded.",
+  "rawReceiptSha256": {
+    "STARTED.json": "cba119b916795e92b4634d4a54f7b582773ba31c8e68cc687960a169d85814e0",
+    "upload-upstream.tar.gz.json": "012f5778eaf6108ae86fdafe337454d175e3f4c24154e1a1194c4f11573b035c",
+    "upload-manifest.json.json": "625ba7eafc7d90ca718b95857e984aba2116f6516af1bb31c2b58b44d6e02be9",
+    "upload-guest.cjs.json": "b96c5a8e9bb7584fc60c0bbea7ed1487539050c76f04a999d0ddfc11be8debec",
+    "upload-karma.cjs.json": "e172605a3ba29f260943b780a0187c75cbca524f6a2c485055a9c4450fb8ef9a",
+    "upload-reproduction.html.json": "8e13e234b97b7c88ec1538c27802be1bd4c9bc1f1fe883755fdb5f7a0db067d0",
+    "prepare.json": "1e5dc27d85164f876e2bc1c37babe7b70c9d8e126f6dd9ebce5e2c3dd9015457",
+    "build.json": "92a3ab2fdc9d4f4e807a59dab2a7d55b22427a71738f92281a102b7d41b3146a",
+    "protect.json": "ca32ffc6d29b5366ebf435b89a6abb0e3e853236bd25c0fc703d018ca2637546",
+    "integrity.json": "807c5f26fc574afc22e4d913541d7b3bef9597dd250c584d4301ebbd086a1f56",
+    "lint.json": "da5de7504a50a569c10584bd4fcbfe40ad8a8b25407e3c87475ec42f645b85f7",
+    "mocha-A.json": "06993c8b86b272f01ac699e53e7b0cd7e67396ac6c59333f29effd0b2d138487",
+    "types.json": "4518bc4771516e03dda0f331c4e521c269a50ddd5ae5bad507b5ef88ba263244",
+    "browser-A.json": "8022dbe795a3ac2125b3a9a4520c1f1355b183a90a315d9ee5805f8e0ef2f55a",
+    "reproduction-A.json": "d111c248ebe27d07ddfbabacef7ed0c928a92e68e40778015e0037e140020344",
+    "mocha-B.json": "3066a91b986ae2f55c6431a5512a39eb77ad698c8cecde887a952d477c422e60",
+    "browser-B.json": "226d9b293062fc1569eb9f9af28adf2fc1928e1270b098a40ad9c44c12df8242",
+    "reproduction-B.json": "081c68aa1190bdb29968d21972a09eeb44fb4402a43d2661e0a9f2da5bc5476b"
+  },
+  "accounting": "Zero new inference; shared cumulative estimated inference remains $0.1072158, clear. Sandbox resource units are not inference USD."
+}

@@ -1,0 +1,45 @@
+{
+  "format": "repolab-sandbox-transport-offline-report/v1",
+  "freeze": "34d1982a844531ca98401d542676ddb3ab554b33ecfb1b3d0030f157bd47869f",
+  "status": "QUALIFIED_OFFLINE",
+  "executionAdmission": false,
+  "existingReceiptResolved": false,
+  "newModelCalls": 0,
+  "newSandboxOperations": 0,
+  "blocker": {
+    "status": "UNCHANGED_UNKNOWN_SUBMISSION",
+    "executionAdmission": false,
+    "bothSharedLeasesPresent": true
+  },
+  "inference": "none",
+  "execution": "offline protocol and saved-state audit; no transport requests or guest execution",
+  "protocolStatus": "OFFLINE_PROTOCOL_FROZEN",
+  "validation": {
+    "focusedControllerGroups": 17,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3319,
+    "historicalCodeUnchanged": 4,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesUnchanged": true,
+    "providerRequests": 0,
+    "guestExecution": false,
+    "retainedTypecheckPreflightFailure": true
+  },
+  "liveTransportQualified": false,
+  "productIntegration": false,
+  "cohort": {
+    "selected": 8,
+    "originalBaselineQualified": 4,
+    "unresolvedTasks": 1,
+    "pendingOriginalQualification": 3,
+    "offlinePreparedPending": 3,
+    "unpreparedPending": 0,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0,
+    "confirmedOriginalSandboxOperations": 47,
+    "unknownOriginalSubmissions": 1
+  },
+  "nextAction": "Obtain attributable provider acceptance/operation identity or rejection evidence for Preact 3763 V2; a redacted reconciliation packet can be prepared offline without contacting the provider"
+}

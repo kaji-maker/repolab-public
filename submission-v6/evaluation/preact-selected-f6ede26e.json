@@ -1,0 +1,139 @@
+{
+  "format": "repolab-preact-selected-catalog/v2",
+  "runId": "f6ede26e-b21d-4160-9d24-5893bb8245c2",
+  "freeze": "9d2adf0281bbea3763940b5f3d75e75fd2094fb92a479f369296adc495bd24c3",
+  "taskId": "preactjs__preact-4436",
+  "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+  "provenance": {
+    "inference": "nebius",
+    "execution": "nebius-sandbox",
+    "model": "nvidia/nemotron-3-super-120b-a12b"
+  },
+  "proposal": {
+    "plan": {
+      "requirementQuote": "return a cleanup function to reset",
+      "editBoundary": "existing-applyRef-try-body-only",
+      "cleanupDisposal": "invoke-before-callback",
+      "nullCallbackWhenCleanup": "skip",
+      "legacyDisposal": "invoke-null",
+      "callbackReturn": "store-if-callable",
+      "cleanupStateAfterCall": "clear-to-undefined",
+      "objectRef": "assign-current",
+      "revisionGoal": "Implement cleanup functions for refs in Preact, mirroring React 19 behavior."
+    },
+    "taskId": "preactjs__preact-4436",
+    "refUpdates": "transfer-cleanup",
+    "unmountContext": "vnode",
+    "cleanupType": true,
+    "program": [
+      {
+        "kind": "if",
+        "condition": "ref-function",
+        "then": [
+          {
+            "kind": "if",
+            "condition": "value-null",
+            "then": [
+              {
+                "kind": "if",
+                "condition": "cleanup-present",
+                "then": [
+                  {
+                    "kind": "action",
+                    "action": "call-cleanup"
+                  },
+                  {
+                    "kind": "action",
+                    "action": "clear-cleanup"
+                  },
+                  {
+                    "kind": "action",
+                    "action": "return"
+                  }
+                ],
+                "else": [
+                  {
+                    "kind": "action",
+                    "action": "call-ref"
+                  },
+                  {
+                    "kind": "action",
+                    "action": "return"
+                  }
+                ]
+              }
+            ],
+            "else": [
+              {
+                "kind": "action",
+                "action": "capture-result"
+              },
+              {
+                "kind": "if",
+                "condition": "result-function",
+                "then": [
+                  {
+                    "kind": "action",
+                    "action": "store-result"
+                  },
+                  {
+                    "kind": "action",
+                    "action": "return"
+                  }
+                ],
+                "else": [
+                  {
+                    "kind": "action",
+                    "action": "clear-cleanup"
+                  },
+                  {
+                    "kind": "action",
+                    "action": "return"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "else": [
+          {
+            "kind": "action",
+            "action": "set-object"
+          },
+          {
+            "kind": "action",
+            "action": "return"
+          }
+        ]
+      }
+    ]
+  },
+  "sourceHash": "30b97465193b9706a1ed4046bdbcc54b686a9d686a03848f2533515597d3b4e5",
+  "operationIds": [
+    "01a139cb-2b53-7716-bea6-62cc8c327637",
+    "01a139cb-7d39-7401-ba16-5c678df171ca",
+    "01a139ce-2540-7190-a5e5-9d9d94d2ada1",
+    "01a139ce-80a5-713f-9a26-5c0bc41c15ef",
+    "01a139ce-94d1-71f2-a48b-0224a6087149",
+    "01a139ce-d90c-7751-ab92-a92b25877560",
+    "01a139ce-f189-7180-a678-bb997f7a3dc7",
+    "01a139cf-3194-749b-999d-61de583e04e8",
+    "01a139cf-88d8-7777-bf15-86bbcddf492d",
+    "01a139cf-a191-7286-ad97-75c806d86387",
+    "01a139cf-dc4a-700e-a6fc-8f288b12e84a",
+    "01a139d0-3769-74e6-b86f-209b75edc9e3",
+    "01a139d0-6e89-748f-8e9a-98ebc589e65a",
+    "01a139d0-a969-71d2-8556-722531eba3af"
+  ],
+  "counts": {
+    "mocha": 29,
+    "browser": 1173,
+    "browserSkips": 11,
+    "types": 17,
+    "typePending": 2,
+    "public": 3,
+    "independent": 10
+  },
+  "originInferenceCalls": 3,
+  "originInferenceUsd": 0.0178593
+}

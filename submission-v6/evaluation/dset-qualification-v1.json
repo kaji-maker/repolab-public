@@ -1,0 +1,51 @@
+{
+  "format": "repolab-dset-qualification/v1",
+  "digest": "672ec185ecc02eb3b3060a101629aca4cfefdf5e7c0c30bdddc0d41233927154",
+  "previousDigest": "5753daaa466cee17f0c2c9576e75da1f5e1aafb8871c7fb75160c050d582c4ff",
+  "task": "dset-decimal-path",
+  "scope": "public-historical-qualification-no-model-repair-or-heldout-claim",
+  "maxInferenceCalls": 0,
+  "maxOperations": 7,
+  "assets": [
+    {
+      "path": "packages/evaluation/dset-qualification.ts",
+      "sha256": "379640f3e9223387012a2e39f4df77127304e9c76116e6f45f989c673f6f7809"
+    },
+    {
+      "path": "apps/evaluator/dset-qualification.ts",
+      "sha256": "d5aa06e66ab6e961fa9111b1836e25765b424e18f7043d68a33f750cb6ff8c19"
+    },
+    {
+      "path": "repositories/dset-decimal.case.json",
+      "sha256": "fb7c91157e88740c5d9b566d93e74c100beefc122a0a6df9e7b3bae77b03a937"
+    },
+    {
+      "path": "fixtures/dset-upstream/original-snapshot.json",
+      "sha256": "4e9d65c6f33d702e2934e7b4a8c639346c8951045cd3d2149e74422b37774235"
+    },
+    {
+      "path": "fixtures/dset-upstream/dependency-lock.json",
+      "sha256": "05073bd678d69190ec1c7ec09dd1a66c7ea43e2b14d009d084b205c8455104af"
+    },
+    {
+      "path": "repositories/dset-qualification/baseline-runner.mjs",
+      "sha256": "a2fad0f8cdff5621a51d150fd2176f7bf6010ee495e5f5f13e1c45289d8073b3"
+    },
+    {
+      "path": "repositories/dset-qualification/observer.mjs",
+      "sha256": "a9695cf826de1ea12629c74a5f9b7fc202d7834a0042df3576fca70c88bbeda9"
+    },
+    {
+      "path": "evaluation/dset-decimal-cases.json",
+      "sha256": "f5372529b31452eb91ec442bc50b94fdb74f281f46e0947994cdc17e49812096"
+    },
+    {
+      "path": "tests/dset-qualification.test.ts",
+      "sha256": "e39e29b315764ec250cbf9bc79840cef6773ebaea5369b7ada0e34b1658ccc65"
+    },
+    {
+      "path": "evaluation/DSET_QUALIFICATION_V1.md",
+      "sha256": "8e4f0fbc8aa824b83a491209a112ac7650d67055c754d199f487101e7216e14f"
+    }
+  ]
+}

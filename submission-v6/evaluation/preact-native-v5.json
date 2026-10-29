@@ -1,0 +1,112 @@
+{
+  "format": "repolab-preact-native/v5",
+  "parentDigest": "2ada74c6196b7cd3515ac1a19ed79b81aded6389b1c85d1984610ffe39f636d1",
+  "previousFailedFreeze": "2cc3324ead3dbee3f85c6c1b0ba72c1a9fca6b725f417871126cc2b450c9bd75",
+  "taskId": "preactjs__preact-4436",
+  "baseCommit": "db0f4f2e7a2338ea40050f623f05505a798fc1a4",
+  "classification": "feature-request",
+  "image": "e9a27985-c3f3-33f0-a138-4d14f9744788",
+  "inferenceCalls": 0,
+  "modelAdmission": false,
+  "slots": [
+    "prepare",
+    "build",
+    "protect",
+    "integrity",
+    "lint",
+    "mocha-A",
+    "types",
+    "browser-A",
+    "reproduction-A",
+    "mocha-B",
+    "browser-B",
+    "reproduction-B"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/preact-native-v5.ts",
+      "sha256": "4de5b904e227c17e2a0b78ada03c468e10f7fd001d8ca31bd28c41e64ca9c15d"
+    },
+    {
+      "path": "packages/execution/preact-native-v5.ts",
+      "sha256": "9c06a3aad03fdb371174169567a609d3a628b1120e637f2c819967f68feffef7"
+    },
+    {
+      "path": "apps/evaluator/preact-native-v5.ts",
+      "sha256": "ab338001b2268e7b5939b5ef3afc6a5d58ec7dc885676dcdd105b454f28c4ab4"
+    },
+    {
+      "path": "tests/preact-native-v5.test.ts",
+      "sha256": "c2529b3dd55c84e67903cc6c3ea55d1e54d028cb77173a1057c07d40da1d986e"
+    },
+    {
+      "path": "evaluation/PREACT_NATIVE_V5.md",
+      "sha256": "dc078540a57b75d2ffeef67edb596c62aeed08680fb11d17f0e323d5b1589766"
+    },
+    {
+      "path": "fixtures/preact-native/original-manifest.json",
+      "sha256": "a4fd773857a17db8181da1b240b1196ccf1e5700ef3dd16e2bb4a016b6303a64"
+    },
+    {
+      "path": "repositories/preact-native-v1/original.tar.gz",
+      "sha256": "88d58cccfa506ba27b82c201cdccfe731fdd0870175e76695d3fda9386a756bf"
+    },
+    {
+      "path": "repositories/preact-native-v1/LICENSE",
+      "sha256": "1fe6958409c8c257a70c587a18b6f7f412b179b456630790d30b2ec9a8e4b7d4"
+    },
+    {
+      "path": "repositories/preact-native-v3/guest.cjs",
+      "sha256": "d74df344d6750ba03c32214b185b96088a5a9fc8dbd488bd03219e854861c468"
+    },
+    {
+      "path": "repositories/preact-native-v5/karma.cjs",
+      "sha256": "3752e0ce76619e050e6111662da3f29b53b5c178303ec49c16b247b0be4bdef7"
+    },
+    {
+      "path": "repositories/preact-native-v1/reproduction.html",
+      "sha256": "918d392354680ec6826640be55fc99f798ad3c79cf79e90ac5e819c4e2cacb1c"
+    },
+    {
+      "path": "evaluation/preact-native-v1.json",
+      "sha256": "7b21f15774a98aac5ebb2fb46ae287bc8baf485c31ac15bc852279edf4f39a85"
+    },
+    {
+      "path": "evaluation/preact-native-v2.json",
+      "sha256": "0e1a5f0db5887199dd3bc3e9e029aa59e74449bb7f7ed966b24b3d12f62a6918"
+    },
+    {
+      "path": "evaluation/preact-native-v3.json",
+      "sha256": "15a4dc4cd7a805affef7ab54ab2fc355282d4136c23cf243f03b68beb9a3a00c"
+    },
+    {
+      "path": "evaluation/preact-native-v4.json",
+      "sha256": "7a9d8528648eb2109c3554ca3114ab1719d156dd7ba7a440f6667d77b0f896e7"
+    },
+    {
+      "path": "evaluation/preact-native-v4-results-summary.json",
+      "sha256": "c43aff2d172e83a8ba8080f82a06484f5e180e32f6f3e49ad9c901ddd7b0a75e"
+    },
+    {
+      "path": "evaluation/preact-native-v3-results-summary.json",
+      "sha256": "2c8073c36deef773011495d91e31b8152623987fc874dd679379d059cec271e1"
+    },
+    {
+      "path": "fixtures/preact-native/node20-image.json",
+      "sha256": "3147985f475173d9b17fabcb2c708a4a05923ee2bf09386c0692498aba3f4669"
+    },
+    {
+      "path": "fixtures/preact-native/baseline-identities-v1.json",
+      "sha256": "58c49892da9c9a379dea9a9fc3dd8eef21c3b0af957ad6f56f9738b10fdbfd46"
+    },
+    {
+      "path": "evaluation/preact-native-v2-results-summary.json",
+      "sha256": "a6b00c26bef51613cb235fa583a5c88c220eb207fbdf596815e6344819e0bdab"
+    },
+    {
+      "path": "evaluation/preact-native-v1-results-summary.json",
+      "sha256": "23c19a248ad1db45515c57de23caf2d042b92b93f57e4e7fd04d720430fdb824"
+    }
+  ],
+  "digest": "43427bbb61bc2e398c069cb8fcd40bc04cdf535f26a4a84c48660f8cd9dd55e9"
+}

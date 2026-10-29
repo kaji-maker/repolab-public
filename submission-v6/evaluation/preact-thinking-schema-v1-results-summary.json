@@ -1,0 +1,55 @@
+{
+  "result": {
+    "freeze": "a30a6ca30b3465d19fa36904b2360c1711b5060d584341e6c6e6fa4d93b4e0c7",
+    "status": "QUALIFIED_THINKING_REQUEST",
+    "calls": 1,
+    "operations": 0,
+    "costUsd": 0.000504,
+    "qualification": {
+      "format": "repolab-preact-thinking-schema-qualification/v1",
+      "schemaHash": "e80b879da033c2808b9f573f38b3b937566e805c5f5cf8b1d8e41a5a4614443a",
+      "compiledBodyHash": "820d9fce189b332d61dbb768cfbfd9e7143661ad557f421696ee4c29b185fa2a",
+      "support": "Exact recursive schema accepted with a matching complete reply; no general schema or repair quality claim",
+      "inference": "nebius",
+      "execution": "none (schema check and syntax compilation only)"
+    },
+    "reasoning": {
+      "present": true,
+      "bytes": 323,
+      "sha256": "d158b433cbf576b5b2ffe0f3e9b8e711fc449233128c19f5b821715042b54789"
+    },
+    "at": "2026-10-14T03:43:13.896Z"
+  },
+  "rawFiles": [
+    {
+      "path": "STARTED.json",
+      "sha256": "4329fb06be30913532b070d026a73d934f861fc28a0cbfe0060c9a2e082bf8b7"
+    },
+    {
+      "path": "request.json",
+      "sha256": "63742475b4ca3de5c0c06c053440745b4c85bad3da7ce4f8fa9d6bc76cb41d63"
+    },
+    {
+      "path": "completion.json",
+      "sha256": "d64ab7f03395ae29680b701bf22dd7b28e0e8bfabd420f0cffc929dce19302e4"
+    },
+    {
+      "path": "diagnostic.json",
+      "sha256": "feadae7284c31c0417da21951987e5232296f6bf5e6d1bdcd41f100e1e015f02"
+    },
+    {
+      "path": "reply.json",
+      "sha256": "dfe6eab4e872e8e400caca4af9b9dfb275475b74595f41e09910024fde28673b"
+    },
+    {
+      "path": "result.json",
+      "sha256": "58f840c041c7408b8b9256d4b3eb093065490a9b594b621946642732f4475289"
+    }
+  ],
+  "usageComplete": true,
+  "limitations": [
+    "Exact schema/toy compatibility only; not a repair attempt.",
+    "Observed reasoning channel does not prove every provider setting was honored.",
+    "One request with a larger token allowance and transport deadline; not a causal comparison."
+  ]
+}

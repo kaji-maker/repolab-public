@@ -1,0 +1,156 @@
+{
+  "format": "repolab-public-mri-compatibility/v6",
+  "origin": "authored-exposed-development-from-v5-false-acceptance",
+  "cases": [
+    {
+      "id": "empty-value",
+      "args": [
+        "--bar="
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":\"\"}"
+    },
+    {
+      "id": "whitespace-value",
+      "args": [
+        "--bar",
+        "  "
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":\"  \"}"
+    },
+    {
+      "id": "public-tab-value",
+      "args": [
+        "--bar",
+        "\t"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":\"\\t\"}"
+    },
+    {
+      "id": "public-linebreak-value",
+      "args": [
+        "--bar",
+        "\n"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":\"\\n\"}"
+    },
+    {
+      "id": "public-mixed-whitespace",
+      "args": [
+        "--bar",
+        " \t\r\n "
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":\" \\t\\r\\n \"}"
+    },
+    {
+      "id": "public-padded-zero",
+      "args": [
+        "--bar",
+        " 0 "
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":0}"
+    },
+    {
+      "id": "public-padded-fraction",
+      "args": [
+        "--bar",
+        " 0.5 "
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":0.5}"
+    },
+    {
+      "id": "public-invalid-exponent",
+      "args": [
+        "--bar=1e"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":\"1e\"}"
+    },
+    {
+      "id": "public-hex-value",
+      "args": [
+        "--bar=0x10"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":16}"
+    },
+    {
+      "id": "public-string-empty-array",
+      "args": [
+        "--bar="
+      ],
+      "options": {
+        "string": [
+          "bar"
+        ]
+      },
+      "expected": "{\"_\":[],\"bar\":\"\"}"
+    },
+    {
+      "id": "public-string-whitespace-array",
+      "args": [
+        "--bar",
+        " \t "
+      ],
+      "options": {
+        "string": [
+          "bar"
+        ]
+      },
+      "expected": "{\"_\":[],\"bar\":\" \\t \"}"
+    },
+    {
+      "id": "public-string-padded-zero-array",
+      "args": [
+        "--bar",
+        " 0 "
+      ],
+      "options": {
+        "string": [
+          "bar"
+        ]
+      },
+      "expected": "{\"_\":[],\"bar\":\" 0 \"}"
+    },
+    {
+      "id": "public-bare-flag",
+      "args": [
+        "--quiet"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"quiet\":true}"
+    },
+    {
+      "id": "public-negated-flag",
+      "args": [
+        "--no-quiet"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"quiet\":false}"
+    },
+    {
+      "id": "public-empty-separated",
+      "args": [
+        "--bar",
+        ""
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":true}"
+    },
+    {
+      "id": "public-repeated-empty-zero",
+      "args": [
+        "--bar=",
+        "--bar=0"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":[\"\",0]}"
+    }
+  ]
+}

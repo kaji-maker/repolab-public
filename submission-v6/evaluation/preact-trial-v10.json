@@ -1,0 +1,456 @@
+{
+  "format": "repolab-preact-trial/v10",
+  "parentDigest": "18690376c3e161b80426d83cede92b36f83653c3d26d073c06b8fc0219141ab8",
+  "previousCompletedFreeze": "5e53d9f97290e001772074fb9b7da48eff34fb769529c09255b9b7747d33fd71",
+  "previousUnrunPreparationFreeze": "f64cd4a03af601e202e117fa595896cc48c5ac660f8729f680be65aa7ce522bd",
+  "taskId": "preactjs__preact-4436",
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "baseUrl": "https://api.tokenfactory.nebius.com/v1/",
+  "requestPolicy": "nemotron-full-thinking-v1",
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "maxCandidates": 3,
+  "maxCalls": 3,
+  "maxOperations": 34,
+  "monetaryCap": null,
+  "selectedTasks": 3,
+  "qualifiedTasks": 1,
+  "maxOutputTokens": 16384,
+  "transportTimeoutMs": 180000,
+  "comparisonScope": "Prospective settings-bundle trial against historical v9; no randomized or causal superiority claim",
+  "contextHash": "27a251e0978789dde115db417938af69b8f2c83d5f1e6084d09a3c3463155fbd",
+  "systemHash": "5f44bea015a429b70b07205853075b5d7af91d58a1e828867ec814bba8fdf3a9",
+  "assets": [
+    {
+      "path": "packages/evaluation/preact-trial-v10.ts",
+      "sha256": "15f8974a05c5a4042dbfba0b0f0650f2e8f7eecf3f3eacbecca95af67ddb1c64"
+    },
+    {
+      "path": "packages/execution/preact-trial-v10.ts",
+      "sha256": "55fcb9b92e1d1b7ba4ee339cd95b79c8b276ff18098ae145364825b9a32b59d2"
+    },
+    {
+      "path": "apps/evaluator/preact-trial-v10.ts",
+      "sha256": "6bf7135ef0077760085723152d47b82d44717865007e839a9da8bf868dd312ed"
+    },
+    {
+      "path": "tests/preact-trial-v10.test.ts",
+      "sha256": "d8702b687da8eb334550550c9d1dfcb24c257e17ab3f9b1220b004423404ac8b"
+    },
+    {
+      "path": "evaluation/PREACT_TRIAL_V10.md",
+      "sha256": "8c120f628c73c6a85429aea6250d69844bfeac2d3ee69a9c79104a0d847d6120"
+    },
+    {
+      "path": "packages/providers/nebius-thinking-v1.ts",
+      "sha256": "bd776e690eb184201e1c0d204e706647622472becf2d715c997757ca24074de7"
+    },
+    {
+      "path": "tests/nebius-thinking-v1.test.ts",
+      "sha256": "30d2114146819abc85d1388c9d01f82121a8f206f2b01752008521fb8061fe88"
+    },
+    {
+      "path": "packages/evaluation/preact-thinking-schema-v1.ts",
+      "sha256": "84f89be77eaa4bf4ac09683be7a60cad3ee26463987f11173bfbc22047fe7c00"
+    },
+    {
+      "path": "apps/evaluator/preact-thinking-schema-v1.ts",
+      "sha256": "60043e7ec035c9039c55515c110fb6864319341893c7b227cd8602bf85840781"
+    },
+    {
+      "path": "tests/preact-thinking-schema-v1.test.ts",
+      "sha256": "5e113d60543b1ac4da0f98529c3921242cf69b64c911b6949fd2be4045555a7c"
+    },
+    {
+      "path": "evaluation/PREACT_THINKING_SCHEMA_V1.md",
+      "sha256": "d4e2afd8d497afdcafc1a88cfde1bd24e2c0f303e9220168fa5aba99e23db6c5"
+    },
+    {
+      "path": "evaluation/preact-thinking-schema-v1.json",
+      "sha256": "f5eb424875cc75393b22ee60ae41a9bf2a11967183d6c9abf0aa8906359f9d5b"
+    },
+    {
+      "path": "evaluation/preact-thinking-schema-v1-results-summary.json",
+      "sha256": "61e763091b1e638043560de9b7c32ae2e4374f85d660c2c5c615ff05d16d4596"
+    },
+    {
+      "path": "evaluation/preact-trial-v9.json",
+      "sha256": "29099624a744667935d7f66d8a3d6e772396a9ed7d56252b5a0c46357dc2bf50"
+    },
+    {
+      "path": "evaluation/preact-trial-v9-results-summary.json",
+      "sha256": "105fc71b3bbfbe47fe5e5ab43ed5592869b85f3f6008029bb7659427ad1e2812"
+    },
+    {
+      "path": "packages/evaluation/preact-trial-v9.ts",
+      "sha256": "87348984426fa4906bb80280ab0fe4a0b001adce474e5855fd031d390e33f0b8"
+    },
+    {
+      "path": "packages/execution/preact-trial-v9.ts",
+      "sha256": "cd3f3781bb9fa37d32731a3a8201f64d32a85753299031eeba7e15d8602a930d"
+    },
+    {
+      "path": "apps/evaluator/preact-trial-v9.ts",
+      "sha256": "610a7737b2f8c105cd63248a1ef9bd93ddd1f04f58879a22ccfb8e45a8a5004a"
+    },
+    {
+      "path": "tests/preact-trial-v9.test.ts",
+      "sha256": "80eec99acb43d1786bc31bae605f798c7ace06f115bbde0c67a0ee7ac03a78f7"
+    },
+    {
+      "path": "evaluation/PREACT_TRIAL_V9.md",
+      "sha256": "cad0daa541adf0522b131e9b0bd5961750ab5f6403beec8dc1f79f29d17bedd2"
+    },
+    {
+      "path": "evaluation/preact-trial-v8.json",
+      "sha256": "f0570d05adbdf27ebac0b6fc662cb9de4348602daab5ef273e542c71037cd7d6"
+    },
+    {
+      "path": "evaluation/archive/preact-trial-v8-preparation/packages/evaluation/preact-trial-v8.ts.snapshot",
+      "sha256": "e2e6766a35cdbc7e620d4144f6c9adf7393ca72fc90237341c78a18c37a66523"
+    },
+    {
+      "path": "evaluation/archive/preact-trial-v8-preparation/packages/execution/preact-trial-v8.ts.snapshot",
+      "sha256": "ae62d1f42f43dc41bed29fd9713e5d439a4f9a440277cb0d3d7b0fc7836da224"
+    },
+    {
+      "path": "evaluation/archive/preact-trial-v8-preparation/apps/evaluator/preact-trial-v8.ts.snapshot",
+      "sha256": "b7aaaa27f95ea97d7818e1ca0e7fe0538fe893275a6fc9806b0216a4e2e6e8cf"
+    },
+    {
+      "path": "evaluation/archive/preact-trial-v8-preparation/tests/preact-trial-v8.test.ts.snapshot",
+      "sha256": "aaf6ec7b397af815c03a160545d5af3192c9e0a68a5b5422a8313794ecbb0b44"
+    },
+    {
+      "path": "evaluation/PREACT_TRIAL_V8.md",
+      "sha256": "11291273ea2357253cb94949c29fbabc1660e5a7e752840c33b7ee4bfb277f3c"
+    },
+    {
+      "path": "packages/evaluation/preact-nested-schema-v1.ts",
+      "sha256": "3a5845fe40b3d8e79be5b98e4570a3a968d076e72202a4c4fabc960ffa9ef03e"
+    },
+    {
+      "path": "apps/evaluator/preact-nested-schema-v1.ts",
+      "sha256": "d3eaaa81eb2c1318b0118b21782f8033601dc241935fa16a8224e90dee4875c0"
+    },
+    {
+      "path": "tests/preact-nested-schema-v1.test.ts",
+      "sha256": "0912c554b532066b7f94a7b566ebbf3796cdeb85cb7cb1d07fa3f6cd5014574e"
+    },
+    {
+      "path": "evaluation/PREACT_NESTED_SCHEMA_V1.md",
+      "sha256": "ef631fd16bc205035c053a81494383ea10edf3298280dc6bb9f40ee8b7d2c314"
+    },
+    {
+      "path": "evaluation/preact-nested-schema-v1.json",
+      "sha256": "e636eea22b3e819b3bfe272fb02c9f85f024bab32933aed61247e6baa963cd2d"
+    },
+    {
+      "path": "evaluation/preact-nested-schema-v1-results-summary.json",
+      "sha256": "d04f27561178de8dbb9ab0d7bec9855363ecb12c9e1b661830a6ff18224ce022"
+    },
+    {
+      "path": "evaluation/preact-trial-v7.json",
+      "sha256": "82e54d7b4fcda0883317e28a7c211e22f64d5df5ec293ea2c23e8ca36bd8bb11"
+    },
+    {
+      "path": "evaluation/preact-trial-v7-results-summary.json",
+      "sha256": "134220358c8942a4b6d729b69bdabdc3e86f0e7e923d3bf58c1d666dd290f6f1"
+    },
+    {
+      "path": "packages/evaluation/preact-trial-v7.ts",
+      "sha256": "d2929da3479c19e6729eb183febe74a94eb4f97795af0bab62e63c1a68edb9bc"
+    },
+    {
+      "path": "packages/execution/preact-trial-v7.ts",
+      "sha256": "5b59304c4f9ef05f0b3e77a58cd5695bb1f9249025e8a08a9943e8d23ed55f13"
+    },
+    {
+      "path": "apps/evaluator/preact-trial-v7.ts",
+      "sha256": "42232bb70122db8dfa1a86059775047dffa0d4deca3fde803223ed40529ba4e8"
+    },
+    {
+      "path": "tests/preact-trial-v7.test.ts",
+      "sha256": "d892bf37fef1c4b442a543dc909c97ccb06b1132b35a1dc2b01b7785bad9f218"
+    },
+    {
+      "path": "evaluation/PREACT_TRIAL_V7.md",
+      "sha256": "49fa91bcc2226f2cf4f07949324c10b9fe10ce762930f7db0f5fc036b45512ce"
+    },
+    {
+      "path": "packages/repositories/preact-generation-v1.ts",
+      "sha256": "5c4bf2164f178383d8dea46a5d6cf2439d1a602de7d92ca5352da59a10be9462"
+    },
+    {
+      "path": "tests/preact-generation-v1.test.ts",
+      "sha256": "d7180963786408ee8c0c0ac6315253b5878eeee0e94cfdc37a04a31b4427b78b"
+    },
+    {
+      "path": "packages/repositories/preact-generation-v2.ts",
+      "sha256": "c799f5aa0ebd220fb2ae3d172f6d21f05df9fabbe29746f9dc007836d56a5589"
+    },
+    {
+      "path": "tests/preact-generation-v2.test.ts",
+      "sha256": "2c33156a2b40c69351d076a54a9c76dd050106c75475dcc25340ef7b6fd8b839"
+    },
+    {
+      "path": "docs/PREACT_GENERATION_POLICY.md",
+      "sha256": "e913544dc31a0a6bcd1c927118f4ae9606151dcdf67344fb8b5de5b67afb7854"
+    },
+    {
+      "path": "evaluation/preact-trial-v6.json",
+      "sha256": "4fefea3b6ea94485d7bcfc5b97ae0a3f8359c776a7f50196d9a382920f69012c"
+    },
+    {
+      "path": "evaluation/preact-trial-v6-results-summary.json",
+      "sha256": "d5ec76f191eef2ea0cf8d4bdb3e124bc26bec08f865d2b56ffd73cac798705a6"
+    },
+    {
+      "path": "packages/evaluation/preact-trial-v6.ts",
+      "sha256": "4692f5ca629a10afc03bc1be350cdcbfe085a2a5df0a09b4c92b66ed50a809dc"
+    },
+    {
+      "path": "packages/execution/preact-trial-v6.ts",
+      "sha256": "f68bdcbb708da5730e5b79e001cd5a779c91c60f178755ce061b5bb51978cf1a"
+    },
+    {
+      "path": "apps/evaluator/preact-trial-v6.ts",
+      "sha256": "74415bf627589b1abba476c080562009507d346eb998296ce2d6828fc64e3794"
+    },
+    {
+      "path": "tests/preact-trial-v6.test.ts",
+      "sha256": "fe4c853d9030c44afe4a60ea60dde61f242ef949e8b6bd583ee2e10bd77fbf36"
+    },
+    {
+      "path": "evaluation/PREACT_TRIAL_V6.md",
+      "sha256": "3724f9af51c4fb4269f35da6156c13d3f7e52eace5c293bfed33ec97b7c74ddd"
+    },
+    {
+      "path": "packages/repositories/preact-ownership-v1.ts",
+      "sha256": "76c20d05f4e94b0ea76c064ea399e04ec645a66129b8c6e1cad6fe680c87f0d7"
+    },
+    {
+      "path": "tests/preact-ownership-v1.test.ts",
+      "sha256": "3eb123ac54643ab08aad6322ada4cc84dc248e0042cfc9eaea14380cd384b672"
+    },
+    {
+      "path": "evaluation/preact-trial-v5.json",
+      "sha256": "8496cd79ebf3a6e88ac890cab72442f73288e0daf421f0c8f8f691ff7a870a7b"
+    },
+    {
+      "path": "evaluation/preact-trial-v5-results-summary.json",
+      "sha256": "a27ca8f60b353a6833967a63e0940e8bc379cb5b44a21b754663b7e5606ca7ee"
+    },
+    {
+      "path": "packages/evaluation/preact-trial-v5.ts",
+      "sha256": "cc9ee8e2d1d06901e11fb16d1ac2706f72fb9c998d69fd60a9ee9742b1fdb81b"
+    },
+    {
+      "path": "packages/execution/preact-trial-v5.ts",
+      "sha256": "0d43c6d01ec8c11f973d721dce86370fce014bffa6f0ee4d3a3f3c8cffc143c4"
+    },
+    {
+      "path": "apps/evaluator/preact-trial-v5.ts",
+      "sha256": "26fbfb15330f9710da0c1eddeee31699002a6247b12baa1b56a983fcfc66753f"
+    },
+    {
+      "path": "tests/preact-trial-v5.test.ts",
+      "sha256": "3bcd23eebfc2e7034ec7a63fbae51561a2d8f0060ded2f4825f01592e2b7b825"
+    },
+    {
+      "path": "evaluation/PREACT_TRIAL_V5.md",
+      "sha256": "767d5b15c30f167a3802f25805facac0089a10443fdc272a64e20228f68e84ef"
+    },
+    {
+      "path": "packages/repositories/preact-planning-v1.ts",
+      "sha256": "a06b431cc354e02a472cf7632c083ccd554a2d8c03fee4c71b16d60338f9bea8"
+    },
+    {
+      "path": "tests/preact-planning-v1.test.ts",
+      "sha256": "21ec6dd3db0088d465ce120634f183ac569cb3778d3a343d1cdab0ea22d86a91"
+    },
+    {
+      "path": "evaluation/preact-trial-v4.json",
+      "sha256": "33455eef39e563ee49ecfc3781a85feb76bcb512d1f1506e52335e34a8ea5c4b"
+    },
+    {
+      "path": "evaluation/preact-trial-v4-results-summary.json",
+      "sha256": "328446d02ad570cb6e0f701698a0126acd85a0d65f2dee3ed973a820839a7e50"
+    },
+    {
+      "path": "packages/evaluation/preact-trial-v4.ts",
+      "sha256": "3af084244e88a4fb3d7edb33826679b144644716fd607aa4ce9dacc3b6ffe5d3"
+    },
+    {
+      "path": "packages/execution/preact-trial-v4.ts",
+      "sha256": "47f8f7cb2a572107c7713247729e0ec40760b66f2f416b82562bd25d874daba9"
+    },
+    {
+      "path": "apps/evaluator/preact-trial-v4.ts",
+      "sha256": "e9fabe4850dd4837597e9e4f1ff21c3465fa8d4262bbb882f4987552d200581d"
+    },
+    {
+      "path": "tests/preact-trial-v4.test.ts",
+      "sha256": "059bcecc8e6a9bd1ba9dc55b766a7826e580fcb3ae4baca31708629b7293b578"
+    },
+    {
+      "path": "evaluation/PREACT_TRIAL_V4.md",
+      "sha256": "e971bc53d3b965254f491119bd5f52cfe3a65b1531b918e95cba39eb4ebc1b0a"
+    },
+    {
+      "path": "packages/repositories/preact-public-feedback-v1.ts",
+      "sha256": "058e918eb29414b987eb814fd8c03d1c6c1f509c1ccdba4d42ce46a786fcace8"
+    },
+    {
+      "path": "tests/preact-public-feedback-v1.test.ts",
+      "sha256": "6b93aac4528ba6261119b588ac254e21bfb39019fac3aa52cbc15b6c521b155e"
+    },
+    {
+      "path": "evaluation/preact-trial-v3.json",
+      "sha256": "0f1759cf252e7476e022bbafb1a7d007682d82e5b7d598810f3f48c94d37beb0"
+    },
+    {
+      "path": "evaluation/preact-trial-v3-results-summary.json",
+      "sha256": "e78e2337bb1d6869e02d81082c433215cc61e3030e8f9a930c0e579d27804dbd"
+    },
+    {
+      "path": "packages/evaluation/preact-trial-v3.ts",
+      "sha256": "1138920ccd7ac6b9c6c902f2cbeffde38c5c891c619460ba4164e75338694a13"
+    },
+    {
+      "path": "packages/execution/preact-trial-v3.ts",
+      "sha256": "95166bee9251418c393d9e0b31294e38d21c22b387b146916bc30d7dd4403d7c"
+    },
+    {
+      "path": "apps/evaluator/preact-trial-v3.ts",
+      "sha256": "da58ad26da675af1bae710d55b05233cd2b52e2094e93d144c22debb0ca2754b"
+    },
+    {
+      "path": "tests/preact-trial-v3.test.ts",
+      "sha256": "a32046fcdce53c3878dc5ef0ac5491fb5ecc3fe8d2f3972d0069bec41c1437b2"
+    },
+    {
+      "path": "evaluation/PREACT_TRIAL_V3.md",
+      "sha256": "a78ead45aa61214dd1d8010abc76f015cb017b1a5eca443cd5536e2d9da6f2d2"
+    },
+    {
+      "path": "packages/repositories/preact-diagnostics-v1.ts",
+      "sha256": "5f3aac9b24f7e4a758dabe2de00abbc3eac9aa33a8122ac0ea95a2984f9709c6"
+    },
+    {
+      "path": "tests/preact-diagnostics-v1.test.ts",
+      "sha256": "f0fa94c7e62cf4faa98e73e7f000f4e6c5e127135369d677a6e8ea0fe2dd7d0e"
+    },
+    {
+      "path": "packages/providers/nebius.ts",
+      "sha256": "2d93b0e03c9b35d7dbd0e828e4444880df412de980e67ce3d4df3ef557047a14"
+    },
+    {
+      "path": "packages/providers/diagnostics.ts",
+      "sha256": "5b941b2491eb5a4f0add1ad0645c843a8f39e4d4d85ebf6db6830d3cd8291562"
+    },
+    {
+      "path": "packages/providers/request-policy.ts",
+      "sha256": "51671db78c2712e308eb489d160bbdc2b75fe0146bc580838e6ee7bb703e0aba"
+    },
+    {
+      "path": "packages/storage/store.ts",
+      "sha256": "78fcbaf3c51ab90ae86b3df7cb43bf3709c863e5c5693d0c125c2e2b94c8c6f4"
+    },
+    {
+      "path": "packages/storage/reconciliation.ts",
+      "sha256": "4cf595bffa1b2c20a63019ed623cca5772b7abbb8a9b414da7089d2cefbc8952"
+    },
+    {
+      "path": "packages/repositories/repair-lease.ts",
+      "sha256": "a33afa53fe214e2023d674a6cff2270e847577902a91e4ea10011b31ecc40070"
+    },
+    {
+      "path": "packages/execution/nebius.ts",
+      "sha256": "3feb92191ce8bd69ce69475054ce1aec96042c0925200859b06663e635a60692"
+    },
+    {
+      "path": "apps/evaluator/preact-admission-v5.ts",
+      "sha256": "53d23070adac639e21cf5bbe0e8249ca59e0d4d1f3fe27fe7861777951a7d510"
+    },
+    {
+      "path": "evaluation/preact-admission-v5.json",
+      "sha256": "f79b68227d209824eadfd0cf6938f472fd32296045698964d8cd3ff438130086"
+    },
+    {
+      "path": "evaluation/preact-admission-v5-results-summary.json",
+      "sha256": "854300ec63774e88decab7150447687acebc235a3e247fd0e1e8e0edd46ce370"
+    },
+    {
+      "path": "evaluation/external-selected-v1.json",
+      "sha256": "9e2cc1663ef632ba3817691dc24e130e1d5842952c72ead559fb553e53cf00ae"
+    },
+    {
+      "path": "packages/repositories/preact-diagnostics-v2.ts",
+      "sha256": "6ff6b56ec824ba139384d4a0f7a9a5a6ec34ce996e7c7d0cbc74886e3fe6f84c"
+    },
+    {
+      "path": "tests/preact-diagnostics-v2.test.ts",
+      "sha256": "8e44c063711e6b1a1711869543247c6f6631f8f24d7f330ef7d2f5b2529bbe94"
+    },
+    {
+      "path": "evaluation/preact-trial-v2.json",
+      "sha256": "0b3bd8b8e04ea694aac410b90a835710f2fce6cfca3aaafd4a82d3e6dc0452c6"
+    },
+    {
+      "path": "evaluation/preact-trial-v2-results-summary.json",
+      "sha256": "33704eaf842c1fdbdbefb7e41039cb339bef54bff1224a0b70312b53a4b1af91"
+    },
+    {
+      "path": "packages/evaluation/preact-trial-v2.ts",
+      "sha256": "8624f506ce67e212693a1dff79481b23fc44c53812d29c87062866841370f641"
+    },
+    {
+      "path": "packages/execution/preact-trial-v2.ts",
+      "sha256": "04e557da8a9ff1a581a944b8df86787938641483e5f8725b23bdee141bd19979"
+    },
+    {
+      "path": "apps/evaluator/preact-trial-v2.ts",
+      "sha256": "6daaf5e1d14a5357acc5447f7f8d1e590dd8e2e1c96fbca62ec7916eebddebec"
+    },
+    {
+      "path": "tests/preact-trial-v2.test.ts",
+      "sha256": "d7d6804995c93b6cf9962cb450f61bef8a4edc396623832b97555e044e0bf31d"
+    },
+    {
+      "path": "evaluation/PREACT_TRIAL_V2.md",
+      "sha256": "e7afab07f86604bbcb555b289caaea4cbf4e2b4789b68bb66b58eb50c904cacf"
+    },
+    {
+      "path": "evaluation/preact-trial-v1.json",
+      "sha256": "f614628040c601d0745cb4cbb6870a1844b1aeb697874cc885bcc28c3f5003b6"
+    },
+    {
+      "path": "evaluation/preact-trial-v1-results-summary.json",
+      "sha256": "000e56a1f6ae9f1095f02e23dac76fba3467d230ec8b08f780763496c9646491"
+    },
+    {
+      "path": "packages/evaluation/preact-trial-v1.ts",
+      "sha256": "86d4456934b48449897d8b6e9f5e35c546bc39e3a0c69efbcb1ac206d3d7ee3c"
+    },
+    {
+      "path": "packages/execution/preact-trial-v1.ts",
+      "sha256": "6c8fa05bd9b2761c09e882cc25b122113ac7b6dc5a0614efb17e86028e2fa6dd"
+    },
+    {
+      "path": "apps/evaluator/preact-trial-v1.ts",
+      "sha256": "806ef0d7e205a6ae881ffc8bc23ddfe110476893879d45e68714475de2733ebe"
+    },
+    {
+      "path": "tests/preact-trial-v1.test.ts",
+      "sha256": "f0e3a1d3c7339fa963a0818f73d6ae7af2c68b426318caedae9ad74364d337f8"
+    },
+    {
+      "path": "evaluation/PREACT_TRIAL_V1.md",
+      "sha256": "d0c0f73c130335ff9354c8580e3a6c78ced01f8da0c7fd08cd4315d96b27c1a8"
+    }
+  ],
+  "digest": "9a46c592b4538aec6ddf3ea7c9595a7d87ee23b5784a309817acaacf7f9a7bee"
+}

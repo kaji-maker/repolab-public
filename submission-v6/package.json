@@ -1,0 +1,35 @@
+{
+  "name": "repolab",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=24.18.0"
+  },
+  "scripts": {
+    "start": "node apps/api/judge-client-v1.mjs",
+    "build": "vite build --config vite.native-v11.config.ts && npm run build:judge",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/judge-review-v2.test.mjs tests/judge-review-v3.test.mjs tests/source-preview-v1.test.ts tests/source-preview-v2.test.ts tests/live-release-v2.test.ts tests/cloud-dependency-proof-v2.test.mjs tests/cloud-runtime-proof-v1.test.mjs tests/cloud-runtime-http-v1.test.mjs tests/cloud-run-pool-v1.test.mjs tests/cloud-provider-preflight-v1.test.mjs tests/cloud-provider-config-v1.test.mjs tests/reviewer-guard-fixtures-v1.test.mjs tests/judge-client-v1.test.mjs",
+    "review:build": "node scripts/judge-review-bundle-v3.mjs",
+    "source:verify": "node scripts/source-release-v2.mjs verify",
+    "preview:recorded": "node apps/api/source-preview-v2.ts",
+    "build:judge": "vite build --config vite.judge-client-v1.config.ts"
+  },
+  "dependencies": {
+    "hono": "4.13.14",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.4",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.3",
+    "playwright": "1.63.0",
+    "prettier": "3.9.7",
+    "typescript": "6.0.3",
+    "vite": "7.3.7"
+  }
+}

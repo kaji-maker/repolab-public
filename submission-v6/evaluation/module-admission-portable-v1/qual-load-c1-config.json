@@ -1,0 +1,145 @@
+{
+  "runtime": {
+    "version": "v12.22.12",
+    "url": "https://nodejs.org/download/release/v12.22.12/node-v12.22.12-linux-x64.tar.gz",
+    "sha256": "ff92a45c4d03e8e270bec1ab337b8fff6e9de293dabfe7e8936a41f2fb0b202e"
+  },
+  "nonce": "b87a008a-4f29-4a0d-af7a-de9d09f1416f",
+  "taskId": "lukeed__regexparam-40",
+  "phase": "observations",
+  "sourceHash": "e3bccbbfa1b99bd00cccf74ad9a4b542e5e84a8e4d47c8cfdeb2148ea3aa599f",
+  "files": {
+    ".editorconfig": {
+      "sha256": "7866d5ec4f83e87f592f987fbc0f4fff4ddb04d19d8924376513fd1f71c17833",
+      "bytes": 211
+    },
+    ".github/FUNDING.yml": {
+      "sha256": "0a1dbb23eeb42f41af4ddf1e8a8c532108948c681eb1a16f7f517687aa5faa46",
+      "bytes": 15
+    },
+    ".github/workflows/ci.yml": {
+      "sha256": "3ecce6a186c50fa6ec2ef62ba9d99df4191384211ddf07f1bf27284c7454fb9f",
+      "bytes": 1018
+    },
+    ".gitignore": {
+      "sha256": "2638be791ee5834ba85114be6da6bc897a0a2fdb7b97c96bc411005d10daa7e1",
+      "bytes": 52
+    },
+    "index.d.ts": {
+      "sha256": "7bf07341d24034cb6c5b7bedb74b97f39ac74e9e1c95ffc8e879ec841caae18b",
+      "bytes": 820
+    },
+    "license": {
+      "sha256": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae",
+      "bytes": 1114
+    },
+    "package.json": {
+      "sha256": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+      "bytes": 1019
+    },
+    "readme.md": {
+      "sha256": "77d8b41fd808c8fc3050a1f451e2ef6b3fb94bc9648497597d547c4aa686358d",
+      "bytes": 8324
+    },
+    "src/index.js": {
+      "sha256": "108310cff0fac78b96fc0a114b976662e19f321d57a18541cf57f523a46538d2",
+      "bytes": 1202
+    },
+    "test/inject.js": {
+      "sha256": "2aca80376ef427e69eb765fc872d7402663c5b7524d0c5ad871c258af3ff802d",
+      "bytes": 2474
+    },
+    "test/parse.js": {
+      "sha256": "7b218bd2221588e3d4e8b2211c5c3b405a9706b9da832de4d5ca509f1fe321f4",
+      "bytes": 35805
+    }
+  },
+  "archiveSha256": "6f24095fd5147b5eb118e14aff69a16bafd86ed129cd6d969208ca8e0afd031c",
+  "sourcePaths": [
+    "src/index.js"
+  ],
+  "testPaths": [
+    "test/inject.js",
+    "test/parse.js"
+  ],
+  "overrides": {
+    "src/index.js": "6c8939dcff08227c363e43a091c19796c5148e26f96d753cd333824e2439900d"
+  },
+  "candidateFiles": {
+    "src/index.js": "/**\n * @param {string|RegExp} input The route pattern\n * @param {boolean} [loose] Allow open-ended matching. Ignored with `RegExp` input.\n */\nexport function parse(input, loose) {\n\tif (input instanceof RegExp) return { keys:false, pattern:input };\n\tvar c, o, tmp, ext, keys=[], pattern='', arr = input.split('/');\n\tarr[0] || arr.shift();\n\n\twhile (tmp = arr.shift()) {\n\t\tc = tmp[0];\n\t\tif (c === '*') {\n\t\t\tkeys.push(c);\n\t\t\tpattern += tmp[1] === '?' ? '(?:/(.*))?' : '/(.*)';\n\t\t} else if (c === ':') {\n\t\t\to = tmp.indexOf('?', 1);\n\t\t\text = tmp.indexOf('.', 1);\n\t\t\tkeys.push( tmp.substring(1, !!~o ? o : !!~ext ? ext : tmp.length) );\n\t\t\tpattern += !!~o && !~ext ? '(?:/([^/]+?))?' : '/([^/]+?)';\n\t\t\tif (!!~ext) pattern += (!!~o ? '?' : '') + '\\\\' + tmp.substring(ext);\n\t\t} else {\n\t\t\tpattern += '/' + tmp.replace(/[.*+?^${}()|[|[|?])}/g, '');;\n\t\t}\n\t}\n\n\treturn {\n\t\tkeys: keys,\n\t\tpattern: new RegExp('^' + pattern + (loose ? '(?=$|\\/)' : '\\/?$'), 'i')\n\t};\n}\n\nvar RGX = /(\\/|^)([:*][^/]*?)(\\?)?(?=[/.]|$)/g;\n\n// error if key missing?\nexport function inject(route, values) {\n\treturn route.replace(RGX, (x, lead, key, optional) => {\n\t\tx = values[key=='*' ? key : key.substring(1)];\n\t\treturn x ? '/'+x : (optional || key=='*') ? '' : '/' + key;\n\t});\n}\n"
+  },
+  "generatedPaths": [
+    "dist/index.js",
+    "dist/index.mjs",
+    "dist/index.min.js"
+  ],
+  "generatedHashes": {
+    "dist/index.js": "79a17b3f22c1a1e5a68b73cbac4a7dd6d0055291fc4ccab6e5d43d8b062c3524",
+    "dist/index.mjs": "6c8939dcff08227c363e43a091c19796c5148e26f96d753cd333824e2439900d",
+    "dist/index.min.js": "082686714d55b4ea0ca6828da750bafc470b026b81f0a0a9d04dd6797efce6d1"
+  },
+  "build": true,
+  "cases": [
+    {
+      "id": "load:dist/index.js",
+      "kind": "load",
+      "program": "const m=require(\"./dist/index.js\");return {type:typeof m,keys:Object.keys(m).sort()};",
+      "input": {},
+      "expected": {
+        "type": "object",
+        "keys": [
+          "inject",
+          "parse"
+        ]
+      }
+    },
+    {
+      "id": "load:dist/index.mjs",
+      "kind": "load",
+      "program": "const m=require(\"./dist/index.mjs\");return {type:typeof m,keys:Object.keys(m).sort()};",
+      "input": {},
+      "expected": {
+        "type": "object",
+        "keys": [
+          "inject",
+          "parse"
+        ]
+      }
+    },
+    {
+      "id": "diagnostic:dist/index.js",
+      "kind": "diagnostic",
+      "program": "try{require(\"./dist/index.js\");return {loaded:true};}catch(e){return {loaded:false,name:e.name,code:e.code===undefined?null:e.code,message:String(e.message).slice(0,300)};}",
+      "input": {},
+      "expected": null
+    },
+    {
+      "id": "diagnostic:dist/index.mjs",
+      "kind": "diagnostic",
+      "program": "try{require(\"./dist/index.mjs\");return {loaded:true};}catch(e){return {loaded:false,name:e.name,code:e.code===undefined?null:e.code,message:String(e.message).slice(0,300)};}",
+      "input": {},
+      "expected": null
+    },
+    {
+      "id": "observe:dist/index.min.js",
+      "kind": "observe",
+      "program": "try{require(\"./dist/index.min.js\");return {loaded:true};}catch(e){return {loaded:false,name:e.name,code:e.code===undefined?null:e.code,message:String(e.message).slice(0,300)};}",
+      "input": {},
+      "expected": null
+    },
+    {
+      "id": "control:package-read",
+      "kind": "control",
+      "program": "return require('./package.json').name;",
+      "input": {},
+      "expected": "regexparam"
+    },
+    {
+      "id": "no-credentials",
+      "program": "return Object.keys(process.env).filter(k=>k.startsWith('NEBIUS_'));",
+      "input": {},
+      "expected": [],
+      "kind": "control"
+    }
+  ]
+}

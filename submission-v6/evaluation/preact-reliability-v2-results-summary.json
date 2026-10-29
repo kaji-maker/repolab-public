@@ -1,0 +1,394 @@
+{
+  "format": "repolab-preact-reliability-results/v2",
+  "dateNepal": "2026-10-15",
+  "freeze": "822e3305ca5379405834096ca7807a849f567bdd9f2aea5e382ad25d285ae402",
+  "profileFreeze": "2bfd0055be82c8f4a1dd77f232d08f0c5fb227d72c41b972f5903fdec6a18384",
+  "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+  "verified": true,
+  "repairId": "f8bfb85d-6766-4a9e-a762-e362d011559c",
+  "taskId": "preactjs__preact-4436",
+  "startedAt": "2026-10-14T22:36:12.620Z",
+  "completedAt": "2026-10-14T22:43:10.883Z",
+  "qualification": {
+    "liveRepairRuns": 1,
+    "liveRepairRetry": false,
+    "maxCandidates": 3,
+    "attemptedCandidates": 1,
+    "selectedCandidate": 1,
+    "unusedCandidateSlots": 2,
+    "monetaryCap": null,
+    "independentFeedback": false
+  },
+  "changes": [
+    "Exact original-report quote enum in structured plan schema",
+    "Global single-result-capture guidance and self-checks",
+    "Versioned repair service uses qualified read-only Sandbox polling recovery"
+  ],
+  "unchanged": [
+    "Compiler and source admission gates",
+    "Original native tests and source ownership rules",
+    "Public selection gates",
+    "Independent post-selection evaluation"
+  ],
+  "provenance": {
+    "inference": "nebius",
+    "execution": "nebius-sandbox",
+    "model": "nvidia/nemotron-3-super-120b-a12b"
+  },
+  "candidates": [
+    {
+      "attempt": 1,
+      "status": "SELECTED",
+      "sourceHash": "68c9000eec6e0ed71f140c8af231309064d1e7447414f00136cbb91b4e3eb0d3",
+      "feedback": null
+    }
+  ],
+  "native": {
+    "mocha": {
+      "passed": 29,
+      "total": 29,
+      "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93"
+    },
+    "browser": {
+      "passed": 1173,
+      "total": 1184,
+      "skipped": 11,
+      "caseDigest": "e37fc9ab6b6f6a371b2c88088e955ce7542d59bd2b38157db866af49ae617474"
+    },
+    "types": {
+      "passed": 17,
+      "pending": 2,
+      "coreCompilation": "PASS",
+      "compatCompilation": "PASS"
+    }
+  },
+  "public": {
+    "passed": 3,
+    "total": 3,
+    "repeatedRounds": 2
+  },
+  "independent": {
+    "passed": 10,
+    "total": 10,
+    "repeatedRounds": 2,
+    "evaluatedAfterSelection": true
+  },
+  "usage": {
+    "schemaProbe": {
+      "status": "QUALIFIED_THINKING_REQUEST",
+      "calls": 1,
+      "sandboxOperations": 0,
+      "estimatedInferenceUsd": 0.0007367999999999999
+    },
+    "repair": {
+      "calls": 1,
+      "sandboxOperations": 14,
+      "estimatedInferenceUsd": 0.0073821
+    },
+    "phase": {
+      "calls": 2,
+      "sandboxOperations": 14,
+      "estimatedInferenceUsd": 0.0081189
+    },
+    "ledgerBeforeUsd": 0.18154379999999995,
+    "ledgerAfterUsd": 0.1896627,
+    "ledgerState": "clear"
+  },
+  "operationIds": [
+    "01a13c8f-d7fa-703d-915c-cce2a06f77e8",
+    "01a13c90-13dd-76f8-a8e4-b4376ed6c288",
+    "01a13c91-cfe4-70b4-88a8-877ac9395d2b",
+    "01a13c92-39a3-751e-bcd2-235678100f3b",
+    "01a13c92-6efc-7190-b919-c2d9fdbdb6b0",
+    "01a13c92-be03-73e6-ba2d-61847f9dd5c8",
+    "01a13c93-01f6-70a0-a6b4-c07c8d69354e",
+    "01a13c93-46ad-7010-9d4a-75aa03425f9d",
+    "01a13c93-b330-7748-ac0c-ade4605050ac",
+    "01a13c93-fd0b-7725-adb7-4cc9792e4281",
+    "01a13c94-477c-71cb-9d0d-e9cdaae536f1",
+    "01a13c94-ca4d-7241-841a-c31a380d04fa",
+    "01a13c95-26e9-7429-9182-bd7c9a09be09",
+    "01a13c95-6c4c-7550-afb1-2d1ae78ae97b"
+  ],
+  "patch": {
+    "status": "PASS",
+    "browserDownload": "NOT_RUN_BROWSER_HISTORY_TIMEOUT",
+    "patchSha256": "d5ae1485e9dace29b42309031dacdaa29b66ebda26d5b87fe3182c2d4548717e",
+    "patchBytes": 80570,
+    "files": [
+      "src/diff/index.js",
+      "src/diff/children.js",
+      "src/internal.d.ts"
+    ],
+    "sourceHash": "68c9000eec6e0ed71f140c8af231309064d1e7447414f00136cbb91b4e3eb0d3",
+    "controllerSourceExecution": false,
+    "staticGitApplication": true
+  },
+  "validation": {
+    "fullControllerTests": {
+      "passed": 580,
+      "failed": 0,
+      "files": 89,
+      "credentialFree": true,
+      "processIsolation": true
+    },
+    "typecheck": "PASS",
+    "productionBuild": "PASS",
+    "buildConfig": "vite.native-v6.config.ts",
+    "server": "apps/api/native-server-v6.ts",
+    "page": "native-repair-v5.html",
+    "readOnlyBrowserReview": {
+      "status": "PASS",
+      "id": "f8bfb85d-6766-4a9e-a762-e362d011559c",
+      "repairStatus": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "verified": true,
+      "observerCorrection": "Select history by catalog order, then assert the full selected result ID; history buttons do not display IDs.",
+      "originalLiveBrowserQualification": "FAILED_BROWSER_QUALIFICATION",
+      "failedReceiptSha256": "3186e1f8041353abc27e7778a3267c2d00324c8ca0f8498077ff0a707c65b777",
+      "newInferenceCalls": 0,
+      "newSandboxOperations": 0,
+      "mutatingRequests": [],
+      "viewports": [
+        1440,
+        390,
+        320
+      ],
+      "patchSha256": "d5ae1485e9dace29b42309031dacdaa29b66ebda26d5b87fe3182c2d4548717e",
+      "runFilesUnchanged": 38
+    },
+    "credentialFreeRestart": {
+      "status": "PASS",
+      "id": "f8bfb85d-6766-4a9e-a762-e362d011559c",
+      "repairStatus": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "verified": true,
+      "dispatchDisabled": true,
+      "newInferenceCalls": 0,
+      "newSandboxOperations": 0,
+      "runFilesUnchanged": 38,
+      "earlierUserResultVerified": true,
+      "viewports": [
+        1440,
+        390,
+        320
+      ]
+    }
+  },
+  "retainedFailures": {
+    "preparation": {
+      "freeze": "77b51395e8b9a14f86c1405395a04df209bf932723970cc963ea26c8dc8c4306",
+      "status": "NOT_RUN_PREPARATION_TEST_FAILURE",
+      "testsPassed": 579,
+      "testsFailed": 1,
+      "liveRepairCalls": 0,
+      "sandboxOperations": 0,
+      "reason": "Freeze-guard test targeted the old UI path; corrected before live dispatch.",
+      "archiveManifest": "evaluation/archive/preact-product-repair-v2-preparation/manifest.json"
+    },
+    "liveBrowser": {
+      "status": "FAILED_BROWSER_QUALIFICATION",
+      "retry": false,
+      "id": "f8bfb85d-6766-4a9e-a762-e362d011559c",
+      "reason": "History selector expected a full run ID that history buttons do not display.",
+      "failureSha256": "3186e1f8041353abc27e7778a3267c2d00324c8ca0f8498077ff0a707c65b777",
+      "repairOutcomeUnchanged": true,
+      "separateReadOnlyReviewPassed": true
+    }
+  },
+  "evidence": {
+    "newRawRunFiles": 38,
+    "priorFilesUnchanged": 1548,
+    "externalReplayFilesUnchanged": 56,
+    "archivedPreparationAssets": 24,
+    "runFiles": [
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/STARTED.json",
+        "sha256": "ac0fad8e3996e51429c00e5466ff2ad0e915de7055783682fcb2c1874ceabfe2"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-browser-A.json",
+        "sha256": "0842bc8e1526b584e02c56e0c518d5047a77fae8eddc5f95c97805468bd9698f"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-browser-B.json",
+        "sha256": "085858a4eb25e407eef38c53b3389689c35d402f4c9e0baf14526fe480b16da4"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-build.json",
+        "sha256": "e215625a1cf877ed89d41ef41dc44c32b688a17149d85f588f76b2fc8e502d9a"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-independent-A.json",
+        "sha256": "5b2cd7e87e1405083d1ddb7f9791ec484b0c44e6ea62573207bf6868211c4dd7"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-independent-B.json",
+        "sha256": "fe12bf8f4c4188869a42972bbccb64f1ea3c9da488a9db584354340269373bb5"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-integrity.json",
+        "sha256": "ebc9b9282e165ad395de74d5725a993fae532674845b16ecfff8633441f13ff6"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-lint.json",
+        "sha256": "05d82f6cf07fc4592abcc9afc0061d9e06ce00dd975ddc60e753e6aa96e5d0e0"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-mocha-A.json",
+        "sha256": "a7ca56ec83cffb3b0b8cd1bf5f0420ffab3e2f0dabc6c7524e058d29e8c40e79"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-mocha-B.json",
+        "sha256": "aee52f7e67f9eec33fab9fad09cdadfe29336b2f9b6ccf1ed03e13eea00de4bd"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-public-A.json",
+        "sha256": "a2238efffbe67b2249b5923b76c07a06a58c8849ed727ac49aa1fe43555a748a"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-public-B.json",
+        "sha256": "9ec514eba15e5b3327915d3e502b74c447403115d6e66573b123d77ed4880366"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1-types.json",
+        "sha256": "277d47362f5dd3063f6cc041bcaed8496f804fc41ad7b936eb5213dd2bf46a8c"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/candidate-1.patch",
+        "sha256": "d5ae1485e9dace29b42309031dacdaa29b66ebda26d5b87fe3182c2d4548717e"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/completion-1.json",
+        "sha256": "5a90f0540aad8c03c71d29e3dc7077bcf3152ade43594c9cb26a354feebd8c62"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/diagnostic-1.json",
+        "sha256": "6d002f15044034cfe07b5c5650f04b38ea822b850cbed822d66f1b84397c8844"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/journal.json",
+        "sha256": "29b86f7c38e318347bd6e4eb876974edce7fb46eae914a9d1efa999ed6e828e4"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/original-public-A.json",
+        "sha256": "f9b4f22eb0aedb9e451d00fb5ad07f45e44b0c68c37846520211639af7194444"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/original-public-B.json",
+        "sha256": "b73cd44bad604bee94812a753354c52134302c7235ff20548878113848ccd1bd"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/ownership-1.json",
+        "sha256": "b0b73ccf55528b4b219a7032fbfe274af2f5ce62a49d9d734d2f0f9f4490e6a1"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/prompt-1.json",
+        "sha256": "e022b5a2278bbf48d20d62faa2dedc41c270042d3bf37c7b21aa6014633fce90"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/proposal-1.json",
+        "sha256": "0e0d8d8d9a4ed495b20e95be5cc42a890ffbb2d5df10db35f9a5cd36e9955738"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/request-1.json",
+        "sha256": "43ad8b5d232530d45a9327cde614f43e0da63454f2390200d2693f0072de17b3"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/result.json",
+        "sha256": "400d1a85cc8aa3e16925c2caa0e133dddfbd6cdbb36ea45e024c0d692454def8"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/selection.json",
+        "sha256": "8f931ccfbd93deff3d2dc0dcfd33d1f11b1f2580cd44a084742a367a0c9e991c"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/source-1.json",
+        "sha256": "30eeea0cb93b3ec30ebb1bfd58e7016dc22209375e271472ccca0fcbe41f00f2"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/upload-candidate-1-0.json",
+        "sha256": "b2a125b7ca1a6fb229f2948f4cc41e30aae0502303d568a3af5419362f12a276"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/upload-candidate-1-1.json",
+        "sha256": "c1c3312d3bbad8202fa630547d8c1d2062ab41d766d76895e997482c5741f7e4"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/upload-candidate-1-2.json",
+        "sha256": "5c82e91c5ad9f5072fdf272c079abc11f601523cbdb7b48e87ab6e39a2080af5"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/upload-candidate-1-3.json",
+        "sha256": "cc218375c5f190e08f919bf1a36937aae029aa402e98b03d7de81ffe95b63082"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/upload-candidate-1-4.json",
+        "sha256": "788ec219e2e4920941a0b35ecd3fc3f4495757e690acef83bfaae2eb3c8b5df6"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/upload-candidate-1-5.json",
+        "sha256": "4855f0d1f6afac6b7493f51f7ca82890d1444f9ce7203a6e384785ee3fb87118"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/upload-candidate-1-independent.json",
+        "sha256": "f6e2a810ede76926288bba936c8fe7c938a446af860c01ae7e3f0cfeb57b0c78"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/upload-original-0.json",
+        "sha256": "5f09a353285f73431c357b554dd64404e4f70db83d85c16f4095edda30f5d70c"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/upload-original-1.json",
+        "sha256": "63b072d9b4810deada795f581713fa68f254d3bcddfed6d5c2ec6b84023bf039"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/upload-original-2.json",
+        "sha256": "870a7acdb84b6864933b1f553cc35f4448ea06d6a91ffebbae62706ac1343efc"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/uploads-candidate-1.json",
+        "sha256": "edbed4e2f8bb56f1604a85ebf17dad6a38a2be9a4ff8b124ef708dd3d8c1f610"
+      },
+      {
+        "path": ".repolab/native-preact-repairs-v2/repair-f8bfb85d-6766-4a9e-a762-e362d011559c/uploads-original.json",
+        "sha256": "219e9127a9736a095798fb67e927f4dce81be88915f3910ab37bd445e68fbd6d"
+      }
+    ],
+    "schemaRawFiles": [
+      {
+        "path": "STARTED.json",
+        "sha256": "214eea9dd8741a293561c5c0f6202968d80412f4607778e8e442870fccf85fea"
+      },
+      {
+        "path": "request.json",
+        "sha256": "24251dc5e205351f223934742c6bb669bcb2087bff95a3fe74a37e221be77beb"
+      },
+      {
+        "path": "completion.json",
+        "sha256": "b3c2cf4345d5e2a9cdbda4baac07f4620c0872ff64237b95e5fa8f535723d9e0"
+      },
+      {
+        "path": "diagnostic.json",
+        "sha256": "eac5649ceebf08032af63996f144e3a8ea6eb20f9e451693fc897f4c37f3ea69"
+      },
+      {
+        "path": "reply.json",
+        "sha256": "dfe6eab4e872e8e400caca4af9b9dfb275475b74595f41e09910024fde28673b"
+      },
+      {
+        "path": "result.json",
+        "sha256": "8df4a7df2ec2c63335eedbe6815f39dd7a156fc94ccb3267509a6be45bc75925"
+      }
+    ],
+    "readOnlyReviewScriptSha256": "5b5711d615242b0796544083e92d2fb467658206a5803368227160d36a98d799",
+    "keylessScriptSha256": "d074001e71c9e5f2aca64b5f3862245cb16a2efd63bd3faca3ba55c05405d0c4"
+  },
+  "limitations": [
+    "One exposed Preact feature with developer-supplied ownership scaffolding and bounded model-generated control flow; no unseen-task accuracy or causal reliability improvement established.",
+    "Same machine, Nebius project and cached native image; separate-machine/project and unaided human review remain open.",
+    "Eleven original browser skips and two pending TypeScript cases remain.",
+    "Docusaurus and Vue repair adapters remain unsupported; no selected task is removed.",
+    "Original live browser qualification failed on its selector; read-only correction passes and does not replace the failure.",
+    "Existing portable pack still binds the earlier f6 candidate 3 source 30b97465193b9706a1ed4046bdbcc54b686a9d686a03848f2533515597d3b4e5. This new source has an audited patch, not a newly qualified portable pack.",
+    "Earlier clean native reviewer bundles cover the prior controller/version and selected source."
+  ]
+}

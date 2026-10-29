@@ -1,0 +1,213 @@
+{
+  "format": "repolab-prospective-preparation-report/v1",
+  "freeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "selectionFreeze": "dd03bd39963f8b86f02ed91be63c6e30f8c24549bc3a7924156c24565ec74786",
+  "phase": "PREPARED_NOT_EXECUTION_QUALIFIED",
+  "design": "shared-candidate-pool-paired-selector-comparison",
+  "counts": {
+    "selected": 8,
+    "repositoryOwners": 2,
+    "perTaskNativeQualified": 0,
+    "executionReady": 0,
+    "modelAttempted": 0,
+    "setupFailed": 0,
+    "blockedPendingPreparation": 8
+  },
+  "tasks": [
+    {
+      "taskId": "preactjs__preact-4316",
+      "repository": "preactjs/preact",
+      "commit": "b820d8b73eade8bc5b3fbf7e5fe0dd5150de80e2",
+      "title": "onFocusIn and onFocusOut events incorrectly set",
+      "exposure": "public task; metadata/software projection disclosed; no prior ReproLab model attempt recorded",
+      "supportedRepositoryFamily": true,
+      "exactTaskNativeQualified": false,
+      "modelAdmission": false,
+      "executionAdmission": false,
+      "state": "BLOCKED_PENDING_PREPARATION",
+      "missing": [
+        "PINNED_TASK_SOURCE_AND_MANIFEST",
+        "EXACT_TASK_NATIVE_BASELINE_AND_REPRODUCTION",
+        "CANDIDATE_CAPABLE_GUARDED_ADAPTER",
+        "PUBLIC_AND_INDEPENDENT_CHECK_FREEZES",
+        "GENERATOR_AND_BOTH_SELECTORS_EXECUTION_FREEZE"
+      ]
+    },
+    {
+      "taskId": "vuejs__core-11739",
+      "repository": "vuejs/core",
+      "commit": "cb843e0be31f9e563ccfc30eca0c06f2a224b505",
+      "title": "SSR Hydration errors stemming from v-bind in CSS coupled with child component style bindings",
+      "exposure": "public task; metadata/software projection disclosed; no prior ReproLab model attempt recorded",
+      "supportedRepositoryFamily": true,
+      "exactTaskNativeQualified": false,
+      "modelAdmission": false,
+      "executionAdmission": false,
+      "state": "BLOCKED_PENDING_PREPARATION",
+      "missing": [
+        "PINNED_TASK_SOURCE_AND_MANIFEST",
+        "EXACT_TASK_NATIVE_BASELINE_AND_REPRODUCTION",
+        "CANDIDATE_CAPABLE_GUARDED_ADAPTER",
+        "PUBLIC_AND_INDEPENDENT_CHECK_FREEZES",
+        "GENERATOR_AND_BOTH_SELECTORS_EXECUTION_FREEZE"
+      ]
+    },
+    {
+      "taskId": "preactjs__preact-4152",
+      "repository": "preactjs/preact",
+      "commit": "9c5a82efcc3dcbd0035c694817a3022d81264687",
+      "title": "<div>{ new String('hi') }</div> renders blank",
+      "exposure": "public task; metadata/software projection disclosed; no prior ReproLab model attempt recorded",
+      "supportedRepositoryFamily": true,
+      "exactTaskNativeQualified": false,
+      "modelAdmission": false,
+      "executionAdmission": false,
+      "state": "BLOCKED_PENDING_PREPARATION",
+      "missing": [
+        "PINNED_TASK_SOURCE_AND_MANIFEST",
+        "EXACT_TASK_NATIVE_BASELINE_AND_REPRODUCTION",
+        "CANDIDATE_CAPABLE_GUARDED_ADAPTER",
+        "PUBLIC_AND_INDEPENDENT_CHECK_FREEZES",
+        "GENERATOR_AND_BOTH_SELECTORS_EXECUTION_FREEZE"
+      ]
+    },
+    {
+      "taskId": "vuejs__core-11589",
+      "repository": "vuejs/core",
+      "commit": "3653bc0f45d6fedf84e29b64ca52584359c383c0",
+      "title": "Inconsistent execution order of Sync Watchers on `computed` property",
+      "exposure": "public task; metadata/software projection disclosed; no prior ReproLab model attempt recorded",
+      "supportedRepositoryFamily": true,
+      "exactTaskNativeQualified": false,
+      "modelAdmission": false,
+      "executionAdmission": false,
+      "state": "BLOCKED_PENDING_PREPARATION",
+      "missing": [
+        "PINNED_TASK_SOURCE_AND_MANIFEST",
+        "EXACT_TASK_NATIVE_BASELINE_AND_REPRODUCTION",
+        "CANDIDATE_CAPABLE_GUARDED_ADAPTER",
+        "PUBLIC_AND_INDEPENDENT_CHECK_FREEZES",
+        "GENERATOR_AND_BOTH_SELECTORS_EXECUTION_FREEZE"
+      ]
+    },
+    {
+      "taskId": "preactjs__preact-3763",
+      "repository": "preactjs/preact",
+      "commit": "e968a5a4000dfa9bec7e8d7b26543b23def6d29d",
+      "title": "setState callback is not executed when working with subscriptions on behaviorsubjects/observables",
+      "exposure": "public task; metadata/software projection disclosed; no prior ReproLab model attempt recorded",
+      "supportedRepositoryFamily": true,
+      "exactTaskNativeQualified": false,
+      "modelAdmission": false,
+      "executionAdmission": false,
+      "state": "BLOCKED_PENDING_PREPARATION",
+      "missing": [
+        "PINNED_TASK_SOURCE_AND_MANIFEST",
+        "EXACT_TASK_NATIVE_BASELINE_AND_REPRODUCTION",
+        "CANDIDATE_CAPABLE_GUARDED_ADAPTER",
+        "PUBLIC_AND_INDEPENDENT_CHECK_FREEZES",
+        "GENERATOR_AND_BOTH_SELECTORS_EXECUTION_FREEZE"
+      ]
+    },
+    {
+      "taskId": "vuejs__core-11870",
+      "repository": "vuejs/core",
+      "commit": "67d6596d40b1807b9cd8eb0d9282932ea77be3c0",
+      "title": "use v-for rendering a shallowReactive array, array item incorrectly converted to a reactive object",
+      "exposure": "public task; metadata/software projection disclosed; no prior ReproLab model attempt recorded",
+      "supportedRepositoryFamily": true,
+      "exactTaskNativeQualified": false,
+      "modelAdmission": false,
+      "executionAdmission": false,
+      "state": "BLOCKED_PENDING_PREPARATION",
+      "missing": [
+        "PINNED_TASK_SOURCE_AND_MANIFEST",
+        "EXACT_TASK_NATIVE_BASELINE_AND_REPRODUCTION",
+        "CANDIDATE_CAPABLE_GUARDED_ADAPTER",
+        "PUBLIC_AND_INDEPENDENT_CHECK_FREEZES",
+        "GENERATOR_AND_BOTH_SELECTORS_EXECUTION_FREEZE"
+      ]
+    },
+    {
+      "taskId": "preactjs__preact-3567",
+      "repository": "preactjs/preact",
+      "commit": "c77e6284c199761d59467d8cc596a2f03540e72c",
+      "title": "New state-settling logic causes hooks + cleanup to fire unexpectedly",
+      "exposure": "public task; metadata/software projection disclosed; no prior ReproLab model attempt recorded",
+      "supportedRepositoryFamily": true,
+      "exactTaskNativeQualified": false,
+      "modelAdmission": false,
+      "executionAdmission": false,
+      "state": "BLOCKED_PENDING_PREPARATION",
+      "missing": [
+        "PINNED_TASK_SOURCE_AND_MANIFEST",
+        "EXACT_TASK_NATIVE_BASELINE_AND_REPRODUCTION",
+        "CANDIDATE_CAPABLE_GUARDED_ADAPTER",
+        "PUBLIC_AND_INDEPENDENT_CHECK_FREEZES",
+        "GENERATOR_AND_BOTH_SELECTORS_EXECUTION_FREEZE"
+      ]
+    },
+    {
+      "taskId": "vuejs__core-11915",
+      "repository": "vuejs/core",
+      "commit": "d0b513eb463f580e29378e43d112ff6859aa366e",
+      "title": "v-pre not ignoring {{ inside textarea",
+      "exposure": "public task; metadata/software projection disclosed; no prior ReproLab model attempt recorded",
+      "supportedRepositoryFamily": true,
+      "exactTaskNativeQualified": false,
+      "modelAdmission": false,
+      "executionAdmission": false,
+      "state": "BLOCKED_PENDING_PREPARATION",
+      "missing": [
+        "PINNED_TASK_SOURCE_AND_MANIFEST",
+        "EXACT_TASK_NATIVE_BASELINE_AND_REPRODUCTION",
+        "CANDIDATE_CAPABLE_GUARDED_ADAPTER",
+        "PUBLIC_AND_INDEPENDENT_CHECK_FREEZES",
+        "GENERATOR_AND_BOTH_SELECTORS_EXECUTION_FREEZE"
+      ]
+    }
+  ],
+  "comparison": {
+    "baseline": "native suite once",
+    "repolab": "static + load + native/public twice",
+    "sameOrderedCandidates": true,
+    "independentCases": "unopened; freeze both selections first",
+    "selectedIncorrectUnderIndependentChecks": null,
+    "verified": null,
+    "accuracy": null
+  },
+  "resourceCeilings": {
+    "sharedModelCalls": 16,
+    "modelCallsPerTask": 2,
+    "maxSandboxOperations": 408,
+    "monetaryCap": null
+  },
+  "actualUsage": {
+    "modelCalls": 0,
+    "newSandboxOperations": 0
+  },
+  "inference": "none",
+  "execution": "offline pinned-data projection and historical parent audits only",
+  "previousFrameworkCohort": {
+    "selected": 3,
+    "nativeBaselineQualified": 2,
+    "newModelAttemptedThisPhase": 0,
+    "docusaurus": "unsupported retained"
+  },
+  "nextTask": "preactjs__preact-4316",
+  "limits": [
+    "Selection/design freeze only; no live runner or accuracy claim",
+    "Original adapters are task-specific, not qualification for a new commit",
+    "Shared candidates compare selectors, not independently sampled end-to-end agents",
+    "No human maintainer session or training-unseen claim"
+  ],
+  "validation": {
+    "controllerTests": 7,
+    "projectorControls": 4,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3125
+  },
+  "cumulativeInferenceEstimateUsd": 0.34907219999999994
+}

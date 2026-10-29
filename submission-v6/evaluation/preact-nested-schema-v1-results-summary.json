@@ -1,0 +1,49 @@
+{
+  "result": {
+    "freeze": "29eb73a7472868c462bf1d8afd8fc3c1c25ec496a690d312ab9f0b029baa8670",
+    "status": "QUALIFIED_NESTED_SCHEMA",
+    "calls": 1,
+    "operations": 0,
+    "costUsd": 0.0004569,
+    "qualification": {
+      "format": "repolab-preact-nested-schema-qualification/v1",
+      "schemaHash": "e80b879da033c2808b9f573f38b3b937566e805c5f5cf8b1d8e41a5a4614443a",
+      "compiledBodyHash": "820d9fce189b332d61dbb768cfbfd9e7143661ad557f421696ee4c29b185fa2a",
+      "support": "Exact recursive schema accepted with a matching complete reply; no general schema or repair quality claim",
+      "inference": "nebius",
+      "execution": "none (schema check and syntax compilation only)"
+    },
+    "at": "2026-10-14T03:13:12.948Z"
+  },
+  "receipts": [
+    {
+      "name": "STARTED",
+      "sha256": "2b559854276f6bef62f6d1c8344377ff7a996da87452d5bcd1d03e621c7bf35d"
+    },
+    {
+      "name": "request",
+      "sha256": "fa6f6ae9098d7bf65cf51f3b734e13afd16bc01fc8eee4d2b11312c2c8e4b570"
+    },
+    {
+      "name": "completion",
+      "sha256": "fa4d299bc71adb16dcdfa3e9d99d717b8d3d7fcfa0c58e5635592e3e9eff2c67"
+    },
+    {
+      "name": "diagnostic",
+      "sha256": "31b22cd3d07e28b8e18ce086691ff381ba05fe59b2edd91449de7766e8ae1e33"
+    },
+    {
+      "name": "reply",
+      "sha256": "dfe6eab4e872e8e400caca4af9b9dfb275475b74595f41e09910024fde28673b"
+    },
+    {
+      "name": "result",
+      "sha256": "cb93c3185b8a592df99ea7dcbec7d8d01a6df969523d2780e95c4aae896a420c"
+    }
+  ],
+  "usageComplete": true,
+  "limitations": [
+    "One exact recursive schema and known toy; not universal schema support or repair quality.",
+    "No candidate source executed; the toy is intentionally legacy-only."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "format": "repolab-preact-workbench/v1",
+  "parentEngineFreeze": "2096c16f472d93957f5e4efc78b55e880d7261ae537d072dcef28748b20bff7a",
+  "api": "/api/native-preact-repairs-v4",
+  "page": "native-repair-v8.html",
+  "server": "apps/api/native-server-v9.ts",
+  "newLiveQualificationSlots": 0,
+  "defaultServerAdmission": false,
+  "legacyDispatch": false,
+  "automaticRecovery": false,
+  "cachedReview": "all raw bytes and bound source/prior artifacts unchanged",
+  "assets": [
+    {
+      "path": "packages/repositories/preact-workbench-protocol-v1.ts",
+      "sha256": "e247c37f1ea18922e15a1fa52f5b9bfc26067680ce32c4a6f33347e8f69696f4"
+    },
+    {
+      "path": "packages/repositories/preact-repair-history-v4.ts",
+      "sha256": "73f8db97c5d41fea1147e77b616ac6cec61a34cfc28a359024ba182670f95d53"
+    },
+    {
+      "path": "apps/api/preact-repair-v4.ts",
+      "sha256": "9f8b88d0f610d3dee80c405839cd63794b11b24124acf8a8e7b822a2a0efa354"
+    },
+    {
+      "path": "apps/api/qualified-server-v1.ts",
+      "sha256": "6d6a356dd14124793d6c8596f0099f0071c3acd555cf7f42e5b0a521c85ff164"
+    },
+    {
+      "path": "apps/api/native-server-v9.ts",
+      "sha256": "6f5b6b2382e27ed897f7f8d9a6ebdf4b1d1d7c8524dee0f8dee2792ab8885822"
+    },
+    {
+      "path": "apps/web/src/FreshPreactV8.tsx",
+      "sha256": "9cdfce5fd6175dc4a61af2765a303907812c80c4e72c080d76cad6b800f1cdbf"
+    },
+    {
+      "path": "apps/web/src/fresh-preact-v8.css",
+      "sha256": "90538c27b3569a96a97bac87710e3c7cd5ccaf38eb96e40b1581b7c9737ed54a"
+    },
+    {
+      "path": "apps/web/src/fresh-preact.css",
+      "sha256": "d5469168d441f1c4d4be4817f5d0af83c4d7a043270039ab65feb2ae2c1851d0"
+    },
+    {
+      "path": "apps/web/native-repair-v8.html",
+      "sha256": "7ebab504637c52b2e417b750bd83776d7ab1710e8b24a583c7f3752794194cdf"
+    },
+    {
+      "path": "vite.native-v9.config.ts",
+      "sha256": "645a0dff2f2e19619f28bb61e3c4f5329cc16f8328c8eaa570fc8315a701e42b"
+    },
+    {
+      "path": "tests/preact-workbench-v1.test.ts",
+      "sha256": "6ddddf5b607d49c213d9374377087e3ac3fbe7b70b7ab532aed930898db041d5"
+    },
+    {
+      "path": "evaluation/PREACT_WORKBENCH_V1.md",
+      "sha256": "eabcfd4c9da3253f0cdc9aaa337841e9e13a40506ffe949a0b713a15846aca13"
+    }
+  ],
+  "freeze": "6c6e8f0a1561dfe519ce495ba819e3254b24e9f45c0e6c1bda24963dda25280d"
+}

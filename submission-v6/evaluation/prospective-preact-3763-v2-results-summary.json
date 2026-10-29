@@ -1,0 +1,60 @@
+{
+  "format": "repolab-prospective-preact-native-unresolved/v1",
+  "freeze": "c57cd84a70c591520fbd220cdbba5119592eca45c1ef89cf9169d6ccf07694ce",
+  "taskId": "preactjs__preact-3763",
+  "commit": "e968a5a4000dfa9bec7e8d7b26543b23def6d29d",
+  "status": "STOPPED_UNKNOWN_SUBMISSION",
+  "priorAttempt": {
+    "operations": 5,
+    "ids": [
+      "01a15866-f2c0-7529-8fb7-7a1f3f40103d",
+      "01a15867-79a5-753a-8866-ca89ce2f3e4f",
+      "01a15867-a851-7515-b94b-30ac43abd395",
+      "01a15867-c121-7791-966b-d0a433fc3d02",
+      "01a15867-d9e3-729e-becc-f32cfd8805ee"
+    ],
+    "status": "STOPPED_UNQUALIFIED",
+    "lintReadOnlyResolved": true,
+    "priorFreeze": "a33e4a28d8e484831418ff9bc5578f10a1ea72427bcda2fe1b4bc04e5f255b61",
+    "protectedImage": "593480da-88a9-4b33-9b1f-2a47b2f22431",
+    "umd": {
+      "sha256": "5b87ee8e4d2372ce41b1ed0d16b1e95f33e935288ab9be325b573c324f13f714",
+      "bytes": 10258
+    }
+  },
+  "knownActualSandboxOperations": 5,
+  "newSubmissionAttempts": 1,
+  "newOperationIdKnown": false,
+  "originalNativeSuites": "NOT_RUN",
+  "originalPublicReproduction": "NOT_RUN",
+  "modelCalls": 0,
+  "modelAdmission": false,
+  "candidateAdmission": false,
+  "accuracy": null,
+  "cohortKnownOriginalOperations": 47,
+  "cohortUnresolvedOriginalSubmissions": 1,
+  "prospectiveDenominator": 8,
+  "prospectiveNativeQualified": 4,
+  "pendingPreparation": 3,
+  "unresolvedTasks": 1,
+  "validation": {
+    "focusedV1ControllerTests": 14,
+    "focusedV2ControllerTests": 5,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3276,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesRetained": true
+  },
+  "reconciliation": {
+    "operationListHttpStatus": 200,
+    "accountHttpStatus": 200,
+    "runningInstances": 0,
+    "matchingOperationIdAvailable": false,
+    "limitation": "No later operation in read-only history and zero running instances do not identify or reconcile the missing submission receipt; original HTTP status/response diagnostics were not preserved"
+  },
+  "cumulativeInferenceEstimateUsd": 0.34907219999999994,
+  "inference": "none",
+  "execution": "five actual Nebius Sandbox V1 original-only operations; V2 submission acceptance unknown; no execution on controller"
+}

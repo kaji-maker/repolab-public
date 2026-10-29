@@ -1,0 +1,92 @@
+{
+  "id": "8e33657a-d655-4d4b-80d3-2a432058ceed",
+  "freeze": "2096c16f472d93957f5e4efc78b55e880d7261ae537d072dcef28748b20bff7a",
+  "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+  "verified": true,
+  "simulated": false,
+  "startedAt": "2026-10-25T13:12:58.943Z",
+  "completedAt": "2026-10-25T13:17:49.708Z",
+  "active": false,
+  "failedStage": null,
+  "error": null,
+  "executionUncertain": false,
+  "recovery": null,
+  "inferenceCalls": 1,
+  "executionCount": 14,
+  "estimatedInferenceUsd": 0.004751399999999999,
+  "usageComplete": true,
+  "provenance": {
+    "inference": "nebius",
+    "execution": "nebius-sandbox",
+    "model": "nvidia/nemotron-3-super-120b-a12b"
+  },
+  "sourceHash": "4fd44f4516eadb65efa7dd0227b469a2fe704ea08a650ebe01da9c93cc2e6c47",
+  "accepted": true,
+  "candidates": [
+    {
+      "attempt": 1,
+      "status": "SELECTED",
+      "sourceHash": "4fd44f4516eadb65efa7dd0227b469a2fe704ea08a650ebe01da9c93cc2e6c47",
+      "stages": [
+        "build",
+        "integrity",
+        "lint",
+        "mocha-A",
+        "types",
+        "browser-A",
+        "public-A",
+        "mocha-B",
+        "browser-B",
+        "public-B"
+      ],
+      "feedback": null
+    }
+  ],
+  "native": {
+    "mocha": {
+      "passed": 29,
+      "total": 29
+    },
+    "browser": {
+      "passed": 1173,
+      "total": 1184,
+      "skipped": 11
+    },
+    "types": {
+      "passed": 17,
+      "pending": 2,
+      "coreCompilation": "PASS",
+      "compatCompilation": "PASS"
+    }
+  },
+  "public": {
+    "passed": 3,
+    "total": 3,
+    "failed": []
+  },
+  "independent": {
+    "passed": 10,
+    "total": 10,
+    "failed": []
+  },
+  "latestStage": "independent-B",
+  "operationIds": [
+    "01a17331-bd64-7519-b473-b23d8b031447",
+    "01a17331-ea50-70e4-a37a-eedac4a85307",
+    "01a17333-03aa-72b8-8bb6-e3340bbfbe33",
+    "01a17333-54aa-739c-8827-7eef79fd203b",
+    "01a17333-8491-73a7-8b09-07fe94fa6590",
+    "01a17333-be57-73e3-a4d5-106a5d8a1b37",
+    "01a17333-edb0-73ed-8841-9e2936ee256c",
+    "01a17334-29f9-70eb-93df-a5bd77c17496",
+    "01a17334-83ba-77a6-a8ef-5527f2cfbc3b",
+    "01a17334-bbaa-7055-9d13-06cbe3f44970",
+    "01a17334-ee91-770b-9f83-7b5c7d39cbc6",
+    "01a17335-4c88-7493-8c57-8f0d67e2e4a4",
+    "01a17335-91d2-70cd-a2fa-2e803ce0a441",
+    "01a17335-c5f4-755f-afd4-8bc2ad9db437"
+  ],
+  "patchAvailable": true,
+  "scope": "One exposed Preact ref-cleanup feature; developer-supplied scaffolding, same-project cached native image; browser 11 original skips and types 2 pending",
+  "patchSha256": "cfa54ecee8c1133134b60f50b92ab053b051e13e9a0c928d5181fff5563ba71d"
+}

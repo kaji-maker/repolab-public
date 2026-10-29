@@ -1,0 +1,137 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "0dcf53e9f6064a2b7828a6767b3bbde1d00ecf85722142983c63b76b6231028e",
+  "scope": "two exposed development tasks after V3 exact-block generation and full-body budget failures; V2 fresh 0/3 and V3 development 0/2 retained; no fresh-task generalization claim",
+  "firstPilot": {
+    "selected": 3,
+    "nativeQualified": 0,
+    "modelAttempted": 0,
+    "verified": 0,
+    "inferenceCalls": 0,
+    "sandboxOperations": 6,
+    "independentEvaluations": 0
+  },
+  "previousDevelopment": {
+    "verified": 0,
+    "tasks": 2,
+    "inferenceCalls": 2,
+    "sandboxOperations": 10,
+    "estimatedInferenceUsd": 0.0198885,
+    "freeze": "ceffa37d67203091c4387f481a9a70459f640327e77ff7256ebad1cfd8d79644"
+  },
+  "developmentTasks": 2,
+  "nativeQualified": 2,
+  "modelAttempted": 2,
+  "verifiedDevelopmentRepairs": 1,
+  "inferenceCalls": 2,
+  "developmentSandboxOperations": 7,
+  "totalPhaseSandboxOperations": 23,
+  "estimatedInferenceUsd": 0.021941999999999996,
+  "cumulativeInferenceCalls": 4,
+  "cumulativeEstimatedInferenceUsd": 0.04183049999999999,
+  "ledgerBeforeUsd": 0.26165669999999996,
+  "ledgerAfterUsd": 0.2835986999999999,
+  "unsettledCharges": 0,
+  "credentialAndProjectExclusion": "PASS",
+  "priorFilesUnchanged": 2659,
+  "filesScanned": 56,
+  "rows": [
+    {
+      "name": "minimist",
+      "taskId": "minimistjs__minimist-47",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "qualificationReusedFrom": ".repolab/fresh-pilot-v3/minimist/qualify.json",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          153
+        ],
+        "passed": [
+          153
+        ],
+        "failed": []
+      },
+      "apiVariants": 10,
+      "publicCases": 20,
+      "status": "REPAIR_FAILED",
+      "error": "Model response was incomplete; refusing to execute its code",
+      "inferenceCalls": 1,
+      "qualificationOperations": 0,
+      "repairOperations": 0,
+      "sourceHash": null,
+      "testedPatch": null,
+      "independent": null,
+      "candidateHistory": []
+    },
+    {
+      "name": "camelcase",
+      "taskId": "sindresorhus__camelcase-117",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "qualificationReusedFrom": ".repolab/fresh-pilot-v3/camelcase/qualify.json",
+      "native": {
+        "runner": "ava",
+        "passed": [
+          20
+        ],
+        "skipped": []
+      },
+      "apiVariants": 24,
+      "publicCases": 48,
+      "status": "VERIFIED_FOR_TESTED_SCENARIOS",
+      "error": null,
+      "inferenceCalls": 1,
+      "qualificationOperations": 0,
+      "repairOperations": 7,
+      "sourceHash": "8455c10f142b517dc55997ef3cfd2f642ad68bf7fb30d8e0464251f278e77f98",
+      "testedPatch": {
+        "path": ".repolab/fresh-pilot-v4/camelcase/tested.patch",
+        "sha256": "505e802f3a97a3e91362c8521d046b1a10b370bf3ddeffb9a43436d6712a6eee"
+      },
+      "independent": [
+        {
+          "passed": 96,
+          "total": 96
+        },
+        {
+          "passed": 96,
+          "total": 96
+        }
+      ],
+      "candidateHistory": [
+        {
+          "attempt": 1,
+          "status": "SELECTED",
+          "error": null,
+          "sourceHash": "8455c10f142b517dc55997ef3cfd2f642ad68bf7fb30d8e0464251f278e77f98"
+        }
+      ]
+    }
+  ],
+  "modelResponses": [
+    {
+      "name": "minimist",
+      "attempt": 1,
+      "finishReason": "length",
+      "contentBytes": 56399,
+      "requestBytes": 30621,
+      "candidateRecorded": false
+    },
+    {
+      "name": "camelcase",
+      "attempt": 1,
+      "finishReason": "stop",
+      "contentBytes": 795,
+      "requestBytes": 32844,
+      "candidateRecorded": true
+    }
+  ],
+  "offlineReview": {
+    "status": "PASS",
+    "inference": "none",
+    "execution": "offline receipt review; upstream/candidate source not executed",
+    "networkAttempts": 0,
+    "inferenceCalls": 0,
+    "sandboxOperations": 0,
+    "evidenceFilesUnchanged": 35
+  }
+}

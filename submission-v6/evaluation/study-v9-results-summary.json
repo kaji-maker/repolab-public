@@ -1,0 +1,189 @@
+{
+  "format": "repolab-focused-study-public-results/v9",
+  "digest": "68b3990ecfe792dc6301e9935230438eb21a75d19ddbce7d27c376d424a108f5",
+  "status": "COMPLETED",
+  "slotStatus": "ACCEPTED_INDEPENDENTLY_CORRECT",
+  "scope": "focused-dlv-path-guidance-exposed-no-comparison-claim",
+  "inference": {
+    "provider": "nebius",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "calls": 2,
+    "estimatedUsd": 0.0018738000000000001,
+    "rates": {
+      "input": 0.3,
+      "output": 0.9
+    },
+    "usageComplete": true
+  },
+  "execution": {
+    "provider": "nebius-sandbox",
+    "runtime": "v24.18.0",
+    "studyOperations": 9,
+    "reviewedDlvQualificationOperations": 6,
+    "readinessOperations": 7,
+    "totalDistinctOperations": 22,
+    "readOnlyExpiryRefreshes": 1
+  },
+  "candidates": [
+    {
+      "attempt": 1,
+      "sourceHash": "10d3e9404b1e93692469d14d08fb382c9799894425b367bfff46e35525bbeba7",
+      "after": "p!==key.length || obj===undefined ? def : obj",
+      "accepted": true,
+      "pathDiagnostics": [],
+      "baselineChecks": [
+        {
+          "passed": true,
+          "assertionCount": 34
+        },
+        {
+          "passed": true,
+          "assertionCount": 34
+        }
+      ],
+      "publicChecks": [
+        {
+          "passed": true,
+          "passedCases": 15,
+          "totalCases": 15
+        }
+      ],
+      "admissionCode": null,
+      "failedPublicCases": []
+    }
+  ],
+  "arms": [
+    {
+      "arm": "C",
+      "plannedTasks": 1,
+      "attemptedTasks": 1,
+      "notRun": 0,
+      "qualifiedBugs": 1,
+      "acceptedRepairs": 1,
+      "correctRepairs": 1,
+      "incorrectAcceptances": 0,
+      "acceptedUnknown": 0,
+      "controlCorrect": 0,
+      "unknownOutcomes": 0,
+      "correctTaskOutcomes": 1,
+      "acceptancePrecision": 1
+    }
+  ],
+  "resources": [
+    {
+      "task": "dlv-null-path",
+      "calls": 2,
+      "inputTokens": 3429,
+      "outputTokens": 939,
+      "estimatedInferenceUsd": 0.0018738000000000001,
+      "operations": 9
+    }
+  ],
+  "rows": [
+    {
+      "task": "dlv-null-path",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": true,
+      "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "unknown": false,
+      "origin": "exposed-public-historical-v5-model-attempted-authored-oracle",
+      "runId": "ac3004ab-a31e-4410-b7d5-5f4b67a57892"
+    }
+  ],
+  "reviewedQualification": [
+    {
+      "label": "original-public",
+      "sourceHash": "1962e2fb0d6d30da2d07941e2d76c37fa96c9032f492224101277ebe1215e337",
+      "suite": "challenge",
+      "passed": false,
+      "cases": 15,
+      "failedCases": [
+        "zero-child",
+        "false-child",
+        "empty-child",
+        "public-zero-array",
+        "public-false-string",
+        "public-empty-array",
+        "public-deep-zero",
+        "public-deep-false",
+        "public-deep-empty"
+      ],
+      "pathDiagnostics": []
+    },
+    {
+      "label": "previous-counter-only-public",
+      "sourceHash": "aa25562095d6c65d3482e3fdaafed627ec023924bbdef2dda4eaf7bf9871be80",
+      "suite": "challenge",
+      "passed": false,
+      "cases": 15,
+      "failedCases": [
+        "documented-missing-path"
+      ],
+      "pathDiagnostics": [
+        {
+          "code": "FINAL_UNDEFINED_UNCHECKED",
+          "message": "An explicit comparison of the current value with undefined is not evident. The final lookup can produce undefined after the counter reaches path length. Retain the original undefined-default behavior. This conservative warning is advisory and does not change admission or predict test results."
+        }
+      ]
+    },
+    {
+      "label": "previous-counter-only-baseline",
+      "sourceHash": "aa25562095d6c65d3482e3fdaafed627ec023924bbdef2dda4eaf7bf9871be80",
+      "suite": "baseline",
+      "passed": false,
+      "cases": null,
+      "failedCases": [],
+      "pathDiagnostics": [
+        {
+          "code": "FINAL_UNDEFINED_UNCHECKED",
+          "message": "An explicit comparison of the current value with undefined is not evident. The final lookup can produce undefined after the counter reaches path length. Retain the original undefined-default behavior. This conservative warning is advisory and does not change admission or predict test results."
+        }
+      ]
+    },
+    {
+      "label": "reviewed-reference-baseline",
+      "sourceHash": "700868571fd53ba42f2aa1b15ee2eca3a42a5c796d90c812f522c6aae8a5c764",
+      "suite": "baseline",
+      "passed": true,
+      "cases": null,
+      "failedCases": [],
+      "pathDiagnostics": []
+    },
+    {
+      "label": "reviewed-reference-public",
+      "sourceHash": "700868571fd53ba42f2aa1b15ee2eca3a42a5c796d90c812f522c6aae8a5c764",
+      "suite": "challenge",
+      "passed": true,
+      "cases": 15,
+      "failedCases": [],
+      "pathDiagnostics": []
+    },
+    {
+      "label": "reviewed-reference-independent",
+      "sourceHash": "700868571fd53ba42f2aa1b15ee2eca3a42a5c796d90c812f522c6aae8a5c764",
+      "suite": "independent",
+      "passed": true,
+      "cases": 13,
+      "failedCases": [],
+      "pathDiagnostics": []
+    }
+  ],
+  "limitations": [
+    "Focused exposed-development revision; no A/B comparison or causal superiority claim",
+    "Authored/public/exposed tasks; no external hidden benchmark",
+    "Previously attempted tasks; no untouched-task or new independent benchmark claim"
+  ],
+  "validation": {
+    "sharedEvaluator": true,
+    "rawReceiptReplayMatched": true,
+    "publicFeedbackRecomputed": true,
+    "decisionBeforeIndependentEvaluation": true,
+    "originalUpstreamAssertions": 34,
+    "originalUpstreamFiles": 1
+  },
+  "conclusion": "One exposed dlv model repair passed every frozen public and remaining independent check; no hidden benchmark or broad correctness claim."
+}

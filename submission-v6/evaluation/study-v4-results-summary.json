@@ -1,0 +1,546 @@
+{
+  "format": "repolab-common-study-public-results/v4",
+  "digest": "037e7a67ffe60ced80b59993b5cc168d78082a51f0bc072263b65a4a7b36e578",
+  "status": "COMPLETED",
+  "scope": "eight-authored-public-exposed-tasks-no-external-heldout-claim",
+  "inference": {
+    "provider": "nebius",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "calls": 39,
+    "estimatedUsd": 0.032393399999999996,
+    "rates": {
+      "input": 0.3,
+      "output": 0.9
+    },
+    "usageComplete": true
+  },
+  "execution": {
+    "provider": "nebius-sandbox",
+    "runtime": "v24.18.0",
+    "studyOperations": 127,
+    "readinessOperations": 7,
+    "readOnlyExpiryRefreshes": 11
+  },
+  "arms": [
+    {
+      "arm": "A",
+      "plannedTasks": 8,
+      "attemptedTasks": 8,
+      "notRun": 0,
+      "qualifiedBugs": 6,
+      "acceptedRepairs": 3,
+      "correctRepairs": 3,
+      "incorrectAcceptances": 0,
+      "acceptedUnknown": 0,
+      "controlCorrect": 2,
+      "unknownOutcomes": 0,
+      "correctTaskOutcomes": 5,
+      "acceptancePrecision": 1
+    },
+    {
+      "arm": "B",
+      "plannedTasks": 8,
+      "attemptedTasks": 8,
+      "notRun": 0,
+      "qualifiedBugs": 6,
+      "acceptedRepairs": 3,
+      "correctRepairs": 3,
+      "incorrectAcceptances": 0,
+      "acceptedUnknown": 0,
+      "controlCorrect": 2,
+      "unknownOutcomes": 0,
+      "correctTaskOutcomes": 5,
+      "acceptancePrecision": 1
+    },
+    {
+      "arm": "C",
+      "plannedTasks": 8,
+      "attemptedTasks": 8,
+      "notRun": 0,
+      "qualifiedBugs": 6,
+      "acceptedRepairs": 4,
+      "correctRepairs": 3,
+      "incorrectAcceptances": 1,
+      "acceptedUnknown": 0,
+      "controlCorrect": 2,
+      "unknownOutcomes": 0,
+      "correctTaskOutcomes": 5,
+      "acceptancePrecision": 0.75
+    }
+  ],
+  "resources": [
+    {
+      "arm": "A",
+      "calls": 10,
+      "inputTokens": 20239,
+      "outputTokens": 3842,
+      "estimatedInferenceUsd": 0.0095295,
+      "operations": 36
+    },
+    {
+      "arm": "B",
+      "calls": 15,
+      "inputTokens": 24491,
+      "outputTokens": 4845,
+      "estimatedInferenceUsd": 0.011707799999999999,
+      "operations": 38
+    },
+    {
+      "arm": "C",
+      "calls": 14,
+      "inputTokens": 23366,
+      "outputTokens": 4607,
+      "estimatedInferenceUsd": 0.011156099999999999,
+      "operations": 53
+    }
+  ],
+  "rows": [
+    {
+      "task": "refund-missing-facts",
+      "arm": "A",
+      "kind": "missing-facts",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": true,
+      "status": "NEEDS_FACTS",
+      "unknown": false,
+      "origin": "model-unrun-authored-control",
+      "runId": "f524a007-763c-40a7-862b-0f0fb4ef18d2"
+    },
+    {
+      "task": "refund-missing-facts",
+      "arm": "B",
+      "kind": "missing-facts",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": true,
+      "status": "NEEDS_FACTS",
+      "unknown": false,
+      "origin": "model-unrun-authored-control",
+      "runId": "96d94fa4-6b2a-4bf7-8370-47c5ace589e4"
+    },
+    {
+      "task": "refund-missing-facts",
+      "arm": "C",
+      "kind": "missing-facts",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": true,
+      "status": "NEEDS_FACTS",
+      "unknown": false,
+      "origin": "model-unrun-authored-control",
+      "runId": "4d78050e-8a23-4d2f-ba09-7a9a81be5c00"
+    },
+    {
+      "task": "shipping-already-correct",
+      "arm": "B",
+      "kind": "already-correct",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": true,
+      "status": "ALREADY_SATISFIED_FOR_REPORT",
+      "unknown": false,
+      "origin": "model-unrun-authored-control",
+      "runId": "36a940e2-0d11-4688-a570-517fe462e759"
+    },
+    {
+      "task": "shipping-already-correct",
+      "arm": "C",
+      "kind": "already-correct",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": true,
+      "status": "ALREADY_SATISFIED_FOR_REPORT",
+      "unknown": false,
+      "origin": "model-unrun-authored-control",
+      "runId": "46a8f024-c198-4cec-b977-116f115efa52"
+    },
+    {
+      "task": "shipping-already-correct",
+      "arm": "A",
+      "kind": "already-correct",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": true,
+      "status": "ALREADY_SATISFIED_FOR_REPORT",
+      "unknown": false,
+      "origin": "model-unrun-authored-control",
+      "runId": "77d15710-dab1-4e4a-9d57-62b5e100622a"
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": true,
+      "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "unknown": false,
+      "origin": "exposed-development",
+      "runId": "c9b4a3fd-8839-4e39-ac09-5c0342f957e6"
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "A",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": true,
+      "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "unknown": false,
+      "origin": "exposed-development",
+      "runId": "f60a64b0-d761-473b-9122-3436fedc9464"
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "B",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": false,
+      "status": "ABSTAINED",
+      "unknown": false,
+      "origin": "exposed-development",
+      "runId": "108ee9f7-f275-40a7-a014-6e3cf373dd77"
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "A",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": true,
+      "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "unknown": false,
+      "origin": "exposed-development",
+      "runId": "18ed4959-c593-4805-bc7b-4e4ace00528e"
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "B",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": true,
+      "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "unknown": false,
+      "origin": "exposed-development",
+      "runId": "0279f56c-3a2f-4477-b3c0-2a8b9371bcc8"
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": true,
+      "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "unknown": false,
+      "origin": "exposed-development",
+      "runId": "e740709c-02dd-42e9-aeb6-4d74ebee77a9"
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "B",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": true,
+      "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "unknown": false,
+      "origin": "exposed-development",
+      "runId": "025e626b-6756-4028-ae0c-e343411dd227"
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": true,
+      "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "unknown": false,
+      "origin": "exposed-development",
+      "runId": "58f2cc59-b62e-41b0-9c40-e41d6a9fbf52"
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "A",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": true,
+      "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "unknown": false,
+      "origin": "exposed-development",
+      "runId": "9aa0323f-fa2c-4605-90ea-35387c96800f"
+    },
+    {
+      "task": "dlv-null-path",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": false,
+      "status": "ACCEPTED_INDEPENDENTLY_INCORRECT",
+      "unknown": false,
+      "origin": "exposed-public-historical",
+      "runId": "3ecb7bf0-5b57-4009-ba3d-07a01c211160"
+    },
+    {
+      "task": "dlv-null-path",
+      "arm": "A",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": false,
+      "status": "ABSTAINED",
+      "unknown": false,
+      "origin": "exposed-public-historical",
+      "runId": "79949ae5-e15f-4427-9729-b82b15599154"
+    },
+    {
+      "task": "dlv-null-path",
+      "arm": "B",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": true,
+      "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "unknown": false,
+      "origin": "exposed-public-historical",
+      "runId": "ffe33276-bb3b-4e0e-899a-d4bf7cca8442"
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "A",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": false,
+      "status": "ABSTAINED",
+      "unknown": false,
+      "origin": "model-unrun-public-historical-authored-oracle",
+      "runId": "3cce295f-4b96-4b9f-8420-37852daef3b9"
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "B",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": false,
+      "status": "ABSTAINED",
+      "unknown": false,
+      "origin": "model-unrun-public-historical-authored-oracle",
+      "runId": "0d088f00-d085-45d4-9462-46fe403dbbcf"
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": false,
+      "status": "ABSTAINED",
+      "unknown": false,
+      "origin": "model-unrun-public-historical-authored-oracle",
+      "runId": "e9f0277b-b71a-4b9a-949a-ca67d0c72def"
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "B",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": false,
+      "status": "ABSTAINED",
+      "unknown": false,
+      "origin": "model-unrun-public-historical-authored-oracle",
+      "runId": "e0649625-adee-4316-9669-9e1abf0119c9"
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": false,
+      "status": "ABSTAINED",
+      "unknown": false,
+      "origin": "model-unrun-public-historical-authored-oracle",
+      "runId": "e294fb84-8472-411c-b3d5-a021731c038a"
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "A",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": false,
+      "status": "ABSTAINED",
+      "unknown": false,
+      "origin": "model-unrun-public-historical-authored-oracle",
+      "runId": "60198d0a-fe51-480b-9169-bc2973ca73aa"
+    }
+  ],
+  "admissions": [
+    {
+      "task": "booking-timezone",
+      "arm": "A",
+      "attempt": 1,
+      "reason": "Assign only local scalar names. Property writes, including maps indexed by part.type, are prohibited; use find callbacks or scalar locals."
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "B",
+      "attempt": 1,
+      "reason": "Use simple local names; no destructuring or shadowing of Date, Intl, Array or undefined."
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "B",
+      "attempt": 2,
+      "reason": "Only numeric literal indexed reads are admitted; computed keys and dynamic function targets are prohibited."
+    },
+    {
+      "task": "dlv-null-path",
+      "arm": "A",
+      "attempt": 2,
+      "reason": "unchanged or repeated admitted source"
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "A",
+      "attempt": 1,
+      "reason": "Unsupported expression syntax"
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "A",
+      "attempt": 2,
+      "reason": "Call target or arity prohibited"
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "B",
+      "attempt": 1,
+      "reason": "Unsupported expression syntax"
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "B",
+      "attempt": 2,
+      "reason": "Unsupported expression syntax"
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "C",
+      "attempt": 1,
+      "reason": "Call target or arity prohibited"
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "C",
+      "attempt": 2,
+      "reason": "Ambient name prohibited"
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "B",
+      "attempt": 1,
+      "reason": "Call target or arity prohibited"
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "B",
+      "attempt": 2,
+      "reason": "Call target or arity prohibited"
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "C",
+      "attempt": 1,
+      "reason": "Call target or arity prohibited"
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "C",
+      "attempt": 2,
+      "reason": "Call target or arity prohibited"
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "A",
+      "attempt": 1,
+      "reason": "One complete JavaScript expression required"
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "A",
+      "attempt": 2,
+      "reason": "One complete JavaScript expression required"
+    }
+  ],
+  "incorrectAcceptances": [
+    {
+      "task": "dlv-null-path",
+      "arm": "C",
+      "runId": "3ecb7bf0-5b57-4009-ba3d-07a01c211160",
+      "sourceHash": "b8e721ba0046017dc3ed3b817f7b12d0a9d8623659e18aa89e00cfc5b652ef57",
+      "independentFailures": [
+        {
+          "id": "zero-child",
+          "status": "returned",
+          "actual": "0",
+          "expected": "\"fallback\"",
+          "passed": false
+        },
+        {
+          "id": "false-child",
+          "status": "returned",
+          "actual": "false",
+          "expected": "\"fallback\"",
+          "passed": false
+        },
+        {
+          "id": "empty-child",
+          "status": "returned",
+          "actual": "\"\"",
+          "expected": "\"fallback\"",
+          "passed": false
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "One repetition per task/arm; no causal superiority claim",
+    "Authored/public/exposed tasks; no external hidden benchmark",
+    "Controls share deterministic preflight across arms"
+  ],
+  "conclusion": "All arms: 3/6 independently correct bug repairs and 2/2 correct controls. C additionally accepts one incorrect repair; this study does not show C superiority."
+}

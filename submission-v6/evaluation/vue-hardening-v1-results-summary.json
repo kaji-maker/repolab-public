@@ -1,0 +1,113 @@
+{
+  "format": "repolab-vue-hardening-result/v1",
+  "freeze": "7efa7265108b480020adff4cc6d111ae0cc65810637a186d775ba25b47adf797",
+  "status": "QUALIFIED_ORIGINAL_ONLY_HARDENING",
+  "operations": 6,
+  "operationIds": [
+    "01a142dc-d4cf-77d8-b69b-d31a166a0997",
+    "01a142dc-f53b-73ff-a95c-6cd0e81756d1",
+    "01a142dd-236d-708f-8dac-19a24f16dc50",
+    "01a142dd-5c65-75b7-bf8d-7a4c83549653",
+    "01a142dd-798c-7565-93ac-3809c1a83fe8",
+    "01a142dd-b121-7720-9caf-53a5b478340b"
+  ],
+  "protectedImage": "7f6401ac-2f99-483a-9fb3-0e6a5772c7c2",
+  "rootMode": "555",
+  "inferenceCalls": 0,
+  "modelAdmission": false,
+  "inference": "none",
+  "execution": "nebius-sandbox; reviewed original",
+  "unit": {
+    "suites": 19,
+    "total": 413,
+    "passed": 412,
+    "skipped": 1,
+    "caseDigest": "305acace9222a33dd5b1cc3258aa76b2fe8bc4d7874cb11d40f8a1f865f7cc1a",
+    "reporterCounters": {
+      "total": 413,
+      "passed": 413,
+      "pending": 0,
+      "todo": 0
+    },
+    "reporterCounterDiscrepancy": true
+  },
+  "configSha256": "8dfb3b611d555ef2922bf77b4cff519fda5e28d0126859594f29cf3077679f17",
+  "rootDenials": [
+    {
+      "path": "package.json",
+      "error": "EEXIST"
+    },
+    {
+      "path": "vitest.config.ts",
+      "error": "EEXIST"
+    },
+    {
+      "path": "vitest.unit.config.ts",
+      "error": "EEXIST"
+    },
+    {
+      "path": "vitest.workspace.ts",
+      "error": "EEXIST"
+    },
+    {
+      "path": "vitest.workspace.js",
+      "error": "EACCES"
+    },
+    {
+      "path": "vite.config.js",
+      "error": "EACCES"
+    },
+    {
+      "path": "repolab-attack.mjs",
+      "error": "EACCES"
+    },
+    {
+      "path": "node_modules-shadow",
+      "error": "EACCES"
+    }
+  ],
+  "observations": {
+    "mediaNested": {
+      "errors": 0,
+      "hostDeclScoped": true,
+      "childRuleScoped": true,
+      "atRuleDeclScoped": false
+    },
+    "containerNested": {
+      "errors": 0,
+      "hostDeclScoped": true,
+      "childRuleScoped": true,
+      "atRuleDeclScoped": false
+    },
+    "plainNestedControl": {
+      "errors": 0,
+      "hostDeclScoped": true,
+      "childRuleScoped": true
+    },
+    "topLevelMediaControl": {
+      "errors": 0,
+      "mediaPresent": true,
+      "innerRuleScoped": true
+    }
+  },
+  "limits": [
+    "No generated-candidate qualification",
+    "Uncertainty counterexamples are simulated, not new live failure injections",
+    "No full release suite or separate-machine claim"
+  ],
+  "denominator": {
+    "selectedFrameworks": 3,
+    "nativeBaselinesQualified": 2,
+    "newModelAttemptedTasks": 0,
+    "docusaurus": "UNSUPPORTED_RETAINED_IN_DENOMINATOR",
+    "regexparam": "EXPOSED_DEVELOPMENT_CONTROL"
+  },
+  "validation": {
+    "focusedAndRegressionTests": 17,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessOfflineReplays": 2,
+    "priorJsonUnchanged": 3110
+  },
+  "cumulativeInferenceEstimateUsd": 0.34907219999999994
+}

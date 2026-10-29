@@ -1,0 +1,35 @@
+name: Connected judge source V6 qualification
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qualify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: submission-v6
+    steps:
+      - name: Checkout without persisted credentials
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Set up pinned Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.18.0
+      - name: Verify the 722 source files before install
+        run: env -i PATH="$PATH" node scripts/source-release-v2.mjs verify . 8dcfee534c47aa7e47406e8f722afbe9cb9a6b450606ffb72a0a32d4c90672d6
+      - name: Install with lifecycle scripts disabled
+        run: env -i PATH="$PATH" npm ci --ignore-scripts --no-audit --no-fund
+      - name: Typecheck
+        run: env -i PATH="$PATH" npm run typecheck
+      - name: Build both supported views
+        run: env -i PATH="$PATH" npm run build
+      - name: Run controller and relay fixtures
+        run: env -i PATH="$PATH" npm test
+      - name: Check dependency advisories
+        run: env -i PATH="$PATH" npm audit --audit-level=high
+      - name: Record scope
+        run: echo 'Source/build and synthetic controller fixtures only. No provider inference, Sandbox work, or live repair is started by CI.'

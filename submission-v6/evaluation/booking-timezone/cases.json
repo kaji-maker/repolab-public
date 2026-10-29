@@ -1,0 +1,102 @@
+{
+  "id": "booking-timezone-development-v1",
+  "split": "development",
+  "cases": [
+    {
+      "id": "reported-kathmandu",
+      "instant": "2026-10-03T20:00:00Z",
+      "timeZone": "Asia/Kathmandu",
+      "expected": "2026-10-04",
+      "origin": "reported",
+      "rationale": "UTC+05:45 moves 20:00 to 01:45 the next day."
+    },
+    {
+      "id": "reported-los-angeles",
+      "instant": "2026-10-04T02:00:00Z",
+      "timeZone": "America/Los_Angeles",
+      "expected": "2026-10-03",
+      "origin": "reported",
+      "rationale": "UTC-07:00 moves 02:00 to 19:00 the previous day."
+    },
+    {
+      "id": "kathmandu-ordinary",
+      "instant": "2026-10-04T12:00:00Z",
+      "timeZone": "Asia/Kathmandu",
+      "expected": "2026-10-04",
+      "origin": "independent",
+      "rationale": "UTC+05:45 keeps this ordinary instant on the same day."
+    },
+    {
+      "id": "utc-evening-control",
+      "instant": "2026-10-04T20:00:00Z",
+      "timeZone": "UTC",
+      "expected": "2026-10-04",
+      "origin": "independent",
+      "rationale": "UTC must remain unchanged even where a universal Kathmandu offset would cross midnight."
+    },
+    {
+      "id": "new-york-winter",
+      "instant": "2026-01-15T04:30:00Z",
+      "timeZone": "America/New_York",
+      "expected": "2026-01-14",
+      "origin": "independent",
+      "rationale": "Winter UTC-05:00 gives 23:30 the previous day."
+    },
+    {
+      "id": "new-york-summer",
+      "instant": "2026-07-15T04:30:00Z",
+      "timeZone": "America/New_York",
+      "expected": "2026-07-15",
+      "origin": "independent",
+      "rationale": "Summer UTC-04:00 gives 00:30 on the same day."
+    },
+    {
+      "id": "berlin-winter-month-end",
+      "instant": "2026-01-31T23:30:00Z",
+      "timeZone": "Europe/Berlin",
+      "expected": "2026-02-01",
+      "origin": "independent",
+      "rationale": "Winter UTC+01:00 crosses into February."
+    },
+    {
+      "id": "berlin-summer-month-end",
+      "instant": "2026-06-30T22:30:00Z",
+      "timeZone": "Europe/Berlin",
+      "expected": "2026-07-01",
+      "origin": "independent",
+      "rationale": "Summer UTC+02:00 crosses into July where the winter offset would not."
+    },
+    {
+      "id": "lord-howe-summer",
+      "instant": "2026-01-01T13:15:00Z",
+      "timeZone": "Australia/Lord_Howe",
+      "expected": "2026-01-02",
+      "origin": "independent",
+      "rationale": "Southern summer UTC+11:00 gives 00:15 the next day."
+    },
+    {
+      "id": "lord-howe-winter",
+      "instant": "2026-07-01T13:15:00Z",
+      "timeZone": "Australia/Lord_Howe",
+      "expected": "2026-07-01",
+      "origin": "independent",
+      "rationale": "Southern winter UTC+10:30 gives 23:45 on the same day; seasonal change is half an hour."
+    },
+    {
+      "id": "kiritimati-new-year",
+      "instant": "2026-12-31T10:30:00Z",
+      "timeZone": "Pacific/Kiritimati",
+      "expected": "2027-01-01",
+      "origin": "independent",
+      "rationale": "UTC+14:00 crosses into the next year."
+    },
+    {
+      "id": "honolulu-previous-year",
+      "instant": "2026-01-01T09:30:00Z",
+      "timeZone": "Pacific/Honolulu",
+      "expected": "2025-12-31",
+      "origin": "independent",
+      "rationale": "UTC-10:00 crosses into the previous year."
+    }
+  ]
+}

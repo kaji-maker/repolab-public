@@ -1,0 +1,49 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "aa800942aa4c3eeec3601eb9ce3c82ee8bb38adbaa144ba331c1a730939a76b7",
+  "qualificationStatus": "QUALIFIED_FIXTURE_CONTROLS",
+  "inferenceCalls": 0,
+  "sandboxOperations": 4,
+  "estimatedInferenceUsd": 0,
+  "ledgerUsd": 0.34907219999999994,
+  "priorJsonEvidenceUnchanged": 3003,
+  "candidateLoadRejectedBeforeBehavior": true,
+  "behaviorCallsAfterLoadFailure": 0,
+  "integrityControls": "PASS",
+  "controllerCancellationAndReadOnlyRecovery": "PASS",
+  "remoteCancellationConfirmed": false,
+  "leasesReleased": true,
+  "unsettledCharges": 0,
+  "portableReview": {
+    "status": "PASS",
+    "files": 201,
+    "operationsReviewed": 4,
+    "privateStateRequired": false,
+    "networkCalls": 0
+  },
+  "credentialAndProjectExclusion": "PASS",
+  "filesScanned": 423,
+  "scope": "Reviewed controller-authored fixtures only; zero inference. Qualifies opt-in guarded transport and shared candidate-gate orchestration. Historical repair protocols/defaults remain unchanged.",
+  "provenance": {
+    "inference": "none",
+    "execution": "nebius-sandbox; reviewed controller-authored fixtures, not model repairs"
+  },
+  "validation": {
+    "newFocusedTestGroups": 12,
+    "additionalFreezeCounterexamples": 3,
+    "typecheck": "PASS",
+    "productionBuild": "PASS",
+    "fullControllerSuite": {
+      "status": "PASS",
+      "command": "npm test",
+      "tests": 739,
+      "passed": 739,
+      "failed": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "durationMs": 2116093.23099,
+      "logSha256": "89cabb2f087261ab3c90c9c1fda2c39a8b08b312ba1f5eb6f2c938e140cd569f"
+    },
+    "buildLogSha256": "0f413ad2c7e22246f218a83ab6c618ba26feca86d04b85691d064b5511f7262d"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "status": "PASS_ACTUAL_BROWSER_END_TO_END",
+  "resultStatus": "ACCEPTED_INDEPENDENTLY_CORRECT",
+  "runtimeQualified": true,
+  "freshRepairVerified": true,
+  "simulated": false,
+  "attemptedModelRequests": 1,
+  "inferenceUsageComplete": true,
+  "estimatedInferenceUsd": 0.004751399999999999,
+  "operationGuards": 14,
+  "allOperationGuardsTerminal": true,
+  "executionUncertain": false,
+  "sharedLeasesPresent": 0,
+  "unsettledInferenceCharges": 0,
+  "priorPrivateJsonFilesMatched": 3875,
+  "frozenAssetsMatched": 657,
+  "rawTerminalResultAudited": true,
+  "selectedSource": true,
+  "independentEvaluationOpened": true,
+  "previousReleaseChanged": false,
+  "oldCohortChanged": false,
+  "newBenchmarkSample": false,
+  "workflowConsumed": true,
+  "automaticRetry": false,
+  "actualBrowserDispatchQualified": true,
+  "actualBrowserEndToEndQualified": true,
+  "browserReview": "PASS_ACTUAL_BROWSER_FLOW",
+  "browserProgressSha256": "a00d2a343b0e695bd7bfc5c8c659279458a0bee37fc70e5a9d6d0b3b302dc65b",
+  "apiServerUiWired": true,
+  "publicJudgeAccessQualified": false,
+  "cloudLiveDispatchAllowed": false,
+  "inference": "One actual production Nebius Token Factory nvidia/nemotron-3-super-120b-a12b request; usage complete. Controller admission tests and post-run audits used no inference.",
+  "execution": "14 actual isolated Nebius Sandbox operations after one actual same-host Chrome start, automatic terminal observation, desktop/mobile patch inspection and exact downloads. Admission controls were synthetic fixtures. No candidate/original/observer source executed on controller or browser.",
+  "rawIntegrityAudit": "PASS_POST_RUN_INTEGRITY",
+  "release": "browser-release-v2",
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "engineFreezeSha256": "2096c16f472d93957f5e4efc78b55e880d7261ae537d072dcef28748b20bff7a",
+  "workbenchFreezeSha256": "520dfb352f7e42db88d0f25e6e343cb8655dcf0c690af4926a22712ab7640a7e",
+  "executionFreezeSha256": "36139942e3db7707450592b1bae735cd398258cb5293232ba5f1be5c7ce23209",
+  "dispatchPlanSha256": "0e9aa2c5d694e1b9865319ef6abbd68f6074e5da77883341fdd3e4fc9f50bf81",
+  "startedAt": "2026-10-25T13:12:58.943Z",
+  "completedAt": "2026-10-25T13:17:49.708Z",
+  "selectedVariant": "candidate-1",
+  "sourceHash": "4fd44f4516eadb65efa7dd0227b469a2fe704ea08a650ebe01da9c93cc2e6c47",
+  "patchPath": "reviewer-packs/preact-browser-v2.patch",
+  "patchSha256": "cfa54ecee8c1133134b60f50b92ab053b051e13e9a0c928d5181fff5563ba71d",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "SELECTED",
+      "feedbackStage": null
+    }
+  ],
+  "public": {
+    "passed": 3,
+    "total": 3
+  },
+  "independent": {
+    "passed": 10,
+    "total": 10
+  },
+  "native": {
+    "mocha": {
+      "passed": 29,
+      "skipped": 0
+    },
+    "browser": {
+      "passed": 1173,
+      "skipped": 11
+    },
+    "types": {
+      "passed": 17,
+      "pending": 2,
+      "coreCompilation": "PASS",
+      "compatCompilation": "PASS"
+    }
+  },
+  "browser": {
+    "automaticTerminalObserved": true,
+    "startRequests": 1,
+    "cases": [
+      {
+        "width": 1440,
+        "statusMatchesActualResult": true,
+        "repeatStartDisabled": true,
+        "patchSha256": "cfa54ecee8c1133134b60f50b92ab053b051e13e9a0c928d5181fff5563ba71d",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "statusMatchesActualResult": true,
+        "repeatStartDisabled": true,
+        "patchSha256": "cfa54ecee8c1133134b60f50b92ab053b051e13e9a0c928d5181fff5563ba71d",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "statusMatchesActualResult": true,
+        "repeatStartDisabled": true,
+        "patchSha256": "cfa54ecee8c1133134b60f50b92ab053b051e13e9a0c928d5181fff5563ba71d",
+        "overflow": false
+      }
+    ],
+    "errors": [],
+    "forbidden": []
+  },
+  "sandboxBillingConfirmed": false,
+  "syntheticAdmissionTestsPassed": 49,
+  "typecheck": "PASS",
+  "keylessPlanAudits": 2,
+  "temporaryServerClosed": true,
+  "originalBrowserV1EndToEndQualified": false,
+  "scope": "Exposed Preact 4436 development feature with supplied scaffolding and cached image; one same-host browser qualification, not a new benchmark sample",
+  "limitations": [
+    "Required ownership/declaration/call scaffolding is developer-supplied; model instruction programs determine bounded control flow and actions.",
+    "One scoped public Preact feature request; not hidden benchmark accuracy.",
+    "Two selected repositories remain unsupported; no selected task is removed.",
+    "Independent lifecycle checks are developer-authored and withheld from repair context.",
+    "Same-project cached original image; separate-project portability is untested.",
+    "Fresh repair uses the original qualified scoped profile; no hidden-task or cross-project accuracy claim.",
+    "Native browser 11 original skips and TypeScript 2 pending cases remain disclosed."
+  ]
+}

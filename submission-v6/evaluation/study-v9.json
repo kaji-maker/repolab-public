@@ -1,0 +1,58 @@
+{
+  "format": "repolab-common-study/v9",
+  "previousDigest": "4e1512b8c09a6acde9d7e77d280bc65a79c76cf1842db435707debb2a36f9e47",
+  "scope": "focused-dlv-path-guidance-exposed-no-comparison-claim",
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "maxCandidates": 2,
+  "maxCalls": 3,
+  "maxOperations": 32,
+  "runInferenceCapUsd": null,
+  "allocationUsd": null,
+  "globalInferenceCapUsd": 4,
+  "schedule": [
+    {
+      "task": "dlv-null-path",
+      "arm": "C",
+      "repetition": 1
+    }
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/study-protocol-v9.ts",
+      "sha256": "24a2822e58b299dc5dcff8eb4ac0ed7cb50e8948b96c8281b19e1e61a0678a33"
+    },
+    {
+      "path": "packages/evaluation/study-adapters-v9.ts",
+      "sha256": "aef5aadfbd2db35c092c60e96f745abb86704084b38f609a0026cd9e12ad1d16"
+    },
+    {
+      "path": "packages/evaluation/study-guidance-v9.ts",
+      "sha256": "b9aa6e59e2fbab631e7e80b388d8bbd2f52c6ec52bf2f8d0819f6c3e40b0db84"
+    },
+    {
+      "path": "packages/evaluation/study-runner-v9.ts",
+      "sha256": "dffa1e1537616c60d27eaee87f19f64d523fe7de7fb765cd34148a50987ef8c7"
+    },
+    {
+      "path": "packages/evaluation/study-metrics-v9.ts",
+      "sha256": "c32b110e3ade46a9a1d066a5f6e4060444b6f7387f1ab63d88219135fbf1f286"
+    },
+    {
+      "path": "apps/evaluator/study-v9.ts",
+      "sha256": "c02fcd8a0ee17300f94bec55691795dd4e6aa18eeae931d47375574736d9661d"
+    },
+    {
+      "path": "tests/study-v9.test.ts",
+      "sha256": "0e09909e304ec495688be7ee842c17977c470d5941a5576200224c256c2769b2"
+    },
+    {
+      "path": "evaluation/STUDY_V9.md",
+      "sha256": "97ca485a2d207aff1a40f3b92b906dcddea3d145fb57a847dc202c3d68f74c37"
+    }
+  ],
+  "digest": "68b3990ecfe792dc6301e9935230438eb21a75d19ddbce7d27c376d424a108f5"
+}

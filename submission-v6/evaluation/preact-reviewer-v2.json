@@ -1,0 +1,47 @@
+{
+  "format": "repolab-native-reviewer-qualification/v2",
+  "parentPackFreeze": "e57f7d519c90c86747d826c5926c52be9b7850a35e043ed6e77a88d867fa7422",
+  "originRunId": "f8bfb85d-6766-4a9e-a762-e362d011559c",
+  "sourceHash": "68c9000eec6e0ed71f140c8af231309064d1e7447414f00136cbb91b4e3eb0d3",
+  "packDigest": "986ae095cd7224c608b19cfd8d4e00a33dcc779a858fc79faf6a6c5468a5b841",
+  "installs": 2,
+  "isolationOperationsPerInstall": 5,
+  "fixtureSmokeOperationsPerInstall": 2,
+  "replayOperationsPerInstall": 14,
+  "totalPlannedOperations": 42,
+  "inferenceCalls": 0,
+  "qualificationRetry": false,
+  "focusedTestFiles": [
+    "tests/native-reviewer-bootstrap-v2.test.ts",
+    "tests/preact-pack-v3.test.ts",
+    "tests/preact-replay-v3.test.ts"
+  ],
+  "scope": "two clean controller/dependency/state directories on one machine; same Sandbox project and cached native image; CLI delivery",
+  "assets": [
+    {
+      "path": "packages/repositories/preact-reviewer-protocol-v2.ts",
+      "sha256": "f66161dd4deae7565037c24c1b57d539aaa9fec52c33df5c1ba6114e9ecd2c08"
+    },
+    {
+      "path": "scripts/native-reviewer-bootstrap-v2.mjs",
+      "sha256": "c3abd092b6bdacc0b04749cbb7e975d417a9f118a1a228bbe25dad6b557a88f6"
+    },
+    {
+      "path": "scripts/native-reviewer-bootstrap-v2.d.mts",
+      "sha256": "830dd4b42acd294e2d05aa5c5bec9838cc14e47f30eb8f11cee32c8edb3eb786"
+    },
+    {
+      "path": "tests/native-reviewer-bootstrap-v2.test.ts",
+      "sha256": "9fa0f2de6b56783efa3394cdf119cdc890decca7deff1572d86ed099120ecb3f"
+    },
+    {
+      "path": "docs/NATIVE_REVIEWER_SETUP_V2.md",
+      "sha256": "9769c58e6312a00c3f8b978064cd59c4329e8314ad5ed424af49a77c9aa6bbee"
+    },
+    {
+      "path": "evaluation/PREACT_REVIEWER_V2.md",
+      "sha256": "e4c9327c34234dca01e9982b63ba7c14c6a67251f0acad9437f2dbefb4d2dbec"
+    }
+  ],
+  "digest": "bb4d209f0de115bda1c721f0aee9864464df3c19c756d1267456ced96f3b9efa"
+}

@@ -1,0 +1,66 @@
+{
+  "format": "repolab-public-falsy-challenges/v5",
+  "origin": "authored-exposed-development-from-v4-false-acceptance",
+  "cases": [
+    {
+      "id": "zero-child",
+      "args": [{ "x": 0 }, "x.y", "fallback"],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "false-child",
+      "args": [{ "x": false }, ["x", "y"], "fallback"],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "empty-child",
+      "args": [{ "x": "" }, "x.y", "fallback"],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "public-zero-array",
+      "args": [{ "x": 0 }, ["x", "y"], "fallback"],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "public-false-string",
+      "args": [{ "x": false }, "x.y", "fallback"],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "public-empty-array",
+      "args": [{ "x": "" }, ["x", "y"], "fallback"],
+      "expected": "\"fallback\""
+    },
+    {
+      "id": "public-deep-zero",
+      "args": [{ "p": { "q": 0 } }, "p.q.r", 17],
+      "expected": "17"
+    },
+    {
+      "id": "public-deep-false",
+      "args": [{ "p": { "q": false } }, ["p", "q", "r"], 17],
+      "expected": "17"
+    },
+    {
+      "id": "public-deep-empty",
+      "args": [{ "p": { "q": "" } }, "p.q.r", 17],
+      "expected": "17"
+    },
+    {
+      "id": "public-leaf-zero",
+      "args": [{ "p": { "q": 0 } }, "p.q", 17],
+      "expected": "0"
+    },
+    {
+      "id": "public-leaf-false",
+      "args": [{ "p": { "q": false } }, ["p", "q"], 17],
+      "expected": "false"
+    },
+    {
+      "id": "public-leaf-empty",
+      "args": [{ "p": { "q": "" } }, "p.q", 17],
+      "expected": "\"\""
+    }
+  ]
+}

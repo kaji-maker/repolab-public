@@ -1,0 +1,33 @@
+[
+  {
+    "name": "minimist",
+    "path": ".repolab/fresh-pilot-v3/minimist/qualify.json",
+    "sha256": "1a7741971d2079b62c768d16cb72d6cc1a32eb2bf4973d85a0f7d98a98ff4829",
+    "freeze": "ceffa37d67203091c4387f481a9a70459f640327e77ff7256ebad1cfd8d79644",
+    "originalImage": "6bf4f605-c710-4b08-92d3-b11910594306",
+    "nativeSignature": {
+      "runner": "tap",
+      "tests": [
+        153
+      ],
+      "passed": [
+        153
+      ],
+      "failed": []
+    }
+  },
+  {
+    "name": "camelcase",
+    "path": ".repolab/fresh-pilot-v3/camelcase/qualify.json",
+    "sha256": "80558489bc90c10968432897f71657fcf4245a39a8295b6a7bee7692d734dfb8",
+    "freeze": "ceffa37d67203091c4387f481a9a70459f640327e77ff7256ebad1cfd8d79644",
+    "originalImage": "9ef3595f-2bb0-4b1a-b354-af7364123686",
+    "nativeSignature": {
+      "runner": "ava",
+      "passed": [
+        20
+      ],
+      "skipped": []
+    }
+  }
+]

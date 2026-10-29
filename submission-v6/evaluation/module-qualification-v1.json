@@ -1,0 +1,158 @@
+{
+  "digest": "c91ab1f49096ce6fa753fde0b3b60a932616e952ab7a0d7e323294313fbc645c",
+  "format": "repolab-module-load-qualification/v1",
+  "task": "regexparam",
+  "inference": "none",
+  "maxModelCalls": 0,
+  "operations": [
+    "qual-syntax",
+    "qual-load-original",
+    "qual-load-c1",
+    "qual-load-c2"
+  ],
+  "loadRuntime": "v24.18.0",
+  "bindings": {
+    "v2QualificationResultSha256": "67c86d30ee0dd39de50de54375f4512e9ebcf9cfa9534260a8d7ad28a618d811",
+    "v3RepairResultSha256": "91fad23a33ef08bb232426ebdfc5828af78b929c38d914782b9bda70a9da283b",
+    "originalImage": "127db35f-afb9-498a-a36e-bf1ed939470e",
+    "candidates": [
+      {
+        "attempt": 1,
+        "image": "af025f03-f2a6-4987-968c-127143111994",
+        "candidateFileSha256": "f1021d683a721d9aa88ff09b0a67a04547fb3b4a57e66351ce88582c9fccec48",
+        "sourceHash": "e3bccbbfa1b99bd00cccf74ad9a4b542e5e84a8e4d47c8cfdeb2148ea3aa599f"
+      },
+      {
+        "attempt": 2,
+        "image": "3a559e9b-0aab-49dc-b2b7-43a79be2cee4",
+        "candidateFileSha256": "c254d784eb2dfdbd9cc318acef7216a0df2553806cb21025ebaf534bc1f50039",
+        "sourceHash": "fd89716b6eac8ee982c817d830a84b9b045ca60db30d6154312d00f5127a5939"
+      }
+    ]
+  },
+  "expectedShape": {
+    "type": "object",
+    "keys": [
+      "inject",
+      "parse"
+    ]
+  },
+  "syntaxControls": [
+    {
+      "id": "js-original",
+      "file": "src/index.js",
+      "base": "original",
+      "tail": "",
+      "expected": "accepted"
+    },
+    {
+      "id": "js-v1-control",
+      "file": "src/index.js",
+      "base": "original",
+      "tail": "\nconst broken = true ? \"incomplete\";\n",
+      "expected": "accepted"
+    },
+    {
+      "id": "js-export-invalid",
+      "file": "src/index.js",
+      "base": "original",
+      "tail": "\nexport const x = ;\n",
+      "expected": "accepted"
+    },
+    {
+      "id": "js-candidate-1",
+      "file": "src/index.js",
+      "base": "candidate-1",
+      "tail": "",
+      "expected": "accepted"
+    },
+    {
+      "id": "js-candidate-2",
+      "file": "src/index.js",
+      "base": "candidate-2",
+      "tail": "",
+      "expected": "accepted"
+    },
+    {
+      "id": "cjs-valid",
+      "file": "src/index.js",
+      "base": "empty",
+      "tail": "\"use strict\";\nmodule.exports = 1;\n",
+      "expected": "accepted"
+    },
+    {
+      "id": "cjs-v1-control",
+      "file": "src/index.js",
+      "base": "empty",
+      "tail": "\"use strict\";\nconst broken = true ? \"incomplete\";\n",
+      "expected": "rejected:SyntaxError"
+    },
+    {
+      "id": "mjs-original",
+      "file": "src/index.mjs",
+      "base": "original",
+      "tail": "",
+      "expected": "accepted"
+    },
+    {
+      "id": "mjs-v1-control",
+      "file": "src/index.mjs",
+      "base": "original",
+      "tail": "\nconst broken = true ? \"incomplete\";\n",
+      "expected": "rejected:SyntaxError"
+    },
+    {
+      "id": "mjs-candidate-1",
+      "file": "src/index.mjs",
+      "base": "candidate-1",
+      "tail": "",
+      "expected": "rejected:Invalid regular expression"
+    },
+    {
+      "id": "mjs-candidate-2",
+      "file": "src/index.mjs",
+      "base": "candidate-2",
+      "tail": "",
+      "expected": "rejected:Invalid regular expression"
+    }
+  ],
+  "scope": "Zero-inference qualification of the Sandbox syntax checker and module-load gate using the qualified regexparam original image and the two rejected V3 candidate images. Establishes gate behavior only; it is not a repair attempt and does not open independent cases.",
+  "assets": [
+    {
+      "path": "packages/repositories/module-qualification-v1.ts",
+      "sha256": "3a9403cb1607ead3f14134046a40d862162d0b12830468b994b518435686de2c"
+    },
+    {
+      "path": "packages/repositories/module-admission-v1.ts",
+      "sha256": "fac91c41d93df46483073c4b27bd6fa3af0e88775e776592b0b3df4fc866e4a6"
+    },
+    {
+      "path": "repositories/module-admission-v1/qualify.cjs",
+      "sha256": "173f72fad325e7c7af19ef4f482a2b3eeb5164196c5c6ebbc9ca0a9162b9bf86"
+    },
+    {
+      "path": "repositories/github-anchor-v2/driver.cjs",
+      "sha256": "e90f9567e5c31cfb2bd2a5d8cdfa2d7419c3327159073523b54463a7112c6d35"
+    },
+    {
+      "path": "repositories/cross-repo-v1/child.cjs",
+      "sha256": "d844ca28a33a6aa30443e0f9c5ab10312c5c7bb1ffb6d01463a55121e4de5706"
+    },
+    {
+      "path": "apps/repositories/module-qualification-v1.ts",
+      "sha256": "67839cc187da7de2f3a85e367d62bd9018d9e295674774c5ac840cd5f2ff4e71"
+    },
+    {
+      "path": "tests/module-qualification-v1.test.ts",
+      "sha256": "117f580ce15da4c1af7ee84d8a6b337ac92acd625f88bb7357b28023c838f846"
+    },
+    {
+      "path": "tests/module-admission-v1.test.ts",
+      "sha256": "397e0d78b6b626f9ecb200078b4280f99ff284432db7d165cac58deb97056c20"
+    },
+    {
+      "path": "evaluation/github-anchor-v3.json",
+      "sha256": "65187d87eed5ea5c8ee32f2577dc3e4617a631159159583f05597e5ee7ee7267"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "format": "repolab-public-api-development/v3",
+  "parentPreparationFreeze": "4b3351455f1d55d7b272a0d4ee5ea666a1d3812e1c8e71107bde44ffdefc8631",
+  "tasks": [
+    "minimistjs__minimist-47",
+    "sindresorhus__camelcase-117"
+  ],
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "requestPolicy": "nemotron-full-thinking-v1",
+  "ratesUsdPerMillion": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "sourceRepresentation": "pinned-original exact text blocks with verified match counts v2",
+  "runtimePolicy": "Node 24 from configured Sandbox image; camelcase CI declares Node 24; original commands retained",
+  "apiCoverage": {
+    "minimist": 10,
+    "camelcase": 24,
+    "fastifyDeepmerge": "static contract block"
+  },
+  "nativeNetworking": "minimist native command includes online aud --production; native-only exception; all public/independent observations offline",
+  "maxCandidatesPerTask": 2,
+  "maxOperationsPerTask": 20,
+  "modelRequestBytes": 32000,
+  "monetaryCap": null,
+  "originalPublicRepeats": 2,
+  "selectedPublicRepeats": 2,
+  "selectedNativeRepeats": 2,
+  "independentRepeats": 2,
+  "operationResubmission": false,
+  "taskReplacementAfterOutcomes": false,
+  "scope": "two exposed development tasks after native cache setup failures; V2 selected-three zero-score result retained; no new-task generalization claim",
+  "assets": [
+    {
+      "path": "packages/repositories/fresh-pilot-protocol-v3.ts",
+      "sha256": "ef7819546b888e0de43c892ec41a7d669adf03c422a1e9eacb8c3f2797d572d8"
+    },
+    {
+      "path": "packages/repositories/fresh-pilot-v3.ts",
+      "sha256": "d3284f16fbe58b166309904b1139b661bd43ad1d6d8fc46ecfc8555652731ce1"
+    },
+    {
+      "path": "packages/repositories/public-api-inventory-v1.ts",
+      "sha256": "81402fe5204dfa0eb181a1c3469f0a3cdd4b74906b3a39967e72fcbd74e67054"
+    },
+    {
+      "path": "packages/repositories/fresh-context-v2.ts",
+      "sha256": "1791b86ba7d8adaf990f683bf128ae80f35bb4d8c3fa68d1e540eb60836d7c34"
+    },
+    {
+      "path": "packages/repositories/source-edits-v2.ts",
+      "sha256": "4ad1b86cb415a714a7217b91cbabfb283e9c5476eaffe746c2ed08a8846e5d69"
+    },
+    {
+      "path": "packages/repositories/cross-runtime-v2.ts",
+      "sha256": "523b5769b4689c4e8a1c9b932aad06a9dd5e2525e6052690c642082b2a09d690"
+    },
+    {
+      "path": "packages/execution/cross-repo-sandbox-v1.ts",
+      "sha256": "d3fac4719169a3f55e71578faa26711ab963c8b94a3a0471e6688a156c1942ec"
+    },
+    {
+      "path": "packages/execution/fresh-native-signature-v1.ts",
+      "sha256": "f2c6fec989a08961d0dc5245fc2300ad581831423387206eb07d6bcf88b29349"
+    },
+    {
+      "path": "packages/execution/fresh-request-v1.ts",
+      "sha256": "dedb76c5bedd68e68fef2516545765557b0372628022b6018b8e522f84dd4ff1"
+    },
+    {
+      "path": "packages/evaluation/fresh-pilot-cases-v1.ts",
+      "sha256": "b8c16e501d092480ce78340b266a3eda9eb709e83c4dffb9f0fdb0cceae86861"
+    },
+    {
+      "path": "repositories/fresh-pilot-v3/driver.cjs",
+      "sha256": "1e9864d8bdca392e7d2a7c4e523e4d3b8f1077382119fa8a1c338b5224edb6b2"
+    },
+    {
+      "path": "repositories/cross-repo-v1/child.cjs",
+      "sha256": "d844ca28a33a6aa30443e0f9c5ab10312c5c7bb1ffb6d01463a55121e4de5706"
+    },
+    {
+      "path": "apps/repositories/fresh-pilot-v3.ts",
+      "sha256": "3347eb8176e1e5ebb84c70c4a195ede3a89d59a14bd438bf116d239eddd29c82"
+    },
+    {
+      "path": "tests/fresh-pilot-v3.test.ts",
+      "sha256": "4838be480898d2650aed8cb3b23cfa5d67f86dc639922f960277b474d9c495cf"
+    },
+    {
+      "path": "evaluation/FRESH_PILOT_V3.md",
+      "sha256": "ef613b7e31bd2629e9b00c656c01f2813e535863c1afa8e5f969e14986257b0a"
+    },
+    {
+      "path": "evaluation/fresh-pilot-selection-v1.json",
+      "sha256": "8bc6026d44cf83b0865f65b110f2bcf61547f01f8e3cdaf984f2fa177a3b4f74"
+    },
+    {
+      "path": "evaluation/fresh-pilot-v3-baselines.json",
+      "sha256": "454e8cec97ba2d5a679b9603fb5e7e19dc9326f942afe9b61123692d067a6078"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/minimist/manifest.json",
+      "sha256": "b13bb5e91ddbeab97a1d73995c9ff7cf7a57823b160674cc93ce05d5e1f222cc"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/minimist/original.tar.gz",
+      "sha256": "2c7f81307eb485e34dacd5f3561d10ac112db1967e605df7c81d31cc6791d74e"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/minimist/LICENSE",
+      "sha256": "435a6722c786b0a56fbe7387028f1d9d3f3a2d0fb615bb8fee118727c3f59b7b"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/minimist/api-inventory.json",
+      "sha256": "aeb89d99d7738f934424ea1c4b9d8e708a8ee89b41d8d2e366921b7a14dbc133"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/minimist/public-cases.json",
+      "sha256": "ae8414f274d243afaaa77c5295ac5830e5e5f0c892f15c100ce95533df06c873"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/minimist/independent-cases.json",
+      "sha256": "96f8ca6411620f56fb1f16b71dfd17a9487b6f593d2c63449da0c00b2a01729e"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/camelcase/manifest.json",
+      "sha256": "122a3f6fb6cbfb1144909eaa93ce370a9a74cada9c5bbc75291ae1e8553e6f41"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/camelcase/original.tar.gz",
+      "sha256": "af66ff36b54c3604ffb1156bab63e9eb2cdf56ba6b128414cc7b292ac57d5c0f"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/camelcase/LICENSE",
+      "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/camelcase/api-inventory.json",
+      "sha256": "d5bc2aed66844d5705ba961f1fc4a4c280a169ffc37d63eecadb158c5528dc3f"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/camelcase/public-cases.json",
+      "sha256": "27de198fe18d5c1ed2487c6107c518cf0ca1522f4914a0d8a5f546a5cffbee1d"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/camelcase/independent-cases.json",
+      "sha256": "66d6a403b8a9c987d8b49423d91b1237126bb774b0c2108a2771eb65112fd540"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/fastify-deepmerge/manifest.json",
+      "sha256": "5f04858e152ba3c7c7b6a31b6e4916ca7d6e45471ec287086d96b6fa789c7e1c"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/fastify-deepmerge/original.tar.gz",
+      "sha256": "359c176b0243abfdfd48e30e24fa2c65935a03a6de8693a6803f9238abd525e4"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/fastify-deepmerge/LICENSE",
+      "sha256": "7c1614ce9db5e2c09d19821975329f2fe5d6867ed18ab6ba81fd45b452d08102"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/fastify-deepmerge/api-inventory.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/fastify-deepmerge/public-cases.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "repositories/fresh-pilot-v1/fastify-deepmerge/independent-cases.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    }
+  ],
+  "digest": "ceffa37d67203091c4387f481a9a70459f640327e77ff7256ebad1cfd8d79644"
+}

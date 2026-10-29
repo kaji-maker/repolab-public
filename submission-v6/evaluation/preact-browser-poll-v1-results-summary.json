@@ -1,0 +1,40 @@
+{
+  "status": "PASS_OFFLINE_POLL_FIX",
+  "workbenchFreeze": "520dfb352f7e42db88d0f25e6e343cb8655dcf0c690af4926a22712ab7640a7e",
+  "parentWorkbenchFreeze": "6c6e8f0a1561dfe519ce495ba819e3254b24e9f45c0e6c1bda24963dda25280d",
+  "parentEngineFreeze": "2096c16f472d93957f5e4efc78b55e880d7261ae537d072dcef28748b20bff7a",
+  "controllerGroupsPassed": 4,
+  "sourceSubstitutionsRejected": 9,
+  "oldBrowserStopReproduced": true,
+  "fixedBrowserFixtureAutomaticTerminal": true,
+  "syntheticStartsPerCase": 1,
+  "browserWidths": [
+    1440,
+    390,
+    320
+  ],
+  "actualSavedResultReadback": "PASS; historical three-call/26-operation verified result only",
+  "typecheck": "PASS",
+  "productionBuild": "PASS",
+  "buildManifest": {
+    "assets/qualifiedRepair-BSiRSiwQ.js": "3cf7d7c791b34b35cc95ba640c8617db1dec5e7c0a903d098490147a183f701e",
+    "assets/qualifiedRepair-CJYqIfYI.css": "1164c88daa524a17daf9c7dc744ec24132e4a89bc0946c09db92147fe909b2d7",
+    "mark.svg": "291e538b6cc9aec68eeab80ca8d66d16d1d73b1545ef79eb495fd3d23dd8bf96",
+    "native-repair-v9.html": "3e89cd945c3ae1e479d6de7955f5f874f8c89879ad88ac27b9b535e22098fa94"
+  },
+  "priorPrivateJsonFilesMatched": 3864,
+  "historicalFrozenAssetsMatched": 628,
+  "historicalActualResultChanged": false,
+  "originalBrowserObservationRetrospectivelyQualified": false,
+  "actualFreshFixedBrowserFlowQualified": false,
+  "newLiveQualificationSlots": 0,
+  "defaultServerAdmission": false,
+  "cloudLiveDispatchAllowed": false,
+  "publicJudgeAccessQualified": false,
+  "actualModelCalls": 0,
+  "actualSandboxOperations": 0,
+  "providerCalls": 0,
+  "guestSourceExecutions": 0,
+  "inference": "None during correction; actual saved provenance and separately labeled controller fixtures inspected",
+  "execution": "Network-blocked empty-environment controller/source audits and same-host loopback old/fixed browser counterexamples/readback only; no new actual workflow or guest execution"
+}

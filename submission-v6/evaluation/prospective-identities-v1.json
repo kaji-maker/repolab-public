@@ -1,0 +1,205 @@
+{
+  "format": "repolab-prospective-identities/v1",
+  "selectionFreeze": "dd03bd39963f8b86f02ed91be63c6e30f8c24549bc3a7924156c24565ec74786",
+  "pool": [
+    {
+      "instance_id": "preactjs__preact-4316",
+      "repo": "preactjs/preact",
+      "base_commit": "b820d8b73eade8bc5b3fbf7e5fe0dd5150de80e2",
+      "version": "4316",
+      "rank": "05f8403d14d2945a987326b6e79cc2dcc28cb0e843dfaa769a00badf6453da81"
+    },
+    {
+      "instance_id": "preactjs__preact-4152",
+      "repo": "preactjs/preact",
+      "base_commit": "9c5a82efcc3dcbd0035c694817a3022d81264687",
+      "version": "4152",
+      "rank": "1f688e350d2e39de114743fb70441a68bb7a59fb35ac046864b96d62254b57c1"
+    },
+    {
+      "instance_id": "preactjs__preact-3763",
+      "repo": "preactjs/preact",
+      "base_commit": "e968a5a4000dfa9bec7e8d7b26543b23def6d29d",
+      "version": "3763",
+      "rank": "2006489d293969e70ae70def3c5e305ac069d2f5b5d7f36842ac7a370ffc554f"
+    },
+    {
+      "instance_id": "preactjs__preact-3567",
+      "repo": "preactjs/preact",
+      "base_commit": "c77e6284c199761d59467d8cc596a2f03540e72c",
+      "version": "3567",
+      "rank": "3c4095e09227ede5205fbf8b6abe3c9b958f39a12ad9aa3a93fd5ff2db0fb9a4"
+    },
+    {
+      "instance_id": "preactjs__preact-3689",
+      "repo": "preactjs/preact",
+      "base_commit": "9457b221fdacd1052ffdb385918e1bab4b10e833",
+      "version": "3689",
+      "rank": "6d070735307b74f4ce87bbb75f56ab9d18dcf69d08422c8e6b78e0e2f03ebbc8"
+    },
+    {
+      "instance_id": "preactjs__preact-4245",
+      "repo": "preactjs/preact",
+      "base_commit": "13b0afb7a28adb3149d7125fb2b9c16edbcf8e94",
+      "version": "4245",
+      "rank": "8aabf19ff4bcb03593e38fcf68ae6168ab6c7851269680b58d67d04dd5aa991f"
+    },
+    {
+      "instance_id": "preactjs__preact-3454",
+      "repo": "preactjs/preact",
+      "base_commit": "00c8d1ff1498084c15408cf0014d4c7facdb5dd7",
+      "version": "3454",
+      "rank": "91d379d45278ee4638321833a2248f67da58070bf26764126be61dc0290cfa2a"
+    },
+    {
+      "instance_id": "preactjs__preact-3010",
+      "repo": "preactjs/preact",
+      "base_commit": "c12331064f4ea967641cd5e419204422af050fbb",
+      "version": "3010",
+      "rank": "96ace38a4fbab8d88df0c9b84a6e3b7a6cdbb0065e40f734efa0dd3941218b28"
+    },
+    {
+      "instance_id": "preactjs__preact-2927",
+      "repo": "preactjs/preact",
+      "base_commit": "ee76c1eb169897412501d86fbe40122b34cd2e8d",
+      "version": "2927",
+      "rank": "a35197b21eed7e6795d319f38dd6d22607543169324265a2975ab3f92e7e8f5d"
+    },
+    {
+      "instance_id": "preactjs__preact-3562",
+      "repo": "preactjs/preact",
+      "base_commit": "0b9a9275b47e446106e6e97c78011896f7db2a61",
+      "version": "3562",
+      "rank": "b69ccee49ec571622ac6769e0033d79fd92a93dab2fae6eda73b2abf1f03a85f"
+    },
+    {
+      "instance_id": "preactjs__preact-2896",
+      "repo": "preactjs/preact",
+      "base_commit": "a9f7e676dc03b5008b8483e0937fc27c1af8287f",
+      "version": "2896",
+      "rank": "c55bef41400f7323a7a69891371c3959e427bce4e6f8f1542c76c62813737864"
+    },
+    {
+      "instance_id": "preactjs__preact-3345",
+      "repo": "preactjs/preact",
+      "base_commit": "e0e17046753fe09881dfb8d5a69b44933d1fa1ea",
+      "version": "3345",
+      "rank": "c7862269f66c9dd594c29f87c1ada413e4b9c5b65dd90d0ae062d8237b41fecf"
+    },
+    {
+      "instance_id": "preactjs__preact-4182",
+      "repo": "preactjs/preact",
+      "base_commit": "66cb6a78776b263a2fe4d1283426e699961095d2",
+      "version": "4182",
+      "rank": "cc6005340c96028ea66deeaaf54bcb13e06e66c4578108a07292c43b6989dd67"
+    },
+    {
+      "instance_id": "preactjs__preact-2757",
+      "repo": "preactjs/preact",
+      "base_commit": "b17a932342bfdeeaf1dc0fbe4f436c83e258d6c8",
+      "version": "2757",
+      "rank": "da73725d16aebc6de21be072791ce6f613aaca4a5598683b9b4f550a7c2adcf3"
+    },
+    {
+      "instance_id": "preactjs__preact-3062",
+      "repo": "preactjs/preact",
+      "base_commit": "7556b61bd0d9f72bbd906c3abaebf2b1c9aeacbf",
+      "version": "3062",
+      "rank": "e7412900f6995c1823b2c7d58a980a2b26507fdb19133d9b9374a49f7c8083ba"
+    },
+    {
+      "instance_id": "preactjs__preact-3739",
+      "repo": "preactjs/preact",
+      "base_commit": "2cafedee2ddf7c73795e887ef1970df4be2bca90",
+      "version": "3739",
+      "rank": "fc6ae6424f8bbbbdd6c085600ec2479e815ebad0c9ab7badd6728c311107a1d0"
+    },
+    {
+      "instance_id": "vuejs__core-11739",
+      "repo": "vuejs/core",
+      "base_commit": "cb843e0be31f9e563ccfc30eca0c06f2a224b505",
+      "version": "11739",
+      "rank": "2c6558d88d9d1442b499fc22c604f02f034abe746a9a5a8b82a39e029772feb4"
+    },
+    {
+      "instance_id": "vuejs__core-11589",
+      "repo": "vuejs/core",
+      "base_commit": "3653bc0f45d6fedf84e29b64ca52584359c383c0",
+      "version": "11589",
+      "rank": "81ac0d0ba020f6756a6fa9e5ee913d8ae50a6190cd0c5da703f77158e786252c"
+    },
+    {
+      "instance_id": "vuejs__core-11870",
+      "repo": "vuejs/core",
+      "base_commit": "67d6596d40b1807b9cd8eb0d9282932ea77be3c0",
+      "version": "11870",
+      "rank": "8795ead28f0c8722c16edaf8ae04768d42d4ccc6cc00dd7333f87d00f8d9a716"
+    },
+    {
+      "instance_id": "vuejs__core-11915",
+      "repo": "vuejs/core",
+      "base_commit": "d0b513eb463f580e29378e43d112ff6859aa366e",
+      "version": "11915",
+      "rank": "9c18d79db370e8c0c5c8ca58e0ab85cf1f25248502cd134af8c44d98c40310f0"
+    }
+  ],
+  "selected": [
+    {
+      "instance_id": "preactjs__preact-4316",
+      "repo": "preactjs/preact",
+      "base_commit": "b820d8b73eade8bc5b3fbf7e5fe0dd5150de80e2",
+      "version": "4316",
+      "rank": "05f8403d14d2945a987326b6e79cc2dcc28cb0e843dfaa769a00badf6453da81"
+    },
+    {
+      "instance_id": "vuejs__core-11739",
+      "repo": "vuejs/core",
+      "base_commit": "cb843e0be31f9e563ccfc30eca0c06f2a224b505",
+      "version": "11739",
+      "rank": "2c6558d88d9d1442b499fc22c604f02f034abe746a9a5a8b82a39e029772feb4"
+    },
+    {
+      "instance_id": "preactjs__preact-4152",
+      "repo": "preactjs/preact",
+      "base_commit": "9c5a82efcc3dcbd0035c694817a3022d81264687",
+      "version": "4152",
+      "rank": "1f688e350d2e39de114743fb70441a68bb7a59fb35ac046864b96d62254b57c1"
+    },
+    {
+      "instance_id": "vuejs__core-11589",
+      "repo": "vuejs/core",
+      "base_commit": "3653bc0f45d6fedf84e29b64ca52584359c383c0",
+      "version": "11589",
+      "rank": "81ac0d0ba020f6756a6fa9e5ee913d8ae50a6190cd0c5da703f77158e786252c"
+    },
+    {
+      "instance_id": "preactjs__preact-3763",
+      "repo": "preactjs/preact",
+      "base_commit": "e968a5a4000dfa9bec7e8d7b26543b23def6d29d",
+      "version": "3763",
+      "rank": "2006489d293969e70ae70def3c5e305ac069d2f5b5d7f36842ac7a370ffc554f"
+    },
+    {
+      "instance_id": "vuejs__core-11870",
+      "repo": "vuejs/core",
+      "base_commit": "67d6596d40b1807b9cd8eb0d9282932ea77be3c0",
+      "version": "11870",
+      "rank": "8795ead28f0c8722c16edaf8ae04768d42d4ccc6cc00dd7333f87d00f8d9a716"
+    },
+    {
+      "instance_id": "preactjs__preact-3567",
+      "repo": "preactjs/preact",
+      "base_commit": "c77e6284c199761d59467d8cc596a2f03540e72c",
+      "version": "3567",
+      "rank": "3c4095e09227ede5205fbf8b6abe3c9b958f39a12ad9aa3a93fd5ff2db0fb9a4"
+    },
+    {
+      "instance_id": "vuejs__core-11915",
+      "repo": "vuejs/core",
+      "base_commit": "d0b513eb463f580e29378e43d112ff6859aa366e",
+      "version": "11915",
+      "rank": "9c18d79db370e8c0c5c8ca58e0ab85cf1f25248502cd134af8c44d98c40310f0"
+    }
+  ],
+  "digest": "541a44a2175f3f9159bdfbec997af5ce559ccef2f05bbb271c901d9ba2258fc3"
+}

@@ -1,0 +1,49 @@
+{
+  "format": "repolab-native-preact-repair-protocol/v4",
+  "taskId": "preactjs__preact-4436",
+  "profileFreeze": "2bfd0055be82c8f4a1dd77f232d08f0c5fb227d72c41b972f5903fdec6a18384",
+  "productFreeze": "e08a4ca2dbbc6f8b6452c0e832c46e5ccbab2945a5295149d1e73954698fcc70",
+  "maxCandidates": 3,
+  "maxCalls": 3,
+  "maxOperations": 34,
+  "monetaryCap": null,
+  "parentRepairFreeze": "e50e387594890fcbcff387c1e1e95d90ea857b320105c8c765ecbd226a384449",
+  "recognizedTerminal": [
+    "SUCCESS",
+    "FAILED",
+    "CANCELLED"
+  ],
+  "recovery": "GET only; no verification or workflow resume",
+  "newLiveQualificationSlots": 0,
+  "independentFeedback": false,
+  "terminalObservation": "Record canonical completion time for exact owned terminal observations even when guest validation rejects",
+  "contextHash": "ad78f62b38d3a53f7dd8348dc94d5e92d52a8ab6582246a5dfd57a0efc6662ca",
+  "systemHash": "5c2839f7a56fd28e0f8557878d6fc39729721a0eea8b7dd5c38c1597aa6c3b19",
+  "assets": [
+    {
+      "path": "packages/repositories/preact-repair-protocol-v4.ts",
+      "sha256": "5a3952031c8efdcd5d3babf7fad1f7d3c4d30c39585fd6eafd3335c24beb1482"
+    },
+    {
+      "path": "packages/execution/preact-terminal-time-v1.ts",
+      "sha256": "97f6546ab6c82d687e589f179451a7bab49a1fa2f6b3f86a7d36ff54501a6703"
+    },
+    {
+      "path": "packages/execution/guarded-preact-sandbox-v2.ts",
+      "sha256": "52bdb0f0179698ff8f271c547b9db9091f2f6002a98f90d916e32aad177f60c0"
+    },
+    {
+      "path": "packages/repositories/preact-repair-v4.ts",
+      "sha256": "25318ec8c3f2b8dcf205f77f2c74fdcbc249ad9e087a6b31401e922defa41c30"
+    },
+    {
+      "path": "tests/preact-terminal-time-v1.test.ts",
+      "sha256": "b434b1f0debe3bdfdeea094f5dd566780516602ff33dba8302ac7b615d47c2e8"
+    },
+    {
+      "path": "evaluation/PREACT_TERMINAL_TIME_V1.md",
+      "sha256": "bd8d12de24037fcdc3934e6f976ffcee54d1374b126d4a2aa6169d53e15c0fd3"
+    }
+  ],
+  "digest": "2096c16f472d93957f5e4efc78b55e880d7261ae537d072dcef28748b20bff7a"
+}

@@ -1,0 +1,58 @@
+{
+  "status": "QUALIFIED_OFFLINE",
+  "freeze": "b2a0138834bc885434017b195f19cbb87e1cc9c1c5a9697dcb1f885e23be1b6d",
+  "at": "2026-10-21T06:15:27.024Z",
+  "focusedSyntheticGroups": 28,
+  "typecheck": true,
+  "matchingKeylessAudits": 2,
+  "priorJsonFilesPreserved": 3422,
+  "historicalSourceFilesPreserved": 10,
+  "credentialAndProjectMarkerExclusionPassed": true,
+  "scannedArtifacts": 22,
+  "actualExecutionStateUnchanged": true,
+  "executionAdmission": false,
+  "liveTransportQualified": false,
+  "productIntegration": false,
+  "providerCalls": 0,
+  "modelCalls": 0,
+  "sandboxOperations": 0,
+  "guestCodeExecuted": false,
+  "unsuccessfulQualificationAttempts": 0,
+  "inference": "none",
+  "execution": "Synthetic HTTP/controller fixtures and keyless saved-data audits; parent-only secret exclusion check; no actual provider or guest execution",
+  "format": "repolab-sandbox-status-retry-results/v1",
+  "transportClient": "profiled-native-v3",
+  "transportFreeze": "34d1982a844531ca98401d542676ddb3ab554b33ecfb1b3d0030f157bd47869f",
+  "retryPolicy": {
+    "method": "GET",
+    "resource": "exact-operation-uuid",
+    "maxExtraReadsPerOperation": 2,
+    "maxAttemptsPerRead": 3,
+    "retryDelaysMs": [
+      1000,
+      2000
+    ],
+    "httpStatuses": [
+      500,
+      502,
+      503,
+      504
+    ]
+  },
+  "sharedExecutionLocksPresent": false,
+  "historicalPreatWorkflowResumable": false,
+  "cohort": {
+    "selected": 8,
+    "qualifiedOriginals": 4,
+    "stoppedUnqualified": 1,
+    "otherPreparedPending": 3,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0,
+    "confirmedOriginalExecutionOperations": 52,
+    "providerRejectedPosts": 1,
+    "unknownSubmissions": 0,
+    "accuracy": null
+  },
+  "nextTask": "vuejs__core-11870",
+  "nextAction": "Freeze a separate exact-task original execution profile for Vue 11870 using profiled-native-v3 and both immutable transport/retry freeze identities. Preserve Preact V1/V2/V3 and its original ceiling."
+}

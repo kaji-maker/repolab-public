@@ -1,0 +1,247 @@
+{
+  "format": "repolab-cross-repository-intake/v1",
+  "scope": "purposive three-small-CommonJS-library sample; public bugs new to this project, not randomly selected or training-unseen",
+  "tasks": [
+    {
+      "id": "epoberezkin__fast-deep-equal-141",
+      "repo": "epoberezkin/fast-deep-equal",
+      "issue": {
+        "number": 141,
+        "title": "toString comparison breaks if object has toString that isn't a function",
+        "body": "If there is data passed into `equals` that has `toString` as a field that's not a function, `equals` breaks because it tries to call it as a function.\r\n\r\nExample data:\r\n`{ field: \"status\", fieldtype: \"jira\", fieldId: \"status\", from: \"10000\", fromString: \"To Do\", to: \"3\", toString: \"In Progress\" }`\r\n\r\nI know that it's not ideal to have a field named `toString`, but this is external data that I don't have any control over.",
+        "html_url": "https://github.com/epoberezkin/fast-deep-equal/issues/141",
+        "created_at": "2023-09-22T17:13:13Z",
+        "updated_at": "2026-10-07T22:26:04Z"
+      },
+      "commit": "a8e7172b6c411ec320d6045fd4afbd2abc1b4bde",
+      "package": {
+        "name": "fast-deep-equal",
+        "version": "3.1.3",
+        "description": "Fast deep equal",
+        "main": "index.js",
+        "scripts": {
+          "eslint": "eslint *.js benchmark/*.js spec/*.js",
+          "build": "node build",
+          "benchmark": "npm i && npm run build && cd ./benchmark && npm i && node ./",
+          "test-spec": "mocha spec/*.spec.js -R spec",
+          "test-cov": "nyc npm run test-spec",
+          "test-ts": "tsc --target ES5 --noImplicitAny index.d.ts",
+          "test": "npm run build && npm run eslint && npm run test-ts && npm run test-cov",
+          "prepublish": "npm run build"
+        },
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/epoberezkin/fast-deep-equal.git"
+        },
+        "keywords": [
+          "fast",
+          "equal",
+          "deep-equal"
+        ],
+        "author": "Evgeny Poberezkin",
+        "license": "MIT",
+        "bugs": {
+          "url": "https://github.com/epoberezkin/fast-deep-equal/issues"
+        },
+        "homepage": "https://github.com/epoberezkin/fast-deep-equal#readme",
+        "devDependencies": {
+          "coveralls": "^3.1.0",
+          "dot": "^1.1.2",
+          "eslint": "^7.2.0",
+          "mocha": "^7.2.0",
+          "nyc": "^15.1.0",
+          "pre-commit": "^1.2.2",
+          "react": "^16.12.0",
+          "react-test-renderer": "^16.12.0",
+          "sinon": "^9.0.2",
+          "typescript": "^3.9.5"
+        },
+        "nyc": {
+          "exclude": [
+            "**/spec/**",
+            "node_modules"
+          ],
+          "reporter": [
+            "lcov",
+            "text-summary"
+          ]
+        },
+        "files": [
+          "index.js",
+          "index.d.ts",
+          "react.js",
+          "react.d.ts",
+          "es6/"
+        ],
+        "types": "index.d.ts"
+      }
+    },
+    {
+      "id": "davidmarkclements__rfdc-55",
+      "repo": "davidmarkclements/rfdc",
+      "issue": {
+        "number": 55,
+        "title": "Cloning an array with some properties on it results in an extra empty item being appended to the array",
+        "body": "```js\nconst rfdc = require(\"rfdc/default\");\n\nconst original = [1];\noriginal.foo = \"bar\";\nconst cloned = rfdc(original);\n\nconsole.log(\"original:\", original);\nconsole.log(\"original.length:\", original.length);\nconsole.log(\"cloned:\", cloned);\nconsole.log(\"cloned.length:\", cloned.length);\n```\n\nYou'd expect the output is the same for both of them, but it's not:\n\n```\n$ node index.js\noriginal: [ 1, foo: 'bar' ]\noriginal.length: 1\ncloned: [ 1, <1 empty item>, foo: 'bar' ]\ncloned.length: 2\n```\n\nThis caused a nasty bug for me when I was accidentally creating weird arrays like this.",
+        "html_url": "https://github.com/davidmarkclements/rfdc/issues/55",
+        "created_at": "2025-10-13T01:55:15Z",
+        "updated_at": "2025-10-13T01:55:15Z"
+      },
+      "commit": "4336f6a3ddeb8473c040a7bee516604a8fabf16f",
+      "package": {
+        "name": "rfdc",
+        "version": "1.4.1",
+        "description": "Really Fast Deep Clone",
+        "main": "index.js",
+        "type": "commonjs",
+        "exports": {
+          ".": "./index.js",
+          "./default": "./default.js"
+        },
+        "scripts": {
+          "test": "tap -R min test && npm run lint",
+          "bench": "node benchmark",
+          "lint": "standard --fix",
+          "cov": "tap --100 test",
+          "cov-ui": "tap --coverage-report=html test",
+          "ci": "standard && tap --100 --coverage-report=text-lcov test"
+        },
+        "keywords": [
+          "object",
+          "obj",
+          "properties",
+          "clone",
+          "copy",
+          "deep",
+          "recursive",
+          "key",
+          "keys",
+          "values",
+          "prop",
+          "deep-clone",
+          "deepclone",
+          "deep-copy",
+          "deepcopy",
+          "fast",
+          "performance",
+          "performant",
+          "fastclone",
+          "fastcopy",
+          "fast-clone",
+          "fast-deep-clone",
+          "fast-copy",
+          "fast-deep-copy"
+        ],
+        "author": "David Mark Clements <david.clements@nearform.com>",
+        "license": "MIT",
+        "devDependencies": {
+          "clone-deep": "^4.0.1",
+          "deep-copy": "^1.4.2",
+          "fast-copy": "^1.2.1",
+          "fastbench": "^1.0.1",
+          "fastest-json-copy": "^1.0.1",
+          "lodash.clonedeep": "^4.5.0",
+          "nano-copy": "^0.1.0",
+          "plain-object-clone": "^1.1.0",
+          "ramda": "^0.27.1",
+          "standard": "^17.0.0",
+          "tap": "^12.0.1",
+          "tsd": "^0.7.4"
+        },
+        "directories": {
+          "test": "test"
+        },
+        "dependencies": {},
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/davidmarkclements/rfdc.git"
+        },
+        "bugs": {
+          "url": "https://github.com/davidmarkclements/rfdc/issues"
+        },
+        "homepage": "https://github.com/davidmarkclements/rfdc#readme"
+      }
+    },
+    {
+      "id": "epoberezkin__fast-json-stable-stringify-74",
+      "repo": "epoberezkin/fast-json-stable-stringify",
+      "issue": {
+        "number": 74,
+        "title": "String instances are transformed into objects",
+        "body": "Stumbled upon this one when attempting to use this library to normalize API outputs. \r\nI'm not sure if it's an expected behavior.\r\n\r\n```\r\nstringify({ a: new String('hello') })\r\n//  \u00a0 {\"a\":{\"0\":\"h\",\"1\":\"e\",\"2\":\"l\",\"3\":\"l\",\"4\":\"o\"}} \r\n```\r\n\r\nWhile using `JSON.stringify({ a: new String('hello') })` returns `{\"a\":\"hello\"}`.\r\n\r\nString **instances**, created using `new String()` shouldn't usually be returned in place of strings, but some poor function in some codebases returns string instances using new String. For these cases, it'd be nice if the output would produce symmetrical rendering of Strings than JSON.stringify() for user looking for a drop-in replacement. \r\n",
+        "html_url": "https://github.com/epoberezkin/fast-json-stable-stringify/issues/74",
+        "created_at": "2022-04-12T18:33:46Z",
+        "updated_at": "2022-04-12T18:33:46Z"
+      },
+      "commit": "49e230da2c84247b29ad4de02c9395793caefd15",
+      "package": {
+        "name": "fast-json-stable-stringify",
+        "version": "2.1.0",
+        "description": "deterministic `JSON.stringify()` - a faster version of substack's json-stable-strigify without jsonify",
+        "main": "index.js",
+        "types": "index.d.ts",
+        "dependencies": {},
+        "devDependencies": {
+          "benchmark": "^2.1.4",
+          "coveralls": "^3.0.0",
+          "eslint": "^6.7.0",
+          "fast-stable-stringify": "latest",
+          "faster-stable-stringify": "latest",
+          "json-stable-stringify": "latest",
+          "nyc": "^14.1.0",
+          "pre-commit": "^1.2.2",
+          "tape": "^4.11.0"
+        },
+        "scripts": {
+          "eslint": "eslint index.js test",
+          "test-spec": "tape test/*.js",
+          "test": "npm run eslint && nyc npm run test-spec"
+        },
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/epoberezkin/fast-json-stable-stringify.git"
+        },
+        "homepage": "https://github.com/epoberezkin/fast-json-stable-stringify",
+        "keywords": [
+          "json",
+          "stringify",
+          "deterministic",
+          "hash",
+          "stable"
+        ],
+        "author": {
+          "name": "James Halliday",
+          "email": "mail@substack.net",
+          "url": "http://substack.net"
+        },
+        "license": "MIT",
+        "nyc": {
+          "exclude": [
+            "test",
+            "node_modules"
+          ],
+          "reporter": [
+            "lcov",
+            "text-summary"
+          ]
+        },
+        "engines": {
+          "node": ">=8"
+        }
+      }
+    }
+  ],
+  "selectionBeforeOutcomes": true,
+  "selectionReasons": [
+    "clear behavioral issue body",
+    "new repository to ReproLab",
+    "Node/CommonJS scope for first generic runner"
+  ],
+  "attempts": 0,
+  "goldPatchesRead": false,
+  "controllerExposure": {
+    "issue141": "Web citation fetch displayed public comments about an existing fork; no patch/fork source opened. Model context retains original issue body only. This task is new to project execution, not a blinded controller evaluation.",
+    "issue55": "Issue page showed a linked PR identifier; no PR source or diff opened.",
+    "issue74": "Original issue body read; no reference fix used."
+  }
+}

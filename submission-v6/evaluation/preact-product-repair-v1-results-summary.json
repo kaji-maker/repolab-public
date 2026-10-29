@@ -1,0 +1,114 @@
+{
+  "format": "repolab-native-preact-product-results/v1",
+  "repairFreeze": "9d2adf0281bbea3763940b5f3d75e75fd2094fb92a479f369296adc495bd24c3",
+  "reviewRecoveryFreeze": "e6ca02a4b042a17ef7039739bf75c6503b8876f14459429033e8871dd1626af5",
+  "qualificationStatus": "PARTIAL_LIVE_BROWSER_QUALIFICATION_CONNECTION_RESET",
+  "run": {
+    "id": "faaccb37-87cf-458b-b2d7-aa0321f4d025",
+    "status": "ABSTAINED",
+    "accepted": false,
+    "verified": false,
+    "inferenceCalls": 3,
+    "sandboxOperations": 2,
+    "candidateSandboxOperations": 0,
+    "independentOpened": false,
+    "estimatedInferenceUsd": 0.0190296,
+    "usageComplete": true,
+    "provenance": {
+      "inference": "nebius",
+      "execution": "nebius-sandbox; reviewed original only",
+      "candidateExecution": "none (three admission rejections)"
+    },
+    "candidates": [
+      {
+        "attempt": 1,
+        "status": "ADMISSION_REJECTED",
+        "reason": "Nested node program[0].else[0].then[0]: result capture must appear at most once",
+        "inputTokens": 3614,
+        "outputTokens": 12825,
+        "estimatedInferenceUsd": 0.012626700000000001,
+        "reasoning": {
+          "present": true,
+          "bytes": 53067,
+          "sha256": "81997777efcaf78f8f382f38299d9dd736c157f0c959f14c71ea014d9fa934c8"
+        }
+      },
+      {
+        "attempt": 2,
+        "status": "ADMISSION_REJECTED",
+        "reason": "Plan quote is not an exact original report span",
+        "inputTokens": 4181,
+        "outputTokens": 3465,
+        "estimatedInferenceUsd": 0.0043728000000000005,
+        "reasoning": {
+          "present": true,
+          "bytes": 13572,
+          "sha256": "8910a95b01ee552f5b60e9971aedd604dd8e1bb8d5ec607f9dd1291b0bb0582a"
+        }
+      },
+      {
+        "attempt": 3,
+        "status": "ADMISSION_REJECTED",
+        "reason": "Plan quote is not an exact original report span",
+        "inputTokens": 4238,
+        "outputTokens": 843,
+        "estimatedInferenceUsd": 0.0020301,
+        "reasoning": {
+          "present": true,
+          "bytes": 1800,
+          "sha256": "7930ab9375dca4f3048c94fb37bde0b47beb7fa0d7b3dfb395f5e3847c77ec3b"
+        }
+      }
+    ]
+  },
+  "verification": {
+    "controllerFullSuite": {
+      "passed": 537,
+      "failed": 0,
+      "preparationFreeze": "4e478d801bf794468086274dee46785da98cfb052e37b7a0f173d3930f9e3f30",
+      "laterRepairChange": "UI polling backpressure only; controller/backend/test bytes unchanged"
+    },
+    "reviewTests": {
+      "passed": 3,
+      "failed": 0
+    },
+    "finalTypecheck": "PASS",
+    "finalBuild": "PASS",
+    "rawAudit": "PASS_ABSTENTION",
+    "priorArtifactsUnchanged": 1249,
+    "newRunFilesUnchangedOnRestart": 25,
+    "liveBrowser": "FAILED_CONNECTION_RESET; retained without another inference run",
+    "readonlyRecovery": "PASS",
+    "keylessRestart": "PASS",
+    "viewports": [
+      1440,
+      390,
+      320
+    ],
+    "recoveryInferenceCalls": 0,
+    "recoverySandboxOperations": 0
+  },
+  "accounting": {
+    "blocked": false,
+    "cumulativeEstimatedInferenceUsd": 0.1636845,
+    "accountBalance": "not measured"
+  },
+  "sample": {
+    "selectedFrameworkTasks": 3,
+    "qualifiedFrameworkTasks": 1,
+    "uniqueFrameworkTasksModelAttempted": 1,
+    "previouslyVerifiedFrameworkFeatures": 1,
+    "verifiedNativeApiUiRepairsThisPhase": 0,
+    "unsupported": [
+      "facebook__docusaurus-8927",
+      "vuejs__core-11899"
+    ]
+  },
+  "limitations": [
+    "One exposed Preact feature with developer-supplied scaffolding; no hidden-task accuracy claim.",
+    "No generated candidate passed admission; native candidate tests, selection and independent evaluation were not reached.",
+    "Original live browser qualification failed with a connection reset; subsequent checks recovered the same run with zero provider dispatch.",
+    "Source and inference boundaries remain frozen; a new prospective version is required to improve plan grounding.",
+    "Same controller/project and cached native image; separate-machine/project native preparation, human review and judging access remain open."
+  ]
+}

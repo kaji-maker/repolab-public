@@ -1,0 +1,67 @@
+{
+  "format": "repolab-sandbox-transport-offline-qualification/v1",
+  "status": "OFFLINE_PROTOCOL_FROZEN",
+  "maxModelCalls": 0,
+  "maxSandboxOperations": 0,
+  "executionAdmission": false,
+  "existingReceiptResolved": false,
+  "assets": [
+    {
+      "path": "packages/evaluation/sandbox-transport-v1.ts",
+      "sha256": "75a8a01058728b87a7fe0997c8c9df58be448d2997ed01b2377b186e5ecb4a1d"
+    },
+    {
+      "path": "packages/execution/sandbox-transport-v1.ts",
+      "sha256": "ecd77c848b222e7d6511d5dc504c29fd1951e98fa2658d0ae6afd703e2fa855f"
+    },
+    {
+      "path": "packages/execution/profiled-native-v2.ts",
+      "sha256": "620eeb291ade33517624605781ddbca75f20708c1dac2fa213380be61d87cbe3"
+    },
+    {
+      "path": "apps/evaluator/sandbox-transport-v1.ts",
+      "sha256": "2c927879002fc4a67a550820e407583c21ae29dc3a857676d2bf674c97df5403"
+    },
+    {
+      "path": "tests/sandbox-transport-v1.test.ts",
+      "sha256": "2db802f902b800509160587d243867c340bcfca0a8b5ca0ef1a237e761c90ce0"
+    },
+    {
+      "path": "evaluation/SANDBOX_TRANSPORT_V1.md",
+      "sha256": "d62d12ad57a182bde260887b4a7910f9cc6700c403dafa2d6347f9cfe85b6c59"
+    },
+    {
+      "path": ".repolab/sandbox-transport-v1-qualification/execution-blocker.json",
+      "sha256": "cf7698ffe50af25a247e411009c86a66edb90e7f38e0b661eb1269f1e3f537a5"
+    },
+    {
+      "path": ".repolab/sandbox-transport-v1-qualification/historical-code.json",
+      "sha256": "65dac641ad8c50b2dcffd1961cb7cb738e77f00c4f550ec46ae9d5f1717616ba"
+    },
+    {
+      "path": "packages/execution/profiled-native-v1.ts",
+      "sha256": "c67d664050b722285869e71313bdb6e31daf0b37f5ed79c6f74a992a97fdf268"
+    },
+    {
+      "path": "packages/execution/nebius.ts",
+      "sha256": "3feb92191ce8bd69ce69475054ce1aec96042c0925200859b06663e635a60692"
+    },
+    {
+      "path": "packages/execution/recovery-lease-v1.ts",
+      "sha256": "2a00a08e108dabb96d48797143e53a31a01cd45069dbf29074d6b9fabe50507f"
+    },
+    {
+      "path": "packages/repositories/repair-lease.ts",
+      "sha256": "a33afa53fe214e2023d674a6cff2270e847577902a91e4ea10011b31ecc40070"
+    },
+    {
+      "path": "packages/storage/reconciliation.ts",
+      "sha256": "4cf595bffa1b2c20a63019ed623cca5772b7abbb8a9b414da7089d2cefbc8952"
+    },
+    {
+      "path": "evaluation/prospective-v1.json",
+      "sha256": "e3ed56f8be7ad7a4112634c76011d267fafda9847f1f0f10e1c7e2f2d1753d02"
+    }
+  ],
+  "digest": "34d1982a844531ca98401d542676ddb3ab554b33ecfb1b3d0030f157bd47869f"
+}

@@ -1,0 +1,211 @@
+{
+  "format": "repolab-mri-qualification-cases/v1",
+  "reportedId": "reported-zero",
+  "referenceBefore": "(!isBool(any) && Number(any)) || any",
+  "referenceAfter": "typeof any !== \"string\" || any.trim() === \"\" || isNaN(Number(any)) ? any : Number(any)",
+  "weakAfter": "any === \"0\" ? 0 : ((!isBool(any) && Number(any)) || any)",
+  "expectationOrigin": "Evaluator-authored automatic-zero-typing choice grounded in issue 3 and pinned README; other checks preserve documented existing controls; not external or held-out",
+  "cases": [
+    {
+      "id": "reported-zero",
+      "args": [
+        "--bar=0"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":0}"
+    },
+    {
+      "id": "ordinary-one",
+      "args": [
+        "--bar=1"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":1}"
+    },
+    {
+      "id": "long-separated-zero",
+      "args": [
+        "--bar",
+        "0"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":0}"
+    },
+    {
+      "id": "short-zero",
+      "args": [
+        "-b",
+        "0"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"b\":0}"
+    },
+    {
+      "id": "decimal-zero",
+      "args": [
+        "--bar=0.0"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":0}"
+    },
+    {
+      "id": "signed-zero",
+      "args": [
+        "--bar=-0"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":0}"
+    },
+    {
+      "id": "leading-zero",
+      "args": [
+        "--bar=00"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":0}"
+    },
+    {
+      "id": "positive-fraction",
+      "args": [
+        "--bar=0.5"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":0.5}"
+    },
+    {
+      "id": "negative-fraction",
+      "args": [
+        "--bar=-0.5"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":-0.5}"
+    },
+    {
+      "id": "nonnumeric-value",
+      "args": [
+        "--bar=word"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":\"word\"}"
+    },
+    {
+      "id": "empty-value",
+      "args": [
+        "--bar="
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":\"\"}"
+    },
+    {
+      "id": "declared-string",
+      "args": [
+        "--bar=0"
+      ],
+      "options": {
+        "string": "bar"
+      },
+      "expected": "{\"_\":[],\"bar\":\"0\"}"
+    },
+    {
+      "id": "declared-string-alias",
+      "args": [
+        "--bar=0"
+      ],
+      "options": {
+        "string": "b",
+        "alias": {
+          "b": "bar"
+        }
+      },
+      "expected": "{\"_\":[],\"bar\":\"0\",\"b\":\"0\"}"
+    },
+    {
+      "id": "implicit-alias",
+      "args": [
+        "--bar=0"
+      ],
+      "options": {
+        "alias": {
+          "bar": "b"
+        }
+      },
+      "expected": "{\"_\":[],\"bar\":0,\"b\":0}"
+    },
+    {
+      "id": "boolean-flag",
+      "args": [
+        "--bar"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":true}"
+    },
+    {
+      "id": "negated-flag",
+      "args": [
+        "--no-bar"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":false}"
+    },
+    {
+      "id": "declared-boolean",
+      "args": [
+        "--bar=0"
+      ],
+      "options": {
+        "boolean": "bar"
+      },
+      "expected": "{\"_\":[\"0\"],\"bar\":true}"
+    },
+    {
+      "id": "repeated-zero",
+      "args": [
+        "--bar=0",
+        "--bar=1"
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":[0,1]}"
+    },
+    {
+      "id": "positional-zero",
+      "args": [
+        "0",
+        "--bar=0"
+      ],
+      "options": {},
+      "expected": "{\"_\":[\"0\"],\"bar\":0}"
+    },
+    {
+      "id": "separator",
+      "args": [
+        "--bar=0",
+        "--",
+        "0",
+        "--bar=1"
+      ],
+      "options": {},
+      "expected": "{\"_\":[\"0\",\"--bar=1\"],\"bar\":0}"
+    },
+    {
+      "id": "whitespace-value",
+      "args": [
+        "--bar",
+        "  "
+      ],
+      "options": {},
+      "expected": "{\"_\":[],\"bar\":\"  \"}"
+    },
+    {
+      "id": "default-control",
+      "args": [
+        "--bar=0"
+      ],
+      "options": {
+        "default": {
+          "baz": 2
+        }
+      },
+      "expected": "{\"_\":[],\"bar\":0,\"baz\":2}"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "format": "repolab-focused-post-verification/v5",
+  "digest": "41487293885b9230c0583c26fcda0b30d809c1f50f7adb955c0dc882dae18785",
+  "studyPublicSummaryHash": "f30d7a2fa95a34b38a30724fa257689ab7d9792b5dc015e5d74731b1a09cbe18",
+  "inference": "none; saved actual model sources and reviewed fixture reused",
+  "execution": "actual Nebius Sandboxes",
+  "operations": 10,
+  "totalPhaseOperations": 55,
+  "gates": [
+    {
+      "variant": "dsetSaved",
+      "suite": "baseline",
+      "sourceHash": "60f28be1439b8543ae034e3a73a3d861ff0a927b92dbdf0433c256762050722d",
+      "passed": true,
+      "cases": null,
+      "failedCases": [],
+      "upstreamAssertions": 13
+    },
+    {
+      "variant": "dsetSaved",
+      "suite": "core",
+      "sourceHash": "60f28be1439b8543ae034e3a73a3d861ff0a927b92dbdf0433c256762050722d",
+      "passed": true,
+      "cases": 1,
+      "failedCases": [],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "dsetSaved",
+      "suite": "challenge",
+      "sourceHash": "60f28be1439b8543ae034e3a73a3d861ff0a927b92dbdf0433c256762050722d",
+      "passed": true,
+      "cases": 1,
+      "failedCases": [],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "dsetSaved",
+      "suite": "core",
+      "sourceHash": "60f28be1439b8543ae034e3a73a3d861ff0a927b92dbdf0433c256762050722d",
+      "passed": true,
+      "cases": 1,
+      "failedCases": [],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "dsetSaved",
+      "suite": "baseline",
+      "sourceHash": "60f28be1439b8543ae034e3a73a3d861ff0a927b92dbdf0433c256762050722d",
+      "passed": true,
+      "cases": null,
+      "failedCases": [],
+      "upstreamAssertions": 13
+    },
+    {
+      "variant": "dsetSaved",
+      "suite": "independent",
+      "sourceHash": "60f28be1439b8543ae034e3a73a3d861ff0a927b92dbdf0433c256762050722d",
+      "passed": true,
+      "cases": 14,
+      "failedCases": [],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "mriSaved",
+      "suite": "independent",
+      "sourceHash": "68f902e809c538dd9ee4d92b6490ab7a88740ea610f579b7cb356026c6d974a1",
+      "passed": false,
+      "cases": 18,
+      "failedCases": [
+        "empty-value",
+        "whitespace-value"
+      ],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "mriSaved",
+      "suite": "independent",
+      "sourceHash": "68f902e809c538dd9ee4d92b6490ab7a88740ea610f579b7cb356026c6d974a1",
+      "passed": false,
+      "cases": 18,
+      "failedCases": [
+        "empty-value",
+        "whitespace-value"
+      ],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "mriReviewedReference",
+      "suite": "baseline",
+      "sourceHash": "3d58b87c1abac0097a8eb04479bcfc3ffdf863661ca37f5f5b2d6f883a21c1b9",
+      "passed": true,
+      "cases": null,
+      "failedCases": [],
+      "upstreamAssertions": 49
+    },
+    {
+      "variant": "mriReviewedReference",
+      "suite": "independent",
+      "sourceHash": "3d58b87c1abac0097a8eb04479bcfc3ffdf863661ca37f5f5b2d6f883a21c1b9",
+      "passed": true,
+      "cases": 18,
+      "failedCases": [],
+      "upstreamAssertions": null
+    }
+  ],
+  "claim": "Fresh source verification and diagnosis, not new model attempts or generic portable-pack replay"
+}

@@ -1,0 +1,217 @@
+{
+  "format": "repolab-focused-study-public-results/v5",
+  "digest": "41487293885b9230c0583c26fcda0b30d809c1f50f7adb955c0dc882dae18785",
+  "status": "COMPLETED",
+  "scope": "focused-three-exposed-bug-revision-no-comparison-claim",
+  "inference": {
+    "provider": "nebius",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "calls": 7,
+    "estimatedUsd": 0.0067656,
+    "rates": {
+      "input": 0.3,
+      "output": 0.9
+    },
+    "usageComplete": true
+  },
+  "execution": {
+    "provider": "nebius-sandbox",
+    "runtime": "v24.18.0",
+    "studyOperations": 32,
+    "reviewedDlvQualificationOperations": 6,
+    "readinessOperations": 7,
+    "totalDistinctOperations": 45,
+    "readOnlyExpiryRefreshes": 3,
+    "preDispatchLauncherCapabilityRefreshes": 1
+  },
+  "arms": [
+    {
+      "arm": "C",
+      "plannedTasks": 3,
+      "attemptedTasks": 3,
+      "notRun": 0,
+      "qualifiedBugs": 3,
+      "acceptedRepairs": 2,
+      "correctRepairs": 1,
+      "incorrectAcceptances": 1,
+      "acceptedUnknown": 0,
+      "controlCorrect": 0,
+      "unknownOutcomes": 0,
+      "correctTaskOutcomes": 1,
+      "acceptancePrecision": 0.5
+    }
+  ],
+  "resources": [
+    {
+      "task": "dlv-null-path",
+      "calls": 3,
+      "inputTokens": 4792,
+      "outputTokens": 1408,
+      "estimatedInferenceUsd": 0.0027048000000000003,
+      "operations": 14
+    },
+    {
+      "task": "dset-decimal-path",
+      "calls": 2,
+      "inputTokens": 2574,
+      "outputTokens": 972,
+      "estimatedInferenceUsd": 0.001647,
+      "operations": 9
+    },
+    {
+      "task": "mri-zero-number",
+      "calls": 2,
+      "inputTokens": 6006,
+      "outputTokens": 680,
+      "estimatedInferenceUsd": 0.0024138,
+      "operations": 9
+    }
+  ],
+  "rows": [
+    {
+      "task": "dlv-null-path",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": false,
+      "correct": false,
+      "status": "ABSTAINED",
+      "unknown": false,
+      "origin": "exposed-public-historical-v4-model-attempted-authored-oracle",
+      "runId": "7331fb59-9773-474d-a4b7-1af5cbfe6166"
+    },
+    {
+      "task": "dset-decimal-path",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": true,
+      "status": "ACCEPTED_INDEPENDENTLY_CORRECT",
+      "unknown": false,
+      "origin": "exposed-public-historical-v4-model-attempted-authored-oracle",
+      "runId": "6666cbc3-5e4f-46b7-8264-59f741c46761"
+    },
+    {
+      "task": "mri-zero-number",
+      "arm": "C",
+      "kind": "bug",
+      "attempted": true,
+      "qualified": true,
+      "accepted": true,
+      "correct": false,
+      "status": "ACCEPTED_INDEPENDENTLY_INCORRECT",
+      "unknown": false,
+      "origin": "exposed-public-historical-v4-model-attempted-authored-oracle",
+      "runId": "4e4d5bef-1692-4be2-acd7-418c7c4ebbaa"
+    }
+  ],
+  "admissions": [],
+  "incorrectAcceptances": [
+    {
+      "task": "mri-zero-number",
+      "runId": "4e4d5bef-1692-4be2-acd7-418c7c4ebbaa",
+      "sourceHash": "68f902e809c538dd9ee4d92b6490ab7a88740ea610f579b7cb356026c6d974a1",
+      "independentFailures": [
+        {
+          "id": "empty-value",
+          "status": "returned",
+          "actual": "{\"_\":[],\"bar\":0}",
+          "expected": "{\"_\":[],\"bar\":\"\"}",
+          "passed": false
+        },
+        {
+          "id": "whitespace-value",
+          "status": "returned",
+          "actual": "{\"_\":[],\"bar\":0}",
+          "expected": "{\"_\":[],\"bar\":\"  \"}",
+          "passed": false
+        }
+      ]
+    }
+  ],
+  "reviewedDlvQualification": [
+    {
+      "variant": "original",
+      "suite": "baseline",
+      "sourceHash": "1962e2fb0d6d30da2d07941e2d76c37fa96c9032f492224101277ebe1215e337",
+      "passed": true,
+      "cases": null,
+      "failedCases": [],
+      "upstreamAssertions": 34
+    },
+    {
+      "variant": "original",
+      "suite": "challenge",
+      "sourceHash": "1962e2fb0d6d30da2d07941e2d76c37fa96c9032f492224101277ebe1215e337",
+      "passed": false,
+      "cases": 15,
+      "failedCases": [
+        "zero-child",
+        "false-child",
+        "empty-child",
+        "public-zero-array",
+        "public-false-string",
+        "public-empty-array",
+        "public-deep-zero",
+        "public-deep-false",
+        "public-deep-empty"
+      ],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "recordedIncomplete",
+      "suite": "challenge",
+      "sourceHash": "b8e721ba0046017dc3ed3b817f7b12d0a9d8623659e18aa89e00cfc5b652ef57",
+      "passed": false,
+      "cases": 15,
+      "failedCases": [
+        "zero-child",
+        "false-child",
+        "empty-child",
+        "public-zero-array",
+        "public-false-string",
+        "public-empty-array",
+        "public-deep-zero",
+        "public-deep-false",
+        "public-deep-empty"
+      ],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "reviewedReference",
+      "suite": "baseline",
+      "sourceHash": "c30fc8a504bb7d4fdbd7911bb9880d377691578fef069b9bd71ba89c407e7a3f",
+      "passed": true,
+      "cases": null,
+      "failedCases": [],
+      "upstreamAssertions": 34
+    },
+    {
+      "variant": "reviewedReference",
+      "suite": "challenge",
+      "sourceHash": "c30fc8a504bb7d4fdbd7911bb9880d377691578fef069b9bd71ba89c407e7a3f",
+      "passed": true,
+      "cases": 15,
+      "failedCases": [],
+      "upstreamAssertions": null
+    },
+    {
+      "variant": "reviewedReference",
+      "suite": "independent",
+      "sourceHash": "c30fc8a504bb7d4fdbd7911bb9880d377691578fef069b9bd71ba89c407e7a3f",
+      "passed": true,
+      "cases": 13,
+      "failedCases": [],
+      "upstreamAssertions": null
+    }
+  ],
+  "limitations": [
+    "Focused exposed-development revision; no A/B comparison or causal superiority claim",
+    "Authored/public/exposed tasks; no external hidden benchmark",
+    "Previously attempted tasks; no untouched-task or new independent benchmark claim"
+  ],
+  "conclusion": "Focused C-only pilot: 1/3 independently correct development repairs; 0 unrun. No A/B or hidden-task superiority claim."
+}

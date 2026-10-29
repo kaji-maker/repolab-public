@@ -1,0 +1,17 @@
+{
+  "format": "repolab-preact-admission-result/v4",
+  "freeze": "add889f0e2263096baba34a1688b6ae8cae91c775854effacba597e79a60ff0b",
+  "status": "OBSERVER_REGISTRY_MISMATCH",
+  "operations": 2,
+  "operationIds": [
+    "01a130a2-a9fe-73fb-9ae5-dc4d75d6a134",
+    "01a130a2-b745-70f4-8587-26bc146d56a3"
+  ],
+  "failedStage": "original-independent-A",
+  "unrunSlots": 24,
+  "inference": "none",
+  "execution": "nebius-sandbox; reviewed fixtures",
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "reason": "Added tenth observer case was missing from controller registry; neither fix dispatched"
+}

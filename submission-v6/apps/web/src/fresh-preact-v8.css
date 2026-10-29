@@ -1,0 +1,7 @@
+.v8-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+.v8-actions .fresh-download { margin: 0; }
+.v8-patch { margin-top: 18px; min-width: 0; }
+.v8-patch h3 { font-size: 14px; }
+.v8-patch pre { padding: 16px; background: #f3f6f4; border: 1px solid #dce3df; border-radius: 8px; font: 11px/1.7 ui-monospace, monospace; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 32rem; overflow: auto; }
+.v8-patch pre:focus-visible { outline: 3px solid #83b6a9; outline-offset: 3px; }
+.fresh-history > button { width: auto; display: block; margin-bottom: 16px; }

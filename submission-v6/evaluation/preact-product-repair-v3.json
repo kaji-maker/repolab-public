@@ -1,0 +1,92 @@
+{
+  "format": "repolab-native-preact-repair-protocol/v3",
+  "taskId": "preactjs__preact-4436",
+  "profileFreeze": "2bfd0055be82c8f4a1dd77f232d08f0c5fb227d72c41b972f5903fdec6a18384",
+  "productFreeze": "e08a4ca2dbbc6f8b6452c0e832c46e5ccbab2945a5295149d1e73954698fcc70",
+  "maxCandidates": 3,
+  "maxCalls": 3,
+  "maxOperations": 34,
+  "monetaryCap": null,
+  "parentRepairFreeze": "822e3305ca5379405834096ca7807a849f567bdd9f2aea5e382ad25d285ae402",
+  "recognizedTerminal": [
+    "SUCCESS",
+    "FAILED",
+    "CANCELLED"
+  ],
+  "recovery": "GET only; no verification or workflow resume",
+  "newLiveQualificationSlots": 0,
+  "independentFeedback": false,
+  "contextHash": "ad78f62b38d3a53f7dd8348dc94d5e92d52a8ab6582246a5dfd57a0efc6662ca",
+  "systemHash": "5c2839f7a56fd28e0f8557878d6fc39729721a0eea8b7dd5c38c1597aa6c3b19",
+  "assets": [
+    {
+      "path": "packages/repositories/preact-repair-protocol-v3.ts",
+      "sha256": "50a5a969f7bbdf7503a901ae1d6a111918812a42de1429bc16f42995dae4083e"
+    },
+    {
+      "path": "packages/execution/guarded-preact-sandbox-v1.ts",
+      "sha256": "98dcf6968968b8c171b2964941834d26d33ceb86668bd664548ff5293315b554"
+    },
+    {
+      "path": "packages/execution/preact-repair-v3.ts",
+      "sha256": "7e421bc9640fa0f66f246f1146358ffd18140047cbb484e01a09f42fc92e9fb5"
+    },
+    {
+      "path": "packages/execution/recovery-lease-v1.ts",
+      "sha256": "2a00a08e108dabb96d48797143e53a31a01cd45069dbf29074d6b9fabe50507f"
+    },
+    {
+      "path": "packages/repositories/preact-repair-v3.ts",
+      "sha256": "0d0f8809e9cbe03f00dde29d14027a5520b553fabdab788842fbbcf8486c5367"
+    },
+    {
+      "path": "packages/repositories/preact-repair-history-v3.ts",
+      "sha256": "38ffc6a7d06807cd34f6b4c77c1f3b591f6b2119aa45eb321f8277f8a0ca3a3f"
+    },
+    {
+      "path": "packages/repositories/preact-repair-recovery-v1.ts",
+      "sha256": "c8eba3dbc1b19fcc95f5df8d75c285380112281eb4be1b2850e38ab2993f2a85"
+    },
+    {
+      "path": "apps/api/preact-repair-v3.ts",
+      "sha256": "e982886c826c6f0620a529b82e9b78e7217a83d774456daacd9ee4b2050419a5"
+    },
+    {
+      "path": "apps/api/native-server-v8.ts",
+      "sha256": "b203c67d1d1707dd34c7e9a26f67b33adb372f471c845afae95a91c8da27dff6"
+    },
+    {
+      "path": "apps/web/src/FreshPreactV7.tsx",
+      "sha256": "00a3e64d4825c6f9b0e569af9ed6cec61254549578383500d0eb0ee2fe19c2b5"
+    },
+    {
+      "path": "apps/web/native-repair-v7.html",
+      "sha256": "b710085285023fd0d9b24a432c2d6a49d1568048c29364dc1014ad9f2337df17"
+    },
+    {
+      "path": "vite.native-v8.config.ts",
+      "sha256": "de2637a1103cb9eef1c70c288174d0c756a7444173fd7285eba52373ecc171e2"
+    },
+    {
+      "path": "tests/preact-repair-v3.test.ts",
+      "sha256": "5e51bd032dc3d8605083473a25319052909eba8ae46bac7c2e3f5a663b8ef9b2"
+    },
+    {
+      "path": "tests/preact-repair-guard-v1.test.ts",
+      "sha256": "63ccca51b2c2e3a033deb7f08f2927053c591d3097bb75026ebfe2f67fa5398e"
+    },
+    {
+      "path": "tests/preact-repair-api-v3.test.ts",
+      "sha256": "907ed92abae9dbd5129dbea2587d17c3e2cd482c1ef2259737dd4fbe260348ea"
+    },
+    {
+      "path": "scripts/preact-guard-browser-v1.mjs",
+      "sha256": "82cf16f3b07b53c4a9474f0d944bd72bd2430f148378fba70a05a367dff18caa"
+    },
+    {
+      "path": "evaluation/PREACT_PRODUCT_REPAIR_V3.md",
+      "sha256": "60ecac6880f79b770a0cf6bb9796064aa0e67e5084eb8ce559c5ac704562abaf"
+    }
+  ],
+  "digest": "e50e387594890fcbcff387c1e1e95d90ea857b320105c8c765ecbd226a384449"
+}

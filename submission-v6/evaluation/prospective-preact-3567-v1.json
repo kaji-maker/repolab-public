@@ -1,0 +1,98 @@
+{
+  "format": "repolab-prospective-preact-offline-preparation/v1",
+  "taskId": "preactjs__preact-3567",
+  "commit": "c77e6284c199761d59467d8cc596a2f03540e72c",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "status": "PREPARED_ONLY",
+  "maxModelCalls": 0,
+  "maxSandboxOperations": 0,
+  "proposedOriginalOperations": 12,
+  "taskOriginalCeiling": 12,
+  "executionAdmission": false,
+  "candidateAdmission": false,
+  "nativeRuntimeQualified": false,
+  "originalReproduced": false,
+  "assets": [
+    {
+      "path": "packages/evaluation/prospective-preact-3567-v1.ts",
+      "sha256": "d19de9c445bb51d9fa9d72779bd4989ddd2c5511cb373d2eababf5c1e89b78a5"
+    },
+    {
+      "path": "apps/evaluator/prospective-preact-3567-v1.ts",
+      "sha256": "b032ac1ba05429321eb430e22d1dd57eced65f2cefe2f9b7c348f29641151ac9"
+    },
+    {
+      "path": "tests/prospective-preact-3567-v1.test.ts",
+      "sha256": "1b1ae31c24d5a6cd4a785b3d72d3bc506eaac1d74e73661c2f551357279a6c52"
+    },
+    {
+      "path": "evaluation/PROSPECTIVE_PREACT_3567_V1.md",
+      "sha256": "ea511803a053e7b33f48539ff4401920adb4dd69e8229e0b77ae682d03b5c3f6"
+    },
+    {
+      "path": "repositories/prospective-preact-3567-v1/original.tar.gz",
+      "sha256": "b5988e4c37e6fa03da53dd7deb2f811672f7c060a4cfc2a2a297475e664b4ea4"
+    },
+    {
+      "path": "repositories/prospective-preact-3567-v1/LICENSE",
+      "sha256": "1fe6958409c8c257a70c587a18b6f7f412b179b456630790d30b2ec9a8e4b7d4"
+    },
+    {
+      "path": "repositories/prospective-preact-3567-v1/reported.jsx",
+      "sha256": "fff406f6571a6d43f28b9cd4dd8da3ceb94733181b2471b1f034ea13dc1ec44b"
+    },
+    {
+      "path": "repositories/prospective-preact-3567-v1/control-no-reset.jsx",
+      "sha256": "c8ac8e1f2a270f0a1503b5d275922bb169a16cb30e88c1ecee07a7b4b642a367"
+    },
+    {
+      "path": "repositories/prospective-preact-3567-v1/browser-probe.js",
+      "sha256": "20076a5620b09794da93f807e8f2dfc50dfe064b599449da0173ec19d8dbdd23"
+    },
+    {
+      "path": "repositories/prospective-preact-3567-v1/reproduction.cjs",
+      "sha256": "5452f1d1d9e40422f0ef5aa6e573e78feba8c2bbe1243e8b8924973672c06bb9"
+    },
+    {
+      "path": "fixtures/prospective-preact-3567-v1/original-manifest.json",
+      "sha256": "ce28def31472afc584fd6080718515aef407c0b4fc626ef6f679285db077ca8d"
+    },
+    {
+      "path": "fixtures/prospective-preact-3567-v1/commit.json",
+      "sha256": "ff53af560bd9d0117838a7815c9bcdf927eb42351df16731285831793d1dd10c"
+    },
+    {
+      "path": "fixtures/prospective-preact-3567-v1/canonical-tree.json",
+      "sha256": "0ca2d7d08f6830ff2a1ede54ab94042b0667cdc78d532dfc777b897af6118b83"
+    },
+    {
+      "path": "fixtures/prospective-preact-3567-v1/context.json",
+      "sha256": "bf0b420152c05108e07b5262d77eeea8a1b46bbefe77b343150fbd7530f10955"
+    },
+    {
+      "path": "fixtures/prospective-preact-3567-v1/native-plan.json",
+      "sha256": "3084bdc1f1aea0fb55b242e9af7dc5dbfc089c6241e6d782c70f8826f5c25708"
+    },
+    {
+      "path": "fixtures/prospective-preact-3567-v1/node-inventory.json",
+      "sha256": "4c536cc82998792bb79c8742d34ec7d03921020fb7070607c61c61af7768e5c6"
+    },
+    {
+      "path": ".repolab/prospective-preact-3567-v1-preparation/execution-blocker.json",
+      "sha256": "cf7698ffe50af25a247e411009c86a66edb90e7f38e0b661eb1269f1e3f537a5"
+    },
+    {
+      "path": "packages/evaluation/prospective-v1.ts",
+      "sha256": "d3d4e43fbecf62dfaa0c6e4e6ec485bd4e641168e150617146e90cdf9f054c33"
+    },
+    {
+      "path": "evaluation/prospective-v1.json",
+      "sha256": "e3ed56f8be7ad7a4112634c76011d267fafda9847f1f0f10e1c7e2f2d1753d02"
+    },
+    {
+      "path": "packages/repositories/onboarding-v1.ts",
+      "sha256": "1362ef1b82c6325bdeb9ca5654506d4e760e471562fd3b9822d269834a35748c"
+    }
+  ],
+  "digest": "ee67f7900dda8920d4e2b72e46b68a0c1608d1b73a6aed0fe97737c16386304b"
+}

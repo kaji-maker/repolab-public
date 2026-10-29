@@ -1,0 +1,91 @@
+{
+  "format": "repolab-framework-feasibility-evidence/v1",
+  "selectionDigest": "4b7fca4a16659ea7510dc3dd8931abdd16d967eb51b9650396e083c2c4d63f4d",
+  "sourceInventoryDigest": "42e5ac86e4f5da9547b1f783f7b44c994a6a2c034570c4ad45380fbf692cb02c",
+  "onboardingFreeze": "dec9caa0a75af2bc56147433edcae0545750ea455be7de3f8aefd01c1d10f074",
+  "subjects": [
+    {
+      "id": "vue",
+      "taskId": "vuejs__core-11899",
+      "repository": "vuejs/core",
+      "commit": "706d4ac1d0210b2d9134b3228280187fe02fc971",
+      "candidateRank": 1,
+      "targetSubpackage": {
+        "directory": "packages/compiler-sfc",
+        "manifestPath": "packages/compiler-sfc/package.json",
+        "manifestGitBlobSha1": "384ea323cfcb6f9a91c5a82b976c2a4d3cd4e067",
+        "candidateEditablePaths": [
+          "packages/compiler-sfc/src/compileStyle.ts",
+          "packages/compiler-sfc/src/style/pluginScoped.ts"
+        ],
+        "candidateNativeTestPaths": [
+          "packages/compiler-sfc/__tests__/compileStyle.spec.ts"
+        ],
+        "nativeSuiteCommand": "vitest -c vitest.unit.config.ts"
+      },
+      "files": {
+        "commit": {
+          "path": ".repolab/external-intake-v1/vuejs__core-11899-commit.json",
+          "sha256": "2a1f2ce3104bfdecc3f3825f6e972fac9f9333a65990ba54a83c2b342c1d269d"
+        },
+        "canonicalTree": {
+          "path": ".repolab/external-intake-v1/vuejs__core-11899-canonical-tree.json",
+          "sha256": "7594a5a1a950fbd6cb6344770fb5098c1a884c542593cd7eb990910f56d97df7"
+        },
+        "tree": {
+          "path": ".repolab/external-intake-v1/vuejs__core-11899-tree.json",
+          "sha256": "6fa02ef2a7f297199cc3c945211f76bf381e9d027568ed099a68d1aa78b094bb"
+        },
+        "package": {
+          "path": ".repolab/external-intake-v1/vuejs__core-11899-package.json",
+          "sha256": "ed16ffc9dd50c1c7ef38c831bc9a5e8fed3d7961994ead019c7af6104d80f1dd"
+        },
+        "originalContext": {
+          "path": ".repolab/external-intake-v1/vuejs__core-11899-original-context.json",
+          "sha256": "4e4e411b2ff5e6beeb5353a4e8e4adcf399436cb6647ebdc5eb17f7e805c9ac7"
+        }
+      }
+    },
+    {
+      "id": "docusaurus",
+      "taskId": "facebook__docusaurus-8927",
+      "repository": "facebook/docusaurus",
+      "commit": "41f1c1e3c26ad1e24acd3306077e2534dd8fa0db",
+      "candidateRank": 2,
+      "targetSubpackage": {
+        "directory": "packages/docusaurus-mdx-loader",
+        "manifestPath": "packages/docusaurus-mdx-loader/package.json",
+        "manifestGitBlobSha1": "70e8f18ea8bed1b9483d0f8d8e40d96ef7534181",
+        "candidateEditablePaths": [
+          "packages/docusaurus-mdx-loader/src/remark/transformImage/index.ts"
+        ],
+        "candidateNativeTestPaths": [
+          "packages/docusaurus-mdx-loader/src/remark/transformImage/__tests__/index.test.ts"
+        ],
+        "nativeSuiteCommand": "jest"
+      },
+      "files": {
+        "commit": {
+          "path": ".repolab/external-intake-v1/facebook__docusaurus-8927-commit.json",
+          "sha256": "78001b04b2a463a8847598396ff1a2c8939dd186447f233691f0b3c1532a8afc"
+        },
+        "canonicalTree": {
+          "path": ".repolab/external-intake-v1/facebook__docusaurus-8927-canonical-tree.json",
+          "sha256": "096149d807a4865e5b6dd223f27365d880b834314808b9c926512edc33cc1d25"
+        },
+        "tree": {
+          "path": ".repolab/external-intake-v1/facebook__docusaurus-8927-tree.json",
+          "sha256": "138d19dd04b6dfe9011cafbf2552f07070397f3efe5352aaf2989cc9e5ab9ad3"
+        },
+        "package": {
+          "path": ".repolab/external-intake-v1/facebook__docusaurus-8927-package.json",
+          "sha256": "5a7f73bb18cd68e35bf14300c61306a4b5707c9f458f07e7837e57e2816c2952"
+        },
+        "originalContext": {
+          "path": ".repolab/external-intake-v1/facebook__docusaurus-8927-original-context.json",
+          "sha256": "9367af909283c6b64949f35cb6a163520f2062268719153bf8283b7c2dc2d419"
+        }
+      }
+    }
+  ]
+}

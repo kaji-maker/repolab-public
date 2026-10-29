@@ -1,0 +1,72 @@
+{
+  "format": "repolab-module-syntax-qualification/v1",
+  "nonce": "58720df1-e0e1-43b4-8eeb-0231d2af8acc",
+  "taskId": "lukeed__regexparam-40",
+  "phase": "qualification-syntax",
+  "sourceHash": "e57a77b1640f63cbf4eb1192b2c6d522416d1b031f5d5aece191e0a7e2e92ec6",
+  "runtimeVersion": "v24.18.0",
+  "expectedFiles": {
+    "package.json": "34cbc906b981ef80fdfb3dfec691d68526f545f1ab7156ed18d42b3ddebeaace",
+    "src/index.js": "108310cff0fac78b96fc0a114b976662e19f321d57a18541cf57f523a46538d2",
+    "dist/index.js": "bf0aa0d07dd752e9b7c0e504ac2110f01c7db26d36fc5e90702c04585f512767",
+    "dist/index.mjs": "108310cff0fac78b96fc0a114b976662e19f321d57a18541cf57f523a46538d2",
+    "dist/index.min.js": "ed3bc6c0685b3e6b1eb51f816432869cb9e5614ca23e6d6fefb79e9c297e17e0"
+  },
+  "controls": [
+    {
+      "id": "js-original",
+      "file": "src/index.js",
+      "content": "/**\n * @param {string|RegExp} input The route pattern\n * @param {boolean} [loose] Allow open-ended matching. Ignored with `RegExp` input.\n */\nexport function parse(input, loose) {\n\tif (input instanceof RegExp) return { keys:false, pattern:input };\n\tvar c, o, tmp, ext, keys=[], pattern='', arr = input.split('/');\n\tarr[0] || arr.shift();\n\n\twhile (tmp = arr.shift()) {\n\t\tc = tmp[0];\n\t\tif (c === '*') {\n\t\t\tkeys.push(c);\n\t\t\tpattern += tmp[1] === '?' ? '(?:/(.*))?' : '/(.*)';\n\t\t} else if (c === ':') {\n\t\t\to = tmp.indexOf('?', 1);\n\t\t\text = tmp.indexOf('.', 1);\n\t\t\tkeys.push( tmp.substring(1, !!~o ? o : !!~ext ? ext : tmp.length) );\n\t\t\tpattern += !!~o && !~ext ? '(?:/([^/]+?))?' : '/([^/]+?)';\n\t\t\tif (!!~ext) pattern += (!!~o ? '?' : '') + '\\\\' + tmp.substring(ext);\n\t\t} else {\n\t\t\tpattern += '/' + tmp;\n\t\t}\n\t}\n\n\treturn {\n\t\tkeys: keys,\n\t\tpattern: new RegExp('^' + pattern + (loose ? '(?=$|\\/)' : '\\/?$'), 'i')\n\t};\n}\n\nvar RGX = /(\\/|^)([:*][^/]*?)(\\?)?(?=[/.]|$)/g;\n\n// error if key missing?\nexport function inject(route, values) {\n\treturn route.replace(RGX, (x, lead, key, optional) => {\n\t\tx = values[key=='*' ? key : key.substring(1)];\n\t\treturn x ? '/'+x : (optional || key=='*') ? '' : '/' + key;\n\t});\n}\n"
+    },
+    {
+      "id": "js-v1-control",
+      "file": "src/index.js",
+      "content": "/**\n * @param {string|RegExp} input The route pattern\n * @param {boolean} [loose] Allow open-ended matching. Ignored with `RegExp` input.\n */\nexport function parse(input, loose) {\n\tif (input instanceof RegExp) return { keys:false, pattern:input };\n\tvar c, o, tmp, ext, keys=[], pattern='', arr = input.split('/');\n\tarr[0] || arr.shift();\n\n\twhile (tmp = arr.shift()) {\n\t\tc = tmp[0];\n\t\tif (c === '*') {\n\t\t\tkeys.push(c);\n\t\t\tpattern += tmp[1] === '?' ? '(?:/(.*))?' : '/(.*)';\n\t\t} else if (c === ':') {\n\t\t\to = tmp.indexOf('?', 1);\n\t\t\text = tmp.indexOf('.', 1);\n\t\t\tkeys.push( tmp.substring(1, !!~o ? o : !!~ext ? ext : tmp.length) );\n\t\t\tpattern += !!~o && !~ext ? '(?:/([^/]+?))?' : '/([^/]+?)';\n\t\t\tif (!!~ext) pattern += (!!~o ? '?' : '') + '\\\\' + tmp.substring(ext);\n\t\t} else {\n\t\t\tpattern += '/' + tmp;\n\t\t}\n\t}\n\n\treturn {\n\t\tkeys: keys,\n\t\tpattern: new RegExp('^' + pattern + (loose ? '(?=$|\\/)' : '\\/?$'), 'i')\n\t};\n}\n\nvar RGX = /(\\/|^)([:*][^/]*?)(\\?)?(?=[/.]|$)/g;\n\n// error if key missing?\nexport function inject(route, values) {\n\treturn route.replace(RGX, (x, lead, key, optional) => {\n\t\tx = values[key=='*' ? key : key.substring(1)];\n\t\treturn x ? '/'+x : (optional || key=='*') ? '' : '/' + key;\n\t});\n}\n\nconst broken = true ? \"incomplete\";\n"
+    },
+    {
+      "id": "js-export-invalid",
+      "file": "src/index.js",
+      "content": "/**\n * @param {string|RegExp} input The route pattern\n * @param {boolean} [loose] Allow open-ended matching. Ignored with `RegExp` input.\n */\nexport function parse(input, loose) {\n\tif (input instanceof RegExp) return { keys:false, pattern:input };\n\tvar c, o, tmp, ext, keys=[], pattern='', arr = input.split('/');\n\tarr[0] || arr.shift();\n\n\twhile (tmp = arr.shift()) {\n\t\tc = tmp[0];\n\t\tif (c === '*') {\n\t\t\tkeys.push(c);\n\t\t\tpattern += tmp[1] === '?' ? '(?:/(.*))?' : '/(.*)';\n\t\t} else if (c === ':') {\n\t\t\to = tmp.indexOf('?', 1);\n\t\t\text = tmp.indexOf('.', 1);\n\t\t\tkeys.push( tmp.substring(1, !!~o ? o : !!~ext ? ext : tmp.length) );\n\t\t\tpattern += !!~o && !~ext ? '(?:/([^/]+?))?' : '/([^/]+?)';\n\t\t\tif (!!~ext) pattern += (!!~o ? '?' : '') + '\\\\' + tmp.substring(ext);\n\t\t} else {\n\t\t\tpattern += '/' + tmp;\n\t\t}\n\t}\n\n\treturn {\n\t\tkeys: keys,\n\t\tpattern: new RegExp('^' + pattern + (loose ? '(?=$|\\/)' : '\\/?$'), 'i')\n\t};\n}\n\nvar RGX = /(\\/|^)([:*][^/]*?)(\\?)?(?=[/.]|$)/g;\n\n// error if key missing?\nexport function inject(route, values) {\n\treturn route.replace(RGX, (x, lead, key, optional) => {\n\t\tx = values[key=='*' ? key : key.substring(1)];\n\t\treturn x ? '/'+x : (optional || key=='*') ? '' : '/' + key;\n\t});\n}\n\nexport const x = ;\n"
+    },
+    {
+      "id": "js-candidate-1",
+      "file": "src/index.js",
+      "content": "/**\n * @param {string|RegExp} input The route pattern\n * @param {boolean} [loose] Allow open-ended matching. Ignored with `RegExp` input.\n */\nexport function parse(input, loose) {\n\tif (input instanceof RegExp) return { keys:false, pattern:input };\n\tvar c, o, tmp, ext, keys=[], pattern='', arr = input.split('/');\n\tarr[0] || arr.shift();\n\n\twhile (tmp = arr.shift()) {\n\t\tc = tmp[0];\n\t\tif (c === '*') {\n\t\t\tkeys.push(c);\n\t\t\tpattern += tmp[1] === '?' ? '(?:/(.*))?' : '/(.*)';\n\t\t} else if (c === ':') {\n\t\t\to = tmp.indexOf('?', 1);\n\t\t\text = tmp.indexOf('.', 1);\n\t\t\tkeys.push( tmp.substring(1, !!~o ? o : !!~ext ? ext : tmp.length) );\n\t\t\tpattern += !!~o && !~ext ? '(?:/([^/]+?))?' : '/([^/]+?)';\n\t\t\tif (!!~ext) pattern += (!!~o ? '?' : '') + '\\\\' + tmp.substring(ext);\n\t\t} else {\n\t\t\tpattern += '/' + tmp.replace(/[.*+?^${}()|[|[|?])}/g, '');;\n\t\t}\n\t}\n\n\treturn {\n\t\tkeys: keys,\n\t\tpattern: new RegExp('^' + pattern + (loose ? '(?=$|\\/)' : '\\/?$'), 'i')\n\t};\n}\n\nvar RGX = /(\\/|^)([:*][^/]*?)(\\?)?(?=[/.]|$)/g;\n\n// error if key missing?\nexport function inject(route, values) {\n\treturn route.replace(RGX, (x, lead, key, optional) => {\n\t\tx = values[key=='*' ? key : key.substring(1)];\n\t\treturn x ? '/'+x : (optional || key=='*') ? '' : '/' + key;\n\t});\n}\n"
+    },
+    {
+      "id": "js-candidate-2",
+      "file": "src/index.js",
+      "content": "/**\n * @param {string|RegExp} input The route pattern\n * @param {boolean} [loose] Allow open-ended matching. Ignored with `RegExp` input.\n */\nexport function parse(input, loose) {\n\tif (input instanceof RegExp) return { keys:false, pattern:input };\n\tvar c, o, tmp, ext, keys=[], pattern='', arr = input.split('/');\n\tarr[0] || arr.shift();\n\n\twhile (tmp = arr.shift()) {\n\t\tc = tmp[0];\n\t\tif (c === '*') {\n\t\t\tkeys.push(c);\n\t\t\tpattern += tmp[1] === '?' ? '(?:/(.*))?' : '/(.*)';\n\t\t} else if (c === ':') {\n\t\t\to = tmp.indexOf('?', 1);\n\t\t\text = tmp.indexOf('.', 1);\n\t\t\tkeys.push( tmp.substring(1, !!~o ? o : !!~ext ? ext : tmp.length) );\n\t\t\tpattern += !!~o && !~ext ? '(?:/([^/]+?))?' : '/([^/]+?)';\n\t\t\tif (!!~ext) pattern += (!!~o ? '?' : '') + '\\\\' + tmp.substring(ext);\n\t\t} else {\n\t\t\tpattern += '/' + tmp.replace(/[.*+?^${}()|[|[|?])]/g, '$&');;\n\t\t}\n\t}\n\n\treturn {\n\t\tkeys: keys,\n\t\tpattern: new RegExp('^' + pattern + (loose ? '(?=$|\\/)' : '\\/?$'), 'i')\n\t};\n}\n\nvar RGX = /(\\/|^)([:*][^/]*?)(\\?)?(?=[/.]|$)/g;\n\n// error if key missing?\nexport function inject(route, values) {\n\treturn route.replace(RGX, (x, lead, key, optional) => {\n\t\tx = values[key=='*' ? key : key.substring(1)];\n\t\treturn x ? '/'+x : (optional || key=='*') ? '' : '/' + key;\n\t});\n}\n"
+    },
+    {
+      "id": "cjs-valid",
+      "file": "src/index.js",
+      "content": "\"use strict\";\nmodule.exports = 1;\n"
+    },
+    {
+      "id": "cjs-v1-control",
+      "file": "src/index.js",
+      "content": "\"use strict\";\nconst broken = true ? \"incomplete\";\n"
+    },
+    {
+      "id": "mjs-original",
+      "file": "src/index.mjs",
+      "content": "/**\n * @param {string|RegExp} input The route pattern\n * @param {boolean} [loose] Allow open-ended matching. Ignored with `RegExp` input.\n */\nexport function parse(input, loose) {\n\tif (input instanceof RegExp) return { keys:false, pattern:input };\n\tvar c, o, tmp, ext, keys=[], pattern='', arr = input.split('/');\n\tarr[0] || arr.shift();\n\n\twhile (tmp = arr.shift()) {\n\t\tc = tmp[0];\n\t\tif (c === '*') {\n\t\t\tkeys.push(c);\n\t\t\tpattern += tmp[1] === '?' ? '(?:/(.*))?' : '/(.*)';\n\t\t} else if (c === ':') {\n\t\t\to = tmp.indexOf('?', 1);\n\t\t\text = tmp.indexOf('.', 1);\n\t\t\tkeys.push( tmp.substring(1, !!~o ? o : !!~ext ? ext : tmp.length) );\n\t\t\tpattern += !!~o && !~ext ? '(?:/([^/]+?))?' : '/([^/]+?)';\n\t\t\tif (!!~ext) pattern += (!!~o ? '?' : '') + '\\\\' + tmp.substring(ext);\n\t\t} else {\n\t\t\tpattern += '/' + tmp;\n\t\t}\n\t}\n\n\treturn {\n\t\tkeys: keys,\n\t\tpattern: new RegExp('^' + pattern + (loose ? '(?=$|\\/)' : '\\/?$'), 'i')\n\t};\n}\n\nvar RGX = /(\\/|^)([:*][^/]*?)(\\?)?(?=[/.]|$)/g;\n\n// error if key missing?\nexport function inject(route, values) {\n\treturn route.replace(RGX, (x, lead, key, optional) => {\n\t\tx = values[key=='*' ? key : key.substring(1)];\n\t\treturn x ? '/'+x : (optional || key=='*') ? '' : '/' + key;\n\t});\n}\n"
+    },
+    {
+      "id": "mjs-v1-control",
+      "file": "src/index.mjs",
+      "content": "/**\n * @param {string|RegExp} input The route pattern\n * @param {boolean} [loose] Allow open-ended matching. Ignored with `RegExp` input.\n */\nexport function parse(input, loose) {\n\tif (input instanceof RegExp) return { keys:false, pattern:input };\n\tvar c, o, tmp, ext, keys=[], pattern='', arr = input.split('/');\n\tarr[0] || arr.shift();\n\n\twhile (tmp = arr.shift()) {\n\t\tc = tmp[0];\n\t\tif (c === '*') {\n\t\t\tkeys.push(c);\n\t\t\tpattern += tmp[1] === '?' ? '(?:/(.*))?' : '/(.*)';\n\t\t} else if (c === ':') {\n\t\t\to = tmp.indexOf('?', 1);\n\t\t\text = tmp.indexOf('.', 1);\n\t\t\tkeys.push( tmp.substring(1, !!~o ? o : !!~ext ? ext : tmp.length) );\n\t\t\tpattern += !!~o && !~ext ? '(?:/([^/]+?))?' : '/([^/]+?)';\n\t\t\tif (!!~ext) pattern += (!!~o ? '?' : '') + '\\\\' + tmp.substring(ext);\n\t\t} else {\n\t\t\tpattern += '/' + tmp;\n\t\t}\n\t}\n\n\treturn {\n\t\tkeys: keys,\n\t\tpattern: new RegExp('^' + pattern + (loose ? '(?=$|\\/)' : '\\/?$'), 'i')\n\t};\n}\n\nvar RGX = /(\\/|^)([:*][^/]*?)(\\?)?(?=[/.]|$)/g;\n\n// error if key missing?\nexport function inject(route, values) {\n\treturn route.replace(RGX, (x, lead, key, optional) => {\n\t\tx = values[key=='*' ? key : key.substring(1)];\n\t\treturn x ? '/'+x : (optional || key=='*') ? '' : '/' + key;\n\t});\n}\n\nconst broken = true ? \"incomplete\";\n"
+    },
+    {
+      "id": "mjs-candidate-1",
+      "file": "src/index.mjs",
+      "content": "/**\n * @param {string|RegExp} input The route pattern\n * @param {boolean} [loose] Allow open-ended matching. Ignored with `RegExp` input.\n */\nexport function parse(input, loose) {\n\tif (input instanceof RegExp) return { keys:false, pattern:input };\n\tvar c, o, tmp, ext, keys=[], pattern='', arr = input.split('/');\n\tarr[0] || arr.shift();\n\n\twhile (tmp = arr.shift()) {\n\t\tc = tmp[0];\n\t\tif (c === '*') {\n\t\t\tkeys.push(c);\n\t\t\tpattern += tmp[1] === '?' ? '(?:/(.*))?' : '/(.*)';\n\t\t} else if (c === ':') {\n\t\t\to = tmp.indexOf('?', 1);\n\t\t\text = tmp.indexOf('.', 1);\n\t\t\tkeys.push( tmp.substring(1, !!~o ? o : !!~ext ? ext : tmp.length) );\n\t\t\tpattern += !!~o && !~ext ? '(?:/([^/]+?))?' : '/([^/]+?)';\n\t\t\tif (!!~ext) pattern += (!!~o ? '?' : '') + '\\\\' + tmp.substring(ext);\n\t\t} else {\n\t\t\tpattern += '/' + tmp.replace(/[.*+?^${}()|[|[|?])}/g, '');;\n\t\t}\n\t}\n\n\treturn {\n\t\tkeys: keys,\n\t\tpattern: new RegExp('^' + pattern + (loose ? '(?=$|\\/)' : '\\/?$'), 'i')\n\t};\n}\n\nvar RGX = /(\\/|^)([:*][^/]*?)(\\?)?(?=[/.]|$)/g;\n\n// error if key missing?\nexport function inject(route, values) {\n\treturn route.replace(RGX, (x, lead, key, optional) => {\n\t\tx = values[key=='*' ? key : key.substring(1)];\n\t\treturn x ? '/'+x : (optional || key=='*') ? '' : '/' + key;\n\t});\n}\n"
+    },
+    {
+      "id": "mjs-candidate-2",
+      "file": "src/index.mjs",
+      "content": "/**\n * @param {string|RegExp} input The route pattern\n * @param {boolean} [loose] Allow open-ended matching. Ignored with `RegExp` input.\n */\nexport function parse(input, loose) {\n\tif (input instanceof RegExp) return { keys:false, pattern:input };\n\tvar c, o, tmp, ext, keys=[], pattern='', arr = input.split('/');\n\tarr[0] || arr.shift();\n\n\twhile (tmp = arr.shift()) {\n\t\tc = tmp[0];\n\t\tif (c === '*') {\n\t\t\tkeys.push(c);\n\t\t\tpattern += tmp[1] === '?' ? '(?:/(.*))?' : '/(.*)';\n\t\t} else if (c === ':') {\n\t\t\to = tmp.indexOf('?', 1);\n\t\t\text = tmp.indexOf('.', 1);\n\t\t\tkeys.push( tmp.substring(1, !!~o ? o : !!~ext ? ext : tmp.length) );\n\t\t\tpattern += !!~o && !~ext ? '(?:/([^/]+?))?' : '/([^/]+?)';\n\t\t\tif (!!~ext) pattern += (!!~o ? '?' : '') + '\\\\' + tmp.substring(ext);\n\t\t} else {\n\t\t\tpattern += '/' + tmp.replace(/[.*+?^${}()|[|[|?])]/g, '$&');;\n\t\t}\n\t}\n\n\treturn {\n\t\tkeys: keys,\n\t\tpattern: new RegExp('^' + pattern + (loose ? '(?=$|\\/)' : '\\/?$'), 'i')\n\t};\n}\n\nvar RGX = /(\\/|^)([:*][^/]*?)(\\?)?(?=[/.]|$)/g;\n\n// error if key missing?\nexport function inject(route, values) {\n\treturn route.replace(RGX, (x, lead, key, optional) => {\n\t\tx = values[key=='*' ? key : key.substring(1)];\n\t\treturn x ? '/'+x : (optional || key=='*') ? '' : '/' + key;\n\t});\n}\n"
+    }
+  ]
+}

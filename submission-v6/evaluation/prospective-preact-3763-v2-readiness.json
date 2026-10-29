@@ -1,0 +1,41 @@
+{
+  "format": "repolab-prospective-readiness-overlay/v1",
+  "freeze": "c57cd84a70c591520fbd220cdbba5119592eca45c1ef89cf9169d6ccf07694ce",
+  "taskId": "preactjs__preact-3763",
+  "status": "STOPPED_UNKNOWN_SUBMISSION",
+  "knownTaskOriginalOperations": 5,
+  "unknownTaskOriginalSubmissions": 1,
+  "taskOriginalCeiling": 12,
+  "v1RunConsumed": true,
+  "v2RunConsumed": true,
+  "cohortOriginalOperations": 47,
+  "cohortUnknownOriginalSubmissions": 1,
+  "counts": {
+    "selected": 8,
+    "originalBaselineQualified": 4,
+    "currentSetupFailedTasks": 0,
+    "unresolvedTasks": 1,
+    "historicalFailedSetupAttempts": 1,
+    "retainedStoppedQualificationAttempts": 2,
+    "pendingPreparation": 3,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0
+  },
+  "modelCalls": 0,
+  "candidateAdmission": false,
+  "accuracy": null,
+  "validation": {
+    "focusedV1ControllerTests": 14,
+    "focusedV2ControllerTests": 5,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3276,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesRetained": true
+  },
+  "nextAction": "Reconcile V2 missing submission receipt/operation ID without POST retry or changing original records; retain both shared leases until attributable terminal/rejection evidence",
+  "nextFixedTaskAfterResolution": "vuejs__core-11870",
+  "inference": "none",
+  "execution": "five actual Nebius Sandbox V1 original-only operations; V2 submission acceptance unknown; no execution on controller"
+}

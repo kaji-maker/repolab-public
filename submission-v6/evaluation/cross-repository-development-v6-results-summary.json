@@ -1,0 +1,167 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "d5ab96c21723d0e2dfa792e876f14b1a9b783a3d3619e62f0caa268aae2761c8",
+  "scope": "rfdc exposed development retry after two rejected coordinate proposals; all V5 results and the original zero-score pilot preserved",
+  "newInferenceCalls": 1,
+  "newSandboxOperations": 7,
+  "newEstimatedInferenceUsd": 0.0035085,
+  "qualificationReused": "0e70b9680f9f59a0303bf544098bfb81f5ea45a28854ba05b1d6d2e2802dd9a8",
+  "qualificationOperations": 0,
+  "rfdcRetryStatus": "SELECTED_INDEPENDENTLY_INCORRECT",
+  "verifiedDevelopmentRepairs": 2,
+  "originalPilotScore": {
+    "selected": 3,
+    "verified": 0,
+    "preserved": true
+  },
+  "v5Score": {
+    "selected": 3,
+    "verified": 2,
+    "preserved": true
+  },
+  "totalPhaseInferenceCalls": 6,
+  "totalPhaseSandboxOperations": 67,
+  "totalPhaseEstimatedInferenceUsd": 0.039999599999999996,
+  "ledgerBeforeUsd": 0.23825969999999996,
+  "ledgerAfterUsd": 0.24176819999999996,
+  "unsettledCharges": 0,
+  "priorFilesUnchanged": 2463,
+  "credentialAndProjectExclusion": "PASS",
+  "filesScanned": 43,
+  "rows": [
+    {
+      "name": "fast-deep-equal",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "runtime": {
+        "version": "controller-image-node24"
+      },
+      "nativeInventory": {
+        "passing": [
+          626
+        ]
+      },
+      "originalPublic": {
+        "passed": 1,
+        "total": 3
+      },
+      "status": "VERIFIED_FOR_TESTED_SCENARIOS",
+      "inferenceCalls": 2,
+      "qualificationOperations": 6,
+      "repairOperations": 7,
+      "selectedSource": "ac5fe33093dfe82778a3e16b075eb867a8dd4b609def74b098fcc114619a8a26",
+      "independent": [
+        {
+          "passed": 17,
+          "total": 17
+        },
+        {
+          "passed": 17,
+          "total": 17
+        }
+      ],
+      "protocol": "v5"
+    },
+    {
+      "name": "rfdc",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "runtime": {
+        "version": "v20.9.0",
+        "url": "https://nodejs.org/download/release/v20.9.0/node-v20.9.0-linux-x64.tar.gz",
+        "sha256": "f0919f092fbf74544438907fa083c21e76b2d7a4bc287f0607ada1553ef16f60",
+        "evidence": ".github/workflows/ci.yml: Node 20"
+      },
+      "nativeInventory": {
+        "passing": [
+          299
+        ]
+      },
+      "originalPublic": {
+        "passed": 0,
+        "total": 1
+      },
+      "status": "SELECTED_INDEPENDENTLY_INCORRECT",
+      "inferenceCalls": 3,
+      "qualificationOperations": 6,
+      "repairOperations": 7,
+      "selectedSource": "20b72e488e9a6507372bc3bbd98dba46c3d113bdf0efc9e5d05bb3e515cbbaa7",
+      "independent": [
+        {
+          "passed": 6,
+          "total": 12
+        },
+        {
+          "passed": 6,
+          "total": 12
+        }
+      ],
+      "protocol": "v6"
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "qualification": "QUALIFIED_REPORT_REPRODUCED",
+      "runtime": {
+        "version": "controller-image-node24"
+      },
+      "nativeInventory": {
+        "tests": [
+          16
+        ],
+        "pass": [
+          16
+        ]
+      },
+      "originalPublic": {
+        "passed": 1,
+        "total": 2
+      },
+      "status": "VERIFIED_FOR_TESTED_SCENARIOS",
+      "inferenceCalls": 1,
+      "qualificationOperations": 6,
+      "repairOperations": 7,
+      "selectedSource": "e1ef7df2310161834e361c0dce5cd06179e653f89f35d4896fb240f826cfe665",
+      "independent": [
+        {
+          "passed": 6,
+          "total": 6
+        },
+        {
+          "passed": 6,
+          "total": 6
+        }
+      ],
+      "protocol": "v5"
+    }
+  ],
+  "candidateHistory": [
+    {
+      "attempt": 1,
+      "status": "SELECTED",
+      "error": null,
+      "sourceHash": "20b72e488e9a6507372bc3bbd98dba46c3d113bdf0efc9e5d05bb3e515cbbaa7"
+    }
+  ],
+  "offlineReview": {
+    "status": "PASS",
+    "inference": "none",
+    "execution": "offline receipt review; candidate source not executed",
+    "networkAttempts": 0,
+    "inferenceCalls": 0,
+    "sandboxOperations": 0,
+    "evidenceFilesUnchanged": 28,
+    "repairStatus": "SELECTED_INDEPENDENTLY_INCORRECT"
+  },
+  "verifiedPatches": [
+    {
+      "task": "fast-deep-equal",
+      "path": ".repolab/cross-repo-development-v5/fast-deep-equal/tested-source.patch",
+      "bytes": 702,
+      "sha256": "b0ccdf04c8db1f9afff027fb1976ee9e116ddd910c4d787ca30c1cf8741ec122"
+    },
+    {
+      "task": "fast-json-stable-stringify",
+      "path": ".repolab/cross-repo-development-v5/fast-json-stable-stringify/tested-source.patch",
+      "bytes": 603,
+      "sha256": "a6f164eae7f768243a5c2bb0c403a494d882fe944eb857ccf5f6ebde961ef018"
+    }
+  ]
+}

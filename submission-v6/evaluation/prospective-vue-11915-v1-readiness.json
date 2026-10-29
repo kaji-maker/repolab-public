@@ -1,0 +1,49 @@
+{
+  "format": "repolab-prospective-readiness-overlay/v1",
+  "freeze": "ee63c08737890ec9aa8e09ca2dd2ff4a1d9c9e010f740e3312e40f9c3872db75",
+  "taskId": "vuejs__core-11915",
+  "status": "PREPARED_ONLY",
+  "newModelCalls": 0,
+  "newSandboxOperations": 0,
+  "executionAdmission": false,
+  "candidateAdmission": false,
+  "nativeRuntimeQualified": false,
+  "originalReproduced": false,
+  "externalReproductionFetched": false,
+  "fixtureAuthorship": "Authored from frozen issue description; not original jsfiddle bytes",
+  "accuracy": null,
+  "cohortOriginalOperations": 47,
+  "cohortUnknownOriginalSubmissions": 1,
+  "counts": {
+    "selected": 8,
+    "originalBaselineQualified": 4,
+    "unresolvedTasks": 1,
+    "pendingPreparation": 3,
+    "offlinePreparedPending": 3,
+    "unpreparedPending": 0,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0
+  },
+  "validation": {
+    "focusedControllerTests": 8,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3309,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesUnchanged": true,
+    "upstreamSourceExecution": false,
+    "probeExecution": false,
+    "retainedInitialTestFailure": false
+  },
+  "existingExecutionBlocker": {
+    "status": "UNCHANGED_UNKNOWN_SUBMISSION",
+    "executionAdmission": false,
+    "bothSharedLeasesPresent": true
+  },
+  "nextOfflineTask": null,
+  "nextOfflineAction": "Qualify diagnostic-preserving Sandbox transport with synthetic responses",
+  "nextLiveAction": "Resolve Preact 3763 V2 missing submission receipt and qualify diagnostic-preserving transport before a separate original-execution freeze",
+  "inference": "none",
+  "execution": "offline original-source data verification and saved-state inspection; no upstream or probe execution"
+}

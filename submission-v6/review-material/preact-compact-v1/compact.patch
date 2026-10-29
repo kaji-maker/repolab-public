@@ -1,0 +1,87 @@
+diff --git a/src/diff/index.js b/src/diff/index.js
+--- a/src/diff/index.js
++++ b/src/diff/index.js
+@@ -558,10 +558,35 @@
+  * @param {any} value
+  * @param {VNode} vnode
+  */
+-export function applyRef(ref, value, vnode) {
++export function applyRef(ref, value, vnode, refVNode = vnode) {
+ 	try {
+-		if (typeof ref == 'function') ref(value);
+-		else ref.current = value;
++		const cleanup = refVNode._refCleanup;
++		if (value == null) {
++		if (typeof cleanup === 'function') {
++		cleanup();
++		refVNode._refCleanup = undefined;
++		if (typeof ref === 'function') {
++		} else {
++		ref.current = value;
++		}
++		} else {
++		if (typeof ref === 'function') {
++		ref(value);
++		} else {
++		ref.current = value;
++		}
++		}
++		} else {
++		if (typeof ref === 'function') {
++		const result = ref(value);
++		if (typeof result === 'function') {
++		refVNode._refCleanup = result;
++		} else {
++		}
++		} else {
++		ref.current = value;
++		}
++		}
+ 	} catch (e) {
+ 		options._catchError(e, vnode);
+ 	}
+@@ -580,7 +605,7 @@
+ 
+ 	if ((r = vnode.ref)) {
+ 		if (!r.current || r.current === vnode._dom) {
+-			applyRef(r, null, parentVNode);
++			applyRef(r, null, parentVNode, vnode);
+ 		}
+ 	}
+ 
+diff --git a/src/diff/children.js b/src/diff/children.js
+--- a/src/diff/children.js
++++ b/src/diff/children.js
+@@ -97,15 +97,12 @@
+ 
+ 		// Adjust DOM nodes
+ 		newDom = childVNode._dom;
+-		if (childVNode.ref && oldVNode.ref != childVNode.ref) {
+-			if (oldVNode.ref) {
+-				applyRef(oldVNode.ref, null, childVNode);
+-			}
+-			refQueue.push(
+-				childVNode.ref,
+-				childVNode._component || newDom,
+-				childVNode
+-			);
++		if ((childVNode.ref || oldVNode._refCleanup) && oldVNode.ref != childVNode.ref) {
++			if (oldVNode.ref) applyRef(oldVNode.ref, null, childVNode, oldVNode);
++			if (childVNode.ref) refQueue.push(childVNode.ref, childVNode._component || newDom, childVNode);
++		} else if (childVNode.ref && oldVNode !== childVNode) {
++			childVNode._refCleanup = oldVNode._refCleanup;
++			oldVNode._refCleanup = undefined;
+ 		}
+ 
+ 		if (firstChildDom == null && newDom != null) {
+diff --git a/src/internal.d.ts b/src/internal.d.ts
+--- a/src/internal.d.ts
++++ b/src/internal.d.ts
+@@ -135,6 +135,7 @@
+ 		type: (string & { defaultProps: undefined }) | ComponentType<P>;
+ 		props: P & { children: ComponentChildren };
+ 		ref?: Ref<any> | null;
++		_refCleanup?: (() => void) | undefined;
+ 		_children: Array<VNode<any>> | null;
+ 		_parent: VNode | null;
+ 		_depth: number | null;

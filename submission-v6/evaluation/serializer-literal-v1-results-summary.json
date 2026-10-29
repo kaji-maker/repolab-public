@@ -1,0 +1,126 @@
+{
+  "status": "AUDIT_PASS",
+  "freeze": "2c61c149e27dd4d0a45e90ba371a365c90b6ac481e57cbb56fde9f77ae9013dd",
+  "scope": "deterministic compilation of frozen controller-authored literal intents on exposed formatting fixtures; no model repair or unseen-bug claim",
+  "productionPromotion": false,
+  "selectedFixtures": 3,
+  "verifiedFixtures": 3,
+  "inferenceCalls": 0,
+  "estimatedInferenceUsd": 0,
+  "sandboxOperations": 15,
+  "phaseInferenceCalls": 12,
+  "phaseEstimatedInferenceUsd": 0.018480299999999998,
+  "phaseSandboxOperations": 36,
+  "modelStudy": [
+    {
+      "mode": "full-thinking",
+      "selectedSlots": 6,
+      "verified": 0,
+      "truncated": 0,
+      "otherFailed": 6,
+      "blocked": 0,
+      "qualified": false,
+      "inferenceCalls": 6,
+      "costUsd": 0.0118452,
+      "observedReasoningChannels": 6
+    },
+    {
+      "mode": "direct-json",
+      "selectedSlots": 6,
+      "verified": 0,
+      "truncated": 0,
+      "otherFailed": 6,
+      "blocked": 0,
+      "qualified": false,
+      "inferenceCalls": 6,
+      "costUsd": 0.0066351000000000005,
+      "observedReasoningChannels": 0
+    }
+  ],
+  "rows": [
+    {
+      "fixture": "escaped-crlf",
+      "status": "VERIFIED_DETERMINISTIC_FIXTURE",
+      "inferenceCalls": 0,
+      "sandboxOperations": 5,
+      "sourceHash": "c9b7b03b17064082935bf04ad63fc590bee3e6b23ff613c1af222d79bc4a87c4",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          3
+        ],
+        "passed": [
+          3
+        ],
+        "failed": [
+          0
+        ]
+      },
+      "behaviorCases": 5,
+      "nativeRepeats": 2,
+      "behaviorRepeats": 2,
+      "error": null
+    },
+    {
+      "fixture": "duplicate-branches",
+      "status": "VERIFIED_DETERMINISTIC_FIXTURE",
+      "inferenceCalls": 0,
+      "sandboxOperations": 5,
+      "sourceHash": "0dc5a6b2d5329386c87be2fb18e1ec32e54068784e15c8f6bd8442ff8ef8fcf5",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          3
+        ],
+        "passed": [
+          3
+        ],
+        "failed": [
+          0
+        ]
+      },
+      "behaviorCases": 8,
+      "nativeRepeats": 2,
+      "behaviorRepeats": 2,
+      "error": null
+    },
+    {
+      "fixture": "large-context",
+      "status": "VERIFIED_DETERMINISTIC_FIXTURE",
+      "inferenceCalls": 0,
+      "sandboxOperations": 5,
+      "sourceHash": "0fe0e4b04e698df41f99053fee073dd2cea66fe886d715a2c8a247fc882615d8",
+      "native": {
+        "runner": "tap",
+        "tests": [
+          3
+        ],
+        "passed": [
+          3
+        ],
+        "failed": [
+          0
+        ]
+      },
+      "behaviorCases": 24,
+      "nativeRepeats": 2,
+      "behaviorRepeats": 2,
+      "error": null
+    }
+  ],
+  "ledgerBeforeUsd": 0.30207899999999993,
+  "ledgerAfterUsd": 0.30207899999999993,
+  "unsettledCharges": 0,
+  "priorFilesUnchanged": 2902,
+  "credentialAndProjectExclusion": "PASS",
+  "filesScanned": 64,
+  "offlineReview": {
+    "status": "PASS",
+    "networkAttempts": 0,
+    "inferenceCalls": 0,
+    "sandboxOperations": 0,
+    "inference": "none",
+    "execution": "offline receipt review; no source execution",
+    "evidenceFilesUnchanged": 52
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "repolab-preact-guard-live-qualification/v1",
+  "productFreeze": "e50e387594890fcbcff387c1e1e95d90ea857b320105c8c765ecbd226a384449",
+  "workflowId": "f2955074-c7e7-4261-81ff-c2feedec0dfc",
+  "image": "d4c8d3fb-7f4c-48dc-9c81-0522eb247051",
+  "sourceHash": "5a9ae127c966ff9e82bf5e567c8822250c8a01456d537b533c7e351e7aa4a566",
+  "maxModelCalls": 0,
+  "maxSandboxOperations": 2,
+  "maxOperationReads": 120,
+  "maxDeletes": 2,
+  "stages": [
+    "public-A",
+    "public-B"
+  ],
+  "maxRecoveryAttempts": 20,
+  "retryQualification": false,
+  "scope": "Original-only qualification envelope, production guard and default recovery API; not fresh model repair orchestration or accuracy",
+  "uploads": [
+    {
+      "path": "/opt/repolab/native/admission-manifest.json",
+      "sha256": "e55f348aff2ae85c328edbffcba3e01c0f4e454f2fb792c8884a630d50f3c81b",
+      "bytes": 107189
+    },
+    {
+      "path": "/opt/repolab/native/admission-guest.cjs",
+      "sha256": "5c212beee36b43837ec0eb35b365d5463d6d0c220e0abf75cd0befa5087479b1",
+      "bytes": 7190
+    },
+    {
+      "path": "/opt/repolab/native/public.html",
+      "sha256": "8fd66ec23aaa0970a914ed0e46fcd27020633669d901bafc9ea96258469132e3",
+      "bytes": 1417
+    }
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/preact-guard-live-v1.ts",
+      "sha256": "a1e191bdeb6ec3ea55e6def46b5ed0670fa8f3cc65f29a319023ad3170fcdee6"
+    },
+    {
+      "path": "apps/evaluator/preact-guard-live-v1.ts",
+      "sha256": "a6808aca40bd122e6d44e2b0148689cda1c18997da5d094a33e5208b921ff2cd"
+    },
+    {
+      "path": "tests/preact-guard-live-v1.test.ts",
+      "sha256": "1776a1308cfaefa5b460c9d94b2d68e7e7897bc992d8edca712743782d7a26f4"
+    },
+    {
+      "path": "evaluation/PREACT_GUARD_LIVE_V1.md",
+      "sha256": "09a131e022cde5d56ff7070620b81ddb982d988ae5fa23ae53d6b1efe353731c"
+    },
+    {
+      "path": "evaluation/preact-product-repair-v3.json",
+      "sha256": "969064fa43982f118c02bb4c83d8025358c56f6b042b33b8ee660eba28156d55"
+    }
+  ],
+  "digest": "9b2bb81ff1d39b900a11d2c60ef88e8b42c9fe752d75ed1d55a5052c7bb60998"
+}

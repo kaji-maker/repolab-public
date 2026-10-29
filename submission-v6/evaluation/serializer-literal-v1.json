@@ -1,0 +1,175 @@
+{
+  "format": "repolab-deterministic-serializer/v1",
+  "parentFreeze": "f7f1313338343dce8f1d677324b69d37e0dfece6ff2e10c6c63eda6f65ad8ac5",
+  "fixtures": [
+    "escaped-crlf",
+    "duplicate-branches",
+    "large-context"
+  ],
+  "modelCalls": 0,
+  "maxSandboxOperations": 15,
+  "nativeRepeats": 2,
+  "behaviorRepeats": 2,
+  "allGuestNetworking": false,
+  "productionPromotion": false,
+  "scope": "deterministic compilation of frozen controller-authored literal intents on exposed formatting fixtures; no model repair or unseen-bug claim",
+  "assets": [
+    {
+      "path": "packages/repositories/serializer-literal-protocol-v1.ts",
+      "sha256": "497b1e8a0525a58209ddc523b75447b4a45804ee28747370aa3dbdae6910cbc3"
+    },
+    {
+      "path": "packages/repositories/serializer-literal-v1.ts",
+      "sha256": "af2630426590bde2c14c571929e7484a6f654451f75a392b0035ab2d3a4af222"
+    },
+    {
+      "path": "packages/repositories/literal-intents-v1.ts",
+      "sha256": "bbd91ab3955e10d111c79870cc9d64586cbb1b7d4598232625f73ca01dd39d28"
+    },
+    {
+      "path": "apps/repositories/serializer-literal-v1.ts",
+      "sha256": "37dca4c7c5cc58bcae808fcfe8affeca0f5aa26e98bf5c852ad34920c8243ca2"
+    },
+    {
+      "path": "tests/literal-intents-v1.test.ts",
+      "sha256": "6b1e675fad6d0debc7fe24f7c9ffa77d6e91f7fa96e2d11c883f5dba1aa99510"
+    },
+    {
+      "path": "evaluation/SERIALIZER_LITERAL_V1.md",
+      "sha256": "22487c81401dfff30b14724b3d317a0c78a0164005ee0bfc9fccf3c6af3b2e1f"
+    },
+    {
+      "path": "evaluation/serializer-literal-v1-baselines.json",
+      "sha256": "b52c9b3d83a4a3cee4a10338b5a9b61180604e415cb1b3175c42b97e89e12c85"
+    },
+    {
+      "path": "repositories/serializer-literal-v1/escaped-crlf/intent.json",
+      "sha256": "b58a69f40e2ddd6c63765023a095dda69b08d824104e56a0bfa405c40ed030fc"
+    },
+    {
+      "path": "repositories/serializer-literal-v1/duplicate-branches/intent.json",
+      "sha256": "7862f2a393243e45bb62f573edf01942613c7df16c1068b4f2dd60d8a618e1b5"
+    },
+    {
+      "path": "repositories/serializer-literal-v1/large-context/intent.json",
+      "sha256": "7e1ce502b57216d24fe51244f7dc7a7aa72ea051bce89216c4c5f716704e83f4"
+    },
+    {
+      "path": "packages/repositories/serializer-study-protocol-v2.ts",
+      "sha256": "bcabd241fd2620f24012484c7a12963152cf39360856e2ad4f611b8593789069"
+    },
+    {
+      "path": "packages/repositories/serializer-study-v2.ts",
+      "sha256": "cf7b0971904264234fa362750628b2da99983c609fe5124a29c356facb4c3580"
+    },
+    {
+      "path": "packages/providers/nebius-format-v1.ts",
+      "sha256": "2d68596797ce870f42459c78e77d7a8e419c3b011005ccf7331a7bac9d71a876"
+    },
+    {
+      "path": "packages/repositories/source-edits-v3.ts",
+      "sha256": "bcae84805d048861b78b5f774a25e0371e963b85c7ebb6d835b5509e831807aa"
+    },
+    {
+      "path": "packages/repositories/source-edits-v2.ts",
+      "sha256": "4ad1b86cb415a714a7217b91cbabfb283e9c5476eaffe746c2ed08a8846e5d69"
+    },
+    {
+      "path": "packages/repositories/cross-runtime-v2.ts",
+      "sha256": "523b5769b4689c4e8a1c9b932aad06a9dd5e2525e6052690c642082b2a09d690"
+    },
+    {
+      "path": "packages/execution/cross-repo-sandbox-v1.ts",
+      "sha256": "d3fac4719169a3f55e71578faa26711ab963c8b94a3a0471e6688a156c1942ec"
+    },
+    {
+      "path": "packages/execution/fresh-native-signature-v1.ts",
+      "sha256": "f2c6fec989a08961d0dc5245fc2300ad581831423387206eb07d6bcf88b29349"
+    },
+    {
+      "path": "repositories/fresh-pilot-v3/driver.cjs",
+      "sha256": "1e9864d8bdca392e7d2a7c4e523e4d3b8f1077382119fa8a1c338b5224edb6b2"
+    },
+    {
+      "path": "repositories/cross-repo-v1/child.cjs",
+      "sha256": "d844ca28a33a6aa30443e0f9c5ab10312c5c7bb1ffb6d01463a55121e4de5706"
+    },
+    {
+      "path": "apps/repositories/serializer-study-v2.ts",
+      "sha256": "1c7df078e70a7eee1f6de9a43dad931d155dd77fadc22c7685379aa8adc1e874"
+    },
+    {
+      "path": "tests/serializer-study-v2.test.ts",
+      "sha256": "3a73ecc2b02076277e624908fececd60a87ca0e645c5721c8848761ef97d99af"
+    },
+    {
+      "path": "evaluation/SERIALIZER_STUDY_V2.md",
+      "sha256": "187240d577baae09ac0077cff5f5ade9ffec96d647959593785e514eaf8e3985"
+    },
+    {
+      "path": "repositories/serializer-study-v2/escaped-crlf/manifest.json",
+      "sha256": "151177b9142d5ee9bfc13cae5bf18a176cdf11f0edf043218f22dbf282db9650"
+    },
+    {
+      "path": "repositories/serializer-study-v2/escaped-crlf/original.tar.gz",
+      "sha256": "d4bc2db9734a513d993d0ee0aa3a36e50f46480f61163b1f872a47a52e934fa9"
+    },
+    {
+      "path": "repositories/serializer-study-v2/escaped-crlf/package.json",
+      "sha256": "1bdeb081334032d1b7b0f36629b7c6dbf7399a41cea9ca0ea43c207b7c815e1e"
+    },
+    {
+      "path": "repositories/serializer-study-v2/escaped-crlf/native.test.cjs",
+      "sha256": "b817c917b45c9d7540efb44a53e37ba222f196b087257ddad8bc8014b112d6a0"
+    },
+    {
+      "path": "repositories/serializer-study-v2/escaped-crlf/index.js",
+      "sha256": "5b2b3918d389d22d392c53565c9d8096d96fc3d1e769100ae401557f643676f9"
+    },
+    {
+      "path": "repositories/serializer-study-v2/duplicate-branches/manifest.json",
+      "sha256": "a8cb62cf378c3221613a7cf6704c8bbd46e559dbb0eb2c7f8430010562105423"
+    },
+    {
+      "path": "repositories/serializer-study-v2/duplicate-branches/original.tar.gz",
+      "sha256": "c91f0ae84078db129d36e679bfd951e1ff81b1be2d88a7c39031a6e47be69ea9"
+    },
+    {
+      "path": "repositories/serializer-study-v2/duplicate-branches/package.json",
+      "sha256": "1bf8ea869c92d5e6c6a6a3f9e299ae34dc5cef272cda62671fc53671c0a39126"
+    },
+    {
+      "path": "repositories/serializer-study-v2/duplicate-branches/native.test.cjs",
+      "sha256": "b817c917b45c9d7540efb44a53e37ba222f196b087257ddad8bc8014b112d6a0"
+    },
+    {
+      "path": "repositories/serializer-study-v2/duplicate-branches/index.js",
+      "sha256": "12194881bba2ebf202bae1cd70f5ad5b51fb252402f718ddd0a5d182f81478bb"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/manifest.json",
+      "sha256": "76d05e59bd8f7809acb9cf5b1c1ce4a6366088adf646842d8fb107f691dea9bf"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/original.tar.gz",
+      "sha256": "6b4df725e6fa3b82f988d13f3a425c22305614d3e21861f47215909a859d7ba3"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/package.json",
+      "sha256": "5ced28faba494a3813e1abb8ae519e0589b3711169674b6ec037a38cf48f32f6"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/native.test.cjs",
+      "sha256": "b817c917b45c9d7540efb44a53e37ba222f196b087257ddad8bc8014b112d6a0"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/index.js",
+      "sha256": "89e6475d51f7219c9aa18916fdac84be1dd7ea93e301bab660080c2460b0ad42"
+    },
+    {
+      "path": "repositories/serializer-study-v2/large-context/prefix.js",
+      "sha256": "87a1303816a2535d090eca158ce69f77406386c382df600404c8d9cc5d611a91"
+    }
+  ],
+  "digest": "2c61c149e27dd4d0a45e90ba371a365c90b6ac481e57cbb56fde9f77ae9013dd"
+}

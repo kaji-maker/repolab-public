@@ -1,0 +1,117 @@
+{
+  "format": "repolab-development-study/v2",
+  "baseProtocolDigest": "5a928ee3b46ee970cc533f1b1f2f7fa24a7e98cb8ff2713c8290120f4f6be3fe",
+  "previousStudyDigest": "b44cd230ac2b57220a041e19a27f37cbbab3dbd62d45cf816b953c1a0ff57a21",
+  "policyVersion": "pure-source-diagnostics-v2",
+  "contractVersion": "nonnullable-grounded-contract-v2",
+  "repairPromptVersion": "complete-javascript-no-comments-v2",
+  "frozenAt": "2026-10-07T16:06:43.418Z",
+  "scope": "three-exposed-development-tasks-no-held-out-claims",
+  "schedule": [
+    {
+      "task": "booking-timezone",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "booking-timezone",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "B",
+      "repetition": 1
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "checkout-quantity",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "C",
+      "repetition": 1
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "A",
+      "repetition": 1
+    },
+    {
+      "task": "clsx-object-push",
+      "arm": "B",
+      "repetition": 1
+    }
+  ],
+  "maxCandidates": 2,
+  "maxCalls": 6,
+  "maxOperations": 24,
+  "runInferenceCapUsd": 0.1,
+  "allocationUsd": 0.9,
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "parameters": {
+    "max_tokens": 4096,
+    "temperature": 1,
+    "top_p": 0.95,
+    "reasoning_effort": "low",
+    "chat_template_kwargs": {
+      "enable_thinking": true,
+      "low_effort": true,
+      "force_nonempty_content": true
+    }
+  },
+  "rates": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "assets": [
+    {
+      "path": "evaluation/STUDY_V2.md",
+      "sha256": "f94eeec818df9c28f008d3fae43f9de473f32ef61d2897f03cbde22a58620595"
+    },
+    {
+      "path": "packages/evaluation/study-contract-v2.ts",
+      "sha256": "457bd87f8909354e01e1c8fdfc62401c6daa64e56f0efbcb26ecb06ac4652ccb"
+    },
+    {
+      "path": "packages/evaluation/study-diagnostics-v2.ts",
+      "sha256": "b1570ad6267824ece8b34c04ff0cb6baccece41d14cf31e448c0d18ce8c98fc1"
+    },
+    {
+      "path": "packages/evaluation/study-policy-v2.ts",
+      "sha256": "42a61b0b36e345d955fe29bec7fbe941e1fba24de52e2669919fec6e611a1980"
+    },
+    {
+      "path": "packages/evaluation/study-protocol-v2.ts",
+      "sha256": "de45946d3f140a1961c8d0c7997a1d32572b9dbb5a56399081063ed159a925a9"
+    },
+    {
+      "path": "packages/evaluation/study-runner-v2.ts",
+      "sha256": "0410d7148c88f6f696e57bf18bc0b8b0a2080a47de72f97b79e81e17ab4f2108"
+    },
+    {
+      "path": "packages/evaluation/study-metrics-v2.ts",
+      "sha256": "ef2abcdac2212f6a5e537c2b367d8899239fce3ebf076aca74b699a3650c045a"
+    },
+    {
+      "path": "apps/evaluator/study-v2.ts",
+      "sha256": "aa632de7e5075a55648938806158161ab7d473ea57f9f914586e56950977c2b3"
+    },
+    {
+      "path": "tests/study-v2.test.ts",
+      "sha256": "df98a8389a7cf745a9c9e02e659a521a8102cd7b9f4a8cb6b7e35c2b9414b19c"
+    }
+  ],
+  "digest": "562a9df42be9dd1c8d9627b2f627654e0a1857ca6780d8da8117bcab43a03109"
+}

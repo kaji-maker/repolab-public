@@ -1,0 +1,58 @@
+{
+  "format": "repolab-preact-product-guard-results/v1",
+  "status": "SIMULATION_QUALIFIED_NOT_LIVE_QUALIFIED",
+  "date": "2026-10-16",
+  "freeze": "e50e387594890fcbcff387c1e1e95d90ea857b320105c8c765ecbd226a384449",
+  "validation": {
+    "productTests": {
+      "tests": 19,
+      "passed": 19,
+      "failed": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "durationMs": 343554.563379,
+      "logSha256": "dbf229019ad5193ff502f47bc6aaf5deb4b595571f63095b2de4aa1b126d297f"
+    },
+    "regressionTests": {
+      "tests": 18,
+      "passed": 18,
+      "failed": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "logSha256": "6b875513b460907f329f00cb014b3a88dfa9dc7c81c5d087ff381f7523b1e585"
+    },
+    "supplementalFreezeCounterexamples": 3,
+    "typecheck": "PASS",
+    "typecheckLogSha256": "d358f6920e54098863f1274fb9ed2769cc61ddb62a3494cffd1ee5256f7d4ae3",
+    "productBuild": "PASS",
+    "buildConfig": "vite.native-v8.config.ts",
+    "buildLogSha256": "dd5db1f48361331765f5f349dd6ad1646299f9b677e9808572559a3fad948b8e",
+    "browser": {
+      "status": "PASS",
+      "syntheticBackend": true,
+      "viewports": [
+        1440,
+        390,
+        320
+      ],
+      "workflow": "unknown execution -> read-only recovery -> remains unverified -> synthetic start -> cancellation",
+      "resultSha256": "e03b5f5b9e88e0e060206a7434fb50eba67ec2399e953979cfbbf2982fcfd577"
+    },
+    "fullControllerSuiteThisIncrement": "NOT_RUN; prior 739-test pass predates this integration"
+  },
+  "actualInferenceCalls": 0,
+  "actualSandboxOperations": 0,
+  "provenance": {
+    "inference": "none; model responses in controller tests are synthetic",
+    "execution": "simulation; no generated or upstream source executed on controller"
+  },
+  "historicalJsonEvidenceChecked": 3003,
+  "historicalJsonEvidenceChanged": 0,
+  "limitations": [
+    "Not a live Preact cancellation/recovery qualification",
+    "Historical replay transports unchanged",
+    "No repair accuracy improvement measured",
+    "No separate-machine or human-review qualification"
+  ],
+  "next": "Freeze a bounded original-only Preact Sandbox cancellation/recovery qualification with a hard zero-inference boundary"
+}

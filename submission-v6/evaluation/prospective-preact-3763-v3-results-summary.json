@@ -1,0 +1,105 @@
+{
+  "status": "STOPPED_UNQUALIFIED_READ_ONLY_RESOLVED",
+  "freeze": "cd96116fce0a9a6ee3071e7627b72a96028f00d5e06ee70e431d00ea096726bf",
+  "source": {
+    "files": 321,
+    "archiveBytes": 755963,
+    "archiveSha256": "58878a19db0d6b5d8b265aee37fc542d0ff5ef77a8e5c7d4439c3e89682893ea",
+    "gitTreeSha1": "b8a44b7c82853ab9e8688d6ae4c6bcd87e7ae4bc",
+    "version": "10.11.1",
+    "lockSha256": "49d9c0348ef7643cdfc8a88b6a2a54fb0d7322778148ff1e7175a42dceddc66c",
+    "nodeTestFiles": 6
+  },
+  "previousOperations": 5,
+  "operations": 5,
+  "operationIds": [
+    "01a15d09-4d3c-7731-95ce-775453bba2ba",
+    "01a15d09-6814-7502-84e8-143953bb94ee",
+    "01a15d09-8315-77c4-b5ac-1aa5c0db87b2",
+    "01a15d09-cd23-7556-b50a-47e21996d340",
+    "01a15d09-eaa7-71b3-928b-79592cf81848"
+  ],
+  "taskOriginalOperations": 10,
+  "taskOriginalCeiling": 12,
+  "validatedSlots": [
+    "lint",
+    "mocha-A",
+    "browser-A",
+    "reproduction-A"
+  ],
+  "readOnlyResolvedSlot": "mocha-B",
+  "unrunSlots": [
+    "browser-B",
+    "reproduction-B"
+  ],
+  "rawState": "UNKNOWN",
+  "recoveryVerified": false,
+  "allFiveOperationsTerminalSuccess": true,
+  "sharedLocksPresent": false,
+  "unknownSubmissions": 0,
+  "workflowResumable": false,
+  "qualificationRejectedDespiteRecovery": true,
+  "typeResults": {
+    "passed": [
+      16
+    ],
+    "pending": [
+      2
+    ]
+  },
+  "transportRequests": 17,
+  "instancePosts": 5,
+  "metadataGets": 12,
+  "http500MetadataGets": 1,
+  "priorJsonFilesPreserved": 3387,
+  "modelCalls": 0,
+  "candidateAdmission": false,
+  "inference": "none",
+  "execution": "Five actual Nebius Sandbox original-only operations; final operation resolved by one exact-ID GET. Keyless saved-data audit; no new execution.",
+  "taskId": "preactjs__preact-3763",
+  "commit": "e968a5a4000dfa9bec7e8d7b26543b23def6d29d",
+  "mocha": {
+    "passed": 29,
+    "skipped": 0,
+    "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93"
+  },
+  "browser": {
+    "passed": 1008,
+    "skipped": 13,
+    "caseDigest": "09a7c1da18d5bd0d6f35c0ae0d6878bef0cf14296692c874e62d7f3f8186273a"
+  },
+  "callbackModelReproductionRuns": 1,
+  "callbackModel": "Reviewed synchronous subscribe callback; no RxJS implementation/version supplied",
+  "httpFailure": {
+    "method": "GET",
+    "status": 500,
+    "operationId": "01a15d09-eaa7-71b3-928b-79592cf81848",
+    "providerRequestId": null,
+    "cause": "Provider root cause unknown; diagnostic records only the HTTP failure"
+  },
+  "readOnlyRecoveryGets": 1,
+  "focusedSyntheticGroups": 8,
+  "matchingKeylessPlanAudits": 2,
+  "matchingStoppedDataAudits": 2,
+  "typecheck": true,
+  "preexecutionCorrectionsRetained": true,
+  "consumedWorkflowResumable": false,
+  "newOriginalOperationsAutomaticAdmission": false,
+  "remainingTaskOperationBudget": 2,
+  "insufficientBudgetForFreshQualification": true,
+  "cohort": {
+    "selected": 8,
+    "qualifiedOriginals": 4,
+    "stoppedUnqualified": 1,
+    "otherPreparedPending": 3,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0,
+    "confirmedOriginalExecutionOperations": 52,
+    "providerRejectedPosts": 1,
+    "unknownSubmissions": 0,
+    "accuracy": null
+  },
+  "cumulativeInferenceEstimateUsd": 0.3490722,
+  "billingConfirmed": false,
+  "nextAction": "Qualify bounded retries for exact-ID read-only status GETs in a separate future transport profile; then freeze Vue 11870 original execution. Never resume Preact V1/V2/V3 or exceed its original operation ceiling."
+}

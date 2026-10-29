@@ -1,0 +1,141 @@
+{
+  "format": "repolab-vue-native/v3",
+  "parentDigest": "2ada74c6196b7cd3515ac1a19ed79b81aded6389b1c85d1984610ffe39f636d1",
+  "feasibilityParentDigest": "1abc6795d08f0e3e404a4bcdb811b3ea5bd31d0004d53743be77ab58d7b02a1f",
+  "previousFailedFreeze": "8b49eaa11b0ba5b1fb0bbe57a875d6bc9325972d5fdb5f366eff919eea9c4675",
+  "taskId": "vuejs__core-11899",
+  "baseCommit": "706d4ac1d0210b2d9134b3228280187fe02fc971",
+  "gitTreeSha1": "89a8df40e9410ffd7d68b5c25df4bf55fd95a2fc",
+  "archiveSha256": "1b6614f714c58464a223a853b2fa80afa20aa135286a441789bf8a8268893a6d",
+  "classification": "bug-regression",
+  "image": "e9a27985-c3f3-33f0-a138-4d14f9744788",
+  "inferenceCalls": 0,
+  "modelAdmission": false,
+  "docusaurusStatus": "UNSUPPORTED_RETAINED_IN_DENOMINATOR",
+  "selectedExternalDenominator": 3,
+  "slots": [
+    "prepare",
+    "build",
+    "protect",
+    "integrity",
+    "unit-A",
+    "reproduction-A",
+    "unit-B",
+    "reproduction-B"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/vue-native-v3.ts",
+      "sha256": "8876039f5ba32018d2685788f30bc100c7fe595eed2e8944f014cd8b640669e1"
+    },
+    {
+      "path": "packages/execution/vue-native-v3.ts",
+      "sha256": "d8cadf70e0d93bef27eb66fc7a46b6e3809e852d79441108d9f3924e7e026541"
+    },
+    {
+      "path": "apps/evaluator/vue-native-v3.ts",
+      "sha256": "6eda7cfcbd5baed38c3d88d680e12eba92e1eb269c9b1ab78bf25c7a3196dad2"
+    },
+    {
+      "path": "tests/vue-native-v3.test.ts",
+      "sha256": "6ce5d628a133527935bbb916e6b7b5d40dc785f57a8ac77ac9c71b98715451f6"
+    },
+    {
+      "path": "evaluation/VUE_NATIVE_V3.md",
+      "sha256": "6a3adf8877eced4f6acba228c7c64832413d5ea3f318c1176175817b8a59c926"
+    },
+    {
+      "path": "repositories/vue-native-v3/guest.cjs",
+      "sha256": "1e1049f78b4a9c713914dfbe9ebb406a3310aac06b56d6fc3aa189313fb95716"
+    },
+    {
+      "path": "fixtures/vue-native/original-manifest.json",
+      "sha256": "9116b11c988a5df1b55f6ab94b33ad34568cfd8d579463d54da3f368036e28b8"
+    },
+    {
+      "path": "fixtures/vue-native/node20-image.json",
+      "sha256": "17e17fa93dd7b5135a47082bbb23ccd44af678989ef10140900508ed589ab14d"
+    },
+    {
+      "path": "fixtures/vue-native/baseline-identities-v1.json",
+      "sha256": "0649def3b2b18c91b836c37e71d28d22381858252382e77bc3b54a2e73b1205f"
+    },
+    {
+      "path": "repositories/vue-native-v1/original.tar.gz",
+      "sha256": "1b6614f714c58464a223a853b2fa80afa20aa135286a441789bf8a8268893a6d"
+    },
+    {
+      "path": "repositories/vue-native-v1/LICENSE",
+      "sha256": "49190d1f742dd61e47fe816df4963e5186a2a62100d9122f9883a60ea32973ac"
+    },
+    {
+      "path": "repositories/vue-native-v1/reproduction.cjs",
+      "sha256": "52961ffe6500cd73fd88548a4c1710b468ed77820f491faecca212feb0b7f7f8"
+    },
+    {
+      "path": "repositories/vue-native-v1/guest.cjs",
+      "sha256": "ca8b881cd31bccaa0041e3a33b1016290be613cf6e3d1acba3faaca821c09778"
+    },
+    {
+      "path": "packages/evaluation/vue-native-v1.ts",
+      "sha256": "b3d9012f2d2d6adbd4fae04457e6272407f1ca257cda9bf23d2bb3279d4e4bea"
+    },
+    {
+      "path": "packages/execution/vue-native-v1.ts",
+      "sha256": "91ef5b52a704782e33ba1734408e64e6a4f6583c0d22e8824150702051979318"
+    },
+    {
+      "path": "apps/evaluator/vue-native-v1.ts",
+      "sha256": "9f74d64d03190ac960a71205a8ebe6cf37519f48a4f399d6dda840205810a001"
+    },
+    {
+      "path": "tests/vue-native-v1.test.ts",
+      "sha256": "7a3c52a80c46eafaa01c0041a86923675fb863784781aab5dcfd0f96619719b5"
+    },
+    {
+      "path": "evaluation/VUE_NATIVE_V1.md",
+      "sha256": "079f0a527024f6a08303ef28d5a98eed28cc24d5f8ce61f2ba3b7cb6ac50b645"
+    },
+    {
+      "path": "evaluation/vue-native-v1.json",
+      "sha256": "fcf28e38b7036e4eb4fbafea21e4694cef016dfa315a1534e0ae47f32ae74461"
+    },
+    {
+      "path": "evaluation/vue-native-v1-results-summary.json",
+      "sha256": "433c56a07d428f1eb0b235ce0308f95358b27cdeb8edd06478ce5d69b00bc792"
+    },
+    {
+      "path": "repositories/vue-native-v2/guest.cjs",
+      "sha256": "d621978e2cc7432edf4825cf84c6610972e7ae37229b64cec3a1170f4b78c76b"
+    },
+    {
+      "path": "packages/evaluation/vue-native-v2.ts",
+      "sha256": "dc643b21609cd59fd2d0cac64c7e5ba0396ca18e0e5b41c1cc7d593a0f04d9d5"
+    },
+    {
+      "path": "packages/execution/vue-native-v2.ts",
+      "sha256": "8b7d906b68e66a4314eee842469994733d35f5249ff8b9f34b9c0770bb94bc3c"
+    },
+    {
+      "path": "apps/evaluator/vue-native-v2.ts",
+      "sha256": "d27f6571d38a7658ce6375f2f52eedbf7d7fee5c59edb031693d9579ad16dfcb"
+    },
+    {
+      "path": "tests/vue-native-v2.test.ts",
+      "sha256": "780514ec073d1770a8406afb7f02ad400389f12d21223a8b0829091dc1e1faed"
+    },
+    {
+      "path": "evaluation/VUE_NATIVE_V2.md",
+      "sha256": "b78b6ed9a0f05aa0070d72df1285d28cd13c8952666b80cb2a1af347009c295c"
+    },
+    {
+      "path": "evaluation/vue-native-v2.json",
+      "sha256": "28b0ea581acb063293efb1070cc92b8670bb9e291151b54728da0ae49794e92b"
+    },
+    {
+      "path": "evaluation/vue-native-v2-results-summary.json",
+      "sha256": "a6bc6f4e0adbe22929a1020dda4ff305b01c49a5c09eb5d1a922f855465d753a"
+    }
+  ],
+  "digest": "45668087c0c5138955087956c88f969c531d918e47162561126df25b1c98c5a9"
+}

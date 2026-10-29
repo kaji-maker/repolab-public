@@ -1,0 +1,49 @@
+{
+  "format": "repolab-preact-native-result/v4",
+  "freeze": "2cc3324ead3dbee3f85c6c1b0ba72c1a9fca6b725f417871126cc2b450c9bd75",
+  "status": "REPORTING_GATE_FAILED",
+  "operations": 8,
+  "operationIds": [
+    "01a12eab-a1b1-7723-940c-412e97989b8c",
+    "01a12eac-cf2a-7160-a142-024cba241936",
+    "01a12ead-07a4-74f8-a6ff-64d1ca85242a",
+    "01a12ead-1d24-707b-8b63-bbaa4d7e3e01",
+    "01a12ead-2439-7138-9b34-7099683337ec",
+    "01a12ead-3514-7524-a5d4-d336d348bead",
+    "01a12ead-4117-71e1-8bb7-43676632169f",
+    "01a12ead-56a0-76d6-be00-3b55bd5213e2"
+  ],
+  "passedCommands": [
+    "prepare",
+    "build",
+    "protect",
+    "integrity",
+    "lint",
+    "mocha-A",
+    "types",
+    "browser-A"
+  ],
+  "failedGate": "duplicate browser title identity",
+  "remainingSlotsUnrun": 4,
+  "nativeCounts": {
+    "mocha": {
+      "passed": 29,
+      "pending": 0
+    },
+    "types": {
+      "passed": 17,
+      "pending": 2
+    },
+    "browser": {
+      "passed": 1173,
+      "skipped": 11,
+      "failed": 0
+    }
+  },
+  "inference": "none",
+  "execution": "nebius-sandbox",
+  "inferenceCalls": 0,
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "reason": "Two legitimate original browser titles repeat; all events must retain distinct receipt identities"
+}

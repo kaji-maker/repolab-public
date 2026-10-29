@@ -1,0 +1,29 @@
+{
+  "format": "repolab-preact-native-result/v2",
+  "freeze": "865e01356836a6b52b64803cd6c51cba7b6289dd2298d86de78d139464025d83",
+  "status": "ADAPTER_EXECUTABLE_FAILED",
+  "operations": 6,
+  "operationIds": [
+    "01a12ea1-ccfb-7664-9a14-bdf0f80a1224",
+    "01a12ea2-c817-740b-a95c-b58cc46ba8ca",
+    "01a12ea2-f0f3-7749-b7ee-f4ae7cbbea63",
+    "01a12ea2-f7f9-7388-8d69-f4e502b35162",
+    "01a12ea2-fef0-7792-b72a-e584708eb1bc",
+    "01a12ea3-0aca-775b-9388-af5a9f30f63d"
+  ],
+  "passedStages": [
+    "prepare",
+    "build",
+    "protect",
+    "integrity",
+    "lint"
+  ],
+  "failedStage": "mocha-A",
+  "remainingSlotsUnrun": 6,
+  "inference": "none",
+  "execution": "nebius-sandbox",
+  "inferenceCalls": 0,
+  "modelAttempts": 0,
+  "modelAdmission": false,
+  "reason": "Adapter used bin/mocha.js; pinned original Mocha 9.2.2 executable is bin/mocha"
+}

@@ -1,0 +1,48 @@
+{
+  "format": "repolab-prospective-readiness-overlay/v1",
+  "scope": "synthetic Sandbox transport/controller qualification only",
+  "freeze": "34d1982a844531ca98401d542676ddb3ab554b33ecfb1b3d0030f157bd47869f",
+  "status": "QUALIFIED_OFFLINE",
+  "protocolStatus": "OFFLINE_PROTOCOL_FROZEN",
+  "newModelCalls": 0,
+  "newSandboxOperations": 0,
+  "executionAdmission": false,
+  "candidateAdmission": false,
+  "existingReceiptResolved": false,
+  "liveTransportQualified": false,
+  "productIntegration": false,
+  "accuracy": null,
+  "counts": {
+    "selected": 8,
+    "originalBaselineQualified": 4,
+    "unresolvedTasks": 1,
+    "pendingOriginalQualification": 3,
+    "offlinePreparedPending": 3,
+    "unpreparedPending": 0,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0,
+    "confirmedOriginalSandboxOperations": 47,
+    "unknownOriginalSubmissions": 1
+  },
+  "validation": {
+    "focusedControllerGroups": 17,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3319,
+    "historicalCodeUnchanged": 4,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesUnchanged": true,
+    "providerRequests": 0,
+    "guestExecution": false,
+    "retainedTypecheckPreflightFailure": true
+  },
+  "existingExecutionBlocker": {
+    "status": "UNCHANGED_UNKNOWN_SUBMISSION",
+    "executionAdmission": false,
+    "bothSharedLeasesPresent": true
+  },
+  "nextAction": "Obtain attributable provider acceptance/operation identity or rejection evidence for Preact 3763 V2; a redacted reconciliation packet can be prepared offline without contacting the provider",
+  "inference": "none",
+  "execution": "synthetic HTTP functions, temporary controller journals/leases and saved-state audits; no provider or guest execution"
+}

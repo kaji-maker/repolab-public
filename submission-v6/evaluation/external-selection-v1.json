@@ -1,0 +1,43 @@
+{
+  "format": "repolab-external-selection/v1",
+  "dataset": "SWE-bench/SWE-bench_Multilingual",
+  "revision": "846e647b9f33c0b51b739d005d13d85493c9af09",
+  "split": "test",
+  "path": "data/test-00000-of-00001.parquet",
+  "eligibleRepositories": [
+    "axios/axios",
+    "babel/babel",
+    "facebook/docusaurus",
+    "immutable-js/immutable-js",
+    "mrdoob/three.js",
+    "preactjs/preact",
+    "vuejs/core"
+  ],
+  "excludedPriorRepositories": [
+    "lukeed/clsx",
+    "developit/dlv",
+    "lukeed/dset",
+    "lukeed/mri"
+  ],
+  "seed": "repolab-external-js-v1/2026-10-12",
+  "rank": "ascending SHA256(seed + newline + instance_id), then instance_id",
+  "selection": "first three distinct repositories in ranked eligible pool; no replacement for unsupported or failed tasks",
+  "count": 3,
+  "decodedFields": [
+    "instance_id",
+    "repo",
+    "base_commit",
+    "problem_statement",
+    "version"
+  ],
+  "forbiddenFields": [
+    "patch",
+    "test_patch",
+    "hints_text",
+    "FAIL_TO_PASS",
+    "PASS_TO_PASS",
+    "environment_setup_commit"
+  ],
+  "provenance": "externally curated public tasks; new to project; model pretraining exposure unknown; no human independent selection claim",
+  "digest": "40789d8fa23300cdc01a2c00e22152615e61126a5145a8d936f6ea9be16cf1ce"
+}

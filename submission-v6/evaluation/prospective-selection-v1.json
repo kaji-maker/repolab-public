@@ -1,0 +1,13 @@
+{
+  "format": "repolab-prospective-selection-policy/v1",
+  "dataset": "SWE-bench/SWE-bench_Multilingual",
+  "revision": "846e647b9f33c0b51b739d005d13d85493c9af09",
+  "datasetSha256": "92abca7cb527b41a9f66d03a26ce441ff7319e3a49f985998fd56be4bb9b08b2",
+  "repositories": ["preactjs/preact", "vuejs/core"],
+  "excludedTaskIds": ["facebook__docusaurus-8927", "preactjs__preact-4436", "vuejs__core-11899"],
+  "perRepository": 4,
+  "count": 8,
+  "seed": "repolab-prospective-paired-v1/2026-10-16",
+  "replacementAfterFailure": false,
+  "scope": "Public benchmark, two repository owners, new repair attempts; prior metadata projection and unknown training exposure disclosed"
+}

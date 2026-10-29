@@ -1,0 +1,92 @@
+{
+  "format": "repolab-preact-browser-results/v4",
+  "status": "PASS",
+  "freeze": "4d211611dc902224615bf6f03c98e937630969565ee53f593464e86258e7eafc",
+  "originRunId": "f8bfb85d-6766-4a9e-a762-e362d011559c",
+  "replayId": "a150f38b-5341-4163-b4bc-6ddef2919008",
+  "sourceHash": "68c9000eec6e0ed71f140c8af231309064d1e7447414f00136cbb91b4e3eb0d3",
+  "packDigest": "986ae095cd7224c608b19cfd8d4e00a33dcc779a858fc79faf6a6c5468a5b841",
+  "inferenceCalls": 0,
+  "sandboxOperations": 14,
+  "estimatedInferenceUsd": 0,
+  "operationIds": [
+    "01a13d08-7dd9-77ec-9933-d4d5154598f3",
+    "01a13d08-932c-74b4-a279-f9db6e0197fd",
+    "01a13d08-e250-72a7-b1ae-737fa4b4fda6",
+    "01a13d09-1566-7380-afb7-04441b87011d",
+    "01a13d09-2522-7273-8a3b-dbcd2243c6fc",
+    "01a13d09-3e36-74f4-9111-06d18c97c7e1",
+    "01a13d09-52d5-751a-afcc-966be1f8d91e",
+    "01a13d09-71b7-7563-85a8-ca6b3ffdcc29",
+    "01a13d09-af46-7612-86c0-b80db3d7ef68",
+    "01a13d09-c40f-70a7-a140-a3dcf0cdc347",
+    "01a13d09-d849-7273-9c90-d1ed4633bbe5",
+    "01a13d0a-1599-7142-a78a-a2daee208567",
+    "01a13d0a-3390-73d6-979c-abec1bb04350",
+    "01a13d0a-476d-7724-b3e7-297fddf41df4"
+  ],
+  "native": {
+    "mocha": {
+      "passed": 29,
+      "skipped": 0
+    },
+    "browser": {
+      "passed": 1173,
+      "skipped": 11
+    },
+    "types": {
+      "passed": 17,
+      "pending": 2
+    }
+  },
+  "independent": {
+    "passed": 10,
+    "total": 10
+  },
+  "independentRepeats": 2,
+  "validation": {
+    "focusedTests": 20,
+    "typecheck": "PASS",
+    "build": "v7 PASS",
+    "browserFileImport": "PASS",
+    "exactDownloadBytes": "PASS",
+    "viewports": [
+      1440,
+      390,
+      320
+    ],
+    "apiMutationCount": 1,
+    "keylessRestart": "PASS",
+    "keylessApiMutations": 0,
+    "earlierApiRoutesPreserved": 5,
+    "earlierApiRecordsPreserved": 8
+  },
+  "preservation": {
+    "priorPrivateFiles": 1730,
+    "priorPublicFiles": 127,
+    "externalReviewerFiles": 124,
+    "newRawFiles": 24,
+    "sha256": "PASS"
+  },
+  "ledgerBeforeUsd": 0.1896627,
+  "ledgerAfterUsd": 0.18966269999999996,
+  "liveQualificationSlots": 1,
+  "liveFailures": 0,
+  "operationResubmissions": 0,
+  "preparationDiagnostics": [
+    "Report-generator quoting error preserved; no provider dispatch affected",
+    "Final read-only audit caught its newly created log at 0644; retained failure and corrected to 0600 before rerunning the audit"
+  ],
+  "provenance": {
+    "inference": "none (native pack replay)",
+    "execution": "nebius-sandbox"
+  },
+  "scope": "browser file import and API native replay; same machine/project and qualified cached image",
+  "openGates": [
+    "browser-inclusive clean reviewer handoff",
+    "unaided human reviewer walkthrough",
+    "separate-machine/project preparation",
+    "unexposed task breadth",
+    "judging access"
+  ]
+}

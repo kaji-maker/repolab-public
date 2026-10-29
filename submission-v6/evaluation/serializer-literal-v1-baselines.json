@@ -1,0 +1,59 @@
+[
+  {
+    "name": "escaped-crlf",
+    "path": ".repolab/serializer-study-v2/escaped-crlf/qualify/result.json",
+    "sha256": "426b0d9e8dffdbc31bd4aa3c635ccce530948d06e427021552c34f3676058937",
+    "freeze": "f7f1313338343dce8f1d677324b69d37e0dfece6ff2e10c6c63eda6f65ad8ac5",
+    "originalImage": "76665581-57cd-4a87-b9e7-d24e1b4dafba",
+    "nativeSignature": {
+      "runner": "tap",
+      "tests": [
+        3
+      ],
+      "passed": [
+        3
+      ],
+      "failed": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "duplicate-branches",
+    "path": ".repolab/serializer-study-v2/duplicate-branches/qualify/result.json",
+    "sha256": "8e524fa99ded4bbb6b4ce2b65455df71f023c8707085c2b386fd57673da1e138",
+    "freeze": "f7f1313338343dce8f1d677324b69d37e0dfece6ff2e10c6c63eda6f65ad8ac5",
+    "originalImage": "8d41627c-54e2-415a-8774-ff02d05815f0",
+    "nativeSignature": {
+      "runner": "tap",
+      "tests": [
+        3
+      ],
+      "passed": [
+        3
+      ],
+      "failed": [
+        0
+      ]
+    }
+  },
+  {
+    "name": "large-context",
+    "path": ".repolab/serializer-study-v2/large-context/qualify/result.json",
+    "sha256": "0d6ee6ce9dc199e544b700b85f559e053b4efab99714d6e2023474b1104e7923",
+    "freeze": "f7f1313338343dce8f1d677324b69d37e0dfece6ff2e10c6c63eda6f65ad8ac5",
+    "originalImage": "6281a389-42e6-4ecd-9442-27ac6a8042a1",
+    "nativeSignature": {
+      "runner": "tap",
+      "tests": [
+        3
+      ],
+      "passed": [
+        3
+      ],
+      "failed": [
+        0
+      ]
+    }
+  }
+]

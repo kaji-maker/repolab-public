@@ -1,0 +1,400 @@
+{
+  "format": "repolab-preact-product-result/v1",
+  "freeze": "67f936c274f3716f82f924c8fd1d4663b095b04d6d9853c0fa361cba0740e473",
+  "status": "QUALIFIED_NATIVE_REVIEW_AND_REPLAY",
+  "packDigest": "ac7e4783e245cafbf148f850fdc2e64b8fccbdcf9ade0eec18d32216f50daafa",
+  "sourceHash": "b984dd0ab4e2c881495c546e9d4859178a6edc486dd2518823db08562b31dd49",
+  "packBytes": 922272,
+  "independentInputsExported": 0,
+  "replays": [
+    {
+      "id": "30bd4477-948f-4c0e-bfe5-2a788f3e26a3",
+      "entrypoint": "api",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "sourceHash": "b984dd0ab4e2c881495c546e9d4859178a6edc486dd2518823db08562b31dd49",
+      "packDigest": "ac7e4783e245cafbf148f850fdc2e64b8fccbdcf9ade0eec18d32216f50daafa",
+      "inferenceCalls": 0,
+      "executionCount": 14,
+      "provenance": {
+        "inference": "none (native pack replay)",
+        "execution": "nebius-sandbox"
+      },
+      "native": {
+        "mocha": 29,
+        "browser": 1173,
+        "browserSkips": 11,
+        "types": {
+          "passed": 17,
+          "pending": 2,
+          "coreCompilation": "PASS",
+          "compatCompilation": "PASS"
+        }
+      },
+      "independent": {
+        "passed": 10,
+        "total": 10
+      },
+      "gates": [
+        {
+          "name": "original-public-A",
+          "passed": true,
+          "cases": 2,
+          "skipped": null
+        },
+        {
+          "name": "original-public-B",
+          "passed": true,
+          "cases": 2,
+          "skipped": null
+        },
+        {
+          "name": "selected-build",
+          "passed": true,
+          "cases": null,
+          "skipped": null
+        },
+        {
+          "name": "selected-integrity",
+          "passed": true,
+          "cases": null,
+          "skipped": null
+        },
+        {
+          "name": "selected-lint",
+          "passed": true,
+          "cases": null,
+          "skipped": null
+        },
+        {
+          "name": "selected-mocha-A",
+          "passed": true,
+          "cases": 29,
+          "skipped": 0
+        },
+        {
+          "name": "selected-types",
+          "passed": true,
+          "cases": 17,
+          "skipped": 2
+        },
+        {
+          "name": "selected-browser-A",
+          "passed": true,
+          "cases": 1173,
+          "skipped": 11
+        },
+        {
+          "name": "selected-public-A",
+          "passed": true,
+          "cases": 3,
+          "skipped": null
+        },
+        {
+          "name": "selected-mocha-B",
+          "passed": true,
+          "cases": 29,
+          "skipped": 0
+        },
+        {
+          "name": "selected-browser-B",
+          "passed": true,
+          "cases": 1173,
+          "skipped": 11
+        },
+        {
+          "name": "selected-public-B",
+          "passed": true,
+          "cases": 3,
+          "skipped": null
+        },
+        {
+          "name": "selected-independent-A",
+          "passed": true,
+          "cases": 10,
+          "skipped": null
+        },
+        {
+          "name": "selected-independent-B",
+          "passed": true,
+          "cases": 10,
+          "skipped": null
+        }
+      ],
+      "rawReceipts": [
+        {
+          "name": "original-public-A",
+          "sha256": "858a49ece12f97c99c9ace9770b57578ccd755c3d945abb71bfecbe17ced1fd2"
+        },
+        {
+          "name": "original-public-B",
+          "sha256": "1c40e06e780f9912212edd6dd50ceb0309d2c24d9f2f3ae76003c824ee442401"
+        },
+        {
+          "name": "selected-build",
+          "sha256": "cacc6e7c979dbc27aae3a0b20c4fc8eb1e0dd89aa53d347fd2746ce49053b0d8"
+        },
+        {
+          "name": "selected-integrity",
+          "sha256": "6196ebad4763f768ffb0f3351b2862686bec0c1c6ecccb7442565e856742362c"
+        },
+        {
+          "name": "selected-lint",
+          "sha256": "9a81a7e3a313f7939828ab34af2bd9258d61751444c27511d76d11941c1e76a6"
+        },
+        {
+          "name": "selected-mocha-A",
+          "sha256": "380a735f23458b46ca188019377a06b9e69fe5947a1ac97aeff388bf35b87ded"
+        },
+        {
+          "name": "selected-types",
+          "sha256": "017abfdeabca27185d4f0037365e519e59aa33f0b44d78c0693f833beb2c5e17"
+        },
+        {
+          "name": "selected-browser-A",
+          "sha256": "af3d267893cda62e65bda356dbb2c7cd818994385b0b8d8f6df5e46dbbd07d05"
+        },
+        {
+          "name": "selected-public-A",
+          "sha256": "d21c542b80dc64d3473e5b9467b8c20eabc42694c8eadfeacf1c4ee7de61f64b"
+        },
+        {
+          "name": "selected-mocha-B",
+          "sha256": "5d66e418d6d80f0a7d54ce106efd15b0e818442c9cd7eddd1fa7a2904088a7da"
+        },
+        {
+          "name": "selected-browser-B",
+          "sha256": "6d21b219bc9936cd551e2b01f788089e04ef22af012f42f35d8d23bedbfe6033"
+        },
+        {
+          "name": "selected-public-B",
+          "sha256": "5d711c7a891b2a9d0c38708a65a6cc99b252f6bce95bb126e9699542ca6b9f48"
+        },
+        {
+          "name": "selected-independent-A",
+          "sha256": "87d98f2ee46a33fa8cd417091c28b0769e683243aa09b46d1146b41e793cc29d"
+        },
+        {
+          "name": "selected-independent-B",
+          "sha256": "afd0429652df1c0dcc3f88acc2a3153bcfa89e60e1a786b92c6b72ff23a3bb5c"
+        }
+      ],
+      "journalHash": "c862a6a537ebd20761586f5aecbdfa08f3e399817f89f4b74964e0745e361497"
+    },
+    {
+      "id": "d7236082-a144-4dd9-ad04-29d96407b5c3",
+      "entrypoint": "cli",
+      "status": "VERIFIED_REPLAY_FOR_TESTED_SCENARIOS",
+      "sourceHash": "b984dd0ab4e2c881495c546e9d4859178a6edc486dd2518823db08562b31dd49",
+      "packDigest": "ac7e4783e245cafbf148f850fdc2e64b8fccbdcf9ade0eec18d32216f50daafa",
+      "inferenceCalls": 0,
+      "executionCount": 14,
+      "provenance": {
+        "inference": "none (native pack replay)",
+        "execution": "nebius-sandbox"
+      },
+      "native": {
+        "mocha": 29,
+        "browser": 1173,
+        "browserSkips": 11,
+        "types": {
+          "passed": 17,
+          "pending": 2,
+          "coreCompilation": "PASS",
+          "compatCompilation": "PASS"
+        }
+      },
+      "independent": {
+        "passed": 10,
+        "total": 10
+      },
+      "gates": [
+        {
+          "name": "original-public-A",
+          "passed": true,
+          "cases": 2,
+          "skipped": null
+        },
+        {
+          "name": "original-public-B",
+          "passed": true,
+          "cases": 2,
+          "skipped": null
+        },
+        {
+          "name": "selected-build",
+          "passed": true,
+          "cases": null,
+          "skipped": null
+        },
+        {
+          "name": "selected-integrity",
+          "passed": true,
+          "cases": null,
+          "skipped": null
+        },
+        {
+          "name": "selected-lint",
+          "passed": true,
+          "cases": null,
+          "skipped": null
+        },
+        {
+          "name": "selected-mocha-A",
+          "passed": true,
+          "cases": 29,
+          "skipped": 0
+        },
+        {
+          "name": "selected-types",
+          "passed": true,
+          "cases": 17,
+          "skipped": 2
+        },
+        {
+          "name": "selected-browser-A",
+          "passed": true,
+          "cases": 1173,
+          "skipped": 11
+        },
+        {
+          "name": "selected-public-A",
+          "passed": true,
+          "cases": 3,
+          "skipped": null
+        },
+        {
+          "name": "selected-mocha-B",
+          "passed": true,
+          "cases": 29,
+          "skipped": 0
+        },
+        {
+          "name": "selected-browser-B",
+          "passed": true,
+          "cases": 1173,
+          "skipped": 11
+        },
+        {
+          "name": "selected-public-B",
+          "passed": true,
+          "cases": 3,
+          "skipped": null
+        },
+        {
+          "name": "selected-independent-A",
+          "passed": true,
+          "cases": 10,
+          "skipped": null
+        },
+        {
+          "name": "selected-independent-B",
+          "passed": true,
+          "cases": 10,
+          "skipped": null
+        }
+      ],
+      "rawReceipts": [
+        {
+          "name": "original-public-A",
+          "sha256": "7a03d948c5883583b0b4da8f2b7468596f3c3b16e2cd687a651b0d3c91a3913d"
+        },
+        {
+          "name": "original-public-B",
+          "sha256": "a8b0ccb064c94d303485e4e97de7c6a730981e1011daee87592174f6f4baccef"
+        },
+        {
+          "name": "selected-build",
+          "sha256": "a7b061ab4e16282d6f1e9bb335cfbc70643a65641a6c33c3e70c469f5896f759"
+        },
+        {
+          "name": "selected-integrity",
+          "sha256": "4446abcfdfb8e707f3101ea9df99302df8c935aa3369a8fed5c6c6199fc87d26"
+        },
+        {
+          "name": "selected-lint",
+          "sha256": "0ac2d2fdef845e1ea6d3d3235317b9e613278dcffbcc98fc0695b1d0b0531cca"
+        },
+        {
+          "name": "selected-mocha-A",
+          "sha256": "3a2ef157fe57a8faf1a53c2134488761302392cddd389fa4de687e153a492f2f"
+        },
+        {
+          "name": "selected-types",
+          "sha256": "d5aaece5fa69a575532faf7bd7bc4f3e7b610d06c87a4de949ae94b7db46e8b7"
+        },
+        {
+          "name": "selected-browser-A",
+          "sha256": "e6cd76e6e85ad068a6a2fe138e6dd9980548039bc9920fc04581498d526d8811"
+        },
+        {
+          "name": "selected-public-A",
+          "sha256": "58ea9b36556cc68926d7e69e91a4b781c6c417331739117974d0eea2dd8cf037"
+        },
+        {
+          "name": "selected-mocha-B",
+          "sha256": "e512f099ff5815af2444c41aec12515c3afa0df92b4eb8fdb9961018be9c7421"
+        },
+        {
+          "name": "selected-browser-B",
+          "sha256": "7f6737fb1cb4cffe6f191349f5f038f4a5cc1c532bb886630bb9d8344a50307c"
+        },
+        {
+          "name": "selected-public-B",
+          "sha256": "f739f469f4ae7852191dce341d1466355f1df25fa782658e8f66759ee9ad053e"
+        },
+        {
+          "name": "selected-independent-A",
+          "sha256": "f779420c2d5740465db196d4e0fd002c6d5f168fa0fac93acc6744408da5c010"
+        },
+        {
+          "name": "selected-independent-B",
+          "sha256": "b476ed183af7f6dd6a7f9184b2545a60c70aeb43afea664e6dbf7b3363a91751"
+        }
+      ],
+      "journalHash": "d78c8b03d4189b6da7cdfd9638f5c823da7aecc1ca2f04cff8ae298e516255e6"
+    }
+  ],
+  "distinctSandboxOperations": 28,
+  "inferenceCalls": 0,
+  "estimatedInferenceUsd": 0,
+  "tests": 526,
+  "build": "PASS",
+  "browser": {
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "incorrectAcceptanceVisible": true,
+    "abstentionVisible": true,
+    "overflow": false
+  },
+  "keylessRestart": {
+    "status": "PASS",
+    "historyIds": [
+      "d7236082-a144-4dd9-ad04-29d96407b5c3",
+      "30bd4477-948f-4c0e-bfe5-2a788f3e26a3"
+    ],
+    "verifiedSavedResults": 2,
+    "credentials": "none",
+    "newDispatches": 0,
+    "unchangedFiles": 56,
+    "inference": "none",
+    "execution": "none (credential-free history review)"
+  },
+  "priorArtifactHashesUnchanged": 1249,
+  "ledger": {
+    "blocked": false,
+    "committedUsd": 0.14465489999999992
+  },
+  "limitations": [
+    "One exposed Preact feature, developer-supplied ownership scaffolding; not hidden-task accuracy.",
+    "Same-project qualified cached native dependency image; separate-project provisioning and separate-machine native replay unqualified.",
+    "Fresh replay through API/UI is qualified; new native repair inference through the product remains unavailable.",
+    "Imported claims do not replace fresh verification; hashes identify bytes, not provider signatures."
+  ],
+  "provenance": {
+    "inference": "none (native pack replay)",
+    "execution": "actual nebius-sandbox"
+  }
+}

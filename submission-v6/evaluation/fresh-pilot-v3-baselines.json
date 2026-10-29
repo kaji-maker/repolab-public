@@ -1,0 +1,20 @@
+[
+  {
+    "name": "minimist",
+    "qualificationPath": ".repolab/fresh-pilot-v2/minimist/qualify.json",
+    "qualificationSha256": "65365a52399ea0079d3db43250c8106aed47ba34bca9326414b70c4552ac0717",
+    "dependencyImage": "a6249792-348d-42f1-974a-a51155fc1ee7",
+    "dependencyLockSha256": "04a9754b43bf0aa3265a340e341584b111cdd36d76c12e18cbfb6fae1e276ccc",
+    "dependencyReceiptSha256": "6f7e00a026825e1f547b7b95089846a27a5e337ade877ef8124d2e787b7d9ab2",
+    "dependencyOperationId": "01a13db2-1f51-753b-89dd-6faaf8d58469"
+  },
+  {
+    "name": "camelcase",
+    "qualificationPath": ".repolab/fresh-pilot-v2/camelcase/qualify.json",
+    "qualificationSha256": "1ba122b1d998c132ca52cefd95dc5de01d9bd229ee139de39f9029dc475d4777",
+    "dependencyImage": "fb57a3f4-ce5e-44d3-ba31-9ca4bfcaa75c",
+    "dependencyLockSha256": "38aba5fbf24c252d363167c11ada7e5a2c64b2ffea563a6521f73d8da51d8a5d",
+    "dependencyReceiptSha256": "f41888a9f2b69529331f163ab2048dfeae5fbca2405509c193b3ba9ad13fcd65",
+    "dependencyOperationId": "01a13db2-d590-72c8-9425-33676841db93"
+  }
+]

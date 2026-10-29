@@ -1,0 +1,115 @@
+{
+  "format": "repolab-cross-repository-development/v5",
+  "parentPreparationFreeze": "3196db7c1d52d3001e0ad078699d106a5beeb3ab7df8ffd5977df015efe50cd7",
+  "tasks": [
+    "epoberezkin__fast-deep-equal-141",
+    "davidmarkclements__rfdc-55",
+    "epoberezkin__fast-json-stable-stringify-74"
+  ],
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "requestPolicy": "nemotron-full-thinking-v1",
+  "ratesUsdPerMillion": {
+    "input": 0.3,
+    "output": 0.9
+  },
+  "sourceRepresentation": "pinned-original exact line edits v1",
+  "runtimePolicy": "rfdc Node 20.9.0 checksum verified; other tasks original Node 24",
+  "maxCandidatesPerTask": 2,
+  "maxOperationsPerTask": 20,
+  "modelRequestBytes": 32000,
+  "monetaryCap": null,
+  "originalPublicRepeats": 2,
+  "selectedPublicRepeats": 2,
+  "selectedNativeRepeats": 2,
+  "independentRepeats": 2,
+  "operationResubmission": false,
+  "taskReplacementAfterOutcomes": false,
+  "scope": "three previously exposed development tasks; excluded from the preserved zero-score pilot and any unseen-task denominator",
+  "assets": [
+    {
+      "path": "packages/repositories/cross-repo-protocol-v5.ts",
+      "sha256": "a57431bf49841ac49c752dd82df4242491af4d3666580d2d856e029a2be639d7"
+    },
+    {
+      "path": "packages/repositories/cross-repo-v5.ts",
+      "sha256": "01114cd1953374c4ee4feab2ad97a79ba1fd32bfb6e5974871a0b5043b0071f7"
+    },
+    {
+      "path": "packages/repositories/source-edits-v1.ts",
+      "sha256": "676f5af6a627c8bb2df34c408b42054cc8dbe173695dd0d9e49dd397490a565b"
+    },
+    {
+      "path": "packages/repositories/cross-runtime-v2.ts",
+      "sha256": "523b5769b4689c4e8a1c9b932aad06a9dd5e2525e6052690c642082b2a09d690"
+    },
+    {
+      "path": "packages/execution/cross-repo-sandbox-v1.ts",
+      "sha256": "d3fac4719169a3f55e71578faa26711ab963c8b94a3a0471e6688a156c1942ec"
+    },
+    {
+      "path": "packages/evaluation/cross-repo-cases-v1.ts",
+      "sha256": "4b563f9d76a6c6281a19fc76720a2be105d60ec9bf3dc384f23857b1bb854f21"
+    },
+    {
+      "path": "repositories/cross-repo-v5/driver.cjs",
+      "sha256": "658db118eb8fdf18fcaef31bc3cb6c047faead0f74db721a6be4f73c0a272900"
+    },
+    {
+      "path": "repositories/cross-repo-v1/child.cjs",
+      "sha256": "d844ca28a33a6aa30443e0f9c5ab10312c5c7bb1ffb6d01463a55121e4de5706"
+    },
+    {
+      "path": "apps/repositories/cross-repo-v5.ts",
+      "sha256": "0147c7657afbfcd4e3042807c58a6f1bb87624dd0c95460701d448d95d8f3d60"
+    },
+    {
+      "path": "tests/cross-repo-v5.test.ts",
+      "sha256": "6ded3d11691990eaaf95da1c435ec3e28388fde7bc5812e9b0722462176d8f27"
+    },
+    {
+      "path": "evaluation/CROSS_REPOSITORY_V5.md",
+      "sha256": "47c22ab10f77e5fce1f6d7b3c50d45b808f2e3040dd60a7efd023463fc1707c7"
+    },
+    {
+      "path": "evaluation/cross-repository-selection-v1.json",
+      "sha256": "bdb10aa91bf3fae51d084a72543d87a62fe989692363cf40a71ea4171f53635a"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-deep-equal/manifest.json",
+      "sha256": "4f8c5e076369548ff75d2c3fb512ea1b9e9a14dd6c2cce9ecc626906827bf80f"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-deep-equal/original.tar.gz",
+      "sha256": "9df7827b518666561cc482ba3bfcc4fd5c68d2cb2fa213b5f87ecc31438c235f"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-deep-equal/LICENSE",
+      "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+    },
+    {
+      "path": "repositories/cross-repo-v1/rfdc/manifest.json",
+      "sha256": "da9386cf58942bb21ae6352ef5b021b41494563b892ba33319a41ee749ae3230"
+    },
+    {
+      "path": "repositories/cross-repo-v1/rfdc/original.tar.gz",
+      "sha256": "b629c00d7173bda3438c5389d7f199e9758050b542f24c97766cdb6bf75e2251"
+    },
+    {
+      "path": "repositories/cross-repo-v1/rfdc/LICENSE",
+      "sha256": "1ce941682a96c7b898ecd125d0f2e22319758ea6f3adbf498a65d649b0f3f7dd"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-json-stable-stringify/manifest.json",
+      "sha256": "060df037b0ad77f16e6a394f7c052f50bde6670456f271181e67874460ec7461"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-json-stable-stringify/original.tar.gz",
+      "sha256": "133c6e55d7e0b15768c26c2c7539c20699a818e1292b0b4a98eaa1af219b2014"
+    },
+    {
+      "path": "repositories/cross-repo-v1/fast-json-stable-stringify/LICENSE",
+      "sha256": "a833d366242c298cf1b10263516572fb8dcbe68eb5072cdcac2b4546e2b4eb36"
+    }
+  ],
+  "digest": "d2df5dac195935c83b8978b7f792303c2fb0d58a0c2aaf2eed6f6b1a690541e8"
+}

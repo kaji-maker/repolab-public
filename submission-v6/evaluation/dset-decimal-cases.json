@@ -1,0 +1,148 @@
+{
+  "format": "repolab-dset-qualification-cases/v1",
+  "reportedId": "reported-fraction",
+  "referenceBefore": "+keys[i + 1] > -1 ? [] : {}",
+  "referenceAfter": "+keys[i + 1] >= 0 && +keys[i + 1] % 1 === 0 ? [] : {}",
+  "weakAfter": "keys[i + 1] === \"10.2\" ? {} : (+keys[i + 1] > -1 ? [] : {})",
+  "expectationOrigin": "Evaluator-authored from issue title/example and pinned README; bounded string segments only; not hidden or externally held-out",
+  "cases": [
+    {
+      "id": "reported-fraction",
+      "object": {},
+      "path": ["foo", "10.2", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"object\",\"entries\":[[\"10.2\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":{\"10.2\":{\"baz\":\"bar\"}}}}"
+    },
+    {
+      "id": "fraction-zero",
+      "object": {},
+      "path": ["foo", "0.5", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"object\",\"entries\":[[\"0.5\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":{\"0.5\":{\"baz\":\"bar\"}}}}"
+    },
+    {
+      "id": "fraction-one",
+      "object": {},
+      "path": ["foo", "1.2", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"object\",\"entries\":[[\"1.2\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":{\"1.2\":{\"baz\":\"bar\"}}}}"
+    },
+    {
+      "id": "fraction-negative-half",
+      "object": {},
+      "path": ["foo", "-0.5", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"object\",\"entries\":[[\"-0.5\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":{\"-0.5\":{\"baz\":\"bar\"}}}}"
+    },
+    {
+      "id": "fraction-large",
+      "object": {},
+      "path": ["foo", "99.9", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"object\",\"entries\":[[\"99.9\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":{\"99.9\":{\"baz\":\"bar\"}}}}"
+    },
+    {
+      "id": "fraction-small",
+      "object": {},
+      "path": ["foo", "0.01", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"object\",\"entries\":[[\"0.01\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":{\"0.01\":{\"baz\":\"bar\"}}}}"
+    },
+    {
+      "id": "negative-integer",
+      "object": {},
+      "path": ["foo", "-1", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"object\",\"entries\":[[\"-1\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":{\"-1\":{\"baz\":\"bar\"}}}}"
+    },
+    {
+      "id": "nonnumeric",
+      "object": {},
+      "path": ["foo", "leaf", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"object\",\"entries\":[[\"leaf\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":{\"leaf\":{\"baz\":\"bar\"}}}}"
+    },
+    {
+      "id": "integer-0",
+      "object": {},
+      "path": ["foo", "0", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"array\",\"entries\":[[\"0\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":[{\"baz\":\"bar\"}]}}"
+    },
+    {
+      "id": "integer-1",
+      "object": {},
+      "path": ["foo", "1", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"array\",\"entries\":[[\"1\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":[null,{\"baz\":\"bar\"}]}}"
+    },
+    {
+      "id": "integer-2",
+      "object": {},
+      "path": ["foo", "2", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"array\",\"entries\":[[\"2\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":[null,null,{\"baz\":\"bar\"}]}}"
+    },
+    {
+      "id": "integer-3",
+      "object": {},
+      "path": ["foo", "3", "baz"],
+      "value": "bar",
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"array\",\"entries\":[[\"3\",{\"baz\":\"bar\"}]],\"object\":{\"foo\":[null,null,null,{\"baz\":\"bar\"}]}}"
+    },
+    {
+      "id": "ordinary-string-path",
+      "object": {},
+      "path": "foo.leaf.baz",
+      "value": 0,
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"object\",\"entries\":[[\"leaf\",{\"baz\":0}]],\"object\":{\"foo\":{\"leaf\":{\"baz\":0}}}}"
+    },
+    {
+      "id": "preserve-object",
+      "object": {
+        "foo": {
+          "keep": 1
+        }
+      },
+      "path": ["foo", "10.2", "baz"],
+      "value": false,
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"object\",\"entries\":[[\"keep\",1],[\"10.2\",{\"baz\":false}]],\"object\":{\"foo\":{\"keep\":1,\"10.2\":{\"baz\":false}}}}"
+    },
+    {
+      "id": "preserve-array",
+      "object": {
+        "foo": [
+          {
+            "keep": 1
+          }
+        ]
+      },
+      "path": ["foo", "0", "baz"],
+      "value": null,
+      "observe": ["foo"],
+      "expected": "{\"kind\":\"array\",\"entries\":[[\"0\",{\"keep\":1,\"baz\":null}]],\"object\":{\"foo\":[{\"keep\":1,\"baz\":null}]}}"
+    },
+    {
+      "id": "nested-fraction",
+      "object": {},
+      "path": ["outer", "foo", "10.2", "baz"],
+      "value": "bar",
+      "observe": ["outer", "foo"],
+      "expected": "{\"kind\":\"object\",\"entries\":[[\"10.2\",{\"baz\":\"bar\"}]],\"object\":{\"outer\":{\"foo\":{\"10.2\":{\"baz\":\"bar\"}}}}}"
+    }
+  ]
+}

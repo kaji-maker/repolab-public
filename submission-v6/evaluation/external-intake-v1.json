@@ -1,0 +1,55 @@
+{
+  "format": "repolab-external-intake/v1",
+  "parentDigest": "bd5ef5501d173ec06e44f91675fd4ae127be33040e58823b4cab04570053732c",
+  "selectionDigest": "4b7fca4a16659ea7510dc3dd8931abdd16d967eb51b9650396e083c2c4d63f4d",
+  "inferenceCalls": 0,
+  "execution": "data-only; no source execution",
+  "selectedTasks": [
+    "facebook__docusaurus-8927",
+    "preactjs__preact-4436",
+    "vuejs__core-11899"
+  ],
+  "assets": [
+    {
+      "path": "packages/evaluation/external-intake.ts",
+      "sha256": "795ed8920a95e0d61a698ecc6aca4e4ab59a53be2ae9947db743170baf115963"
+    },
+    {
+      "path": "apps/evaluator/external-intake.ts",
+      "sha256": "8e1785f8f99ae475efb40a37b5a76712ee300b6ff02b58c808a1a6baea585678"
+    },
+    {
+      "path": "scripts/external-select.py",
+      "sha256": "181aac2bf364a401f40b1c1a6b43f95594ac27e7d3806b1f193aef561311e96d"
+    },
+    {
+      "path": "tests/external-intake.test.ts",
+      "sha256": "00f2c9f5edbb733b06feedb33481589932e7e7280187e3fc59e48e29063b042f"
+    },
+    {
+      "path": "evaluation/EXTERNAL_INTAKE_V1.md",
+      "sha256": "3d6f316a3cfff94d7230d3b5c9ae4f93a97deed647f87b8f834bee817cbd6d42"
+    },
+    {
+      "path": "evaluation/external-selection-v1.json",
+      "sha256": "3624f046e1b59e6cf24e9abbf0ba818c9f2099d6c40d5c5bf9d4b9266059b546"
+    },
+    {
+      "path": "evaluation/external-selected-v1.json",
+      "sha256": "9e2cc1663ef632ba3817691dc24e130e1d5842952c72ead559fb553e53cf00ae"
+    },
+    {
+      "path": "evaluation/external-source-inventory-v1.json",
+      "sha256": "70f8663c30f02e364f2cfa2a33f11501a364a9f7d1b37fddfad6c22ae4622563"
+    },
+    {
+      "path": "evaluation/reviewer-bootstrap-v1.json",
+      "sha256": "8e53db327332484c2523003a5f9cd6958324d1caf455ee813432b29f7568f569"
+    },
+    {
+      "path": "evaluation/portable-packs-v1.json",
+      "sha256": "7957526c996fa0178c1507d1d564404f22b6c18ae20b97e5c3ecd0c90c78c726"
+    }
+  ],
+  "digest": "2ada74c6196b7cd3515ac1a19ed79b81aded6389b1c85d1984610ffe39f636d1"
+}

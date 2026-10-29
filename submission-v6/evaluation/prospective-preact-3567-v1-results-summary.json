@@ -1,0 +1,73 @@
+{
+  "format": "repolab-prospective-preact-preparation-result/v1",
+  "freeze": "ee67f7900dda8920d4e2b72e46b68a0c1608d1b73a6aed0fe97737c16386304b",
+  "taskId": "preactjs__preact-3567",
+  "status": "PREPARED_ONLY",
+  "prospectiveFreeze": "90eb431b3763c7a73f305fe5bf2b456d06c4f0d6b897770447ced2390b72d755",
+  "source": {
+    "files": 315,
+    "version": "10.8.0",
+    "archiveBytes": 678301,
+    "archiveSha256": "b5988e4c37e6fa03da53dd7deb2f811672f7c060a4cfc2a2a297475e664b4ea4",
+    "gitTreeSha1": "aa75aa1c9cf7f6e46abaa7d31e24c3bedd1bbb9e",
+    "lockSha256": "91d3c2a6567b1b5f5ad5955e1175aef24c0e04310c42f8b1e9f436e6512ffd5b",
+    "nodeSourceFiles": 6,
+    "staticNodeCases": 29,
+    "nodeCaseDigest": "e487346490fc4e7bb768837e6e2d0b1c7f18628c2e05e66c531eeab38c4a55f3",
+    "browserTestFiles": 90,
+    "browserFilesDigest": "afcad65e38f3302125b21731b53e25046c71f8f7ff6445efa806fb31f80d1b70",
+    "typescriptFiles": 16,
+    "toolchain": {
+      "typescript": "4.4.2",
+      "mocha": "8.4.0",
+      "microbundle": "0.11.0",
+      "karma": "6.3.16",
+      "esbuild": "0.14.25",
+      "@babel/core": "7.15.0",
+      "@babel/plugin-transform-react-jsx": "7.14.9"
+    },
+    "reportedComponentSha256": "fff406f6571a6d43f28b9cd4dd8da3ceb94733181b2471b1f034ea13dc1ec44b"
+  },
+  "blocker": {
+    "status": "UNCHANGED_UNKNOWN_SUBMISSION",
+    "executionAdmission": false,
+    "bothSharedLeasesPresent": true
+  },
+  "modelCalls": 0,
+  "sandboxOperations": 0,
+  "executionAdmission": false,
+  "candidateAdmission": false,
+  "nativeRuntimeQualified": false,
+  "originalReproduced": false,
+  "accuracy": null,
+  "proposedOriginalOperations": 12,
+  "taskOriginalCeiling": 12,
+  "inference": "none",
+  "execution": "offline original-source data verification and saved-state inspection; no upstream or probe execution",
+  "validation": {
+    "focusedControllerTests": 8,
+    "typecheck": "PASS",
+    "fullSuite": "NOT_RUN",
+    "keylessReplays": 2,
+    "priorJsonUnchanged": 3299,
+    "credentialMarkerExclusion": "PASS",
+    "sharedLeasesUnchanged": true,
+    "upstreamSourceExecution": false,
+    "probeExecution": false,
+    "retainedInitialTestFailure": false,
+    "retainedCompletionPreflightFailure": true
+  },
+  "cohort": {
+    "selected": 8,
+    "originalBaselineQualified": 4,
+    "unresolvedTasks": 1,
+    "pendingPreparation": 3,
+    "offlinePreparedPending": 2,
+    "modelAttempted": 0,
+    "repairExecutionReady": 0,
+    "knownOriginalSandboxOperations": 47,
+    "unknownOriginalSubmissions": 1
+  },
+  "nextOfflineTask": "vuejs__core-11915",
+  "nextLiveAction": "Resolve Preact 3763 V2 missing submission receipt and qualify diagnostic-preserving transport before a separate original-execution freeze"
+}

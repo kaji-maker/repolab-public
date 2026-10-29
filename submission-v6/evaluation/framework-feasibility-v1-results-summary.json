@@ -1,0 +1,807 @@
+{
+  "format": "repolab-framework-feasibility-report/v1",
+  "freeze": "1abc6795d08f0e3e404a4bcdb811b3ea5bd31d0004d53743be77ab58d7b02a1f",
+  "onboardingFreeze": "dec9caa0a75af2bc56147433edcae0545750ea455be7de3f8aefd01c1d10f074",
+  "selectionDigest": "4b7fca4a16659ea7510dc3dd8931abdd16d967eb51b9650396e083c2c4d63f4d",
+  "primaryRemainingCandidate": {
+    "taskId": "vuejs__core-11899",
+    "repository": "vuejs/core",
+    "commit": "706d4ac1d0210b2d9134b3228280187fe02fc971",
+    "candidateRank": 1,
+    "treeArchiveCompatible": true,
+    "targetSubpackage": "packages/compiler-sfc",
+    "feasibilityVerdict": "PRIMARY_CANDIDATE_BLOCKED_ON_WORKSPACE_ARCHIVE_AND_SANDBOX_BASELINE",
+    "blockerCodes": [
+      "MISSING_PINNED_SOURCE_ARCHIVE_AND_SUBPACKAGE_BLOBS",
+      "UNQUALIFIED_WORKSPACE_AND_PACKAGE_MANAGER_ADAPTER",
+      "UNQUALIFIED_EXACT_RUNTIME_PROFILE",
+      "MISSING_ORIGINAL_SANDBOX_SUITE_AND_REPRODUCTION_RECEIPTS"
+    ],
+    "inferenceAuthorized": false,
+    "rationale": "Vue 3.5.4 passes all closed archive structural bounds (697 blobs, 5,691,178 uncompressed bytes, 0 symlinks/executables/unsafe paths) and isolates the scoped CSS @media/@container bug to packages/compiler-sfc, whereas Docusaurus fails archive structural admission (49.0 MB > 32 MB cap, 2 symlinks, 8 executables, 154 unsafe paths). Vue remains blocked before Sandbox or inference because no pinned Vue source archive/subpackage bundle, pnpm@9.10.0 catalog: workspace image, exact reviewed runtime receipt, or original vitest/reproduction receipts exist locally."
+  },
+  "framework": [
+    {
+      "selected": true,
+      "format": "repolab-framework-native-feasibility/v1",
+      "taskId": "facebook__docusaurus-8927",
+      "repository": "facebook/docusaurus",
+      "commit": "41f1c1e3c26ad1e24acd3306077e2534dd8fa0db",
+      "candidateRank": 2,
+      "status": "UNSUPPORTED_REPOSITORY_PROFILE",
+      "feasibilityVerdict": "SECONDARY_CANDIDATE_BLOCKED_ON_ARCHIVE_BOUNDS_MODES_PATHS_AND_WORKSPACE",
+      "supported": false,
+      "qualified": false,
+      "repairAdmission": false,
+      "inferenceReady": false,
+      "treeFeasibility": {
+        "gitTreeSha1": "ca8a5105b62382eb2a53dfa7f03ab1babaef65d8",
+        "canonicalTreeVerified": true,
+        "truncated": false,
+        "blobCount": 3005,
+        "directoryCount": 938,
+        "totalBlobBytes": 49016531,
+        "maxDecompressedArchiveBytesCap": 32000000,
+        "withinDecompressedArchiveLimit": false,
+        "maxBlob": {
+          "path": "website/static/img/pwa_install.gif",
+          "bytes": 3601158
+        },
+        "maxSingleFileBytesCap": 4000000,
+        "withinSingleFileLimit": true,
+        "modes": [
+          "040000",
+          "100644",
+          "100755",
+          "120000"
+        ],
+        "unsupportedModes": [
+          "100755",
+          "120000"
+        ],
+        "symlinkCount": 2,
+        "executableCount": 8,
+        "submoduleCount": 0,
+        "unsafeTreePathCount": 154,
+        "unsafeBlobPathCount": 120,
+        "caseCollisionCount": 0,
+        "directoryShadowCount": 0,
+        "treeArchiveCompatible": false,
+        "treeBlobInventorySha256": "f695f7efed3ec47ad04f2774f48e9bc476a2fa8e79290f058bf2a44b5513a64c"
+      },
+      "packageFeasibility": {
+        "rootPackageSha256": "5a7f73bb18cd68e35bf14300c61306a4b5707c9f458f07e7837e57e2816c2952",
+        "rootPackageGitBlobSha1": "eca4027a48506a1f62cf759f87d6030094b3fa6b",
+        "name": "root",
+        "version": "0.0.0",
+        "private": true,
+        "type": "unspecified",
+        "packageManager": null,
+        "engines": {},
+        "versionHintFiles": [
+          {
+            "path": ".nvmrc",
+            "bytes": 3,
+            "gitBlobSha1": "3c032078a4a21c5c51d3c93d91717c1dabbb8cd0",
+            "decodedMajorHint": "18"
+          }
+        ],
+        "declaredEngineIsExecutionQualification": false,
+        "workspaces": [
+          "packages/*",
+          "website",
+          "test-website-in-workspace",
+          "packages/create-docusaurus/templates/*",
+          "admin/new.docusaurus.io"
+        ],
+        "workspaceConfigFiles": [
+          {
+            "path": "lerna.json",
+            "bytes": 597,
+            "gitBlobSha1": "b493cc646473ff4117f94b687565bba916dd6936"
+          }
+        ],
+        "lockfiles": [
+          {
+            "path": "examples/classic-typescript/yarn.lock",
+            "bytes": 361498,
+            "gitBlobSha1": "4b137b33ff245c9be2fcf95d21de9ec5b3b942db"
+          },
+          {
+            "path": "examples/classic/yarn.lock",
+            "bytes": 360950,
+            "gitBlobSha1": "b5f90061eb3f93cd11c3e9e5290b48b0045c08ea"
+          },
+          {
+            "path": "examples/facebook/yarn.lock",
+            "bytes": 423562,
+            "gitBlobSha1": "a1c303c6ddcdcf7e93d2ff5d76250710281c4d6c"
+          },
+          {
+            "path": "yarn.lock",
+            "bytes": 772567,
+            "gitBlobSha1": "cffe7dfacc5ff25f4eb46b3add48a5f628ca7ad8"
+          }
+        ],
+        "catalogDependencies": [],
+        "workspaceProtocolDependencies": [],
+        "rootEntries": [],
+        "subpackageCount": 46,
+        "lifecycleScripts": [
+          "postinstall",
+          "prepare"
+        ],
+        "nativeTestFileCount": 631,
+        "nativeTestTreeDigest": "b80d2f13ab5ef02058cc8226662ea83f73bf749df01c22684d428d51342ac484"
+      },
+      "targetSubpackage": {
+        "directory": "packages/docusaurus-mdx-loader",
+        "manifestPath": "packages/docusaurus-mdx-loader/package.json",
+        "manifestGitBlobSha1": "70e8f18ea8bed1b9483d0f8d8e40d96ef7534181",
+        "manifestBytes": 1837,
+        "totalBlobCount": 65,
+        "isolatedSourceFileCount": 14,
+        "protectedTestAndConfigFileCount": 47,
+        "unsafePathCount": 2,
+        "subpackagePathsClean": false,
+        "candidateEditableFiles": [
+          {
+            "path": "packages/docusaurus-mdx-loader/src/remark/transformImage/index.ts",
+            "bytes": 6054,
+            "gitBlobSha1": "5bd9c1d9a991566b7c8d417e509e895dd6799e55"
+          }
+        ],
+        "candidateNativeTestFiles": [
+          {
+            "path": "packages/docusaurus-mdx-loader/src/remark/transformImage/__tests__/index.test.ts",
+            "bytes": 2142,
+            "gitBlobSha1": "f491fd7ac36510fe1b37030812592dd24d9a1bd0"
+          }
+        ],
+        "nativeSuiteCommand": "jest"
+      },
+      "prerequisites": {
+        "localPinnedArchiveAvailable": false,
+        "subpackageBlobsAvailable": false,
+        "reviewedExecutionProfileAvailable": false,
+        "originalSandboxSuiteAndReproductionAvailable": false
+      },
+      "blockers": [
+        {
+          "code": "ARCHIVE_DECOMPRESSED_SIZE_EXCEEDS_32MB_CAP",
+          "detail": "Total uncompressed blob size is 49016531 bytes (> 32,000,000 byte readPinnedRepositoryArchive cap)"
+        },
+        {
+          "code": "UNSUPPORTED_GIT_TREE_MODES",
+          "detail": "Tree contains unsupported modes 100755, 120000 (2 symlinks, 8 executables)"
+        },
+        {
+          "code": "UNSAFE_REPOSITORY_PATHS",
+          "detail": "154 tree entries (120 blobs) fail closedRepositoryPath character/segment constraints"
+        },
+        {
+          "code": "MISSING_PINNED_SOURCE_ARCHIVE_AND_SUBPACKAGE_BLOBS",
+          "detail": "Pinned source archive (facebook/docusaurus@41f1c1e3c26ad1e24acd3306077e2534dd8fa0db) and 46 subpackage manifests (including packages/docusaurus-mdx-loader/package.json) are not staged locally in repositories/ or fixtures/"
+        },
+        {
+          "code": "UNQUALIFIED_WORKSPACE_AND_PACKAGE_MANAGER_ADAPTER",
+          "detail": "Private root package with 0 root entry fields requires Yarn + Lerna workspace orchestration (lerna.json + 4 yarn.lock files) across 46 subpackages"
+        },
+        {
+          "code": "UNQUALIFIED_EXACT_RUNTIME_PROFILE",
+          "detail": "Declared engines {} and version hint files (.nvmrc=18) are untrusted range/major hints without an exact reviewed runtime receipt"
+        },
+        {
+          "code": "MISSING_ORIGINAL_SANDBOX_SUITE_AND_REPRODUCTION_RECEIPTS",
+          "detail": "Unchanged native suite (jest) and repeated original bug reproduction in Nebius Sandbox are required before inference; 0 original-only Sandbox receipts exist for facebook__docusaurus-8927"
+        }
+      ],
+      "reasons": [
+        "ARCHIVE_DECOMPRESSED_SIZE_EXCEEDS_32MB_CAP: Total uncompressed blob size is 49016531 bytes (> 32,000,000 byte readPinnedRepositoryArchive cap)",
+        "UNSUPPORTED_GIT_TREE_MODES: Tree contains unsupported modes 100755, 120000 (2 symlinks, 8 executables)",
+        "UNSAFE_REPOSITORY_PATHS: 154 tree entries (120 blobs) fail closedRepositoryPath character/segment constraints",
+        "MISSING_PINNED_SOURCE_ARCHIVE_AND_SUBPACKAGE_BLOBS: Pinned source archive (facebook/docusaurus@41f1c1e3c26ad1e24acd3306077e2534dd8fa0db) and 46 subpackage manifests (including packages/docusaurus-mdx-loader/package.json) are not staged locally in repositories/ or fixtures/",
+        "UNQUALIFIED_WORKSPACE_AND_PACKAGE_MANAGER_ADAPTER: Private root package with 0 root entry fields requires Yarn + Lerna workspace orchestration (lerna.json + 4 yarn.lock files) across 46 subpackages",
+        "UNQUALIFIED_EXACT_RUNTIME_PROFILE: Declared engines {} and version hint files (.nvmrc=18) are untrusted range/major hints without an exact reviewed runtime receipt",
+        "MISSING_ORIGINAL_SANDBOX_SUITE_AND_REPRODUCTION_RECEIPTS: Unchanged native suite (jest) and repeated original bug reproduction in Nebius Sandbox are required before inference; 0 original-only Sandbox receipts exist for facebook__docusaurus-8927"
+      ],
+      "inference": "none",
+      "execution": "data-only pinned Git tree/package feasibility inspection; no source execution",
+      "evidenceBinding": {
+        "files": 5,
+        "manifestSha256": "102c544064f5e66221ceeec41d9ba54acc79b45a4fb2d7490a83306ea5a4397c"
+      }
+    },
+    {
+      "taskId": "preactjs__preact-4436",
+      "selected": true,
+      "format": "repolab-repository-onboarding-inspection/v1",
+      "repository": "preactjs/preact",
+      "commit": "db0f4f2e7a2338ea40050f623f05505a798fc1a4",
+      "archiveSha256": "88d58cccfa506ba27b82c201cdccfe731fdd0870175e76695d3fda9386a756bf",
+      "status": "REPLAY_QUALIFIED_ONBOARDING",
+      "supported": true,
+      "qualified": true,
+      "repairAdmission": false,
+      "reasons": [],
+      "package": {
+        "name": "preact",
+        "version": "10.22.1",
+        "type": "unspecified",
+        "engines": {},
+        "packageManager": null,
+        "scripts": {
+          "prepare": "husky && run-s build && check-export-map && npm-merge-driver-install",
+          "build": "npm-run-all --parallel build:*",
+          "build:core": "microbundle build --raw --no-generateTypes -f cjs,esm,umd",
+          "build:core-min": "microbundle build --raw --no-generateTypes -f cjs,esm,umd,iife src/cjs.js -o dist/preact.min.js",
+          "build:debug": "microbundle build --raw --no-generateTypes -f cjs,esm,umd --cwd debug",
+          "build:devtools": "microbundle build --raw --no-generateTypes -f cjs,esm,umd --cwd devtools",
+          "build:hooks": "microbundle build --raw --no-generateTypes -f cjs,esm,umd --cwd hooks",
+          "build:test-utils": "microbundle build --raw --no-generateTypes -f cjs,esm,umd --cwd test-utils",
+          "build:compat": "microbundle build src/index.js src/scheduler.js --raw --no-generateTypes -f cjs,esm,umd --cwd compat --globals 'preact/hooks=preactHooks'",
+          "build:jsx": "microbundle build --raw --no-generateTypes -f cjs,esm,umd --cwd jsx-runtime",
+          "postbuild": "node ./config/node-13-exports.js && node ./config/compat-entries.js",
+          "dev": "microbundle watch --raw --no-generateTypes --format cjs",
+          "dev:hooks": "microbundle watch --raw --no-generateTypes --format cjs --cwd hooks",
+          "dev:compat": "microbundle watch --raw --no-generateTypes --format cjs --cwd compat --globals 'preact/hooks=preactHooks'",
+          "test": "npm-run-all build lint test:unit",
+          "test:unit": "run-p test:mocha test:karma:minify test:ts",
+          "test:ts": "run-p test:ts:*",
+          "test:ts:core": "tsc -p test/ts/ && mocha --require \"@babel/register\" test/ts/**/*-test.js",
+          "test:ts:compat": "tsc -p compat/test/ts/",
+          "test:mocha": "mocha --recursive --require \"@babel/register\" test/shared test/node",
+          "test:mocha:watch": "npm run test:mocha -- --watch",
+          "test:karma": "cross-env COVERAGE=true BABEL_NO_MODULES=true karma start karma.conf.js --single-run",
+          "test:karma:minify": "cross-env COVERAGE=true MINIFY=true BABEL_NO_MODULES=true karma start karma.conf.js --single-run",
+          "test:karma:watch": "cross-env BABEL_NO_MODULES=true karma start karma.conf.js --no-single-run",
+          "test:karma:hooks": "cross-env COVERAGE=false BABEL_NO_MODULES=true karma start karma.conf.js --grep=hooks/test/browser/**.js --no-single-run",
+          "test:karma:test-utils": "cross-env PERFORMANCE=false COVERAGE=false BABEL_NO_MODULES=true karma start karma.conf.js --grep=test-utils/test/shared/**.js --no-single-run",
+          "test:karma:bench": "cross-env PERFORMANCE=true COVERAGE=false BABEL_NO_MODULES=true karma start karma.conf.js --grep=test/benchmarks/**.js --single-run",
+          "benchmark": "npm run test:karma:bench -- no-single-run",
+          "lint": "run-s oxlint tsc",
+          "tsc": "tsc -p jsconfig-lint.json",
+          "oxlint": "oxlint src test debug compat hooks test-utils -c oxlint.json",
+          "format": "biome format --write .",
+          "format:check": "biome format ."
+        },
+        "lifecycleScripts": [
+          "prepare",
+          "postbuild"
+        ],
+        "entries": [
+          "compat/client.d.ts",
+          "compat/client.js",
+          "compat/client.mjs",
+          "compat/dist/compat.js",
+          "compat/dist/compat.mjs",
+          "compat/dist/compat.module.js",
+          "compat/dist/compat.umd.js",
+          "compat/jsx-dev-runtime.js",
+          "compat/jsx-dev-runtime.mjs",
+          "compat/jsx-runtime.js",
+          "compat/jsx-runtime.mjs",
+          "compat/package.json",
+          "compat/scheduler.js",
+          "compat/scheduler.mjs",
+          "compat/server.browser.js",
+          "compat/server.js",
+          "compat/server.mjs",
+          "compat/src/index.d.ts",
+          "debug/dist/debug.js",
+          "debug/dist/debug.mjs",
+          "debug/dist/debug.module.js",
+          "debug/dist/debug.umd.js",
+          "debug/package.json",
+          "debug/src/index.d.ts",
+          "devtools/dist/devtools.js",
+          "devtools/dist/devtools.mjs",
+          "devtools/dist/devtools.module.js",
+          "devtools/dist/devtools.umd.js",
+          "devtools/package.json",
+          "devtools/src/index.d.ts",
+          "dist/preact.js",
+          "dist/preact.min.js",
+          "dist/preact.mjs",
+          "dist/preact.module.js",
+          "dist/preact.umd.js",
+          "hooks/dist/hooks.js",
+          "hooks/dist/hooks.mjs",
+          "hooks/dist/hooks.module.js",
+          "hooks/dist/hooks.umd.js",
+          "hooks/package.json",
+          "hooks/src/index.d.ts",
+          "jsx-runtime/dist/jsxRuntime.js",
+          "jsx-runtime/dist/jsxRuntime.mjs",
+          "jsx-runtime/dist/jsxRuntime.module.js",
+          "jsx-runtime/dist/jsxRuntime.umd.js",
+          "jsx-runtime/package.json",
+          "jsx-runtime/src/index.d.ts",
+          "package.json",
+          "src/index.d.ts",
+          "test-utils/dist/testUtils.js",
+          "test-utils/dist/testUtils.mjs",
+          "test-utils/dist/testUtils.module.js",
+          "test-utils/dist/testUtils.umd.js",
+          "test-utils/package.json",
+          "test-utils/src/index.d.ts"
+        ],
+        "subpackages": [
+          {
+            "path": "benches/package.json",
+            "name": "preact-benchmarks"
+          },
+          {
+            "path": "benches/proxy-packages/preact-hooks-proxy/package.json",
+            "name": "preact-hooks-proxy"
+          },
+          {
+            "path": "benches/proxy-packages/preact-local-proxy/package.json",
+            "name": "preact-local-proxy"
+          },
+          {
+            "path": "benches/proxy-packages/preact-main-proxy/package.json",
+            "name": "preact-proxy"
+          },
+          {
+            "path": "benches/proxy-packages/preact-v8-proxy/package.json",
+            "name": "preact-v8-proxy"
+          },
+          {
+            "path": "compat/package.json",
+            "name": "preact-compat"
+          },
+          {
+            "path": "debug/package.json",
+            "name": "preact-debug"
+          },
+          {
+            "path": "demo/package.json",
+            "name": "demo"
+          },
+          {
+            "path": "devtools/package.json",
+            "name": "preact-devtools"
+          },
+          {
+            "path": "hooks/package.json",
+            "name": "preact-hooks"
+          },
+          {
+            "path": "jsx-runtime/package.json",
+            "name": "jsx-runtime"
+          },
+          {
+            "path": "test-utils/package.json",
+            "name": "test-utils"
+          }
+        ]
+      },
+      "originalFileCount": 344,
+      "originalInventorySha256": "4c07c5a95918c65fd5927befd6ace06e53789534d1211042772584189b33808c",
+      "nativeTestFiles": 134,
+      "nativeTestInventorySha256": "0f04aa258d92774b2bdfff09937e93aa15de4c47019e9391d6fc2b149b57e044",
+      "lockfiles": [
+        {
+          "path": "benches/package-lock.json",
+          "bytes": 271270,
+          "sha256": "400f74718a2350913bd1cf60e6d057a708528de6b7b840b59575c4785fcbb9db"
+        },
+        {
+          "path": "demo/package-lock.json",
+          "bytes": 94977,
+          "sha256": "783600b1b2c9f42702ab1eb3019f2cd702909c98c0ce0184bd8157880f2dc982"
+        },
+        {
+          "path": "package-lock.json",
+          "bytes": 535672,
+          "sha256": "c89c12391c6d79a203cbf4e1d878318e934a3d9e0b2d3bfafa721368b88bcf44"
+        }
+      ],
+      "dependencyPreparation": "pinned original lock; ignore lifecycle scripts during install",
+      "reviewedRuntime": {
+        "native": "v20.9.0",
+        "observations": "v20.9.0",
+        "rationale": "Existing pinned Node 20.9.0 native/browser/TypeScript qualification; root engines is unspecified."
+      },
+      "editablePaths": [
+        "src/diff/index.js",
+        "src/diff/children.js",
+        "src/internal.d.ts"
+      ],
+      "generatedPaths": [
+        "compat/dist/compat.js",
+        "compat/dist/compat.mjs",
+        "compat/dist/compat.module.js",
+        "compat/dist/compat.umd.js",
+        "debug/dist/debug.js",
+        "debug/dist/debug.mjs",
+        "debug/dist/debug.module.js",
+        "debug/dist/debug.umd.js",
+        "devtools/dist/devtools.js",
+        "devtools/dist/devtools.mjs",
+        "devtools/dist/devtools.module.js",
+        "devtools/dist/devtools.umd.js",
+        "dist/preact.js",
+        "dist/preact.min.js",
+        "dist/preact.mjs",
+        "dist/preact.module.js",
+        "dist/preact.umd.js",
+        "hooks/dist/hooks.js",
+        "hooks/dist/hooks.mjs",
+        "hooks/dist/hooks.module.js",
+        "hooks/dist/hooks.umd.js",
+        "jsx-runtime/dist/jsxRuntime.js",
+        "jsx-runtime/dist/jsxRuntime.mjs",
+        "jsx-runtime/dist/jsxRuntime.module.js",
+        "jsx-runtime/dist/jsxRuntime.umd.js",
+        "test-utils/dist/testUtils.js",
+        "test-utils/dist/testUtils.mjs",
+        "test-utils/dist/testUtils.module.js",
+        "test-utils/dist/testUtils.umd.js"
+      ],
+      "declaredEngineIsExecutionQualification": false,
+      "inference": "none",
+      "execution": "data-only archive inspection; no source execution",
+      "evidence": {
+        "source": "replayed original-only native v5 receipts",
+        "execution": "nebius-sandbox (historical receipts; no new source execution)",
+        "operationIds": [
+          "01a12eb3-1b22-71f2-a9e0-e4f85767362b",
+          "01a12eb4-3f42-7422-a413-ca88545d2b05",
+          "01a12eb4-728e-705d-a9e7-f4e40d63df18",
+          "01a12eb4-79ac-774a-b18f-672f3546ffdc",
+          "01a12eb4-80e3-71bd-8571-234c9e70ee0c",
+          "01a12eb4-9183-70e6-b391-06085358be1e",
+          "01a12eb4-9d84-775e-8229-b7e465c04e64",
+          "01a12eb4-b316-75c0-8973-cab19ea3445d",
+          "01a12eb4-e7e3-76da-b85e-f1940481526c",
+          "01a12eb4-f3ca-735c-9b56-71a260cf2a22",
+          "01a12eb5-008d-759e-869c-c0998b13f607",
+          "01a12eb5-357a-7541-b27e-e766da6d4f1b"
+        ],
+        "protectedImage": "d4c8d3fb-7f4c-48dc-9c81-0522eb247051",
+        "originalBuild": "PASS; original archive restored after build",
+        "native": {
+          "mocha": {
+            "passed": 29,
+            "skipped": 0,
+            "caseDigest": "8d104fcc15bde139ac260fa2690565bad9a4da44ca40e45c3ccd5ceb4fd77b93"
+          },
+          "browser": {
+            "passed": 1173,
+            "skipped": 11,
+            "caseDigest": "e37fc9ab6b6f6a371b2c88088e955ce7542d59bd2b38157db866af49ae617474"
+          },
+          "types": {
+            "passed": 17,
+            "pending": 2,
+            "coreCompilation": "PASS",
+            "compatCompilation": "PASS"
+          }
+        },
+        "originalReproduction": "same missing cleanup feature observed twice; ordinary controls pass",
+        "filesystemIntegrity": "11 original-input write/unlink/replace/rename/symlink denials; networking denied",
+        "qualificationRuntime": "v20.9.0"
+      },
+      "evidenceBinding": {
+        "files": 19,
+        "manifestSha256": "ec881e9550ad726e49a426799a4773c89b55e33c3a061201bc67a35aafde2672"
+      },
+      "newInferenceCalls": 0,
+      "newSandboxOperations": 0
+    },
+    {
+      "selected": true,
+      "format": "repolab-framework-native-feasibility/v1",
+      "taskId": "vuejs__core-11899",
+      "repository": "vuejs/core",
+      "commit": "706d4ac1d0210b2d9134b3228280187fe02fc971",
+      "candidateRank": 1,
+      "status": "UNSUPPORTED_REPOSITORY_PROFILE",
+      "feasibilityVerdict": "PRIMARY_CANDIDATE_BLOCKED_ON_WORKSPACE_ARCHIVE_AND_SANDBOX_BASELINE",
+      "supported": false,
+      "qualified": false,
+      "repairAdmission": false,
+      "inferenceReady": false,
+      "treeFeasibility": {
+        "gitTreeSha1": "89a8df40e9410ffd7d68b5c25df4bf55fd95a2fc",
+        "canonicalTreeVerified": true,
+        "truncated": false,
+        "blobCount": 697,
+        "directoryCount": 97,
+        "totalBlobBytes": 5691178,
+        "maxDecompressedArchiveBytesCap": 32000000,
+        "withinDecompressedArchiveLimit": true,
+        "maxBlob": {
+          "path": ".github/issue-workflow.png",
+          "bytes": 267800
+        },
+        "maxSingleFileBytesCap": 4000000,
+        "withinSingleFileLimit": true,
+        "modes": [
+          "040000",
+          "100644"
+        ],
+        "unsupportedModes": [],
+        "symlinkCount": 0,
+        "executableCount": 0,
+        "submoduleCount": 0,
+        "unsafeTreePathCount": 0,
+        "unsafeBlobPathCount": 0,
+        "caseCollisionCount": 0,
+        "directoryShadowCount": 0,
+        "treeArchiveCompatible": true,
+        "treeBlobInventorySha256": "d453257dfa7f26bd722f1d74f2a5cb7a9b8a043ae3c06ea9f100e9069c73ac5b"
+      },
+      "packageFeasibility": {
+        "rootPackageSha256": "ed16ffc9dd50c1c7ef38c831bc9a5e8fed3d7961994ead019c7af6104d80f1dd",
+        "rootPackageGitBlobSha1": "0a5949940d1cece7de0f6b2efae89256e24390e3",
+        "name": null,
+        "version": "3.5.4",
+        "private": true,
+        "type": "module",
+        "packageManager": "pnpm@9.10.0",
+        "engines": {
+          "node": ">=18.12.0"
+        },
+        "versionHintFiles": [
+          {
+            "path": ".node-version",
+            "bytes": 3,
+            "gitBlobSha1": "209e3ef4b6247ce746048d5711befda46206d235",
+            "decodedMajorHint": "20"
+          }
+        ],
+        "declaredEngineIsExecutionQualification": false,
+        "workspaces": null,
+        "workspaceConfigFiles": [
+          {
+            "path": "pnpm-workspace.yaml",
+            "bytes": 242,
+            "gitBlobSha1": "23270954bb3897e8e5b906518c496aff2dd979d3"
+          }
+        ],
+        "lockfiles": [
+          {
+            "path": "pnpm-lock.yaml",
+            "bytes": 203833,
+            "gitBlobSha1": "b9fea8228a1e8abbb19fd9d4d11fa1199cd2c606"
+          }
+        ],
+        "catalogDependencies": [
+          "@babel/parser@catalog:",
+          "@babel/types@catalog:",
+          "estree-walker@catalog:",
+          "vite@catalog:"
+        ],
+        "workspaceProtocolDependencies": [],
+        "rootEntries": [],
+        "subpackageCount": 21,
+        "lifecycleScripts": [
+          "postinstall",
+          "preinstall"
+        ],
+        "nativeTestFileCount": 242,
+        "nativeTestTreeDigest": "c506946afbc164a9980de9e15adf72a8ca149c2ee22cf06045322e213cbfe6f9"
+      },
+      "targetSubpackage": {
+        "directory": "packages/compiler-sfc",
+        "manifestPath": "packages/compiler-sfc/package.json",
+        "manifestGitBlobSha1": "384ea323cfcb6f9a91c5a82b976c2a4d3cd4e067",
+        "manifestBytes": 1734,
+        "totalBlobCount": 68,
+        "isolatedSourceFileCount": 30,
+        "protectedTestAndConfigFileCount": 36,
+        "unsafePathCount": 0,
+        "subpackagePathsClean": true,
+        "candidateEditableFiles": [
+          {
+            "path": "packages/compiler-sfc/src/compileStyle.ts",
+            "bytes": 6345,
+            "gitBlobSha1": "f27a6338e8e0b94c8fc0716090f7ddc37834403e"
+          },
+          {
+            "path": "packages/compiler-sfc/src/style/pluginScoped.ts",
+            "bytes": 8357,
+            "gitBlobSha1": "6a588b56726ee5ecd920ffe87d48c8dbb6dc8d15"
+          }
+        ],
+        "candidateNativeTestFiles": [
+          {
+            "path": "packages/compiler-sfc/__tests__/compileStyle.spec.ts",
+            "bytes": 12698,
+            "gitBlobSha1": "72727c43196e3e9f3d331cfd59c587c8d85f6e72"
+          }
+        ],
+        "nativeSuiteCommand": "vitest -c vitest.unit.config.ts"
+      },
+      "prerequisites": {
+        "localPinnedArchiveAvailable": false,
+        "subpackageBlobsAvailable": false,
+        "reviewedExecutionProfileAvailable": false,
+        "originalSandboxSuiteAndReproductionAvailable": false
+      },
+      "blockers": [
+        {
+          "code": "MISSING_PINNED_SOURCE_ARCHIVE_AND_SUBPACKAGE_BLOBS",
+          "detail": "Pinned source archive (vuejs/core@706d4ac1d0210b2d9134b3228280187fe02fc971) and 21 subpackage manifests (including packages/compiler-sfc/package.json) are not staged locally in repositories/ or fixtures/"
+        },
+        {
+          "code": "UNQUALIFIED_WORKSPACE_AND_PACKAGE_MANAGER_ADAPTER",
+          "detail": "Private root package with 0 root entry fields requires pnpm@9.10.0 workspace orchestration (pnpm-workspace.yaml + pnpm-lock.yaml), 4 catalog: dependency specifiers, and 21 subpackages"
+        },
+        {
+          "code": "UNQUALIFIED_EXACT_RUNTIME_PROFILE",
+          "detail": "Declared engines {\"node\":\">=18.12.0\"} and version hint files (.node-version=20) are untrusted range/major hints without an exact reviewed runtime receipt"
+        },
+        {
+          "code": "MISSING_ORIGINAL_SANDBOX_SUITE_AND_REPRODUCTION_RECEIPTS",
+          "detail": "Unchanged native suite (vitest -c vitest.unit.config.ts) and repeated original bug reproduction in Nebius Sandbox are required before inference; 0 original-only Sandbox receipts exist for vuejs__core-11899"
+        }
+      ],
+      "reasons": [
+        "MISSING_PINNED_SOURCE_ARCHIVE_AND_SUBPACKAGE_BLOBS: Pinned source archive (vuejs/core@706d4ac1d0210b2d9134b3228280187fe02fc971) and 21 subpackage manifests (including packages/compiler-sfc/package.json) are not staged locally in repositories/ or fixtures/",
+        "UNQUALIFIED_WORKSPACE_AND_PACKAGE_MANAGER_ADAPTER: Private root package with 0 root entry fields requires pnpm@9.10.0 workspace orchestration (pnpm-workspace.yaml + pnpm-lock.yaml), 4 catalog: dependency specifiers, and 21 subpackages",
+        "UNQUALIFIED_EXACT_RUNTIME_PROFILE: Declared engines {\"node\":\">=18.12.0\"} and version hint files (.node-version=20) are untrusted range/major hints without an exact reviewed runtime receipt",
+        "MISSING_ORIGINAL_SANDBOX_SUITE_AND_REPRODUCTION_RECEIPTS: Unchanged native suite (vitest -c vitest.unit.config.ts) and repeated original bug reproduction in Nebius Sandbox are required before inference; 0 original-only Sandbox receipts exist for vuejs__core-11899"
+      ],
+      "inference": "none",
+      "execution": "data-only pinned Git tree/package feasibility inspection; no source execution",
+      "evidenceBinding": {
+        "files": 5,
+        "manifestSha256": "102c544064f5e66221ceeec41d9ba54acc79b45a4fb2d7490a83306ea5a4397c"
+      }
+    }
+  ],
+  "frameworkCounts": {
+    "selected": 3,
+    "supported": 1,
+    "qualified": 1,
+    "newModelAttempted": 0
+  },
+  "developmentControls": [
+    {
+      "taskId": "lukeed__regexparam-40",
+      "role": "exposed development intake control; not part of selected framework denominator",
+      "format": "repolab-repository-onboarding-inspection/v1",
+      "repository": "lukeed/regexparam",
+      "commit": "d05da2631beb7c5620774dae207cb09c7cbf24cc",
+      "archiveSha256": "6f24095fd5147b5eb118e14aff69a16bafd86ed129cd6d969208ca8e0afd031c",
+      "status": "REPLAY_QUALIFIED_ONBOARDING",
+      "supported": true,
+      "qualified": true,
+      "repairAdmission": false,
+      "reasons": [],
+      "package": {
+        "name": "regexparam",
+        "version": "3.0.0",
+        "type": "unspecified",
+        "engines": {
+          "node": ">=8"
+        },
+        "packageManager": null,
+        "scripts": {
+          "build": "bundt",
+          "test": "uvu -r esm test"
+        },
+        "lifecycleScripts": [],
+        "entries": [
+          "dist/index.js",
+          "dist/index.min.js",
+          "dist/index.mjs",
+          "index.d.ts",
+          "package.json"
+        ],
+        "subpackages": []
+      },
+      "originalFileCount": 11,
+      "originalInventorySha256": "d0a8c08c6d8e4d6b27b0c6673441b2863e51ae2c9f7c78fb1ac56b8dd5078cb7",
+      "nativeTestFiles": 2,
+      "nativeTestInventorySha256": "ed5866cb2380935f9cf3f0b5632b5961d8850d15e36e9a0c25b5b0d11db1f0ae",
+      "lockfiles": [],
+      "dependencyPreparation": "no original lock; require receipt-bound resolved lock before execution",
+      "reviewedRuntime": {
+        "native": "v12.22.12",
+        "observations": "v24.18.0",
+        "rationale": "Existing pinned native qualification; engine declarations alone are not execution authority. Regexparam native Node 12 is included in original CI; public module loads use the qualified Node 24 supervisor."
+      },
+      "editablePaths": [
+        "src/index.js"
+      ],
+      "generatedPaths": [
+        "dist/index.js",
+        "dist/index.min.js",
+        "dist/index.mjs"
+      ],
+      "declaredEngineIsExecutionQualification": false,
+      "inference": "none",
+      "execution": "data-only archive inspection; no source execution",
+      "evidence": {
+        "source": "replayed original-only GitHub v2 receipts",
+        "execution": "nebius-sandbox (historical receipts; no new source execution)",
+        "operationIds": [
+          "01a13ecb-1b2d-742f-b195-fba03656b50d",
+          "01a13ecb-3b4b-7504-9ca3-f72e434e85e7",
+          "01a13ecb-480f-7003-88b5-bd54f4fa49d2",
+          "01a13ecb-5008-75d0-90b7-e848836bea2a",
+          "01a13ecb-57ea-7670-9642-7d565a29d596",
+          "01a13ecb-5fd9-74cf-8494-4a6e8c82f4ae"
+        ],
+        "originalImage": "127db35f-afb9-498a-a36e-bf1ed939470e",
+        "originalBuild": "PASS; exact generated hashes bound",
+        "native": {
+          "runner": "uvu",
+          "total": 62,
+          "passed": 62,
+          "skipped": 0
+        },
+        "dependencyLockSha256": "28cb82b22934862f91d135372a424c48ab614c96c0794f8fdd6ab5944eec8a59",
+        "originalReproduction": "same public report delta twice; ordinary controls pass",
+        "filesystemIntegrity": "write/private-read/child-process/credential and forged-success controls validated",
+        "limitations": [
+          "Historical node --check admission is ineffective for ESM-syntax .js without type=module; it is not evidence of syntax/loadability.",
+          "This onboarding gate grants no candidate repair or load admission."
+        ]
+      },
+      "evidenceBinding": {
+        "files": 13,
+        "manifestSha256": "ec881e9550ad726e49a426799a4773c89b55e33c3a061201bc67a35aafde2672"
+      },
+      "newInferenceCalls": 0,
+      "newSandboxOperations": 0
+    }
+  ],
+  "newInferenceCalls": 0,
+  "newSandboxOperations": 0,
+  "accuracy": null,
+  "repairAdmission": false,
+  "execution": "data-only Git tree/package feasibility inspection and offline replay of existing actual Sandbox receipts",
+  "scope": "Bounded supported scope retained (Preact + regexparam control); Vue and Docusaurus remain explicit unsupported rows in the 3-framework denominator until a pinned workspace archive, pnpm@9.10.0 offline image, unchanged native suites and repeated original failure reproduction qualify in Nebius Sandbox before any inference.",
+  "validation": {
+    "focusedTests": 8,
+    "passed": 8,
+    "failed": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "typecheck": "PASS",
+    "credentialFreeCliReplays": 2,
+    "byteIdenticalReplayOutputs": true,
+    "networkCalls": 0,
+    "fullControllerSuiteThisIncrement": "NOT_RUN",
+    "testLogSha256": "e57fef9bdbd2947c44a4d322200fd09c2ec22cadbe7f3c5845e77db751313386",
+    "typecheckLogSha256": "d358f6920e54098863f1274fb9ed2769cc61ddb62a3494cffd1ee5256f7d4ae3"
+  },
+  "audit": {
+    "status": "PASS",
+    "freeze": "1abc6795d08f0e3e404a4bcdb811b3ea5bd31d0004d53743be77ab58d7b02a1f",
+    "onboardingFreeze": "dec9caa0a75af2bc56147433edcae0545750ea455be7de3f8aefd01c1d10f074",
+    "selectionDigest": "4b7fca4a16659ea7510dc3dd8931abdd16d967eb51b9650396e083c2c4d63f4d",
+    "primaryRemainingCandidate": "vuejs__core-11899",
+    "reportSha256": "9e5f7024dd924964438ed7adfc30256f57e9df9a925036615bbc4a77ac7df703",
+    "byteIdenticalCredentialFreeCliReplays": 2,
+    "frameworkCounts": {
+      "selected": 3,
+      "supported": 1,
+      "qualified": 1,
+      "newModelAttempted": 0
+    },
+    "developmentControls": 1,
+    "historicalSandboxOperationsReplayed": 18,
+    "newSandboxOperations": 0,
+    "newInferenceCalls": 0,
+    "networkCalls": 0,
+    "priorJsonEvidenceUnchanged": 3065,
+    "credentialAndProjectExclusion": "PASS",
+    "filesScanned": 16,
+    "cumulativeInferenceUsd": 0.3490722,
+    "unsettledCharges": false,
+    "leasesReleased": true
+  },
+  "scopeLimits": [
+    "Vue (vuejs__core-11899) passes closed archive structural bounds (697 blobs, 5.69 MB, 0 symlinks/executables/unsafe paths) and isolates the scoped CSS @media/@container bug to packages/compiler-sfc, making it the primary remaining framework adapter candidate ahead of Docusaurus",
+    "Docusaurus (facebook__docusaurus-8927) fails closed archive structural admission before workspace staging (3,005 blobs totaling 49.0 MB > 32 MB cap, 2 symlinks, 8 executables, 154 unsafe paths) in addition to Yarn/Lerna workspace orchestration",
+    "Advancing Vue requires a pinned vuejs/core@706d4ac1d0210b2d9134b3228280187fe02fc971 source archive and subpackage blobs, a qualified pnpm@9.10.0 catalog: workspace preparation image, an exact reviewed runtime receipt, and unchanged vitest + repeated original failure reproduction in Nebius Sandbox before any inference",
+    "Framework denominator remains 3 selected / 1 supported and replay-qualified / 0 newly model-attempted; regexparam remains a separate exposed development control"
+  ]
+}

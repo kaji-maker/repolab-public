@@ -1,0 +1,42 @@
+{
+  "format": "repolab-native-review-recovery/v2",
+  "parentRepairFreeze": "9d2adf0281bbea3763940b5f3d75e75fd2094fb92a479f369296adc495bd24c3",
+  "scope": "Read-only recovery qualification of retained abstention; presentation and HTTP keepalive only",
+  "newInferenceCalls": 0,
+  "newSandboxOperations": 0,
+  "assets": [
+    {
+      "path": "packages/repositories/native-review-protocol-v2.ts",
+      "sha256": "749ffd917b289b2e95b0aa9c0c8768e9d8194db23486f2c8bff5c93363683dd2"
+    },
+    {
+      "path": "packages/repositories/native-review-display-v2.ts",
+      "sha256": "8cdca9effae6724efd0b43dfd2f0aa04985660d2216200efe9d2face9873ab49"
+    },
+    {
+      "path": "apps/web/src/FreshPreactV2.tsx",
+      "sha256": "eaa9567b24f54c2a3d2bf5cf0539ef7bcbc61d755f283230f189bd79687082b5"
+    },
+    {
+      "path": "apps/web/native-repair-v2.html",
+      "sha256": "55255449a0d4b88c322d24616b52a74670da03994bc4aa80d7fd0916228f426d"
+    },
+    {
+      "path": "apps/api/native-server-v3.ts",
+      "sha256": "9d3ac9932476a2db4b250434a98adb5590facf12b97637de9df90e5359ac0df1"
+    },
+    {
+      "path": "vite.native-v3.config.ts",
+      "sha256": "4e4537b417401e4d91fee8870fd637d74041306f70751b55d1e08f2394b49650"
+    },
+    {
+      "path": "tests/native-review-v2.test.ts",
+      "sha256": "0fb38b415deca193bb308a45e66b45b5387e348d64b4d89a4a603ff99af4cfbc"
+    },
+    {
+      "path": "scripts/native-review-browser-v2.mjs",
+      "sha256": "eea1b7ecdef40ee20955a7a8dc7a7a6a4c4f0411d2c2cc85bdcba3b4b5ed67b9"
+    }
+  ],
+  "digest": "e6ca02a4b042a17ef7039739bf75c6503b8876f14459429033e8871dd1626af5"
+}

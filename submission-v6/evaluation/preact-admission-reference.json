@@ -1,0 +1,7 @@
+{
+  "taskId": "preactjs__preact-4436",
+  "applyRefBody": "if (typeof ref == 'function') {\nconst cleanup = vnode._refCleanup;\nif (typeof cleanup == 'function') {\nvnode._refCleanup = undefined;\ncleanup();\nif (value == null) return;\n}\nconst result = ref(value);\nif (typeof result == 'function') vnode._refCleanup = result;\n} else ref.current = value;",
+  "refUpdates": "transfer-cleanup",
+  "unmountContext": "vnode",
+  "cleanupType": true
+}
